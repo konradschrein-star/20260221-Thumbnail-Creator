@@ -1,0 +1,177 @@
+# =============================================================================
+# AI YouTube Thumbnail Rendering Farm - Docker Compose
+# =============================================================================
+# Enterprise-grade orchestration for AI-powered thumbnail generation
+# Services: Next.js frontend, FastAPI backend, RQ worker, Redis, PostgreSQL
+# =============================================================================
+
+version: "3.8"
+
+services:
+  # ===========================================================================
+  # Redis: Message Queue & Caching Layer
+  # ===========================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: thumbnail-farm-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - thumbnail-farm-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+    command: redis-server --appendonly yes --maxmemory 256mb --maxmemory-policy allkeys-lru
+
+  # ===========================================================================
+  # Database: PostgreSQL (Supabase Stand-in)
+  # ===========================================================================
+  db:
+    image: postgres:15-alpine
+    container_name: thumbnail-farm-db
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=thumbnail_farm
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+      - ./backend/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - thumbnail-farm-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d thumbnail_farm"]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
+  # ===========================================================================
+  # Backend: FastAPI Application Server
+  # ===========================================================================
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: thumbnail-farm-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - ENVIRONMENT=development
+      - DEBUG=true
+      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/thumbnail_farm
+      - R2_ENDPOINT_URL=${R2_ENDPOINT_URL:-}
+      - R2_ACCESS_KEY_ID=${R2_ACCESS_KEY_ID:-}
+      - R2_SECRET_ACCESS_KEY=${R2_SECRET_ACCESS_KEY:-}
+      - R2_BUCKET_NAME=${R2_BUCKET_NAME:-thumbnail-farm}
+      - FAL_AI_API_KEY=${FAL_AI_API_KEY:-}
+      - QWEN_API_KEY=${QWEN_API_KEY:-}
+      - USE_LOCAL_STORAGE=${USE_LOCAL_STORAGE:-true}
+    volumes:
+      - ./backend:/app
+      - /app/__pycache__
+    depends_on:
+      redis:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+    networks:
+      - thumbnail-farm-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 30s
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload --log-level info
+
+  # ===========================================================================
+  # Worker: RQ Worker Process
+  # ===========================================================================
+  worker:
+    build:
+      context: ./worker
+      dockerfile: Dockerfile
+    container_name: thumbnail-farm-worker
+    environment:
+      - PYTHONUNBUFFERED=1
+      - PYTHONDONTWRITEBYTECODE=1
+      - ENVIRONMENT=development
+      - REDIS_URL=redis://redis:6379/0
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/thumbnail_farm
+      - R2_ENDPOINT_URL=${R2_ENDPOINT_URL:-}
+      - R2_ACCESS_KEY_ID=${R2_ACCESS_KEY_ID:-}
+      - R2_SECRET_ACCESS_KEY=${R2_SECRET_ACCESS_KEY:-}
+      - R2_BUCKET_NAME=${R2_BUCKET_NAME:-thumbnail-farm}
+      - FAL_AI_API_KEY=${FAL_AI_API_KEY:-}
+      - QWEN_API_KEY=${QWEN_API_KEY:-}
+      - USE_LOCAL_STORAGE=${USE_LOCAL_STORAGE:-true}
+    volumes:
+      - ./worker:/app
+      - ./backend/app/services:/app/services:ro
+      - /app/__pycache__
+    depends_on:
+      redis:
+        condition: service_healthy
+      db:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+    networks:
+      - thumbnail-farm-network
+    command: python -m app.worker
+    restart: unless-stopped
+
+  # ===========================================================================
+  # Frontend: Next.js Development Server
+  # ===========================================================================
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: development
+    container_name: thumbnail-farm-frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_URL=http://localhost:8000
+      - NEXT_PUBLIC_BACKEND_URL=http://backend:8000
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules
+      - /app/.next
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - thumbnail-farm-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/api/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  thumbnail-farm-network:
+    driver: bridge
+
+# =============================================================================
+# Volumes
+# =============================================================================
+volumes:
+  redis-data:
+    driver: local
+  postgres-data:
+    driver: local

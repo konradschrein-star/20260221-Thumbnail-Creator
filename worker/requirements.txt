@@ -1,0 +1,31 @@
+# =============================================================================
+# AI Thumbnail Rendering Farm - Worker Dependencies
+# =============================================================================
+
+# Image Processing
+Pillow>=10.2.0
+
+# Redis & Queueing
+redis==5.0.3
+rq==1.16.0
+
+# Database
+asyncpg==0.29.0
+
+# Storage (Cloudflare R2 / S3) - Optional
+boto3==1.34.69
+botocore==1.34.69
+
+# HTTP Client (httpx is primary for async; requests kept for legacy)
+requests==2.31.0
+httpx==0.27.0
+aiohttp==3.9.3
+
+# AI Providers
+google-genai>=1.0.0
+
+# Retry Logic
+tenacity==8.2.3
+
+# Utilities
+python-dotenv==1.0.1

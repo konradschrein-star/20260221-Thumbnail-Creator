@@ -1,0 +1,31 @@
+{
+  "name": "ai-thumbnail-farm",
+  "version": "1.0.0",
+  "description": "Enterprise AI-powered YouTube thumbnail generation system",
+  "private": true,
+  "scripts": {
+    "setup": "node -e \"const os=require('os');const{exec}=require('child_process');const cmd=os.platform()==='win32'?'start setup.html':'open setup.html || xdg-open setup.html';exec(cmd);\"",
+    "start": "node -e \"const os=require('os');const{exec}=require('child_process');const cmd=os.platform()==='win32'?'START.bat':'./start.sh';exec(cmd,{stdio:'inherit'});\"",
+    "start:local": "docker-compose up -d",
+    "stop": "docker-compose down",
+    "logs": "docker-compose logs -f",
+    "build": "docker-compose build",
+    "deploy:vercel": "vercel --prod",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && uvicorn app.main:app --reload",
+    "install:all": "cd frontend && npm install && cd ../backend && pip install -r requirements.txt && cd ../worker && pip install -r requirements.txt"
+  },
+  "keywords": [
+    "ai",
+    "thumbnails",
+    "youtube",
+    "image-generation",
+    "fastapi",
+    "nextjs"
+  ],
+  "author": "AI Thumbnail Farm",
+  "license": "MIT",
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  }
+}

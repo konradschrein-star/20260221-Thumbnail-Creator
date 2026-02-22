@@ -1,0 +1,58 @@
+{
+  "version": 2,
+  "name": "ai-thumbnail-farm",
+  "buildCommand": "cd frontend && npm install && npm run build",
+  "outputDirectory": "frontend/dist",
+  "framework": "nextjs",
+  "installCommand": "npm install",
+  "rewrites": [
+    {
+      "source": "/api/health",
+      "destination": "/api/v1.py"
+    },
+    {
+      "source": "/api/v1/thumbnails/generate",
+      "destination": "/api/v1.py"
+    },
+    {
+      "source": "/api/v1/thumbnails/status/:job_id",
+      "destination": "/api/v1.py"
+    },
+    {
+      "source": "/api/v1/thumbnails/stream/:job_id",
+      "destination": "/api/v1.py"
+    },
+    {
+      "source": "/api/v1/thumbnails/regenerate/:job_id",
+      "destination": "/api/v1.py"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "/api/v1.py"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/api/(.*)",
+      "headers": [
+        {
+          "key": "Access-Control-Allow-Origin",
+          "value": "*"
+        },
+        {
+          "key": "Access-Control-Allow-Methods",
+          "value": "GET, POST, OPTIONS"
+        },
+        {
+          "key": "Access-Control-Allow-Headers",
+          "value": "Content-Type"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/v1.py": {
+      "maxDuration": 60
+    }
+  }
+}
