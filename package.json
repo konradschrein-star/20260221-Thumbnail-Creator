@@ -1,0 +1,32 @@
+{
+  "name": "thumbnail-creator-v2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "build:lib": "tsc --project tsconfig.lib.json",
+    "start": "next start",
+    "test:generate": "tsx scripts/test-generate.ts",
+    "batch:generate": "tsx scripts/batch-generate.ts",
+    "typecheck": "tsc --noEmit",
+    "db:seed": "tsx prisma/seed.ts",
+    "db:studio": "npx prisma studio"
+  },
+  "dependencies": {
+    "@google/genai": "^1.42.0",
+    "@prisma/client": "^5.22.0",
+    "dotenv": "^17.3.1",
+    "next": "^16.1.6",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "prisma": "^5.22.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

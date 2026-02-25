@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard Test</title>
+    <style>
+        body { font-family: system-ui; padding: 20px; }
+        .test { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+        .pass { background: #d4f4e2; }
+        .fail { background: #ffe6e6; }
+    </style>
+</head>
+<body>
+    <h1>Dashboard Component Test</h1>
+    <div id="results"></div>
+
+    <script>
+        const tests = [
+            {
+                name: "API: GET /api/channels",
+                test: async () => {
+                    const res = await fetch('http://localhost:3000/api/channels');
+                    const data = await res.json();
+                    return data.channels && data.channels.length > 0;
+                }
+            },
+            {
+                name: "API: GET /api/archetypes",
+                test: async () => {
+                    const res = await fetch('http://localhost:3000/api/archetypes');
+                    const data = await res.json();
+                    return data.archetypes !== undefined;
+                }
+            },
+            {
+                name: "API: GET /api/jobs",
+                test: async () => {
+                    const res = await fetch('http://localhost:3000/api/jobs');
+                    const data = await res.json();
+                    return data.jobs !== undefined;
+                }
+            },
+            {
+                name: "Dashboard page loads",
+                test: async () => {
+                    const res = await fetch('http://localhost:3000/dashboard');
+                    return res.status === 200;
+                }
+            }
+        ];
+
+        async function runTests() {
+            const results = document.getElementById('results');
+
+            for (const test of tests) {
+                const div = document.createElement('div');
+                div.className = 'test';
+                div.innerHTML = `<strong>${test.name}</strong>: Testing...`;
+                results.appendChild(div);
+
+                try {
+                    const passed = await test.test();
+                    div.className = passed ? 'test pass' : 'test fail';
+                    div.innerHTML = `<strong>${test.name}</strong>: ${passed ? '✅ PASS' : '❌ FAIL'}`;
+                } catch (error) {
+                    div.className = 'test fail';
+                    div.innerHTML = `<strong>${test.name}</strong>: ❌ ERROR - ${error.message}`;
+                }
+            }
+        }
+
+        runTests();
+    </script>
+</body>
+</html>

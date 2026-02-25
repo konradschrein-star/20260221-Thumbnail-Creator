@@ -1,0 +1,60 @@
+// This is your Prisma schema file
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Channel {
+  id                String   @id @default(cuid())
+  name              String
+  personaDescription String   // Detailed character description for consistency
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  archetypes        Archetype[]
+  generationJobs    GenerationJob[]
+
+  @@map("channels")
+}
+
+model Archetype {
+  id                 String   @id @default(cuid())
+  name               String
+  channelId          String
+  imageUrl           String   // Path to archetype image (e.g., /archetypes/archetype1.jpeg)
+  layoutInstructions String   // Additional style/layout guidance
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  channel            Channel  @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  generationJobs     GenerationJob[]
+
+  @@map("archetypes")
+}
+
+model GenerationJob {
+  id            String   @id @default(cuid())
+  channelId     String
+  archetypeId   String
+  videoTopic    String
+  thumbnailText String
+  customPrompt  String?  // Optional override prompt
+  outputUrl     String?  // Path to generated thumbnail
+  status        String   @default("pending")  // pending, processing, completed, failed
+  errorMessage  String?
+  createdAt     DateTime @default(now())
+  completedAt   DateTime?
+
+  channel       Channel   @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  archetype     Archetype @relation(fields: [archetypeId], references: [id], onDelete: Cascade)
+
+  @@index([channelId])
+  @@index([archetypeId])
+  @@index([status])
+  @@map("generation_jobs")
+}
