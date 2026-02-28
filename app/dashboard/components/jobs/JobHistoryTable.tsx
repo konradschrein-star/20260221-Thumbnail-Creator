@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import ErrorMessage from '../shared/ErrorMessage';
+import ErrorMessage from '@/app/dashboard/components/shared/ErrorMessage';
 import JobRow from './JobRow';
-import useJobs, { Job } from '../../hooks/useJobs';
-import useChannels from '../../hooks/useChannels';
-import { BlurFade } from '../ui/blur-fade';
+import useJobs, { Job } from '@/app/dashboard/hooks/useJobs';
+import useChannels from '@/app/dashboard/hooks/useChannels';
+import { BlurFade } from '@/app/dashboard/components/ui/blur-fade';
 import { ClipboardList } from 'lucide-react';
 
 // Helper to group jobs by date

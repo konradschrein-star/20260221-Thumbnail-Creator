@@ -1,12 +1,12 @@
 'use client';
 
 import { useState } from 'react';
-import { BlurFade } from '../components/ui/blur-fade';
+import { BlurFade } from '@/app/dashboard/components/ui/blur-fade';
 import { Languages, Globe, ArrowRight, CheckCircle2, Loader2, Play } from 'lucide-react';
-import Button from '../components/shared/Button';
-import ErrorMessage from '../components/shared/ErrorMessage';
-import useJobs from '../hooks/useJobs';
-import { ShimmerButton } from '../components/ui/shimmer-button';
+import Button from '@/app/dashboard/components/shared/Button';
+import ErrorMessage from '@/app/dashboard/components/shared/ErrorMessage';
+import useJobs from '@/app/dashboard/hooks/useJobs';
+import { ShimmerButton } from '@/app/dashboard/components/ui/shimmer-button';
 
 const LANGUAGES = [
     { code: 'German', label: 'German' },

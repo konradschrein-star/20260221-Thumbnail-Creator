@@ -1,75 +1,75 @@
 'use client';
 
-import { BlurFade } from '../components/ui/blur-fade';
+import { BlurFade } from '@/app/dashboard/components/ui/blur-fade';
 import {
-    BookOpen,
-    Settings,
-    Zap,
-    HelpCircle,
-    Image as ImageIcon,
-    Palette,
-    Layout,
-    Info
+  BookOpen,
+  Settings,
+  Zap,
+  HelpCircle,
+  Image as ImageIcon,
+  Palette,
+  Layout,
+  Info
 } from 'lucide-react';
 
 export default function GuidePage() {
-    return (
-        <div className="guide-container">
-            <BlurFade delay={0.1}>
-                <header className="guide-header">
-                    <BookOpen className="icon" />
-                    <h1>Software Usage Guide</h1>
-                    <p>Learn how to master the V3 Thumbnail Creator tools.</p>
-                </header>
+  return (
+    <div className="guide-container">
+      <BlurFade delay={0.1}>
+        <header className="guide-header">
+          <BookOpen className="icon" />
+          <h1>Software Usage Guide</h1>
+          <p>Learn how to master the V3 Thumbnail Creator tools.</p>
+        </header>
 
-                <div className="guide-grid">
-                    <section className="guide-section card">
-                        <h2><Zap className="icon" /> Core Workflow</h2>
-                        <ol>
-                            <li><strong>Select Channel:</strong> Each channel has its own persona and branding tokens (V3).</li>
-                            <li><strong>Pick Archetype:</strong> Select a layout template. Global templates are marked as <code>[General]</code>.</li>
-                            <li><strong>Input Topic:</strong> Describe the video. V3 uses keyword detection for dynamic styling.</li>
-                            <li><strong>Refine Draft:</strong> Open the "Editable Generation Prompt" to tweak instructions manually (V3).</li>
-                        </ol>
-                    </section>
+        <div className="guide-grid">
+          <section className="guide-section card">
+            <h2><Zap className="icon" /> Core Workflow</h2>
+            <ol>
+              <li><strong>Select Channel:</strong> Each channel has its own persona and branding tokens (V3).</li>
+              <li><strong>Pick Archetype:</strong> Select a layout template. Global templates are marked as <code>[General]</code>.</li>
+              <li><strong>Input Topic:</strong> Describe the video. V3 uses keyword detection for dynamic styling.</li>
+              <li><strong>Refine Draft:</strong> Open the "Editable Generation Prompt" to tweak instructions manually (V3).</li>
+            </ol>
+          </section>
 
-                    <section className="guide-section card">
-                        <h2><Palette className="icon" /> Dynamic Branding</h2>
-                        <p>
-                            The AI now recognizes specific topics. If your topic contains brands like
-                            <code>Snapchat</code>, <code>WhatsApp</code>, or <code>YouTube</code>, it automatically
-                            injects the corresponding brand colors into the generation.
-                        </p>
-                        <div className="info-box">
-                            <Info size={16} />
-                            <span>You can configure channel-specific "Color Tokens" in the Channels settings.</span>
-                        </div>
-                    </section>
+          <section className="guide-section card">
+            <h2><Palette className="icon" /> Dynamic Branding</h2>
+            <p>
+              The AI now recognizes specific topics. If your topic contains brands like
+              <code>Snapchat</code>, <code>WhatsApp</code>, or <code>YouTube</code>, it automatically
+              injects the corresponding brand colors into the generation.
+            </p>
+            <div className="info-box">
+              <Info size={16} />
+              <span>You can configure channel-specific "Color Tokens" in the Channels settings.</span>
+            </div>
+          </section>
 
-                    <section className="guide-section card">
-                        <h2><Layout className="icon" /> Archetype Management</h2>
-                        <p>
-                            Archetypes are now categorized. You can search for specific layout styles
-                            directly in the generation form.
-                        </p>
-                        <ul>
-                            <li><strong>Global Archetypes:</strong> Templates available to all channels.</li>
-                            <li><strong>Channel Archetypes:</strong> Specific to one brand's visual identity.</li>
-                        </ul>
-                    </section>
+          <section className="guide-section card">
+            <h2><Layout className="icon" /> Archetype Management</h2>
+            <p>
+              Archetypes are now categorized. You can search for specific layout styles
+              directly in the generation form.
+            </p>
+            <ul>
+              <li><strong>Global Archetypes:</strong> Templates available to all channels.</li>
+              <li><strong>Channel Archetypes:</strong> Specific to one brand's visual identity.</li>
+            </ul>
+          </section>
 
-                    <section className="guide-section card">
-                        <h2><Settings className="icon" /> Pro Tips</h2>
-                        <ul>
-                            <li>Use high-contrast text descriptions for better AI interpretation.</li>
-                            <li>Persona images are used as structural references; ensure they have clear outlines.</li>
-                            <li>Logo references are now optional in V3 - the AI will stylize branding without them if needed.</li>
-                        </ul>
-                    </section>
-                </div>
-            </BlurFade>
+          <section className="guide-section card">
+            <h2><Settings className="icon" /> Pro Tips</h2>
+            <ul>
+              <li>Use high-contrast text descriptions for better AI interpretation.</li>
+              <li>Persona images are used as structural references; ensure they have clear outlines.</li>
+              <li>Logo references are now optional in V3 - the AI will stylize branding without them if needed.</li>
+            </ul>
+          </section>
+        </div>
+      </BlurFade>
 
-            <style jsx>{`
+      <style jsx>{`
         .guide-container {
           max-width: 1200px;
           margin: 0 auto;
@@ -160,6 +160,6 @@ export default function GuidePage() {
           color: #ffffff;
         }
       `}</style>
-        </div>
-    );
+    </div>
+  );
 }
