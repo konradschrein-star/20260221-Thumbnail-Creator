@@ -61,15 +61,13 @@ export async function POST(request: NextRequest) {
     if (!archetype) archetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId) || EMERGENCY_ARCHETYPES[0];
 
     // Build base payload
-    const baseUrl = process.env.NEXTAUTH_URL || 'http://localhost:3000';
-
     const payload: payloadEngine.AIRequestPayload = {
       systemPrompt: customPrompt || `${channel.personaDescription} ${archetype.layoutInstructions}`,
       userPrompt: `Create a professional YouTube thumbnail.\n\nTopic: ${videoTopic}\nText to display: "${thumbnailText}"\n\nUse the reference image for style inspiration.`,
       base64Images: {
-        archetype: await payloadEngine.encodeImageToBase64(`${baseUrl}${archetype.imageUrl}`),
-        persona: (channel as any).personaAssetPath ? await payloadEngine.encodeImageToBase64(`${baseUrl}${(channel as any).personaAssetPath}`) : '',
-        logo: (channel as any).logoAssetPath ? await payloadEngine.encodeImageToBase64(`${baseUrl}${(channel as any).logoAssetPath}`) : '',
+        archetype: await payloadEngine.encodeImageToBase64(archetype.imageUrl),
+        persona: (channel as any).personaAssetPath ? await payloadEngine.encodeImageToBase64((channel as any).personaAssetPath) : '',
+        logo: (channel as any).logoAssetPath ? await payloadEngine.encodeImageToBase64((channel as any).logoAssetPath) : '',
       },
     };
 

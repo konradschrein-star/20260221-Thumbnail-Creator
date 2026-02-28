@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs';
-import { resolve } from 'path';
+import { resolve, join } from 'path';
 
 /**
  * Job configuration for a single thumbnail generation request
@@ -77,13 +77,20 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<string> {
     } else {
       // Local path validation - Only allow if it's within specific directories
       // and prevent path traversal (..)
-      const normalizedPath = resolve(pathOrUrl);
-      const projectRoot = resolve(process.cwd());
+      const projectRoot = process.cwd();
+      let localPath = pathOrUrl;
+
+      // If it starts with /, assume it's in the public directory
+      if (localPath.startsWith('/')) {
+        localPath = join(projectRoot, 'public', localPath);
+      }
+
+      const normalizedPath = resolve(localPath);
       const publicDir = resolve(projectRoot, 'public');
       const assetsDir = resolve(projectRoot, 'assets');
 
       if (!normalizedPath.startsWith(publicDir) && !normalizedPath.startsWith(assetsDir)) {
-        throw new Error('Access denied: Local path must be within public or assets directory.');
+        throw new Error(`Access denied: Local path must be within public or assets directory. Path: ${normalizedPath}`);
       }
 
       const buffer = await fs.readFile(normalizedPath);
