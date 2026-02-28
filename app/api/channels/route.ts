@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { auth } from '@/lib/auth';
+import { EMERGENCY_CHANNELS } from '@/lib/emergency-data';
 
 // GET /api/channels - List all channels
 export async function GET() {
@@ -19,12 +20,10 @@ export async function GET() {
       orderBy: { createdAt: 'desc' },
     });
 
-    return NextResponse.json({ channels });
+    return NextResponse.json({ channels: channels.length > 0 ? channels : EMERGENCY_CHANNELS });
   } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message || 'Failed to fetch channels' },
-      { status: 500 }
-    );
+    console.error('Database error in GET /api/channels:', error);
+    return NextResponse.json({ channels: EMERGENCY_CHANNELS, isOffline: true });
   }
 }
 

@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { auth } from '@/lib/auth';
+import { EMERGENCY_ARCHETYPES } from '@/lib/emergency-data';
 
 // GET /api/archetypes?channelId=xxx - List archetypes
 export async function GET(request: NextRequest) {
@@ -32,12 +33,10 @@ export async function GET(request: NextRequest) {
       ],
     });
 
-    return NextResponse.json({ archetypes });
+    return NextResponse.json({ archetypes: archetypes.length > 0 ? archetypes : EMERGENCY_ARCHETYPES });
   } catch (error: any) {
-    return NextResponse.json(
-      { error: error.message || 'Failed to fetch archetypes' },
-      { status: 500 }
-    );
+    console.error('Database error in GET /api/archetypes:', error);
+    return NextResponse.json({ archetypes: EMERGENCY_ARCHETYPES, isOffline: true });
   }
 }
 
