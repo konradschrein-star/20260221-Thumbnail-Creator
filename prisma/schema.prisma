@@ -106,3 +106,15 @@ model VariantJob {
   @@index([masterJobId])
   @@map("variant_jobs")
 }
+
+model AccessRequest {
+  id        String   @id @default(cuid())
+  name      String?
+  email     String
+  reason    String?
+  status    String   @default("pending") // pending, approved, rejected
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("access_requests")
+}

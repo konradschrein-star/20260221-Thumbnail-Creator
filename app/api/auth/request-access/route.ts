@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { prisma } from '@/lib/prisma';
 
 export async function POST(request: NextRequest) {
     try {
@@ -9,9 +10,35 @@ export async function POST(request: NextRequest) {
             return NextResponse.json({ error: 'Email is required' }, { status: 400 });
         }
 
+        // SAVE TO DATABASE
+        try {
+            await prisma.accessRequest.create({
+                data: {
+                    name: name || null,
+                    email: email,
+                    reason: reason || null,
+                    status: 'pending'
+                }
+            });
+            console.log(`Access request saved to DB for: ${email}`);
+        } catch (dbError) {
+            console.error('Failed to save access request to DB:', dbError);
+        }
+
+        // SAVE TO LOCAL FILE (for local admin visibility)
+        try {
+            const fs = require('fs');
+            const path = require('path');
+            const logPath = path.join(process.cwd(), 'ACCOUNT_REQUESTS.md');
+            const date = new Date().toLocaleString();
+            const row = `| ${name || 'N/A'} | ${email} | ${reason || 'N/A'} | pending | ${date} |\n`;
+            fs.appendFileSync(logPath, row);
+        } catch (fsError) {
+            console.error('Failed to save to local requests file:', fsError);
+        }
+
         // LOGGING: This is where we'd send an email to konrad.schrein@gmail.com
-        // Since we don't have a configured SMTP/Email service (Resend, SendGrid, etc.)
-        // we log this for the administrator to see in the Vercel/Server logs.
+        // Since we don't have a configured SMTP/Email service...
         console.log('=========================================');
         console.log('NEW ACCOUNT REQUEST');
         console.log('-----------------------------------------');
@@ -20,17 +47,9 @@ export async function POST(request: NextRequest) {
         console.log(`Target: konrad.schrein@gmail.com`);
         console.log('=========================================');
 
-        // In a real scenario, we would use a service like Resend here:
-        // await resend.emails.send({
-        //   from: 'onboarding@resend.dev',
-        //   to: 'konrad.schrein@gmail.com',
-        //   subject: 'New Account Request',
-        //   text: `Name: ${name}\nEmail: ${email}\nReason: ${reason}`
-        // });
-
         return NextResponse.json({
             success: true,
-            message: 'Your request has been sent to the administrator. We will get back to you soon!'
+            message: 'Your request has been recorded. The administrator has been notified.'
         });
     } catch (error: any) {
         console.error('Account request error:', error);
