@@ -26,31 +26,36 @@ export async function checkManualRateLimit(
 
   const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
-  // Count manual generation jobs by this user in the last 24 hours
-  const manualJobsCount = await prisma.generationJob.count({
-    where: {
-      userId: userId,
-      isManual: true,
-      createdAt: {
-        gte: twentyFourHoursAgo,
-      },
-    } as any,
-  });
-
-  if (manualJobsCount >= config.tokensPerInterval) {
-    return NextResponse.json(
-      {
-        error: 'Daily generation limit reached.',
-        message: `You have already generated ${manualJobsCount} images in the last 24 hours. Manual UI limit is ${config.tokensPerInterval} per day.`,
-      },
-      {
-        status: 429,
-        headers: {
-          'X-RateLimit-Limit': config.tokensPerInterval.toString(),
-          'X-RateLimit-Remaining': '0',
+  try {
+    // Count manual generation jobs by this user in the last 24 hours
+    const manualJobsCount = await prisma.generationJob.count({
+      where: {
+        userId: userId,
+        isManual: true,
+        createdAt: {
+          gte: twentyFourHoursAgo,
         },
-      }
-    );
+      } as any,
+    });
+
+    if (manualJobsCount >= config.tokensPerInterval) {
+      return NextResponse.json(
+        {
+          error: 'Daily generation limit reached.',
+          message: `You have already generated ${manualJobsCount} images in the last 24 hours. Manual UI limit is ${config.tokensPerInterval} per day.`,
+        },
+        {
+          status: 429,
+          headers: {
+            'X-RateLimit-Limit': config.tokensPerInterval.toString(),
+            'X-RateLimit-Remaining': '0',
+          },
+        }
+      );
+    }
+  } catch (error) {
+    console.error('Rate limit DB check failed, bypassing:', error);
+    return null; // Fallback: allow request if DB is down
   }
 
   return null; // Allow request

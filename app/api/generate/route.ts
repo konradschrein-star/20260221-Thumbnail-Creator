@@ -100,23 +100,31 @@ export async function POST(request: NextRequest) {
         const filename = `gen_${job.id}.png`;
         const outputUrl = await r2Service.uploadToR2(imageBuffer, filename);
 
-        const updatedJob = await prisma.generationJob.update({
-          where: { id: job.id },
-          data: {
-            status: 'completed',
-            outputUrl,
-            promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}`,
-            completedAt: new Date()
-          },
-        } as any);
-
-        results.push(updatedJob);
+        try {
+          const updatedJob = await prisma.generationJob.update({
+            where: { id: job.id },
+            data: {
+              status: 'completed',
+              outputUrl,
+              promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}`,
+              completedAt: new Date()
+            },
+          } as any);
+          results.push(updatedJob);
+        } catch (dbError) {
+          console.error('DB job update (complete) failed:', dbError);
+          results.push({ ...job, status: 'completed', outputUrl });
+        }
       } catch (error: any) {
         console.error(`Version ${i} failed:`, error);
-        await prisma.generationJob.update({
-          where: { id: job.id },
-          data: { status: 'failed', errorMessage: error.message },
-        } as any);
+        try {
+          await prisma.generationJob.update({
+            where: { id: job.id },
+            data: { status: 'failed', errorMessage: error.message },
+          } as any);
+        } catch (dbError) {
+          console.error('DB job update (failed) failed:', dbError);
+        }
 
         if (count === 1) throw error;
         results.push({ id: job.id, status: 'failed', errorMessage: error.message });
