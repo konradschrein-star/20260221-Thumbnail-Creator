@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
+import { useSession } from 'next-auth/react';
 import Sidebar, { type TabType } from './Sidebar';
 
 interface DashboardLayoutProps {
@@ -9,6 +10,7 @@ interface DashboardLayoutProps {
 }
 
 export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  const { data: session } = useSession();
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>('channels');
@@ -23,10 +25,17 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     router.push(`/dashboard?tab=${tab}`);
   };
 
+  const getInitials = (name?: string | null) => {
+    if (!name) return 'U';
+    const parts = name.split(' ');
+    if (parts.length >= 2) {
+      return (parts[0][0] + parts[1][0]).toUpperCase();
+    }
+    return parts[0].slice(0, 2).toUpperCase();
+  };
+
   return (
     <div className="dashboard-container">
-
-
       <Sidebar activeTab={activeTab} onTabChange={handleTabChange} />
 
       <div className="main-wrapper">
@@ -36,9 +45,20 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
               <span className="status-dot"></span>
               System Active
             </div>
-            <div className="user-info">
+
+            <div className="header-right">
               <div className="date-display">
-                {new Date().toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' })}
+                {new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}
+              </div>
+              <div className="divider"></div>
+              <div className="user-profile">
+                <div className="user-details">
+                  <span className="user-name">{session?.user?.name || 'User'}</span>
+                  <span className="user-role">{(session?.user as any)?.role || 'Member'}</span>
+                </div>
+                <div className="user-avatar">
+                  {getInitials(session?.user?.name)}
+                </div>
               </div>
             </div>
           </div>
@@ -59,13 +79,6 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           position: relative;
           color: #fafafa;
           overflow-x: hidden;
-        }
-
-        .background-effects {
-          position: fixed;
-          inset: 0;
-          pointer-events: none;
-          z-index: 0;
         }
 
         .main-wrapper {
@@ -97,6 +110,12 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           align-items: center;
         }
 
+        .header-right {
+          display: flex;
+          align-items: center;
+          gap: 1.5rem;
+        }
+
         .status-badge {
           display: flex;
           align-items: center;
@@ -113,15 +132,64 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         .status-dot {
           width: 8px;
           height: 8px;
-          background: #ffffff;
+          background: #10b981;
           border-radius: 50%;
-          box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+          box-shadow: 0 0 8px rgba(16, 185, 129, 0.3);
         }
 
         .date-display {
-          font-size: 0.875rem;
-          color: #64748b;
+          font-size: 0.8125rem;
+          color: #71717a;
           font-weight: 500;
+        }
+
+        .divider {
+          width: 1px;
+          height: 24px;
+          background: rgba(255, 255, 255, 0.08);
+        }
+
+        .user-profile {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+        }
+
+        .user-details {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+        }
+
+        .user-name {
+          font-size: 0.875rem;
+          font-weight: 600;
+          color: #f4f4f5;
+          line-height: 1;
+        }
+
+        .user-role {
+          font-size: 0.7rem;
+          font-weight: 500;
+          color: #71717a;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-top: 0.25rem;
+        }
+
+        .user-avatar {
+          width: 36px;
+          height: 36px;
+          background: linear-gradient(135deg, #3f3f46 0%, #18181b 100%);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: #ffffff;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         }
 
         .dashboard-main {
@@ -143,6 +211,9 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           }
           .dashboard-main {
             padding: 1.5rem;
+          }
+          .user-details {
+            display: none;
           }
         }
       `}</style>
