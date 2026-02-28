@@ -50,57 +50,93 @@ export function sanitizePrompt(text: string, maxLength: number): string {
 }
 
 /**
- * Encodes an image to base64 from a local path or a remote URL
- * Hardened to prevent path traversal.
+ * Encodes an image to base64 from a local path or a remote URL.
+ * Aggressively attempts local resolution for any internal paths/URLs.
  */
 export async function encodeImageToBase64(pathOrUrl: string): Promise<string> {
+  if (!pathOrUrl) return '';
+
   try {
+    const projectRoot = process.cwd();
+    let localBuffer: Buffer | null = null;
+    let internalPath: string | null = null;
+
+    // 1. Candidate Extraction
     if (pathOrUrl.startsWith('http')) {
-      // Remote URL validation
-      const url = new URL(pathOrUrl);
-      const allowedDomains = [
-        '.r2.cloudflarestorage.com',
-        '.r2.dev',
-        'localhost',
-        '127.0.0.1'
+      try {
+        const url = new URL(pathOrUrl);
+        // If it's an internal-looking URL, try to resolve the path locally
+        if (
+          url.hostname === 'localhost' ||
+          url.hostname === '127.0.0.1' ||
+          url.hostname.includes('vercel.app') ||
+          url.hostname.includes('next-auth')
+        ) {
+          internalPath = url.pathname;
+        }
+      } catch (e) {
+        // Fallback: just use URL as is
+      }
+    } else {
+      internalPath = pathOrUrl;
+    }
+
+    // 2. Try Local Filesystem Resolve (Aggressive)
+    if (internalPath) {
+      // Clean path: remove leading / and any query params
+      const cleanPath = internalPath.split('?')[0].startsWith('/')
+        ? internalPath.split('?')[0].slice(1)
+        : internalPath.split('?')[0];
+
+      const candidates = [
+        join(projectRoot, 'public', cleanPath),
+        join(projectRoot, 'assets', cleanPath),
+        join(projectRoot, cleanPath),
+        resolve(projectRoot, cleanPath)
       ];
 
-      const isAllowed = allowedDomains.some(domain => url.hostname.endsWith(domain) || url.hostname === domain);
+      for (const candidate of candidates) {
+        try {
+          const normalized = resolve(candidate);
+          // Safety: ensure it's inside the project
+          if (normalized.startsWith(resolve(projectRoot))) {
+            const stats = await fs.stat(normalized);
+            if (stats.isFile()) {
+              localBuffer = await fs.readFile(normalized);
+              console.log(`[STORAGE] Resolved ${pathOrUrl} locally at ${normalized}`);
+              break;
+            }
+          }
+        } catch (err) {
+          // Continue to next candidate
+        }
+      }
+    }
 
-      // If we want to be less strict for user-provided URLs (though here they come from our DB)
-      // we could just fetch, but let's at least ensure it's a valid URL.
+    if (localBuffer) {
+      return localBuffer.toString('base64');
+    }
 
-      const response = await fetch(pathOrUrl);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+    // 3. Remote Fetch Fallback
+    if (pathOrUrl.startsWith('http')) {
+      const response = await fetch(pathOrUrl, {
+        headers: { 'User-Agent': 'ThumbnailCreator/2.0' },
+        signal: AbortSignal.timeout(10000) // 10s timeout
+      });
+
+      if (!response.ok) {
+        throw new Error(`Remote fetch failed: ${response.status} ${response.statusText}`);
+      }
+
       const arrayBuffer = await response.arrayBuffer();
       return Buffer.from(arrayBuffer).toString('base64');
-    } else {
-      // Local path validation - Only allow if it's within specific directories
-      // and prevent path traversal (..)
-      const projectRoot = process.cwd();
-      let localPath = pathOrUrl;
-
-      // If it starts with /, assume it's in the public directory
-      if (localPath.startsWith('/')) {
-        localPath = join(projectRoot, 'public', localPath);
-      }
-
-      const normalizedPath = resolve(localPath);
-      const publicDir = resolve(projectRoot, 'public');
-      const assetsDir = resolve(projectRoot, 'assets');
-
-      if (!normalizedPath.startsWith(publicDir) && !normalizedPath.startsWith(assetsDir)) {
-        throw new Error(`Access denied: Local path must be within public or assets directory. Path: ${normalizedPath}`);
-      }
-
-      const buffer = await fs.readFile(normalizedPath);
-      return buffer.toString('base64');
     }
-  } catch (error) {
-    console.error(`Encoding failed for ${pathOrUrl}:`, error);
-    throw new Error(
-      `Failed to encode image: ${error instanceof Error ? error.message : 'Invalid path or URL'}`
-    );
+
+    throw new Error(`Could not resolve image locally or as a valid URL: ${pathOrUrl}`);
+
+  } catch (error: any) {
+    console.error(`[ENCODER ERROR] Failed for ${pathOrUrl}:`, error.message);
+    throw new Error(`Failed to encode image: ${error.message}`);
   }
 }
 
