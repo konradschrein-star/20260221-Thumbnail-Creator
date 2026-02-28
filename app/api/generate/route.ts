@@ -28,10 +28,6 @@ export async function POST(request: NextRequest) {
     return rateLimitResponse;
   }
 
-  // Provision user folder if it's their first time in this session (Titan Requirement)
-  // We don't store the actual password here for security, but we satisfy the "folder contains password" vibe.
-  await r2Service.provisionUserFolder(userEmail, 'RESTRICTED_ACCESS');
-
   try {
     const body = await request.json();
     const { channelId, archetypeId, videoTopic, thumbnailText, customPrompt, versionCount = 1 } = body;

@@ -145,6 +145,11 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
     if (localBuffer) {
       buffer = localBuffer;
     } else if (pathOrUrl.startsWith('http')) {
+      // 3. Validate URL for SSRF Protection
+      if (!isSafeUrl(pathOrUrl)) {
+        throw new Error(`SSRF Blocked: Invalid or unsafe URL: ${pathOrUrl}`);
+      }
+
       const response = await fetch(pathOrUrl, {
         headers: { 'User-Agent': 'ThumbnailCreator/2.0' },
         signal: AbortSignal.timeout(10000)
@@ -318,4 +323,36 @@ export async function assemblePayload(
       ...(logoResult && logoResult.data ? { logo: logoResult } : {}),
     },
   };
+}
+
+/**
+ * Validates a URL to prevent SSRF (Server-Side Request Forgery).
+ * Blocks private IP ranges and loopback addresses.
+ */
+function isSafeUrl(urlStr: string): boolean {
+  try {
+    const url = new URL(urlStr);
+
+    // Only allow http and https
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
+      return false;
+    }
+
+    const host = url.hostname.toLowerCase();
+
+    // Block common local/private hostnames and IPs
+    const blockedHosts = ['localhost', '127.0.0.1', '0.0.0.0', '::1'];
+    if (blockedHosts.includes(host)) return false;
+
+    // Block private IP ranges (Regex check for simplicity)
+    const privateIpRegex = /^(10\.|127\.|172\.(1[6-9]|2[0-9]|3[0-1])\.|192\.168\.|169\.254\.)/;
+    if (privateIpRegex.test(host)) return false;
+
+    // Additional check for AWS/Cloud provider metadata services
+    if (host === '169.254.169.254') return false;
+
+    return true;
+  } catch (e) {
+    return false;
+  }
 }

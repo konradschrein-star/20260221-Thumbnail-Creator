@@ -82,31 +82,6 @@ export async function getObjectFromR2(key: string): Promise<{ buffer: Buffer; co
     }
 }
 
-/**
- * Provisions a user folder with a credentials backup
- * @param userEmail The email of the user
- * @param password The (masked) password or identifier
- */
-export async function provisionUserFolder(userEmail: string, passwordHint: string): Promise<void> {
-    if (!process.env.R2_BUCKET_NAME) return;
-
-    const folder = userEmail === 'test@titan.ai' ? 'test-user' : userEmail;
-    const key = `users/${folder}/credentials.txt`;
-
-    try {
-        const content = `User: ${userEmail}\nStored Password/Hint: ${passwordHint}\nProvisioned: ${new Date().toISOString()}`;
-        await r2Client.send(
-            new PutObjectCommand({
-                Bucket: process.env.R2_BUCKET_NAME,
-                Key: key,
-                Body: Buffer.from(content),
-                ContentType: 'text/plain',
-            })
-        );
-    } catch (error) {
-        console.error('Failed to provision user folder:', error);
-    }
-}
 
 /**
  * Deletes an object from Cloudflare R2

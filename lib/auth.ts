@@ -36,27 +36,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           } as any;
         }
 
-        if (normalizedEmail === 'test@titan.ai' && inputPassword === 'test') {
-          console.log("Test User Bypass triggered");
-          return {
-            id: 'test-user-group-id', // Shared ID for shared limits
-            email: 'test@titan.ai',
-            name: 'Test Account',
-            role: 'USER',
-            isTestUser: true, // Flag for shared 10/day limit
-          } as any;
-        }
-
-        if (normalizedEmail === 'admin@example.com' && inputPassword === 'admin123') {
-          console.log("Admin Bypass triggered");
-          return {
-            id: 'admin-fixed-id',
-            email: 'admin@example.com',
-            name: 'Admin',
-            role: 'ADMIN',
-          } as any;
-        }
-
         // Standard logic as fallback
         const user = await prisma.user.findUnique({
           where: { email: normalizedEmail },
