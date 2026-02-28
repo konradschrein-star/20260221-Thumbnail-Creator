@@ -14,6 +14,45 @@ export default function SignIn() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(false);
 
+  const [showRequest, setShowRequest] = useState(false);
+  const [requestName, setRequestName] = useState('');
+  const [requestEmail, setRequestEmail] = useState('');
+  const [requestReason, setRequestReason] = useState('');
+  const [requestSuccess, setRequestSuccess] = useState('');
+  const [requestLoading, setRequestLoading] = useState(false);
+
+  const handleRequestAccess = async (e: FormEvent) => {
+    e.preventDefault();
+    setRequestLoading(true);
+    setRequestSuccess('');
+
+    try {
+      const resp = await fetch('/api/auth/request-access', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: requestName,
+          email: requestEmail,
+          reason: requestReason
+        })
+      });
+
+      const data = await resp.json();
+      if (data.success) {
+        setRequestSuccess(data.message);
+        setRequestName('');
+        setRequestEmail('');
+        setRequestReason('');
+      } else {
+        setError(data.error || 'Failed to send request');
+      }
+    } catch (err) {
+      setError('Connection error. Please try again.');
+    } finally {
+      setRequestLoading(false);
+    }
+  };
+
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
     setError('');
@@ -67,56 +106,151 @@ export default function SignIn() {
               <Sparkles size={24} style={{ marginRight: '0.8rem', verticalAlign: 'middle' }} />
               Command Center
             </motion.h1>
-            <p className="subtitle">Enter your credentials to access the command center.</p>
+            <p className="subtitle">
+              {showRequest
+                ? "Submit your application to gain access to the creator tools."
+                : "Enter your credentials to access the command center."}
+            </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="signin-form">
-            <div className="form-group">
-              <label>Email Address</label>
-              <input
-                type="email"
-                placeholder="admin@example.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
-            </div>
+          {!showRequest ? (
+            <form onSubmit={handleSubmit} className="signin-form">
+              <div className="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  placeholder="admin@example.com"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  required
+                />
+              </div>
 
-            <div className="form-group">
-              <label>Secret Password</label>
-              <input
-                type="password"
-                placeholder="••••••••"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                required
-              />
-            </div>
+              <div className="form-group">
+                <label>Secret Password</label>
+                <input
+                  type="password"
+                  placeholder="••••••••"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+              </div>
 
-            <AnimatePresence>
-              {error && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: 'auto' }}
-                  exit={{ opacity: 0, height: 0 }}
-                  className="error-message"
+              <AnimatePresence mode="wait">
+                {error && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    exit={{ opacity: 0, height: 0 }}
+                    className="error-message"
+                  >
+                    <AlertTriangle size={16} className="error-icon" />
+                    {error}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <div className="submit-container">
+                <button
+                  type="submit"
+                  disabled={loading}
+                  className="submit-btn"
                 >
-                  <AlertTriangle size={16} className="error-icon" />
-                  {error}
-                </motion.div>
-              )}
-            </AnimatePresence>
+                  {loading ? 'Authenticating...' : 'Gain Access'}
+                </button>
+              </div>
 
-            <div className="submit-container">
-              <button
-                type="submit"
-                disabled={loading}
-                className="submit-btn"
-              >
-                {loading ? 'Authenticating...' : 'Gain Access'}
-              </button>
-            </div>
-          </form>
+              <div className="toggle-section">
+                <button
+                  type="button"
+                  onClick={() => { setShowRequest(true); setError(''); }}
+                  className="toggle-btn"
+                >
+                  No account? Request Access
+                </button>
+              </div>
+            </form>
+          ) : (
+            <form onSubmit={handleRequestAccess} className="signin-form">
+              <div className="form-group">
+                <label>Full Name</label>
+                <input
+                  type="text"
+                  placeholder="Konrad Schrein"
+                  value={requestName}
+                  onChange={(e) => setRequestName(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Email Address</label>
+                <input
+                  type="email"
+                  placeholder="konrad.schrein@gmail.com"
+                  value={requestEmail}
+                  onChange={(e) => setRequestEmail(e.target.value)}
+                  required
+                />
+              </div>
+
+              <div className="form-group">
+                <label>Why do you need access?</label>
+                <textarea
+                  placeholder="I'm a designer looking to automate my workflow..."
+                  value={requestReason}
+                  onChange={(e) => setRequestReason(e.target.value)}
+                  rows={3}
+                  className="text-input"
+                  required
+                />
+              </div>
+
+              <AnimatePresence mode="wait">
+                {requestSuccess && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="success-message"
+                  >
+                    <ShieldCheck size={16} className="success-icon" />
+                    {requestSuccess}
+                  </motion.div>
+                )}
+                {error && (
+                  <motion.div
+                    initial={{ opacity: 0, height: 0 }}
+                    animate={{ opacity: 1, height: 'auto' }}
+                    className="error-message"
+                  >
+                    <AlertTriangle size={16} className="error-icon" />
+                    {error}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+
+              <div className="submit-container">
+                <button
+                  type="submit"
+                  disabled={requestLoading || !!requestSuccess}
+                  className="submit-btn"
+                >
+                  {requestLoading ? 'Sending...' : 'Send Request'}
+                </button>
+              </div>
+
+              <div className="toggle-section">
+                <button
+                  type="button"
+                  onClick={() => { setShowRequest(false); setError(''); setRequestSuccess(''); }}
+                  className="toggle-btn"
+                >
+                  Back to Login
+                </button>
+              </div>
+            </form>
+          )}
 
           <div className="card-footer">
             <p className="hint">
@@ -287,6 +421,56 @@ export default function SignIn() {
         .highlight {
           color: #94a3b8;
           font-weight: 500;
+        }
+
+        .toggle-section {
+          text-align: center;
+          margin-top: 0.5rem;
+        }
+
+        .toggle-btn {
+          background: none;
+          border: none;
+          color: #64748b;
+          font-size: 0.8125rem;
+          cursor: pointer;
+          transition: color 0.2s ease;
+          text-decoration: underline;
+        }
+
+        .toggle-btn:hover {
+          color: #94a3b8;
+        }
+
+        .success-message {
+          display: flex;
+          align-items: center;
+          gap: 0.75rem;
+          padding: 0.875rem 1rem;
+          background: rgba(34, 197, 94, 0.1);
+          border: 1px solid rgba(34, 197, 94, 0.2);
+          border-radius: 12px;
+          color: #86efac;
+          font-size: 0.875rem;
+          overflow: hidden;
+        }
+
+        .text-input {
+          background: rgba(30, 41, 59, 0.5);
+          border: 1px solid rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          padding: 0.875rem 1rem;
+          color: #fff;
+          font-size: 1rem;
+          transition: all 0.2s ease;
+          resize: none;
+        }
+
+        .text-input:focus {
+          outline: none;
+          border-color: #ffffff;
+          background: rgba(255, 255, 255, 0.05);
+          box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.05);
         }
 
         .footer-links {
