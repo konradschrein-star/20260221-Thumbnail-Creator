@@ -70,13 +70,13 @@ export async function callNanoBanana(
     // Merge system and user prompts
     const fullPrompt = `${payload.systemPrompt}\n\n${payload.userPrompt}`;
 
-    console.log('   Calling Nano Banana (imagen-3.0-generate-001)...');
+    console.log('   Calling Nano Banana (nano-banana-pro-preview)...');
     console.log(`   Prompt length: ${fullPrompt.length} characters`);
     console.log(`   Reference images: ${imageParts.length}`);
 
     // Nano Banana uses generateContent with responseModalities set to IMAGE
     const response = await ai.models.generateContent({
-      model: 'imagen-3.0-generate-001',
+      model: 'nano-banana-pro-preview',
       contents: [
         fullPrompt,
         ...imageParts
