@@ -53,6 +53,18 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
     thumbnailText?: string;
   }>({});
 
+  // Handle external population (Redo functionality) when already mounted
+  useEffect(() => {
+    if (initialData) {
+      setSelectedChannelId(initialData.channelId || '');
+      setArchetypeId(initialData.archetypeId || '');
+      setVideoTopic(initialData.videoTopic || initialData.videoTitle || '');
+      setThumbnailText(initialData.thumbnailText || '');
+      setDraftPrompt(initialData.promptUsed || '');
+      setShowDraftPrompt(!!initialData.promptUsed);
+    }
+  }, [initialData]);
+
   // Load job for Redo if jobId exists
   useEffect(() => {
     if (redoJobId && channels.length > 0) {

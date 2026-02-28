@@ -75,29 +75,29 @@ function DashboardContent() {
     router.push('/dashboard?tab=generate');
   };
 
-  const renderTabContent = () => {
-    switch (activeTab) {
-      case 'channels':
-        return <ChannelList />;
-      case 'archetypes':
-        return <ArchetypeList />;
-      case 'generate':
-        return <GenerateForm initialData={redoData} />;
-      case 'history':
-        return <JobHistoryTable onRedo={handleRedo} />;
-      case 'translate':
-        return <TranslatePage />;
-      case 'api-docs':
-        return <APIDocsPage />;
-      default:
-        return <ChannelList />;
-    }
-  };
-
   return (
     <DashboardLayout>
       <div className="content-wrapper">
-        <div className="tab-content">{renderTabContent()}</div>
+        <div className="tab-content">
+          <div style={{ display: activeTab === 'channels' ? 'block' : 'none' }}>
+            <ChannelList />
+          </div>
+          <div style={{ display: activeTab === 'archetypes' ? 'block' : 'none' }}>
+            <ArchetypeList />
+          </div>
+          <div style={{ display: activeTab === 'generate' ? 'block' : 'none' }}>
+            <GenerateForm initialData={redoData} />
+          </div>
+          <div style={{ display: activeTab === 'history' ? 'block' : 'none' }}>
+            <JobHistoryTable onRedo={handleRedo} />
+          </div>
+          <div style={{ display: activeTab === 'translate' ? 'block' : 'none' }}>
+            <TranslatePage />
+          </div>
+          <div style={{ display: activeTab === 'api-docs' ? 'block' : 'none' }}>
+            <APIDocsPage />
+          </div>
+        </div>
       </div>
       <style jsx>{`
         .content-wrapper {
