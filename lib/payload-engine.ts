@@ -9,6 +9,19 @@ export interface JobConfig {
   thumbnailText: string;
 }
 
+export interface HardcodedProfile {
+  name: string;
+  systemPrompt: string;
+  personaPath: string;
+  logoPath?: string;
+}
+
+export interface HardcodedArchetype {
+  name: string;
+  referencePath: string;
+  layoutInstructions: string;
+}
+
 /**
  * Complete AI request payload with prompts and encoded images
  */
@@ -162,19 +175,23 @@ Ensure the text is high-contrast and legible.`;
  * Assembles complete AI request payload by encoding images and building prompts
  */
 export async function assemblePayload(
-  channel: any,
-  archetype: any,
+  channel: any | HardcodedProfile,
+  archetype: any | HardcodedArchetype,
   job: JobConfig,
   baseUrl: string = ''
 ): Promise<AIRequestPayload> {
   const brand = getBrandingContext(job.videoTopic, channel);
   const systemPrompt = buildSystemPrompt(channel, archetype, brand);
-  const userPrompt = buildUserPrompt(job, !!channel.logoAssetPath);
+  const userPrompt = buildUserPrompt(job, !!(channel.logoAssetPath || channel.logoPath));
+
+  const personaPath = channel.personaAssetPath || channel.personaPath;
+  const logoPath = channel.logoAssetPath || channel.logoPath;
+  const archetypeUrl = archetype.imageUrl || archetype.referencePath;
 
   const encodingTasks: Promise<string | undefined>[] = [
-    encodeImageToBase64(archetype.imageUrl.startsWith('http') ? archetype.imageUrl : `${baseUrl}${archetype.imageUrl}`),
-    channel.personaAssetPath ? encodeImageToBase64(channel.personaAssetPath.startsWith('http') ? channel.personaAssetPath : `${baseUrl}${channel.personaAssetPath}`) : Promise.resolve(undefined),
-    channel.logoAssetPath ? encodeImageToBase64(channel.logoAssetPath.startsWith('http') ? channel.logoAssetPath : `${baseUrl}${channel.logoAssetPath}`) : Promise.resolve(undefined),
+    encodeImageToBase64(archetypeUrl.startsWith('http') ? archetypeUrl : `${baseUrl}${archetypeUrl}`),
+    personaPath ? encodeImageToBase64(personaPath.startsWith('http') ? personaPath : `${baseUrl}${personaPath}`) : Promise.resolve(undefined),
+    logoPath ? encodeImageToBase64(logoPath.startsWith('http') ? logoPath : `${baseUrl}${logoPath}`) : Promise.resolve(undefined),
   ];
 
   const [archetypeBase64, personaBase64, logoBase64] = await Promise.all(encodingTasks);
