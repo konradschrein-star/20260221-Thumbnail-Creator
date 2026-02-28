@@ -56,6 +56,13 @@ If you prefer to enable automatic history cleanup for regular users, add a cron 
 ```
 Ensure you have set a `CRON_SECRET` in your environment variables. The endpoint is protected and expects a `Bearer` token.
 
+### 4. Cloudflare R2 (Storage) 🛡️
+Create an R2 bucket named `thumbnails`.
+- **Private Access**: You can now keep your bucket private (Public Access: Disabled). This is the recommended "Titan" configuration.
+- **Credentials**: Add `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, and `R2_ENDPOINT` to your environment variables.
+- **Image Proxy**: The system now uses an internal proxy (`/api/assets/[...path]`) to serve images. This avoids exposing your bucket directly to the internet.
+- **R2_PUBLIC_URL**: This is now optional but used as a fallback for migrating legacy URLs. You can point it to your Vercel deployment URL if you have old thumbnails in your database.
+
 ---
 
 ## 🔒 Security & Rate Limiting

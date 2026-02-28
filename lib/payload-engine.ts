@@ -1,6 +1,7 @@
 import { promises as fs } from 'fs';
 import { resolve, join } from 'path';
 import { EMERGENCY_ASSET_MAP } from './emergency-assets';
+import { getObjectFromR2 } from './r2-service';
 
 /**
  * Job configuration for a single thumbnail generation request
@@ -58,6 +59,23 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
   if (!pathOrUrl) return { data: '', mimeType: 'image/jpeg' };
 
   try {
+    // 0. Handle Internal Proxy Paths (Zero-Latency Internal Fetch)
+    if (pathOrUrl.startsWith('/api/assets/')) {
+      const key = pathOrUrl.replace('/api/assets/', '');
+      console.log(`[STORAGE] Internal Fetch: ${key}`);
+      const { buffer, contentType } = await getObjectFromR2(key);
+      return { data: buffer.toString('base64'), mimeType: contentType };
+    }
+
+    // 0.1 Handle Legacy Public R2 URLs (Migration Safety)
+    const publicR2Domain = process.env.R2_PUBLIC_URL || '';
+    if (publicR2Domain && pathOrUrl.startsWith(publicR2Domain)) {
+      const key = pathOrUrl.replace(publicR2Domain, '').replace(/^\//, '');
+      console.log(`[STORAGE] Legacy R2 Migration Fetch: ${key}`);
+      const { buffer, contentType } = await getObjectFromR2(key);
+      return { data: buffer.toString('base64'), mimeType: contentType };
+    }
+
     const projectRoot = process.cwd();
     let localBuffer: Buffer | null = null;
     let internalPath: string | null = null;
