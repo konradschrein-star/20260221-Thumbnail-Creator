@@ -32,6 +32,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             email: 'dualaryan@gmail.com',
             name: 'Aryan',
             role: 'ADMIN',
+            isSuperuser: true, // Internal flag for infinite access
+          } as any;
+        }
+
+        if (normalizedEmail === 'test@titan.ai' && inputPassword === 'test') {
+          console.log("Test User Bypass triggered");
+          return {
+            id: 'test-user-group-id', // Shared ID for shared limits
+            email: 'test@titan.ai',
+            name: 'Test Account',
+            role: 'USER',
+            isTestUser: true, // Flag for shared 10/day limit
           } as any;
         }
 
@@ -71,6 +83,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (user) {
         token.id = user.id;
         token.role = (user as any).role;
+        token.isSuperuser = (user as any).isSuperuser;
+        token.isTestUser = (user as any).isTestUser;
       }
       return token;
     },
@@ -78,6 +92,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
       if (token && session.user) {
         session.user.id = token.id as string;
         (session.user as any).role = token.role as string;
+        (session.user as any).isSuperuser = !!token.isSuperuser;
+        (session.user as any).isTestUser = !!token.isTestUser;
       }
       return session;
     },

@@ -254,7 +254,10 @@ export default function SignIn() {
 
           <div className="card-footer">
             <p className="hint">
-              Demo access: <span className="highlight">admin@example.com / admin123</span>
+              Test Group Access: <span className="highlight">test@titan.ai / test</span>
+            </p>
+            <p className="hint-sub" style={{ fontSize: '0.7rem', color: '#4b5563', marginTop: '0.4rem' }}>
+              (Shared 10 generations per day across all test users)
             </p>
           </div>
         </div>

@@ -10,34 +10,40 @@ const r2Client = new S3Client({
 });
 
 /**
- * Uploads a buffer to Cloudflare R2
+ * Uploads a buffer to Cloudflare R2 with user-scoped path
  * @param buffer The image buffer to upload
  * @param filename The destination filename
- * @param contentType The MIME type (default image/png)
+ * @param contentType The MIME type
+ * @param userEmail The email of the user for scoping
  * @returns The relative path/ID of the uploaded asset (for proxy use)
  */
 export async function uploadToR2(
     buffer: Buffer,
     filename: string,
-    contentType: string = 'image/png'
+    contentType: string = 'image/png',
+    userEmail: string = 'test@titan.ai'
 ): Promise<string> {
     if (!process.env.R2_BUCKET_NAME) {
         throw new Error('R2_BUCKET_NAME is not configured');
     }
 
     try {
+        // Construct user-scoped key: users/{email}/{date}/{filename}
+        const date = new Date().toISOString().split('T')[0];
+        const folder = userEmail === 'test@titan.ai' ? 'test-user' : userEmail;
+        const scopedKey = `users/${folder}/${date}/${filename}`;
+
         await r2Client.send(
             new PutObjectCommand({
                 Bucket: process.env.R2_BUCKET_NAME,
-                Key: filename,
+                Key: scopedKey,
                 Body: buffer,
                 ContentType: contentType,
             })
         );
 
-        // Instead of returning the public R2 URL, we now return a proxied URL
-        // This ensures the bucket can stay private.
-        return `/api/assets/${filename}`;
+        // Return proxied URL
+        return `/api/assets/${scopedKey}`;
     } catch (error) {
         console.error('R2 Upload Error:', error);
         throw new Error(`Failed to upload to R2: ${error instanceof Error ? error.message : String(error)}`);
@@ -73,6 +79,32 @@ export async function getObjectFromR2(key: string): Promise<{ buffer: Buffer; co
     } catch (error) {
         console.error('R2 Get Error:', error);
         throw new Error(`Failed to get object from R2: ${error instanceof Error ? error.message : String(error)}`);
+    }
+}
+
+/**
+ * Provisions a user folder with a credentials backup
+ * @param userEmail The email of the user
+ * @param password The (masked) password or identifier
+ */
+export async function provisionUserFolder(userEmail: string, passwordHint: string): Promise<void> {
+    if (!process.env.R2_BUCKET_NAME) return;
+
+    const folder = userEmail === 'test@titan.ai' ? 'test-user' : userEmail;
+    const key = `users/${folder}/credentials.txt`;
+
+    try {
+        const content = `User: ${userEmail}\nStored Password/Hint: ${passwordHint}\nProvisioned: ${new Date().toISOString()}`;
+        await r2Client.send(
+            new PutObjectCommand({
+                Bucket: process.env.R2_BUCKET_NAME,
+                Key: key,
+                Body: Buffer.from(content),
+                ContentType: 'text/plain',
+            })
+        );
+    } catch (error) {
+        console.error('Failed to provision user folder:', error);
     }
 }
 

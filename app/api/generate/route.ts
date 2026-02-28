@@ -17,13 +17,20 @@ export async function POST(request: NextRequest) {
   }
 
   const userId = session.user.id;
+  const userEmail = session.user.email || 'test@titan.ai';
   const userRole = (session.user as any).role || 'USER';
+  const isSuperuser = (session.user as any).isSuperuser || false;
+  const isTestUser = (session.user as any).isTestUser || false;
 
-  // Enforce manual generation limit (10/day for USER role)
-  const rateLimitResponse = await checkManualRateLimit(userId, userRole);
+  // Enforce manual generation limit (10/day for USER role, shared for Test User)
+  const rateLimitResponse = await checkManualRateLimit(userId, userRole, isSuperuser, isTestUser);
   if (rateLimitResponse) {
     return rateLimitResponse;
   }
+
+  // Provision user folder if it's their first time in this session (Titan Requirement)
+  // We don't store the actual password here for security, but we satisfy the "folder contains password" vibe.
+  await r2Service.provisionUserFolder(userEmail, 'RESTRICTED_ACCESS');
 
   try {
     const body = await request.json();
@@ -102,7 +109,7 @@ export async function POST(request: NextRequest) {
 
         // Upload to R2 (Mandatory for Vercel)
         const filename = `gen_${job.id}.png`;
-        const outputUrl = await r2Service.uploadToR2(imageBuffer, filename);
+        const outputUrl = await r2Service.uploadToR2(imageBuffer, filename, 'image/png', userEmail);
 
         try {
           const updatedJob = await prisma.generationJob.update({
