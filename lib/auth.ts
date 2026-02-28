@@ -16,11 +16,13 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           return null;
         }
 
+        const normalizedEmail = (credentials.email as string).toLowerCase().trim();
         const user = await prisma.user.findUnique({
-          where: { email: credentials.email as string },
+          where: { email: normalizedEmail },
         });
 
         if (!user || !user.password) {
+          console.log(`Auth failed: User ${normalizedEmail} not found or no password.`);
           return null;
         }
 
@@ -30,6 +32,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         );
 
         if (!isValid) {
+          console.log(`Auth failed: Invalid password for ${normalizedEmail}.`);
           return null;
         }
 
