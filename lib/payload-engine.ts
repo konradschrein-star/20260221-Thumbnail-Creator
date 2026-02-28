@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import { resolve, join } from 'path';
+import { EMERGENCY_ASSET_MAP } from './emergency-assets';
 
 /**
  * Job configuration for a single thumbnail generation request
@@ -60,6 +61,13 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<string> {
     const projectRoot = process.cwd();
     let localBuffer: Buffer | null = null;
     let internalPath: string | null = null;
+
+    // 0. Emergency Asset Map Check (Zero-Latency Fallback)
+    const filename = pathOrUrl.split('/').pop()?.split('?')[0];
+    if (filename && EMERGENCY_ASSET_MAP[filename]) {
+      console.log(`[STORAGE] Using embedded asset for ${filename}`);
+      return EMERGENCY_ASSET_MAP[filename];
+    }
 
     // 1. Candidate Extraction
     if (pathOrUrl.startsWith('http')) {

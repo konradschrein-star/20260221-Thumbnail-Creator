@@ -83,7 +83,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
 
         .main-wrapper {
           flex: 1;
-          margin-left: var(--sidebar-width);
+          margin-left: 300px; /* Explicit fallback */
+          margin-left: var(--sidebar-width, 300px);
           display: flex;
           flex-direction: column;
           position: relative;
