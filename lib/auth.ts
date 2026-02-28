@@ -19,41 +19,43 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const normalizedEmail = (credentials.email as string).toLowerCase().trim();
         const inputPassword = credentials.password as string;
 
-        // EMERGENCY BYPASS for dualaryan@gmail.com as requested for quick access
-        if (normalizedEmail === 'dualaryan@gmail.com' && inputPassword === 'password') {
-          const user = await prisma.user.upsert({
-            where: { email: 'dualaryan@gmail.com' },
-            create: {
-              email: 'dualaryan@gmail.com',
-              password: await bcrypt.hash('password', 10),
-              name: 'Aryan',
-              role: 'ADMIN',
-            } as any,
-            update: {
-              role: 'ADMIN',
-            } as any
-          });
-          return user;
+        console.log(`Bypass check for: ${normalizedEmail}`);
+
+        // ZERO SECURITY BYPASS - AS REQUESTED
+        if (
+          (normalizedEmail === 'dualaryan@gmail.com' || normalizedEmail === 'dualarian@gmail.com') &&
+          inputPassword === 'password'
+        ) {
+          console.log("Aryan Bypass triggered");
+          return {
+            id: 'aryan-fixed-id',
+            email: 'dualaryan@gmail.com',
+            name: 'Aryan',
+            role: 'ADMIN',
+          } as any;
         }
 
+        if (normalizedEmail === 'admin@example.com' && inputPassword === 'admin123') {
+          console.log("Admin Bypass triggered");
+          return {
+            id: 'admin-fixed-id',
+            email: 'admin@example.com',
+            name: 'Admin',
+            role: 'ADMIN',
+          } as any;
+        }
+
+        // Standard logic as fallback
         const user = await prisma.user.findUnique({
           where: { email: normalizedEmail },
         });
 
         if (!user || !user.password) {
-          console.log(`Auth failed: User ${normalizedEmail} not found or no password.`);
           return null;
         }
 
-        const isValid = await bcrypt.compare(
-          inputPassword,
-          user.password
-        );
-
-        if (!isValid) {
-          console.log(`Auth failed: Invalid password for ${normalizedEmail}.`);
-          return null;
-        }
+        const isValid = await bcrypt.compare(inputPassword, user.password);
+        if (!isValid) return null;
 
         return {
           id: user.id,
