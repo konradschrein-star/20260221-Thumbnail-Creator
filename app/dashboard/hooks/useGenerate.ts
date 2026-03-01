@@ -9,6 +9,8 @@ export interface GeneratePayload {
   thumbnailText: string;
   customPrompt?: string;
   versionCount?: number;
+  includeBrandColors?: boolean;
+  includePersona?: boolean;
 }
 
 export interface JobResult {

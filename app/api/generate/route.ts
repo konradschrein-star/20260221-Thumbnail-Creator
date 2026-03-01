@@ -30,7 +30,16 @@ export async function POST(request: NextRequest) {
 
   try {
     const body = await request.json();
-    const { channelId, archetypeId, videoTopic, thumbnailText, customPrompt, versionCount = 1 } = body;
+    const {
+      channelId,
+      archetypeId,
+      videoTopic,
+      thumbnailText,
+      customPrompt,
+      versionCount = 1,
+      includeBrandColors = true,
+      includePersona = true
+    } = body;
 
     // Strict validation
     if (!channelId || !archetypeId || !videoTopic || !thumbnailText) {
@@ -65,18 +74,22 @@ export async function POST(request: NextRequest) {
     if (!archetype) archetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId) || EMERGENCY_ARCHETYPES[0];
 
     // Build base payload using the engine's data-driven approach
-    const defaultPersona = `${channel.personaDescription || ''} ${archetype.layoutInstructions || ''}`.trim();
+    // Respect the user's manual preference toggles for Brand Colors and Persona Integration
+    const brand = payloadEngine.getBrandingContext(videoTopic, channel as any);
+    const systemPrompt = payloadEngine.buildSystemPrompt(channel as any, archetype as any, includeBrandColors ? brand : undefined);
+    const userPrompt = payloadEngine.buildUserPrompt({ videoTopic, thumbnailText }, !!(channel as any).logoAssetPath);
+
     const payload: payloadEngine.AIRequestPayload = {
-      systemPrompt: customPrompt || defaultPersona || 'Create a professional YouTube thumbnail.',
+      systemPrompt: customPrompt || systemPrompt || 'Create a professional YouTube thumbnail.',
       userPrompt: `Create a professional YouTube thumbnail.\n\nTopic: ${videoTopic}\nText to display: "${thumbnailText}"\n\nUse the reference image for style inspiration.`,
       base64Images: {
         archetype: await payloadEngine.encodeImageToBase64(archetype.imageUrl),
-        persona: (channel as any).personaAssetPath
+        persona: (includePersona && (channel as any).personaAssetPath)
           ? await payloadEngine.encodeImageToBase64((channel as any).personaAssetPath)
-          : { data: '', mimeType: 'image/jpeg' },
+          : undefined,
         logo: (channel as any).logoAssetPath
           ? await payloadEngine.encodeImageToBase64((channel as any).logoAssetPath)
-          : { data: '', mimeType: 'image/png' },
+          : undefined,
       },
     };
 

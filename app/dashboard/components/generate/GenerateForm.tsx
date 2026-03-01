@@ -46,6 +46,8 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
   const [showDraftPrompt, setShowDraftPrompt] = useState(!!initialData?.promptUsed);
   const [archetypeSearch, setArchetypeSearch] = useState('');
   const [versionCount, setVersionCount] = useState(1);
+  const [includeBrandColors, setIncludeBrandColors] = useState(true);
+  const [includePersona, setIncludePersona] = useState(true);
   const [validationErrors, setValidationErrors] = useState<{
     channelId?: string;
     archetypeId?: string;
@@ -123,6 +125,8 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
         if (state.draftPrompt) setDraftPrompt(state.draftPrompt);
         if (state.versionCount) setVersionCount(state.versionCount);
         if (state.showDraftPrompt) setShowDraftPrompt(state.showDraftPrompt);
+        if (state.includeBrandColors !== undefined) setIncludeBrandColors(state.includeBrandColors);
+        if (state.includePersona !== undefined) setIncludePersona(state.includePersona);
       } catch (e) {
         console.error('Failed to load form state', e);
       }
@@ -137,10 +141,12 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
       thumbnailText,
       draftPrompt,
       versionCount,
-      showDraftPrompt
+      showDraftPrompt,
+      includeBrandColors,
+      includePersona
     };
     sessionStorage.setItem('generate_form_state', JSON.stringify(state));
-  }, [selectedChannelId, archetypeId, videoTopic, thumbnailText, draftPrompt, versionCount, showDraftPrompt]);
+  }, [selectedChannelId, archetypeId, videoTopic, thumbnailText, draftPrompt, versionCount, showDraftPrompt, includeBrandColors, includePersona]);
 
   const validate = (): boolean => {
     const errors: any = {};
@@ -192,6 +198,8 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
         thumbnailText: thumbnailText.trim(),
         customPrompt: draftPrompt.trim() || undefined,
         versionCount,
+        includeBrandColors,
+        includePersona,
       });
     } catch (err) {
       // Error is handled by useGenerate hook
@@ -306,20 +314,23 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
                       ))}
                     </select>
                     {selectedChannelId && (
-                      <div className="preview-small-card glass-dark">
-                        {channels.find((c: any) => c.id === selectedChannelId)?.personaAssetPath && (
-                          <div className="preview-item">
-                            <span className="preview-label">Persona</span>
-                            <img src={channels.find((c: any) => c.id === selectedChannelId)?.personaAssetPath} alt="Persona preview" />
-                          </div>
-                        )}
-                        {channels.find((c: any) => c.id === selectedChannelId)?.logoAssetPath && (
-                          <div className="preview-item">
-                            <span className="preview-label">Logo</span>
-                            <img src={channels.find((c: any) => c.id === selectedChannelId)?.logoAssetPath} alt="Logo preview" />
-                          </div>
-                        )}
-                      </div>
+                      (channels.find((c: any) => c.id === selectedChannelId)?.personaAssetPath ||
+                        channels.find((c: any) => c.id === selectedChannelId)?.logoAssetPath) && (
+                        <div className="preview-small-card glass-dark">
+                          {channels.find((c: any) => c.id === selectedChannelId)?.personaAssetPath && (
+                            <div className="preview-item">
+                              <span className="preview-label">Persona</span>
+                              <img src={channels.find((c: any) => c.id === selectedChannelId)?.personaAssetPath} alt="Persona preview" />
+                            </div>
+                          )}
+                          {channels.find((c: any) => c.id === selectedChannelId)?.logoAssetPath && (
+                            <div className="preview-item">
+                              <span className="preview-label">Logo</span>
+                              <img src={channels.find((c: any) => c.id === selectedChannelId)?.logoAssetPath} alt="Logo preview" />
+                            </div>
+                          )}
+                        </div>
+                      )
                     )}
                     {validationErrors.channelId && (
                       <div className="error-text">{validationErrors.channelId}</div>
@@ -403,6 +414,29 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
                           disabled={loading}
                         />
                         <p className="field-hint">You can manually tweak the AI's instructions here before generating.</p>
+
+                        <div className="advanced-toggles-grid">
+                          <label className="checkbox-label">
+                            <input
+                              type="checkbox"
+                              checked={includeBrandColors}
+                              onChange={(e) => setIncludeBrandColors(e.target.checked)}
+                              disabled={loading}
+                              className="custom-checkbox"
+                            />
+                            <span className="checkbox-text">Include Brand Colors</span>
+                          </label>
+                          <label className="checkbox-label">
+                            <input
+                              type="checkbox"
+                              checked={includePersona}
+                              onChange={(e) => setIncludePersona(e.target.checked)}
+                              disabled={loading}
+                              className="custom-checkbox"
+                            />
+                            <span className="checkbox-text">Include Persona (if available)</span>
+                          </label>
+                        </div>
                       </div>
                     </BlurFade>
                   )}
@@ -759,6 +793,43 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
 
         .advanced-content {
           animation: slide-down 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        .advanced-toggles-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 1rem;
+          margin-top: 1rem;
+        }
+
+        .checkbox-label {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1rem;
+          background: rgba(255, 255, 255, 0.03);
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          cursor: pointer;
+          transition: all 0.2s ease;
+        }
+
+        .checkbox-label:hover {
+          background: rgba(255, 255, 255, 0.05);
+          border-color: #52525b;
+        }
+        
+        .custom-checkbox {
+          accent-color: #ffffff;
+          width: 1rem;
+          height: 1rem;
+          cursor: pointer;
+        }
+
+        .checkbox-text {
+          font-size: 0.8rem;
+          color: var(--muted-foreground);
+          font-weight: 500;
         }
 
         .generation-status {
