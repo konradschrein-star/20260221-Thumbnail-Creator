@@ -30,7 +30,7 @@ export async function POST(request: NextRequest) {
         }
 
         // 2. Spawn translation jobs (represented as VariantJob records)
-        const variants = await Promise.all(targetLanguages.map(async (lang: string) => {
+        const variantPromises = targetLanguages.map(async (lang: string) => {
             return (prisma as any).variantJob.create({
                 data: {
                     masterJobId: masterJob.id,
@@ -39,7 +39,16 @@ export async function POST(request: NextRequest) {
                     status: 'pending'
                 }
             });
-        }));
+        });
+
+        const settledVariants = await Promise.allSettled(variantPromises);
+
+        const successVariants = settledVariants
+            .filter((result): result is PromiseFulfilledResult<any> => result.status === 'fulfilled')
+            .map(result => result.value);
+
+        const failedCount = settledVariants.length - successVariants.length;
+        const variants = successVariants;
 
         // Note: In a production environment, we would also trigger the actual generation 
         // for each variant here, likely reusing the master job's scene but with translated text.

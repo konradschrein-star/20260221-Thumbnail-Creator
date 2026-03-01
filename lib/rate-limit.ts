@@ -70,8 +70,14 @@ export async function checkManualRateLimit(
       );
     }
   } catch (error) {
-    console.error('Rate limit DB check failed, bypassing:', error);
-    return null;
+    console.error('Rate limit DB check failed, blocking to prevent credit waste:', error);
+    return NextResponse.json(
+      {
+        error: 'Service currently unavailable. Please try again later.',
+        message: 'Could not verify rate limits due to a database connection issue.',
+      },
+      { status: 503 }
+    );
   }
 
   return null;

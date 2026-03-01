@@ -66,7 +66,7 @@ export async function POST(request: NextRequest) {
         logoAssetPath,
         primaryColor: primaryColor || '#ffffff',
         secondaryColor: secondaryColor || '#000000',
-        tags: Array.isArray(tags) ? tags.join(',') : (tags || null)
+        tags: typeof tags === 'string' ? (tags.trim() || null) : (Array.isArray(tags) && tags.length > 0 ? tags.join(',') : null)
       },
     });
 

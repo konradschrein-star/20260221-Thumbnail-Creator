@@ -17,10 +17,10 @@ export async function POST(request: NextRequest) {
   }
 
   const userId = session.user.id;
-  const userEmail = session.user.email || 'test@titan.ai';
-  const userRole = (session.user as any).role || 'USER';
-  const isSuperuser = (session.user as any).isSuperuser || false;
-  const isTestUser = (session.user as any).isTestUser || false;
+  const userEmail = session.user?.email || 'test@titan.ai';
+  const userRole = (session.user as any)?.role || 'USER';
+  const isSuperuser = (session.user as any)?.isSuperuser || false;
+  const isTestUser = (session.user as any)?.isTestUser || false;
 
   // Enforce manual generation limit (10/day for USER role, shared for Test User)
   const rateLimitResponse = await checkManualRateLimit(userId, userRole, isSuperuser, isTestUser);
@@ -47,7 +47,8 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    const count = Math.min(Math.max(Number(versionCount) || 1, 1), 4);
+    const rawCount = parseInt(String(versionCount), 10);
+    const count = Math.min(Math.max(isNaN(rawCount) ? 1 : rawCount, 1), 4);
     const results = [];
 
     // Fetch channel and archetype
@@ -64,8 +65,9 @@ export async function POST(request: NextRequest) {
     if (!archetype) archetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId) || EMERGENCY_ARCHETYPES[0];
 
     // Build base payload using the engine's data-driven approach
+    const defaultPersona = `${channel.personaDescription || ''} ${archetype.layoutInstructions || ''}`.trim();
     const payload: payloadEngine.AIRequestPayload = {
-      systemPrompt: customPrompt || `${channel.personaDescription} ${archetype.layoutInstructions}`,
+      systemPrompt: customPrompt || defaultPersona || 'Create a professional YouTube thumbnail.',
       userPrompt: `Create a professional YouTube thumbnail.\n\nTopic: ${videoTopic}\nText to display: "${thumbnailText}"\n\nUse the reference image for style inspiration.`,
       base64Images: {
         archetype: await payloadEngine.encodeImageToBase64(archetype.imageUrl),
