@@ -35,10 +35,10 @@ export default function GlobalError({
                         </button>
                         <button
                             onClick={() => window.location.href = '/'}
-                            className="border-white/10 text-white hover:bg-white/5"
+                            className="border-white/10 text-white hover:bg-white/5 px-4 py-2 rounded transition"
                         >
                             Go Home
-                        </Button>
+                        </button>
                     </div>
                 </div>
             </body>
