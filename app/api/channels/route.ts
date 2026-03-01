@@ -61,12 +61,12 @@ export async function POST(request: NextRequest) {
       data: {
         name,
         personaDescription,
-        userId: session.user.id, // Fixed: correctly linking channel to user
+        user: { connect: { id: session.user.id } },
         personaAssetPath,
         logoAssetPath,
         primaryColor: primaryColor || '#ffffff',
         secondaryColor: secondaryColor || '#000000',
-        tags: tags || []
+        tags: Array.isArray(tags) ? tags.join(',') : (tags || null)
       },
     });
 
