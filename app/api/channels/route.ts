@@ -61,14 +61,12 @@ export async function POST(request: NextRequest) {
       data: {
         name,
         personaDescription,
-        // Fallback for stale client: only include new fields if the client knows them
-        ...(typeof (prisma.channel as any).fields?.primaryColor !== 'undefined' ? {
-          personaAssetPath,
-          logoAssetPath,
-          primaryColor: primaryColor || '#ffffff',
-          secondaryColor: secondaryColor || '#000000',
-          tags
-        } : {})
+        userId: session.user.id, // Fixed: correctly linking channel to user
+        personaAssetPath,
+        logoAssetPath,
+        primaryColor: primaryColor || '#ffffff',
+        secondaryColor: secondaryColor || '#000000',
+        tags: tags || []
       },
     });
 

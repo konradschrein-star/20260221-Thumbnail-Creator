@@ -10,35 +10,30 @@ async function main() {
     console.log('DATABASE_URL:', process.env.DATABASE_URL ? '[REDACTED]' : 'MISSING');
     console.log('DIRECT_URL:', process.env.DIRECT_URL ? '[REDACTED]' : 'MISSING');
 
-    const prisma = new PrismaClient({
-        datasources: {
-            db: {
-                url: process.env.DATABASE_URL
-            }
+    const testConnection = async (url: string | undefined, name: string) => {
+        if (!url) {
+            console.log(`\n⚠️  Skipping ${name} (Missing variable)`);
+            return;
         }
-    });
 
-    try {
-        console.log('\nAttempting to connect to database...');
-        // Simple query to test connection
-        const userCount = await prisma.user.count();
-        console.log('✅ Successfully connected to database!');
-        console.log(`User count in DB: ${userCount}`);
-    } catch (error: any) {
-        console.error('\n❌ Connection failed!');
-        console.error('Error Code:', error.code || 'N/A');
-        console.error('Error Message:', error.message);
+        console.log(`\nAttempting to connect to ${name}...`);
+        const client = new PrismaClient({
+            datasources: { db: { url } }
+        });
 
-        if (error.message.includes('Can\'t reach database server')) {
-            console.log('\n💡 TROUBLESHOOTING TIP:');
-            console.log('1. Check if your Supabase project is PAUSED (log in to Supabase dashboard).');
-            console.log('2. Verify your IP is allowed in the database firewall settings.');
-            console.log('3. If using port 6543 (PgBouncer), ensure ?pgbouncer=true is in the URL.');
-            console.log('4. Ensure your internet connection is stable.');
+        try {
+            const userCount = await client.user.count();
+            console.log(`✅ ${name} Success! (User count: ${userCount})`);
+        } catch (error: any) {
+            console.error(`❌ ${name} Failed!`);
+            console.error('Error:', error.message);
+        } finally {
+            await client.$disconnect();
         }
-    } finally {
-        await prisma.$disconnect();
-    }
+    };
+
+    await testConnection(process.env.DATABASE_URL, 'DATABASE_URL (Transaction/Pool)');
+    await testConnection(process.env.DIRECT_URL, 'DIRECT_URL (Session/Direct)');
 }
 
 main();
