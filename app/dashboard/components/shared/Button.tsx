@@ -100,27 +100,6 @@ export default function Button({
           background: rgba(255, 255, 255, 0.05);
           color: var(--foreground);
         }
-
-        /* Shine Effect for Primary */
-        .btn-primary::after {
-          content: "";
-          position: absolute;
-          top: 0;
-          left: -100%;
-          width: 100%;
-          height: 100%;
-          background: linear-gradient(
-            90deg,
-            transparent,
-            rgba(255, 255, 255, 0.2),
-            transparent
-          );
-          transition: 0.5s;
-        }
-
-        .btn-primary:hover::after {
-          left: 100%;
-        }
       `}</style>
     </button>
   );

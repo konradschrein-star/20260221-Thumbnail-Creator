@@ -99,11 +99,6 @@ export default function ArchetypeCard({ archetype, onEdit, onDelete }: Archetype
           width: 100%;
           height: 100%;
           object-fit: cover;
-          transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
-        }
-
-        .archetype-card-wrapper:hover .preview-img {
-          transform: scale(1.1);
         }
 
         .image-overlay {
