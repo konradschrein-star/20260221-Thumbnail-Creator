@@ -108,7 +108,7 @@ export default function InfiniteLoom() {
           transition={{ duration: 1.5, ease: "easeOut" }}
           className="hero"
         >
-          <h1 className="title">Thumbnail Tool.</h1>
+          <h1 className="title">The Thumbnail Tool</h1>
         </motionDom.header>
 
         <LoginForm variant="liquid" className="loom-login" />
@@ -166,9 +166,6 @@ export default function InfiniteLoom() {
           letter-spacing: -0.01em;
           color: #fff;
           white-space: nowrap;
-          background: linear-gradient(to bottom, #fff 40%, #c084fc 100%);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
           filter: drop-shadow(0 0 40px rgba(168, 85, 247, 0.4));
           margin-bottom: 1rem;
         }

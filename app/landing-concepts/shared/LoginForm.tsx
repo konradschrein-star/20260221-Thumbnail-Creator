@@ -87,12 +87,12 @@ export default function LoginForm({ className = '', variant = 'glass' }: LoginFo
         <div className="card-header">
           <h2 className="title">
             <Sparkles size={20} className="icon" />
-            {showRequest ? "Apply for Access" : "Command Center"}
+            {showRequest ? "Apply for Access" : "Type your credentials in here"}
           </h2>
           <p className="subtitle">
             {showRequest
               ? "Join the elite creator network."
-              : "Synthesis begins with authentication."}
+              : "or request access."}
           </p>
         </div>
 
