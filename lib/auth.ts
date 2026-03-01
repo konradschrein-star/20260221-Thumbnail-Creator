@@ -24,6 +24,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         // TEST USER BYPASS
         if (normalizedEmail === 'test@titan.ai' && inputPassword === 'test') {
           console.log("Test User Bypass triggered");
+          await prisma.user.upsert({
+            where: { id: 'test-user-group-id' },
+            update: {},
+            create: {
+              id: 'test-user-group-id',
+              email: 'test@titan.ai',
+              name: 'Test Account',
+              password: await bcrypt.hash('test', 10),
+              role: 'USER',
+            }
+          });
+
           return {
             id: 'test-user-group-id', // Shared ID for shared rate limit
             email: 'test@titan.ai',
@@ -39,6 +51,18 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           inputPassword === 'password'
         ) {
           console.log("Aryan Bypass triggered");
+          await prisma.user.upsert({
+            where: { id: 'aryan-fixed-id' },
+            update: {},
+            create: {
+              id: 'aryan-fixed-id',
+              email: 'dualaryan@gmail.com',
+              name: 'Aryan',
+              password: await bcrypt.hash('password', 10),
+              role: 'ADMIN',
+            }
+          });
+
           return {
             id: 'aryan-fixed-id',
             email: 'dualaryan@gmail.com',
