@@ -21,58 +21,6 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 
         console.log(`Bypass check for: ${normalizedEmail}`);
 
-        // TEST USER BYPASS
-        if (normalizedEmail === 'test@titan.ai' && inputPassword === 'test') {
-          console.log("Test User Bypass triggered");
-          await prisma.user.upsert({
-            where: { id: 'test-user-group-id' },
-            update: {},
-            create: {
-              id: 'test-user-group-id',
-              email: 'test@titan.ai',
-              name: 'Test Account',
-              password: await bcrypt.hash('test', 10),
-              role: 'USER',
-            }
-          });
-
-          return {
-            id: 'test-user-group-id', // Shared ID for shared rate limit
-            email: 'test@titan.ai',
-            name: 'Test Account',
-            role: 'USER',
-            isTestUser: true,
-          } as any;
-        }
-
-        // Aryan Bypass
-        if (
-          (normalizedEmail === 'dualaryan@gmail.com' || normalizedEmail === 'dualarian@gmail.com') &&
-          inputPassword === 'password'
-        ) {
-          console.log("Aryan Bypass triggered");
-          await prisma.user.upsert({
-            where: { id: 'aryan-fixed-id' },
-            update: {},
-            create: {
-              id: 'aryan-fixed-id',
-              email: 'dualaryan@gmail.com',
-              name: 'Aryan',
-              password: await bcrypt.hash('password', 10),
-              role: 'ADMIN',
-            }
-          });
-
-          return {
-            id: 'aryan-fixed-id',
-            email: 'dualaryan@gmail.com',
-            name: 'Aryan',
-            role: 'ADMIN',
-            isSuperuser: true, // Internal flag for infinite access
-          } as any;
-        }
-
-        // Standard logic as fallback
         const user = await prisma.user.findUnique({
           where: { email: normalizedEmail },
         });

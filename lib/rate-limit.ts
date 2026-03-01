@@ -22,7 +22,6 @@ export async function checkManualRateLimit(
   userId: string,
   userRole: string = 'USER',
   isSuperuser: boolean = false,
-  isTestUser: boolean = false,
   config: RateLimitConfig = { tokensPerInterval: 10, interval: 'day' }
 ): Promise<NextResponse | null> {
   // Superusers (Aron) are exempt from rate limits
@@ -31,22 +30,13 @@ export async function checkManualRateLimit(
   const yesterday = new Date(Date.now() - 24 * 60 * 60 * 1000);
 
   try {
-    // If it's a test user, we check the global count for all test users
-    // If it's a regular user, we check only their own count
     const whereClause: any = {
       isManual: true,
+      userId: userId,
       createdAt: {
         gte: yesterday,
       },
     };
-
-    if (isTestUser) {
-      // Test users share the same "test-user-group-id" or we can filter by isTestUser if we store it
-      // For now, if isTestUser is true, we limit based on the specific shared ID
-      whereClause.userId = 'test-user-group-id';
-    } else {
-      whereClause.userId = userId;
-    }
 
     const manualJobsCount = await prisma.generationJob.count({
       where: whereClause,
@@ -56,9 +46,7 @@ export async function checkManualRateLimit(
       return NextResponse.json(
         {
           error: 'Daily generation limit reached.',
-          message: isTestUser
-            ? `The test account shared limit (${config.tokensPerInterval}/day) has been reached. Please try again tomorrow or use your own account.`
-            : `You have already generated ${manualJobsCount} images in the last 24 hours. Your limit is ${config.tokensPerInterval} per day.`,
+          message: `You have already generated ${manualJobsCount} images in the last 24 hours. Your limit is ${config.tokensPerInterval} per day.`,
         },
         {
           status: 429,
