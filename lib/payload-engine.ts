@@ -174,7 +174,9 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
 
   } catch (error: any) {
     console.error(`[ENCODER ERROR] ${pathOrUrl}:`, error.message);
-    throw new Error(`Failed to encode image: ${error.message}`);
+    // Instead of throwing and blowing up the entire generation process,
+    // we return a safe empty image structure if we can't find an optional asset.
+    return { data: '', mimeType: 'image/jpeg' };
   }
 }
 

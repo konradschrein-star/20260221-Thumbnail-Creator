@@ -18,7 +18,13 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
   const [personaDescription, setPersonaDescription] = useState(initialData?.personaDescription || '');
   const [primaryColor, setPrimaryColor] = useState(initialData?.primaryColor || '#ffffff');
   const [secondaryColor, setSecondaryColor] = useState(initialData?.secondaryColor || '#000000');
-  const [tags, setTags] = useState(initialData?.tags || '');
+  // We store tags as an array internally to work with the UI, 
+  // but it may come from the DB as a comma-separated string.
+  const [tags, setTags] = useState<string[]>(
+    initialData?.tags
+      ? (typeof initialData.tags === 'string' ? initialData.tags.split(',') : initialData.tags)
+      : []
+  );
   const [errors, setErrors] = useState<{ name?: string; personaDescription?: string }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
@@ -29,7 +35,7 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
       setPersonaDescription(initialData.personaDescription);
       setPrimaryColor(initialData.primaryColor || '#ffffff');
       setSecondaryColor(initialData.secondaryColor || '#000000');
-      setTags(initialData.tags || '');
+      setTags(initialData.tags ? (typeof initialData.tags === 'string' ? initialData.tags.split(',') : initialData.tags) : []);
     }
   }, [initialData]);
 
@@ -64,7 +70,7 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
         personaDescription: personaDescription.trim(),
         primaryColor,
         secondaryColor,
-        tags: tags.trim(),
+        tags: tags.join(','), // Always serialize out as comma-separated string
       });
     } catch (err: any) {
       setSubmitError(err.message || 'Failed to save channel');
@@ -116,13 +122,17 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
             placeholder="#000000"
           />
         </div>
-        <Input
-          label="Branding Tags"
-          value={tags}
-          onChange={setTags}
-          placeholder="minimal, vibrant, dark, tech..."
-          description="Comma-separated tokens that influence AI style."
-        />
+        <div className="input-group">
+          <label>Branding Tags (Comma separated)</label>
+          <input
+            type="text"
+            className="w-full px-4 py-2 bg-black/20 border border-white/10 rounded-lg text-white placeholder:text-white/30 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all"
+            value={tags.join(', ')}
+            onChange={(e) => setTags(e.target.value.split(',').map(t => t.trim()).filter(Boolean))}
+            placeholder="minimal, vibrant, dark, tech..."
+          />
+          <p className="text-xs text-white/50 mt-1">Comma-separated tokens that influence AI style.</p>
+        </div>
       </div>
 
       <div className="tip-box">
