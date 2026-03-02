@@ -99,24 +99,28 @@ export async function callNanoBanana(
       const isUnavailable = msg.includes("503") || msg.includes("UNAVAILABLE") || status === 503 || msg.includes("high demand");
 
       if (isUnavailable) {
-        console.warn('   ⚠️ Nano Banana is unavailable due to high demand. Retrying taking a backup model (gemini-2.5-pro) so we can at least test our generation engine...');
+        console.warn('   ⚠️ Nano Banana is unavailable due to high demand. Retrying taking a backup model (imagen-3.0-generate-001) so we can at least test our generation engine...');
         try {
-          response = await callWithPayload(primaryContent, 'gemini-2.5-pro');
-        } catch (backupError: any) {
-          const backupMsg = backupError.message || "";
-          if (backupMsg.includes("Unable to process input image") && imageParts.length > 1) {
-            console.warn('   ⚠️ Backup model multi-image payload failed. Retrying with Archetype ONLY...');
-            const fallbackContent = {
-              role: 'user',
-              parts: [
-                { text: fullPrompt },
-                { inlineData: imageParts[0].inlineData }
-              ]
-            };
-            response = await callWithPayload(fallbackContent, 'gemini-2.5-pro');
-          } else {
-            throw backupError;
+          const imgResponse = await ai.models.generateImages({
+            model: 'imagen-3.0-generate-001',
+            prompt: fullPrompt,
+            config: {
+              numberOfImages: 1,
+              aspectRatio: "16:9"
+            }
+          });
+
+          if (imgResponse.generatedImages && imgResponse.generatedImages.length > 0) {
+            const base64Data = imgResponse.generatedImages[0].image?.imageBytes;
+            if (base64Data) {
+              const buffer = Buffer.from(base64Data, 'base64');
+              console.log(`   ✓ Received fallback image data: ${base64Data.length} chars (${(buffer.length / 1024).toFixed(1)}KB)`);
+              return buffer;
+            }
           }
+          throw new Error("Imagen 3 fallback failed to return an image.");
+        } catch (backupError: any) {
+          throw backupError;
         }
       } else if (msg.includes("Unable to process input image") && imageParts.length > 1) {
         console.warn('   ⚠️ Multi-image payload failed. Retrying with Archetype ONLY...');
