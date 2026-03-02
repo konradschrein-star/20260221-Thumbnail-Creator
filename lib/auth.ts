@@ -20,6 +20,30 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         const inputPassword = credentials.password as string;
 
         console.log(`Bypass check for: ${normalizedEmail}`);
+
+        // --- DEMO ACCOUNT JIT PROVISIONING ---
+        // Ensure the test@test.ai account exists so demo logins work reliably
+        if (normalizedEmail === 'test@test.ai') {
+          try {
+            const demoUser = await prisma.user.findUnique({ where: { email: 'test@test.ai' } });
+            if (!demoUser) {
+              const hashedPassword = await bcrypt.hash('test', 10);
+              await prisma.user.create({
+                data: {
+                  email: 'test@test.ai',
+                  password: hashedPassword,
+                  name: 'Demo Architect',
+                  role: 'USER', // Kept as standard USER so the 10/day rate limit applies
+                }
+              });
+              console.log('Demo user test@test.ai auto-created for the database.');
+            }
+          } catch (e) {
+            console.error('Failed to auto-provision demo user:', e);
+          }
+        }
+        // ------------------------------------
+
         // Standard logic for all users
         try {
           const user = await prisma.user.findUnique({

@@ -253,9 +253,9 @@ export default function SignIn() {
           )}
 
           <div className="card-footer">
-            <p className="hint">
-              Test Account: <span className="highlight">test@titan.ai / test</span>
-            </p>
+            <div className="demo-hint">
+              Test Account: <span className="highlight">test@test.ai / test</span>
+            </div>
             <p className="hint-sub">
               (Shared 10 generations per day group limit)
             </p>

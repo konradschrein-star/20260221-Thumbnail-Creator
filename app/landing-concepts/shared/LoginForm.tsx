@@ -205,11 +205,18 @@ export default function LoginForm({ className = '', variant = 'glass' }: LoginFo
         )}
 
         <div className="card-footer">
-          <p>Demo: test@titan.ai / test</p>
+          <p className="demo-credentials">Demo account: <strong>test@test.ai</strong> / <strong>test</strong></p>
         </div>
       </div>
 
       <style jsx>{`
+        .demo-credentials {
+          font-size: 1.1rem;
+          text-align: center;
+          margin: 0;
+          color: rgba(255, 255, 255, 0.8);
+        }
+
         .login-form-wrapper {
           width: 100%;
           max-width: 400px;
