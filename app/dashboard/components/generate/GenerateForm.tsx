@@ -241,6 +241,20 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
                 <p>Your premium thumbnail{result.jobs && result.jobs.length > 1 ? 's have' : ' has'} been generated.</p>
               </div>
 
+              {(result.jobs || [result.job]).some(job => job.fallbackUsed) && (
+                <div className="fallback-warning-banner glass-dark" style={{ border: '1px solid #eab308', backgroundColor: 'rgba(234, 179, 8, 0.1)', padding: '1rem', borderRadius: '8px', marginBottom: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textAlign: 'left' }}>
+                  <div style={{ color: '#eab308', marginTop: '0.1rem' }}>
+                    <Zap size={20} />
+                  </div>
+                  <div>
+                    <strong style={{ color: '#eab308', display: 'block', marginBottom: '0.2rem', fontSize: '15px' }}>High Demand Fallback Triggered</strong>
+                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.8)', fontSize: '13px', lineHeight: '1.4' }}>
+                      {(result.jobs || [result.job]).find(job => job.fallbackUsed)?.fallbackMessage || "Nano Banana Pro was busy. We successfully fell back to Nano Banana 2 (Flash Image)."}
+                    </p>
+                  </div>
+                </div>
+              )}
+
               <div className={`result-preview-grid ${result.jobs && result.jobs.length > 1 ? 'multi' : 'single'}`}>
                 {(result.jobs || [result.job]).map((job, idx) => (
                   <div key={job.id || idx} className="result-item glass">

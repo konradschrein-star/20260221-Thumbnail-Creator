@@ -116,7 +116,7 @@ export async function POST(request: NextRequest) {
       }
 
       try {
-        const imageBuffer = await generationService.callNanoBanana(payload, process.env.GOOGLE_API_KEY!);
+        const { buffer: imageBuffer, fallbackUsed, fallbackMessage } = await generationService.callNanoBanana(payload, process.env.GOOGLE_API_KEY!);
 
         // Upload to R2 (Mandatory for Vercel)
         const filename = `gen_${job.id}.png`;
@@ -128,14 +128,14 @@ export async function POST(request: NextRequest) {
             data: {
               status: 'completed',
               outputUrl,
-              promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}`,
+              promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}${fallbackUsed ? `\n\n[FALLBACK TRIGGERED: ${fallbackMessage}]` : ''}`,
               completedAt: new Date()
             },
           } as any);
-          results.push(updatedJob);
+          results.push({ ...updatedJob, fallbackUsed, fallbackMessage });
         } catch (dbError) {
           console.error('DB job update (complete) failed:', dbError);
-          results.push({ ...job, status: 'completed', outputUrl });
+          results.push({ ...job, status: 'completed', outputUrl, fallbackUsed, fallbackMessage });
         }
       } catch (error: any) {
         console.error(`Version ${i} failed:`, error);

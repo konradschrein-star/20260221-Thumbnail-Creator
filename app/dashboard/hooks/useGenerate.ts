@@ -18,6 +18,8 @@ export interface JobResult {
   outputUrl: string;
   status: string;
   errorMessage?: string;
+  fallbackUsed?: boolean;
+  fallbackMessage?: string;
 }
 
 export interface GenerateResult {

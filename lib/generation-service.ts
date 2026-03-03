@@ -38,34 +38,22 @@ export function initializeClient(apiKey: string): GoogleGenAI {
 export async function callNanoBanana(
   payload: AIRequestPayload,
   apiKey: string
-): Promise<Buffer> {
+): Promise<{ buffer: Buffer; fallbackUsed: boolean; fallbackMessage?: string }> {
   try {
-    const ai = initializeClient(apiKey);
+    const ai = new GoogleGenAI({ apiKey });
 
-    // Format reference images: archetype, persona, and optional logo
-    const imageParts: any[] = [];
+    const fullPrompt = `System:\n${payload.systemPrompt}\n\nUser:\n${payload.userPrompt}`;
 
-    const addImagePart = (image?: { data: string; mimeType: string }) => {
-      if (!image || !image.data || image.data.trim() === '') return;
-
-      imageParts.push({
-        inlineData: {
-          data: image.data,
-          mimeType: image.mimeType
-        }
-      });
-    };
-
-    addImagePart(payload.base64Images.archetype);
-    addImagePart(payload.base64Images.persona);
-    addImagePart(payload.base64Images.logo);
-
-    if (imageParts.length === 0) {
-      throw new Error('At least one reference image (archetype) is required for Nano Banana.');
+    const imageParts: { inlineData: { data: string; mimeType: string } }[] = [];
+    if (payload.base64Images?.archetype) {
+      imageParts.push({ inlineData: { data: payload.base64Images.archetype.data, mimeType: "image/png" } });
     }
-
-    // Merge system and user prompts
-    const fullPrompt = `${payload.systemPrompt}\n\n${payload.userPrompt}`;
+    if (payload.base64Images?.persona) {
+      imageParts.push({ inlineData: { data: payload.base64Images.persona.data, mimeType: "image/png" } });
+    }
+    if (payload.base64Images?.logo) {
+      imageParts.push({ inlineData: { data: payload.base64Images.logo.data, mimeType: "image/png" } });
+    }
 
     // Unified multi-part content (RELEVENT: Gemini preview models often fail if parts are split across messages)
     const primaryContent = {
@@ -76,9 +64,9 @@ export async function callNanoBanana(
       ]
     };
 
-    const callWithPayload = async (content: any) => {
+    const callWithPayload = async (content: any, modelName: string = 'gemini-3-pro-image-preview') => {
       return await ai.models.generateContent({
-        model: 'nano-banana-pro-preview',
+        model: modelName,
         contents: [content],
         config: {
           responseModalities: ["IMAGE"],
@@ -90,13 +78,30 @@ export async function callNanoBanana(
     };
 
     let response;
+    let fallbackUsed = false;
+    let fallbackMessage = "";
+
     try {
-      console.log('   Calling Nano Banana (Unified Payload)...');
-      response = await callWithPayload(primaryContent);
+      console.log('   Calling Nano Banana Pro (Unified Payload)...');
+      // "Nano Banana Pro" = gemini-3-pro-image-preview
+      response = await callWithPayload(primaryContent, 'gemini-3-pro-image-preview');
     } catch (error: any) {
       const msg = error.message || "";
-      if (msg.includes("Unable to process input image") && imageParts.length > 1) {
-        console.warn('   ⚠️ Multi-image payload failed. Retrying with Archetype ONLY...');
+      const status = error.status || error.statusCode || error.code;
+      const isUnavailable = msg.includes("503") || msg.includes("UNAVAILABLE") || status === 503 || msg.includes("high demand");
+
+      if (isUnavailable) {
+        console.warn('   ⚠️ Nano Banana Pro is unavailable. Falling back to Nano Banana 2 (gemini-3.1-flash-image-preview)...');
+        // "Nano Banana 2" = gemini-3.1-flash-image-preview
+        try {
+          response = await callWithPayload(primaryContent, 'gemini-3.1-flash-image-preview');
+          fallbackUsed = true;
+          fallbackMessage = "Nano Banana Pro was busy. We successfully fell back to Nano Banana 2 (Flash Image).";
+        } catch (backupError: any) {
+          throw backupError;
+        }
+      } else if (msg.includes("Unable to process input image") && imageParts.length > 1) {
+        console.warn('   ⚠️ Multi-image payload failed. Retrying with Archetype ONLY on Nano Banana Pro...');
         const fallbackContent = {
           role: 'user',
           parts: [
@@ -104,7 +109,7 @@ export async function callNanoBanana(
             { inlineData: imageParts[0].inlineData }
           ]
         };
-        response = await callWithPayload(fallbackContent);
+        response = await callWithPayload(fallbackContent, 'gemini-3-pro-image-preview');
       } else {
         throw error;
       }
@@ -132,29 +137,25 @@ export async function callNanoBanana(
 
     // Extract the base64 image data from the response part
     if (!response.candidates || response.candidates.length === 0) {
-      console.log('');
-      console.log('DEBUG: Full API response:');
-      console.log(JSON.stringify(response, null, 2));
-      console.log('');
-      throw new Error('API returned successfully, but no candidates were found in the response.');
+      throw new Error("No candidates returned from Gemini API.");
     }
 
-    const firstCandidate = response.candidates[0];
-    if (!firstCandidate.content || !firstCandidate.content.parts || firstCandidate.content.parts.length === 0) {
-      throw new Error('API returned successfully, but no content parts were found in the response.');
+    const candidate = response.candidates[0];
+    if (!candidate.content || !candidate.content.parts || candidate.content.parts.length === 0) {
+      throw new Error("No parts in candidate from Gemini API.");
     }
 
-    const firstPart = firstCandidate.content.parts[0];
-    if (!firstPart.inlineData || !firstPart.inlineData.data) {
-      throw new Error('API returned successfully, but no image data was found in the response.');
+    const part = candidate.content.parts.find((p: any) => p.inlineData && p.inlineData.data);
+    if (!part || !part.inlineData || !part.inlineData.data) {
+      throw new Error("No inlineData (image) found in response part.");
     }
 
-    const base64Data = firstPart.inlineData.data;
+    const base64Data = part.inlineData.data;
     const buffer = Buffer.from(base64Data, 'base64');
+
     console.log(`   ✓ Received image data: ${base64Data.length} chars (${(buffer.length / 1024).toFixed(1)}KB)`);
 
-    return buffer;
-
+    return { buffer, fallbackUsed, fallbackMessage };
   } catch (error) {
     const apiError = handleAPIError(error);
 
