@@ -109,12 +109,12 @@ async function generateThumbnail(job: ThumbnailJob): Promise<void> {
   console.log(`✓ Payload assembled`);
   console.log(`   Prompt: ${payload.systemPrompt.substring(0, 80)}...`);
 
-  const imageBuffer = await generationService.callNanoBanana(
+  const { buffer: imageBuffer, fallbackUsed } = await generationService.callNanoBanana(
     payload,
     process.env.GOOGLE_API_KEY!
   );
 
-  console.log(`✓ Generation complete: ${imageBuffer.length} bytes`);
+  console.log(`✓ Generation complete: ${imageBuffer.length} bytes${fallbackUsed ? ' (Fallback used)' : ''}`);
 
   const outputPath = `output/${job.name}.png`;
   await generationService.saveOutputBuffer(imageBuffer, outputPath);
