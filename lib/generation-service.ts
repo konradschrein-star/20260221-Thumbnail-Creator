@@ -88,15 +88,17 @@ export async function callNanoBanana(
     } catch (error: any) {
       const msg = error.message || "";
       const status = error.status || error.statusCode || error.code;
-      const isUnavailable = msg.includes("503") || msg.includes("UNAVAILABLE") || status === 503 || msg.includes("high demand");
+      const isServerError = msg.includes("503") || msg.includes("UNAVAILABLE") || status === 503 || msg.includes("high demand")
+        || msg.includes("500") || msg.includes("INTERNAL") || status === 500
+        || msg.includes("502") || status === 502;
 
-      if (isUnavailable) {
-        console.warn('   ⚠️ Nano Banana Pro is unavailable. Falling back to Nano Banana 2 (gemini-3.1-flash-image-preview)...');
+      if (isServerError) {
+        console.warn(`   ⚠️ Nano Banana Pro returned server error (${status || msg.slice(0, 80)}). Falling back to Nano Banana 2 (gemini-3.1-flash-image-preview)...`);
         // "Nano Banana 2" = gemini-3.1-flash-image-preview
         try {
           response = await callWithPayload(primaryContent, 'gemini-3.1-flash-image-preview');
           fallbackUsed = true;
-          fallbackMessage = "Nano Banana Pro was busy. We successfully fell back to Nano Banana 2 (Flash Image).";
+          fallbackMessage = "Nano Banana Pro returned a server error. We successfully fell back to Nano Banana 2 (Flash Image).";
         } catch (backupError: any) {
           throw backupError;
         }
