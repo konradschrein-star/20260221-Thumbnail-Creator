@@ -33,7 +33,14 @@ export async function GET(request: NextRequest) {
       ],
     });
 
-    return NextResponse.json({ archetypes: archetypes.length > 0 ? archetypes : EMERGENCY_ARCHETYPES });
+    const role = (session.user as any)?.role;
+    const allArchetypes = archetypes.length > 0 ? archetypes : EMERGENCY_ARCHETYPES;
+    const filteredArchetypes = allArchetypes.filter((arch: any) => {
+      if (arch.isAdminOnly && role !== 'ADMIN') return false;
+      return true;
+    });
+
+    return NextResponse.json({ archetypes: filteredArchetypes });
   } catch (error: any) {
     console.error('Database error in GET /api/archetypes:', error);
     return NextResponse.json(

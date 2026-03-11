@@ -51,5 +51,13 @@ export const EMERGENCY_ARCHETYPES = [
         imageUrl: '/archetypes/archetype7.jpeg',
         layoutInstructions: 'Split-screen comparison design with dramatic versus styling',
         channelId: 'emergency-channel-1'
+    },
+    {
+        id: 'arch-8',
+        name: 'Premium Titan Style (Admin Only)',
+        imageUrl: '/archetypes/Archetype.png',
+        layoutInstructions: 'Highly curated, exclusive premium layout for top-tier content',
+        channelId: 'emergency-channel-1',
+        isAdminOnly: true
     }
 ];

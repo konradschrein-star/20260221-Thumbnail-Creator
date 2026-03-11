@@ -71,7 +71,19 @@ export async function POST(request: NextRequest) {
 
     // Fallback to emergency data if DB lookup failed or returned nothing
     if (!channel) channel = EMERGENCY_CHANNELS.find(c => c.id === channelId) || EMERGENCY_CHANNELS[0];
-    if (!archetype) archetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId) || EMERGENCY_ARCHETYPES[0];
+
+    if (!archetype) {
+      const emergencyArchetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId);
+      if (emergencyArchetype) {
+        // Enforce Admin-Only archetypes at the generation layer too
+        if (emergencyArchetype.isAdminOnly && userRole !== 'ADMIN') {
+          return NextResponse.json({ error: 'Unauthorized archetype usage' }, { status: 403 });
+        }
+        archetype = emergencyArchetype as any;
+      } else {
+        archetype = EMERGENCY_ARCHETYPES[0] as any;
+      }
+    }
 
     // Build base payload using the engine's data-driven approach
     // Respect the user's manual preference toggles for Brand Colors and Persona Integration
