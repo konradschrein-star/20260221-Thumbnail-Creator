@@ -10,7 +10,7 @@ import { ClipboardList } from 'lucide-react';
 
 // Helper to group jobs by date
 function groupJobsByDate(jobs: HistoryJob[]) {
-  const groups: { [key: string]: Job[] } = {
+  const groups: { [key: string]: HistoryJob[] } = {
     'Today': [],
     'Yesterday': [],
     'Last 7 Days': [],
