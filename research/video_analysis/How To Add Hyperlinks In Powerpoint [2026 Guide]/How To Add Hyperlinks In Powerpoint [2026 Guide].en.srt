@@ -1,0 +1,755 @@
+1
+00:00:00,080 --> 00:00:02,070
+
+In today's video, I'm going to teach you
+
+2
+00:00:02,070 --> 00:00:02,080
+In today's video, I'm going to teach you
+ 
+
+3
+00:00:02,080 --> 00:00:04,470
+In today's video, I'm going to teach you
+how to add hyperlinks in PowerPoint in
+
+4
+00:00:04,470 --> 00:00:04,480
+how to add hyperlinks in PowerPoint in
+ 
+
+5
+00:00:04,480 --> 00:00:06,869
+how to add hyperlinks in PowerPoint in
+just five minutes. Adding hyperlinks is
+
+6
+00:00:06,869 --> 00:00:06,879
+just five minutes. Adding hyperlinks is
+ 
+
+7
+00:00:06,879 --> 00:00:08,390
+just five minutes. Adding hyperlinks is
+a fantastic way to make your
+
+8
+00:00:08,390 --> 00:00:08,400
+a fantastic way to make your
+ 
+
+9
+00:00:08,400 --> 00:00:10,230
+a fantastic way to make your
+presentations more interactive and
+
+10
+00:00:10,230 --> 00:00:10,240
+presentations more interactive and
+ 
+
+11
+00:00:10,240 --> 00:00:12,790
+presentations more interactive and
+engaging by linking to websites,
+
+12
+00:00:12,790 --> 00:00:12,800
+engaging by linking to websites,
+ 
+
+13
+00:00:12,800 --> 00:00:14,870
+engaging by linking to websites,
+documents, or even other slides within
+
+14
+00:00:14,870 --> 00:00:14,880
+documents, or even other slides within
+ 
+
+15
+00:00:14,880 --> 00:00:16,870
+documents, or even other slides within
+your presentation. So, let's dive right
+
+16
+00:00:16,870 --> 00:00:16,880
+your presentation. So, let's dive right
+ 
+
+17
+00:00:16,880 --> 00:00:18,630
+your presentation. So, let's dive right
+in and break down each step to ensure
+
+18
+00:00:18,630 --> 00:00:18,640
+in and break down each step to ensure
+ 
+
+19
+00:00:18,640 --> 00:00:20,390
+in and break down each step to ensure
+you get the most out of your PowerPoint
+
+20
+00:00:20,390 --> 00:00:20,400
+you get the most out of your PowerPoint
+ 
+
+21
+00:00:20,400 --> 00:00:22,550
+you get the most out of your PowerPoint
+presentations. First and foremost,
+
+22
+00:00:22,550 --> 00:00:22,560
+presentations. First and foremost,
+ 
+
+23
+00:00:22,560 --> 00:00:24,070
+presentations. First and foremost,
+you'll need to open the Microsoft
+
+24
+00:00:24,070 --> 00:00:24,080
+you'll need to open the Microsoft
+ 
+
+25
+00:00:24,080 --> 00:00:26,310
+you'll need to open the Microsoft
+PowerPoint application. You can find
+
+26
+00:00:26,310 --> 00:00:26,320
+PowerPoint application. You can find
+ 
+
+27
+00:00:26,320 --> 00:00:28,390
+PowerPoint application. You can find
+this program through the start menu on a
+
+28
+00:00:28,390 --> 00:00:28,400
+this program through the start menu on a
+ 
+
+29
+00:00:28,400 --> 00:00:30,550
+this program through the start menu on a
+Windows PC or through the applications
+
+30
+00:00:30,550 --> 00:00:30,560
+Windows PC or through the applications
+ 
+
+31
+00:00:30,560 --> 00:00:32,150
+Windows PC or through the applications
+folder on a Mac depending on your
+
+32
+00:00:32,150 --> 00:00:32,160
+folder on a Mac depending on your
+ 
+
+33
+00:00:32,160 --> 00:00:34,150
+folder on a Mac depending on your
+operating system. Once you have
+
+34
+00:00:34,150 --> 00:00:34,160
+operating system. Once you have
+ 
+
+35
+00:00:34,160 --> 00:00:35,830
+operating system. Once you have
+PowerPoint open, you'll need to locate
+
+36
+00:00:35,830 --> 00:00:35,840
+PowerPoint open, you'll need to locate
+ 
+
+37
+00:00:35,840 --> 00:00:37,990
+PowerPoint open, you'll need to locate
+the presentation you want to work on.
+
+38
+00:00:37,990 --> 00:00:38,000
+the presentation you want to work on.
+ 
+
+39
+00:00:38,000 --> 00:00:39,430
+the presentation you want to work on.
+Simply navigate to your recent
+
+40
+00:00:39,430 --> 00:00:39,440
+Simply navigate to your recent
+ 
+
+41
+00:00:39,440 --> 00:00:41,350
+Simply navigate to your recent
+presentations list or open a file from
+
+42
+00:00:41,350 --> 00:00:41,360
+presentations list or open a file from
+ 
+
+43
+00:00:41,360 --> 00:00:43,830
+presentations list or open a file from
+your device if it's not already visible.
+
+44
+00:00:43,830 --> 00:00:43,840
+your device if it's not already visible.
+ 
+
+45
+00:00:43,840 --> 00:00:45,510
+your device if it's not already visible.
+Next, it's time to click on the
+
+46
+00:00:45,510 --> 00:00:45,520
+Next, it's time to click on the
+ 
+
+47
+00:00:45,520 --> 00:00:47,750
+Next, it's time to click on the
+presentation of your choice. If you're
+
+48
+00:00:47,750 --> 00:00:47,760
+presentation of your choice. If you're
+ 
+
+49
+00:00:47,760 --> 00:00:49,590
+presentation of your choice. If you're
+creating a new presentation, simply
+
+50
+00:00:49,590 --> 00:00:49,600
+creating a new presentation, simply
+ 
+
+51
+00:00:49,600 --> 00:00:51,590
+creating a new presentation, simply
+start by adding the slides or content
+
+52
+00:00:51,590 --> 00:00:51,600
+start by adding the slides or content
+ 
+
+53
+00:00:51,600 --> 00:00:53,430
+start by adding the slides or content
+you'll be working with. Otherwise,
+
+54
+00:00:53,430 --> 00:00:53,440
+you'll be working with. Otherwise,
+ 
+
+55
+00:00:53,440 --> 00:00:55,189
+you'll be working with. Otherwise,
+select the pre-existing presentation
+
+56
+00:00:55,189 --> 00:00:55,199
+select the pre-existing presentation
+ 
+
+57
+00:00:55,199 --> 00:00:57,750
+select the pre-existing presentation
+you'd like to update with hyperlinks.
+
+58
+00:00:57,750 --> 00:00:57,760
+you'd like to update with hyperlinks.
+ 
+
+59
+00:00:57,760 --> 00:00:59,349
+you'd like to update with hyperlinks.
+This means double clicking on the file
+
+60
+00:00:59,349 --> 00:00:59,359
+This means double clicking on the file
+ 
+
+61
+00:00:59,359 --> 00:01:01,430
+This means double clicking on the file
+to load all your slides, bringing them
+
+62
+00:01:01,430 --> 00:01:01,440
+to load all your slides, bringing them
+ 
+
+63
+00:01:01,440 --> 00:01:03,830
+to load all your slides, bringing them
+up in the main PowerPoint working area.
+
+64
+00:01:03,830 --> 00:01:03,840
+up in the main PowerPoint working area.
+ 
+
+65
+00:01:03,840 --> 00:01:05,590
+up in the main PowerPoint working area.
+Now, you need to decide where you want
+
+66
+00:01:05,590 --> 00:01:05,600
+Now, you need to decide where you want
+ 
+
+67
+00:01:05,600 --> 00:01:07,750
+Now, you need to decide where you want
+to add your hyperlink. It could be a
+
+68
+00:01:07,750 --> 00:01:07,760
+to add your hyperlink. It could be a
+ 
+
+69
+00:01:07,760 --> 00:01:09,510
+to add your hyperlink. It could be a
+specific piece of text, an image, or
+
+70
+00:01:09,510 --> 00:01:09,520
+specific piece of text, an image, or
+ 
+
+71
+00:01:09,520 --> 00:01:11,510
+specific piece of text, an image, or
+another object within your slide.
+
+72
+00:01:11,510 --> 00:01:11,520
+another object within your slide.
+ 
+
+73
+00:01:11,520 --> 00:01:12,870
+another object within your slide.
+Highlight the text or click on the
+
+74
+00:01:12,870 --> 00:01:12,880
+Highlight the text or click on the
+ 
+
+75
+00:01:12,880 --> 00:01:14,789
+Highlight the text or click on the
+object to select it. This action is
+
+76
+00:01:14,789 --> 00:01:14,799
+object to select it. This action is
+ 
+
+77
+00:01:14,799 --> 00:01:16,550
+object to select it. This action is
+important because it tells PowerPoint
+
+78
+00:01:16,550 --> 00:01:16,560
+important because it tells PowerPoint
+ 
+
+79
+00:01:16,560 --> 00:01:18,390
+important because it tells PowerPoint
+exactly where you want your hyperlink to
+
+80
+00:01:18,390 --> 00:01:18,400
+exactly where you want your hyperlink to
+ 
+
+81
+00:01:18,400 --> 00:01:20,550
+exactly where you want your hyperlink to
+be placed. With your text or object
+
+82
+00:01:20,550 --> 00:01:20,560
+be placed. With your text or object
+ 
+
+83
+00:01:20,560 --> 00:01:22,230
+be placed. With your text or object
+selected, you'll want to move over to
+
+84
+00:01:22,230 --> 00:01:22,240
+selected, you'll want to move over to
+ 
+
+85
+00:01:22,240 --> 00:01:24,550
+selected, you'll want to move over to
+the insert tab, which you can find in
+
+86
+00:01:24,550 --> 00:01:24,560
+the insert tab, which you can find in
+ 
+
+87
+00:01:24,560 --> 00:01:26,230
+the insert tab, which you can find in
+the menu ribbon at the top of
+
+88
+00:01:26,230 --> 00:01:26,240
+the menu ribbon at the top of
+ 
+
+89
+00:01:26,240 --> 00:01:28,630
+the menu ribbon at the top of
+PowerPoint. The insert tab houses a
+
+90
+00:01:28,630 --> 00:01:28,640
+PowerPoint. The insert tab houses a
+ 
+
+91
+00:01:28,640 --> 00:01:30,390
+PowerPoint. The insert tab houses a
+variety of tools that allow you to add
+
+92
+00:01:30,390 --> 00:01:30,400
+variety of tools that allow you to add
+ 
+
+93
+00:01:30,400 --> 00:01:32,149
+variety of tools that allow you to add
+different elements to your slides,
+
+94
+00:01:32,149 --> 00:01:32,159
+different elements to your slides,
+ 
+
+95
+00:01:32,159 --> 00:01:34,390
+different elements to your slides,
+including pictures, charts, and of
+
+96
+00:01:34,390 --> 00:01:34,400
+including pictures, charts, and of
+ 
+
+97
+00:01:34,400 --> 00:01:36,469
+including pictures, charts, and of
+course, links. After clicking on the
+
+98
+00:01:36,469 --> 00:01:36,479
+course, links. After clicking on the
+ 
+
+99
+00:01:36,479 --> 00:01:38,230
+course, links. After clicking on the
+insert tab, look for the links option
+
+100
+00:01:38,230 --> 00:01:38,240
+insert tab, look for the links option
+ 
+
+101
+00:01:38,240 --> 00:01:40,149
+insert tab, look for the links option
+within the toolbar. This is typically
+
+102
+00:01:40,149 --> 00:01:40,159
+within the toolbar. This is typically
+ 
+
+103
+00:01:40,159 --> 00:01:42,149
+within the toolbar. This is typically
+depicted with a chain link icon.
+
+104
+00:01:42,149 --> 00:01:42,159
+depicted with a chain link icon.
+ 
+
+105
+00:01:42,159 --> 00:01:43,910
+depicted with a chain link icon.
+Clicking here will open up a dialogue
+
+106
+00:01:43,910 --> 00:01:43,920
+Clicking here will open up a dialogue
+ 
+
+107
+00:01:43,920 --> 00:01:46,149
+Clicking here will open up a dialogue
+box where you can input your hyperlink
+
+108
+00:01:46,149 --> 00:01:46,159
+box where you can input your hyperlink
+ 
+
+109
+00:01:46,159 --> 00:01:47,910
+box where you can input your hyperlink
+information. You might have options such
+
+110
+00:01:47,910 --> 00:01:47,920
+information. You might have options such
+ 
+
+111
+00:01:47,920 --> 00:01:49,830
+information. You might have options such
+as linking to a web page by entering the
+
+112
+00:01:49,830 --> 00:01:49,840
+as linking to a web page by entering the
+ 
+
+113
+00:01:49,840 --> 00:01:52,069
+as linking to a web page by entering the
+URL, creating a link to another slide
+
+114
+00:01:52,069 --> 00:01:52,079
+URL, creating a link to another slide
+ 
+
+115
+00:01:52,079 --> 00:01:53,830
+URL, creating a link to another slide
+within your presentation, or even
+
+116
+00:01:53,830 --> 00:01:53,840
+within your presentation, or even
+ 
+
+117
+00:01:53,840 --> 00:01:55,670
+within your presentation, or even
+linking directly to an email address.
+
+118
+00:01:55,670 --> 00:01:55,680
+linking directly to an email address.
+ 
+
+119
+00:01:55,680 --> 00:01:57,350
+linking directly to an email address.
+Once you've added your desired link
+
+120
+00:01:57,350 --> 00:01:57,360
+Once you've added your desired link
+ 
+
+121
+00:01:57,360 --> 00:01:59,030
+Once you've added your desired link
+information and configured any
+
+122
+00:01:59,030 --> 00:01:59,040
+information and configured any
+ 
+
+123
+00:01:59,040 --> 00:02:01,109
+information and configured any
+additional settings, simply click okay
+
+124
+00:02:01,109 --> 00:02:01,119
+additional settings, simply click okay
+ 
+
+125
+00:02:01,119 --> 00:02:03,350
+additional settings, simply click okay
+to finalize and apply the hyperlink to
+
+126
+00:02:03,350 --> 00:02:03,360
+to finalize and apply the hyperlink to
+ 
+
+127
+00:02:03,360 --> 00:02:05,670
+to finalize and apply the hyperlink to
+your selected text or object. And just
+
+128
+00:02:05,670 --> 00:02:05,680
+your selected text or object. And just
+ 
+
+129
+00:02:05,680 --> 00:02:07,350
+your selected text or object. And just
+like that, you've added a hyperlink to
+
+130
+00:02:07,350 --> 00:02:07,360
+like that, you've added a hyperlink to
+ 
+
+131
+00:02:07,360 --> 00:02:09,190
+like that, you've added a hyperlink to
+your presentation. Remember, these
+
+132
+00:02:09,190 --> 00:02:09,200
+your presentation. Remember, these
+ 
+
+133
+00:02:09,200 --> 00:02:11,430
+your presentation. Remember, these
+hyperlinks aren't just static. You and
+
+134
+00:02:11,430 --> 00:02:11,440
+hyperlinks aren't just static. You and
+ 
+
+135
+00:02:11,440 --> 00:02:12,869
+hyperlinks aren't just static. You and
+your audience can interact with them
+
+136
+00:02:12,869 --> 00:02:12,879
+your audience can interact with them
+ 
+
+137
+00:02:12,879 --> 00:02:14,949
+your audience can interact with them
+during a presentation, making your
+
+138
+00:02:14,949 --> 00:02:14,959
+during a presentation, making your
+ 
+
+139
+00:02:14,959 --> 00:02:16,949
+during a presentation, making your
+slides far more dynamic. So feel free to
+
+140
+00:02:16,949 --> 00:02:16,959
+slides far more dynamic. So feel free to
+ 
+
+141
+00:02:16,959 --> 00:02:18,390
+slides far more dynamic. So feel free to
+experiment with different types of links
+
+142
+00:02:18,390 --> 00:02:18,400
+experiment with different types of links
+ 
+
+143
+00:02:18,400 --> 00:02:19,990
+experiment with different types of links
+and practice embedding them into your
+
+144
+00:02:19,990 --> 00:02:20,000
+and practice embedding them into your
+ 
+
+145
+00:02:20,000 --> 00:02:22,229
+and practice embedding them into your
+presentations. With this newfound skill,
+
+146
+00:02:22,229 --> 00:02:22,239
+presentations. With this newfound skill,
+ 
+
+147
+00:02:22,239 --> 00:02:24,070
+presentations. With this newfound skill,
+enhancing your audience's experience is
+
+148
+00:02:24,070 --> 00:02:24,080
+enhancing your audience's experience is
+ 
+
+149
+00:02:24,080 --> 00:02:26,150
+enhancing your audience's experience is
+right at your fingertips. Thanks for
+
+150
+00:02:26,150 --> 00:02:26,160
+right at your fingertips. Thanks for
+ 
+
+151
+00:02:26,160 --> 00:02:29,520
+right at your fingertips. Thanks for
+watching and happy presenting.
+

@@ -1,0 +1,7665 @@
+1
+00:00:00,080 --> 00:00:02,869
+
+You need to use N right now. It's the
+
+2
+00:00:02,869 --> 00:00:02,879
+You need to use N right now. It's the
+ 
+
+3
+00:00:02,879 --> 00:00:04,789
+You need to use N right now. It's the
+most powerful automation tool I've ever
+
+4
+00:00:04,789 --> 00:00:04,799
+most powerful automation tool I've ever
+ 
+
+5
+00:00:04,799 --> 00:00:06,950
+most powerful automation tool I've ever
+seen. On top of that, it's open- source,
+
+6
+00:00:06,950 --> 00:00:06,960
+seen. On top of that, it's open- source,
+ 
+
+7
+00:00:06,960 --> 00:00:09,750
+seen. On top of that, it's open- source,
+local, private, and free. It makes
+
+8
+00:00:09,750 --> 00:00:09,760
+local, private, and free. It makes
+ 
+
+9
+00:00:09,760 --> 00:00:12,790
+local, private, and free. It makes
+Zapier and ift crop. But hold up, I'm
+
+10
+00:00:12,790 --> 00:00:12,800
+Zapier and ift crop. But hold up, I'm
+ 
+
+11
+00:00:12,800 --> 00:00:15,749
+Zapier and ift crop. But hold up, I'm
+warning you. N is addicting because you
+
+12
+00:00:15,749 --> 00:00:15,759
+warning you. N is addicting because you
+ 
+
+13
+00:00:15,759 --> 00:00:18,070
+warning you. N is addicting because you
+can automate everything right here from
+
+14
+00:00:18,070 --> 00:00:18,080
+can automate everything right here from
+ 
+
+15
+00:00:18,080 --> 00:00:19,590
+can automate everything right here from
+this beautiful guey. We can start with
+
+16
+00:00:19,590 --> 00:00:19,600
+this beautiful guey. We can start with
+ 
+
+17
+00:00:19,600 --> 00:00:21,269
+this beautiful guey. We can start with
+something simple. Aggregating your news,
+
+18
+00:00:21,269 --> 00:00:21,279
+something simple. Aggregating your news,
+ 
+
+19
+00:00:21,279 --> 00:00:23,429
+something simple. Aggregating your news,
+YouTube, subreddits, hacker news, a nice
+
+20
+00:00:23,429 --> 00:00:23,439
+YouTube, subreddits, hacker news, a nice
+ 
+
+21
+00:00:23,439 --> 00:00:25,269
+YouTube, subreddits, hacker news, a nice
+daily digest sent to your inbox. Maybe
+
+22
+00:00:25,269 --> 00:00:25,279
+daily digest sent to your inbox. Maybe
+ 
+
+23
+00:00:25,279 --> 00:00:26,630
+daily digest sent to your inbox. Maybe
+sprinkle in a little bit of AI
+
+24
+00:00:26,630 --> 00:00:26,640
+sprinkle in a little bit of AI
+ 
+
+25
+00:00:26,640 --> 00:00:28,390
+sprinkle in a little bit of AI
+summarization. Let's get crazier and
+
+26
+00:00:28,390 --> 00:00:28,400
+summarization. Let's get crazier and
+ 
+
+27
+00:00:28,400 --> 00:00:29,990
+summarization. Let's get crazier and
+automate your home lab. Run commands on
+
+28
+00:00:29,990 --> 00:00:30,000
+automate your home lab. Run commands on
+ 
+
+29
+00:00:30,000 --> 00:00:31,910
+automate your home lab. Run commands on
+a schedule. Create an AI agent that will
+
+30
+00:00:31,910 --> 00:00:31,920
+a schedule. Create an AI agent that will
+ 
+
+31
+00:00:31,920 --> 00:00:33,190
+a schedule. Create an AI agent that will
+troubleshoot your home lab before you
+
+32
+00:00:33,190 --> 00:00:33,200
+troubleshoot your home lab before you
+ 
+
+33
+00:00:33,200 --> 00:00:34,950
+troubleshoot your home lab before you
+even know there's an issue. You can even
+
+34
+00:00:34,950 --> 00:00:34,960
+even know there's an issue. You can even
+ 
+
+35
+00:00:34,960 --> 00:00:37,110
+even know there's an issue. You can even
+talk with your home lab. Think about
+
+36
+00:00:37,110 --> 00:00:37,120
+talk with your home lab. Think about
+ 
+
+37
+00:00:37,120 --> 00:00:39,110
+talk with your home lab. Think about
+that. If you're in it in any capacity,
+
+38
+00:00:39,110 --> 00:00:39,120
+that. If you're in it in any capacity,
+ 
+
+39
+00:00:39,120 --> 00:00:40,790
+that. If you're in it in any capacity,
+you need to run Nate. They have
+
+40
+00:00:40,790 --> 00:00:40,800
+you need to run Nate. They have
+ 
+
+41
+00:00:40,800 --> 00:00:42,229
+you need to run Nate. They have
+connections to every service you use.
+
+42
+00:00:42,229 --> 00:00:42,239
+connections to every service you use.
+ 
+
+43
+00:00:42,239 --> 00:00:43,350
+connections to every service you use.
+And if they don't, you can make your
+
+44
+00:00:43,350 --> 00:00:43,360
+And if they don't, you can make your
+ 
+
+45
+00:00:43,360 --> 00:00:45,030
+And if they don't, you can make your
+own. And I'm not sure you heard me. You
+
+46
+00:00:45,030 --> 00:00:45,040
+own. And I'm not sure you heard me. You
+ 
+
+47
+00:00:45,040 --> 00:00:46,869
+own. And I'm not sure you heard me. You
+can automate everything. Your email
+
+48
+00:00:46,869 --> 00:00:46,879
+can automate everything. Your email
+ 
+
+49
+00:00:46,879 --> 00:00:49,110
+can automate everything. Your email
+inbox, social media post, your toilet,
+
+50
+00:00:49,110 --> 00:00:49,120
+inbox, social media post, your toilet,
+ 
+
+51
+00:00:49,120 --> 00:00:50,709
+inbox, social media post, your toilet,
+it can do anything. Honestly, the
+
+52
+00:00:50,709 --> 00:00:50,719
+it can do anything. Honestly, the
+ 
+
+53
+00:00:50,719 --> 00:00:52,709
+it can do anything. Honestly, the
+hardest part is figuring out what to do
+
+54
+00:00:52,709 --> 00:00:52,719
+hardest part is figuring out what to do
+ 
+
+55
+00:00:52,719 --> 00:00:54,310
+hardest part is figuring out what to do
+first. Let me help you with that. In
+
+56
+00:00:54,310 --> 00:00:54,320
+first. Let me help you with that. In
+ 
+
+57
+00:00:54,320 --> 00:00:55,270
+first. Let me help you with that. In
+this video, I'm going to walk you
+
+58
+00:00:55,270 --> 00:00:55,280
+this video, I'm going to walk you
+ 
+
+59
+00:00:55,280 --> 00:00:57,430
+this video, I'm going to walk you
+through every step of setting up N8N in
+
+60
+00:00:57,430 --> 00:00:57,440
+through every step of setting up N8N in
+ 
+
+61
+00:00:57,440 --> 00:00:58,790
+through every step of setting up N8N in
+your lab, teaching you the basics of
+
+62
+00:00:58,790 --> 00:00:58,800
+your lab, teaching you the basics of
+ 
+
+63
+00:00:58,800 --> 00:01:00,790
+your lab, teaching you the basics of
+N8N, and walking you through a few of
+
+64
+00:01:00,790 --> 00:01:00,800
+N8N, and walking you through a few of
+ 
+
+65
+00:01:00,800 --> 00:01:02,549
+N8N, and walking you through a few of
+your very first automation projects,
+
+66
+00:01:02,549 --> 00:01:02,559
+your very first automation projects,
+ 
+
+67
+00:01:02,559 --> 00:01:03,830
+your very first automation projects,
+which I think you're going to love. To
+
+68
+00:01:03,830 --> 00:01:03,840
+which I think you're going to love. To
+ 
+
+69
+00:01:03,840 --> 00:01:05,830
+which I think you're going to love. To
+get your coffee ready, let's automate.
+
+70
+00:01:05,830 --> 00:01:05,840
+get your coffee ready, let's automate.
+ 
+
+71
+00:01:05,840 --> 00:01:07,190
+get your coffee ready, let's automate.
+Now, real quick, have you hacked the
+
+72
+00:01:07,190 --> 00:01:07,200
+Now, real quick, have you hacked the
+ 
+
+73
+00:01:07,200 --> 00:01:08,550
+Now, real quick, have you hacked the
+YouTube algorithm? Let's make sure you
+
+74
+00:01:08,550 --> 00:01:08,560
+YouTube algorithm? Let's make sure you
+ 
+
+75
+00:01:08,560 --> 00:01:09,910
+YouTube algorithm? Let's make sure you
+do. Hit that like button, subscribe,
+
+76
+00:01:09,910 --> 00:01:09,920
+do. Hit that like button, subscribe,
+ 
+
+77
+00:01:09,920 --> 00:01:11,270
+do. Hit that like button, subscribe,
+comment, notification bell. You got to
+
+78
+00:01:11,270 --> 00:01:11,280
+comment, notification bell. You got to
+ 
+
+79
+00:01:11,280 --> 00:01:12,870
+comment, notification bell. You got to
+hack YouTube today. Ethically, of
+
+80
+00:01:12,870 --> 00:01:12,880
+hack YouTube today. Ethically, of
+ 
+
+81
+00:01:12,880 --> 00:01:14,230
+hack YouTube today. Ethically, of
+course. I'm going to show you two ways
+
+82
+00:01:14,230 --> 00:01:14,240
+course. I'm going to show you two ways
+ 
+
+83
+00:01:14,240 --> 00:01:16,070
+course. I'm going to show you two ways
+you can install an AM. I encourage you
+
+84
+00:01:16,070 --> 00:01:16,080
+you can install an AM. I encourage you
+ 
+
+85
+00:01:16,080 --> 00:01:17,670
+you can install an AM. I encourage you
+to take a glance at both paths so you
+
+86
+00:01:17,670 --> 00:01:17,680
+to take a glance at both paths so you
+ 
+
+87
+00:01:17,680 --> 00:01:19,030
+to take a glance at both paths so you
+can kind of get a feel for what's best
+
+88
+00:01:19,030 --> 00:01:19,040
+can kind of get a feel for what's best
+ 
+
+89
+00:01:19,040 --> 00:01:20,870
+can kind of get a feel for what's best
+for you. The first way is on prem in
+
+90
+00:01:20,870 --> 00:01:20,880
+for you. The first way is on prem in
+ 
+
+91
+00:01:20,880 --> 00:01:22,870
+for you. The first way is on prem in
+your home lab in your house. This option
+
+92
+00:01:22,870 --> 00:01:22,880
+your home lab in your house. This option
+ 
+
+93
+00:01:22,880 --> 00:01:24,710
+your home lab in your house. This option
+will be a bit more complex, but that
+
+94
+00:01:24,710 --> 00:01:24,720
+will be a bit more complex, but that
+ 
+
+95
+00:01:24,720 --> 00:01:26,230
+will be a bit more complex, but that
+just makes it more fun. The good news is
+
+96
+00:01:26,230 --> 00:01:26,240
+just makes it more fun. The good news is
+ 
+
+97
+00:01:26,240 --> 00:01:27,990
+just makes it more fun. The good news is
+that NAN is light. You'll need some
+
+98
+00:01:27,990 --> 00:01:28,000
+that NAN is light. You'll need some
+ 
+
+99
+00:01:28,000 --> 00:01:29,830
+that NAN is light. You'll need some
+Linux, so think a server or a desktop
+
+100
+00:01:29,830 --> 00:01:29,840
+Linux, so think a server or a desktop
+ 
+
+101
+00:01:29,840 --> 00:01:31,350
+Linux, so think a server or a desktop
+computer, but it doesn't have to be big.
+
+102
+00:01:31,350 --> 00:01:31,360
+computer, but it doesn't have to be big.
+ 
+
+103
+00:01:31,360 --> 00:01:33,109
+computer, but it doesn't have to be big.
+It can be as small as a Raspberry Pi. In
+
+104
+00:01:33,109 --> 00:01:33,119
+It can be as small as a Raspberry Pi. In
+ 
+
+105
+00:01:33,119 --> 00:01:34,390
+It can be as small as a Raspberry Pi. In
+fact, it can be much smaller. What's
+
+106
+00:01:34,390 --> 00:01:34,400
+fact, it can be much smaller. What's
+ 
+
+107
+00:01:34,400 --> 00:01:35,910
+fact, it can be much smaller. What's
+funny is their official documentation is
+
+108
+00:01:35,910 --> 00:01:35,920
+funny is their official documentation is
+ 
+
+109
+00:01:35,920 --> 00:01:38,230
+funny is their official documentation is
+like, eh, you don't need much. It's not
+
+110
+00:01:38,230 --> 00:01:38,240
+like, eh, you don't need much. It's not
+ 
+
+111
+00:01:38,240 --> 00:01:39,910
+like, eh, you don't need much. It's not
+CPU intensive. And no matter what
+
+112
+00:01:39,910 --> 00:01:39,920
+CPU intensive. And no matter what
+ 
+
+113
+00:01:39,920 --> 00:01:41,030
+CPU intensive. And no matter what
+hardware you choose, we will be
+
+114
+00:01:41,030 --> 00:01:41,040
+hardware you choose, we will be
+ 
+
+115
+00:01:41,040 --> 00:01:42,550
+hardware you choose, we will be
+installing this with Docker, which is
+
+116
+00:01:42,550 --> 00:01:42,560
+installing this with Docker, which is
+ 
+
+117
+00:01:42,560 --> 00:01:43,830
+installing this with Docker, which is
+amazing. If you don't know what that is,
+
+118
+00:01:43,830 --> 00:01:43,840
+amazing. If you don't know what that is,
+ 
+
+119
+00:01:43,840 --> 00:01:44,870
+amazing. If you don't know what that is,
+that's fine. I'm going to walk you
+
+120
+00:01:44,870 --> 00:01:44,880
+that's fine. I'm going to walk you
+ 
+
+121
+00:01:44,880 --> 00:01:46,149
+that's fine. I'm going to walk you
+through it. The second option is my
+
+122
+00:01:46,149 --> 00:01:46,159
+through it. The second option is my
+ 
+
+123
+00:01:46,159 --> 00:01:47,749
+through it. The second option is my
+favorite and recommended path, the
+
+124
+00:01:47,749 --> 00:01:47,759
+favorite and recommended path, the
+ 
+
+125
+00:01:47,759 --> 00:01:49,670
+favorite and recommended path, the
+cloud. For this, you've got options. I'm
+
+126
+00:01:49,670 --> 00:01:49,680
+cloud. For this, you've got options. I'm
+ 
+
+127
+00:01:49,680 --> 00:01:50,710
+cloud. For this, you've got options. I'm
+going to walk you through setting it up
+
+128
+00:01:50,710 --> 00:01:50,720
+going to walk you through setting it up
+ 
+
+129
+00:01:50,720 --> 00:01:52,310
+going to walk you through setting it up
+on Hostinger. They are the sponsor of
+
+130
+00:01:52,310 --> 00:01:52,320
+on Hostinger. They are the sponsor of
+ 
+
+131
+00:01:52,320 --> 00:01:54,069
+on Hostinger. They are the sponsor of
+this video and where I host a lot of my
+
+132
+00:01:54,069 --> 00:01:54,079
+this video and where I host a lot of my
+ 
+
+133
+00:01:54,079 --> 00:01:55,510
+this video and where I host a lot of my
+home lab now. Now, the reason I like
+
+134
+00:01:55,510 --> 00:01:55,520
+home lab now. Now, the reason I like
+ 
+
+135
+00:01:55,520 --> 00:01:58,149
+home lab now. Now, the reason I like
+this option is because N8 connects to a
+
+136
+00:01:58,149 --> 00:01:58,159
+this option is because N8 connects to a
+ 
+
+137
+00:01:58,159 --> 00:01:59,670
+this option is because N8 connects to a
+ton of things and it has a ton of
+
+138
+00:01:59,670 --> 00:01:59,680
+ton of things and it has a ton of
+ 
+
+139
+00:01:59,680 --> 00:02:01,590
+ton of things and it has a ton of
+things. Connect to it. The cloud option
+
+140
+00:02:01,590 --> 00:02:01,600
+things. Connect to it. The cloud option
+ 
+
+141
+00:02:01,600 --> 00:02:03,190
+things. Connect to it. The cloud option
+is less complex and you'll be up and
+
+142
+00:02:03,190 --> 00:02:03,200
+is less complex and you'll be up and
+ 
+
+143
+00:02:03,200 --> 00:02:05,190
+is less complex and you'll be up and
+running in a few sips of coffee. One
+
+144
+00:02:05,190 --> 00:02:05,200
+running in a few sips of coffee. One
+ 
+
+145
+00:02:05,200 --> 00:02:06,389
+running in a few sips of coffee. One
+more to go. The first thing you'll do is
+
+146
+00:02:06,389 --> 00:02:06,399
+more to go. The first thing you'll do is
+ 
+
+147
+00:02:06,399 --> 00:02:07,590
+more to go. The first thing you'll do is
+set up your cloud account. We're going
+
+148
+00:02:07,590 --> 00:02:07,600
+set up your cloud account. We're going
+ 
+
+149
+00:02:07,600 --> 00:02:08,790
+set up your cloud account. We're going
+to do it on Hostinger. Head out to
+
+150
+00:02:08,790 --> 00:02:08,800
+to do it on Hostinger. Head out to
+ 
+
+151
+00:02:08,800 --> 00:02:11,990
+to do it on Hostinger. Head out to
+hostinger.com/n.
+
+152
+00:02:11,990 --> 00:02:12,000
+
+ 
+
+153
+00:02:12,000 --> 00:02:13,270
+
+>> Now, real quick, check this out. If I go
+
+154
+00:02:13,270 --> 00:02:13,280
+>> Now, real quick, check this out. If I go
+ 
+
+155
+00:02:13,280 --> 00:02:15,589
+>> Now, real quick, check this out. If I go
+to services and go to VPS, which is a
+
+156
+00:02:15,589 --> 00:02:15,599
+to services and go to VPS, which is a
+ 
+
+157
+00:02:15,599 --> 00:02:16,949
+to services and go to VPS, which is a
+virtual private server is what we're
+
+158
+00:02:16,949 --> 00:02:16,959
+virtual private server is what we're
+ 
+
+159
+00:02:16,959 --> 00:02:19,670
+virtual private server is what we're
+doing. You can jump right into nan VPS
+
+160
+00:02:19,670 --> 00:02:19,680
+doing. You can jump right into nan VPS
+ 
+
+161
+00:02:19,680 --> 00:02:21,190
+doing. You can jump right into nan VPS
+hosting. It's like they knew we were
+
+162
+00:02:21,190 --> 00:02:21,200
+hosting. It's like they knew we were
+ 
+
+163
+00:02:21,200 --> 00:02:23,510
+hosting. It's like they knew we were
+coming. Click on that. Choose your plan.
+
+164
+00:02:23,510 --> 00:02:23,520
+coming. Click on that. Choose your plan.
+ 
+
+165
+00:02:23,520 --> 00:02:25,910
+coming. Click on that. Choose your plan.
+KVM2 is perfect. With all of this, you
+
+166
+00:02:25,910 --> 00:02:25,920
+KVM2 is perfect. With all of this, you
+ 
+
+167
+00:02:25,920 --> 00:02:27,670
+KVM2 is perfect. With all of this, you
+can have an entire home lab, not just
+
+168
+00:02:27,670 --> 00:02:27,680
+can have an entire home lab, not just
+ 
+
+169
+00:02:27,680 --> 00:02:30,309
+can have an entire home lab, not just
+Nate. Run a website. Run open web UI. A
+
+170
+00:02:30,309 --> 00:02:30,319
+Nate. Run a website. Run open web UI. A
+ 
+
+171
+00:02:30,319 --> 00:02:31,589
+Nate. Run a website. Run open web UI. A
+lot of the projects I've talked about on
+
+172
+00:02:31,589 --> 00:02:31,599
+lot of the projects I've talked about on
+ 
+
+173
+00:02:31,599 --> 00:02:33,270
+lot of the projects I've talked about on
+this channel can be run with this one
+
+174
+00:02:33,270 --> 00:02:33,280
+this channel can be run with this one
+ 
+
+175
+00:02:33,280 --> 00:02:34,869
+this channel can be run with this one
+virtual machine in the cloud. And don't
+
+176
+00:02:34,869 --> 00:02:34,879
+virtual machine in the cloud. And don't
+ 
+
+177
+00:02:34,879 --> 00:02:36,390
+virtual machine in the cloud. And don't
+forget to put in coupon code network
+
+178
+00:02:36,390 --> 00:02:36,400
+forget to put in coupon code network
+ 
+
+179
+00:02:36,400 --> 00:02:37,910
+forget to put in coupon code network
+chuck. Some magic stuff will happen.
+
+180
+00:02:37,910 --> 00:02:37,920
+chuck. Some magic stuff will happen.
+ 
+
+181
+00:02:37,920 --> 00:02:39,670
+chuck. Some magic stuff will happen.
+Now, if you chose that special nan
+
+182
+00:02:39,670 --> 00:02:39,680
+Now, if you chose that special nan
+ 
+
+183
+00:02:39,680 --> 00:02:41,750
+Now, if you chose that special nan
+option, you're pretty much done. If
+
+184
+00:02:41,750 --> 00:02:41,760
+option, you're pretty much done. If
+ 
+
+185
+00:02:41,760 --> 00:02:43,750
+option, you're pretty much done. If
+however you already had a hostinger
+
+186
+00:02:43,750 --> 00:02:43,760
+however you already had a hostinger
+ 
+
+187
+00:02:43,760 --> 00:02:45,509
+however you already had a hostinger
+server, maybe running Ubuntu or
+
+188
+00:02:45,509 --> 00:02:45,519
+server, maybe running Ubuntu or
+ 
+
+189
+00:02:45,519 --> 00:02:47,350
+server, maybe running Ubuntu or
+something or any other type of VPS,
+
+190
+00:02:47,350 --> 00:02:47,360
+something or any other type of VPS,
+ 
+
+191
+00:02:47,360 --> 00:02:49,910
+something or any other type of VPS,
+continue on to the on-prem installation,
+
+192
+00:02:49,910 --> 00:02:49,920
+continue on to the on-prem installation,
+ 
+
+193
+00:02:49,920 --> 00:02:51,509
+continue on to the on-prem installation,
+it's going to be pretty much the same.
+
+194
+00:02:51,509 --> 00:02:51,519
+it's going to be pretty much the same.
+ 
+
+195
+00:02:51,519 --> 00:02:53,030
+it's going to be pretty much the same.
+Hey, Network Chuck from the future here.
+
+196
+00:02:53,030 --> 00:02:53,040
+Hey, Network Chuck from the future here.
+ 
+
+197
+00:02:53,040 --> 00:02:54,710
+Hey, Network Chuck from the future here.
+I decided to pop out the section for the
+
+198
+00:02:54,710 --> 00:02:54,720
+I decided to pop out the section for the
+ 
+
+199
+00:02:54,720 --> 00:02:56,630
+I decided to pop out the section for the
+on-prem install into its own video,
+
+200
+00:02:56,630 --> 00:02:56,640
+on-prem install into its own video,
+ 
+
+201
+00:02:56,640 --> 00:02:59,030
+on-prem install into its own video,
+which you can see right here. Why?
+
+202
+00:02:59,030 --> 00:02:59,040
+which you can see right here. Why?
+ 
+
+203
+00:02:59,040 --> 00:03:00,470
+which you can see right here. Why?
+Because I did not want you to wait to
+
+204
+00:03:00,470 --> 00:03:00,480
+Because I did not want you to wait to
+ 
+
+205
+00:03:00,480 --> 00:03:02,949
+Because I did not want you to wait to
+see how powerful N is, which I'm about
+
+206
+00:03:02,949 --> 00:03:02,959
+see how powerful N is, which I'm about
+ 
+
+207
+00:03:02,959 --> 00:03:05,350
+see how powerful N is, which I'm about
+to show you right now. Once it finishes
+
+208
+00:03:05,350 --> 00:03:05,360
+to show you right now. Once it finishes
+ 
+
+209
+00:03:05,360 --> 00:03:06,470
+to show you right now. Once it finishes
+setting up and you're at the server
+
+210
+00:03:06,470 --> 00:03:06,480
+setting up and you're at the server
+ 
+
+211
+00:03:06,480 --> 00:03:08,790
+setting up and you're at the server
+console, just click on manage app and it
+
+212
+00:03:08,790 --> 00:03:08,800
+console, just click on manage app and it
+ 
+
+213
+00:03:08,800 --> 00:03:10,710
+console, just click on manage app and it
+takes you right to the NAN signup page
+
+214
+00:03:10,710 --> 00:03:10,720
+takes you right to the NAN signup page
+ 
+
+215
+00:03:10,720 --> 00:03:13,190
+takes you right to the NAN signup page
+for your own hosted NAN. Anyways, let's
+
+216
+00:03:13,190 --> 00:03:13,200
+for your own hosted NAN. Anyways, let's
+ 
+
+217
+00:03:13,200 --> 00:03:15,430
+for your own hosted NAN. Anyways, let's
+get logged in or signed up. I don't want
+
+218
+00:03:15,430 --> 00:03:15,440
+get logged in or signed up. I don't want
+ 
+
+219
+00:03:15,440 --> 00:03:17,750
+get logged in or signed up. I don't want
+to receive any updates. Next, we don't
+
+220
+00:03:17,750 --> 00:03:17,760
+to receive any updates. Next, we don't
+ 
+
+221
+00:03:17,760 --> 00:03:19,589
+to receive any updates. Next, we don't
+have to fill any of that out. And you
+
+222
+00:03:19,589 --> 00:03:19,599
+have to fill any of that out. And you
+ 
+
+223
+00:03:19,599 --> 00:03:21,350
+have to fill any of that out. And you
+actually do want this free activation
+
+224
+00:03:21,350 --> 00:03:21,360
+actually do want this free activation
+ 
+
+225
+00:03:21,360 --> 00:03:22,869
+actually do want this free activation
+key. So, go ahead and have it send that
+
+226
+00:03:22,869 --> 00:03:22,879
+key. So, go ahead and have it send that
+ 
+
+227
+00:03:22,879 --> 00:03:24,790
+key. So, go ahead and have it send that
+to you. Check your email. I just
+
+228
+00:03:24,790 --> 00:03:24,800
+to you. Check your email. I just
+ 
+
+229
+00:03:24,800 --> 00:03:26,070
+to you. Check your email. I just
+received my key. So, I'll go to the
+
+230
+00:03:26,070 --> 00:03:26,080
+received my key. So, I'll go to the
+ 
+
+231
+00:03:26,080 --> 00:03:28,390
+received my key. So, I'll go to the
+usage and plan area to enter my
+
+232
+00:03:28,390 --> 00:03:28,400
+usage and plan area to enter my
+ 
+
+233
+00:03:28,400 --> 00:03:30,710
+usage and plan area to enter my
+activation key. Again, this is all free.
+
+234
+00:03:30,710 --> 00:03:30,720
+activation key. Again, this is all free.
+ 
+
+235
+00:03:30,720 --> 00:03:32,710
+activation key. Again, this is all free.
+And done. So, now here we are at the
+
+236
+00:03:32,710 --> 00:03:32,720
+And done. So, now here we are at the
+ 
+
+237
+00:03:32,720 --> 00:03:35,750
+And done. So, now here we are at the
+overview. NAN is installed.
+
+238
+00:03:35,750 --> 00:03:35,760
+overview. NAN is installed.
+ 
+
+239
+00:03:35,760 --> 00:03:37,350
+overview. NAN is installed.
+Now what? Let's set up your first
+
+240
+00:03:37,350 --> 00:03:37,360
+Now what? Let's set up your first
+ 
+
+241
+00:03:37,360 --> 00:03:39,110
+Now what? Let's set up your first
+automation. And what NAN calls an
+
+242
+00:03:39,110 --> 00:03:39,120
+automation. And what NAN calls an
+ 
+
+243
+00:03:39,120 --> 00:03:41,190
+automation. And what NAN calls an
+automation is a workflow. We'll start
+
+244
+00:03:41,190 --> 00:03:41,200
+automation is a workflow. We'll start
+ 
+
+245
+00:03:41,200 --> 00:03:43,509
+automation is a workflow. We'll start
+right up here. Click on create workflow.
+
+246
+00:03:43,509 --> 00:03:43,519
+right up here. Click on create workflow.
+ 
+
+247
+00:03:43,519 --> 00:03:45,030
+right up here. Click on create workflow.
+Now you're about to have a whole world
+
+248
+00:03:45,030 --> 00:03:45,040
+Now you're about to have a whole world
+ 
+
+249
+00:03:45,040 --> 00:03:46,949
+Now you're about to have a whole world
+open up to you. This is so fun. Now for
+
+250
+00:03:46,949 --> 00:03:46,959
+open up to you. This is so fun. Now for
+ 
+
+251
+00:03:46,959 --> 00:03:49,030
+open up to you. This is so fun. Now for
+me, I always feel like I'm behind. Like
+
+252
+00:03:49,030 --> 00:03:49,040
+me, I always feel like I'm behind. Like
+ 
+
+253
+00:03:49,040 --> 00:03:50,949
+me, I always feel like I'm behind. Like
+I I have it's so hard for me to keep up
+
+254
+00:03:50,949 --> 00:03:50,959
+I I have it's so hard for me to keep up
+ 
+
+255
+00:03:50,959 --> 00:03:52,309
+I I have it's so hard for me to keep up
+with all the tech news coming out.
+
+256
+00:03:52,309 --> 00:03:52,319
+with all the tech news coming out.
+ 
+
+257
+00:03:52,319 --> 00:03:54,869
+with all the tech news coming out.
+Checking bleeping computer, hacker news,
+
+258
+00:03:54,869 --> 00:03:54,879
+Checking bleeping computer, hacker news,
+ 
+
+259
+00:03:54,879 --> 00:03:57,910
+Checking bleeping computer, hacker news,
+subreddits, YouTube. It's all so much. I
+
+260
+00:03:57,910 --> 00:03:57,920
+subreddits, YouTube. It's all so much. I
+ 
+
+261
+00:03:57,920 --> 00:03:59,350
+subreddits, YouTube. It's all so much. I
+need a better solution. We're going to
+
+262
+00:03:59,350 --> 00:03:59,360
+need a better solution. We're going to
+ 
+
+263
+00:03:59,360 --> 00:04:00,710
+need a better solution. We're going to
+make that right now. Now, we're going to
+
+264
+00:04:00,710 --> 00:04:00,720
+make that right now. Now, we're going to
+ 
+
+265
+00:04:00,720 --> 00:04:02,789
+make that right now. Now, we're going to
+start small, something very simple. And
+
+266
+00:04:02,789 --> 00:04:02,799
+start small, something very simple. And
+ 
+
+267
+00:04:02,799 --> 00:04:05,429
+start small, something very simple. And
+then we're gonna slowly get more insane.
+
+268
+00:04:05,429 --> 00:04:05,439
+then we're gonna slowly get more insane.
+ 
+
+269
+00:04:05,439 --> 00:04:06,869
+then we're gonna slowly get more insane.
+It's like a skinny dude just getting to
+
+270
+00:04:06,869 --> 00:04:06,879
+It's like a skinny dude just getting to
+ 
+
+271
+00:04:06,879 --> 00:04:08,949
+It's like a skinny dude just getting to
+the gym. We're starting slim. By the
+
+272
+00:04:08,949 --> 00:04:08,959
+the gym. We're starting slim. By the
+ 
+
+273
+00:04:08,959 --> 00:04:10,229
+the gym. We're starting slim. By the
+end, we're going to be yolked and
+
+274
+00:04:10,229 --> 00:04:10,239
+end, we're going to be yolked and
+ 
+
+275
+00:04:10,239 --> 00:04:13,110
+end, we're going to be yolked and
+insane. All right, n basics. Here we
+
+276
+00:04:13,110 --> 00:04:13,120
+insane. All right, n basics. Here we
+ 
+
+277
+00:04:13,120 --> 00:04:14,869
+insane. All right, n basics. Here we
+stinking go. Click on the square to add
+
+278
+00:04:14,869 --> 00:04:14,879
+stinking go. Click on the square to add
+ 
+
+279
+00:04:14,879 --> 00:04:17,189
+stinking go. Click on the square to add
+our first step. Boom. What's happening
+
+280
+00:04:17,189 --> 00:04:17,199
+our first step. Boom. What's happening
+ 
+
+281
+00:04:17,199 --> 00:04:19,349
+our first step. Boom. What's happening
+here? We're adding our first trigger.
+
+282
+00:04:19,349 --> 00:04:19,359
+here? We're adding our first trigger.
+ 
+
+283
+00:04:19,359 --> 00:04:21,990
+here? We're adding our first trigger.
+What's going to make our workflows flow,
+
+284
+00:04:21,990 --> 00:04:22,000
+What's going to make our workflows flow,
+ 
+
+285
+00:04:22,000 --> 00:04:24,390
+What's going to make our workflows flow,
+do its thing? 99% of the time, you're
+
+286
+00:04:24,390 --> 00:04:24,400
+do its thing? 99% of the time, you're
+ 
+
+287
+00:04:24,400 --> 00:04:26,070
+do its thing? 99% of the time, you're
+going to start with trigger manually
+
+288
+00:04:26,070 --> 00:04:26,080
+going to start with trigger manually
+ 
+
+289
+00:04:26,080 --> 00:04:27,749
+going to start with trigger manually
+right here. Your workflows can always
+
+290
+00:04:27,749 --> 00:04:27,759
+right here. Your workflows can always
+ 
+
+291
+00:04:27,759 --> 00:04:29,590
+right here. Your workflows can always
+have this trigger along with other
+
+292
+00:04:29,590 --> 00:04:29,600
+have this trigger along with other
+ 
+
+293
+00:04:29,600 --> 00:04:31,110
+have this trigger along with other
+triggers. We'll cover that here in a
+
+294
+00:04:31,110 --> 00:04:31,120
+triggers. We'll cover that here in a
+ 
+
+295
+00:04:31,120 --> 00:04:32,230
+triggers. We'll cover that here in a
+second. Actually, you know what? Let's
+
+296
+00:04:32,230 --> 00:04:32,240
+second. Actually, you know what? Let's
+ 
+
+297
+00:04:32,240 --> 00:04:33,590
+second. Actually, you know what? Let's
+add another trigger right now. So, at
+
+298
+00:04:33,590 --> 00:04:33,600
+add another trigger right now. So, at
+ 
+
+299
+00:04:33,600 --> 00:04:35,350
+add another trigger right now. So, at
+the top right, you'll see we have our
+
+300
+00:04:35,350 --> 00:04:35,360
+the top right, you'll see we have our
+ 
+
+301
+00:04:35,360 --> 00:04:37,749
+the top right, you'll see we have our
+plus icon. Let's add another one. Plus,
+
+302
+00:04:37,749 --> 00:04:37,759
+plus icon. Let's add another one. Plus,
+ 
+
+303
+00:04:37,759 --> 00:04:39,510
+plus icon. Let's add another one. Plus,
+and then down here, we have add another
+
+304
+00:04:39,510 --> 00:04:39,520
+and then down here, we have add another
+ 
+
+305
+00:04:39,520 --> 00:04:41,430
+and then down here, we have add another
+trigger. This time, we'll do on a
+
+306
+00:04:41,430 --> 00:04:41,440
+trigger. This time, we'll do on a
+ 
+
+307
+00:04:41,440 --> 00:04:44,950
+trigger. This time, we'll do on a
+schedule. And we'll say every 1 day at
+
+308
+00:04:44,950 --> 00:04:44,960
+schedule. And we'll say every 1 day at
+ 
+
+309
+00:04:44,960 --> 00:04:47,030
+schedule. And we'll say every 1 day at
+Yeah, midnight's actually great. Done.
+
+310
+00:04:47,030 --> 00:04:47,040
+Yeah, midnight's actually great. Done.
+ 
+
+311
+00:04:47,040 --> 00:04:49,510
+Yeah, midnight's actually great. Done.
+So, now we have two triggers. Both ready
+
+312
+00:04:49,510 --> 00:04:49,520
+So, now we have two triggers. Both ready
+ 
+
+313
+00:04:49,520 --> 00:04:51,189
+So, now we have two triggers. Both ready
+to do some things. Let's click on that
+
+314
+00:04:51,189 --> 00:04:51,199
+to do some things. Let's click on that
+ 
+
+315
+00:04:51,199 --> 00:04:53,350
+to do some things. Let's click on that
+first plus icon to add our next node.
+
+316
+00:04:53,350 --> 00:04:53,360
+first plus icon to add our next node.
+ 
+
+317
+00:04:53,360 --> 00:04:56,230
+first plus icon to add our next node.
+Now, here you have a billion options. We
+
+318
+00:04:56,230 --> 00:04:56,240
+Now, here you have a billion options. We
+ 
+
+319
+00:04:56,240 --> 00:04:58,150
+Now, here you have a billion options. We
+have a fun AI section, which we'll cover
+
+320
+00:04:58,150 --> 00:04:58,160
+have a fun AI section, which we'll cover
+ 
+
+321
+00:04:58,160 --> 00:04:59,670
+have a fun AI section, which we'll cover
+a little bit here in a moment. You can
+
+322
+00:04:59,670 --> 00:04:59,680
+a little bit here in a moment. You can
+ 
+
+323
+00:04:59,680 --> 00:05:01,909
+a little bit here in a moment. You can
+do something in an app and they have a
+
+324
+00:05:01,909 --> 00:05:01,919
+do something in an app and they have a
+ 
+
+325
+00:05:01,919 --> 00:05:03,270
+do something in an app and they have a
+bajillion connections to whatever
+
+326
+00:05:03,270 --> 00:05:03,280
+bajillion connections to whatever
+ 
+
+327
+00:05:03,280 --> 00:05:05,110
+bajillion connections to whatever
+service you can think of. Just know we
+
+328
+00:05:05,110 --> 00:05:05,120
+service you can think of. Just know we
+ 
+
+329
+00:05:05,120 --> 00:05:06,469
+service you can think of. Just know we
+have a bunch of nodes and they help us
+
+330
+00:05:06,469 --> 00:05:06,479
+have a bunch of nodes and they help us
+ 
+
+331
+00:05:06,479 --> 00:05:07,909
+have a bunch of nodes and they help us
+do things. The first thing I want to do
+
+332
+00:05:07,909 --> 00:05:07,919
+do things. The first thing I want to do
+ 
+
+333
+00:05:07,919 --> 00:05:10,870
+do things. The first thing I want to do
+is search for RSS. We're going to do an
+
+334
+00:05:10,870 --> 00:05:10,880
+is search for RSS. We're going to do an
+ 
+
+335
+00:05:10,880 --> 00:05:13,189
+is search for RSS. We're going to do an
+RSS read trigger. And notice it
+
+336
+00:05:13,189 --> 00:05:13,199
+RSS read trigger. And notice it
+ 
+
+337
+00:05:13,199 --> 00:05:14,950
+RSS read trigger. And notice it
+immediately threw us into the node. We
+
+338
+00:05:14,950 --> 00:05:14,960
+immediately threw us into the node. We
+ 
+
+339
+00:05:14,960 --> 00:05:16,469
+immediately threw us into the node. We
+can click out of it just by clicking
+
+340
+00:05:16,469 --> 00:05:16,479
+can click out of it just by clicking
+ 
+
+341
+00:05:16,479 --> 00:05:18,790
+can click out of it just by clicking
+some blank space. It's sitting right
+
+342
+00:05:18,790 --> 00:05:18,800
+some blank space. It's sitting right
+ 
+
+343
+00:05:18,800 --> 00:05:20,390
+some blank space. It's sitting right
+here. It's got like a little angry thing
+
+344
+00:05:20,390 --> 00:05:20,400
+here. It's got like a little angry thing
+ 
+
+345
+00:05:20,400 --> 00:05:21,749
+here. It's got like a little angry thing
+because we haven't configured it yet.
+
+346
+00:05:21,749 --> 00:05:21,759
+because we haven't configured it yet.
+ 
+
+347
+00:05:21,759 --> 00:05:23,510
+because we haven't configured it yet.
+But notice how it connects. We can also
+
+348
+00:05:23,510 --> 00:05:23,520
+But notice how it connects. We can also
+ 
+
+349
+00:05:23,520 --> 00:05:25,350
+But notice how it connects. We can also
+take our schedule trigger and connect it
+
+350
+00:05:25,350 --> 00:05:25,360
+take our schedule trigger and connect it
+ 
+
+351
+00:05:25,360 --> 00:05:27,350
+take our schedule trigger and connect it
+here too. Boom. Just like that. Or we
+
+352
+00:05:27,350 --> 00:05:27,360
+here too. Boom. Just like that. Or we
+ 
+
+353
+00:05:27,360 --> 00:05:28,950
+here too. Boom. Just like that. Or we
+can delete it. Boom. And we're going to
+
+354
+00:05:28,950 --> 00:05:28,960
+can delete it. Boom. And we're going to
+ 
+
+355
+00:05:28,960 --> 00:05:30,629
+can delete it. Boom. And we're going to
+start with one RSS feed. It's going to
+
+356
+00:05:30,629 --> 00:05:30,639
+start with one RSS feed. It's going to
+ 
+
+357
+00:05:30,639 --> 00:05:32,550
+start with one RSS feed. It's going to
+be from bleeping computer. Put it in
+
+358
+00:05:32,550 --> 00:05:32,560
+be from bleeping computer. Put it in
+ 
+
+359
+00:05:32,560 --> 00:05:33,990
+be from bleeping computer. Put it in
+there. Get out of there. Let's save our
+
+360
+00:05:33,990 --> 00:05:34,000
+there. Get out of there. Let's save our
+ 
+
+361
+00:05:34,000 --> 00:05:35,670
+there. Get out of there. Let's save our
+config. You want to save often like
+
+362
+00:05:35,670 --> 00:05:35,680
+config. You want to save often like
+ 
+
+363
+00:05:35,680 --> 00:05:38,070
+config. You want to save often like
+everything in it. Top right. Click on
+
+364
+00:05:38,070 --> 00:05:38,080
+everything in it. Top right. Click on
+ 
+
+365
+00:05:38,080 --> 00:05:40,150
+everything in it. Top right. Click on
+save. We're saved. And now let's test
+
+366
+00:05:40,150 --> 00:05:40,160
+save. We're saved. And now let's test
+ 
+
+367
+00:05:40,160 --> 00:05:42,230
+save. We're saved. And now let's test
+our RSS read. Let's jump in there. Just
+
+368
+00:05:42,230 --> 00:05:42,240
+our RSS read. Let's jump in there. Just
+ 
+
+369
+00:05:42,240 --> 00:05:44,070
+our RSS read. Let's jump in there. Just
+double click your icon, your node, and
+
+370
+00:05:44,070 --> 00:05:44,080
+double click your icon, your node, and
+ 
+
+371
+00:05:44,080 --> 00:05:45,909
+double click your icon, your node, and
+click on execute step right here at the
+
+372
+00:05:45,909 --> 00:05:45,919
+click on execute step right here at the
+ 
+
+373
+00:05:45,919 --> 00:05:49,270
+click on execute step right here at the
+top. Go. Did you see all that? It just
+
+374
+00:05:49,270 --> 00:05:49,280
+top. Go. Did you see all that? It just
+ 
+
+375
+00:05:49,280 --> 00:05:51,270
+top. Go. Did you see all that? It just
+went out and pulled all the stuff, all
+
+376
+00:05:51,270 --> 00:05:51,280
+went out and pulled all the stuff, all
+ 
+
+377
+00:05:51,280 --> 00:05:53,510
+went out and pulled all the stuff, all
+the articles from bleeping computer.
+
+378
+00:05:53,510 --> 00:05:53,520
+the articles from bleeping computer.
+ 
+
+379
+00:05:53,520 --> 00:05:55,510
+the articles from bleeping computer.
+Notice our fields are the creator, the
+
+380
+00:05:55,510 --> 00:05:55,520
+Notice our fields are the creator, the
+ 
+
+381
+00:05:55,520 --> 00:05:57,990
+Notice our fields are the creator, the
+title. Unified CM has a hardcoded root
+
+382
+00:05:57,990 --> 00:05:58,000
+title. Unified CM has a hardcoded root
+ 
+
+383
+00:05:58,000 --> 00:06:01,029
+title. Unified CM has a hardcoded root
+SSH group. That's bad. Um, anyways, we
+
+384
+00:06:01,029 --> 00:06:01,039
+SSH group. That's bad. Um, anyways, we
+ 
+
+385
+00:06:01,039 --> 00:06:02,870
+SSH group. That's bad. Um, anyways, we
+have a whole bunch of fields. Even has
+
+386
+00:06:02,870 --> 00:06:02,880
+have a whole bunch of fields. Even has
+ 
+
+387
+00:06:02,880 --> 00:06:04,710
+have a whole bunch of fields. Even has
+the entire content. And notice a few
+
+388
+00:06:04,710 --> 00:06:04,720
+the entire content. And notice a few
+ 
+
+389
+00:06:04,720 --> 00:06:06,309
+the entire content. And notice a few
+things here. We actually have our number
+
+390
+00:06:06,309 --> 00:06:06,319
+things here. We actually have our number
+ 
+
+391
+00:06:06,319 --> 00:06:08,469
+things here. We actually have our number
+of items. It pulled 13 articles from the
+
+392
+00:06:08,469 --> 00:06:08,479
+of items. It pulled 13 articles from the
+ 
+
+393
+00:06:08,479 --> 00:06:10,150
+of items. It pulled 13 articles from the
+feed. We don't control that. That's just
+
+394
+00:06:10,150 --> 00:06:10,160
+feed. We don't control that. That's just
+ 
+
+395
+00:06:10,160 --> 00:06:12,230
+feed. We don't control that. That's just
+how many were available in the RSS feed.
+
+396
+00:06:12,230 --> 00:06:12,240
+how many were available in the RSS feed.
+ 
+
+397
+00:06:12,240 --> 00:06:14,070
+how many were available in the RSS feed.
+And also notice over here, we can change
+
+398
+00:06:14,070 --> 00:06:14,080
+And also notice over here, we can change
+ 
+
+399
+00:06:14,080 --> 00:06:16,469
+And also notice over here, we can change
+how we view this data. Now, you're about
+
+400
+00:06:16,469 --> 00:06:16,479
+how we view this data. Now, you're about
+ 
+
+401
+00:06:16,479 --> 00:06:20,150
+how we view this data. Now, you're about
+to become an expert in JSON because NAN
+
+402
+00:06:20,150 --> 00:06:20,160
+to become an expert in JSON because NAN
+ 
+
+403
+00:06:20,160 --> 00:06:22,230
+to become an expert in JSON because NAN
+is very JSON heavy. We can view it in
+
+404
+00:06:22,230 --> 00:06:22,240
+is very JSON heavy. We can view it in
+ 
+
+405
+00:06:22,240 --> 00:06:24,790
+is very JSON heavy. We can view it in
+JSON or JSON or we can view the schema
+
+406
+00:06:24,790 --> 00:06:24,800
+JSON or JSON or we can view the schema
+ 
+
+407
+00:06:24,800 --> 00:06:26,629
+JSON or JSON or we can view the schema
+all the available fields. Now if we
+
+408
+00:06:26,629 --> 00:06:26,639
+all the available fields. Now if we
+ 
+
+409
+00:06:26,639 --> 00:06:29,270
+all the available fields. Now if we
+click out, notice that we have on our
+
+410
+00:06:29,270 --> 00:06:29,280
+click out, notice that we have on our
+ 
+
+411
+00:06:29,280 --> 00:06:31,510
+click out, notice that we have on our
+little timeline connector here. The
+
+412
+00:06:31,510 --> 00:06:31,520
+little timeline connector here. The
+ 
+
+413
+00:06:31,520 --> 00:06:33,990
+little timeline connector here. The
+trigger was like one item which is just
+
+414
+00:06:33,990 --> 00:06:34,000
+trigger was like one item which is just
+ 
+
+415
+00:06:34,000 --> 00:06:37,270
+trigger was like one item which is just
+go the RSS read when it read the RSS
+
+416
+00:06:37,270 --> 00:06:37,280
+go the RSS read when it read the RSS
+ 
+
+417
+00:06:37,280 --> 00:06:39,990
+go the RSS read when it read the RSS
+feed. It pulled in 13 items and that's
+
+418
+00:06:39,990 --> 00:06:40,000
+feed. It pulled in 13 items and that's
+ 
+
+419
+00:06:40,000 --> 00:06:41,749
+feed. It pulled in 13 items and that's
+what it's going to hand off to the next
+
+420
+00:06:41,749 --> 00:06:41,759
+what it's going to hand off to the next
+ 
+
+421
+00:06:41,759 --> 00:06:43,590
+what it's going to hand off to the next
+step. All right, cool. We pulled in 13
+
+422
+00:06:43,590 --> 00:06:43,600
+step. All right, cool. We pulled in 13
+ 
+
+423
+00:06:43,600 --> 00:06:45,430
+step. All right, cool. We pulled in 13
+articles from bleeding computer. Let's
+
+424
+00:06:45,430 --> 00:06:45,440
+articles from bleeding computer. Let's
+ 
+
+425
+00:06:45,440 --> 00:06:47,350
+articles from bleeding computer. Let's
+send it somewhere. Let's say Discord. So
+
+426
+00:06:47,350 --> 00:06:47,360
+send it somewhere. Let's say Discord. So
+ 
+
+427
+00:06:47,360 --> 00:06:48,550
+send it somewhere. Let's say Discord. So
+I'm going to add another node right
+
+428
+00:06:48,550 --> 00:06:48,560
+I'm going to add another node right
+ 
+
+429
+00:06:48,560 --> 00:06:51,270
+I'm going to add another node right
+here. Boom. I'll search for Discord.
+
+430
+00:06:51,270 --> 00:06:51,280
+here. Boom. I'll search for Discord.
+ 
+
+431
+00:06:51,280 --> 00:06:52,950
+here. Boom. I'll search for Discord.
+They do have a built-in Discord node.
+
+432
+00:06:52,950 --> 00:06:52,960
+They do have a built-in Discord node.
+ 
+
+433
+00:06:52,960 --> 00:06:55,270
+They do have a built-in Discord node.
+And look at all these options. You can
+
+434
+00:06:55,270 --> 00:06:55,280
+And look at all these options. You can
+ 
+
+435
+00:06:55,280 --> 00:06:57,510
+And look at all these options. You can
+do so many things for me. I'm going to
+
+436
+00:06:57,510 --> 00:06:57,520
+do so many things for me. I'm going to
+ 
+
+437
+00:06:57,520 --> 00:07:00,629
+do so many things for me. I'm going to
+send a message. Yes, that's what I'm
+
+438
+00:07:00,629 --> 00:07:00,639
+send a message. Yes, that's what I'm
+ 
+
+439
+00:07:00,639 --> 00:07:02,150
+send a message. Yes, that's what I'm
+doing. Now, immediately we're thrust
+
+440
+00:07:02,150 --> 00:07:02,160
+doing. Now, immediately we're thrust
+ 
+
+441
+00:07:02,160 --> 00:07:04,790
+doing. Now, immediately we're thrust
+into this and we have a lot of options.
+
+442
+00:07:04,790 --> 00:07:04,800
+into this and we have a lot of options.
+ 
+
+443
+00:07:04,800 --> 00:07:06,390
+into this and we have a lot of options.
+The first is our connection type. Now,
+
+444
+00:07:06,390 --> 00:07:06,400
+The first is our connection type. Now,
+ 
+
+445
+00:07:06,400 --> 00:07:07,749
+The first is our connection type. Now,
+keep in mind, every node is going to
+
+446
+00:07:07,749 --> 00:07:07,759
+keep in mind, every node is going to
+ 
+
+447
+00:07:07,759 --> 00:07:09,510
+keep in mind, every node is going to
+have their own configuration. Now, for
+
+448
+00:07:09,510 --> 00:07:09,520
+have their own configuration. Now, for
+ 
+
+449
+00:07:09,520 --> 00:07:11,589
+have their own configuration. Now, for
+our connection type, I want to do a
+
+450
+00:07:11,589 --> 00:07:11,599
+our connection type, I want to do a
+ 
+
+451
+00:07:11,599 --> 00:07:13,270
+our connection type, I want to do a
+simple web hook because all I want to do
+
+452
+00:07:13,270 --> 00:07:13,280
+simple web hook because all I want to do
+ 
+
+453
+00:07:13,280 --> 00:07:14,870
+simple web hook because all I want to do
+is send a message to one particular
+
+454
+00:07:14,870 --> 00:07:14,880
+is send a message to one particular
+ 
+
+455
+00:07:14,880 --> 00:07:16,629
+is send a message to one particular
+channel. But in order to do that, I'll
+
+456
+00:07:16,629 --> 00:07:16,639
+channel. But in order to do that, I'll
+ 
+
+457
+00:07:16,639 --> 00:07:18,710
+channel. But in order to do that, I'll
+need a credential, something to connect
+
+458
+00:07:18,710 --> 00:07:18,720
+need a credential, something to connect
+ 
+
+459
+00:07:18,720 --> 00:07:20,230
+need a credential, something to connect
+to this service. Now, you'll see this a
+
+460
+00:07:20,230 --> 00:07:20,240
+to this service. Now, you'll see this a
+ 
+
+461
+00:07:20,240 --> 00:07:22,390
+to this service. Now, you'll see this a
+lot with N8. You can connect all kinds
+
+462
+00:07:22,390 --> 00:07:22,400
+lot with N8. You can connect all kinds
+ 
+
+463
+00:07:22,400 --> 00:07:23,830
+lot with N8. You can connect all kinds
+of things like your Gmail account, your
+
+464
+00:07:23,830 --> 00:07:23,840
+of things like your Gmail account, your
+ 
+
+465
+00:07:23,840 --> 00:07:26,710
+of things like your Gmail account, your
+Gmail calendar, notion, open AAI, Grock,
+
+466
+00:07:26,710 --> 00:07:26,720
+Gmail calendar, notion, open AAI, Grock,
+ 
+
+467
+00:07:26,720 --> 00:07:28,390
+Gmail calendar, notion, open AAI, Grock,
+Anthropic, a lot of connections, a lot
+
+468
+00:07:28,390 --> 00:07:28,400
+Anthropic, a lot of connections, a lot
+ 
+
+469
+00:07:28,400 --> 00:07:29,830
+Anthropic, a lot of connections, a lot
+of credentials. Let's go and add one
+
+470
+00:07:29,830 --> 00:07:29,840
+of credentials. Let's go and add one
+ 
+
+471
+00:07:29,840 --> 00:07:31,749
+of credentials. Let's go and add one
+right now for Discord. Now, for this
+
+472
+00:07:31,749 --> 00:07:31,759
+right now for Discord. Now, for this
+ 
+
+473
+00:07:31,759 --> 00:07:33,270
+right now for Discord. Now, for this
+particular use case, it will only be a
+
+474
+00:07:33,270 --> 00:07:33,280
+particular use case, it will only be a
+ 
+
+475
+00:07:33,280 --> 00:07:35,830
+particular use case, it will only be a
+web hook URL. Very simple. Feel free to
+
+476
+00:07:35,830 --> 00:07:35,840
+web hook URL. Very simple. Feel free to
+ 
+
+477
+00:07:35,840 --> 00:07:37,350
+web hook URL. Very simple. Feel free to
+follow along. Like, it's free to set up
+
+478
+00:07:37,350 --> 00:07:37,360
+follow along. Like, it's free to set up
+ 
+
+479
+00:07:37,360 --> 00:07:39,189
+follow along. Like, it's free to set up
+a Discord server. I just did it just now
+
+480
+00:07:39,189 --> 00:07:39,199
+a Discord server. I just did it just now
+ 
+
+481
+00:07:39,199 --> 00:07:40,950
+a Discord server. I just did it just now
+as we're talking. I'm going to create a
+
+482
+00:07:40,950 --> 00:07:40,960
+as we're talking. I'm going to create a
+ 
+
+483
+00:07:40,960 --> 00:07:45,110
+as we're talking. I'm going to create a
+new channel. Sweet sweet news. creating
+
+484
+00:07:45,110 --> 00:07:45,120
+new channel. Sweet sweet news. creating
+ 
+
+485
+00:07:45,120 --> 00:07:47,350
+new channel. Sweet sweet news. creating
+it and then I'll go into my server
+
+486
+00:07:47,350 --> 00:07:47,360
+it and then I'll go into my server
+ 
+
+487
+00:07:47,360 --> 00:07:49,749
+it and then I'll go into my server
+settings, go to integrations and create
+
+488
+00:07:49,749 --> 00:07:49,759
+settings, go to integrations and create
+ 
+
+489
+00:07:49,759 --> 00:07:51,909
+settings, go to integrations and create
+a quick web hook which will post to
+
+490
+00:07:51,909 --> 00:07:51,919
+a quick web hook which will post to
+ 
+
+491
+00:07:51,919 --> 00:07:54,710
+a quick web hook which will post to
+sweet news. I'll copy that URL, paste it
+
+492
+00:07:54,710 --> 00:07:54,720
+sweet news. I'll copy that URL, paste it
+ 
+
+493
+00:07:54,720 --> 00:07:56,950
+sweet news. I'll copy that URL, paste it
+here, click save and we have our first
+
+494
+00:07:56,950 --> 00:07:56,960
+here, click save and we have our first
+ 
+
+495
+00:07:56,960 --> 00:07:58,629
+here, click save and we have our first
+credential created and notice how we
+
+496
+00:07:58,629 --> 00:07:58,639
+credential created and notice how we
+ 
+
+497
+00:07:58,639 --> 00:07:59,990
+credential created and notice how we
+have a drop down because we can have
+
+498
+00:07:59,990 --> 00:08:00,000
+have a drop down because we can have
+ 
+
+499
+00:08:00,000 --> 00:08:01,990
+have a drop down because we can have
+multiple Discord credentials but we just
+
+500
+00:08:01,990 --> 00:08:02,000
+multiple Discord credentials but we just
+ 
+
+501
+00:08:02,000 --> 00:08:03,749
+multiple Discord credentials but we just
+have the one now we're going to send a
+
+502
+00:08:03,749 --> 00:08:03,759
+have the one now we're going to send a
+ 
+
+503
+00:08:03,759 --> 00:08:05,110
+have the one now we're going to send a
+message and we're going to say
+
+504
+00:08:05,110 --> 00:08:05,120
+message and we're going to say
+ 
+
+505
+00:08:05,120 --> 00:08:06,230
+message and we're going to say
+something. Now first I'm just going to
+
+506
+00:08:06,230 --> 00:08:06,240
+something. Now first I'm just going to
+ 
+
+507
+00:08:06,240 --> 00:08:08,469
+something. Now first I'm just going to
+test it. I'm going to say hi and
+
+508
+00:08:08,469 --> 00:08:08,479
+test it. I'm going to say hi and
+ 
+
+509
+00:08:08,479 --> 00:08:11,510
+test it. I'm going to say hi and
+execute. Excellent. We got a success
+
+510
+00:08:11,510 --> 00:08:11,520
+execute. Excellent. We got a success
+ 
+
+511
+00:08:11,520 --> 00:08:13,990
+execute. Excellent. We got a success
+true. Now is that true? Let's go check.
+
+512
+00:08:13,990 --> 00:08:14,000
+true. Now is that true? Let's go check.
+ 
+
+513
+00:08:14,000 --> 00:08:16,309
+true. Now is that true? Let's go check.
+Oh gosh, it just said hi a million times
+
+514
+00:08:16,309 --> 00:08:16,319
+Oh gosh, it just said hi a million times
+ 
+
+515
+00:08:16,319 --> 00:08:17,749
+Oh gosh, it just said hi a million times
+in general. I hadn't saved it for the
+
+516
+00:08:17,749 --> 00:08:17,759
+in general. I hadn't saved it for the
+ 
+
+517
+00:08:17,759 --> 00:08:20,309
+in general. I hadn't saved it for the
+other thing yet. Now, real quick, why do
+
+518
+00:08:20,309 --> 00:08:20,319
+other thing yet. Now, real quick, why do
+ 
+
+519
+00:08:20,319 --> 00:08:23,189
+other thing yet. Now, real quick, why do
+you think it said hi 13 times? Watch,
+
+520
+00:08:23,189 --> 00:08:23,199
+you think it said hi 13 times? Watch,
+ 
+
+521
+00:08:23,199 --> 00:08:24,710
+you think it said hi 13 times? Watch,
+I'll do it again. By the way, isn't this
+
+522
+00:08:24,710 --> 00:08:24,720
+I'll do it again. By the way, isn't this
+ 
+
+523
+00:08:24,720 --> 00:08:26,469
+I'll do it again. By the way, isn't this
+like playing with video game? Like, why
+
+524
+00:08:26,469 --> 00:08:26,479
+like playing with video game? Like, why
+ 
+
+525
+00:08:26,479 --> 00:08:27,990
+like playing with video game? Like, why
+do people even play video games when you
+
+526
+00:08:27,990 --> 00:08:28,000
+do people even play video games when you
+ 
+
+527
+00:08:28,000 --> 00:08:29,270
+do people even play video games when you
+can do stuff like this in your home lab?
+
+528
+00:08:29,270 --> 00:08:29,280
+can do stuff like this in your home lab?
+ 
+
+529
+00:08:29,280 --> 00:08:32,709
+can do stuff like this in your home lab?
+Are you kidding me? Let's say I bet you
+
+530
+00:08:32,709 --> 00:08:32,719
+Are you kidding me? Let's say I bet you
+ 
+
+531
+00:08:32,719 --> 00:08:36,790
+Are you kidding me? Let's say I bet you
+there will be 13 of these. Go. Done.
+
+532
+00:08:36,790 --> 00:08:36,800
+there will be 13 of these. Go. Done.
+ 
+
+533
+00:08:36,800 --> 00:08:39,269
+there will be 13 of these. Go. Done.
+Look back in Discord. We have 13
+
+534
+00:08:39,269 --> 00:08:39,279
+Look back in Discord. We have 13
+ 
+
+535
+00:08:39,279 --> 00:08:42,149
+Look back in Discord. We have 13
+messages. Why? That's how n handles
+
+536
+00:08:42,149 --> 00:08:42,159
+messages. Why? That's how n handles
+ 
+
+537
+00:08:42,159 --> 00:08:45,750
+messages. Why? That's how n handles
+things. Notice that we're handing off 13
+
+538
+00:08:45,750 --> 00:08:45,760
+things. Notice that we're handing off 13
+ 
+
+539
+00:08:45,760 --> 00:08:48,710
+things. Notice that we're handing off 13
+articles or items from our RSS read
+
+540
+00:08:48,710 --> 00:08:48,720
+articles or items from our RSS read
+ 
+
+541
+00:08:48,720 --> 00:08:50,949
+articles or items from our RSS read
+node. The Discord node is going to go
+
+542
+00:08:50,949 --> 00:08:50,959
+node. The Discord node is going to go
+ 
+
+543
+00:08:50,959 --> 00:08:52,790
+node. The Discord node is going to go
+through each one of those 13 items and
+
+544
+00:08:52,790 --> 00:08:52,800
+through each one of those 13 items and
+ 
+
+545
+00:08:52,800 --> 00:08:55,190
+through each one of those 13 items and
+perform 13 individual actions. Now, the
+
+546
+00:08:55,190 --> 00:08:55,200
+perform 13 individual actions. Now, the
+ 
+
+547
+00:08:55,200 --> 00:08:57,430
+perform 13 individual actions. Now, the
+reason I only said like hi or that dumb
+
+548
+00:08:57,430 --> 00:08:57,440
+reason I only said like hi or that dumb
+ 
+
+549
+00:08:57,440 --> 00:08:59,670
+reason I only said like hi or that dumb
+sentence I had is because I didn't put
+
+550
+00:08:59,670 --> 00:08:59,680
+sentence I had is because I didn't put
+ 
+
+551
+00:08:59,680 --> 00:09:01,670
+sentence I had is because I didn't put
+anything specific to those articles in
+
+552
+00:09:01,670 --> 00:09:01,680
+anything specific to those articles in
+ 
+
+553
+00:09:01,680 --> 00:09:03,110
+anything specific to those articles in
+the message. Let's change that right
+
+554
+00:09:03,110 --> 00:09:03,120
+the message. Let's change that right
+ 
+
+555
+00:09:03,120 --> 00:09:05,829
+the message. Let's change that right
+now. So, let's start with hey, here is
+
+556
+00:09:05,829 --> 00:09:05,839
+now. So, let's start with hey, here is
+ 
+
+557
+00:09:05,839 --> 00:09:08,310
+now. So, let's start with hey, here is
+your news for the day. And here's where
+
+558
+00:09:08,310 --> 00:09:08,320
+your news for the day. And here's where
+ 
+
+559
+00:09:08,320 --> 00:09:10,070
+your news for the day. And here's where
+things get very fun. Let's hit enter a
+
+560
+00:09:10,070 --> 00:09:10,080
+things get very fun. Let's hit enter a
+ 
+
+561
+00:09:10,080 --> 00:09:11,910
+things get very fun. Let's hit enter a
+few times. Give us some space. and let's
+
+562
+00:09:11,910 --> 00:09:11,920
+few times. Give us some space. and let's
+ 
+
+563
+00:09:11,920 --> 00:09:13,750
+few times. Give us some space. and let's
+start adding some of the content from
+
+564
+00:09:13,750 --> 00:09:13,760
+start adding some of the content from
+ 
+
+565
+00:09:13,760 --> 00:09:16,070
+start adding some of the content from
+these articles. Let's add the creator.
+
+566
+00:09:16,070 --> 00:09:16,080
+these articles. Let's add the creator.
+ 
+
+567
+00:09:16,080 --> 00:09:17,829
+these articles. Let's add the creator.
+I'm just going to grab this right here.
+
+568
+00:09:17,829 --> 00:09:17,839
+I'm just going to grab this right here.
+ 
+
+569
+00:09:17,839 --> 00:09:19,110
+I'm just going to grab this right here.
+See this how notice how my mouse
+
+570
+00:09:19,110 --> 00:09:19,120
+See this how notice how my mouse
+ 
+
+571
+00:09:19,120 --> 00:09:20,949
+See this how notice how my mouse
+highlights it? I'm going to drag it over
+
+572
+00:09:20,949 --> 00:09:20,959
+highlights it? I'm going to drag it over
+ 
+
+573
+00:09:20,959 --> 00:09:22,790
+highlights it? I'm going to drag it over
+right there. Look at that. Notice it's
+
+574
+00:09:22,790 --> 00:09:22,800
+right there. Look at that. Notice it's
+ 
+
+575
+00:09:22,800 --> 00:09:24,389
+right there. Look at that. Notice it's
+going to be JSON.creator. It's pulling
+
+576
+00:09:24,389 --> 00:09:24,399
+going to be JSON.creator. It's pulling
+ 
+
+577
+00:09:24,399 --> 00:09:26,070
+going to be JSON.creator. It's pulling
+from this JSON information. And this
+
+578
+00:09:26,070 --> 00:09:26,080
+from this JSON information. And this
+ 
+
+579
+00:09:26,080 --> 00:09:27,269
+from this JSON information. And this
+notation right here is actually
+
+580
+00:09:27,269 --> 00:09:27,279
+notation right here is actually
+ 
+
+581
+00:09:27,279 --> 00:09:30,070
+notation right here is actually
+JavaScript. Don't get scared. You won't
+
+582
+00:09:30,070 --> 00:09:30,080
+JavaScript. Don't get scared. You won't
+ 
+
+583
+00:09:30,080 --> 00:09:32,230
+JavaScript. Don't get scared. You won't
+have to know JavaScript to move forward
+
+584
+00:09:32,230 --> 00:09:32,240
+have to know JavaScript to move forward
+ 
+
+585
+00:09:32,240 --> 00:09:34,230
+have to know JavaScript to move forward
+with N8. You're going to get better at
+
+586
+00:09:34,230 --> 00:09:34,240
+with N8. You're going to get better at
+ 
+
+587
+00:09:34,240 --> 00:09:36,230
+with N8. You're going to get better at
+JavaScript because it does rely on that
+
+588
+00:09:36,230 --> 00:09:36,240
+JavaScript because it does rely on that
+ 
+
+589
+00:09:36,240 --> 00:09:38,230
+JavaScript because it does rely on that
+quite a bit. But we've got Chatbt and
+
+590
+00:09:38,230 --> 00:09:38,240
+quite a bit. But we've got Chatbt and
+ 
+
+591
+00:09:38,240 --> 00:09:39,670
+quite a bit. But we've got Chatbt and
+Claude to help us figure out some other
+
+592
+00:09:39,670 --> 00:09:39,680
+Claude to help us figure out some other
+ 
+
+593
+00:09:39,680 --> 00:09:41,190
+Claude to help us figure out some other
+things. But you for now you won't have
+
+594
+00:09:41,190 --> 00:09:41,200
+things. But you for now you won't have
+ 
+
+595
+00:09:41,200 --> 00:09:42,470
+things. But you for now you won't have
+to know that. Just notice what I did
+
+596
+00:09:42,470 --> 00:09:42,480
+to know that. Just notice what I did
+ 
+
+597
+00:09:42,480 --> 00:09:44,230
+to know that. Just notice what I did
+there. I dragged and it created that. So
+
+598
+00:09:44,230 --> 00:09:44,240
+there. I dragged and it created that. So
+ 
+
+599
+00:09:44,240 --> 00:09:45,910
+there. I dragged and it created that. So
+we'll put the creator. Let's put the uh
+
+600
+00:09:45,910 --> 00:09:45,920
+we'll put the creator. Let's put the uh
+ 
+
+601
+00:09:45,920 --> 00:09:49,509
+we'll put the creator. Let's put the uh
+title. We'll put the link and the
+
+602
+00:09:49,509 --> 00:09:49,519
+title. We'll put the link and the
+ 
+
+603
+00:09:49,519 --> 00:09:51,110
+title. We'll put the link and the
+publish date. How about that? And notice
+
+604
+00:09:51,110 --> 00:09:51,120
+publish date. How about that? And notice
+ 
+
+605
+00:09:51,120 --> 00:09:52,790
+publish date. How about that? And notice
+how below us we're seeing the result,
+
+606
+00:09:52,790 --> 00:09:52,800
+how below us we're seeing the result,
+ 
+
+607
+00:09:52,800 --> 00:09:54,630
+how below us we're seeing the result,
+the example, what those variables are
+
+608
+00:09:54,630 --> 00:09:54,640
+the example, what those variables are
+ 
+
+609
+00:09:54,640 --> 00:09:56,550
+the example, what those variables are
+forming into. Let's test that out.
+
+610
+00:09:56,550 --> 00:09:56,560
+forming into. Let's test that out.
+ 
+
+611
+00:09:56,560 --> 00:09:58,389
+forming into. Let's test that out.
+Execute step. Let's go see what
+
+612
+00:09:58,389 --> 00:09:58,399
+Execute step. Let's go see what
+ 
+
+613
+00:09:58,399 --> 00:10:02,310
+Execute step. Let's go see what
+happened. Ah, look at that actual news.
+
+614
+00:10:02,310 --> 00:10:02,320
+happened. Ah, look at that actual news.
+ 
+
+615
+00:10:02,320 --> 00:10:04,870
+happened. Ah, look at that actual news.
+Notice it sent out 13 messages. But also
+
+616
+00:10:04,870 --> 00:10:04,880
+Notice it sent out 13 messages. But also
+ 
+
+617
+00:10:04,880 --> 00:10:06,870
+Notice it sent out 13 messages. But also
+notice it said, "Hey, here's your news
+
+618
+00:10:06,870 --> 00:10:06,880
+notice it said, "Hey, here's your news
+ 
+
+619
+00:10:06,880 --> 00:10:08,790
+notice it said, "Hey, here's your news
+for the day 13 times, one for each
+
+620
+00:10:08,790 --> 00:10:08,800
+for the day 13 times, one for each
+ 
+
+621
+00:10:08,800 --> 00:10:10,790
+for the day 13 times, one for each
+article." Not ideal. We'll definitely
+
+622
+00:10:10,790 --> 00:10:10,800
+article." Not ideal. We'll definitely
+ 
+
+623
+00:10:10,800 --> 00:10:12,550
+article." Not ideal. We'll definitely
+fix that. But so far, we've done
+
+624
+00:10:12,550 --> 00:10:12,560
+fix that. But so far, we've done
+ 
+
+625
+00:10:12,560 --> 00:10:13,829
+fix that. But so far, we've done
+something pretty cool. I'm going click
+
+626
+00:10:13,829 --> 00:10:13,839
+something pretty cool. I'm going click
+ 
+
+627
+00:10:13,839 --> 00:10:15,430
+something pretty cool. I'm going click
+save one more time. We set up a node to
+
+628
+00:10:15,430 --> 00:10:15,440
+save one more time. We set up a node to
+ 
+
+629
+00:10:15,440 --> 00:10:17,030
+save one more time. We set up a node to
+pull information from an RSS feed. And
+
+630
+00:10:17,030 --> 00:10:17,040
+pull information from an RSS feed. And
+ 
+
+631
+00:10:17,040 --> 00:10:19,030
+pull information from an RSS feed. And
+then we're sending that information to a
+
+632
+00:10:19,030 --> 00:10:19,040
+then we're sending that information to a
+ 
+
+633
+00:10:19,040 --> 00:10:21,350
+then we're sending that information to a
+Discord channel. But honestly, 13 is too
+
+634
+00:10:21,350 --> 00:10:21,360
+Discord channel. But honestly, 13 is too
+ 
+
+635
+00:10:21,360 --> 00:10:22,949
+Discord channel. But honestly, 13 is too
+much. I don't want to see 13 things.
+
+636
+00:10:22,949 --> 00:10:22,959
+much. I don't want to see 13 things.
+ 
+
+637
+00:10:22,959 --> 00:10:24,790
+much. I don't want to see 13 things.
+Let's limit that information. So, right
+
+638
+00:10:24,790 --> 00:10:24,800
+Let's limit that information. So, right
+ 
+
+639
+00:10:24,800 --> 00:10:26,550
+Let's limit that information. So, right
+here between the Discord node and the
+
+640
+00:10:26,550 --> 00:10:26,560
+here between the Discord node and the
+ 
+
+641
+00:10:26,560 --> 00:10:28,710
+here between the Discord node and the
+RSS read node, I'm going to add
+
+642
+00:10:28,710 --> 00:10:28,720
+RSS read node, I'm going to add
+ 
+
+643
+00:10:28,720 --> 00:10:30,550
+RSS read node, I'm going to add
+something called limit, which will
+
+644
+00:10:30,550 --> 00:10:30,560
+something called limit, which will
+ 
+
+645
+00:10:30,560 --> 00:10:31,910
+something called limit, which will
+restrict the number of items. I'm going
+
+646
+00:10:31,910 --> 00:10:31,920
+restrict the number of items. I'm going
+ 
+
+647
+00:10:31,920 --> 00:10:33,750
+restrict the number of items. I'm going
+to say I only want to see five things.
+
+648
+00:10:33,750 --> 00:10:33,760
+to say I only want to see five things.
+ 
+
+649
+00:10:33,760 --> 00:10:35,269
+to say I only want to see five things.
+Now, I could execute it from here. I
+
+650
+00:10:35,269 --> 00:10:35,279
+Now, I could execute it from here. I
+ 
+
+651
+00:10:35,279 --> 00:10:36,870
+Now, I could execute it from here. I
+don't have to. I can jump out, hit the
+
+652
+00:10:36,870 --> 00:10:36,880
+don't have to. I can jump out, hit the
+ 
+
+653
+00:10:36,880 --> 00:10:38,710
+don't have to. I can jump out, hit the
+play button right here. Boom. And now
+
+654
+00:10:38,710 --> 00:10:38,720
+play button right here. Boom. And now
+ 
+
+655
+00:10:38,720 --> 00:10:40,470
+play button right here. Boom. And now
+we're only sending five items. Now, do
+
+656
+00:10:40,470 --> 00:10:40,480
+we're only sending five items. Now, do
+ 
+
+657
+00:10:40,480 --> 00:10:41,509
+we're only sending five items. Now, do
+you want to see something really cool?
+
+658
+00:10:41,509 --> 00:10:41,519
+you want to see something really cool?
+ 
+
+659
+00:10:41,519 --> 00:10:43,110
+you want to see something really cool?
+This has nothing to do with news, but I
+
+660
+00:10:43,110 --> 00:10:43,120
+This has nothing to do with news, but I
+ 
+
+661
+00:10:43,120 --> 00:10:44,790
+This has nothing to do with news, but I
+can't I can't wait to show Oh, I almost
+
+662
+00:10:44,790 --> 00:10:44,800
+can't I can't wait to show Oh, I almost
+ 
+
+663
+00:10:44,800 --> 00:10:46,389
+can't I can't wait to show Oh, I almost
+want my coffee. That's how excited I am.
+
+664
+00:10:46,389 --> 00:10:46,399
+want my coffee. That's how excited I am.
+ 
+
+665
+00:10:46,399 --> 00:10:47,829
+want my coffee. That's how excited I am.
+I can't wait to show you this. Now, we
+
+666
+00:10:47,829 --> 00:10:47,839
+I can't wait to show you this. Now, we
+ 
+
+667
+00:10:47,839 --> 00:10:49,030
+I can't wait to show you this. Now, we
+don't have to click on anything to add a
+
+668
+00:10:49,030 --> 00:10:49,040
+don't have to click on anything to add a
+ 
+
+669
+00:10:49,040 --> 00:10:50,790
+don't have to click on anything to add a
+new node. We can just go up here to the
+
+670
+00:10:50,790 --> 00:10:50,800
+new node. We can just go up here to the
+ 
+
+671
+00:10:50,800 --> 00:10:53,190
+new node. We can just go up here to the
+plus sign or even just hit tab and open
+
+672
+00:10:53,190 --> 00:10:53,200
+plus sign or even just hit tab and open
+ 
+
+673
+00:10:53,200 --> 00:10:55,350
+plus sign or even just hit tab and open
+up the node selector. I'm going to
+
+674
+00:10:55,350 --> 00:10:55,360
+up the node selector. I'm going to
+ 
+
+675
+00:10:55,360 --> 00:10:58,710
+up the node selector. I'm going to
+search for command line. We can execute
+
+676
+00:10:58,710 --> 00:10:58,720
+search for command line. We can execute
+ 
+
+677
+00:10:58,720 --> 00:11:01,190
+search for command line. We can execute
+commands on the host.
+
+678
+00:11:01,190 --> 00:11:01,200
+commands on the host.
+ 
+
+679
+00:11:01,200 --> 00:11:03,030
+commands on the host.
+So, I'm click out of it. Look at that.
+
+680
+00:11:03,030 --> 00:11:03,040
+So, I'm click out of it. Look at that.
+ 
+
+681
+00:11:03,040 --> 00:11:04,470
+So, I'm click out of it. Look at that.
+That's pretty sick. I'm going to have
+
+682
+00:11:04,470 --> 00:11:04,480
+That's pretty sick. I'm going to have
+ 
+
+683
+00:11:04,480 --> 00:11:06,550
+That's pretty sick. I'm going to have
+this click to execute button make that
+
+684
+00:11:06,550 --> 00:11:06,560
+this click to execute button make that
+ 
+
+685
+00:11:06,560 --> 00:11:07,990
+this click to execute button make that
+go off, too. Now, look at that. I can
+
+686
+00:11:07,990 --> 00:11:08,000
+go off, too. Now, look at that. I can
+ 
+
+687
+00:11:08,000 --> 00:11:09,750
+go off, too. Now, look at that. I can
+actually make both of these go off
+
+688
+00:11:09,750 --> 00:11:09,760
+actually make both of these go off
+ 
+
+689
+00:11:09,760 --> 00:11:11,269
+actually make both of these go off
+another branch. Let's have it do
+
+690
+00:11:11,269 --> 00:11:11,279
+another branch. Let's have it do
+ 
+
+691
+00:11:11,279 --> 00:11:12,630
+another branch. Let's have it do
+something. So, let's jump into our node.
+
+692
+00:11:12,630 --> 00:11:12,640
+something. So, let's jump into our node.
+ 
+
+693
+00:11:12,640 --> 00:11:13,910
+something. So, let's jump into our node.
+This will be a command that we're
+
+694
+00:11:13,910 --> 00:11:13,920
+This will be a command that we're
+ 
+
+695
+00:11:13,920 --> 00:11:16,310
+This will be a command that we're
+actually doing, executing on our Docker
+
+696
+00:11:16,310 --> 00:11:16,320
+actually doing, executing on our Docker
+ 
+
+697
+00:11:16,320 --> 00:11:19,269
+actually doing, executing on our Docker
+host. I'm going to say ping 1.1.1.1.
+
+698
+00:11:19,269 --> 00:11:19,279
+host. I'm going to say ping 1.1.1.1.
+ 
+
+699
+00:11:19,279 --> 00:11:21,590
+host. I'm going to say ping 1.1.1.1.
+And we'll do that for account. So, - C
+
+700
+00:11:21,590 --> 00:11:21,600
+And we'll do that for account. So, - C
+ 
+
+701
+00:11:21,600 --> 00:11:23,829
+And we'll do that for account. So, - C
+of three. Let's try it out. Look at
+
+702
+00:11:23,829 --> 00:11:23,839
+of three. Let's try it out. Look at
+ 
+
+703
+00:11:23,839 --> 00:11:26,630
+of three. Let's try it out. Look at
+that. We are able to run commands. Now,
+
+704
+00:11:26,630 --> 00:11:26,640
+that. We are able to run commands. Now,
+ 
+
+705
+00:11:26,640 --> 00:11:28,710
+that. We are able to run commands. Now,
+I don't know about you, but when I see
+
+706
+00:11:28,710 --> 00:11:28,720
+I don't know about you, but when I see
+ 
+
+707
+00:11:28,720 --> 00:11:31,350
+I don't know about you, but when I see
+that, I'm like, oh my gosh, I'm starting
+
+708
+00:11:31,350 --> 00:11:31,360
+that, I'm like, oh my gosh, I'm starting
+ 
+
+709
+00:11:31,360 --> 00:11:34,790
+that, I'm like, oh my gosh, I'm starting
+to get this. I have a billion ideas.
+
+710
+00:11:34,790 --> 00:11:34,800
+to get this. I have a billion ideas.
+ 
+
+711
+00:11:34,800 --> 00:11:37,269
+to get this. I have a billion ideas.
+Now, let's let's say that we're doing a
+
+712
+00:11:37,269 --> 00:11:37,279
+Now, let's let's say that we're doing a
+ 
+
+713
+00:11:37,279 --> 00:11:38,870
+Now, let's let's say that we're doing a
+test for our internet and we know that
+
+714
+00:11:38,870 --> 00:11:38,880
+test for our internet and we know that
+ 
+
+715
+00:11:38,880 --> 00:11:40,550
+test for our internet and we know that
+when we ping 1.1.1.1 and we get
+
+716
+00:11:40,550 --> 00:11:40,560
+when we ping 1.1.1.1 and we get
+ 
+
+717
+00:11:40,560 --> 00:11:42,870
+when we ping 1.1.1.1 and we get
+responses back, we know it's working and
+
+718
+00:11:42,870 --> 00:11:42,880
+responses back, we know it's working and
+ 
+
+719
+00:11:42,880 --> 00:11:44,470
+responses back, we know it's working and
+maybe we want to have that sent to us in
+
+720
+00:11:44,470 --> 00:11:44,480
+maybe we want to have that sent to us in
+ 
+
+721
+00:11:44,480 --> 00:11:45,910
+maybe we want to have that sent to us in
+our Discord message. Let's do that right
+
+722
+00:11:45,910 --> 00:11:45,920
+our Discord message. Let's do that right
+ 
+
+723
+00:11:45,920 --> 00:11:47,030
+our Discord message. Let's do that right
+now. So, I'm actually going to delete
+
+724
+00:11:47,030 --> 00:11:47,040
+now. So, I'm actually going to delete
+ 
+
+725
+00:11:47,040 --> 00:11:48,790
+now. So, I'm actually going to delete
+this connection between Discord and the
+
+726
+00:11:48,790 --> 00:11:48,800
+this connection between Discord and the
+ 
+
+727
+00:11:48,800 --> 00:11:50,949
+this connection between Discord and the
+limit node. Now, I'm teaching you a
+
+728
+00:11:50,949 --> 00:11:50,959
+limit node. Now, I'm teaching you a
+ 
+
+729
+00:11:50,959 --> 00:11:52,630
+limit node. Now, I'm teaching you a
+little bit about how we manipulate data
+
+730
+00:11:52,630 --> 00:11:52,640
+little bit about how we manipulate data
+ 
+
+731
+00:11:52,640 --> 00:11:54,790
+little bit about how we manipulate data
+inside N. I'm going to add a new node
+
+732
+00:11:54,790 --> 00:11:54,800
+inside N. I'm going to add a new node
+ 
+
+733
+00:11:54,800 --> 00:11:57,910
+inside N. I'm going to add a new node
+right here called the merge node. We can
+
+734
+00:11:57,910 --> 00:11:57,920
+right here called the merge node. We can
+ 
+
+735
+00:11:57,920 --> 00:12:00,710
+right here called the merge node. We can
+merge sets of data. Notice how it has
+
+736
+00:12:00,710 --> 00:12:00,720
+merge sets of data. Notice how it has
+ 
+
+737
+00:12:00,720 --> 00:12:02,949
+merge sets of data. Notice how it has
+two inputs, limits going into one. Let's
+
+738
+00:12:02,949 --> 00:12:02,959
+two inputs, limits going into one. Let's
+ 
+
+739
+00:12:02,959 --> 00:12:04,630
+two inputs, limits going into one. Let's
+add our command output into the other.
+
+740
+00:12:04,630 --> 00:12:04,640
+add our command output into the other.
+ 
+
+741
+00:12:04,640 --> 00:12:06,550
+add our command output into the other.
+For merge, we have a few options or more
+
+742
+00:12:06,550 --> 00:12:06,560
+For merge, we have a few options or more
+ 
+
+743
+00:12:06,560 --> 00:12:08,550
+For merge, we have a few options or more
+than a few. We have a lot. But appending
+
+744
+00:12:08,550 --> 00:12:08,560
+than a few. We have a lot. But appending
+ 
+
+745
+00:12:08,560 --> 00:12:10,790
+than a few. We have a lot. But appending
+is great. So, it's going to append one
+
+746
+00:12:10,790 --> 00:12:10,800
+is great. So, it's going to append one
+ 
+
+747
+00:12:10,800 --> 00:12:12,230
+is great. So, it's going to append one
+input to another. I'll show you what
+
+748
+00:12:12,230 --> 00:12:12,240
+input to another. I'll show you what
+ 
+
+749
+00:12:12,240 --> 00:12:13,350
+input to another. I'll show you what
+that looks like here in a second. But
+
+750
+00:12:13,350 --> 00:12:13,360
+that looks like here in a second. But
+ 
+
+751
+00:12:13,360 --> 00:12:14,710
+that looks like here in a second. But
+notice something kind of weird. Notice
+
+752
+00:12:14,710 --> 00:12:14,720
+notice something kind of weird. Notice
+ 
+
+753
+00:12:14,720 --> 00:12:16,629
+notice something kind of weird. Notice
+how our command output shows one item
+
+754
+00:12:16,629 --> 00:12:16,639
+how our command output shows one item
+ 
+
+755
+00:12:16,639 --> 00:12:20,310
+how our command output shows one item
+going out, but our RSS feed or read and
+
+756
+00:12:20,310 --> 00:12:20,320
+going out, but our RSS feed or read and
+ 
+
+757
+00:12:20,320 --> 00:12:22,389
+going out, but our RSS feed or read and
+our limit is outputting nothing. It kind
+
+758
+00:12:22,389 --> 00:12:22,399
+our limit is outputting nothing. It kind
+ 
+
+759
+00:12:22,399 --> 00:12:23,829
+our limit is outputting nothing. It kind
+of reset, didn't it? So, now we have to
+
+760
+00:12:23,829 --> 00:12:23,839
+of reset, didn't it? So, now we have to
+ 
+
+761
+00:12:23,839 --> 00:12:25,350
+of reset, didn't it? So, now we have to
+go back in there and run them again to
+
+762
+00:12:25,350 --> 00:12:25,360
+go back in there and run them again to
+ 
+
+763
+00:12:25,360 --> 00:12:27,190
+go back in there and run them again to
+pull fresh data. So, I'll jump into RSS
+
+764
+00:12:27,190 --> 00:12:27,200
+pull fresh data. So, I'll jump into RSS
+ 
+
+765
+00:12:27,200 --> 00:12:30,150
+pull fresh data. So, I'll jump into RSS
+read. Execute the step again. Notice how
+
+766
+00:12:30,150 --> 00:12:30,160
+read. Execute the step again. Notice how
+ 
+
+767
+00:12:30,160 --> 00:12:31,829
+read. Execute the step again. Notice how
+our command output is now gone. and it
+
+768
+00:12:31,829 --> 00:12:31,839
+our command output is now gone. and it
+ 
+
+769
+00:12:31,839 --> 00:12:33,430
+our command output is now gone. and it
+kind of resets as you're going through.
+
+770
+00:12:33,430 --> 00:12:33,440
+kind of resets as you're going through.
+ 
+
+771
+00:12:33,440 --> 00:12:34,870
+kind of resets as you're going through.
+That's annoying, especially as you get
+
+772
+00:12:34,870 --> 00:12:34,880
+That's annoying, especially as you get
+ 
+
+773
+00:12:34,880 --> 00:12:36,470
+That's annoying, especially as you get
+to later steps. There's a way to get
+
+774
+00:12:36,470 --> 00:12:36,480
+to later steps. There's a way to get
+ 
+
+775
+00:12:36,480 --> 00:12:38,310
+to later steps. There's a way to get
+beyond that when you're testing. I can
+
+776
+00:12:38,310 --> 00:12:38,320
+beyond that when you're testing. I can
+ 
+
+777
+00:12:38,320 --> 00:12:40,069
+beyond that when you're testing. I can
+jump into this RSS read. Notice how we
+
+778
+00:12:40,069 --> 00:12:40,079
+jump into this RSS read. Notice how we
+ 
+
+779
+00:12:40,079 --> 00:12:41,670
+jump into this RSS read. Notice how we
+have our results here on the right. And
+
+780
+00:12:41,670 --> 00:12:41,680
+have our results here on the right. And
+ 
+
+781
+00:12:41,680 --> 00:12:43,750
+have our results here on the right. And
+I have a little thumb tag. I can pin
+
+782
+00:12:43,750 --> 00:12:43,760
+I have a little thumb tag. I can pin
+ 
+
+783
+00:12:43,760 --> 00:12:45,910
+I have a little thumb tag. I can pin
+that data. Say, keep that data there.
+
+784
+00:12:45,910 --> 00:12:45,920
+that data. Say, keep that data there.
+ 
+
+785
+00:12:45,920 --> 00:12:47,430
+that data. Say, keep that data there.
+Don't ever remove it. Same thing goes
+
+786
+00:12:47,430 --> 00:12:47,440
+Don't ever remove it. Same thing goes
+ 
+
+787
+00:12:47,440 --> 00:12:49,670
+Don't ever remove it. Same thing goes
+for limit. When I execute limit, I can
+
+788
+00:12:49,670 --> 00:12:49,680
+for limit. When I execute limit, I can
+ 
+
+789
+00:12:49,680 --> 00:12:51,350
+for limit. When I execute limit, I can
+say boom, pin that there. So no matter
+
+790
+00:12:51,350 --> 00:12:51,360
+say boom, pin that there. So no matter
+ 
+
+791
+00:12:51,360 --> 00:12:53,829
+say boom, pin that there. So no matter
+what happens, that stays there. I'll do
+
+792
+00:12:53,829 --> 00:12:53,839
+what happens, that stays there. I'll do
+ 
+
+793
+00:12:53,839 --> 00:12:55,430
+what happens, that stays there. I'll do
+the same thing for command. Pin that
+
+794
+00:12:55,430 --> 00:12:55,440
+the same thing for command. Pin that
+ 
+
+795
+00:12:55,440 --> 00:12:57,430
+the same thing for command. Pin that
+sucker. Notice we have a pen on each of
+
+796
+00:12:57,430 --> 00:12:57,440
+sucker. Notice we have a pen on each of
+ 
+
+797
+00:12:57,440 --> 00:12:58,790
+sucker. Notice we have a pen on each of
+the nodes when we do that. And then
+
+798
+00:12:58,790 --> 00:12:58,800
+the nodes when we do that. And then
+ 
+
+799
+00:12:58,800 --> 00:13:00,310
+the nodes when we do that. And then
+we'll execute our merge. And I'll show
+
+800
+00:13:00,310 --> 00:13:00,320
+we'll execute our merge. And I'll show
+ 
+
+801
+00:13:00,320 --> 00:13:02,150
+we'll execute our merge. And I'll show
+you what it does here. So, it actually
+
+802
+00:13:02,150 --> 00:13:02,160
+you what it does here. So, it actually
+ 
+
+803
+00:13:02,160 --> 00:13:04,870
+you what it does here. So, it actually
+just did our five articles we're pushing
+
+804
+00:13:04,870 --> 00:13:04,880
+just did our five articles we're pushing
+ 
+
+805
+00:13:04,880 --> 00:13:07,910
+just did our five articles we're pushing
+over. And at the end, we have a bunch of
+
+806
+00:13:07,910 --> 00:13:07,920
+over. And at the end, we have a bunch of
+ 
+
+807
+00:13:07,920 --> 00:13:10,150
+over. And at the end, we have a bunch of
+weird fields, but at the end, it added
+
+808
+00:13:10,150 --> 00:13:10,160
+weird fields, but at the end, it added
+ 
+
+809
+00:13:10,160 --> 00:13:11,990
+weird fields, but at the end, it added
+in our ping results, which is standard
+
+810
+00:13:11,990 --> 00:13:12,000
+in our ping results, which is standard
+ 
+
+811
+00:13:12,000 --> 00:13:13,829
+in our ping results, which is standard
+out, a new column that has. And notice
+
+812
+00:13:13,829 --> 00:13:13,839
+out, a new column that has. And notice
+ 
+
+813
+00:13:13,839 --> 00:13:16,230
+out, a new column that has. And notice
+we're outputting six items. Now, let's
+
+814
+00:13:16,230 --> 00:13:16,240
+we're outputting six items. Now, let's
+ 
+
+815
+00:13:16,240 --> 00:13:17,590
+we're outputting six items. Now, let's
+connect that back to Discord and let's
+
+816
+00:13:17,590 --> 00:13:17,600
+connect that back to Discord and let's
+ 
+
+817
+00:13:17,600 --> 00:13:19,590
+connect that back to Discord and let's
+jump into the Discord node and mess with
+
+818
+00:13:19,590 --> 00:13:19,600
+jump into the Discord node and mess with
+ 
+
+819
+00:13:19,600 --> 00:13:20,949
+jump into the Discord node and mess with
+a few things. Actually, I'm just going
+
+820
+00:13:20,949 --> 00:13:20,959
+a few things. Actually, I'm just going
+ 
+
+821
+00:13:20,959 --> 00:13:22,710
+a few things. Actually, I'm just going
+to add one more new piece of data. We're
+
+822
+00:13:22,710 --> 00:13:22,720
+to add one more new piece of data. We're
+ 
+
+823
+00:13:22,720 --> 00:13:24,069
+to add one more new piece of data. We're
+going to add our standard out here. So,
+
+824
+00:13:24,069 --> 00:13:24,079
+going to add our standard out here. So,
+ 
+
+825
+00:13:24,079 --> 00:13:25,590
+going to add our standard out here. So,
+notice the ping results are down here
+
+826
+00:13:25,590 --> 00:13:25,600
+notice the ping results are down here
+ 
+
+827
+00:13:25,600 --> 00:13:28,790
+notice the ping results are down here
+with standard out or stout. No doubt.
+
+828
+00:13:28,790 --> 00:13:28,800
+with standard out or stout. No doubt.
+ 
+
+829
+00:13:28,800 --> 00:13:30,870
+with standard out or stout. No doubt.
+Now let's run it. True true true a lot
+
+830
+00:13:30,870 --> 00:13:30,880
+Now let's run it. True true true a lot
+ 
+
+831
+00:13:30,880 --> 00:13:32,870
+Now let's run it. True true true a lot
+of stuff. If we check Discord, there's
+
+832
+00:13:32,870 --> 00:13:32,880
+of stuff. If we check Discord, there's
+ 
+
+833
+00:13:32,880 --> 00:13:35,110
+of stuff. If we check Discord, there's
+all our articles and at the end is our
+
+834
+00:13:35,110 --> 00:13:35,120
+all our articles and at the end is our
+ 
+
+835
+00:13:35,120 --> 00:13:37,829
+all our articles and at the end is our
+ping result. Now sidebar, beyond just
+
+836
+00:13:37,829 --> 00:13:37,839
+ping result. Now sidebar, beyond just
+ 
+
+837
+00:13:37,839 --> 00:13:40,069
+ping result. Now sidebar, beyond just
+doing the command, execute a command on
+
+838
+00:13:40,069 --> 00:13:40,079
+doing the command, execute a command on
+ 
+
+839
+00:13:40,079 --> 00:13:43,590
+doing the command, execute a command on
+the Docker host, we can also add an SSH
+
+840
+00:13:43,590 --> 00:13:43,600
+the Docker host, we can also add an SSH
+ 
+
+841
+00:13:43,600 --> 00:13:46,069
+the Docker host, we can also add an SSH
+node that will log into any computer or
+
+842
+00:13:46,069 --> 00:13:46,079
+node that will log into any computer or
+ 
+
+843
+00:13:46,079 --> 00:13:48,470
+node that will log into any computer or
+server with SSH access and execute any
+
+844
+00:13:48,470 --> 00:13:48,480
+server with SSH access and execute any
+ 
+
+845
+00:13:48,480 --> 00:13:50,710
+server with SSH access and execute any
+command you want. Network, switch,
+
+846
+00:13:50,710 --> 00:13:50,720
+command you want. Network, switch,
+ 
+
+847
+00:13:50,720 --> 00:13:53,990
+command you want. Network, switch,
+router, anything. I know your gears are
+
+848
+00:13:53,990 --> 00:13:54,000
+router, anything. I know your gears are
+ 
+
+849
+00:13:54,000 --> 00:13:55,670
+router, anything. I know your gears are
+turning. Stop it. You can't do that
+
+850
+00:13:55,670 --> 00:13:55,680
+turning. Stop it. You can't do that
+ 
+
+851
+00:13:55,680 --> 00:13:56,629
+turning. Stop it. You can't do that
+right now. You're going to get
+
+852
+00:13:56,629 --> 00:13:56,639
+right now. You're going to get
+ 
+
+853
+00:13:56,639 --> 00:13:58,069
+right now. You're going to get
+distracted. We got to learn the basics
+
+854
+00:13:58,069 --> 00:13:58,079
+distracted. We got to learn the basics
+ 
+
+855
+00:13:58,079 --> 00:13:59,750
+distracted. We got to learn the basics
+before you move on. Sorry, that was my
+
+856
+00:13:59,750 --> 00:13:59,760
+before you move on. Sorry, that was my
+ 
+
+857
+00:13:59,760 --> 00:14:01,269
+before you move on. Sorry, that was my
+fault. Now, one of the killer things
+
+858
+00:14:01,269 --> 00:14:01,279
+fault. Now, one of the killer things
+ 
+
+859
+00:14:01,279 --> 00:14:03,829
+fault. Now, one of the killer things
+that I have not shown you yet with NA is
+
+860
+00:14:03,829 --> 00:14:03,839
+that I have not shown you yet with NA is
+ 
+
+861
+00:14:03,839 --> 00:14:07,350
+that I have not shown you yet with NA is
+the power of AI. Now, already NA is cool
+
+862
+00:14:07,350 --> 00:14:07,360
+the power of AI. Now, already NA is cool
+ 
+
+863
+00:14:07,360 --> 00:14:09,350
+the power of AI. Now, already NA is cool
+because you can do all of this and we
+
+864
+00:14:09,350 --> 00:14:09,360
+because you can do all of this and we
+ 
+
+865
+00:14:09,360 --> 00:14:11,670
+because you can do all of this and we
+haven't even touched AI.
+
+866
+00:14:11,670 --> 00:14:11,680
+haven't even touched AI.
+ 
+
+867
+00:14:11,680 --> 00:14:13,590
+haven't even touched AI.
+Let's add AI to it. Let's say we've got
+
+868
+00:14:13,590 --> 00:14:13,600
+Let's add AI to it. Let's say we've got
+ 
+
+869
+00:14:13,600 --> 00:14:15,509
+Let's add AI to it. Let's say we've got
+all these articles coming in, these five
+
+870
+00:14:15,509 --> 00:14:15,519
+all these articles coming in, these five
+ 
+
+871
+00:14:15,519 --> 00:14:17,110
+all these articles coming in, these five
+items from Bleeping Computer, but who
+
+872
+00:14:17,110 --> 00:14:17,120
+items from Bleeping Computer, but who
+ 
+
+873
+00:14:17,120 --> 00:14:19,030
+items from Bleeping Computer, but who
+has time to read that? Let's have AI
+
+874
+00:14:19,030 --> 00:14:19,040
+has time to read that? Let's have AI
+ 
+
+875
+00:14:19,040 --> 00:14:21,189
+has time to read that? Let's have AI
+summarize that for us. So, right here
+
+876
+00:14:21,189 --> 00:14:21,199
+summarize that for us. So, right here
+ 
+
+877
+00:14:21,199 --> 00:14:23,829
+summarize that for us. So, right here
+between the limit and the merge, I'm
+
+878
+00:14:23,829 --> 00:14:23,839
+between the limit and the merge, I'm
+ 
+
+879
+00:14:23,839 --> 00:14:26,629
+between the limit and the merge, I'm
+going to add a new node. I'll choose AI
+
+880
+00:14:26,629 --> 00:14:26,639
+going to add a new node. I'll choose AI
+ 
+
+881
+00:14:26,639 --> 00:14:28,870
+going to add a new node. I'll choose AI
+and we have a bunch of options. The most
+
+882
+00:14:28,870 --> 00:14:28,880
+and we have a bunch of options. The most
+ 
+
+883
+00:14:28,880 --> 00:14:31,269
+and we have a bunch of options. The most
+common one is right here, the basic LLM
+
+884
+00:14:31,269 --> 00:14:31,279
+common one is right here, the basic LLM
+ 
+
+885
+00:14:31,279 --> 00:14:33,110
+common one is right here, the basic LLM
+chain. We'll select that and we'll jump
+
+886
+00:14:33,110 --> 00:14:33,120
+chain. We'll select that and we'll jump
+ 
+
+887
+00:14:33,120 --> 00:14:34,470
+chain. We'll select that and we'll jump
+out of it real quick so you can see it
+
+888
+00:14:34,470 --> 00:14:34,480
+out of it real quick so you can see it
+ 
+
+889
+00:14:34,480 --> 00:14:36,230
+out of it real quick so you can see it
+nice and clean here. Let's make some
+
+890
+00:14:36,230 --> 00:14:36,240
+nice and clean here. Let's make some
+ 
+
+891
+00:14:36,240 --> 00:14:38,389
+nice and clean here. Let's make some
+room for our new family member, our new
+
+892
+00:14:38,389 --> 00:14:38,399
+room for our new family member, our new
+ 
+
+893
+00:14:38,399 --> 00:14:41,189
+room for our new family member, our new
+friend. Notice our LLM chain. He's a
+
+894
+00:14:41,189 --> 00:14:41,199
+friend. Notice our LLM chain. He's a
+ 
+
+895
+00:14:41,199 --> 00:14:43,110
+friend. Notice our LLM chain. He's a
+bigger node and he has this weird thing
+
+896
+00:14:43,110 --> 00:14:43,120
+bigger node and he has this weird thing
+ 
+
+897
+00:14:43,120 --> 00:14:45,269
+bigger node and he has this weird thing
+jutting out of him. And this is for our
+
+898
+00:14:45,269 --> 00:14:45,279
+jutting out of him. And this is for our
+ 
+
+899
+00:14:45,279 --> 00:14:47,189
+jutting out of him. And this is for our
+AI model. We can choose whatever AI
+
+900
+00:14:47,189 --> 00:14:47,199
+AI model. We can choose whatever AI
+ 
+
+901
+00:14:47,199 --> 00:14:49,030
+AI model. We can choose whatever AI
+model we want to connect to this and be
+
+902
+00:14:49,030 --> 00:14:49,040
+model we want to connect to this and be
+ 
+
+903
+00:14:49,040 --> 00:14:51,030
+model we want to connect to this and be
+the brains. Let's do that right now.
+
+904
+00:14:51,030 --> 00:14:51,040
+the brains. Let's do that right now.
+ 
+
+905
+00:14:51,040 --> 00:14:53,590
+the brains. Let's do that right now.
+Click on plus and we have some options.
+
+906
+00:14:53,590 --> 00:14:53,600
+Click on plus and we have some options.
+ 
+
+907
+00:14:53,600 --> 00:14:57,670
+Click on plus and we have some options.
+Anthropic, Azure, Deepseek, OpenAI, or
+
+908
+00:14:57,670 --> 00:14:57,680
+Anthropic, Azure, Deepseek, OpenAI, or
+ 
+
+909
+00:14:57,680 --> 00:14:59,670
+Anthropic, Azure, Deepseek, OpenAI, or
+even Olma, a local model. So here I'll
+
+910
+00:14:59,670 --> 00:14:59,680
+even Olma, a local model. So here I'll
+ 
+
+911
+00:14:59,680 --> 00:15:02,310
+even Olma, a local model. So here I'll
+select Olama. Why not? We will need a
+
+912
+00:15:02,310 --> 00:15:02,320
+select Olama. Why not? We will need a
+ 
+
+913
+00:15:02,320 --> 00:15:03,910
+select Olama. Why not? We will need a
+credential. I'll create one right now.
+
+914
+00:15:03,910 --> 00:15:03,920
+credential. I'll create one right now.
+ 
+
+915
+00:15:03,920 --> 00:15:05,269
+credential. I'll create one right now.
+And it's just going to be connecting to
+
+916
+00:15:05,269 --> 00:15:05,279
+And it's just going to be connecting to
+ 
+
+917
+00:15:05,279 --> 00:15:07,670
+And it's just going to be connecting to
+a host. Now my local host is not running
+
+918
+00:15:07,670 --> 00:15:07,680
+a host. Now my local host is not running
+ 
+
+919
+00:15:07,680 --> 00:15:09,670
+a host. Now my local host is not running
+my Olama server. It's going to be Terry
+
+920
+00:15:09,670 --> 00:15:09,680
+my Olama server. It's going to be Terry
+ 
+
+921
+00:15:09,680 --> 00:15:11,350
+my Olama server. It's going to be Terry
+here in my data center. They might be
+
+922
+00:15:11,350 --> 00:15:11,360
+here in my data center. They might be
+ 
+
+923
+00:15:11,360 --> 00:15:12,629
+here in my data center. They might be
+wondering, Chuck, how are you doing
+
+924
+00:15:12,629 --> 00:15:12,639
+wondering, Chuck, how are you doing
+ 
+
+925
+00:15:12,639 --> 00:15:14,310
+wondering, Chuck, how are you doing
+this? You're right now connected to
+
+926
+00:15:14,310 --> 00:15:14,320
+this? You're right now connected to
+ 
+
+927
+00:15:14,320 --> 00:15:16,069
+this? You're right now connected to
+Hostinger, but you're somehow accessing
+
+928
+00:15:16,069 --> 00:15:16,079
+Hostinger, but you're somehow accessing
+ 
+
+929
+00:15:16,079 --> 00:15:18,389
+Hostinger, but you're somehow accessing
+your stuff on prem. And that magic is
+
+930
+00:15:18,389 --> 00:15:18,399
+your stuff on prem. And that magic is
+ 
+
+931
+00:15:18,399 --> 00:15:20,310
+your stuff on prem. And that magic is
+with Twin. They're not sponsoring this
+
+932
+00:15:20,310 --> 00:15:20,320
+with Twin. They're not sponsoring this
+ 
+
+933
+00:15:20,320 --> 00:15:21,750
+with Twin. They're not sponsoring this
+video, but I use them all the time for
+
+934
+00:15:21,750 --> 00:15:21,760
+video, but I use them all the time for
+ 
+
+935
+00:15:21,760 --> 00:15:23,430
+video, but I use them all the time for
+stuff like this. It's insanely secure
+
+936
+00:15:23,430 --> 00:15:23,440
+stuff like this. It's insanely secure
+ 
+
+937
+00:15:23,440 --> 00:15:24,870
+stuff like this. It's insanely secure
+and awesome. If you want to learn more,
+
+938
+00:15:24,870 --> 00:15:24,880
+and awesome. If you want to learn more,
+ 
+
+939
+00:15:24,880 --> 00:15:26,310
+and awesome. If you want to learn more,
+I've got a video about it here. So,
+
+940
+00:15:26,310 --> 00:15:26,320
+I've got a video about it here. So,
+ 
+
+941
+00:15:26,320 --> 00:15:28,230
+I've got a video about it here. So,
+anyways, let's see if this works. Click
+
+942
+00:15:28,230 --> 00:15:28,240
+anyways, let's see if this works. Click
+ 
+
+943
+00:15:28,240 --> 00:15:29,509
+anyways, let's see if this works. Click
+on save. It's going to test the
+
+944
+00:15:29,509 --> 00:15:29,519
+on save. It's going to test the
+ 
+
+945
+00:15:29,519 --> 00:15:30,870
+on save. It's going to test the
+connection. Okay, I think it worked. And
+
+946
+00:15:30,870 --> 00:15:30,880
+connection. Okay, I think it worked. And
+ 
+
+947
+00:15:30,880 --> 00:15:32,710
+connection. Okay, I think it worked. And
+then now I can select all of my local
+
+948
+00:15:32,710 --> 00:15:32,720
+then now I can select all of my local
+ 
+
+949
+00:15:32,720 --> 00:15:35,269
+then now I can select all of my local
+models. I'll run llama 3.2. Why not? So
+
+950
+00:15:35,269 --> 00:15:35,279
+models. I'll run llama 3.2. Why not? So
+ 
+
+951
+00:15:35,279 --> 00:15:36,949
+models. I'll run llama 3.2. Why not? So
+now the LLM chain, I've got my model
+
+952
+00:15:36,949 --> 00:15:36,959
+now the LLM chain, I've got my model
+ 
+
+953
+00:15:36,959 --> 00:15:38,389
+now the LLM chain, I've got my model
+connected. Now let's have it do
+
+954
+00:15:38,389 --> 00:15:38,399
+connected. Now let's have it do
+ 
+
+955
+00:15:38,399 --> 00:15:39,990
+connected. Now let's have it do
+something. So I'll double click the LM
+
+956
+00:15:39,990 --> 00:15:40,000
+something. So I'll double click the LM
+ 
+
+957
+00:15:40,000 --> 00:15:41,430
+something. So I'll double click the LM
+chain node. So it's hoping to have a
+
+958
+00:15:41,430 --> 00:15:41,440
+chain node. So it's hoping to have a
+ 
+
+959
+00:15:41,440 --> 00:15:43,110
+chain node. So it's hoping to have a
+chat trigger connected to it. Instead of
+
+960
+00:15:43,110 --> 00:15:43,120
+chat trigger connected to it. Instead of
+ 
+
+961
+00:15:43,120 --> 00:15:44,870
+chat trigger connected to it. Instead of
+that, we're going to define our own
+
+962
+00:15:44,870 --> 00:15:44,880
+that, we're going to define our own
+ 
+
+963
+00:15:44,880 --> 00:15:47,030
+that, we're going to define our own
+message, a prompt, and I'll say, "Hey,
+
+964
+00:15:47,030 --> 00:15:47,040
+message, a prompt, and I'll say, "Hey,
+ 
+
+965
+00:15:47,040 --> 00:15:51,829
+message, a prompt, and I'll say, "Hey,
+your job is to summarize this article in
+
+966
+00:15:51,829 --> 00:15:51,839
+your job is to summarize this article in
+ 
+
+967
+00:15:51,839 --> 00:15:54,310
+your job is to summarize this article in
+two sentences. Go." And then I'll add in
+
+968
+00:15:54,310 --> 00:15:54,320
+two sentences. Go." And then I'll add in
+ 
+
+969
+00:15:54,320 --> 00:15:56,150
+two sentences. Go." And then I'll add in
+the content. Now, the content is very
+
+970
+00:15:56,150 --> 00:15:56,160
+the content. Now, the content is very
+ 
+
+971
+00:15:56,160 --> 00:15:58,069
+the content. Now, the content is very
+much abbreviated. And how is Oama going
+
+972
+00:15:58,069 --> 00:15:58,079
+much abbreviated. And how is Oama going
+ 
+
+973
+00:15:58,079 --> 00:15:59,990
+much abbreviated. And how is Oama going
+to summarize what's not there? So, let's
+
+974
+00:15:59,990 --> 00:16:00,000
+to summarize what's not there? So, let's
+ 
+
+975
+00:16:00,000 --> 00:16:01,590
+to summarize what's not there? So, let's
+try this. I'm going to change my RSS
+
+976
+00:16:01,590 --> 00:16:01,600
+try this. I'm going to change my RSS
+ 
+
+977
+00:16:01,600 --> 00:16:04,629
+try this. I'm going to change my RSS
+feed from Bleeping Computer to Krebs,
+
+978
+00:16:04,629 --> 00:16:04,639
+feed from Bleeping Computer to Krebs,
+ 
+
+979
+00:16:04,639 --> 00:16:07,189
+feed from Bleeping Computer to Krebs,
+another securitybased blog. Krebs on
+
+980
+00:16:07,189 --> 00:16:07,199
+another securitybased blog. Krebs on
+ 
+
+981
+00:16:07,199 --> 00:16:10,069
+another securitybased blog. Krebs on
+security. And I believe when I do that,
+
+982
+00:16:10,069 --> 00:16:10,079
+security. And I believe when I do that,
+ 
+
+983
+00:16:10,079 --> 00:16:13,030
+security. And I believe when I do that,
+I should get the entire blog and the
+
+984
+00:16:13,030 --> 00:16:13,040
+I should get the entire blog and the
+ 
+
+985
+00:16:13,040 --> 00:16:15,110
+I should get the entire blog and the
+content. Yeah, it's like every bit of
+
+986
+00:16:15,110 --> 00:16:15,120
+content. Yeah, it's like every bit of
+ 
+
+987
+00:16:15,120 --> 00:16:17,110
+content. Yeah, it's like every bit of
+it. That's awesome. I'm gonna pin that.
+
+988
+00:16:17,110 --> 00:16:17,120
+it. That's awesome. I'm gonna pin that.
+ 
+
+989
+00:16:17,120 --> 00:16:19,430
+it. That's awesome. I'm gonna pin that.
+Jump into my limit. Execute again.
+
+990
+00:16:19,430 --> 00:16:19,440
+Jump into my limit. Execute again.
+ 
+
+991
+00:16:19,440 --> 00:16:21,910
+Jump into my limit. Execute again.
+Unpin, and test. There it is. I'll pin
+
+992
+00:16:21,910 --> 00:16:21,920
+Unpin, and test. There it is. I'll pin
+ 
+
+993
+00:16:21,920 --> 00:16:23,910
+Unpin, and test. There it is. I'll pin
+that now. So now when I jump into my
+
+994
+00:16:23,910 --> 00:16:23,920
+that now. So now when I jump into my
+ 
+
+995
+00:16:23,920 --> 00:16:27,350
+that now. So now when I jump into my
+LLM, I'll add the content and coded. And
+
+996
+00:16:27,350 --> 00:16:27,360
+LLM, I'll add the content and coded. And
+ 
+
+997
+00:16:27,360 --> 00:16:28,949
+LLM, I'll add the content and coded. And
+that should be everything. Let's take a
+
+998
+00:16:28,949 --> 00:16:28,959
+that should be everything. Let's take a
+ 
+
+999
+00:16:28,959 --> 00:16:31,030
+that should be everything. Let's take a
+look by expanding the box. Yep, every
+
+1000
+00:16:31,030 --> 00:16:31,040
+look by expanding the box. Yep, every
+ 
+
+1001
+00:16:31,040 --> 00:16:32,710
+look by expanding the box. Yep, every
+bit of it. So now let's execute the step
+
+1002
+00:16:32,710 --> 00:16:32,720
+bit of it. So now let's execute the step
+ 
+
+1003
+00:16:32,720 --> 00:16:35,110
+bit of it. So now let's execute the step
+and see how Oama handles this. Now I'm
+
+1004
+00:16:35,110 --> 00:16:35,120
+and see how Oama handles this. Now I'm
+ 
+
+1005
+00:16:35,120 --> 00:16:36,310
+and see how Oama handles this. Now I'm
+worried because that is a lot of
+
+1006
+00:16:36,310 --> 00:16:36,320
+worried because that is a lot of
+ 
+
+1007
+00:16:36,320 --> 00:16:37,910
+worried because that is a lot of
+content. And if I as I step out, you can
+
+1008
+00:16:37,910 --> 00:16:37,920
+content. And if I as I step out, you can
+ 
+
+1009
+00:16:37,920 --> 00:16:39,350
+content. And if I as I step out, you can
+see it's working, which is this is so
+
+1010
+00:16:39,350 --> 00:16:39,360
+see it's working, which is this is so
+ 
+
+1011
+00:16:39,360 --> 00:16:40,790
+see it's working, which is this is so
+cool. Look at this. And there goes
+
+1012
+00:16:40,790 --> 00:16:40,800
+cool. Look at this. And there goes
+ 
+
+1013
+00:16:40,800 --> 00:16:42,310
+cool. Look at this. And there goes
+three, four, five items. It finished up.
+
+1014
+00:16:42,310 --> 00:16:42,320
+three, four, five items. It finished up.
+ 
+
+1015
+00:16:42,320 --> 00:16:44,710
+three, four, five items. It finished up.
+Let's check it out. The output now is
+
+1016
+00:16:44,710 --> 00:16:44,720
+Let's check it out. The output now is
+ 
+
+1017
+00:16:44,720 --> 00:16:47,030
+Let's check it out. The output now is
+okay. It didn't quite summarize each
+
+1018
+00:16:47,030 --> 00:16:47,040
+okay. It didn't quite summarize each
+ 
+
+1019
+00:16:47,040 --> 00:16:48,710
+okay. It didn't quite summarize each
+article in two sentences because we're
+
+1020
+00:16:48,710 --> 00:16:48,720
+article in two sentences because we're
+ 
+
+1021
+00:16:48,720 --> 00:16:50,470
+article in two sentences because we're
+dealing with the local model. And the
+
+1022
+00:16:50,470 --> 00:16:50,480
+dealing with the local model. And the
+ 
+
+1023
+00:16:50,480 --> 00:16:52,230
+dealing with the local model. And the
+context window of a local model is
+
+1024
+00:16:52,230 --> 00:16:52,240
+context window of a local model is
+ 
+
+1025
+00:16:52,240 --> 00:16:54,150
+context window of a local model is
+smaller. Oh, Lama did. Okay. But if we
+
+1026
+00:16:54,150 --> 00:16:54,160
+smaller. Oh, Lama did. Okay. But if we
+ 
+
+1027
+00:16:54,160 --> 00:16:56,230
+smaller. Oh, Lama did. Okay. But if we
+trade it out for more of a frontier
+
+1028
+00:16:56,230 --> 00:16:56,240
+trade it out for more of a frontier
+ 
+
+1029
+00:16:56,240 --> 00:16:59,829
+trade it out for more of a frontier
+model, let's do uh chat GBT. I'll create
+
+1030
+00:16:59,829 --> 00:16:59,839
+model, let's do uh chat GBT. I'll create
+ 
+
+1031
+00:16:59,839 --> 00:17:02,550
+model, let's do uh chat GBT. I'll create
+a new credential for OpenAI. I'll use 41
+
+1032
+00:17:02,550 --> 00:17:02,560
+a new credential for OpenAI. I'll use 41
+ 
+
+1033
+00:17:02,560 --> 00:17:03,990
+a new credential for OpenAI. I'll use 41
+mini. That's fine. Let's see how that
+
+1034
+00:17:03,990 --> 00:17:04,000
+mini. That's fine. Let's see how that
+ 
+
+1035
+00:17:04,000 --> 00:17:06,710
+mini. That's fine. Let's see how that
+does.
+
+1036
+00:17:06,710 --> 00:17:06,720
+does.
+ 
+
+1037
+00:17:06,720 --> 00:17:09,189
+does.
+Not too bad at all. That's awesome.
+
+1038
+00:17:09,189 --> 00:17:09,199
+Not too bad at all. That's awesome.
+ 
+
+1039
+00:17:09,199 --> 00:17:12,230
+Not too bad at all. That's awesome.
+Check this out. Let's add a LLM chain
+
+1040
+00:17:12,230 --> 00:17:12,240
+Check this out. Let's add a LLM chain
+ 
+
+1041
+00:17:12,240 --> 00:17:13,829
+Check this out. Let's add a LLM chain
+between our execute command and the
+
+1042
+00:17:13,829 --> 00:17:13,839
+between our execute command and the
+ 
+
+1043
+00:17:13,839 --> 00:17:17,669
+between our execute command and the
+merge. Let's do AI. We'll do standard LM
+
+1044
+00:17:17,669 --> 00:17:17,679
+merge. Let's do AI. We'll do standard LM
+ 
+
+1045
+00:17:17,679 --> 00:17:19,590
+merge. Let's do AI. We'll do standard LM
+chain. And let's do something like this.
+
+1046
+00:17:19,590 --> 00:17:19,600
+chain. And let's do something like this.
+ 
+
+1047
+00:17:19,600 --> 00:17:23,669
+chain. And let's do something like this.
+Tell me if the internet is up. If you
+
+1048
+00:17:23,669 --> 00:17:23,679
+Tell me if the internet is up. If you
+ 
+
+1049
+00:17:23,679 --> 00:17:26,870
+Tell me if the internet is up. If you
+see successful pings from the output
+
+1050
+00:17:26,870 --> 00:17:26,880
+see successful pings from the output
+ 
+
+1051
+00:17:26,880 --> 00:17:30,470
+see successful pings from the output
+below, that means it's good. Tell me in
+
+1052
+00:17:30,470 --> 00:17:30,480
+below, that means it's good. Tell me in
+ 
+
+1053
+00:17:30,480 --> 00:17:34,390
+below, that means it's good. Tell me in
+a funny way. Impersonating Eddie Murphy.
+
+1054
+00:17:34,390 --> 00:17:34,400
+a funny way. Impersonating Eddie Murphy.
+ 
+
+1055
+00:17:34,400 --> 00:17:35,830
+a funny way. Impersonating Eddie Murphy.
+Let's grab the standard out. Put it
+
+1056
+00:17:35,830 --> 00:17:35,840
+Let's grab the standard out. Put it
+ 
+
+1057
+00:17:35,840 --> 00:17:40,870
+Let's grab the standard out. Put it
+right there. We'll give it open AI.
+
+1058
+00:17:40,870 --> 00:17:40,880
+right there. We'll give it open AI.
+ 
+
+1059
+00:17:40,880 --> 00:17:44,460
+right there. We'll give it open AI.
+Let's see how it does.
+
+1060
+00:17:44,460 --> 00:17:44,470
+Let's see how it does.
+ 
+
+1061
+00:17:44,470 --> 00:17:46,390
+Let's see how it does.
+[Laughter]
+
+1062
+00:17:46,390 --> 00:17:46,400
+[Laughter]
+ 
+
+1063
+00:17:46,400 --> 00:17:47,909
+[Laughter]
+That's
+
+1064
+00:17:47,909 --> 00:17:47,919
+That's
+ 
+
+1065
+00:17:47,919 --> 00:17:49,669
+That's
+stupid,
+
+1066
+00:17:49,669 --> 00:17:49,679
+stupid,
+ 
+
+1067
+00:17:49,679 --> 00:17:51,909
+stupid,
+but it's powerful. You get what I'm kind
+
+1068
+00:17:51,909 --> 00:17:51,919
+but it's powerful. You get what I'm kind
+ 
+
+1069
+00:17:51,919 --> 00:17:54,150
+but it's powerful. You get what I'm kind
+of trying to do here. But come on. I
+
+1070
+00:17:54,150 --> 00:17:54,160
+of trying to do here. But come on. I
+ 
+
+1071
+00:17:54,160 --> 00:17:55,270
+of trying to do here. But come on. I
+know what you're thinking. Like, what
+
+1072
+00:17:55,270 --> 00:17:55,280
+know what you're thinking. Like, what
+ 
+
+1073
+00:17:55,280 --> 00:17:56,870
+know what you're thinking. Like, what
+else can you do with that? So, let's
+
+1074
+00:17:56,870 --> 00:17:56,880
+else can you do with that? So, let's
+ 
+
+1075
+00:17:56,880 --> 00:17:58,150
+else can you do with that? So, let's
+expand this a bit more. I'm going to
+
+1076
+00:17:58,150 --> 00:17:58,160
+expand this a bit more. I'm going to
+ 
+
+1077
+00:17:58,160 --> 00:17:59,830
+expand this a bit more. I'm going to
+save this. This will be like our part
+
+1078
+00:17:59,830 --> 00:17:59,840
+save this. This will be like our part
+ 
+
+1079
+00:17:59,840 --> 00:18:01,190
+save this. This will be like our part
+one project. And I'll go up to the top
+
+1080
+00:18:01,190 --> 00:18:01,200
+one project. And I'll go up to the top
+ 
+
+1081
+00:18:01,200 --> 00:18:02,390
+one project. And I'll go up to the top
+left here. See where it says my
+
+1082
+00:18:02,390 --> 00:18:02,400
+left here. See where it says my
+ 
+
+1083
+00:18:02,400 --> 00:18:03,830
+left here. See where it says my
+workflow? We're going to click in there
+
+1084
+00:18:03,830 --> 00:18:03,840
+workflow? We're going to click in there
+ 
+
+1085
+00:18:03,840 --> 00:18:07,590
+workflow? We're going to click in there
+and just name this my first one. And
+
+1086
+00:18:07,590 --> 00:18:07,600
+and just name this my first one. And
+ 
+
+1087
+00:18:07,600 --> 00:18:08,630
+and just name this my first one. And
+then we're going to go up here to the
+
+1088
+00:18:08,630 --> 00:18:08,640
+then we're going to go up here to the
+ 
+
+1089
+00:18:08,640 --> 00:18:10,710
+then we're going to go up here to the
+top right, click the buttons or the dots
+
+1090
+00:18:10,710 --> 00:18:10,720
+top right, click the buttons or the dots
+ 
+
+1091
+00:18:10,720 --> 00:18:13,430
+top right, click the buttons or the dots
+here and say duplicate. We'll say my
+
+1092
+00:18:13,430 --> 00:18:13,440
+here and say duplicate. We'll say my
+ 
+
+1093
+00:18:13,440 --> 00:18:15,510
+here and say duplicate. We'll say my
+second one
+
+1094
+00:18:15,510 --> 00:18:15,520
+second one
+ 
+
+1095
+00:18:15,520 --> 00:18:17,430
+second one
+and duplicate. Now we have another
+
+1096
+00:18:17,430 --> 00:18:17,440
+and duplicate. Now we have another
+ 
+
+1097
+00:18:17,440 --> 00:18:19,190
+and duplicate. Now we have another
+workflow. If I go back to personal on
+
+1098
+00:18:19,190 --> 00:18:19,200
+workflow. If I go back to personal on
+ 
+
+1099
+00:18:19,200 --> 00:18:21,190
+workflow. If I go back to personal on
+the side here, I can see I have my two
+
+1100
+00:18:21,190 --> 00:18:21,200
+the side here, I can see I have my two
+ 
+
+1101
+00:18:21,200 --> 00:18:23,590
+the side here, I can see I have my two
+workflows. I can go to credentials. See,
+
+1102
+00:18:23,590 --> 00:18:23,600
+workflows. I can go to credentials. See,
+ 
+
+1103
+00:18:23,600 --> 00:18:24,950
+workflows. I can go to credentials. See,
+I have all my credentials here that I've
+
+1104
+00:18:24,950 --> 00:18:24,960
+I have all my credentials here that I've
+ 
+
+1105
+00:18:24,960 --> 00:18:27,430
+I have all my credentials here that I've
+created. Executions. Every time we've
+
+1106
+00:18:27,430 --> 00:18:27,440
+created. Executions. Every time we've
+ 
+
+1107
+00:18:27,440 --> 00:18:29,669
+created. Executions. Every time we've
+run something, you can jump in and
+
+1108
+00:18:29,669 --> 00:18:29,679
+run something, you can jump in and
+ 
+
+1109
+00:18:29,679 --> 00:18:32,630
+run something, you can jump in and
+analyze exactly what happened. Like,
+
+1110
+00:18:32,630 --> 00:18:32,640
+analyze exactly what happened. Like,
+ 
+
+1111
+00:18:32,640 --> 00:18:34,549
+analyze exactly what happened. Like,
+isn't that amazing? This thing's too
+
+1112
+00:18:34,549 --> 00:18:34,559
+isn't that amazing? This thing's too
+ 
+
+1113
+00:18:34,559 --> 00:18:36,150
+isn't that amazing? This thing's too
+powerful. Let's get back to our second
+
+1114
+00:18:36,150 --> 00:18:36,160
+powerful. Let's get back to our second
+ 
+
+1115
+00:18:36,160 --> 00:18:37,590
+powerful. Let's get back to our second
+one. Let's add some more fun stuff. So,
+
+1116
+00:18:37,590 --> 00:18:37,600
+one. Let's add some more fun stuff. So,
+ 
+
+1117
+00:18:37,600 --> 00:18:39,190
+one. Let's add some more fun stuff. So,
+what I want to do actually is finish up
+
+1118
+00:18:39,190 --> 00:18:39,200
+what I want to do actually is finish up
+ 
+
+1119
+00:18:39,200 --> 00:18:40,870
+what I want to do actually is finish up
+this project. Let's combine all the
+
+1120
+00:18:40,870 --> 00:18:40,880
+this project. Let's combine all the
+ 
+
+1121
+00:18:40,880 --> 00:18:42,870
+this project. Let's combine all the
+information that we now have from our AI
+
+1122
+00:18:42,870 --> 00:18:42,880
+information that we now have from our AI
+ 
+
+1123
+00:18:42,880 --> 00:18:45,029
+information that we now have from our AI
+powered stuff.
+
+1124
+00:18:45,029 --> 00:18:45,039
+powered stuff.
+ 
+
+1125
+00:18:45,039 --> 00:18:47,430
+powered stuff.
+And I should have uh pinned that
+
+1126
+00:18:47,430 --> 00:18:47,440
+And I should have uh pinned that
+ 
+
+1127
+00:18:47,440 --> 00:18:51,510
+And I should have uh pinned that
+information. Pinned that.
+
+1128
+00:18:51,510 --> 00:18:51,520
+information. Pinned that.
+ 
+
+1129
+00:18:51,520 --> 00:18:53,110
+information. Pinned that.
+This is where pinning information is
+
+1130
+00:18:53,110 --> 00:18:53,120
+This is where pinning information is
+ 
+
+1131
+00:18:53,120 --> 00:18:54,310
+This is where pinning information is
+great because you don't want to waste
+
+1132
+00:18:54,310 --> 00:18:54,320
+great because you don't want to waste
+ 
+
+1133
+00:18:54,320 --> 00:18:56,710
+great because you don't want to waste
+tokens on AI. Speaking of tokens, look
+
+1134
+00:18:56,710 --> 00:18:56,720
+tokens on AI. Speaking of tokens, look
+ 
+
+1135
+00:18:56,720 --> 00:18:58,230
+tokens on AI. Speaking of tokens, look
+at this. I'm going to run it again. We
+
+1136
+00:18:58,230 --> 00:18:58,240
+at this. I'm going to run it again. We
+ 
+
+1137
+00:18:58,240 --> 00:18:59,830
+at this. I'm going to run it again. We
+got a log here. What's going on? It
+
+1138
+00:18:59,830 --> 00:18:59,840
+got a log here. What's going on? It
+ 
+
+1139
+00:18:59,840 --> 00:19:02,150
+got a log here. What's going on? It
+shows you in real time the tokens being
+
+1140
+00:19:02,150 --> 00:19:02,160
+shows you in real time the tokens being
+ 
+
+1141
+00:19:02,160 --> 00:19:03,750
+shows you in real time the tokens being
+used on the bottom left here. Isn't that
+
+1142
+00:19:03,750 --> 00:19:03,760
+used on the bottom left here. Isn't that
+ 
+
+1143
+00:19:03,760 --> 00:19:04,789
+used on the bottom left here. Isn't that
+cool? All right. Now, we're really going
+
+1144
+00:19:04,789 --> 00:19:04,799
+cool? All right. Now, we're really going
+ 
+
+1145
+00:19:04,799 --> 00:19:06,310
+cool? All right. Now, we're really going
+to pin that information. Now, before we
+
+1146
+00:19:06,310 --> 00:19:06,320
+to pin that information. Now, before we
+ 
+
+1147
+00:19:06,320 --> 00:19:08,070
+to pin that information. Now, before we
+get to merge, I want to mess with our
+
+1148
+00:19:08,070 --> 00:19:08,080
+get to merge, I want to mess with our
+ 
+
+1149
+00:19:08,080 --> 00:19:09,350
+get to merge, I want to mess with our
+data over here for a second because
+
+1150
+00:19:09,350 --> 00:19:09,360
+data over here for a second because
+ 
+
+1151
+00:19:09,360 --> 00:19:11,029
+data over here for a second because
+right now, if we look at our LLM chain,
+
+1152
+00:19:11,029 --> 00:19:11,039
+right now, if we look at our LLM chain,
+ 
+
+1153
+00:19:11,039 --> 00:19:13,110
+right now, if we look at our LLM chain,
+right, it's outputting just the summary.
+
+1154
+00:19:13,110 --> 00:19:13,120
+right, it's outputting just the summary.
+ 
+
+1155
+00:19:13,120 --> 00:19:14,789
+right, it's outputting just the summary.
+That's all it's handing out and these
+
+1156
+00:19:14,789 --> 00:19:14,799
+That's all it's handing out and these
+ 
+
+1157
+00:19:14,799 --> 00:19:17,510
+That's all it's handing out and these
+five items, that's all we're seeing. But
+
+1158
+00:19:17,510 --> 00:19:17,520
+five items, that's all we're seeing. But
+ 
+
+1159
+00:19:17,520 --> 00:19:19,350
+five items, that's all we're seeing. But
+I also want to include information from
+
+1160
+00:19:19,350 --> 00:19:19,360
+I also want to include information from
+ 
+
+1161
+00:19:19,360 --> 00:19:21,190
+I also want to include information from
+our limit, like the creator and the
+
+1162
+00:19:21,190 --> 00:19:21,200
+our limit, like the creator and the
+ 
+
+1163
+00:19:21,200 --> 00:19:22,870
+our limit, like the creator and the
+title and the link. So, we can do
+
+1164
+00:19:22,870 --> 00:19:22,880
+title and the link. So, we can do
+ 
+
+1165
+00:19:22,880 --> 00:19:24,710
+title and the link. So, we can do
+something pretty cool with a node called
+
+1166
+00:19:24,710 --> 00:19:24,720
+something pretty cool with a node called
+ 
+
+1167
+00:19:24,720 --> 00:19:26,549
+something pretty cool with a node called
+the set field node. I'm going to add it
+
+1168
+00:19:26,549 --> 00:19:26,559
+the set field node. I'm going to add it
+ 
+
+1169
+00:19:26,559 --> 00:19:28,630
+the set field node. I'm going to add it
+right here. Search for it. Set or edit
+
+1170
+00:19:28,630 --> 00:19:28,640
+right here. Search for it. Set or edit
+ 
+
+1171
+00:19:28,640 --> 00:19:29,990
+right here. Search for it. Set or edit
+fields. There it is. So, it's sitting
+
+1172
+00:19:29,990 --> 00:19:30,000
+fields. There it is. So, it's sitting
+ 
+
+1173
+00:19:30,000 --> 00:19:32,070
+fields. There it is. So, it's sitting
+right here. What we can do is just take
+
+1174
+00:19:32,070 --> 00:19:32,080
+right here. What we can do is just take
+ 
+
+1175
+00:19:32,080 --> 00:19:33,430
+right here. What we can do is just take
+certain things we want to include. So,
+
+1176
+00:19:33,430 --> 00:19:33,440
+certain things we want to include. So,
+ 
+
+1177
+00:19:33,440 --> 00:19:35,270
+certain things we want to include. So,
+I'm going to go back to previous steps.
+
+1178
+00:19:35,270 --> 00:19:35,280
+I'm going to go back to previous steps.
+ 
+
+1179
+00:19:35,280 --> 00:19:37,909
+I'm going to go back to previous steps.
+I'll go to the limit step. So, give me
+
+1180
+00:19:37,909 --> 00:19:37,919
+I'll go to the limit step. So, give me
+ 
+
+1181
+00:19:37,919 --> 00:19:41,029
+I'll go to the limit step. So, give me
+uh give me the creator, give me the
+
+1182
+00:19:41,029 --> 00:19:41,039
+uh give me the creator, give me the
+ 
+
+1183
+00:19:41,039 --> 00:19:42,630
+uh give me the creator, give me the
+title. I'm just dragging stuff over.
+
+1184
+00:19:42,630 --> 00:19:42,640
+title. I'm just dragging stuff over.
+ 
+
+1185
+00:19:42,640 --> 00:19:44,950
+title. I'm just dragging stuff over.
+Give me the link publication date. And
+
+1186
+00:19:44,950 --> 00:19:44,960
+Give me the link publication date. And
+ 
+
+1187
+00:19:44,960 --> 00:19:46,950
+Give me the link publication date. And
+then I'll add in the summary that Chad
+
+1188
+00:19:46,950 --> 00:19:46,960
+then I'll add in the summary that Chad
+ 
+
+1189
+00:19:46,960 --> 00:19:50,390
+then I'll add in the summary that Chad
+GPT made. So, if I execute that, bam, it
+
+1190
+00:19:50,390 --> 00:19:50,400
+GPT made. So, if I execute that, bam, it
+ 
+
+1191
+00:19:50,400 --> 00:19:52,230
+GPT made. So, if I execute that, bam, it
+created those fields, just the ones I
+
+1192
+00:19:52,230 --> 00:19:52,240
+created those fields, just the ones I
+ 
+
+1193
+00:19:52,240 --> 00:19:53,990
+created those fields, just the ones I
+want. And then we'll send them to our
+
+1194
+00:19:53,990 --> 00:19:54,000
+want. And then we'll send them to our
+ 
+
+1195
+00:19:54,000 --> 00:19:55,669
+want. And then we'll send them to our
+Discord. And actually what I want to do
+
+1196
+00:19:55,669 --> 00:19:55,679
+Discord. And actually what I want to do
+ 
+
+1197
+00:19:55,679 --> 00:19:57,909
+Discord. And actually what I want to do
+now is remove the merge because it gets
+
+1198
+00:19:57,909 --> 00:19:57,919
+now is remove the merge because it gets
+ 
+
+1199
+00:19:57,919 --> 00:19:59,510
+now is remove the merge because it gets
+messy having six items from over here
+
+1200
+00:19:59,510 --> 00:19:59,520
+messy having six items from over here
+ 
+
+1201
+00:19:59,520 --> 00:20:01,430
+messy having six items from over here
+and only one item from over here. I'll
+
+1202
+00:20:01,430 --> 00:20:01,440
+and only one item from over here. I'll
+ 
+
+1203
+00:20:01,440 --> 00:20:03,029
+and only one item from over here. I'll
+remove that and just duplicate my
+
+1204
+00:20:03,029 --> 00:20:03,039
+remove that and just duplicate my
+ 
+
+1205
+00:20:03,039 --> 00:20:05,990
+remove that and just duplicate my
+Discord node just like this. So now set
+
+1206
+00:20:05,990 --> 00:20:06,000
+Discord node just like this. So now set
+ 
+
+1207
+00:20:06,000 --> 00:20:09,430
+Discord node just like this. So now set
+fields puts out all the info.
+
+1208
+00:20:09,430 --> 00:20:09,440
+fields puts out all the info.
+ 
+
+1209
+00:20:09,440 --> 00:20:13,029
+fields puts out all the info.
+Say hey here is what you need to know
+
+1210
+00:20:13,029 --> 00:20:13,039
+Say hey here is what you need to know
+ 
+
+1211
+00:20:13,039 --> 00:20:17,590
+Say hey here is what you need to know
+today.
+
+1212
+00:20:17,590 --> 00:20:17,600
+
+ 
+
+1213
+00:20:17,600 --> 00:20:22,230
+
+Then over here here is how the internet
+
+1214
+00:20:22,230 --> 00:20:22,240
+Then over here here is how the internet
+ 
+
+1215
+00:20:22,240 --> 00:20:26,310
+Then over here here is how the internet
+is doing. Let's
+
+1216
+00:20:26,310 --> 00:20:26,320
+is doing. Let's
+ 
+
+1217
+00:20:26,320 --> 00:20:27,830
+is doing. Let's
+try it out. Let's check our internet.
+
+1218
+00:20:27,830 --> 00:20:27,840
+try it out. Let's check our internet.
+ 
+
+1219
+00:20:27,840 --> 00:20:31,590
+try it out. Let's check our internet.
+Look. Oh, there we go. That's so cursed.
+
+1220
+00:20:31,590 --> 00:20:31,600
+Look. Oh, there we go. That's so cursed.
+ 
+
+1221
+00:20:31,600 --> 00:20:33,430
+Look. Oh, there we go. That's so cursed.
+And then let's execute our um news
+
+1222
+00:20:33,430 --> 00:20:33,440
+And then let's execute our um news
+ 
+
+1223
+00:20:33,440 --> 00:20:35,909
+And then let's execute our um news
+articles. Let's check it out. Oh, we
+
+1224
+00:20:35,909 --> 00:20:35,919
+articles. Let's check it out. Oh, we
+ 
+
+1225
+00:20:35,919 --> 00:20:37,669
+articles. Let's check it out. Oh, we
+forgot our link. Got to have the link in
+
+1226
+00:20:37,669 --> 00:20:37,679
+forgot our link. Got to have the link in
+ 
+
+1227
+00:20:37,679 --> 00:20:42,630
+forgot our link. Got to have the link in
+there.
+
+1228
+00:20:42,630 --> 00:20:42,640
+
+ 
+
+1229
+00:20:42,640 --> 00:20:44,549
+
+Much better. Now, we're going to start
+
+1230
+00:20:44,549 --> 00:20:44,559
+Much better. Now, we're going to start
+ 
+
+1231
+00:20:44,559 --> 00:20:45,909
+Much better. Now, we're going to start
+going faster here, but let's add some
+
+1232
+00:20:45,909 --> 00:20:45,919
+going faster here, but let's add some
+ 
+
+1233
+00:20:45,919 --> 00:20:47,669
+going faster here, but let's add some
+more news. Let's say YouTube videos. And
+
+1234
+00:20:47,669 --> 00:20:47,679
+more news. Let's say YouTube videos. And
+ 
+
+1235
+00:20:47,679 --> 00:20:49,270
+more news. Let's say YouTube videos. And
+did you know that every YouTube channel
+
+1236
+00:20:49,270 --> 00:20:49,280
+did you know that every YouTube channel
+ 
+
+1237
+00:20:49,280 --> 00:20:51,190
+did you know that every YouTube channel
+has their own RSS feed? So, check this
+
+1238
+00:20:51,190 --> 00:20:51,200
+has their own RSS feed? So, check this
+ 
+
+1239
+00:20:51,200 --> 00:20:54,710
+has their own RSS feed? So, check this
+out. I'm going to add a new node for set
+
+1240
+00:20:54,710 --> 00:20:54,720
+out. I'm going to add a new node for set
+ 
+
+1241
+00:20:54,720 --> 00:20:55,990
+out. I'm going to add a new node for set
+fields. We're going to set some
+
+1242
+00:20:55,990 --> 00:20:56,000
+fields. We're going to set some
+ 
+
+1243
+00:20:56,000 --> 00:20:57,029
+fields. We're going to set some
+information here and we're going to put
+
+1244
+00:20:57,029 --> 00:20:57,039
+information here and we're going to put
+ 
+
+1245
+00:20:57,039 --> 00:20:58,950
+information here and we're going to put
+this at the root of our flow here. We're
+
+1246
+00:20:58,950 --> 00:20:58,960
+this at the root of our flow here. We're
+ 
+
+1247
+00:20:58,960 --> 00:21:03,510
+this at the root of our flow here. We're
+going to add a field called channel IDs.
+
+1248
+00:21:03,510 --> 00:21:03,520
+going to add a field called channel IDs.
+ 
+
+1249
+00:21:03,520 --> 00:21:05,669
+going to add a field called channel IDs.
+We're going to make this an array which
+
+1250
+00:21:05,669 --> 00:21:05,679
+We're going to make this an array which
+ 
+
+1251
+00:21:05,679 --> 00:21:07,270
+We're going to make this an array which
+will be a list of items and it's going
+
+1252
+00:21:07,270 --> 00:21:07,280
+will be a list of items and it's going
+ 
+
+1253
+00:21:07,280 --> 00:21:09,510
+will be a list of items and it's going
+to be a list of YouTube channel IDs.
+
+1254
+00:21:09,510 --> 00:21:09,520
+to be a list of YouTube channel IDs.
+ 
+
+1255
+00:21:09,520 --> 00:21:10,789
+to be a list of YouTube channel IDs.
+We'll grab a few. So, let's go grab
+
+1256
+00:21:10,789 --> 00:21:10,799
+We'll grab a few. So, let's go grab
+ 
+
+1257
+00:21:10,799 --> 00:21:13,430
+We'll grab a few. So, let's go grab
+mine, which you can find a channel ID
+
+1258
+00:21:13,430 --> 00:21:13,440
+mine, which you can find a channel ID
+ 
+
+1259
+00:21:13,440 --> 00:21:17,510
+mine, which you can find a channel ID
+from going to more and going to share
+
+1260
+00:21:17,510 --> 00:21:17,520
+from going to more and going to share
+ 
+
+1261
+00:21:17,520 --> 00:21:21,190
+from going to more and going to share
+channel and copy channel ID there. Let's
+
+1262
+00:21:21,190 --> 00:21:21,200
+channel and copy channel ID there. Let's
+ 
+
+1263
+00:21:21,200 --> 00:21:25,590
+channel and copy channel ID there. Let's
+go find David Bombell
+
+1264
+00:21:25,590 --> 00:21:25,600
+
+ 
+
+1265
+00:21:25,600 --> 00:21:29,430
+
+and Tyler Ramsby. All great friends.
+
+1266
+00:21:29,430 --> 00:21:29,440
+and Tyler Ramsby. All great friends.
+ 
+
+1267
+00:21:29,440 --> 00:21:30,630
+and Tyler Ramsby. All great friends.
+This way, you're not relying on the
+
+1268
+00:21:30,630 --> 00:21:30,640
+This way, you're not relying on the
+ 
+
+1269
+00:21:30,640 --> 00:21:32,470
+This way, you're not relying on the
+stupid YouTube notification system. So,
+
+1270
+00:21:32,470 --> 00:21:32,480
+stupid YouTube notification system. So,
+ 
+
+1271
+00:21:32,480 --> 00:21:34,390
+stupid YouTube notification system. So,
+now our array will look like this. When
+
+1272
+00:21:34,390 --> 00:21:34,400
+now our array will look like this. When
+ 
+
+1273
+00:21:34,400 --> 00:21:37,110
+now our array will look like this. When
+I execute this, boom, clean list. Now,
+
+1274
+00:21:37,110 --> 00:21:37,120
+I execute this, boom, clean list. Now,
+ 
+
+1275
+00:21:37,120 --> 00:21:38,310
+I execute this, boom, clean list. Now,
+here's what I'm going to do. I'm going
+
+1276
+00:21:38,310 --> 00:21:38,320
+here's what I'm going to do. I'm going
+ 
+
+1277
+00:21:38,320 --> 00:21:40,710
+here's what I'm going to do. I'm going
+to add just after this an RSS read. To
+
+1278
+00:21:40,710 --> 00:21:40,720
+to add just after this an RSS read. To
+ 
+
+1279
+00:21:40,720 --> 00:21:42,310
+to add just after this an RSS read. To
+find an RSS feed for any YouTube
+
+1280
+00:21:42,310 --> 00:21:42,320
+find an RSS feed for any YouTube
+ 
+
+1281
+00:21:42,320 --> 00:21:44,230
+find an RSS feed for any YouTube
+channel, it's going to be like this.
+
+1282
+00:21:44,230 --> 00:21:44,240
+channel, it's going to be like this.
+ 
+
+1283
+00:21:44,240 --> 00:21:47,190
+channel, it's going to be like this.
+Blah blah blah channel ID equals. And
+
+1284
+00:21:47,190 --> 00:21:47,200
+Blah blah blah channel ID equals. And
+ 
+
+1285
+00:21:47,200 --> 00:21:49,029
+Blah blah blah channel ID equals. And
+we're just going to add in at the end of
+
+1286
+00:21:49,029 --> 00:21:49,039
+we're just going to add in at the end of
+ 
+
+1287
+00:21:49,039 --> 00:21:52,870
+we're just going to add in at the end of
+that the channel IDs.
+
+1288
+00:21:52,870 --> 00:21:52,880
+that the channel IDs.
+ 
+
+1289
+00:21:52,880 --> 00:21:54,789
+that the channel IDs.
+So notice it filled it in the variable
+
+1290
+00:21:54,789 --> 00:21:54,799
+So notice it filled it in the variable
+ 
+
+1291
+00:21:54,799 --> 00:21:56,549
+So notice it filled it in the variable
+over here. Oh, wait. Do you see what's
+
+1292
+00:21:56,549 --> 00:21:56,559
+over here. Oh, wait. Do you see what's
+ 
+
+1293
+00:21:56,559 --> 00:21:58,870
+over here. Oh, wait. Do you see what's
+happening? Oh, no. It's taking it as one
+
+1294
+00:21:58,870 --> 00:21:58,880
+happening? Oh, no. It's taking it as one
+ 
+
+1295
+00:21:58,880 --> 00:22:00,310
+happening? Oh, no. It's taking it as one
+object and putting it all in there at
+
+1296
+00:22:00,310 --> 00:22:00,320
+object and putting it all in there at
+ 
+
+1297
+00:22:00,320 --> 00:22:02,230
+object and putting it all in there at
+the same time. I've got a fix for that.
+
+1298
+00:22:02,230 --> 00:22:02,240
+the same time. I've got a fix for that.
+ 
+
+1299
+00:22:02,240 --> 00:22:04,070
+the same time. I've got a fix for that.
+You're learning some serious data
+
+1300
+00:22:04,070 --> 00:22:04,080
+You're learning some serious data
+ 
+
+1301
+00:22:04,080 --> 00:22:06,149
+You're learning some serious data
+manipulation here in N. What we have to
+
+1302
+00:22:06,149 --> 00:22:06,159
+manipulation here in N. What we have to
+ 
+
+1303
+00:22:06,159 --> 00:22:07,830
+manipulation here in N. What we have to
+do, notice it's spitting out one item.
+
+1304
+00:22:07,830 --> 00:22:07,840
+do, notice it's spitting out one item.
+ 
+
+1305
+00:22:07,840 --> 00:22:09,510
+do, notice it's spitting out one item.
+One item right here. We need to have
+
+1306
+00:22:09,510 --> 00:22:09,520
+One item right here. We need to have
+ 
+
+1307
+00:22:09,520 --> 00:22:11,430
+One item right here. We need to have
+that spit out as many items as there is
+
+1308
+00:22:11,430 --> 00:22:11,440
+that spit out as many items as there is
+ 
+
+1309
+00:22:11,440 --> 00:22:12,870
+that spit out as many items as there is
+YouTube channel IDs. So, we're going to
+
+1310
+00:22:12,870 --> 00:22:12,880
+YouTube channel IDs. So, we're going to
+ 
+
+1311
+00:22:12,880 --> 00:22:15,190
+YouTube channel IDs. So, we're going to
+add another node in between called split
+
+1312
+00:22:15,190 --> 00:22:15,200
+add another node in between called split
+ 
+
+1313
+00:22:15,200 --> 00:22:17,350
+add another node in between called split
+out, not Splunk. And yes, you can do
+
+1314
+00:22:17,350 --> 00:22:17,360
+out, not Splunk. And yes, you can do
+ 
+
+1315
+00:22:17,360 --> 00:22:19,590
+out, not Splunk. And yes, you can do
+Splunk stuff. Split out based on channel
+
+1316
+00:22:19,590 --> 00:22:19,600
+Splunk stuff. Split out based on channel
+ 
+
+1317
+00:22:19,600 --> 00:22:22,870
+Splunk stuff. Split out based on channel
+IDs. Execute. Boom. Three items kicked
+
+1318
+00:22:22,870 --> 00:22:22,880
+IDs. Execute. Boom. Three items kicked
+ 
+
+1319
+00:22:22,880 --> 00:22:25,590
+IDs. Execute. Boom. Three items kicked
+out. Perfect. Now it's working. Awesome.
+
+1320
+00:22:25,590 --> 00:22:25,600
+out. Perfect. Now it's working. Awesome.
+ 
+
+1321
+00:22:25,600 --> 00:22:27,590
+out. Perfect. Now it's working. Awesome.
+So, if we execute the step for the RSS
+
+1322
+00:22:27,590 --> 00:22:27,600
+So, if we execute the step for the RSS
+ 
+
+1323
+00:22:27,600 --> 00:22:29,270
+So, if we execute the step for the RSS
+read one, we'll change that to YouTube
+
+1324
+00:22:29,270 --> 00:22:29,280
+read one, we'll change that to YouTube
+ 
+
+1325
+00:22:29,280 --> 00:22:30,630
+read one, we'll change that to YouTube
+channels. It's going to go grab some
+
+1326
+00:22:30,630 --> 00:22:30,640
+channels. It's going to go grab some
+ 
+
+1327
+00:22:30,640 --> 00:22:32,470
+channels. It's going to go grab some
+YouTube videos and their links. And we
+
+1328
+00:22:32,470 --> 00:22:32,480
+YouTube videos and their links. And we
+ 
+
+1329
+00:22:32,480 --> 00:22:34,470
+YouTube videos and their links. And we
+got 45 videos to watch. We don't need
+
+1330
+00:22:34,470 --> 00:22:34,480
+got 45 videos to watch. We don't need
+ 
+
+1331
+00:22:34,480 --> 00:22:36,710
+got 45 videos to watch. We don't need
+that many. What do you say we filter it?
+
+1332
+00:22:36,710 --> 00:22:36,720
+that many. What do you say we filter it?
+ 
+
+1333
+00:22:36,720 --> 00:22:39,029
+that many. What do you say we filter it?
+Let's filter by the ISO date. So, this
+
+1334
+00:22:39,029 --> 00:22:39,039
+Let's filter by the ISO date. So, this
+ 
+
+1335
+00:22:39,039 --> 00:22:40,630
+Let's filter by the ISO date. So, this
+will be essentially when the video is
+
+1336
+00:22:40,630 --> 00:22:40,640
+will be essentially when the video is
+ 
+
+1337
+00:22:40,640 --> 00:22:42,230
+will be essentially when the video is
+published. Let's grab that. Put it in
+
+1338
+00:22:42,230 --> 00:22:42,240
+published. Let's grab that. Put it in
+ 
+
+1339
+00:22:42,240 --> 00:22:45,110
+published. Let's grab that. Put it in
+there. Now, notice it's like the time as
+
+1340
+00:22:45,110 --> 00:22:45,120
+there. Now, notice it's like the time as
+ 
+
+1341
+00:22:45,120 --> 00:22:46,789
+there. Now, notice it's like the time as
+well. And we don't really need to filter
+
+1342
+00:22:46,789 --> 00:22:46,799
+well. And we don't really need to filter
+ 
+
+1343
+00:22:46,799 --> 00:22:48,390
+well. And we don't really need to filter
+off the time. All I care about is the
+
+1344
+00:22:48,390 --> 00:22:48,400
+off the time. All I care about is the
+ 
+
+1345
+00:22:48,400 --> 00:22:50,230
+off the time. All I care about is the
+day. So, I'm going to use some fancy
+
+1346
+00:22:50,230 --> 00:22:50,240
+day. So, I'm going to use some fancy
+ 
+
+1347
+00:22:50,240 --> 00:22:52,870
+day. So, I'm going to use some fancy
+expression like this that'll just grab
+
+1348
+00:22:52,870 --> 00:22:52,880
+expression like this that'll just grab
+ 
+
+1349
+00:22:52,880 --> 00:22:54,870
+expression like this that'll just grab
+the year, month, date. Now, again, I'm
+
+1350
+00:22:54,870 --> 00:22:54,880
+the year, month, date. Now, again, I'm
+ 
+
+1351
+00:22:54,880 --> 00:22:56,950
+the year, month, date. Now, again, I'm
+no wizard with this. This is just chat
+
+1352
+00:22:56,950 --> 00:22:56,960
+no wizard with this. This is just chat
+ 
+
+1353
+00:22:56,960 --> 00:22:58,470
+no wizard with this. This is just chat
+GPT. Hey, how do I do this really
+
+1354
+00:22:58,470 --> 00:22:58,480
+GPT. Hey, how do I do this really
+ 
+
+1355
+00:22:58,480 --> 00:23:00,070
+GPT. Hey, how do I do this really
+quickly? And I'll say is the publish
+
+1356
+00:23:00,070 --> 00:23:00,080
+quickly? And I'll say is the publish
+ 
+
+1357
+00:23:00,080 --> 00:23:03,750
+quickly? And I'll say is the publish
+date after or equal to? And we'll put in
+
+1358
+00:23:03,750 --> 00:23:03,760
+date after or equal to? And we'll put in
+ 
+
+1359
+00:23:03,760 --> 00:23:06,310
+date after or equal to? And we'll put in
+3 days from now. again with some uh AI
+
+1360
+00:23:06,310 --> 00:23:06,320
+3 days from now. again with some uh AI
+ 
+
+1361
+00:23:06,320 --> 00:23:09,430
+3 days from now. again with some uh AI
+magic. Cool. Notice how it's changing to
+
+1362
+00:23:09,430 --> 00:23:09,440
+magic. Cool. Notice how it's changing to
+ 
+
+1363
+00:23:09,440 --> 00:23:11,190
+magic. Cool. Notice how it's changing to
+July 1st for that particular date and
+
+1364
+00:23:11,190 --> 00:23:11,200
+July 1st for that particular date and
+ 
+
+1365
+00:23:11,200 --> 00:23:13,190
+July 1st for that particular date and
+then June 29th. Let's see how many
+
+1366
+00:23:13,190 --> 00:23:13,200
+then June 29th. Let's see how many
+ 
+
+1367
+00:23:13,200 --> 00:23:15,830
+then June 29th. Let's see how many
+videos are within the last three days.
+
+1368
+00:23:15,830 --> 00:23:15,840
+videos are within the last three days.
+ 
+
+1369
+00:23:15,840 --> 00:23:17,430
+videos are within the last three days.
+Eight. Cool. So, we've filtered it down
+
+1370
+00:23:17,430 --> 00:23:17,440
+Eight. Cool. So, we've filtered it down
+ 
+
+1371
+00:23:17,440 --> 00:23:20,310
+Eight. Cool. So, we've filtered it down
+to eight. Our output looks okay. And
+
+1372
+00:23:20,310 --> 00:23:20,320
+to eight. Our output looks okay. And
+ 
+
+1373
+00:23:20,320 --> 00:23:21,990
+to eight. Our output looks okay. And
+then let's add another Discord node and
+
+1374
+00:23:21,990 --> 00:23:22,000
+then let's add another Discord node and
+ 
+
+1375
+00:23:22,000 --> 00:23:31,510
+then let's add another Discord node and
+edit what data we want to see.
+
+1376
+00:23:31,510 --> 00:23:31,520
+
+ 
+
+1377
+00:23:31,520 --> 00:23:33,990
+
+Perfect. Let's try it out. And now we
+
+1378
+00:23:33,990 --> 00:23:34,000
+Perfect. Let's try it out. And now we
+ 
+
+1379
+00:23:34,000 --> 00:23:35,990
+Perfect. Let's try it out. And now we
+have videos being delivered to our inbox
+
+1380
+00:23:35,990 --> 00:23:36,000
+have videos being delivered to our inbox
+ 
+
+1381
+00:23:36,000 --> 00:23:38,310
+have videos being delivered to our inbox
+or to Discord. Now, we're going to have
+
+1382
+00:23:38,310 --> 00:23:38,320
+or to Discord. Now, we're going to have
+ 
+
+1383
+00:23:38,320 --> 00:23:39,990
+or to Discord. Now, we're going to have
+to stop here because this video could
+
+1384
+00:23:39,990 --> 00:23:40,000
+to stop here because this video could
+ 
+
+1385
+00:23:40,000 --> 00:23:41,669
+to stop here because this video could
+probably go on forever. I could sit here
+
+1386
+00:23:41,669 --> 00:23:41,679
+probably go on forever. I could sit here
+ 
+
+1387
+00:23:41,679 --> 00:23:43,430
+probably go on forever. I could sit here
+and do this with you for a long time.
+
+1388
+00:23:43,430 --> 00:23:43,440
+and do this with you for a long time.
+ 
+
+1389
+00:23:43,440 --> 00:23:45,590
+and do this with you for a long time.
+I'm going to save my stuff. Going to
+
+1390
+00:23:45,590 --> 00:23:45,600
+I'm going to save my stuff. Going to
+ 
+
+1391
+00:23:45,600 --> 00:23:47,669
+I'm going to save my stuff. Going to
+zoom out for a second. And I just want
+
+1392
+00:23:47,669 --> 00:23:47,679
+zoom out for a second. And I just want
+ 
+
+1393
+00:23:47,679 --> 00:23:48,950
+zoom out for a second. And I just want
+to point out a few things. First, what
+
+1394
+00:23:48,950 --> 00:23:48,960
+to point out a few things. First, what
+ 
+
+1395
+00:23:48,960 --> 00:23:50,950
+to point out a few things. First, what
+we did here was not crazy complicated,
+
+1396
+00:23:50,950 --> 00:23:50,960
+we did here was not crazy complicated,
+ 
+
+1397
+00:23:50,960 --> 00:23:54,070
+we did here was not crazy complicated,
+but it is powerful. And what I wanted to
+
+1398
+00:23:54,070 --> 00:23:54,080
+but it is powerful. And what I wanted to
+ 
+
+1399
+00:23:54,080 --> 00:23:56,870
+but it is powerful. And what I wanted to
+hit home was the building blocks of N8.
+
+1400
+00:23:56,870 --> 00:23:56,880
+hit home was the building blocks of N8.
+ 
+
+1401
+00:23:56,880 --> 00:24:00,390
+hit home was the building blocks of N8.
+My goal was to get you going, "Oh, I can
+
+1402
+00:24:00,390 --> 00:24:00,400
+My goal was to get you going, "Oh, I can
+ 
+
+1403
+00:24:00,400 --> 00:24:02,070
+My goal was to get you going, "Oh, I can
+do that with the AI agent. I can execute
+
+1404
+00:24:02,070 --> 00:24:02,080
+do that with the AI agent. I can execute
+ 
+
+1405
+00:24:02,080 --> 00:24:03,750
+do that with the AI agent. I can execute
+these commands. Oh, oh, I could do this
+
+1406
+00:24:03,750 --> 00:24:03,760
+these commands. Oh, oh, I could do this
+ 
+
+1407
+00:24:03,760 --> 00:24:05,110
+these commands. Oh, oh, I could do this
+and that. Like, I want you to be just
+
+1408
+00:24:05,110 --> 00:24:05,120
+and that. Like, I want you to be just
+ 
+
+1409
+00:24:05,120 --> 00:24:06,710
+and that. Like, I want you to be just
+brimming with ideas and I want to see
+
+1410
+00:24:06,710 --> 00:24:06,720
+brimming with ideas and I want to see
+ 
+
+1411
+00:24:06,720 --> 00:24:08,710
+brimming with ideas and I want to see
+those in the comments. Think about this
+
+1412
+00:24:08,710 --> 00:24:08,720
+those in the comments. Think about this
+ 
+
+1413
+00:24:08,720 --> 00:24:10,149
+those in the comments. Think about this
+food for thought because this is what
+
+1414
+00:24:10,149 --> 00:24:10,159
+food for thought because this is what
+ 
+
+1415
+00:24:10,159 --> 00:24:12,710
+food for thought because this is what
+I'm going to build based on this instead
+
+1416
+00:24:12,710 --> 00:24:12,720
+I'm going to build based on this instead
+ 
+
+1417
+00:24:12,720 --> 00:24:15,190
+I'm going to build based on this instead
+of just spitting out articles. Maybe you
+
+1418
+00:24:15,190 --> 00:24:15,200
+of just spitting out articles. Maybe you
+ 
+
+1419
+00:24:15,200 --> 00:24:17,830
+of just spitting out articles. Maybe you
+have an AI rate the articles based on
+
+1420
+00:24:17,830 --> 00:24:17,840
+have an AI rate the articles based on
+ 
+
+1421
+00:24:17,840 --> 00:24:20,149
+have an AI rate the articles based on
+your personal preference and rank them
+
+1422
+00:24:20,149 --> 00:24:20,159
+your personal preference and rank them
+ 
+
+1423
+00:24:20,159 --> 00:24:22,070
+your personal preference and rank them
+and maybe the AI will tell you, hey, you
+
+1424
+00:24:22,070 --> 00:24:22,080
+and maybe the AI will tell you, hey, you
+ 
+
+1425
+00:24:22,080 --> 00:24:23,750
+and maybe the AI will tell you, hey, you
+should definitely read this article or
+
+1426
+00:24:23,750 --> 00:24:23,760
+should definitely read this article or
+ 
+
+1427
+00:24:23,760 --> 00:24:25,590
+should definitely read this article or
+don't waste your time with this. Maybe
+
+1428
+00:24:25,590 --> 00:24:25,600
+don't waste your time with this. Maybe
+ 
+
+1429
+00:24:25,600 --> 00:24:27,830
+don't waste your time with this. Maybe
+it can go through a YouTube videos, look
+
+1430
+00:24:27,830 --> 00:24:27,840
+it can go through a YouTube videos, look
+ 
+
+1431
+00:24:27,840 --> 00:24:29,990
+it can go through a YouTube videos, look
+at the comments, read the transcript,
+
+1432
+00:24:29,990 --> 00:24:30,000
+at the comments, read the transcript,
+ 
+
+1433
+00:24:30,000 --> 00:24:31,909
+at the comments, read the transcript,
+summarize when you really don't need to
+
+1434
+00:24:31,909 --> 00:24:31,919
+summarize when you really don't need to
+ 
+
+1435
+00:24:31,919 --> 00:24:34,230
+summarize when you really don't need to
+watch the entire video, or have it tell
+
+1436
+00:24:34,230 --> 00:24:34,240
+watch the entire video, or have it tell
+ 
+
+1437
+00:24:34,240 --> 00:24:36,070
+watch the entire video, or have it tell
+you, "This video is a must. You have to
+
+1438
+00:24:36,070 --> 00:24:36,080
+you, "This video is a must. You have to
+ 
+
+1439
+00:24:36,080 --> 00:24:37,750
+you, "This video is a must. You have to
+watch the entire thing." Like that kind
+
+1440
+00:24:37,750 --> 00:24:37,760
+watch the entire thing." Like that kind
+ 
+
+1441
+00:24:37,760 --> 00:24:40,789
+watch the entire thing." Like that kind
+of thing. Having this crazy automated
+
+1442
+00:24:40,789 --> 00:24:40,799
+of thing. Having this crazy automated
+ 
+
+1443
+00:24:40,799 --> 00:24:43,110
+of thing. Having this crazy automated
+news aggregator is totally possible with
+
+1444
+00:24:43,110 --> 00:24:43,120
+news aggregator is totally possible with
+ 
+
+1445
+00:24:43,120 --> 00:24:45,590
+news aggregator is totally possible with
+this tool. And that's just one idea. And
+
+1446
+00:24:45,590 --> 00:24:45,600
+this tool. And that's just one idea. And
+ 
+
+1447
+00:24:45,600 --> 00:24:46,870
+this tool. And that's just one idea. And
+by the way, I did kind of build this
+
+1448
+00:24:46,870 --> 00:24:46,880
+by the way, I did kind of build this
+ 
+
+1449
+00:24:46,880 --> 00:24:48,470
+by the way, I did kind of build this
+already. I wanted to show this to you in
+
+1450
+00:24:48,470 --> 00:24:48,480
+already. I wanted to show this to you in
+ 
+
+1451
+00:24:48,480 --> 00:24:50,710
+already. I wanted to show this to you in
+the video in this video, but I just
+
+1452
+00:24:50,710 --> 00:24:50,720
+the video in this video, but I just
+ 
+
+1453
+00:24:50,720 --> 00:24:52,470
+the video in this video, but I just
+didn't have any time. But in the next
+
+1454
+00:24:52,470 --> 00:24:52,480
+didn't have any time. But in the next
+ 
+
+1455
+00:24:52,480 --> 00:24:53,750
+didn't have any time. But in the next
+video, because there is something I want
+
+1456
+00:24:53,750 --> 00:24:53,760
+video, because there is something I want
+ 
+
+1457
+00:24:53,760 --> 00:24:56,149
+video, because there is something I want
+to cover beyond this, I want to show you
+
+1458
+00:24:56,149 --> 00:24:56,159
+to cover beyond this, I want to show you
+ 
+
+1459
+00:24:56,159 --> 00:24:57,750
+to cover beyond this, I want to show you
+something I teased in the beginning.
+
+1460
+00:24:57,750 --> 00:24:57,760
+something I teased in the beginning.
+ 
+
+1461
+00:24:57,760 --> 00:24:59,990
+something I teased in the beginning.
+It's more around this workflow here,
+
+1462
+00:24:59,990 --> 00:25:00,000
+It's more around this workflow here,
+ 
+
+1463
+00:25:00,000 --> 00:25:02,630
+It's more around this workflow here,
+executing commands and having AI analyze
+
+1464
+00:25:02,630 --> 00:25:02,640
+executing commands and having AI analyze
+ 
+
+1465
+00:25:02,640 --> 00:25:05,029
+executing commands and having AI analyze
+your commands because N has one powerful
+
+1466
+00:25:05,029 --> 00:25:05,039
+your commands because N has one powerful
+ 
+
+1467
+00:25:05,039 --> 00:25:07,110
+your commands because N has one powerful
+thing I haven't shown you yet. It's with
+
+1468
+00:25:07,110 --> 00:25:07,120
+thing I haven't shown you yet. It's with
+ 
+
+1469
+00:25:07,120 --> 00:25:09,110
+thing I haven't shown you yet. It's with
+AI. I'm going to add one more AI thing
+
+1470
+00:25:09,110 --> 00:25:09,120
+AI. I'm going to add one more AI thing
+ 
+
+1471
+00:25:09,120 --> 00:25:11,269
+AI. I'm going to add one more AI thing
+here. It's the AI agent. I'm just going
+
+1472
+00:25:11,269 --> 00:25:11,279
+here. It's the AI agent. I'm just going
+ 
+
+1473
+00:25:11,279 --> 00:25:12,549
+here. It's the AI agent. I'm just going
+to put him out in the middle here. Let's
+
+1474
+00:25:12,549 --> 00:25:12,559
+to put him out in the middle here. Let's
+ 
+
+1475
+00:25:12,559 --> 00:25:15,110
+to put him out in the middle here. Let's
+zoom in on him. Notice he's like the LLM
+
+1476
+00:25:15,110 --> 00:25:15,120
+zoom in on him. Notice he's like the LLM
+ 
+
+1477
+00:25:15,120 --> 00:25:16,710
+zoom in on him. Notice he's like the LLM
+block, but he has a few more things
+
+1478
+00:25:16,710 --> 00:25:16,720
+block, but he has a few more things
+ 
+
+1479
+00:25:16,720 --> 00:25:20,070
+block, but he has a few more things
+going on. He's got memory and tools.
+
+1480
+00:25:20,070 --> 00:25:20,080
+going on. He's got memory and tools.
+ 
+
+1481
+00:25:20,080 --> 00:25:21,990
+going on. He's got memory and tools.
+What does that mean? Check this out. I'm
+
+1482
+00:25:21,990 --> 00:25:22,000
+What does that mean? Check this out. I'm
+ 
+
+1483
+00:25:22,000 --> 00:25:24,310
+What does that mean? Check this out. I'm
+going to add for the chat model just
+
+1484
+00:25:24,310 --> 00:25:24,320
+going to add for the chat model just
+ 
+
+1485
+00:25:24,320 --> 00:25:27,510
+going to add for the chat model just
+open AI. Cool. Then for the tool, I'm
+
+1486
+00:25:27,510 --> 00:25:27,520
+open AI. Cool. Then for the tool, I'm
+ 
+
+1487
+00:25:27,520 --> 00:25:30,789
+open AI. Cool. Then for the tool, I'm
+going to add command line. And the
+
+1488
+00:25:30,789 --> 00:25:30,799
+going to add command line. And the
+ 
+
+1489
+00:25:30,799 --> 00:25:34,710
+going to add command line. And the
+command will be ping networkchuck.com
+
+1490
+00:25:34,710 --> 00:25:34,720
+command will be ping networkchuck.com
+ 
+
+1491
+00:25:34,720 --> 00:25:38,470
+command will be ping networkchuck.com
+for four pings. I'll describe it. This
+
+1492
+00:25:38,470 --> 00:25:38,480
+for four pings. I'll describe it. This
+ 
+
+1493
+00:25:38,480 --> 00:25:41,990
+for four pings. I'll describe it. This
+is how you check if the
+
+1494
+00:25:41,990 --> 00:25:42,000
+is how you check if the
+ 
+
+1495
+00:25:42,000 --> 00:25:44,870
+is how you check if the
+website is up. I'll add another tool.
+
+1496
+00:25:44,870 --> 00:25:44,880
+website is up. I'll add another tool.
+ 
+
+1497
+00:25:44,880 --> 00:25:47,510
+website is up. I'll add another tool.
+Let's do another command
+
+1498
+00:25:47,510 --> 00:25:47,520
+Let's do another command
+ 
+
+1499
+00:25:47,520 --> 00:25:51,990
+Let's do another command
+and say ping10.77.14.30
+
+1500
+00:25:51,990 --> 00:25:52,000
+
+ 
+
+1501
+00:25:52,000 --> 00:25:55,190
+
+for three pings.
+
+1502
+00:25:55,190 --> 00:25:55,200
+for three pings.
+ 
+
+1503
+00:25:55,200 --> 00:26:00,149
+for three pings.
+This is how you see if Terry is up. And
+
+1504
+00:26:00,149 --> 00:26:00,159
+This is how you see if Terry is up. And
+ 
+
+1505
+00:26:00,159 --> 00:26:01,190
+This is how you see if Terry is up. And
+now I'm going to add a trigger for this
+
+1506
+00:26:01,190 --> 00:26:01,200
+now I'm going to add a trigger for this
+ 
+
+1507
+00:26:01,200 --> 00:26:03,669
+now I'm going to add a trigger for this
+AI agent. It'll be a chat trigger. I'll
+
+1508
+00:26:03,669 --> 00:26:03,679
+AI agent. It'll be a chat trigger. I'll
+ 
+
+1509
+00:26:03,679 --> 00:26:05,510
+AI agent. It'll be a chat trigger. I'll
+connect it right here. I'm going to open
+
+1510
+00:26:05,510 --> 00:26:05,520
+connect it right here. I'm going to open
+ 
+
+1511
+00:26:05,520 --> 00:26:08,870
+connect it right here. I'm going to open
+the chat and I'm going to say, "Hey, is
+
+1512
+00:26:08,870 --> 00:26:08,880
+the chat and I'm going to say, "Hey, is
+ 
+
+1513
+00:26:08,880 --> 00:26:12,230
+the chat and I'm going to say, "Hey, is
+the internet up?"
+
+1514
+00:26:12,230 --> 00:26:12,240
+the internet up?"
+ 
+
+1515
+00:26:12,240 --> 00:26:14,870
+the internet up?"
+It's using chat GBT. It's going to use
+
+1516
+00:26:14,870 --> 00:26:14,880
+It's using chat GBT. It's going to use
+ 
+
+1517
+00:26:14,880 --> 00:26:17,029
+It's using chat GBT. It's going to use
+one of our tools. It's using both for
+
+1518
+00:26:17,029 --> 00:26:17,039
+one of our tools. It's using both for
+ 
+
+1519
+00:26:17,039 --> 00:26:19,990
+one of our tools. It's using both for
+some reason. Look at that. So, that's
+
+1520
+00:26:19,990 --> 00:26:20,000
+some reason. Look at that. So, that's
+ 
+
+1521
+00:26:20,000 --> 00:26:21,430
+some reason. Look at that. So, that's
+pretty cool. I can say things like,
+
+1522
+00:26:21,430 --> 00:26:21,440
+pretty cool. I can say things like,
+ 
+
+1523
+00:26:21,440 --> 00:26:24,310
+pretty cool. I can say things like,
+"Hey, is Terry up?" It's only going to
+
+1524
+00:26:24,310 --> 00:26:24,320
+"Hey, is Terry up?" It's only going to
+ 
+
+1525
+00:26:24,320 --> 00:26:27,350
+"Hey, is Terry up?" It's only going to
+one thing. Terry, are you seeing this?
+
+1526
+00:26:27,350 --> 00:26:27,360
+one thing. Terry, are you seeing this?
+ 
+
+1527
+00:26:27,360 --> 00:26:29,110
+one thing. Terry, are you seeing this?
+This is a simple example. We can connect
+
+1528
+00:26:29,110 --> 00:26:29,120
+This is a simple example. We can connect
+ 
+
+1529
+00:26:29,120 --> 00:26:31,110
+This is a simple example. We can connect
+this whole thing to our whole home lab.
+
+1530
+00:26:31,110 --> 00:26:31,120
+this whole thing to our whole home lab.
+ 
+
+1531
+00:26:31,120 --> 00:26:33,430
+this whole thing to our whole home lab.
+That's the next video. That's all I got.
+
+1532
+00:26:33,430 --> 00:26:33,440
+That's the next video. That's all I got.
+ 
+
+1533
+00:26:33,440 --> 00:26:37,360
+That's the next video. That's all I got.
+I'll catch you guys next time.
+

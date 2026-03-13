@@ -1,0 +1,6155 @@
+1
+00:00:00,000 --> 00:00:02,950
+
+Obsidian tutorial 2025. In this video,
+
+2
+00:00:02,950 --> 00:00:02,960
+Obsidian tutorial 2025. In this video,
+ 
+
+3
+00:00:02,960 --> 00:00:04,950
+Obsidian tutorial 2025. In this video,
+I'll be showing you how to use Obsidian
+
+4
+00:00:04,950 --> 00:00:04,960
+I'll be showing you how to use Obsidian
+ 
+
+5
+00:00:04,960 --> 00:00:06,869
+I'll be showing you how to use Obsidian
+for organizing your notes, creating
+
+6
+00:00:06,869 --> 00:00:06,879
+for organizing your notes, creating
+ 
+
+7
+00:00:06,879 --> 00:00:09,430
+for organizing your notes, creating
+linked ideas, and building a clean,
+
+8
+00:00:09,430 --> 00:00:09,440
+linked ideas, and building a clean,
+ 
+
+9
+00:00:09,440 --> 00:00:11,589
+linked ideas, and building a clean,
+structured workspace. We will be going
+
+10
+00:00:11,589 --> 00:00:11,599
+structured workspace. We will be going
+ 
+
+11
+00:00:11,599 --> 00:00:13,749
+structured workspace. We will be going
+step by step through the basics so you
+
+12
+00:00:13,749 --> 00:00:13,759
+step by step through the basics so you
+ 
+
+13
+00:00:13,759 --> 00:00:16,310
+step by step through the basics so you
+can start using Obsidian efficiently,
+
+14
+00:00:16,310 --> 00:00:16,320
+can start using Obsidian efficiently,
+ 
+
+15
+00:00:16,320 --> 00:00:19,429
+can start using Obsidian efficiently,
+even if you are a complete beginner. In
+
+16
+00:00:19,429 --> 00:00:19,439
+even if you are a complete beginner. In
+ 
+
+17
+00:00:19,439 --> 00:00:20,950
+even if you are a complete beginner. In
+this video, I will be showing you how to
+
+18
+00:00:20,950 --> 00:00:20,960
+this video, I will be showing you how to
+ 
+
+19
+00:00:20,960 --> 00:00:22,870
+this video, I will be showing you how to
+use Obsidian to organize your notes,
+
+20
+00:00:22,870 --> 00:00:22,880
+use Obsidian to organize your notes,
+ 
+
+21
+00:00:22,880 --> 00:00:26,390
+use Obsidian to organize your notes,
+link ideas, manage projects, and build a
+
+22
+00:00:26,390 --> 00:00:26,400
+link ideas, manage projects, and build a
+ 
+
+23
+00:00:26,400 --> 00:00:28,710
+link ideas, manage projects, and build a
+clean knowledge system from scratch. So
+
+24
+00:00:28,710 --> 00:00:28,720
+clean knowledge system from scratch. So
+ 
+
+25
+00:00:28,720 --> 00:00:30,070
+clean knowledge system from scratch. So
+before we start, let's get to know
+
+26
+00:00:30,070 --> 00:00:30,080
+before we start, let's get to know
+ 
+
+27
+00:00:30,080 --> 00:00:31,910
+before we start, let's get to know
+Obsidian a little bit. Obsidian is
+
+28
+00:00:31,910 --> 00:00:31,920
+Obsidian a little bit. Obsidian is
+ 
+
+29
+00:00:31,920 --> 00:00:34,150
+Obsidian a little bit. Obsidian is
+basically a powerful a very powerful
+
+30
+00:00:34,150 --> 00:00:34,160
+basically a powerful a very powerful
+ 
+
+31
+00:00:34,160 --> 00:00:36,389
+basically a powerful a very powerful
+note takingaking app. It is based on
+
+32
+00:00:36,389 --> 00:00:36,399
+note takingaking app. It is based on
+ 
+
+33
+00:00:36,399 --> 00:00:39,110
+note takingaking app. It is based on
+plain text markdown files. And the main
+
+34
+00:00:39,110 --> 00:00:39,120
+plain text markdown files. And the main
+ 
+
+35
+00:00:39,120 --> 00:00:42,150
+plain text markdown files. And the main
+idea behind Obsidian is that your notes
+
+36
+00:00:42,150 --> 00:00:42,160
+idea behind Obsidian is that your notes
+ 
+
+37
+00:00:42,160 --> 00:00:44,229
+idea behind Obsidian is that your notes
+stay on your device and you can connect
+
+38
+00:00:44,229 --> 00:00:44,239
+stay on your device and you can connect
+ 
+
+39
+00:00:44,239 --> 00:00:46,389
+stay on your device and you can connect
+them together using backlinks. This
+
+40
+00:00:46,389 --> 00:00:46,399
+them together using backlinks. This
+ 
+
+41
+00:00:46,399 --> 00:00:47,990
+them together using backlinks. This
+makes it perfect for students,
+
+42
+00:00:47,990 --> 00:00:48,000
+makes it perfect for students,
+ 
+
+43
+00:00:48,000 --> 00:00:49,910
+makes it perfect for students,
+freelancers, content creators, and
+
+44
+00:00:49,910 --> 00:00:49,920
+freelancers, content creators, and
+ 
+
+45
+00:00:49,920 --> 00:00:52,549
+freelancers, content creators, and
+basically anyone who wants a long-term
+
+46
+00:00:52,549 --> 00:00:52,559
+basically anyone who wants a long-term
+ 
+
+47
+00:00:52,559 --> 00:00:54,229
+basically anyone who wants a long-term
+knowledge base. And now in this video,
+
+48
+00:00:54,229 --> 00:00:54,239
+knowledge base. And now in this video,
+ 
+
+49
+00:00:54,239 --> 00:00:56,150
+knowledge base. And now in this video,
+we are going to start by creating our
+
+50
+00:00:56,150 --> 00:00:56,160
+we are going to start by creating our
+ 
+
+51
+00:00:56,160 --> 00:00:58,630
+we are going to start by creating our
+vault. Then we make some pages, link
+
+52
+00:00:58,630 --> 00:00:58,640
+vault. Then we make some pages, link
+ 
+
+53
+00:00:58,640 --> 00:01:01,750
+vault. Then we make some pages, link
+notes, uh build daily notes, add tags,
+
+54
+00:01:01,750 --> 00:01:01,760
+notes, uh build daily notes, add tags,
+ 
+
+55
+00:01:01,760 --> 00:01:04,789
+notes, uh build daily notes, add tags,
+and use community plugins, create simple
+
+56
+00:01:04,789 --> 00:01:04,799
+and use community plugins, create simple
+ 
+
+57
+00:01:04,799 --> 00:01:06,469
+and use community plugins, create simple
+project management workflow. Now,
+
+58
+00:01:06,469 --> 00:01:06,479
+project management workflow. Now,
+ 
+
+59
+00:01:06,479 --> 00:01:07,830
+project management workflow. Now,
+everything I'm going to show in this
+
+60
+00:01:07,830 --> 00:01:07,840
+everything I'm going to show in this
+ 
+
+61
+00:01:07,840 --> 00:01:10,550
+everything I'm going to show in this
+video is going to be done using the free
+
+62
+00:01:10,550 --> 00:01:10,560
+video is going to be done using the free
+ 
+
+63
+00:01:10,560 --> 00:01:12,310
+video is going to be done using the free
+version. So, this is the free version
+
+64
+00:01:12,310 --> 00:01:12,320
+version. So, this is the free version
+ 
+
+65
+00:01:12,320 --> 00:01:14,390
+version. So, this is the free version
+and it is enough to be doing any of the
+
+66
+00:01:14,390 --> 00:01:14,400
+and it is enough to be doing any of the
+ 
+
+67
+00:01:14,400 --> 00:01:16,550
+and it is enough to be doing any of the
+tasks that I'm going to show you. If you
+
+68
+00:01:16,550 --> 00:01:16,560
+tasks that I'm going to show you. If you
+ 
+
+69
+00:01:16,560 --> 00:01:18,630
+tasks that I'm going to show you. If you
+need to go further ahead and, you know,
+
+70
+00:01:18,630 --> 00:01:18,640
+need to go further ahead and, you know,
+ 
+
+71
+00:01:18,640 --> 00:01:21,190
+need to go further ahead and, you know,
+go for more advanced um features, then
+
+72
+00:01:21,190 --> 00:01:21,200
+go for more advanced um features, then
+ 
+
+73
+00:01:21,200 --> 00:01:23,749
+go for more advanced um features, then
+you can go for the you can upgrade your
+
+74
+00:01:23,749 --> 00:01:23,759
+you can go for the you can upgrade your
+ 
+
+75
+00:01:23,759 --> 00:01:25,990
+you can go for the you can upgrade your
+plan. So, let's dive in. Over here we
+
+76
+00:01:25,990 --> 00:01:26,000
+plan. So, let's dive in. Over here we
+ 
+
+77
+00:01:26,000 --> 00:01:27,350
+plan. So, let's dive in. Over here we
+have Obsidian. You're you're going to
+
+78
+00:01:27,350 --> 00:01:27,360
+have Obsidian. You're you're going to
+ 
+
+79
+00:01:27,360 --> 00:01:29,030
+have Obsidian. You're you're going to
+open it on your web and then you are
+
+80
+00:01:29,030 --> 00:01:29,040
+open it on your web and then you are
+ 
+
+81
+00:01:29,040 --> 00:01:31,109
+open it on your web and then you are
+going to get Obsidian for Windows. So
+
+82
+00:01:31,109 --> 00:01:31,119
+going to get Obsidian for Windows. So
+ 
+
+83
+00:01:31,119 --> 00:01:33,429
+going to get Obsidian for Windows. So
+you're going to have to install Obsidian
+
+84
+00:01:33,429 --> 00:01:33,439
+you're going to have to install Obsidian
+ 
+
+85
+00:01:33,439 --> 00:01:35,990
+you're going to have to install Obsidian
+uh in order to get it to work. We are
+
+86
+00:01:35,990 --> 00:01:36,000
+uh in order to get it to work. We are
+ 
+
+87
+00:01:36,000 --> 00:01:38,390
+uh in order to get it to work. We are
+going to download it for Windows. There
+
+88
+00:01:38,390 --> 00:01:38,400
+going to download it for Windows. There
+ 
+
+89
+00:01:38,400 --> 00:01:40,950
+going to download it for Windows. There
+is the information about it. So just go
+
+90
+00:01:40,950 --> 00:01:40,960
+is the information about it. So just go
+ 
+
+91
+00:01:40,960 --> 00:01:42,870
+is the information about it. So just go
+ahead and download. All right. So what
+
+92
+00:01:42,870 --> 00:01:42,880
+ahead and download. All right. So what
+ 
+
+93
+00:01:42,880 --> 00:01:45,109
+ahead and download. All right. So what
+we need to do is download Obsidian for
+
+94
+00:01:45,109 --> 00:01:45,119
+we need to do is download Obsidian for
+ 
+
+95
+00:01:45,119 --> 00:01:46,950
+we need to do is download Obsidian for
+Windows. And once you do that, you're
+
+96
+00:01:46,950 --> 00:01:46,960
+Windows. And once you do that, you're
+ 
+
+97
+00:01:46,960 --> 00:01:49,749
+Windows. And once you do that, you're
+going to end up with the Obsidian setup.
+
+98
+00:01:49,749 --> 00:01:49,759
+going to end up with the Obsidian setup.
+ 
+
+99
+00:01:49,759 --> 00:01:52,710
+going to end up with the Obsidian setup.
+Now you have to run this and click
+
+100
+00:01:52,710 --> 00:01:52,720
+Now you have to run this and click
+ 
+
+101
+00:01:52,720 --> 00:01:56,310
+Now you have to run this and click
+finish. So it starts um installing and
+
+102
+00:01:56,310 --> 00:01:56,320
+finish. So it starts um installing and
+ 
+
+103
+00:01:56,320 --> 00:02:00,149
+finish. So it starts um installing and
+you are going to create your new vault.
+
+104
+00:02:00,149 --> 00:02:00,159
+you are going to create your new vault.
+ 
+
+105
+00:02:00,159 --> 00:02:03,030
+you are going to create your new vault.
+So in Obsidian um what you have is you
+
+106
+00:02:03,030 --> 00:02:03,040
+So in Obsidian um what you have is you
+ 
+
+107
+00:02:03,040 --> 00:02:04,950
+So in Obsidian um what you have is you
+have a vault in there. So you're going
+
+108
+00:02:04,950 --> 00:02:04,960
+have a vault in there. So you're going
+ 
+
+109
+00:02:04,960 --> 00:02:07,109
+have a vault in there. So you're going
+to create a new Obsidian vault under a
+
+110
+00:02:07,109 --> 00:02:07,119
+to create a new Obsidian vault under a
+ 
+
+111
+00:02:07,119 --> 00:02:09,350
+to create a new Obsidian vault under a
+folder. Now other options include
+
+112
+00:02:09,350 --> 00:02:09,360
+folder. Now other options include
+ 
+
+113
+00:02:09,360 --> 00:02:11,910
+folder. Now other options include
+opening uh the folder as a vault and you
+
+114
+00:02:11,910 --> 00:02:11,920
+opening uh the folder as a vault and you
+ 
+
+115
+00:02:11,920 --> 00:02:14,710
+opening uh the folder as a vault and you
+also have open vault from obsidian sync.
+
+116
+00:02:14,710 --> 00:02:14,720
+also have open vault from obsidian sync.
+ 
+
+117
+00:02:14,720 --> 00:02:16,949
+also have open vault from obsidian sync.
+So because we are new here and we are
+
+118
+00:02:16,949 --> 00:02:16,959
+So because we are new here and we are
+ 
+
+119
+00:02:16,959 --> 00:02:19,350
+So because we are new here and we are
+going on Obsidian for the first time. So
+
+120
+00:02:19,350 --> 00:02:19,360
+going on Obsidian for the first time. So
+ 
+
+121
+00:02:19,360 --> 00:02:21,110
+going on Obsidian for the first time. So
+for the first time you are going to have
+
+122
+00:02:21,110 --> 00:02:21,120
+for the first time you are going to have
+ 
+
+123
+00:02:21,120 --> 00:02:23,350
+for the first time you are going to have
+to create a new vault. Now, this is just
+
+124
+00:02:23,350 --> 00:02:23,360
+to create a new vault. Now, this is just
+ 
+
+125
+00:02:23,360 --> 00:02:24,949
+to create a new vault. Now, this is just
+syncing and this is using an older
+
+126
+00:02:24,949 --> 00:02:24,959
+syncing and this is using an older
+ 
+
+127
+00:02:24,959 --> 00:02:26,229
+syncing and this is using an older
+folder. So, we're not going to use
+
+128
+00:02:26,229 --> 00:02:26,239
+folder. So, we're not going to use
+ 
+
+129
+00:02:26,239 --> 00:02:28,229
+folder. So, we're not going to use
+those. We are going to create a new
+
+130
+00:02:28,229 --> 00:02:28,239
+those. We are going to create a new
+ 
+
+131
+00:02:28,239 --> 00:02:30,470
+those. We are going to create a new
+vault. And just click on the create
+
+132
+00:02:30,470 --> 00:02:30,480
+vault. And just click on the create
+ 
+
+133
+00:02:30,480 --> 00:02:33,589
+vault. And just click on the create
+button over here. And it says that uh it
+
+134
+00:02:33,589 --> 00:02:33,599
+button over here. And it says that uh it
+ 
+
+135
+00:02:33,599 --> 00:02:35,910
+button over here. And it says that uh it
+is going to create a local vault. So,
+
+136
+00:02:35,910 --> 00:02:35,920
+is going to create a local vault. So,
+ 
+
+137
+00:02:35,920 --> 00:02:38,229
+is going to create a local vault. So,
+you need to put in your vault name,
+
+138
+00:02:38,229 --> 00:02:38,239
+you need to put in your vault name,
+ 
+
+139
+00:02:38,239 --> 00:02:40,470
+you need to put in your vault name,
+whatever you're going to name your
+
+140
+00:02:40,470 --> 00:02:40,480
+whatever you're going to name your
+ 
+
+141
+00:02:40,480 --> 00:02:42,470
+whatever you're going to name your
+vault. So, I'm just going to name it
+
+142
+00:02:42,470 --> 00:02:42,480
+vault. So, I'm just going to name it
+ 
+
+143
+00:02:42,480 --> 00:02:45,589
+vault. So, I'm just going to name it
+Nicole's vault. And then you need to
+
+144
+00:02:45,589 --> 00:02:45,599
+Nicole's vault. And then you need to
+ 
+
+145
+00:02:45,599 --> 00:02:47,589
+Nicole's vault. And then you need to
+choose the location for your vault. So,
+
+146
+00:02:47,589 --> 00:02:47,599
+choose the location for your vault. So,
+ 
+
+147
+00:02:47,599 --> 00:02:49,750
+choose the location for your vault. So,
+you're going to pick a place to put your
+
+148
+00:02:49,750 --> 00:02:49,760
+you're going to pick a place to put your
+ 
+
+149
+00:02:49,760 --> 00:02:54,229
+you're going to pick a place to put your
+new vault. So just browse and click
+
+150
+00:02:54,229 --> 00:02:54,239
+new vault. So just browse and click
+ 
+
+151
+00:02:54,239 --> 00:02:57,430
+new vault. So just browse and click
+decide where you want to put your vault.
+
+152
+00:02:57,430 --> 00:02:57,440
+decide where you want to put your vault.
+ 
+
+153
+00:02:57,440 --> 00:02:59,110
+decide where you want to put your vault.
+And after selecting that you're just
+
+154
+00:02:59,110 --> 00:02:59,120
+And after selecting that you're just
+ 
+
+155
+00:02:59,120 --> 00:03:01,990
+And after selecting that you're just
+going to click on create. And there we
+
+156
+00:03:01,990 --> 00:03:02,000
+going to click on create. And there we
+ 
+
+157
+00:03:02,000 --> 00:03:05,670
+going to click on create. And there we
+go. This is our new vault. It has been
+
+158
+00:03:05,670 --> 00:03:05,680
+go. This is our new vault. It has been
+ 
+
+159
+00:03:05,680 --> 00:03:07,750
+go. This is our new vault. It has been
+created. That was fairly simple. Nothing
+
+160
+00:03:07,750 --> 00:03:07,760
+created. That was fairly simple. Nothing
+ 
+
+161
+00:03:07,760 --> 00:03:10,710
+created. That was fairly simple. Nothing
+complicated and no hurdles involved. So
+
+162
+00:03:10,710 --> 00:03:10,720
+complicated and no hurdles involved. So
+ 
+
+163
+00:03:10,720 --> 00:03:12,790
+complicated and no hurdles involved. So
+this is the vault. It says the vault
+
+164
+00:03:12,790 --> 00:03:12,800
+this is the vault. It says the vault
+ 
+
+165
+00:03:12,800 --> 00:03:14,869
+this is the vault. It says the vault
+name down here. Nicole's vault. Let me
+
+166
+00:03:14,869 --> 00:03:14,879
+name down here. Nicole's vault. Let me
+ 
+
+167
+00:03:14,879 --> 00:03:16,309
+name down here. Nicole's vault. Let me
+see what other options there are. You
+
+168
+00:03:16,309 --> 00:03:16,319
+see what other options there are. You
+ 
+
+169
+00:03:16,319 --> 00:03:17,910
+see what other options there are. You
+can just you can manage vaults. You can
+
+170
+00:03:17,910 --> 00:03:17,920
+can just you can manage vaults. You can
+ 
+
+171
+00:03:17,920 --> 00:03:19,910
+can just you can manage vaults. You can
+have more than one vault, I guess. So uh
+
+172
+00:03:19,910 --> 00:03:19,920
+have more than one vault, I guess. So uh
+ 
+
+173
+00:03:19,920 --> 00:03:21,990
+have more than one vault, I guess. So uh
+you can manage that from here. So now
+
+174
+00:03:21,990 --> 00:03:22,000
+you can manage that from here. So now
+ 
+
+175
+00:03:22,000 --> 00:03:24,309
+you can manage that from here. So now
+what I am seeing over here is first we
+
+176
+00:03:24,309 --> 00:03:24,319
+what I am seeing over here is first we
+ 
+
+177
+00:03:24,319 --> 00:03:26,790
+what I am seeing over here is first we
+have the welcome section here and then
+
+178
+00:03:26,790 --> 00:03:26,800
+have the welcome section here and then
+ 
+
+179
+00:03:26,800 --> 00:03:29,110
+have the welcome section here and then
+on the right over here we have the graph
+
+180
+00:03:29,110 --> 00:03:29,120
+on the right over here we have the graph
+ 
+
+181
+00:03:29,120 --> 00:03:31,990
+on the right over here we have the graph
+view. The graph view is more of like a
+
+182
+00:03:31,990 --> 00:03:32,000
+view. The graph view is more of like a
+ 
+
+183
+00:03:32,000 --> 00:03:33,990
+view. The graph view is more of like a
+visual view. It says welcome and then
+
+184
+00:03:33,990 --> 00:03:34,000
+visual view. It says welcome and then
+ 
+
+185
+00:03:34,000 --> 00:03:35,830
+visual view. It says welcome and then
+create a link. So right now we are at
+
+186
+00:03:35,830 --> 00:03:35,840
+create a link. So right now we are at
+ 
+
+187
+00:03:35,840 --> 00:03:37,750
+create a link. So right now we are at
+welcome. So right now we are over here
+
+188
+00:03:37,750 --> 00:03:37,760
+welcome. So right now we are over here
+ 
+
+189
+00:03:37,760 --> 00:03:39,589
+welcome. So right now we are over here
+at welcome and then you are going to
+
+190
+00:03:39,589 --> 00:03:39,599
+at welcome and then you are going to
+ 
+
+191
+00:03:39,599 --> 00:03:41,750
+at welcome and then you are going to
+create a link. So I think that is going
+
+192
+00:03:41,750 --> 00:03:41,760
+create a link. So I think that is going
+ 
+
+193
+00:03:41,760 --> 00:03:44,070
+create a link. So I think that is going
+to be the second step. Now let's read
+
+194
+00:03:44,070 --> 00:03:44,080
+to be the second step. Now let's read
+ 
+
+195
+00:03:44,080 --> 00:03:45,589
+to be the second step. Now let's read
+what it says here. It says welcome. This
+
+196
+00:03:45,589 --> 00:03:45,599
+what it says here. It says welcome. This
+ 
+
+197
+00:03:45,599 --> 00:03:47,509
+what it says here. It says welcome. This
+is your new vault. Make a note of
+
+198
+00:03:47,509 --> 00:03:47,519
+is your new vault. Make a note of
+ 
+
+199
+00:03:47,519 --> 00:03:50,149
+is your new vault. Make a note of
+something. create a link or try the
+
+200
+00:03:50,149 --> 00:03:50,159
+something. create a link or try the
+ 
+
+201
+00:03:50,159 --> 00:03:52,470
+something. create a link or try the
+importer. When you're ready, delete this
+
+202
+00:03:52,470 --> 00:03:52,480
+importer. When you're ready, delete this
+ 
+
+203
+00:03:52,480 --> 00:03:54,630
+importer. When you're ready, delete this
+note and make the vault your own. So,
+
+204
+00:03:54,630 --> 00:03:54,640
+note and make the vault your own. So,
+ 
+
+205
+00:03:54,640 --> 00:03:55,990
+note and make the vault your own. So,
+you're going to erase this and then
+
+206
+00:03:55,990 --> 00:03:56,000
+you're going to erase this and then
+ 
+
+207
+00:03:56,000 --> 00:03:58,869
+you're going to erase this and then
+you're going to uh create your own note.
+
+208
+00:03:58,869 --> 00:03:58,879
+you're going to uh create your own note.
+ 
+
+209
+00:03:58,879 --> 00:04:00,470
+you're going to uh create your own note.
+But before we do that, let's go over
+
+210
+00:04:00,470 --> 00:04:00,480
+But before we do that, let's go over
+ 
+
+211
+00:04:00,480 --> 00:04:03,350
+But before we do that, let's go over
+here to the left and see what we have in
+
+212
+00:04:03,350 --> 00:04:03,360
+here to the left and see what we have in
+ 
+
+213
+00:04:03,360 --> 00:04:05,990
+here to the left and see what we have in
+the toolbarss over here. So, first you
+
+214
+00:04:05,990 --> 00:04:06,000
+the toolbarss over here. So, first you
+ 
+
+215
+00:04:06,000 --> 00:04:09,190
+the toolbarss over here. So, first you
+have open quick switcher. You have a
+
+216
+00:04:09,190 --> 00:04:09,200
+have open quick switcher. You have a
+ 
+
+217
+00:04:09,200 --> 00:04:11,589
+have open quick switcher. You have a
+graph view which is uh over here that we
+
+218
+00:04:11,589 --> 00:04:11,599
+graph view which is uh over here that we
+ 
+
+219
+00:04:11,599 --> 00:04:14,869
+graph view which is uh over here that we
+viewed. Then you have create new canvas.
+
+220
+00:04:14,869 --> 00:04:14,879
+viewed. Then you have create new canvas.
+ 
+
+221
+00:04:14,879 --> 00:04:17,430
+viewed. Then you have create new canvas.
+So, you can create a new canvas. So this
+
+222
+00:04:17,430 --> 00:04:17,440
+So, you can create a new canvas. So this
+ 
+
+223
+00:04:17,440 --> 00:04:19,349
+So, you can create a new canvas. So this
+is a create new canvas. You can create a
+
+224
+00:04:19,349 --> 00:04:19,359
+is a create new canvas. You can create a
+ 
+
+225
+00:04:19,359 --> 00:04:21,590
+is a create new canvas. You can create a
+new canvas from here. Right now we are
+
+226
+00:04:21,590 --> 00:04:21,600
+new canvas from here. Right now we are
+ 
+
+227
+00:04:21,600 --> 00:04:24,230
+new canvas from here. Right now we are
+on the uh welcome note. So if you want
+
+228
+00:04:24,230 --> 00:04:24,240
+on the uh welcome note. So if you want
+ 
+
+229
+00:04:24,240 --> 00:04:26,950
+on the uh welcome note. So if you want
+to you want a completely blank canvas.
+
+230
+00:04:26,950 --> 00:04:26,960
+to you want a completely blank canvas.
+ 
+
+231
+00:04:26,960 --> 00:04:28,469
+to you want a completely blank canvas.
+So you're going to click that and you
+
+232
+00:04:28,469 --> 00:04:28,479
+So you're going to click that and you
+ 
+
+233
+00:04:28,479 --> 00:04:29,990
+So you're going to click that and you
+can create a new canvas. This is just
+
+234
+00:04:29,990 --> 00:04:30,000
+can create a new canvas. This is just
+ 
+
+235
+00:04:30,000 --> 00:04:32,230
+can create a new canvas. This is just
+like uh when you click a new file. So
+
+236
+00:04:32,230 --> 00:04:32,240
+like uh when you click a new file. So
+ 
+
+237
+00:04:32,240 --> 00:04:34,629
+like uh when you click a new file. So
+you get a new page. So that's what it is
+
+238
+00:04:34,629 --> 00:04:34,639
+you get a new page. So that's what it is
+ 
+
+239
+00:04:34,639 --> 00:04:36,710
+you get a new page. So that's what it is
+going to do. Then you can open today's
+
+240
+00:04:36,710 --> 00:04:36,720
+going to do. Then you can open today's
+ 
+
+241
+00:04:36,720 --> 00:04:39,030
+going to do. Then you can open today's
+daily note. So from here you can open
+
+242
+00:04:39,030 --> 00:04:39,040
+daily note. So from here you can open
+ 
+
+243
+00:04:39,040 --> 00:04:40,950
+daily note. So from here you can open
+today's daily note. When you click on
+
+244
+00:04:40,950 --> 00:04:40,960
+today's daily note. When you click on
+ 
+
+245
+00:04:40,960 --> 00:04:43,830
+today's daily note. When you click on
+that this is going to show up the date
+
+246
+00:04:43,830 --> 00:04:43,840
+that this is going to show up the date
+ 
+
+247
+00:04:43,840 --> 00:04:46,070
+that this is going to show up the date
+over here. And then you can write
+
+248
+00:04:46,070 --> 00:04:46,080
+over here. And then you can write
+ 
+
+249
+00:04:46,080 --> 00:04:48,070
+over here. And then you can write
+whatever note you want. This is the
+
+250
+00:04:48,070 --> 00:04:48,080
+whatever note you want. This is the
+ 
+
+251
+00:04:48,080 --> 00:04:50,469
+whatever note you want. This is the
+daily note. So what anything you want to
+
+252
+00:04:50,469 --> 00:04:50,479
+daily note. So what anything you want to
+ 
+
+253
+00:04:50,479 --> 00:04:52,710
+daily note. So what anything you want to
+note down daily, this is going to be
+
+254
+00:04:52,710 --> 00:04:52,720
+note down daily, this is going to be
+ 
+
+255
+00:04:52,720 --> 00:04:55,430
+note down daily, this is going to be
+part of that. Now the welcome note has
+
+256
+00:04:55,430 --> 00:04:55,440
+part of that. Now the welcome note has
+ 
+
+257
+00:04:55,440 --> 00:04:57,749
+part of that. Now the welcome note has
+slided down. And then this has come
+
+258
+00:04:57,749 --> 00:04:57,759
+slided down. And then this has come
+ 
+
+259
+00:04:57,759 --> 00:04:59,909
+slided down. And then this has come
+above that. So if you want to keep it,
+
+260
+00:04:59,909 --> 00:04:59,919
+above that. So if you want to keep it,
+ 
+
+261
+00:04:59,919 --> 00:05:01,590
+above that. So if you want to keep it,
+you can keep it. So this is going to be
+
+262
+00:05:01,590 --> 00:05:01,600
+you can keep it. So this is going to be
+ 
+
+263
+00:05:01,600 --> 00:05:03,030
+you can keep it. So this is going to be
+listed. All your notes are going to be
+
+264
+00:05:03,030 --> 00:05:03,040
+listed. All your notes are going to be
+ 
+
+265
+00:05:03,040 --> 00:05:04,870
+listed. All your notes are going to be
+listed here with their titles. This is
+
+266
+00:05:04,870 --> 00:05:04,880
+listed here with their titles. This is
+ 
+
+267
+00:05:04,880 --> 00:05:06,710
+listed here with their titles. This is
+the title for this one here. If I click
+
+268
+00:05:06,710 --> 00:05:06,720
+the title for this one here. If I click
+ 
+
+269
+00:05:06,720 --> 00:05:10,310
+the title for this one here. If I click
+here, I can edit that. So if I uh click
+
+270
+00:05:10,310 --> 00:05:10,320
+here, I can edit that. So if I uh click
+ 
+
+271
+00:05:10,320 --> 00:05:13,110
+here, I can edit that. So if I uh click
+here, it got removed and it got deleted.
+
+272
+00:05:13,110 --> 00:05:13,120
+here, it got removed and it got deleted.
+ 
+
+273
+00:05:13,120 --> 00:05:15,110
+here, it got removed and it got deleted.
+Uh in fact not just the note the the
+
+274
+00:05:15,110 --> 00:05:15,120
+Uh in fact not just the note the the
+ 
+
+275
+00:05:15,120 --> 00:05:17,110
+Uh in fact not just the note the the
+whole tab got removed. The note did not
+
+276
+00:05:17,110 --> 00:05:17,120
+whole tab got removed. The note did not
+ 
+
+277
+00:05:17,120 --> 00:05:18,950
+whole tab got removed. The note did not
+get deleted. So that is what you get
+
+278
+00:05:18,950 --> 00:05:18,960
+get deleted. So that is what you get
+ 
+
+279
+00:05:18,960 --> 00:05:20,870
+get deleted. So that is what you get
+when you open the daily note and this is
+
+280
+00:05:20,870 --> 00:05:20,880
+when you open the daily note and this is
+ 
+
+281
+00:05:20,880 --> 00:05:23,749
+when you open the daily note and this is
+the welcome note here. So when I go here
+
+282
+00:05:23,749 --> 00:05:23,759
+the welcome note here. So when I go here
+ 
+
+283
+00:05:23,759 --> 00:05:25,749
+the welcome note here. So when I go here
+I just want to delete this. So right
+
+284
+00:05:25,749 --> 00:05:25,759
+I just want to delete this. So right
+ 
+
+285
+00:05:25,759 --> 00:05:28,230
+I just want to delete this. So right
+click and delete that. I don't want to
+
+286
+00:05:28,230 --> 00:05:28,240
+click and delete that. I don't want to
+ 
+
+287
+00:05:28,240 --> 00:05:30,390
+click and delete that. I don't want to
+um keep that daily note. Now what I
+
+288
+00:05:30,390 --> 00:05:30,400
+um keep that daily note. Now what I
+ 
+
+289
+00:05:30,400 --> 00:05:31,909
+um keep that daily note. Now what I
+still do have is the welcome note that
+
+290
+00:05:31,909 --> 00:05:31,919
+still do have is the welcome note that
+ 
+
+291
+00:05:31,919 --> 00:05:34,710
+still do have is the welcome note that
+was here when I came here. So after
+
+292
+00:05:34,710 --> 00:05:34,720
+was here when I came here. So after
+ 
+
+293
+00:05:34,720 --> 00:05:37,029
+was here when I came here. So after
+going to open today's daily note, you
+
+294
+00:05:37,029 --> 00:05:37,039
+going to open today's daily note, you
+ 
+
+295
+00:05:37,039 --> 00:05:39,189
+going to open today's daily note, you
+can go down here and it says insert
+
+296
+00:05:39,189 --> 00:05:39,199
+can go down here and it says insert
+ 
+
+297
+00:05:39,199 --> 00:05:41,590
+can go down here and it says insert
+template. So when you click here you can
+
+298
+00:05:41,590 --> 00:05:41,600
+template. So when you click here you can
+ 
+
+299
+00:05:41,600 --> 00:05:43,350
+template. So when you click here you can
+insert template. When you click here,
+
+300
+00:05:43,350 --> 00:05:43,360
+insert template. When you click here,
+ 
+
+301
+00:05:43,360 --> 00:05:45,270
+insert template. When you click here,
+some templates should open up. This is
+
+302
+00:05:45,270 --> 00:05:45,280
+some templates should open up. This is
+ 
+
+303
+00:05:45,280 --> 00:05:47,350
+some templates should open up. This is
+failed to list templates because no
+
+304
+00:05:47,350 --> 00:05:47,360
+failed to list templates because no
+ 
+
+305
+00:05:47,360 --> 00:05:49,749
+failed to list templates because no
+template folder is configured. So once
+
+306
+00:05:49,749 --> 00:05:49,759
+template folder is configured. So once
+ 
+
+307
+00:05:49,759 --> 00:05:51,749
+template folder is configured. So once
+you do that, you will be able to insert
+
+308
+00:05:51,749 --> 00:05:51,759
+you do that, you will be able to insert
+ 
+
+309
+00:05:51,759 --> 00:05:53,510
+you do that, you will be able to insert
+any templates that you would like. And
+
+310
+00:05:53,510 --> 00:05:53,520
+any templates that you would like. And
+ 
+
+311
+00:05:53,520 --> 00:05:56,070
+any templates that you would like. And
+there is the open command palette. So
+
+312
+00:05:56,070 --> 00:05:56,080
+there is the open command palette. So
+ 
+
+313
+00:05:56,080 --> 00:05:58,230
+there is the open command palette. So
+now this is a list of all the commands
+
+314
+00:05:58,230 --> 00:05:58,240
+now this is a list of all the commands
+ 
+
+315
+00:05:58,240 --> 00:06:00,629
+now this is a list of all the commands
+that you can use. Um there is the add
+
+316
+00:06:00,629 --> 00:06:00,639
+that you can use. Um there is the add
+ 
+
+317
+00:06:00,639 --> 00:06:03,189
+that you can use. Um there is the add
+alias, add file property. Uh so there
+
+318
+00:06:03,189 --> 00:06:03,199
+alias, add file property. Uh so there
+ 
+
+319
+00:06:03,199 --> 00:06:05,270
+alias, add file property. Uh so there
+are so many uh there are bookmarks,
+
+320
+00:06:05,270 --> 00:06:05,280
+are so many uh there are bookmarks,
+ 
+
+321
+00:06:05,280 --> 00:06:07,909
+are so many uh there are bookmarks,
+canvas, change theme. There are so many
+
+322
+00:06:07,909 --> 00:06:07,919
+canvas, change theme. There are so many
+ 
+
+323
+00:06:07,919 --> 00:06:10,870
+canvas, change theme. There are so many
+commands to choose from and some of them
+
+324
+00:06:10,870 --> 00:06:10,880
+commands to choose from and some of them
+ 
+
+325
+00:06:10,880 --> 00:06:12,790
+commands to choose from and some of them
+have shortcuts as well. So if you're
+
+326
+00:06:12,790 --> 00:06:12,800
+have shortcuts as well. So if you're
+ 
+
+327
+00:06:12,800 --> 00:06:14,629
+have shortcuts as well. So if you're
+someone who likes to use shortcuts, you
+
+328
+00:06:14,629 --> 00:06:14,639
+someone who likes to use shortcuts, you
+ 
+
+329
+00:06:14,639 --> 00:06:17,430
+someone who likes to use shortcuts, you
+can come here and memorize these or
+
+330
+00:06:17,430 --> 00:06:17,440
+can come here and memorize these or
+ 
+
+331
+00:06:17,440 --> 00:06:19,749
+can come here and memorize these or
+remember to use them whenever you like.
+
+332
+00:06:19,749 --> 00:06:19,759
+remember to use them whenever you like.
+ 
+
+333
+00:06:19,759 --> 00:06:22,629
+remember to use them whenever you like.
+And then there are a lot of options for
+
+334
+00:06:22,629 --> 00:06:22,639
+And then there are a lot of options for
+ 
+
+335
+00:06:22,639 --> 00:06:25,110
+And then there are a lot of options for
+these commands. So you can use these.
+
+336
+00:06:25,110 --> 00:06:25,120
+these commands. So you can use these.
+ 
+
+337
+00:06:25,120 --> 00:06:27,189
+these commands. So you can use these.
+And in case if you are someone forgetful
+
+338
+00:06:27,189 --> 00:06:27,199
+And in case if you are someone forgetful
+ 
+
+339
+00:06:27,199 --> 00:06:28,950
+And in case if you are someone forgetful
+like me, uh you can come here and you
+
+340
+00:06:28,950 --> 00:06:28,960
+like me, uh you can come here and you
+ 
+
+341
+00:06:28,960 --> 00:06:31,029
+like me, uh you can come here and you
+can just come here for inspiration and
+
+342
+00:06:31,029 --> 00:06:31,039
+can just come here for inspiration and
+ 
+
+343
+00:06:31,039 --> 00:06:32,790
+can just come here for inspiration and
+see what kind of commands you can give.
+
+344
+00:06:32,790 --> 00:06:32,800
+see what kind of commands you can give.
+ 
+
+345
+00:06:32,800 --> 00:06:34,150
+see what kind of commands you can give.
+If you're someone new, you can come here
+
+346
+00:06:34,150 --> 00:06:34,160
+If you're someone new, you can come here
+ 
+
+347
+00:06:34,160 --> 00:06:35,350
+If you're someone new, you can come here
+and see what kind of commands you can
+
+348
+00:06:35,350 --> 00:06:35,360
+and see what kind of commands you can
+ 
+
+349
+00:06:35,360 --> 00:06:37,909
+and see what kind of commands you can
+get. What kind of functions are possible
+
+350
+00:06:37,909 --> 00:06:37,919
+get. What kind of functions are possible
+ 
+
+351
+00:06:37,919 --> 00:06:41,189
+get. What kind of functions are possible
+in here. So, let's just exit that. So,
+
+352
+00:06:41,189 --> 00:06:41,199
+in here. So, let's just exit that. So,
+ 
+
+353
+00:06:41,199 --> 00:06:43,670
+in here. So, let's just exit that. So,
+those were the commands. Then you have
+
+354
+00:06:43,670 --> 00:06:43,680
+those were the commands. Then you have
+ 
+
+355
+00:06:43,680 --> 00:06:45,670
+those were the commands. Then you have
+create new base. And once you click on
+
+356
+00:06:45,670 --> 00:06:45,680
+create new base. And once you click on
+ 
+
+357
+00:06:45,680 --> 00:06:47,430
+create new base. And once you click on
+that, what you're going to see is a a
+
+358
+00:06:47,430 --> 00:06:47,440
+that, what you're going to see is a a
+ 
+
+359
+00:06:47,440 --> 00:06:49,189
+that, what you're going to see is a a
+whole new base is going to be created.
+
+360
+00:06:49,189 --> 00:06:49,199
+whole new base is going to be created.
+ 
+
+361
+00:06:49,199 --> 00:06:52,070
+whole new base is going to be created.
+This is uh untitled. It it does appear
+
+362
+00:06:52,070 --> 00:06:52,080
+This is uh untitled. It it does appear
+ 
+
+363
+00:06:52,080 --> 00:06:54,390
+This is uh untitled. It it does appear
+in the list. Um there is no title, but
+
+364
+00:06:54,390 --> 00:06:54,400
+in the list. Um there is no title, but
+ 
+
+365
+00:06:54,400 --> 00:06:56,309
+in the list. Um there is no title, but
+it says base right next to it. And
+
+366
+00:06:56,309 --> 00:06:56,319
+it says base right next to it. And
+ 
+
+367
+00:06:56,319 --> 00:06:57,510
+it says base right next to it. And
+what's going to happen is you can create
+
+368
+00:06:57,510 --> 00:06:57,520
+what's going to happen is you can create
+ 
+
+369
+00:06:57,520 --> 00:06:59,430
+what's going to happen is you can create
+a table. You can create it in table
+
+370
+00:06:59,430 --> 00:06:59,440
+a table. You can create it in table
+ 
+
+371
+00:06:59,440 --> 00:07:01,189
+a table. You can create it in table
+view. So, this is going to be your table
+
+372
+00:07:01,189 --> 00:07:01,199
+view. So, this is going to be your table
+ 
+
+373
+00:07:01,199 --> 00:07:03,350
+view. So, this is going to be your table
+view. Uh other than that you also have
+
+374
+00:07:03,350 --> 00:07:03,360
+view. Uh other than that you also have
+ 
+
+375
+00:07:03,360 --> 00:07:05,350
+view. Uh other than that you also have
+another view. You can add other kinds of
+
+376
+00:07:05,350 --> 00:07:05,360
+another view. You can add other kinds of
+ 
+
+377
+00:07:05,360 --> 00:07:08,070
+another view. You can add other kinds of
+views that you would like. The other
+
+378
+00:07:08,070 --> 00:07:08,080
+views that you would like. The other
+ 
+
+379
+00:07:08,080 --> 00:07:11,430
+views that you would like. The other
+view could be in the form of cards or in
+
+380
+00:07:11,430 --> 00:07:11,440
+view could be in the form of cards or in
+ 
+
+381
+00:07:11,440 --> 00:07:14,390
+view could be in the form of cards or in
+the form of list. So the view you can
+
+382
+00:07:14,390 --> 00:07:14,400
+the form of list. So the view you can
+ 
+
+383
+00:07:14,400 --> 00:07:16,390
+the form of list. So the view you can
+adjust according to your preference. And
+
+384
+00:07:16,390 --> 00:07:16,400
+adjust according to your preference. And
+ 
+
+385
+00:07:16,400 --> 00:07:18,870
+adjust according to your preference. And
+then the rows the row height you can
+
+386
+00:07:18,870 --> 00:07:18,880
+then the rows the row height you can
+ 
+
+387
+00:07:18,880 --> 00:07:20,629
+then the rows the row height you can
+decide which kind of height you want for
+
+388
+00:07:20,629 --> 00:07:20,639
+decide which kind of height you want for
+ 
+
+389
+00:07:20,639 --> 00:07:22,550
+decide which kind of height you want for
+your row short, medium, tall or extra
+
+390
+00:07:22,550 --> 00:07:22,560
+your row short, medium, tall or extra
+ 
+
+391
+00:07:22,560 --> 00:07:24,550
+your row short, medium, tall or extra
+tall. So let's just keep that medium.
+
+392
+00:07:24,550 --> 00:07:24,560
+tall. So let's just keep that medium.
+ 
+
+393
+00:07:24,560 --> 00:07:26,790
+tall. So let's just keep that medium.
+And that is what the medium height for
+
+394
+00:07:26,790 --> 00:07:26,800
+And that is what the medium height for
+ 
+
+395
+00:07:26,800 --> 00:07:29,589
+And that is what the medium height for
+the rows appears like. Now, uh, I would
+
+396
+00:07:29,589 --> 00:07:29,599
+the rows appears like. Now, uh, I would
+ 
+
+397
+00:07:29,599 --> 00:07:32,469
+the rows appears like. Now, uh, I would
+like to see a second view. So, I do want
+
+398
+00:07:32,469 --> 00:07:32,479
+like to see a second view. So, I do want
+ 
+
+399
+00:07:32,479 --> 00:07:35,029
+like to see a second view. So, I do want
+to make changes to the second view. So,
+
+400
+00:07:35,029 --> 00:07:35,039
+to make changes to the second view. So,
+ 
+
+401
+00:07:35,039 --> 00:07:37,029
+to make changes to the second view. So,
+I do want to make some changes to this
+
+402
+00:07:37,029 --> 00:07:37,039
+I do want to make some changes to this
+ 
+
+403
+00:07:37,039 --> 00:07:38,469
+I do want to make some changes to this
+view. So, I'm going to right click on
+
+404
+00:07:38,469 --> 00:07:38,479
+view. So, I'm going to right click on
+ 
+
+405
+00:07:38,479 --> 00:07:41,189
+view. So, I'm going to right click on
+here and it says view and the layout is
+
+406
+00:07:41,189 --> 00:07:41,199
+here and it says view and the layout is
+ 
+
+407
+00:07:41,199 --> 00:07:43,749
+here and it says view and the layout is
+the table and the row height is medium.
+
+408
+00:07:43,749 --> 00:07:43,759
+the table and the row height is medium.
+ 
+
+409
+00:07:43,759 --> 00:07:45,589
+the table and the row height is medium.
+So, and we're going to keep the height
+
+410
+00:07:45,589 --> 00:07:45,599
+So, and we're going to keep the height
+ 
+
+411
+00:07:45,599 --> 00:07:47,990
+So, and we're going to keep the height
+as medium and the table. I want to
+
+412
+00:07:47,990 --> 00:07:48,000
+as medium and the table. I want to
+ 
+
+413
+00:07:48,000 --> 00:07:50,469
+as medium and the table. I want to
+change the table view to cards view. So,
+
+414
+00:07:50,469 --> 00:07:50,479
+change the table view to cards view. So,
+ 
+
+415
+00:07:50,479 --> 00:07:52,629
+change the table view to cards view. So,
+this is what the art view is going to
+
+416
+00:07:52,629 --> 00:07:52,639
+this is what the art view is going to
+ 
+
+417
+00:07:52,639 --> 00:07:55,350
+this is what the art view is going to
+look like. There isn't a lot of stuff in
+
+418
+00:07:55,350 --> 00:07:55,360
+look like. There isn't a lot of stuff in
+ 
+
+419
+00:07:55,360 --> 00:07:57,350
+look like. There isn't a lot of stuff in
+here in the cards, but you can see that
+
+420
+00:07:57,350 --> 00:07:57,360
+here in the cards, but you can see that
+ 
+
+421
+00:07:57,360 --> 00:07:59,510
+here in the cards, but you can see that
+the view is for cards. This is what the
+
+422
+00:07:59,510 --> 00:07:59,520
+the view is for cards. This is what the
+ 
+
+423
+00:07:59,520 --> 00:08:01,510
+the view is for cards. This is what the
+view is going to look like. And going
+
+424
+00:08:01,510 --> 00:08:01,520
+view is going to look like. And going
+ 
+
+425
+00:08:01,520 --> 00:08:03,510
+view is going to look like. And going
+back to the table view, this is what the
+
+426
+00:08:03,510 --> 00:08:03,520
+back to the table view, this is what the
+ 
+
+427
+00:08:03,520 --> 00:08:05,430
+back to the table view, this is what the
+table view is going to look like. So, we
+
+428
+00:08:05,430 --> 00:08:05,440
+table view is going to look like. So, we
+ 
+
+429
+00:08:05,440 --> 00:08:06,790
+table view is going to look like. So, we
+have two kinds of views. We have the
+
+430
+00:08:06,790 --> 00:08:06,800
+have two kinds of views. We have the
+ 
+
+431
+00:08:06,800 --> 00:08:10,150
+have two kinds of views. We have the
+table view and then we have the um cards
+
+432
+00:08:10,150 --> 00:08:10,160
+table view and then we have the um cards
+ 
+
+433
+00:08:10,160 --> 00:08:11,990
+table view and then we have the um cards
+view. And I should have named it
+
+434
+00:08:11,990 --> 00:08:12,000
+view. And I should have named it
+ 
+
+435
+00:08:12,000 --> 00:08:13,589
+view. And I should have named it
+differently. I should have named it
+
+436
+00:08:13,589 --> 00:08:13,599
+differently. I should have named it
+ 
+
+437
+00:08:13,599 --> 00:08:15,350
+differently. I should have named it
+card. So, these are the two kinds of
+
+438
+00:08:15,350 --> 00:08:15,360
+card. So, these are the two kinds of
+ 
+
+439
+00:08:15,360 --> 00:08:17,350
+card. So, these are the two kinds of
+views that I have here. You can create
+
+440
+00:08:17,350 --> 00:08:17,360
+views that I have here. You can create
+ 
+
+441
+00:08:17,360 --> 00:08:19,990
+views that I have here. You can create
+uh another kind of view if you like. So,
+
+442
+00:08:19,990 --> 00:08:20,000
+uh another kind of view if you like. So,
+ 
+
+443
+00:08:20,000 --> 00:08:22,469
+uh another kind of view if you like. So,
+now this view is called the base. This
+
+444
+00:08:22,469 --> 00:08:22,479
+now this view is called the base. This
+ 
+
+445
+00:08:22,479 --> 00:08:24,710
+now this view is called the base. This
+is basically uh it really actually is
+
+446
+00:08:24,710 --> 00:08:24,720
+is basically uh it really actually is
+ 
+
+447
+00:08:24,720 --> 00:08:27,670
+is basically uh it really actually is
+the base of the whole vision over here.
+
+448
+00:08:27,670 --> 00:08:27,680
+the base of the whole vision over here.
+ 
+
+449
+00:08:27,680 --> 00:08:30,790
+the base of the whole vision over here.
+Now this is very neat, very uh clean.
+
+450
+00:08:30,790 --> 00:08:30,800
+Now this is very neat, very uh clean.
+ 
+
+451
+00:08:30,800 --> 00:08:32,310
+Now this is very neat, very uh clean.
+There's this panel over here and there's
+
+452
+00:08:32,310 --> 00:08:32,320
+There's this panel over here and there's
+ 
+
+453
+00:08:32,320 --> 00:08:34,310
+There's this panel over here and there's
+this space over here for your notes. So
+
+454
+00:08:34,310 --> 00:08:34,320
+this space over here for your notes. So
+ 
+
+455
+00:08:34,320 --> 00:08:36,870
+this space over here for your notes. So
+this it's not distracting at all. It's
+
+456
+00:08:36,870 --> 00:08:36,880
+this it's not distracting at all. It's
+ 
+
+457
+00:08:36,880 --> 00:08:40,230
+this it's not distracting at all. It's
+very organized and neat and clean. So
+
+458
+00:08:40,230 --> 00:08:40,240
+very organized and neat and clean. So
+ 
+
+459
+00:08:40,240 --> 00:08:43,670
+very organized and neat and clean. So
+now just to uh actually keep it uh clean
+
+460
+00:08:43,670 --> 00:08:43,680
+now just to uh actually keep it uh clean
+ 
+
+461
+00:08:43,680 --> 00:08:45,910
+now just to uh actually keep it uh clean
+as it was, I would like to remove this
+
+462
+00:08:45,910 --> 00:08:45,920
+as it was, I would like to remove this
+ 
+
+463
+00:08:45,920 --> 00:08:47,829
+as it was, I would like to remove this
+base which I have just created. So I'm
+
+464
+00:08:47,829 --> 00:08:47,839
+base which I have just created. So I'm
+ 
+
+465
+00:08:47,839 --> 00:08:49,509
+base which I have just created. So I'm
+just going to delete that because it's
+
+466
+00:08:49,509 --> 00:08:49,519
+just going to delete that because it's
+ 
+
+467
+00:08:49,519 --> 00:08:51,670
+just going to delete that because it's
+not really serving any purpose uh for me
+
+468
+00:08:51,670 --> 00:08:51,680
+not really serving any purpose uh for me
+ 
+
+469
+00:08:51,680 --> 00:08:53,910
+not really serving any purpose uh for me
+right now. So we've seen these tools
+
+470
+00:08:53,910 --> 00:08:53,920
+right now. So we've seen these tools
+ 
+
+471
+00:08:53,920 --> 00:08:55,750
+right now. So we've seen these tools
+over here. Okay. What uh up here what we
+
+472
+00:08:55,750 --> 00:08:55,760
+over here. Okay. What uh up here what we
+ 
+
+473
+00:08:55,760 --> 00:08:58,630
+over here. Okay. What uh up here what we
+have is the collapse function. You do
+
+474
+00:08:58,630 --> 00:08:58,640
+have is the collapse function. You do
+ 
+
+475
+00:08:58,640 --> 00:09:01,350
+have is the collapse function. You do
+that. So now this file over here what
+
+476
+00:09:01,350 --> 00:09:01,360
+that. So now this file over here what
+ 
+
+477
+00:09:01,360 --> 00:09:03,590
+that. So now this file over here what
+it's going to do is basically it's going
+
+478
+00:09:03,590 --> 00:09:03,600
+it's going to do is basically it's going
+ 
+
+479
+00:09:03,600 --> 00:09:05,910
+it's going to do is basically it's going
+to hold all of your files in like this
+
+480
+00:09:05,910 --> 00:09:05,920
+to hold all of your files in like this
+ 
+
+481
+00:09:05,920 --> 00:09:07,509
+to hold all of your files in like this
+list over here. So this is where all
+
+482
+00:09:07,509 --> 00:09:07,519
+list over here. So this is where all
+ 
+
+483
+00:09:07,519 --> 00:09:09,350
+list over here. So this is where all
+your files are going to be uh all the
+
+484
+00:09:09,350 --> 00:09:09,360
+your files are going to be uh all the
+ 
+
+485
+00:09:09,360 --> 00:09:10,790
+your files are going to be uh all the
+files that you have created that you
+
+486
+00:09:10,790 --> 00:09:10,800
+files that you have created that you
+ 
+
+487
+00:09:10,800 --> 00:09:12,470
+files that you have created that you
+have added that you have shared that you
+
+488
+00:09:12,470 --> 00:09:12,480
+have added that you have shared that you
+ 
+
+489
+00:09:12,480 --> 00:09:15,670
+have added that you have shared that you
+have imported that you have saved those
+
+490
+00:09:15,670 --> 00:09:15,680
+have imported that you have saved those
+ 
+
+491
+00:09:15,680 --> 00:09:17,350
+have imported that you have saved those
+all are going to be here. Now over here
+
+492
+00:09:17,350 --> 00:09:17,360
+all are going to be here. Now over here
+ 
+
+493
+00:09:17,360 --> 00:09:19,190
+all are going to be here. Now over here
+you can search for the different
+
+494
+00:09:19,190 --> 00:09:19,200
+you can search for the different
+ 
+
+495
+00:09:19,200 --> 00:09:21,110
+you can search for the different
+options. You can search a path, you can
+
+496
+00:09:21,110 --> 00:09:21,120
+options. You can search a path, you can
+ 
+
+497
+00:09:21,120 --> 00:09:23,910
+options. You can search a path, you can
+search any file, a tag, um anything. So
+
+498
+00:09:23,910 --> 00:09:23,920
+search any file, a tag, um anything. So
+ 
+
+499
+00:09:23,920 --> 00:09:25,829
+search any file, a tag, um anything. So
+this is the search section like us
+
+500
+00:09:25,829 --> 00:09:25,839
+this is the search section like us
+ 
+
+501
+00:09:25,839 --> 00:09:27,829
+this is the search section like us
+usually is in all kinds of platforms.
+
+502
+00:09:27,829 --> 00:09:27,839
+usually is in all kinds of platforms.
+ 
+
+503
+00:09:27,839 --> 00:09:30,790
+usually is in all kinds of platforms.
+And then you have your bookmarks. So the
+
+504
+00:09:30,790 --> 00:09:30,800
+And then you have your bookmarks. So the
+ 
+
+505
+00:09:30,800 --> 00:09:33,030
+And then you have your bookmarks. So the
+bookmarks over here. Now going back to
+
+506
+00:09:33,030 --> 00:09:33,040
+bookmarks over here. Now going back to
+ 
+
+507
+00:09:33,040 --> 00:09:34,949
+bookmarks over here. Now going back to
+our files. Now this is the file that we
+
+508
+00:09:34,949 --> 00:09:34,959
+our files. Now this is the file that we
+ 
+
+509
+00:09:34,959 --> 00:09:38,389
+our files. Now this is the file that we
+have. So what mainly uh this platform
+
+510
+00:09:38,389 --> 00:09:38,399
+have. So what mainly uh this platform
+ 
+
+511
+00:09:38,399 --> 00:09:41,670
+have. So what mainly uh this platform
+what this obsidian is for is that you
+
+512
+00:09:41,670 --> 00:09:41,680
+what this obsidian is for is that you
+ 
+
+513
+00:09:41,680 --> 00:09:44,070
+what this obsidian is for is that you
+can create your notes here and then you
+
+514
+00:09:44,070 --> 00:09:44,080
+can create your notes here and then you
+ 
+
+515
+00:09:44,080 --> 00:09:46,470
+can create your notes here and then you
+can actually create links between your
+
+516
+00:09:46,470 --> 00:09:46,480
+can actually create links between your
+ 
+
+517
+00:09:46,480 --> 00:09:49,509
+can actually create links between your
+notes. So now you must have noticed how
+
+518
+00:09:49,509 --> 00:09:49,519
+notes. So now you must have noticed how
+ 
+
+519
+00:09:49,519 --> 00:09:51,269
+notes. So now you must have noticed how
+uh the view has changed a little bit
+
+520
+00:09:51,269 --> 00:09:51,279
+uh the view has changed a little bit
+ 
+
+521
+00:09:51,279 --> 00:09:53,190
+uh the view has changed a little bit
+since we started. So first when we came
+
+522
+00:09:53,190 --> 00:09:53,200
+since we started. So first when we came
+ 
+
+523
+00:09:53,200 --> 00:09:55,590
+since we started. So first when we came
+in we had the panel we had the welcome
+
+524
+00:09:55,590 --> 00:09:55,600
+in we had the panel we had the welcome
+ 
+
+525
+00:09:55,600 --> 00:09:57,829
+in we had the panel we had the welcome
+note here and then on this side we had
+
+526
+00:09:57,829 --> 00:09:57,839
+note here and then on this side we had
+ 
+
+527
+00:09:57,839 --> 00:10:00,630
+note here and then on this side we had
+the the graph view. So the graph view
+
+528
+00:10:00,630 --> 00:10:00,640
+the the graph view. So the graph view
+ 
+
+529
+00:10:00,640 --> 00:10:02,630
+the the graph view. So the graph view
+has disappeared. Now let's bring the
+
+530
+00:10:02,630 --> 00:10:02,640
+has disappeared. Now let's bring the
+ 
+
+531
+00:10:02,640 --> 00:10:04,389
+has disappeared. Now let's bring the
+graph view back. Uh what you're going to
+
+532
+00:10:04,389 --> 00:10:04,399
+graph view back. Uh what you're going to
+ 
+
+533
+00:10:04,399 --> 00:10:05,829
+graph view back. Uh what you're going to
+do for that is you're going to go to the
+
+534
+00:10:05,829 --> 00:10:05,839
+do for that is you're going to go to the
+ 
+
+535
+00:10:05,839 --> 00:10:08,150
+do for that is you're going to go to the
+three dots here and you are going to go
+
+536
+00:10:08,150 --> 00:10:08,160
+three dots here and you are going to go
+ 
+
+537
+00:10:08,160 --> 00:10:10,870
+three dots here and you are going to go
+down to split right. Now you can split
+
+538
+00:10:10,870 --> 00:10:10,880
+down to split right. Now you can split
+ 
+
+539
+00:10:10,880 --> 00:10:14,230
+down to split right. Now you can split
+the this uh section here uh downwards as
+
+540
+00:10:14,230 --> 00:10:14,240
+the this uh section here uh downwards as
+ 
+
+541
+00:10:14,240 --> 00:10:15,509
+the this uh section here uh downwards as
+well. But what we're going to do is
+
+542
+00:10:15,509 --> 00:10:15,519
+well. But what we're going to do is
+ 
+
+543
+00:10:15,519 --> 00:10:18,069
+well. But what we're going to do is
+we're going to split it uh to the right.
+
+544
+00:10:18,069 --> 00:10:18,079
+we're going to split it uh to the right.
+ 
+
+545
+00:10:18,079 --> 00:10:19,829
+we're going to split it uh to the right.
+And there are a lot of other options
+
+546
+00:10:19,829 --> 00:10:19,839
+And there are a lot of other options
+ 
+
+547
+00:10:19,839 --> 00:10:21,750
+And there are a lot of other options
+here as well which are really
+
+548
+00:10:21,750 --> 00:10:21,760
+here as well which are really
+ 
+
+549
+00:10:21,760 --> 00:10:23,990
+here as well which are really
+self-explanatory. But just to get back
+
+550
+00:10:23,990 --> 00:10:24,000
+self-explanatory. But just to get back
+ 
+
+551
+00:10:24,000 --> 00:10:26,069
+self-explanatory. But just to get back
+our graph view, what I'm going to do is
+
+552
+00:10:26,069 --> 00:10:26,079
+our graph view, what I'm going to do is
+ 
+
+553
+00:10:26,079 --> 00:10:27,829
+our graph view, what I'm going to do is
+I'm going to split it to the right. Now
+
+554
+00:10:27,829 --> 00:10:27,839
+I'm going to split it to the right. Now
+ 
+
+555
+00:10:27,839 --> 00:10:30,710
+I'm going to split it to the right. Now
+on this right side, I'm going to open up
+
+556
+00:10:30,710 --> 00:10:30,720
+on this right side, I'm going to open up
+ 
+
+557
+00:10:30,720 --> 00:10:33,269
+on this right side, I'm going to open up
+the graph view. And that is the graph
+
+558
+00:10:33,269 --> 00:10:33,279
+the graph view. And that is the graph
+ 
+
+559
+00:10:33,279 --> 00:10:35,190
+the graph view. And that is the graph
+view. And this is the welcome. So we're
+
+560
+00:10:35,190 --> 00:10:35,200
+view. And this is the welcome. So we're
+ 
+
+561
+00:10:35,200 --> 00:10:38,150
+view. And this is the welcome. So we're
+back to how the view was right at the
+
+562
+00:10:38,150 --> 00:10:38,160
+back to how the view was right at the
+ 
+
+563
+00:10:38,160 --> 00:10:40,630
+back to how the view was right at the
+start. And we were at welcome. And next
+
+564
+00:10:40,630 --> 00:10:40,640
+start. And we were at welcome. And next
+ 
+
+565
+00:10:40,640 --> 00:10:43,829
+start. And we were at welcome. And next
+we want to create a link. So let's click
+
+566
+00:10:43,829 --> 00:10:43,839
+we want to create a link. So let's click
+ 
+
+567
+00:10:43,839 --> 00:10:46,470
+we want to create a link. So let's click
+on create link. Now this is create link.
+
+568
+00:10:46,470 --> 00:10:46,480
+on create link. Now this is create link.
+ 
+
+569
+00:10:46,480 --> 00:10:48,630
+on create link. Now this is create link.
+Now of course if we want to uh create a
+
+570
+00:10:48,630 --> 00:10:48,640
+Now of course if we want to uh create a
+ 
+
+571
+00:10:48,640 --> 00:10:51,030
+Now of course if we want to uh create a
+link we need to have one thing uh ready
+
+572
+00:10:51,030 --> 00:10:51,040
+link we need to have one thing uh ready
+ 
+
+573
+00:10:51,040 --> 00:10:53,509
+link we need to have one thing uh ready
+to create a link with the other. So I'm
+
+574
+00:10:53,509 --> 00:10:53,519
+to create a link with the other. So I'm
+ 
+
+575
+00:10:53,519 --> 00:10:56,069
+to create a link with the other. So I'm
+going to do is not move this back to
+
+576
+00:10:56,069 --> 00:10:56,079
+going to do is not move this back to
+ 
+
+577
+00:10:56,079 --> 00:10:59,509
+going to do is not move this back to
+graph view. Graph view. Uh, I want you
+
+578
+00:10:59,509 --> 00:10:59,519
+graph view. Graph view. Uh, I want you
+ 
+
+579
+00:10:59,519 --> 00:11:01,750
+graph view. Graph view. Uh, I want you
+to see the graph view because it's going
+
+580
+00:11:01,750 --> 00:11:01,760
+to see the graph view because it's going
+ 
+
+581
+00:11:01,760 --> 00:11:03,910
+to see the graph view because it's going
+to be very interesting when you see um
+
+582
+00:11:03,910 --> 00:11:03,920
+to be very interesting when you see um
+ 
+
+583
+00:11:03,920 --> 00:11:05,670
+to be very interesting when you see um
+the things are going to get linked up.
+
+584
+00:11:05,670 --> 00:11:05,680
+the things are going to get linked up.
+ 
+
+585
+00:11:05,680 --> 00:11:06,790
+the things are going to get linked up.
+So, we're going to leave that on the
+
+586
+00:11:06,790 --> 00:11:06,800
+So, we're going to leave that on the
+ 
+
+587
+00:11:06,800 --> 00:11:08,230
+So, we're going to leave that on the
+side. Now, what I'm going to do is and
+
+588
+00:11:08,230 --> 00:11:08,240
+side. Now, what I'm going to do is and
+ 
+
+589
+00:11:08,240 --> 00:11:10,310
+side. Now, what I'm going to do is and
+I'm going to delete this as well. What
+
+590
+00:11:10,310 --> 00:11:10,320
+I'm going to delete this as well. What
+ 
+
+591
+00:11:10,320 --> 00:11:13,509
+I'm going to delete this as well. What
+I'm going to do is I'm going to um name
+
+592
+00:11:13,509 --> 00:11:13,519
+I'm going to do is I'm going to um name
+ 
+
+593
+00:11:13,519 --> 00:11:16,550
+I'm going to do is I'm going to um name
+uh our first uh note. So, in this note,
+
+594
+00:11:16,550 --> 00:11:16,560
+uh our first uh note. So, in this note,
+ 
+
+595
+00:11:16,560 --> 00:11:19,110
+uh our first uh note. So, in this note,
+I'm going to remove this and I'm going
+
+596
+00:11:19,110 --> 00:11:19,120
+I'm going to remove this and I'm going
+ 
+
+597
+00:11:19,120 --> 00:11:21,829
+I'm going to remove this and I'm going
+to write a uh small note. I'm going to
+
+598
+00:11:21,829 --> 00:11:21,839
+to write a uh small note. I'm going to
+ 
+
+599
+00:11:21,839 --> 00:11:24,550
+to write a uh small note. I'm going to
+call this the welcome page. And then I'm
+
+600
+00:11:24,550 --> 00:11:24,560
+call this the welcome page. And then I'm
+ 
+
+601
+00:11:24,560 --> 00:11:27,110
+call this the welcome page. And then I'm
+going to come down here. And so that was
+
+602
+00:11:27,110 --> 00:11:27,120
+going to come down here. And so that was
+ 
+
+603
+00:11:27,120 --> 00:11:28,710
+going to come down here. And so that was
+the heading. And then I'm going to come
+
+604
+00:11:28,710 --> 00:11:28,720
+the heading. And then I'm going to come
+ 
+
+605
+00:11:28,720 --> 00:11:31,590
+the heading. And then I'm going to come
+down here. So I'm going to type in we
+
+606
+00:11:31,590 --> 00:11:31,600
+down here. So I'm going to type in we
+ 
+
+607
+00:11:31,600 --> 00:11:37,110
+down here. So I'm going to type in we
+are going to start using obsidian. And
+
+608
+00:11:37,110 --> 00:11:37,120
+are going to start using obsidian. And
+ 
+
+609
+00:11:37,120 --> 00:11:40,949
+are going to start using obsidian. And
+so see that has a spelling correction.
+
+610
+00:11:40,949 --> 00:11:40,959
+so see that has a spelling correction.
+ 
+
+611
+00:11:40,959 --> 00:11:43,430
+so see that has a spelling correction.
+We're going to start using obsidian and
+
+612
+00:11:43,430 --> 00:11:43,440
+We're going to start using obsidian and
+ 
+
+613
+00:11:43,440 --> 00:11:45,509
+We're going to start using obsidian and
+add an exclamation mark because we are
+
+614
+00:11:45,509 --> 00:11:45,519
+add an exclamation mark because we are
+ 
+
+615
+00:11:45,519 --> 00:11:47,590
+add an exclamation mark because we are
+so excited. So now you can highlight
+
+616
+00:11:47,590 --> 00:11:47,600
+so excited. So now you can highlight
+ 
+
+617
+00:11:47,600 --> 00:11:50,230
+so excited. So now you can highlight
+this and then if you uh right click you
+
+618
+00:11:50,230 --> 00:11:50,240
+this and then if you uh right click you
+ 
+
+619
+00:11:50,240 --> 00:11:53,990
+this and then if you uh right click you
+have um you can uh cut paste and you can
+
+620
+00:11:53,990 --> 00:11:54,000
+have um you can uh cut paste and you can
+ 
+
+621
+00:11:54,000 --> 00:11:55,910
+have um you can uh cut paste and you can
+uh use these options as well. And then
+
+622
+00:11:55,910 --> 00:11:55,920
+uh use these options as well. And then
+ 
+
+623
+00:11:55,920 --> 00:11:58,310
+uh use these options as well. And then
+for um formatting if you go there you
+
+624
+00:11:58,310 --> 00:11:58,320
+for um formatting if you go there you
+ 
+
+625
+00:11:58,320 --> 00:12:01,829
+for um formatting if you go there you
+can uh convert it to bold italics or
+
+626
+00:12:01,829 --> 00:12:01,839
+can uh convert it to bold italics or
+ 
+
+627
+00:12:01,839 --> 00:12:06,629
+can uh convert it to bold italics or
+anything else. So I hope it goes well
+
+628
+00:12:06,629 --> 00:12:06,639
+anything else. So I hope it goes well
+ 
+
+629
+00:12:06,639 --> 00:12:09,590
+anything else. So I hope it goes well
+and um you can um edit that as well. So
+
+630
+00:12:09,590 --> 00:12:09,600
+and um you can um edit that as well. So
+ 
+
+631
+00:12:09,600 --> 00:12:11,350
+and um you can um edit that as well. So
+what you basically what you want to do
+
+632
+00:12:11,350 --> 00:12:11,360
+what you basically what you want to do
+ 
+
+633
+00:12:11,360 --> 00:12:14,470
+what you basically what you want to do
+is uh just you know type in some uh text
+
+634
+00:12:14,470 --> 00:12:14,480
+is uh just you know type in some uh text
+ 
+
+635
+00:12:14,480 --> 00:12:17,269
+is uh just you know type in some uh text
+and familiarize yourself with um all
+
+636
+00:12:17,269 --> 00:12:17,279
+and familiarize yourself with um all
+ 
+
+637
+00:12:17,279 --> 00:12:19,110
+and familiarize yourself with um all
+these options and the kind of formatting
+
+638
+00:12:19,110 --> 00:12:19,120
+these options and the kind of formatting
+ 
+
+639
+00:12:19,120 --> 00:12:20,870
+these options and the kind of formatting
+you can do which is basically pretty
+
+640
+00:12:20,870 --> 00:12:20,880
+you can do which is basically pretty
+ 
+
+641
+00:12:20,880 --> 00:12:23,350
+you can do which is basically pretty
+much the same actually. So no no no
+
+642
+00:12:23,350 --> 00:12:23,360
+much the same actually. So no no no
+ 
+
+643
+00:12:23,360 --> 00:12:25,350
+much the same actually. So no no no
+specific practice is needed but you can
+
+644
+00:12:25,350 --> 00:12:25,360
+specific practice is needed but you can
+ 
+
+645
+00:12:25,360 --> 00:12:27,670
+specific practice is needed but you can
+also highlight this. So now this is how
+
+646
+00:12:27,670 --> 00:12:27,680
+also highlight this. So now this is how
+ 
+
+647
+00:12:27,680 --> 00:12:29,910
+also highlight this. So now this is how
+it goes. Uh so this is our welcome page.
+
+648
+00:12:29,910 --> 00:12:29,920
+it goes. Uh so this is our welcome page.
+ 
+
+649
+00:12:29,920 --> 00:12:33,430
+it goes. Uh so this is our welcome page.
+Now I'm going to uh create another note.
+
+650
+00:12:33,430 --> 00:12:33,440
+Now I'm going to uh create another note.
+ 
+
+651
+00:12:33,440 --> 00:12:36,949
+Now I'm going to uh create another note.
+So let's go here and click on new note.
+
+652
+00:12:36,949 --> 00:12:36,959
+So let's go here and click on new note.
+ 
+
+653
+00:12:36,959 --> 00:12:38,949
+So let's go here and click on new note.
+So our previous note is saved here. Now
+
+654
+00:12:38,949 --> 00:12:38,959
+So our previous note is saved here. Now
+ 
+
+655
+00:12:38,959 --> 00:12:40,629
+So our previous note is saved here. Now
+we're going to create our new note and
+
+656
+00:12:40,629 --> 00:12:40,639
+we're going to create our new note and
+ 
+
+657
+00:12:40,639 --> 00:12:43,509
+we're going to create our new note and
+I'm going to title this note ideas. So
+
+658
+00:12:43,509 --> 00:12:43,519
+I'm going to title this note ideas. So
+ 
+
+659
+00:12:43,519 --> 00:12:45,590
+I'm going to title this note ideas. So
+these are going to be our ideas. And
+
+660
+00:12:45,590 --> 00:12:45,600
+these are going to be our ideas. And
+ 
+
+661
+00:12:45,600 --> 00:12:47,670
+these are going to be our ideas. And
+over here you can put in anything uh
+
+662
+00:12:47,670 --> 00:12:47,680
+over here you can put in anything uh
+ 
+
+663
+00:12:47,680 --> 00:12:50,069
+over here you can put in anything uh
+that you usually brainstorm about. So
+
+664
+00:12:50,069 --> 00:12:50,079
+that you usually brainstorm about. So
+ 
+
+665
+00:12:50,079 --> 00:12:51,509
+that you usually brainstorm about. So
+what I'm going to put in is I'm going to
+
+666
+00:12:51,509 --> 00:12:51,519
+what I'm going to put in is I'm going to
+ 
+
+667
+00:12:51,519 --> 00:12:55,990
+what I'm going to put in is I'm going to
+put in a video topics and tasks research
+
+668
+00:12:55,990 --> 00:12:56,000
+put in a video topics and tasks research
+ 
+
+669
+00:12:56,000 --> 00:12:59,030
+put in a video topics and tasks research
+notes. So now uh this is our second
+
+670
+00:12:59,030 --> 00:12:59,040
+notes. So now uh this is our second
+ 
+
+671
+00:12:59,040 --> 00:13:00,790
+notes. So now uh this is our second
+note. The first note was welcome page
+
+672
+00:13:00,790 --> 00:13:00,800
+note. The first note was welcome page
+ 
+
+673
+00:13:00,800 --> 00:13:03,030
+note. The first note was welcome page
+and the second is ideas. So within
+
+674
+00:13:03,030 --> 00:13:03,040
+and the second is ideas. So within
+ 
+
+675
+00:13:03,040 --> 00:13:04,870
+and the second is ideas. So within
+welcome page I have written things
+
+676
+00:13:04,870 --> 00:13:04,880
+welcome page I have written things
+ 
+
+677
+00:13:04,880 --> 00:13:07,190
+welcome page I have written things
+related to you know our welcome and then
+
+678
+00:13:07,190 --> 00:13:07,200
+related to you know our welcome and then
+ 
+
+679
+00:13:07,200 --> 00:13:08,710
+related to you know our welcome and then
+in the second note I have written things
+
+680
+00:13:08,710 --> 00:13:08,720
+in the second note I have written things
+ 
+
+681
+00:13:08,720 --> 00:13:11,430
+in the second note I have written things
+related to the ideas that I have. Now
+
+682
+00:13:11,430 --> 00:13:11,440
+related to the ideas that I have. Now
+ 
+
+683
+00:13:11,440 --> 00:13:12,870
+related to the ideas that I have. Now
+they don't have any link with each
+
+684
+00:13:12,870 --> 00:13:12,880
+they don't have any link with each
+ 
+
+685
+00:13:12,880 --> 00:13:15,430
+they don't have any link with each
+other. So there is no link no link has
+
+686
+00:13:15,430 --> 00:13:15,440
+other. So there is no link no link has
+ 
+
+687
+00:13:15,440 --> 00:13:16,949
+other. So there is no link no link has
+been created. Now, what I'm going to
+
+688
+00:13:16,949 --> 00:13:16,959
+been created. Now, what I'm going to
+ 
+
+689
+00:13:16,959 --> 00:13:19,590
+been created. Now, what I'm going to
+show you Obsidian is famous for and what
+
+690
+00:13:19,590 --> 00:13:19,600
+show you Obsidian is famous for and what
+ 
+
+691
+00:13:19,600 --> 00:13:22,310
+show you Obsidian is famous for and what
+is absolutely impressive about this and
+
+692
+00:13:22,310 --> 00:13:22,320
+is absolutely impressive about this and
+ 
+
+693
+00:13:22,320 --> 00:13:25,590
+is absolutely impressive about this and
+what makes u Obsidian more powerful or
+
+694
+00:13:25,590 --> 00:13:25,600
+what makes u Obsidian more powerful or
+ 
+
+695
+00:13:25,600 --> 00:13:28,310
+what makes u Obsidian more powerful or
+what the most powerful part of Obsidian
+
+696
+00:13:28,310 --> 00:13:28,320
+what the most powerful part of Obsidian
+ 
+
+697
+00:13:28,320 --> 00:13:30,710
+what the most powerful part of Obsidian
+is that it makes these links by itself
+
+698
+00:13:30,710 --> 00:13:30,720
+is that it makes these links by itself
+ 
+
+699
+00:13:30,720 --> 00:13:33,350
+is that it makes these links by itself
+on its own. So, when I go to the welcome
+
+700
+00:13:33,350 --> 00:13:33,360
+on its own. So, when I go to the welcome
+ 
+
+701
+00:13:33,360 --> 00:13:35,509
+on its own. So, when I go to the welcome
+page, I'm just going to go uh down here
+
+702
+00:13:35,509 --> 00:13:35,519
+page, I'm just going to go uh down here
+ 
+
+703
+00:13:35,519 --> 00:13:38,389
+page, I'm just going to go uh down here
+and I'm going to type in ideas and I'm
+
+704
+00:13:38,389 --> 00:13:38,399
+and I'm going to type in ideas and I'm
+ 
+
+705
+00:13:38,399 --> 00:13:41,670
+and I'm going to type in ideas and I'm
+going to add um brackets here. So, I'm
+
+706
+00:13:41,670 --> 00:13:41,680
+going to add um brackets here. So, I'm
+ 
+
+707
+00:13:41,680 --> 00:13:43,509
+going to add um brackets here. So, I'm
+going to add the brackets here. And once
+
+708
+00:13:43,509 --> 00:13:43,519
+going to add the brackets here. And once
+ 
+
+709
+00:13:43,519 --> 00:13:46,470
+going to add the brackets here. And once
+the brackets are set in, we have ideas.
+
+710
+00:13:46,470 --> 00:13:46,480
+the brackets are set in, we have ideas.
+ 
+
+711
+00:13:46,480 --> 00:13:49,269
+the brackets are set in, we have ideas.
+Now this has turned uh purple. So this
+
+712
+00:13:49,269 --> 00:13:49,279
+Now this has turned uh purple. So this
+ 
+
+713
+00:13:49,279 --> 00:13:51,829
+Now this has turned uh purple. So this
+is highlighted and some link has been
+
+714
+00:13:51,829 --> 00:13:51,839
+is highlighted and some link has been
+ 
+
+715
+00:13:51,839 --> 00:13:53,829
+is highlighted and some link has been
+created. Now uh as soon as the link has
+
+716
+00:13:53,829 --> 00:13:53,839
+created. Now uh as soon as the link has
+ 
+
+717
+00:13:53,839 --> 00:13:55,670
+created. Now uh as soon as the link has
+been created, you can see in the graphic
+
+718
+00:13:55,670 --> 00:13:55,680
+been created, you can see in the graphic
+ 
+
+719
+00:13:55,680 --> 00:13:57,350
+been created, you can see in the graphic
+view, this is why I wanted the graphic
+
+720
+00:13:57,350 --> 00:13:57,360
+view, this is why I wanted the graphic
+ 
+
+721
+00:13:57,360 --> 00:14:00,150
+view, this is why I wanted the graphic
+view to stay open. A link has been
+
+722
+00:14:00,150 --> 00:14:00,160
+view to stay open. A link has been
+ 
+
+723
+00:14:00,160 --> 00:14:02,870
+view to stay open. A link has been
+created between these two notes. Now
+
+724
+00:14:02,870 --> 00:14:02,880
+created between these two notes. Now
+ 
+
+725
+00:14:02,880 --> 00:14:05,189
+created between these two notes. Now
+what is the link? The ideas. I wrote
+
+726
+00:14:05,189 --> 00:14:05,199
+what is the link? The ideas. I wrote
+ 
+
+727
+00:14:05,199 --> 00:14:08,710
+what is the link? The ideas. I wrote
+ideas here and then in this we had ideas
+
+728
+00:14:08,710 --> 00:14:08,720
+ideas here and then in this we had ideas
+ 
+
+729
+00:14:08,720 --> 00:14:11,030
+ideas here and then in this we had ideas
+here. This was this had the title ideas
+
+730
+00:14:11,030 --> 00:14:11,040
+here. This was this had the title ideas
+ 
+
+731
+00:14:11,040 --> 00:14:13,030
+here. This was this had the title ideas
+and then it had those ideas there. So a
+
+732
+00:14:13,030 --> 00:14:13,040
+and then it had those ideas there. So a
+ 
+
+733
+00:14:13,040 --> 00:14:15,430
+and then it had those ideas there. So a
+link has been created between both of
+
+734
+00:14:15,430 --> 00:14:15,440
+link has been created between both of
+ 
+
+735
+00:14:15,440 --> 00:14:18,790
+link has been created between both of
+these two notes and I did not have to
+
+736
+00:14:18,790 --> 00:14:18,800
+these two notes and I did not have to
+ 
+
+737
+00:14:18,800 --> 00:14:20,870
+these two notes and I did not have to
+make the link. Obsidian has made that
+
+738
+00:14:20,870 --> 00:14:20,880
+make the link. Obsidian has made that
+ 
+
+739
+00:14:20,880 --> 00:14:24,069
+make the link. Obsidian has made that
+link for us. Now uh because we are aware
+
+740
+00:14:24,069 --> 00:14:24,079
+link for us. Now uh because we are aware
+ 
+
+741
+00:14:24,079 --> 00:14:26,150
+link for us. Now uh because we are aware
+of what we're doing and um I did this
+
+742
+00:14:26,150 --> 00:14:26,160
+of what we're doing and um I did this
+ 
+
+743
+00:14:26,160 --> 00:14:29,030
+of what we're doing and um I did this
+intentionally to show you but um other
+
+744
+00:14:29,030 --> 00:14:29,040
+intentionally to show you but um other
+ 
+
+745
+00:14:29,040 --> 00:14:30,870
+intentionally to show you but um other
+times what can happen is you can have a
+
+746
+00:14:30,870 --> 00:14:30,880
+times what can happen is you can have a
+ 
+
+747
+00:14:30,880 --> 00:14:33,269
+times what can happen is you can have a
+long list of notes here so many notes
+
+748
+00:14:33,269 --> 00:14:33,279
+long list of notes here so many notes
+ 
+
+749
+00:14:33,279 --> 00:14:34,870
+long list of notes here so many notes
+here and you can just keep brainstorming
+
+750
+00:14:34,870 --> 00:14:34,880
+here and you can just keep brainstorming
+ 
+
+751
+00:14:34,880 --> 00:14:37,189
+here and you can just keep brainstorming
+and storing your ideas writing down your
+
+752
+00:14:37,189 --> 00:14:37,199
+and storing your ideas writing down your
+ 
+
+753
+00:14:37,199 --> 00:14:40,949
+and storing your ideas writing down your
+ideas uh importing any uh notes here and
+
+754
+00:14:40,949 --> 00:14:40,959
+ideas uh importing any uh notes here and
+ 
+
+755
+00:14:40,959 --> 00:14:42,870
+ideas uh importing any uh notes here and
+then as soon as the connections are
+
+756
+00:14:42,870 --> 00:14:42,880
+then as soon as the connections are
+ 
+
+757
+00:14:42,880 --> 00:14:44,949
+then as soon as the connections are
+being made uh you might not be aware of
+
+758
+00:14:44,949 --> 00:14:44,959
+being made uh you might not be aware of
+ 
+
+759
+00:14:44,959 --> 00:14:46,470
+being made uh you might not be aware of
+the connections that they have with one
+
+760
+00:14:46,470 --> 00:14:46,480
+the connections that they have with one
+ 
+
+761
+00:14:46,480 --> 00:14:49,110
+the connections that they have with one
+another but Obsidian is going to map out
+
+762
+00:14:49,110 --> 00:14:49,120
+another but Obsidian is going to map out
+ 
+
+763
+00:14:49,120 --> 00:14:51,189
+another but Obsidian is going to map out
+those connections for you and connect
+
+764
+00:14:51,189 --> 00:14:51,199
+those connections for you and connect
+ 
+
+765
+00:14:51,199 --> 00:14:53,509
+those connections for you and connect
+them for you which would be very
+
+766
+00:14:53,509 --> 00:14:53,519
+them for you which would be very
+ 
+
+767
+00:14:53,519 --> 00:14:54,710
+them for you which would be very
+impressive and sometimes you're just
+
+768
+00:14:54,710 --> 00:14:54,720
+impressive and sometimes you're just
+ 
+
+769
+00:14:54,720 --> 00:14:57,990
+impressive and sometimes you're just
+going to surprise yourself and see how
+
+770
+00:14:57,990 --> 00:14:58,000
+going to surprise yourself and see how
+ 
+
+771
+00:14:58,000 --> 00:14:59,509
+going to surprise yourself and see how
+this connection is made and you had no
+
+772
+00:14:59,509 --> 00:14:59,519
+this connection is made and you had no
+ 
+
+773
+00:14:59,519 --> 00:15:01,189
+this connection is made and you had no
+idea that these connections were made.
+
+774
+00:15:01,189 --> 00:15:01,199
+idea that these connections were made.
+ 
+
+775
+00:15:01,199 --> 00:15:03,910
+idea that these connections were made.
+Sometimes you would not know that there
+
+776
+00:15:03,910 --> 00:15:03,920
+Sometimes you would not know that there
+ 
+
+777
+00:15:03,920 --> 00:15:06,310
+Sometimes you would not know that there
+a connection is there but uh
+
+778
+00:15:06,310 --> 00:15:06,320
+a connection is there but uh
+ 
+
+779
+00:15:06,320 --> 00:15:08,230
+a connection is there but uh
+intentionally if you are using obsidian
+
+780
+00:15:08,230 --> 00:15:08,240
+intentionally if you are using obsidian
+ 
+
+781
+00:15:08,240 --> 00:15:09,670
+intentionally if you are using obsidian
+for that purpose you definitely would
+
+782
+00:15:09,670 --> 00:15:09,680
+for that purpose you definitely would
+ 
+
+783
+00:15:09,680 --> 00:15:11,670
+for that purpose you definitely would
+know that uh these connections are going
+
+784
+00:15:11,670 --> 00:15:11,680
+know that uh these connections are going
+ 
+
+785
+00:15:11,680 --> 00:15:13,189
+know that uh these connections are going
+to be made. So you're going to take
+
+786
+00:15:13,189 --> 00:15:13,199
+to be made. So you're going to take
+ 
+
+787
+00:15:13,199 --> 00:15:15,990
+to be made. So you're going to take
+notes on uh different topics but which
+
+788
+00:15:15,990 --> 00:15:16,000
+notes on uh different topics but which
+ 
+
+789
+00:15:16,000 --> 00:15:17,990
+notes on uh different topics but which
+are interrelated. So you're going to uh
+
+790
+00:15:17,990 --> 00:15:18,000
+are interrelated. So you're going to uh
+ 
+
+791
+00:15:18,000 --> 00:15:20,230
+are interrelated. So you're going to uh
+take your neat notes. Your notes are
+
+792
+00:15:20,230 --> 00:15:20,240
+take your neat notes. Your notes are
+ 
+
+793
+00:15:20,240 --> 00:15:22,310
+take your neat notes. Your notes are
+going to be neat and you're going to uh
+
+794
+00:15:22,310 --> 00:15:22,320
+going to be neat and you're going to uh
+ 
+
+795
+00:15:22,320 --> 00:15:24,629
+going to be neat and you're going to uh
+note them down and store them here. And
+
+796
+00:15:24,629 --> 00:15:24,639
+note them down and store them here. And
+ 
+
+797
+00:15:24,639 --> 00:15:26,310
+note them down and store them here. And
+the way they are connected is going to
+
+798
+00:15:26,310 --> 00:15:26,320
+the way they are connected is going to
+ 
+
+799
+00:15:26,320 --> 00:15:29,030
+the way they are connected is going to
+be displayed in the graph view here or
+
+800
+00:15:29,030 --> 00:15:29,040
+be displayed in the graph view here or
+ 
+
+801
+00:15:29,040 --> 00:15:31,110
+be displayed in the graph view here or
+uh it would be highlighted how those
+
+802
+00:15:31,110 --> 00:15:31,120
+uh it would be highlighted how those
+ 
+
+803
+00:15:31,120 --> 00:15:33,350
+uh it would be highlighted how those
+different notes are connected would be
+
+804
+00:15:33,350 --> 00:15:33,360
+different notes are connected would be
+ 
+
+805
+00:15:33,360 --> 00:15:35,750
+different notes are connected would be
+shown to you very clearly. Now this is
+
+806
+00:15:35,750 --> 00:15:35,760
+shown to you very clearly. Now this is
+ 
+
+807
+00:15:35,760 --> 00:15:37,269
+shown to you very clearly. Now this is
+something which is uh you know you have
+
+808
+00:15:37,269 --> 00:15:37,279
+something which is uh you know you have
+ 
+
+809
+00:15:37,279 --> 00:15:40,710
+something which is uh you know you have
+a very visual kind of display of all the
+
+810
+00:15:40,710 --> 00:15:40,720
+a very visual kind of display of all the
+ 
+
+811
+00:15:40,720 --> 00:15:42,310
+a very visual kind of display of all the
+thoughts which are jumbled up in your
+
+812
+00:15:42,310 --> 00:15:42,320
+thoughts which are jumbled up in your
+ 
+
+813
+00:15:42,320 --> 00:15:44,949
+thoughts which are jumbled up in your
+brain. uh you can uh display them out
+
+814
+00:15:44,949 --> 00:15:44,959
+brain. uh you can uh display them out
+ 
+
+815
+00:15:44,959 --> 00:15:48,310
+brain. uh you can uh display them out
+here very neatly or uh without worrying
+
+816
+00:15:48,310 --> 00:15:48,320
+here very neatly or uh without worrying
+ 
+
+817
+00:15:48,320 --> 00:15:51,590
+here very neatly or uh without worrying
+about overlapping concepts or missing
+
+818
+00:15:51,590 --> 00:15:51,600
+about overlapping concepts or missing
+ 
+
+819
+00:15:51,600 --> 00:15:54,230
+about overlapping concepts or missing
+something out or you know just
+
+820
+00:15:54,230 --> 00:15:54,240
+something out or you know just
+ 
+
+821
+00:15:54,240 --> 00:15:56,550
+something out or you know just
+scrambling to when you're writing you
+
+822
+00:15:56,550 --> 00:15:56,560
+scrambling to when you're writing you
+ 
+
+823
+00:15:56,560 --> 00:15:57,990
+scrambling to when you're writing you
+don't want to scramble back to your
+
+824
+00:15:57,990 --> 00:15:58,000
+don't want to scramble back to your
+ 
+
+825
+00:15:58,000 --> 00:15:59,910
+don't want to scramble back to your
+previous note and say oh no I missed I
+
+826
+00:15:59,910 --> 00:15:59,920
+previous note and say oh no I missed I
+ 
+
+827
+00:15:59,920 --> 00:16:01,350
+previous note and say oh no I missed I
+missed this from there so I'm going to
+
+828
+00:16:01,350 --> 00:16:01,360
+missed this from there so I'm going to
+ 
+
+829
+00:16:01,360 --> 00:16:03,350
+missed this from there so I'm going to
+wait hold on I'm going to go back and
+
+830
+00:16:03,350 --> 00:16:03,360
+wait hold on I'm going to go back and
+ 
+
+831
+00:16:03,360 --> 00:16:04,949
+wait hold on I'm going to go back and
+I'm going to put this uh in the other
+
+832
+00:16:04,949 --> 00:16:04,959
+I'm going to put this uh in the other
+ 
+
+833
+00:16:04,959 --> 00:16:06,389
+I'm going to put this uh in the other
+note so you don't have to do that you're
+
+834
+00:16:06,389 --> 00:16:06,399
+note so you don't have to do that you're
+ 
+
+835
+00:16:06,399 --> 00:16:07,749
+note so you don't have to do that you're
+just going to note it here and the
+
+836
+00:16:07,749 --> 00:16:07,759
+just going to note it here and the
+ 
+
+837
+00:16:07,759 --> 00:16:10,389
+just going to note it here and the
+connections will be made for you so that
+
+838
+00:16:10,389 --> 00:16:10,399
+connections will be made for you so that
+ 
+
+839
+00:16:10,399 --> 00:16:13,910
+connections will be made for you so that
+is uh absolutely so convenient and so
+
+840
+00:16:13,910 --> 00:16:13,920
+is uh absolutely so convenient and so
+ 
+
+841
+00:16:13,920 --> 00:16:16,870
+is uh absolutely so convenient and so
+helping. It just um frees your brain of
+
+842
+00:16:16,870 --> 00:16:16,880
+helping. It just um frees your brain of
+ 
+
+843
+00:16:16,880 --> 00:16:20,629
+helping. It just um frees your brain of
+any worries of organizing and noting
+
+844
+00:16:20,629 --> 00:16:20,639
+any worries of organizing and noting
+ 
+
+845
+00:16:20,639 --> 00:16:23,430
+any worries of organizing and noting
+down your notes in an orderly manner or
+
+846
+00:16:23,430 --> 00:16:23,440
+down your notes in an orderly manner or
+ 
+
+847
+00:16:23,440 --> 00:16:26,389
+down your notes in an orderly manner or
+you know being very uh cautious of what
+
+848
+00:16:26,389 --> 00:16:26,399
+you know being very uh cautious of what
+ 
+
+849
+00:16:26,399 --> 00:16:28,870
+you know being very uh cautious of what
+you are noting and where. So you just uh
+
+850
+00:16:28,870 --> 00:16:28,880
+you are noting and where. So you just uh
+ 
+
+851
+00:16:28,880 --> 00:16:31,350
+you are noting and where. So you just uh
+note down very freely with a calm brain
+
+852
+00:16:31,350 --> 00:16:31,360
+note down very freely with a calm brain
+ 
+
+853
+00:16:31,360 --> 00:16:33,509
+note down very freely with a calm brain
+and focus more on your creativity and
+
+854
+00:16:33,509 --> 00:16:33,519
+and focus more on your creativity and
+ 
+
+855
+00:16:33,519 --> 00:16:35,910
+and focus more on your creativity and
+your productivity and that is basically
+
+856
+00:16:35,910 --> 00:16:35,920
+your productivity and that is basically
+ 
+
+857
+00:16:35,920 --> 00:16:39,110
+your productivity and that is basically
+the aim of obsidian. So now I am going
+
+858
+00:16:39,110 --> 00:16:39,120
+the aim of obsidian. So now I am going
+ 
+
+859
+00:16:39,120 --> 00:16:42,310
+the aim of obsidian. So now I am going
+to create another node and I'm going to
+
+860
+00:16:42,310 --> 00:16:42,320
+to create another node and I'm going to
+ 
+
+861
+00:16:42,320 --> 00:16:44,949
+to create another node and I'm going to
+name it content. So I'm going to name
+
+862
+00:16:44,949 --> 00:16:44,959
+name it content. So I'm going to name
+ 
+
+863
+00:16:44,959 --> 00:16:47,749
+name it content. So I'm going to name
+that content and I'm going to write here
+
+864
+00:16:47,749 --> 00:16:47,759
+that content and I'm going to write here
+ 
+
+865
+00:16:47,759 --> 00:16:53,430
+that content and I'm going to write here
+um I store new ideas here. So and then
+
+866
+00:16:53,430 --> 00:16:53,440
+um I store new ideas here. So and then
+ 
+
+867
+00:16:53,440 --> 00:16:56,629
+um I store new ideas here. So and then
+over here I'm going to type in I I store
+
+868
+00:16:56,629 --> 00:16:56,639
+over here I'm going to type in I I store
+ 
+
+869
+00:16:56,639 --> 00:16:59,269
+over here I'm going to type in I I store
+new content
+
+870
+00:16:59,269 --> 00:16:59,279
+new content
+ 
+
+871
+00:16:59,279 --> 00:17:04,470
+new content
+idea in in ideas. So a link has been
+
+872
+00:17:04,470 --> 00:17:04,480
+idea in in ideas. So a link has been
+ 
+
+873
+00:17:04,480 --> 00:17:07,110
+idea in in ideas. So a link has been
+created as you can see. So I store uh
+
+874
+00:17:07,110 --> 00:17:07,120
+created as you can see. So I store uh
+ 
+
+875
+00:17:07,120 --> 00:17:09,510
+created as you can see. So I store uh
+the new content ideas are going to be
+
+876
+00:17:09,510 --> 00:17:09,520
+the new content ideas are going to be
+ 
+
+877
+00:17:09,520 --> 00:17:13,029
+the new content ideas are going to be
+stored in ideas over here. So a link has
+
+878
+00:17:13,029 --> 00:17:13,039
+stored in ideas over here. So a link has
+ 
+
+879
+00:17:13,039 --> 00:17:16,470
+stored in ideas over here. So a link has
+been made again and you can see a visual
+
+880
+00:17:16,470 --> 00:17:16,480
+been made again and you can see a visual
+ 
+
+881
+00:17:16,480 --> 00:17:18,630
+been made again and you can see a visual
+or graphic representation of that. You
+
+882
+00:17:18,630 --> 00:17:18,640
+or graphic representation of that. You
+ 
+
+883
+00:17:18,640 --> 00:17:21,270
+or graphic representation of that. You
+have the ideas is linked to the welcome
+
+884
+00:17:21,270 --> 00:17:21,280
+have the ideas is linked to the welcome
+ 
+
+885
+00:17:21,280 --> 00:17:24,230
+have the ideas is linked to the welcome
+page and ideas is linked to content as
+
+886
+00:17:24,230 --> 00:17:24,240
+page and ideas is linked to content as
+ 
+
+887
+00:17:24,240 --> 00:17:26,470
+page and ideas is linked to content as
+well. So that is some pretty neat stuff.
+
+888
+00:17:26,470 --> 00:17:26,480
+well. So that is some pretty neat stuff.
+ 
+
+889
+00:17:26,480 --> 00:17:28,630
+well. So that is some pretty neat stuff.
+Now another very useful thing you can do
+
+890
+00:17:28,630 --> 00:17:28,640
+Now another very useful thing you can do
+ 
+
+891
+00:17:28,640 --> 00:17:31,830
+Now another very useful thing you can do
+is is you can use hashtags um in your
+
+892
+00:17:31,830 --> 00:17:31,840
+is is you can use hashtags um in your
+ 
+
+893
+00:17:31,840 --> 00:17:33,909
+is is you can use hashtags um in your
+notes. So over here what you can do is
+
+894
+00:17:33,909 --> 00:17:33,919
+notes. So over here what you can do is
+ 
+
+895
+00:17:33,919 --> 00:17:37,430
+notes. So over here what you can do is
+you can add a hashtag and you can type
+
+896
+00:17:37,430 --> 00:17:37,440
+you can add a hashtag and you can type
+ 
+
+897
+00:17:37,440 --> 00:17:40,470
+you can add a hashtag and you can type
+in content. So uh this is where we've
+
+898
+00:17:40,470 --> 00:17:40,480
+in content. So uh this is where we've
+ 
+
+899
+00:17:40,480 --> 00:17:42,470
+in content. So uh this is where we've
+mentioned content and then you can go to
+
+900
+00:17:42,470 --> 00:17:42,480
+mentioned content and then you can go to
+ 
+
+901
+00:17:42,480 --> 00:17:46,310
+mentioned content and then you can go to
+ideas and over here you can enter in the
+
+902
+00:17:46,310 --> 00:17:46,320
+ideas and over here you can enter in the
+ 
+
+903
+00:17:46,320 --> 00:17:49,270
+ideas and over here you can enter in the
+hashtag again and you can name it
+
+904
+00:17:49,270 --> 00:17:49,280
+hashtag again and you can name it
+ 
+
+905
+00:17:49,280 --> 00:17:52,630
+hashtag again and you can name it
+content and uh that link is already
+
+906
+00:17:52,630 --> 00:17:52,640
+content and uh that link is already
+ 
+
+907
+00:17:52,640 --> 00:17:54,549
+content and uh that link is already
+created and then you can go back to the
+
+908
+00:17:54,549 --> 00:17:54,559
+created and then you can go back to the
+ 
+
+909
+00:17:54,559 --> 00:17:56,870
+created and then you can go back to the
+welcome page and then you can add that
+
+910
+00:17:56,870 --> 00:17:56,880
+welcome page and then you can add that
+ 
+
+911
+00:17:56,880 --> 00:17:59,990
+welcome page and then you can add that
+here as well. Add your hashtag and
+
+912
+00:17:59,990 --> 00:18:00,000
+here as well. Add your hashtag and
+ 
+
+913
+00:18:00,000 --> 00:18:02,630
+here as well. Add your hashtag and
+content. So we are talking about content
+
+914
+00:18:02,630 --> 00:18:02,640
+content. So we are talking about content
+ 
+
+915
+00:18:02,640 --> 00:18:05,750
+content. So we are talking about content
+in all three of these pages now. And
+
+916
+00:18:05,750 --> 00:18:05,760
+in all three of these pages now. And
+ 
+
+917
+00:18:05,760 --> 00:18:09,510
+in all three of these pages now. And
+then once you have your uh hashtags set,
+
+918
+00:18:09,510 --> 00:18:09,520
+then once you have your uh hashtags set,
+ 
+
+919
+00:18:09,520 --> 00:18:12,310
+then once you have your uh hashtags set,
+so you have the hashtag here and here
+
+920
+00:18:12,310 --> 00:18:12,320
+so you have the hashtag here and here
+ 
+
+921
+00:18:12,320 --> 00:18:14,390
+so you have the hashtag here and here
+and here. So you have it in all three.
+
+922
+00:18:14,390 --> 00:18:14,400
+and here. So you have it in all three.
+ 
+
+923
+00:18:14,400 --> 00:18:17,510
+and here. So you have it in all three.
+Now when you uh click on the hashtag, so
+
+924
+00:18:17,510 --> 00:18:17,520
+Now when you uh click on the hashtag, so
+ 
+
+925
+00:18:17,520 --> 00:18:19,750
+Now when you uh click on the hashtag, so
+it's going to display all the notes
+
+926
+00:18:19,750 --> 00:18:19,760
+it's going to display all the notes
+ 
+
+927
+00:18:19,760 --> 00:18:21,830
+it's going to display all the notes
+which have that hashtag. So it's going
+
+928
+00:18:21,830 --> 00:18:21,840
+which have that hashtag. So it's going
+ 
+
+929
+00:18:21,840 --> 00:18:24,789
+which have that hashtag. So it's going
+to say uh this tag is in this note and
+
+930
+00:18:24,789 --> 00:18:24,799
+to say uh this tag is in this note and
+ 
+
+931
+00:18:24,799 --> 00:18:27,110
+to say uh this tag is in this note and
+this note and this note. So let's go and
+
+932
+00:18:27,110 --> 00:18:27,120
+this note and this note. So let's go and
+ 
+
+933
+00:18:27,120 --> 00:18:29,510
+this note and this note. So let's go and
+uh change our notes and let's remove one
+
+934
+00:18:29,510 --> 00:18:29,520
+uh change our notes and let's remove one
+ 
+
+935
+00:18:29,520 --> 00:18:30,950
+uh change our notes and let's remove one
+from here. So let's remove it from
+
+936
+00:18:30,950 --> 00:18:30,960
+from here. So let's remove it from
+ 
+
+937
+00:18:30,960 --> 00:18:33,110
+from here. So let's remove it from
+ideas. So let's remove the hashtag from
+
+938
+00:18:33,110 --> 00:18:33,120
+ideas. So let's remove the hashtag from
+ 
+
+939
+00:18:33,120 --> 00:18:36,710
+ideas. So let's remove the hashtag from
+here. And then uh then when we go to for
+
+940
+00:18:36,710 --> 00:18:36,720
+here. And then uh then when we go to for
+ 
+
+941
+00:18:36,720 --> 00:18:38,870
+here. And then uh then when we go to for
+example we go to the welcome page, it's
+
+942
+00:18:38,870 --> 00:18:38,880
+example we go to the welcome page, it's
+ 
+
+943
+00:18:38,880 --> 00:18:40,789
+example we go to the welcome page, it's
+not in ideas and it's in content. So
+
+944
+00:18:40,789 --> 00:18:40,799
+not in ideas and it's in content. So
+ 
+
+945
+00:18:40,799 --> 00:18:43,110
+not in ideas and it's in content. So
+when you click here, only those two show
+
+946
+00:18:43,110 --> 00:18:43,120
+when you click here, only those two show
+ 
+
+947
+00:18:43,120 --> 00:18:46,230
+when you click here, only those two show
+up which have content. So that is uh
+
+948
+00:18:46,230 --> 00:18:46,240
+up which have content. So that is uh
+ 
+
+949
+00:18:46,240 --> 00:18:48,549
+up which have content. So that is uh
+using the hashtag is also a pretty neat
+
+950
+00:18:48,549 --> 00:18:48,559
+using the hashtag is also a pretty neat
+ 
+
+951
+00:18:48,559 --> 00:18:50,950
+using the hashtag is also a pretty neat
+feature. All right. So now that we know
+
+952
+00:18:50,950 --> 00:18:50,960
+feature. All right. So now that we know
+ 
+
+953
+00:18:50,960 --> 00:18:52,870
+feature. All right. So now that we know
+uh the basics of notes, let's move
+
+954
+00:18:52,870 --> 00:18:52,880
+uh the basics of notes, let's move
+ 
+
+955
+00:18:52,880 --> 00:18:55,750
+uh the basics of notes, let's move
+towards uh plugins. So uh in order to go
+
+956
+00:18:55,750 --> 00:18:55,760
+towards uh plugins. So uh in order to go
+ 
+
+957
+00:18:55,760 --> 00:18:58,070
+towards uh plugins. So uh in order to go
+to plugins you need to first of all go
+
+958
+00:18:58,070 --> 00:18:58,080
+to plugins you need to first of all go
+ 
+
+959
+00:18:58,080 --> 00:19:01,590
+to plugins you need to first of all go
+to your settings uh click here and you
+
+960
+00:19:01,590 --> 00:19:01,600
+to your settings uh click here and you
+ 
+
+961
+00:19:01,600 --> 00:19:03,430
+to your settings uh click here and you
+are going to go down here. Now there are
+
+962
+00:19:03,430 --> 00:19:03,440
+are going to go down here. Now there are
+ 
+
+963
+00:19:03,440 --> 00:19:05,350
+are going to go down here. Now there are
+a lot of other options. You have the
+
+964
+00:19:05,350 --> 00:19:05,360
+a lot of other options. You have the
+ 
+
+965
+00:19:05,360 --> 00:19:07,430
+a lot of other options. You have the
+core plugins and the hotkeys and you can
+
+966
+00:19:07,430 --> 00:19:07,440
+core plugins and the hotkeys and you can
+ 
+
+967
+00:19:07,440 --> 00:19:10,150
+core plugins and the hotkeys and you can
+also um adjust the appearance over here.
+
+968
+00:19:10,150 --> 00:19:10,160
+also um adjust the appearance over here.
+ 
+
+969
+00:19:10,160 --> 00:19:12,710
+also um adjust the appearance over here.
+Um actually this is the accent color
+
+970
+00:19:12,710 --> 00:19:12,720
+Um actually this is the accent color
+ 
+
+971
+00:19:12,720 --> 00:19:15,190
+Um actually this is the accent color
+here. So you can uh change that as well
+
+972
+00:19:15,190 --> 00:19:15,200
+here. So you can uh change that as well
+ 
+
+973
+00:19:15,200 --> 00:19:16,470
+here. So you can uh change that as well
+if you would like and you can also
+
+974
+00:19:16,470 --> 00:19:16,480
+if you would like and you can also
+ 
+
+975
+00:19:16,480 --> 00:19:19,029
+if you would like and you can also
+change the base color scheme. So um in
+
+976
+00:19:19,029 --> 00:19:19,039
+change the base color scheme. So um in
+ 
+
+977
+00:19:19,039 --> 00:19:21,110
+change the base color scheme. So um in
+order to adapt to the system and I uh
+
+978
+00:19:21,110 --> 00:19:21,120
+order to adapt to the system and I uh
+ 
+
+979
+00:19:21,120 --> 00:19:23,029
+order to adapt to the system and I uh
+you know I have deviated from what I
+
+980
+00:19:23,029 --> 00:19:23,039
+you know I have deviated from what I
+ 
+
+981
+00:19:23,039 --> 00:19:24,630
+you know I have deviated from what I
+came here for but I really want to
+
+982
+00:19:24,630 --> 00:19:24,640
+came here for but I really want to
+ 
+
+983
+00:19:24,640 --> 00:19:27,909
+came here for but I really want to
+change this to dark version. Uh that is
+
+984
+00:19:27,909 --> 00:19:27,919
+change this to dark version. Uh that is
+ 
+
+985
+00:19:27,919 --> 00:19:31,270
+change this to dark version. Uh that is
+my preference. So this is also very
+
+986
+00:19:31,270 --> 00:19:31,280
+my preference. So this is also very
+ 
+
+987
+00:19:31,280 --> 00:19:33,270
+my preference. So this is also very
+good. Now so uh what we came here for
+
+988
+00:19:33,270 --> 00:19:33,280
+good. Now so uh what we came here for
+ 
+
+989
+00:19:33,280 --> 00:19:36,470
+good. Now so uh what we came here for
+was to um go to was to get to the
+
+990
+00:19:36,470 --> 00:19:36,480
+was to um go to was to get to the
+ 
+
+991
+00:19:36,480 --> 00:19:38,950
+was to um go to was to get to the
+plugins. So you also have hotkeys and
+
+992
+00:19:38,950 --> 00:19:38,960
+plugins. So you also have hotkeys and
+ 
+
+993
+00:19:38,960 --> 00:19:41,430
+plugins. So you also have hotkeys and
+you have the canvas and there are some
+
+994
+00:19:41,430 --> 00:19:41,440
+you have the canvas and there are some
+ 
+
+995
+00:19:41,440 --> 00:19:43,190
+you have the canvas and there are some
+other settings as well which are pretty
+
+996
+00:19:43,190 --> 00:19:43,200
+other settings as well which are pretty
+ 
+
+997
+00:19:43,200 --> 00:19:44,870
+other settings as well which are pretty
+straightforward and clear and
+
+998
+00:19:44,870 --> 00:19:44,880
+straightforward and clear and
+ 
+
+999
+00:19:44,880 --> 00:19:47,510
+straightforward and clear and
+self-explanatory. So you can uh figure
+
+1000
+00:19:47,510 --> 00:19:47,520
+self-explanatory. So you can uh figure
+ 
+
+1001
+00:19:47,520 --> 00:19:49,830
+self-explanatory. So you can uh figure
+out those. So uh for the plugins you're
+
+1002
+00:19:49,830 --> 00:19:49,840
+out those. So uh for the plugins you're
+ 
+
+1003
+00:19:49,840 --> 00:19:51,990
+out those. So uh for the plugins you're
+going to go to the community uh you're
+
+1004
+00:19:51,990 --> 00:19:52,000
+going to go to the community uh you're
+ 
+
+1005
+00:19:52,000 --> 00:19:53,909
+going to go to the community uh you're
+going to click on community plugins and
+
+1006
+00:19:53,909 --> 00:19:53,919
+going to click on community plugins and
+ 
+
+1007
+00:19:53,919 --> 00:19:57,029
+going to click on community plugins and
+then over here you are going to go to uh
+
+1008
+00:19:57,029 --> 00:19:57,039
+then over here you are going to go to uh
+ 
+
+1009
+00:19:57,039 --> 00:19:58,710
+then over here you are going to go to uh
+what you need to do here is you need to
+
+1010
+00:19:58,710 --> 00:19:58,720
+what you need to do here is you need to
+ 
+
+1011
+00:19:58,720 --> 00:20:01,270
+what you need to do here is you need to
+turn on community plugins. This is going
+
+1012
+00:20:01,270 --> 00:20:01,280
+turn on community plugins. This is going
+ 
+
+1013
+00:20:01,280 --> 00:20:04,310
+turn on community plugins. This is going
+to remove you from restricted mode. Um
+
+1014
+00:20:04,310 --> 00:20:04,320
+to remove you from restricted mode. Um
+ 
+
+1015
+00:20:04,320 --> 00:20:08,150
+to remove you from restricted mode. Um
+so you want to do that in order to turn
+
+1016
+00:20:08,150 --> 00:20:08,160
+so you want to do that in order to turn
+ 
+
+1017
+00:20:08,160 --> 00:20:10,230
+so you want to do that in order to turn
+on the community plugins. So you turn
+
+1018
+00:20:10,230 --> 00:20:10,240
+on the community plugins. So you turn
+ 
+
+1019
+00:20:10,240 --> 00:20:13,909
+on the community plugins. So you turn
+that on and you and you are not in uh
+
+1020
+00:20:13,909 --> 00:20:13,919
+that on and you and you are not in uh
+ 
+
+1021
+00:20:13,919 --> 00:20:16,230
+that on and you and you are not in uh
+restricted mode anymore. Restricted mode
+
+1022
+00:20:16,230 --> 00:20:16,240
+restricted mode anymore. Restricted mode
+ 
+
+1023
+00:20:16,240 --> 00:20:19,110
+restricted mode anymore. Restricted mode
+is off. And then you have a current you
+
+1024
+00:20:19,110 --> 00:20:19,120
+is off. And then you have a current you
+ 
+
+1025
+00:20:19,120 --> 00:20:20,789
+is off. And then you have a current you
+do not have any current plugins either.
+
+1026
+00:20:20,789 --> 00:20:20,799
+do not have any current plugins either.
+ 
+
+1027
+00:20:20,799 --> 00:20:22,150
+do not have any current plugins either.
+So you're going to go to community
+
+1028
+00:20:22,150 --> 00:20:22,160
+So you're going to go to community
+ 
+
+1029
+00:20:22,160 --> 00:20:24,470
+So you're going to go to community
+plugins and you're going to browse the
+
+1030
+00:20:24,470 --> 00:20:24,480
+plugins and you're going to browse the
+ 
+
+1031
+00:20:24,480 --> 00:20:27,830
+plugins and you're going to browse the
+plugins that you can use. Now I am going
+
+1032
+00:20:27,830 --> 00:20:27,840
+plugins that you can use. Now I am going
+ 
+
+1033
+00:20:27,840 --> 00:20:30,390
+plugins that you can use. Now I am going
+to suggest some plugins that uh
+
+1034
+00:20:30,390 --> 00:20:30,400
+to suggest some plugins that uh
+ 
+
+1035
+00:20:30,400 --> 00:20:33,750
+to suggest some plugins that uh
+beginners can use. So some recommended
+
+1036
+00:20:33,750 --> 00:20:33,760
+beginners can use. So some recommended
+ 
+
+1037
+00:20:33,760 --> 00:20:36,470
+beginners can use. So some recommended
+uh beginner plugins are the calendar. So
+
+1038
+00:20:36,470 --> 00:20:36,480
+uh beginner plugins are the calendar. So
+ 
+
+1039
+00:20:36,480 --> 00:20:38,710
+uh beginner plugins are the calendar. So
+you can go down here and so these are
+
+1040
+00:20:38,710 --> 00:20:38,720
+you can go down here and so these are
+ 
+
+1041
+00:20:38,720 --> 00:20:41,110
+you can go down here and so these are
+all the plugins that are available and
+
+1042
+00:20:41,110 --> 00:20:41,120
+all the plugins that are available and
+ 
+
+1043
+00:20:41,120 --> 00:20:43,270
+all the plugins that are available and
+you can use over here is the calendar
+
+1044
+00:20:43,270 --> 00:20:43,280
+you can use over here is the calendar
+ 
+
+1045
+00:20:43,280 --> 00:20:45,430
+you can use over here is the calendar
+that you can use. Over here is the
+
+1046
+00:20:45,430 --> 00:20:45,440
+that you can use. Over here is the
+ 
+
+1047
+00:20:45,440 --> 00:20:46,950
+that you can use. Over here is the
+calendar that you can use and this is
+
+1048
+00:20:46,950 --> 00:20:46,960
+calendar that you can use and this is
+ 
+
+1049
+00:20:46,960 --> 00:20:50,710
+calendar that you can use and this is
+for u daily notes navigation. So uh that
+
+1050
+00:20:50,710 --> 00:20:50,720
+for u daily notes navigation. So uh that
+ 
+
+1051
+00:20:50,720 --> 00:20:53,270
+for u daily notes navigation. So uh that
+is very important. Then you can go to uh
+
+1052
+00:20:53,270 --> 00:20:53,280
+is very important. Then you can go to uh
+ 
+
+1053
+00:20:53,280 --> 00:20:55,990
+is very important. Then you can go to uh
+let's see where if I can see it here. So
+
+1054
+00:20:55,990 --> 00:20:56,000
+let's see where if I can see it here. So
+ 
+
+1055
+00:20:56,000 --> 00:20:58,630
+let's see where if I can see it here. So
+it's not visible uh right here. I can
+
+1056
+00:20:58,630 --> 00:20:58,640
+it's not visible uh right here. I can
+ 
+
+1057
+00:20:58,640 --> 00:21:01,750
+it's not visible uh right here. I can
+just uh search for it. Yes, here we go.
+
+1058
+00:21:01,750 --> 00:21:01,760
+just uh search for it. Yes, here we go.
+ 
+
+1059
+00:21:01,760 --> 00:21:04,950
+just uh search for it. Yes, here we go.
+So this is the canvan view here. uh you
+
+1060
+00:21:04,950 --> 00:21:04,960
+So this is the canvan view here. uh you
+ 
+
+1061
+00:21:04,960 --> 00:21:07,750
+So this is the canvan view here. uh you
+want to select that uh or you want to
+
+1062
+00:21:07,750 --> 00:21:07,760
+want to select that uh or you want to
+ 
+
+1063
+00:21:07,760 --> 00:21:09,909
+want to select that uh or you want to
+have that plugin because it makes uh
+
+1064
+00:21:09,909 --> 00:21:09,919
+have that plugin because it makes uh
+ 
+
+1065
+00:21:09,919 --> 00:21:12,870
+have that plugin because it makes uh
+Trello style boards inside of Obsidian
+
+1066
+00:21:12,870 --> 00:21:12,880
+Trello style boards inside of Obsidian
+ 
+
+1067
+00:21:12,880 --> 00:21:15,510
+Trello style boards inside of Obsidian
+and um I I personally really like those
+
+1068
+00:21:15,510 --> 00:21:15,520
+and um I I personally really like those
+ 
+
+1069
+00:21:15,520 --> 00:21:18,070
+and um I I personally really like those
+boards. So uh if you want to incorporate
+
+1070
+00:21:18,070 --> 00:21:18,080
+boards. So uh if you want to incorporate
+ 
+
+1071
+00:21:18,080 --> 00:21:20,789
+boards. So uh if you want to incorporate
+that into your uh Obsidian then you want
+
+1072
+00:21:20,789 --> 00:21:20,799
+that into your uh Obsidian then you want
+ 
+
+1073
+00:21:20,799 --> 00:21:23,909
+that into your uh Obsidian then you want
+to uh get that plug-in as well. Uh you
+
+1074
+00:21:23,909 --> 00:21:23,919
+to uh get that plug-in as well. Uh you
+ 
+
+1075
+00:21:23,919 --> 00:21:26,630
+to uh get that plug-in as well. Uh you
+also want to get data view uh because it
+
+1076
+00:21:26,630 --> 00:21:26,640
+also want to get data view uh because it
+ 
+
+1077
+00:21:26,640 --> 00:21:29,190
+also want to get data view uh because it
+has powerful databases using notes. So,
+
+1078
+00:21:29,190 --> 00:21:29,200
+has powerful databases using notes. So,
+ 
+
+1079
+00:21:29,200 --> 00:21:32,070
+has powerful databases using notes. So,
+you're going to uh type in data view and
+
+1080
+00:21:32,070 --> 00:21:32,080
+you're going to uh type in data view and
+ 
+
+1081
+00:21:32,080 --> 00:21:34,149
+you're going to uh type in data view and
+you are going to uh you can get like
+
+1082
+00:21:34,149 --> 00:21:34,159
+you are going to uh you can get like
+ 
+
+1083
+00:21:34,159 --> 00:21:35,830
+you are going to uh you can get like
+you're not going to but you can if you
+
+1084
+00:21:35,830 --> 00:21:35,840
+you're not going to but you can if you
+ 
+
+1085
+00:21:35,840 --> 00:21:37,669
+you're not going to but you can if you
+would like uh so you can get that. These
+
+1086
+00:21:37,669 --> 00:21:37,679
+would like uh so you can get that. These
+ 
+
+1087
+00:21:37,679 --> 00:21:40,230
+would like uh so you can get that. These
+are just my personal recommendations for
+
+1088
+00:21:40,230 --> 00:21:40,240
+are just my personal recommendations for
+ 
+
+1089
+00:21:40,240 --> 00:21:42,630
+are just my personal recommendations for
+uh any beginner plugins that you would
+
+1090
+00:21:42,630 --> 00:21:42,640
+uh any beginner plugins that you would
+ 
+
+1091
+00:21:42,640 --> 00:21:45,510
+uh any beginner plugins that you would
+like. Uh after that you can get a task.
+
+1092
+00:21:45,510 --> 00:21:45,520
+like. Uh after that you can get a task.
+ 
+
+1093
+00:21:45,520 --> 00:21:48,630
+like. Uh after that you can get a task.
+So that has advanced to-do list filters.
+
+1094
+00:21:48,630 --> 00:21:48,640
+So that has advanced to-do list filters.
+ 
+
+1095
+00:21:48,640 --> 00:21:50,950
+So that has advanced to-do list filters.
+So if you have any to-do lists um you
+
+1096
+00:21:50,950 --> 00:21:50,960
+So if you have any to-do lists um you
+ 
+
+1097
+00:21:50,960 --> 00:21:53,270
+So if you have any to-do lists um you
+know in advanced form you can uh get
+
+1098
+00:21:53,270 --> 00:21:53,280
+know in advanced form you can uh get
+ 
+
+1099
+00:21:53,280 --> 00:21:55,270
+know in advanced form you can uh get
+tasks for that. You can also get
+
+1100
+00:21:55,270 --> 00:21:55,280
+tasks for that. You can also get
+ 
+
+1101
+00:21:55,280 --> 00:21:57,750
+tasks for that. You can also get
+advanced tables which is easy table
+
+1102
+00:21:57,750 --> 00:21:57,760
+advanced tables which is easy table
+ 
+
+1103
+00:21:57,760 --> 00:21:59,430
+advanced tables which is easy table
+formatting. So for the tables you can
+
+1104
+00:21:59,430 --> 00:21:59,440
+formatting. So for the tables you can
+ 
+
+1105
+00:21:59,440 --> 00:22:01,110
+formatting. So for the tables you can
+get that. So what you're going to do is
+
+1106
+00:22:01,110 --> 00:22:01,120
+get that. So what you're going to do is
+ 
+
+1107
+00:22:01,120 --> 00:22:02,950
+get that. So what you're going to do is
+you're just going to install that and
+
+1108
+00:22:02,950 --> 00:22:02,960
+you're just going to install that and
+ 
+
+1109
+00:22:02,960 --> 00:22:05,110
+you're just going to install that and
+then you are going to go back and you
+
+1110
+00:22:05,110 --> 00:22:05,120
+then you are going to go back and you
+ 
+
+1111
+00:22:05,120 --> 00:22:07,029
+then you are going to go back and you
+are going to start using it and you you
+
+1112
+00:22:07,029 --> 00:22:07,039
+are going to start using it and you you
+ 
+
+1113
+00:22:07,039 --> 00:22:09,669
+are going to start using it and you you
+can use uh those views and you can start
+
+1114
+00:22:09,669 --> 00:22:09,679
+can use uh those views and you can start
+ 
+
+1115
+00:22:09,679 --> 00:22:12,630
+can use uh those views and you can start
+incorporating those with your um
+
+1116
+00:22:12,630 --> 00:22:12,640
+incorporating those with your um
+ 
+
+1117
+00:22:12,640 --> 00:22:15,510
+incorporating those with your um
+Obsidian. So those were just some of my
+
+1118
+00:22:15,510 --> 00:22:15,520
+Obsidian. So those were just some of my
+ 
+
+1119
+00:22:15,520 --> 00:22:17,830
+Obsidian. So those were just some of my
+personal uh recommendations for
+
+1120
+00:22:17,830 --> 00:22:17,840
+personal uh recommendations for
+ 
+
+1121
+00:22:17,840 --> 00:22:21,270
+personal uh recommendations for
+beginning uh here at uh Vault. So I'm
+
+1122
+00:22:21,270 --> 00:22:21,280
+beginning uh here at uh Vault. So I'm
+ 
+
+1123
+00:22:21,280 --> 00:22:23,190
+beginning uh here at uh Vault. So I'm
+just going to give you some useful tips
+
+1124
+00:22:23,190 --> 00:22:23,200
+just going to give you some useful tips
+ 
+
+1125
+00:22:23,200 --> 00:22:26,070
+just going to give you some useful tips
+on staying organized at Obsidian. What
+
+1126
+00:22:26,070 --> 00:22:26,080
+on staying organized at Obsidian. What
+ 
+
+1127
+00:22:26,080 --> 00:22:28,230
+on staying organized at Obsidian. What
+you should always be mindful of is to
+
+1128
+00:22:28,230 --> 00:22:28,240
+you should always be mindful of is to
+ 
+
+1129
+00:22:28,240 --> 00:22:30,710
+you should always be mindful of is to
+use short note titles. So all your
+
+1130
+00:22:30,710 --> 00:22:30,720
+use short note titles. So all your
+ 
+
+1131
+00:22:30,720 --> 00:22:32,230
+use short note titles. So all your
+titles you want to keep them short
+
+1132
+00:22:32,230 --> 00:22:32,240
+titles you want to keep them short
+ 
+
+1133
+00:22:32,240 --> 00:22:34,149
+titles you want to keep them short
+because you know there is just limited
+
+1134
+00:22:34,149 --> 00:22:34,159
+because you know there is just limited
+ 
+
+1135
+00:22:34,159 --> 00:22:36,149
+because you know there is just limited
+space and to be more organized you just
+
+1136
+00:22:36,149 --> 00:22:36,159
+space and to be more organized you just
+ 
+
+1137
+00:22:36,159 --> 00:22:37,909
+space and to be more organized you just
+want to use short titles because there
+
+1138
+00:22:37,909 --> 00:22:37,919
+want to use short titles because there
+ 
+
+1139
+00:22:37,919 --> 00:22:40,950
+want to use short titles because there
+are going to be numerous uh a lot of
+
+1140
+00:22:40,950 --> 00:22:40,960
+are going to be numerous uh a lot of
+ 
+
+1141
+00:22:40,960 --> 00:22:43,029
+are going to be numerous uh a lot of
+notes over here and they're going to get
+
+1142
+00:22:43,029 --> 00:22:43,039
+notes over here and they're going to get
+ 
+
+1143
+00:22:43,039 --> 00:22:45,510
+notes over here and they're going to get
+stored. So you just want to uh from the
+
+1144
+00:22:45,510 --> 00:22:45,520
+stored. So you just want to uh from the
+ 
+
+1145
+00:22:45,520 --> 00:22:46,789
+stored. So you just want to uh from the
+very start I mean it looks pretty
+
+1146
+00:22:46,789 --> 00:22:46,799
+very start I mean it looks pretty
+ 
+
+1147
+00:22:46,799 --> 00:22:48,630
+very start I mean it looks pretty
+organized right now. When you have a lot
+
+1148
+00:22:48,630 --> 00:22:48,640
+organized right now. When you have a lot
+ 
+
+1149
+00:22:48,640 --> 00:22:49,830
+organized right now. When you have a lot
+of notes it's not going to be so
+
+1150
+00:22:49,830 --> 00:22:49,840
+of notes it's not going to be so
+ 
+
+1151
+00:22:49,840 --> 00:22:51,990
+of notes it's not going to be so
+organized. So you need to keep the
+
+1152
+00:22:51,990 --> 00:22:52,000
+organized. So you need to keep the
+ 
+
+1153
+00:22:52,000 --> 00:22:53,990
+organized. So you need to keep the
+titles very short. Now, another thing
+
+1154
+00:22:53,990 --> 00:22:54,000
+titles very short. Now, another thing
+ 
+
+1155
+00:22:54,000 --> 00:22:56,230
+titles very short. Now, another thing
+you want to be mindful of is to link the
+
+1156
+00:22:56,230 --> 00:22:56,240
+you want to be mindful of is to link the
+ 
+
+1157
+00:22:56,240 --> 00:22:58,390
+you want to be mindful of is to link the
+notes often. So, you want to make links
+
+1158
+00:22:58,390 --> 00:22:58,400
+notes often. So, you want to make links
+ 
+
+1159
+00:22:58,400 --> 00:23:00,710
+notes often. So, you want to make links
+uh with the notes. Then you also want to
+
+1160
+00:23:00,710 --> 00:23:00,720
+uh with the notes. Then you also want to
+ 
+
+1161
+00:23:00,720 --> 00:23:03,510
+uh with the notes. Then you also want to
+add tags consistently. So, the hashtags
+
+1162
+00:23:03,510 --> 00:23:03,520
+add tags consistently. So, the hashtags
+ 
+
+1163
+00:23:03,520 --> 00:23:05,590
+add tags consistently. So, the hashtags
+that we added, you want to consistently
+
+1164
+00:23:05,590 --> 00:23:05,600
+that we added, you want to consistently
+ 
+
+1165
+00:23:05,600 --> 00:23:07,350
+that we added, you want to consistently
+add them because, you know, this kind of
+
+1166
+00:23:07,350 --> 00:23:07,360
+add them because, you know, this kind of
+ 
+
+1167
+00:23:07,360 --> 00:23:08,710
+add them because, you know, this kind of
+management is really important when you
+
+1168
+00:23:08,710 --> 00:23:08,720
+management is really important when you
+ 
+
+1169
+00:23:08,720 --> 00:23:10,630
+management is really important when you
+have a lot of notes. Then, you need to,
+
+1170
+00:23:10,630 --> 00:23:10,640
+have a lot of notes. Then, you need to,
+ 
+
+1171
+00:23:10,640 --> 00:23:12,390
+have a lot of notes. Then, you need to,
+you know, to be at the top of your game,
+
+1172
+00:23:12,390 --> 00:23:12,400
+you know, to be at the top of your game,
+ 
+
+1173
+00:23:12,400 --> 00:23:13,909
+you know, to be at the top of your game,
+you need to be able to pull out
+
+1174
+00:23:13,909 --> 00:23:13,919
+you need to be able to pull out
+ 
+
+1175
+00:23:13,919 --> 00:23:16,390
+you need to be able to pull out
+whichever notes you need. And with tags,
+
+1176
+00:23:16,390 --> 00:23:16,400
+whichever notes you need. And with tags,
+ 
+
+1177
+00:23:16,400 --> 00:23:18,630
+whichever notes you need. And with tags,
+that would be very helpful. Uh, you also
+
+1178
+00:23:18,630 --> 00:23:18,640
+that would be very helpful. Uh, you also
+ 
+
+1179
+00:23:18,640 --> 00:23:21,830
+that would be very helpful. Uh, you also
+want to create a weekly review note. So,
+
+1180
+00:23:21,830 --> 00:23:21,840
+want to create a weekly review note. So,
+ 
+
+1181
+00:23:21,840 --> 00:23:23,270
+want to create a weekly review note. So,
+you want to review things and you want
+
+1182
+00:23:23,270 --> 00:23:23,280
+you want to review things and you want
+ 
+
+1183
+00:23:23,280 --> 00:23:25,909
+you want to review things and you want
+to create a note for that and go over
+
+1184
+00:23:25,909 --> 00:23:25,919
+to create a note for that and go over
+ 
+
+1185
+00:23:25,919 --> 00:23:28,789
+to create a note for that and go over
+the notes from that week. You also want
+
+1186
+00:23:28,789 --> 00:23:28,799
+the notes from that week. You also want
+ 
+
+1187
+00:23:28,799 --> 00:23:31,750
+the notes from that week. You also want
+to move old notes into an archive folder
+
+1188
+00:23:31,750 --> 00:23:31,760
+to move old notes into an archive folder
+ 
+
+1189
+00:23:31,760 --> 00:23:33,590
+to move old notes into an archive folder
+instead of deleting them. So, don't
+
+1190
+00:23:33,590 --> 00:23:33,600
+instead of deleting them. So, don't
+ 
+
+1191
+00:23:33,600 --> 00:23:36,310
+instead of deleting them. So, don't
+delete notes as they get older. You just
+
+1192
+00:23:36,310 --> 00:23:36,320
+delete notes as they get older. You just
+ 
+
+1193
+00:23:36,320 --> 00:23:39,669
+delete notes as they get older. You just
+want to archive them. You also should
+
+1194
+00:23:39,669 --> 00:23:39,679
+want to archive them. You also should
+ 
+
+1195
+00:23:39,679 --> 00:23:43,270
+want to archive them. You also should
+try to use templates to save time. So,
+
+1196
+00:23:43,270 --> 00:23:43,280
+try to use templates to save time. So,
+ 
+
+1197
+00:23:43,280 --> 00:23:45,909
+try to use templates to save time. So,
+uh like we checked here, uh we did not
+
+1198
+00:23:45,909 --> 00:23:45,919
+uh like we checked here, uh we did not
+ 
+
+1199
+00:23:45,919 --> 00:23:48,549
+uh like we checked here, uh we did not
+have any templates. Um, so, uh,
+
+1200
+00:23:48,549 --> 00:23:48,559
+have any templates. Um, so, uh,
+ 
+
+1201
+00:23:48,559 --> 00:23:49,750
+have any templates. Um, so, uh,
+templates, we did not have any
+
+1202
+00:23:49,750 --> 00:23:49,760
+templates, we did not have any
+ 
+
+1203
+00:23:49,760 --> 00:23:51,510
+templates, we did not have any
+templates, but when you go in here, uh,
+
+1204
+00:23:51,510 --> 00:23:51,520
+templates, but when you go in here, uh,
+ 
+
+1205
+00:23:51,520 --> 00:23:53,830
+templates, but when you go in here, uh,
+there is a way to add in templates that
+
+1206
+00:23:53,830 --> 00:23:53,840
+there is a way to add in templates that
+ 
+
+1207
+00:23:53,840 --> 00:23:55,750
+there is a way to add in templates that
+you want. So, uh, do a little more
+
+1208
+00:23:55,750 --> 00:23:55,760
+you want. So, uh, do a little more
+ 
+
+1209
+00:23:55,760 --> 00:23:57,590
+you want. So, uh, do a little more
+research on that and add templates and
+
+1210
+00:23:57,590 --> 00:23:57,600
+research on that and add templates and
+ 
+
+1211
+00:23:57,600 --> 00:24:00,310
+research on that and add templates and
+make sure to use those templates to save
+
+1212
+00:24:00,310 --> 00:24:00,320
+make sure to use those templates to save
+ 
+
+1213
+00:24:00,320 --> 00:24:03,430
+make sure to use those templates to save
+your time. And lastly, you really want
+
+1214
+00:24:03,430 --> 00:24:03,440
+your time. And lastly, you really want
+ 
+
+1215
+00:24:03,440 --> 00:24:05,909
+your time. And lastly, you really want
+to keep your vault simple. So, expand
+
+1216
+00:24:05,909 --> 00:24:05,919
+to keep your vault simple. So, expand
+ 
+
+1217
+00:24:05,919 --> 00:24:08,390
+to keep your vault simple. So, expand
+only when you need it. You don't uh over
+
+1218
+00:24:08,390 --> 00:24:08,400
+only when you need it. You don't uh over
+ 
+
+1219
+00:24:08,400 --> 00:24:10,630
+only when you need it. You don't uh over
+complicate things uh just because you've
+
+1220
+00:24:10,630 --> 00:24:10,640
+complicate things uh just because you've
+ 
+
+1221
+00:24:10,640 --> 00:24:12,549
+complicate things uh just because you've
+started and this is, you know, you're a
+
+1222
+00:24:12,549 --> 00:24:12,559
+started and this is, you know, you're a
+ 
+
+1223
+00:24:12,559 --> 00:24:14,310
+started and this is, you know, you're a
+beginner. So, don't over complicate
+
+1224
+00:24:14,310 --> 00:24:14,320
+beginner. So, don't over complicate
+ 
+
+1225
+00:24:14,320 --> 00:24:16,710
+beginner. So, don't over complicate
+things. Keep it simple is always best.
+
+1226
+00:24:16,710 --> 00:24:16,720
+things. Keep it simple is always best.
+ 
+
+1227
+00:24:16,720 --> 00:24:18,549
+things. Keep it simple is always best.
+And that is it. That is how to use
+
+1228
+00:24:18,549 --> 00:24:18,559
+And that is it. That is how to use
+ 
+
+1229
+00:24:18,559 --> 00:24:20,789
+And that is it. That is how to use
+Obsidian for notetaking and project
+
+1230
+00:24:20,789 --> 00:24:20,799
+Obsidian for notetaking and project
+ 
+
+1231
+00:24:20,799 --> 00:24:24,320
+Obsidian for notetaking and project
+management in 2025.
+

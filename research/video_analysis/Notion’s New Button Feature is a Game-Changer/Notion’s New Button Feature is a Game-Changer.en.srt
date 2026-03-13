@@ -1,0 +1,8065 @@
+1
+00:00:00,000 --> 00:00:02,270
+
+notion just released a game-changing new
+
+2
+00:00:02,270 --> 00:00:02,280
+notion just released a game-changing new
+ 
+
+3
+00:00:02,280 --> 00:00:04,309
+notion just released a game-changing new
+feature called buttons for the first
+
+4
+00:00:04,309 --> 00:00:04,319
+feature called buttons for the first
+ 
+
+5
+00:00:04,319 --> 00:00:06,170
+feature called buttons for the first
+time we can now create honest to
+
+6
+00:00:06,170 --> 00:00:06,180
+time we can now create honest to
+ 
+
+7
+00:00:06,180 --> 00:00:08,930
+time we can now create honest to
+goodness multi-step automations directly
+
+8
+00:00:08,930 --> 00:00:08,940
+goodness multi-step automations directly
+ 
+
+9
+00:00:08,940 --> 00:00:10,610
+goodness multi-step automations directly
+inside of notion so you can do things
+
+10
+00:00:10,610 --> 00:00:10,620
+inside of notion so you can do things
+ 
+
+11
+00:00:10,620 --> 00:00:12,350
+inside of notion so you can do things
+like clicking a button to track your
+
+12
+00:00:12,350 --> 00:00:12,360
+like clicking a button to track your
+ 
+
+13
+00:00:12,360 --> 00:00:13,970
+like clicking a button to track your
+habits which will automatically change
+
+14
+00:00:13,970 --> 00:00:13,980
+habits which will automatically change
+ 
+
+15
+00:00:13,980 --> 00:00:16,129
+habits which will automatically change
+properties inside of a habits database
+
+16
+00:00:16,129 --> 00:00:16,139
+properties inside of a habits database
+ 
+
+17
+00:00:16,139 --> 00:00:17,510
+properties inside of a habits database
+or you can create a brand new project
+
+18
+00:00:17,510 --> 00:00:17,520
+or you can create a brand new project
+ 
+
+19
+00:00:17,520 --> 00:00:19,250
+or you can create a brand new project
+and click a button to create default
+
+20
+00:00:19,250 --> 00:00:19,260
+and click a button to create default
+ 
+
+21
+00:00:19,260 --> 00:00:21,470
+and click a button to create default
+tasks for that project which have their
+
+22
+00:00:21,470 --> 00:00:21,480
+tasks for that project which have their
+ 
+
+23
+00:00:21,480 --> 00:00:23,390
+tasks for that project which have their
+statuses and their assignees already set
+
+24
+00:00:23,390 --> 00:00:23,400
+statuses and their assignees already set
+ 
+
+25
+00:00:23,400 --> 00:00:25,490
+statuses and their assignees already set
+or you can create a centralized place
+
+26
+00:00:25,490 --> 00:00:25,500
+or you can create a centralized place
+ 
+
+27
+00:00:25,500 --> 00:00:27,769
+or you can create a centralized place
+for spawning new tasks or notes or even
+
+28
+00:00:27,769 --> 00:00:27,779
+for spawning new tasks or notes or even
+ 
+
+29
+00:00:27,779 --> 00:00:29,750
+for spawning new tasks or notes or even
+projects inside of your second brain
+
+30
+00:00:29,750 --> 00:00:29,760
+projects inside of your second brain
+ 
+
+31
+00:00:29,760 --> 00:00:31,189
+projects inside of your second brain
+this feature just started rolling out
+
+32
+00:00:31,189 --> 00:00:31,199
+this feature just started rolling out
+ 
+
+33
+00:00:31,199 --> 00:00:33,590
+this feature just started rolling out
+today I am super excited about it and in
+
+34
+00:00:33,590 --> 00:00:33,600
+today I am super excited about it and in
+ 
+
+35
+00:00:33,600 --> 00:00:34,729
+today I am super excited about it and in
+this video I'm going to teach you
+
+36
+00:00:34,729 --> 00:00:34,739
+this video I'm going to teach you
+ 
+
+37
+00:00:34,739 --> 00:00:36,830
+this video I'm going to teach you
+everything you need to know to master it
+
+38
+00:00:36,830 --> 00:00:36,840
+everything you need to know to master it
+ 
+
+39
+00:00:36,840 --> 00:00:39,170
+everything you need to know to master it
+timestamps as always are right there so
+
+40
+00:00:39,170 --> 00:00:39,180
+timestamps as always are right there so
+ 
+
+41
+00:00:39,180 --> 00:00:40,430
+timestamps as always are right there so
+you can skip around the video to your
+
+42
+00:00:40,430 --> 00:00:40,440
+you can skip around the video to your
+ 
+
+43
+00:00:40,440 --> 00:00:41,810
+you can skip around the video to your
+heart's content but we're going to start
+
+44
+00:00:41,810 --> 00:00:41,820
+heart's content but we're going to start
+ 
+
+45
+00:00:41,820 --> 00:00:43,790
+heart's content but we're going to start
+things out by going a little bit more in
+
+46
+00:00:43,790 --> 00:00:43,800
+things out by going a little bit more in
+ 
+
+47
+00:00:43,800 --> 00:00:45,650
+things out by going a little bit more in
+depth on the examples I just showed you
+
+48
+00:00:45,650 --> 00:00:45,660
+depth on the examples I just showed you
+ 
+
+49
+00:00:45,660 --> 00:00:47,630
+depth on the examples I just showed you
+here in the intro and then I'm going to
+
+50
+00:00:47,630 --> 00:00:47,640
+here in the intro and then I'm going to
+ 
+
+51
+00:00:47,640 --> 00:00:48,830
+here in the intro and then I'm going to
+jump in and teach you how to actually
+
+52
+00:00:48,830 --> 00:00:48,840
+jump in and teach you how to actually
+ 
+
+53
+00:00:48,840 --> 00:00:50,690
+jump in and teach you how to actually
+start creating your own buttons let's
+
+54
+00:00:50,690 --> 00:00:50,700
+start creating your own buttons let's
+ 
+
+55
+00:00:50,700 --> 00:00:53,330
+start creating your own buttons let's
+get started so here I am in a very basic
+
+56
+00:00:53,330 --> 00:00:53,340
+get started so here I am in a very basic
+ 
+
+57
+00:00:53,340 --> 00:00:54,830
+get started so here I am in a very basic
+habit tracker that I've built which I
+
+58
+00:00:54,830 --> 00:00:54,840
+habit tracker that I've built which I
+ 
+
+59
+00:00:54,840 --> 00:00:56,389
+habit tracker that I've built which I
+showed off in the intro here and I just
+
+60
+00:00:56,389 --> 00:00:56,399
+showed off in the intro here and I just
+ 
+
+61
+00:00:56,399 --> 00:00:58,250
+showed off in the intro here and I just
+want to use this to show you just how
+
+62
+00:00:58,250 --> 00:00:58,260
+want to use this to show you just how
+ 
+
+63
+00:00:58,260 --> 00:00:59,630
+want to use this to show you just how
+much buttons can do inside of your
+
+64
+00:00:59,630 --> 00:00:59,640
+much buttons can do inside of your
+ 
+
+65
+00:00:59,640 --> 00:01:02,389
+much buttons can do inside of your
+notion work space so if I click this new
+
+66
+00:01:02,389 --> 00:01:02,399
+notion work space so if I click this new
+ 
+
+67
+00:01:02,399 --> 00:01:03,770
+notion work space so if I click this new
+day button right here and I will
+
+68
+00:01:03,770 --> 00:01:03,780
+day button right here and I will
+ 
+
+69
+00:01:03,780 --> 00:01:05,270
+day button right here and I will
+position the screen so you can see this
+
+70
+00:01:05,270 --> 00:01:05,280
+position the screen so you can see this
+ 
+
+71
+00:01:05,280 --> 00:01:07,490
+position the screen so you can see this
+records database down here I'm going to
+
+72
+00:01:07,490 --> 00:01:07,500
+records database down here I'm going to
+ 
+
+73
+00:01:07,500 --> 00:01:09,890
+records database down here I'm going to
+get a brand new record in this database
+
+74
+00:01:09,890 --> 00:01:09,900
+get a brand new record in this database
+ 
+
+75
+00:01:09,900 --> 00:01:12,710
+get a brand new record in this database
+with its date set and with a title
+
+76
+00:01:12,710 --> 00:01:12,720
+with its date set and with a title
+ 
+
+77
+00:01:12,720 --> 00:01:14,510
+with its date set and with a title
+referencing the day as well but even
+
+78
+00:01:14,510 --> 00:01:14,520
+referencing the day as well but even
+ 
+
+79
+00:01:14,520 --> 00:01:16,789
+referencing the day as well but even
+cooler when I click these buttons you're
+
+80
+00:01:16,789 --> 00:01:16,799
+cooler when I click these buttons you're
+ 
+
+81
+00:01:16,799 --> 00:01:18,950
+cooler when I click these buttons you're
+going to see that the checkbox
+
+82
+00:01:18,950 --> 00:01:18,960
+going to see that the checkbox
+ 
+
+83
+00:01:18,960 --> 00:01:21,469
+going to see that the checkbox
+properties down here actually get
+
+84
+00:01:21,469 --> 00:01:21,479
+properties down here actually get
+ 
+
+85
+00:01:21,479 --> 00:01:23,510
+properties down here actually get
+checked off and then this day score
+
+86
+00:01:23,510 --> 00:01:23,520
+checked off and then this day score
+ 
+
+87
+00:01:23,520 --> 00:01:25,969
+checked off and then this day score
+formula property starts to fill up with
+
+88
+00:01:25,969 --> 00:01:25,979
+formula property starts to fill up with
+ 
+
+89
+00:01:25,979 --> 00:01:28,490
+formula property starts to fill up with
+the score for the day so what exactly is
+
+90
+00:01:28,490 --> 00:01:28,500
+the score for the day so what exactly is
+ 
+
+91
+00:01:28,500 --> 00:01:30,770
+the score for the day so what exactly is
+going on here well if we click the
+
+92
+00:01:30,770 --> 00:01:30,780
+going on here well if we click the
+ 
+
+93
+00:01:30,780 --> 00:01:32,450
+going on here well if we click the
+little gear icon next to this button we
+
+94
+00:01:32,450 --> 00:01:32,460
+little gear icon next to this button we
+ 
+
+95
+00:01:32,460 --> 00:01:34,249
+little gear icon next to this button we
+can see that we've actually got a lot of
+
+96
+00:01:34,249 --> 00:01:34,259
+can see that we've actually got a lot of
+ 
+
+97
+00:01:34,259 --> 00:01:36,950
+can see that we've actually got a lot of
+configuration options for what we can do
+
+98
+00:01:36,950 --> 00:01:36,960
+configuration options for what we can do
+ 
+
+99
+00:01:36,960 --> 00:01:39,050
+configuration options for what we can do
+when the button is clicked in this case
+
+100
+00:01:39,050 --> 00:01:39,060
+when the button is clicked in this case
+ 
+
+101
+00:01:39,060 --> 00:01:41,330
+when the button is clicked in this case
+we are adding a brand new page to a
+
+102
+00:01:41,330 --> 00:01:41,340
+we are adding a brand new page to a
+ 
+
+103
+00:01:41,340 --> 00:01:42,950
+we are adding a brand new page to a
+specific database called habits we're
+
+104
+00:01:42,950 --> 00:01:42,960
+specific database called habits we're
+ 
+
+105
+00:01:42,960 --> 00:01:44,749
+specific database called habits we're
+giving it a name and we are referencing
+
+106
+00:01:44,749 --> 00:01:44,759
+giving it a name and we are referencing
+ 
+
+107
+00:01:44,759 --> 00:01:47,510
+giving it a name and we are referencing
+today with the at today command here and
+
+108
+00:01:47,510 --> 00:01:47,520
+today with the at today command here and
+ 
+
+109
+00:01:47,520 --> 00:01:48,890
+today with the at today command here and
+then we're also setting its date to
+
+110
+00:01:48,890 --> 00:01:48,900
+then we're also setting its date to
+ 
+
+111
+00:01:48,900 --> 00:01:51,469
+then we're also setting its date to
+today which is a dynamic value so when I
+
+112
+00:01:51,469 --> 00:01:51,479
+today which is a dynamic value so when I
+ 
+
+113
+00:01:51,479 --> 00:01:53,810
+today which is a dynamic value so when I
+click this button I get a brand new row
+
+114
+00:01:53,810 --> 00:01:53,820
+click this button I get a brand new row
+ 
+
+115
+00:01:53,820 --> 00:01:56,090
+click this button I get a brand new row
+in this database with those properties
+
+116
+00:01:56,090 --> 00:01:56,100
+in this database with those properties
+ 
+
+117
+00:01:56,100 --> 00:01:58,429
+in this database with those properties
+set likewise with these buttons here
+
+118
+00:01:58,429 --> 00:01:58,439
+set likewise with these buttons here
+ 
+
+119
+00:01:58,439 --> 00:02:00,830
+set likewise with these buttons here
+opening this one up here I am am editing
+
+120
+00:02:00,830 --> 00:02:00,840
+opening this one up here I am am editing
+ 
+
+121
+00:02:00,840 --> 00:02:03,230
+opening this one up here I am am editing
+a page in habits and I can actually set
+
+122
+00:02:03,230 --> 00:02:03,240
+a page in habits and I can actually set
+ 
+
+123
+00:02:03,240 --> 00:02:04,730
+a page in habits and I can actually set
+filters just like I would when I'm
+
+124
+00:02:04,730 --> 00:02:04,740
+filters just like I would when I'm
+ 
+
+125
+00:02:04,740 --> 00:02:06,590
+filters just like I would when I'm
+creating a database view to choose which
+
+126
+00:02:06,590 --> 00:02:06,600
+creating a database view to choose which
+ 
+
+127
+00:02:06,600 --> 00:02:07,910
+creating a database view to choose which
+page I'm going to edit and then I'm
+
+128
+00:02:07,910 --> 00:02:07,920
+page I'm going to edit and then I'm
+ 
+
+129
+00:02:07,920 --> 00:02:09,469
+page I'm going to edit and then I'm
+simply changing the value of this drink
+
+130
+00:02:09,469 --> 00:02:09,479
+simply changing the value of this drink
+ 
+
+131
+00:02:09,479 --> 00:02:12,350
+simply changing the value of this drink
+water checkbox property so when I click
+
+132
+00:02:12,350 --> 00:02:12,360
+water checkbox property so when I click
+ 
+
+133
+00:02:12,360 --> 00:02:14,750
+water checkbox property so when I click
+it any row that matches the filters
+
+134
+00:02:14,750 --> 00:02:14,760
+it any row that matches the filters
+ 
+
+135
+00:02:14,760 --> 00:02:16,490
+it any row that matches the filters
+inside of the button is going to have
+
+136
+00:02:16,490 --> 00:02:16,500
+inside of the button is going to have
+ 
+
+137
+00:02:16,500 --> 00:02:18,710
+inside of the button is going to have
+its property updated pretty cool but
+
+138
+00:02:18,710 --> 00:02:18,720
+its property updated pretty cool but
+ 
+
+139
+00:02:18,720 --> 00:02:21,110
+its property updated pretty cool but
+even cooler is that buttons now will
+
+140
+00:02:21,110 --> 00:02:21,120
+even cooler is that buttons now will
+ 
+
+141
+00:02:21,120 --> 00:02:22,910
+even cooler is that buttons now will
+allow us to actually create default
+
+142
+00:02:22,910 --> 00:02:22,920
+allow us to actually create default
+ 
+
+143
+00:02:22,920 --> 00:02:25,490
+allow us to actually create default
+tasks inside of new projects that we
+
+144
+00:02:25,490 --> 00:02:25,500
+tasks inside of new projects that we
+ 
+
+145
+00:02:25,500 --> 00:02:27,110
+tasks inside of new projects that we
+create inside a notion and this is
+
+146
+00:02:27,110 --> 00:02:27,120
+create inside a notion and this is
+ 
+
+147
+00:02:27,120 --> 00:02:27,830
+create inside a notion and this is
+something that people have been
+
+148
+00:02:27,830 --> 00:02:27,840
+something that people have been
+ 
+
+149
+00:02:27,840 --> 00:02:30,110
+something that people have been
+requesting for a very long time myself
+
+150
+00:02:30,110 --> 00:02:30,120
+requesting for a very long time myself
+ 
+
+151
+00:02:30,120 --> 00:02:31,970
+requesting for a very long time myself
+included I even made a video about it in
+
+152
+00:02:31,970 --> 00:02:31,980
+included I even made a video about it in
+ 
+
+153
+00:02:31,980 --> 00:02:33,890
+included I even made a video about it in
+the past but at this point that video is
+
+154
+00:02:33,890 --> 00:02:33,900
+the past but at this point that video is
+ 
+
+155
+00:02:33,900 --> 00:02:35,809
+the past but at this point that video is
+now obsolete because buttons give us a
+
+156
+00:02:35,809 --> 00:02:35,819
+now obsolete because buttons give us a
+ 
+
+157
+00:02:35,819 --> 00:02:37,670
+now obsolete because buttons give us a
+much better way to do it so to show you
+
+158
+00:02:37,670 --> 00:02:37,680
+much better way to do it so to show you
+ 
+
+159
+00:02:37,680 --> 00:02:39,530
+much better way to do it so to show you
+that I've created this demo content
+
+160
+00:02:39,530 --> 00:02:39,540
+that I've created this demo content
+ 
+
+161
+00:02:39,540 --> 00:02:41,270
+that I've created this demo content
+planning Hub that has modeled sort of
+
+162
+00:02:41,270 --> 00:02:41,280
+planning Hub that has modeled sort of
+ 
+
+163
+00:02:41,280 --> 00:02:43,070
+planning Hub that has modeled sort of
+after my creators companion template
+
+164
+00:02:43,070 --> 00:02:43,080
+after my creators companion template
+ 
+
+165
+00:02:43,080 --> 00:02:45,050
+after my creators companion template
+it's a bit simpler for video purposes
+
+166
+00:02:45,050 --> 00:02:45,060
+it's a bit simpler for video purposes
+ 
+
+167
+00:02:45,060 --> 00:02:47,690
+it's a bit simpler for video purposes
+here and I'm going to go into a YouTube
+
+168
+00:02:47,690 --> 00:02:47,700
+here and I'm going to go into a YouTube
+ 
+
+169
+00:02:47,700 --> 00:02:49,850
+here and I'm going to go into a YouTube
+video and I've actually set up a brand
+
+170
+00:02:49,850 --> 00:02:49,860
+video and I've actually set up a brand
+ 
+
+171
+00:02:49,860 --> 00:02:51,770
+video and I've actually set up a brand
+new YouTube video template that has one
+
+172
+00:02:51,770 --> 00:02:51,780
+new YouTube video template that has one
+ 
+
+173
+00:02:51,780 --> 00:02:53,930
+new YouTube video template that has one
+of these buttons inside of it so by
+
+174
+00:02:53,930 --> 00:02:53,940
+of these buttons inside of it so by
+ 
+
+175
+00:02:53,940 --> 00:02:56,330
+of these buttons inside of it so by
+default we don't have any tasks that are
+
+176
+00:02:56,330 --> 00:02:56,340
+default we don't have any tasks that are
+ 
+
+177
+00:02:56,340 --> 00:02:58,430
+default we don't have any tasks that are
+associated with this project and in the
+
+178
+00:02:58,430 --> 00:02:58,440
+associated with this project and in the
+ 
+
+179
+00:02:58,440 --> 00:02:59,869
+associated with this project and in the
+past we've had to do some really hacky
+
+180
+00:02:59,869 --> 00:02:59,879
+past we've had to do some really hacky
+ 
+
+181
+00:02:59,879 --> 00:03:02,150
+past we've had to do some really hacky
+things to get default tasks into a
+
+182
+00:03:02,150 --> 00:03:02,160
+things to get default tasks into a
+ 
+
+183
+00:03:02,160 --> 00:03:05,030
+things to get default tasks into a
+project like dragging checkbox items up
+
+184
+00:03:05,030 --> 00:03:05,040
+project like dragging checkbox items up
+ 
+
+185
+00:03:05,040 --> 00:03:08,210
+project like dragging checkbox items up
+into the database here but we don't have
+
+186
+00:03:08,210 --> 00:03:08,220
+into the database here but we don't have
+ 
+
+187
+00:03:08,220 --> 00:03:09,770
+into the database here but we don't have
+to do anymore because I now have this
+
+188
+00:03:09,770 --> 00:03:09,780
+to do anymore because I now have this
+ 
+
+189
+00:03:09,780 --> 00:03:12,170
+to do anymore because I now have this
+add default video tasks button and when
+
+190
+00:03:12,170 --> 00:03:12,180
+add default video tasks button and when
+ 
+
+191
+00:03:12,180 --> 00:03:13,190
+add default video tasks button and when
+I click it I'm going to get a
+
+192
+00:03:13,190 --> 00:03:13,200
+I click it I'm going to get a
+ 
+
+193
+00:03:13,200 --> 00:03:14,869
+I click it I'm going to get a
+confirmation window right here I will
+
+194
+00:03:14,869 --> 00:03:14,879
+confirmation window right here I will
+ 
+
+195
+00:03:14,879 --> 00:03:18,350
+confirmation window right here I will
+hit confirm and boom I have all of these
+
+196
+00:03:18,350 --> 00:03:18,360
+hit confirm and boom I have all of these
+ 
+
+197
+00:03:18,360 --> 00:03:20,570
+hit confirm and boom I have all of these
+default tasks if I click into any of
+
+198
+00:03:20,570 --> 00:03:20,580
+default tasks if I click into any of
+ 
+
+199
+00:03:20,580 --> 00:03:22,070
+default tasks if I click into any of
+them we're going to see that they are
+
+200
+00:03:22,070 --> 00:03:22,080
+them we're going to see that they are
+ 
+
+201
+00:03:22,080 --> 00:03:24,470
+them we're going to see that they are
+actually brand new rows in the tasks
+
+202
+00:03:24,470 --> 00:03:24,480
+actually brand new rows in the tasks
+ 
+
+203
+00:03:24,480 --> 00:03:26,509
+actually brand new rows in the tasks
+database and they're related to this
+
+204
+00:03:26,509 --> 00:03:26,519
+database and they're related to this
+ 
+
+205
+00:03:26,519 --> 00:03:29,210
+database and they're related to this
+exact YouTube video they also have an
+
+206
+00:03:29,210 --> 00:03:29,220
+exact YouTube video they also have an
+ 
+
+207
+00:03:29,220 --> 00:03:31,910
+exact YouTube video they also have an
+assignee automatically set and they have
+
+208
+00:03:31,910 --> 00:03:31,920
+assignee automatically set and they have
+ 
+
+209
+00:03:31,920 --> 00:03:33,890
+assignee automatically set and they have
+their status automatically set to get a
+
+210
+00:03:33,890 --> 00:03:33,900
+their status automatically set to get a
+ 
+
+211
+00:03:33,900 --> 00:03:35,210
+their status automatically set to get a
+little bit fancier and I might show this
+
+212
+00:03:35,210 --> 00:03:35,220
+little bit fancier and I might show this
+ 
+
+213
+00:03:35,220 --> 00:03:37,070
+little bit fancier and I might show this
+to you at the end of the video I also
+
+214
+00:03:37,070 --> 00:03:37,080
+to you at the end of the video I also
+ 
+
+215
+00:03:37,080 --> 00:03:39,830
+to you at the end of the video I also
+have a suggested due date which is
+
+216
+00:03:39,830 --> 00:03:39,840
+have a suggested due date which is
+ 
+
+217
+00:03:39,840 --> 00:03:42,470
+have a suggested due date which is
+actually dynamically determined from the
+
+218
+00:03:42,470 --> 00:03:42,480
+actually dynamically determined from the
+ 
+
+219
+00:03:42,480 --> 00:03:44,990
+actually dynamically determined from the
+publish date of the video itself which
+
+220
+00:03:44,990 --> 00:03:45,000
+publish date of the video itself which
+ 
+
+221
+00:03:45,000 --> 00:03:46,729
+publish date of the video itself which
+is really really cool so I'll show you
+
+222
+00:03:46,729 --> 00:03:46,739
+is really really cool so I'll show you
+ 
+
+223
+00:03:46,739 --> 00:03:47,869
+is really really cool so I'll show you
+that near the end of the video because
+
+224
+00:03:47,869 --> 00:03:47,879
+that near the end of the video because
+ 
+
+225
+00:03:47,879 --> 00:03:49,430
+that near the end of the video because
+that gets into some formula stuff and
+
+226
+00:03:49,430 --> 00:03:49,440
+that gets into some formula stuff and
+ 
+
+227
+00:03:49,440 --> 00:03:51,229
+that gets into some formula stuff and
+it's a bit more advanced for now I want
+
+228
+00:03:51,229 --> 00:03:51,239
+it's a bit more advanced for now I want
+ 
+
+229
+00:03:51,239 --> 00:03:53,030
+it's a bit more advanced for now I want
+to show you one other really cool trick
+
+230
+00:03:53,030 --> 00:03:53,040
+to show you one other really cool trick
+ 
+
+231
+00:03:53,040 --> 00:03:55,009
+to show you one other really cool trick
+so here I have the dashboard page for my
+
+232
+00:03:55,009 --> 00:03:55,019
+so here I have the dashboard page for my
+ 
+
+233
+00:03:55,019 --> 00:03:56,390
+so here I have the dashboard page for my
+ultimate brain template which you can
+
+234
+00:03:56,390 --> 00:03:56,400
+ultimate brain template which you can
+ 
+
+235
+00:03:56,400 --> 00:03:57,610
+ultimate brain template which you can
+find over at
+
+236
+00:03:57,610 --> 00:03:57,620
+find over at
+ 
+
+237
+00:03:57,620 --> 00:03:59,089
+find over at
+thomasjfrank.combrain Link in the
+
+238
+00:03:59,089 --> 00:03:59,099
+thomasjfrank.combrain Link in the
+ 
+
+239
+00:03:59,099 --> 00:04:01,190
+thomasjfrank.combrain Link in the
+description down below and this is sort
+
+240
+00:04:01,190 --> 00:04:01,200
+description down below and this is sort
+ 
+
+241
+00:04:01,200 --> 00:04:03,890
+description down below and this is sort
+of a hub for the entire template we have
+
+242
+00:04:03,890 --> 00:04:03,900
+of a hub for the entire template we have
+ 
+
+243
+00:04:03,900 --> 00:04:05,449
+of a hub for the entire template we have
+all of our task manager views we have
+
+244
+00:04:05,449 --> 00:04:05,459
+all of our task manager views we have
+ 
+
+245
+00:04:05,459 --> 00:04:07,910
+all of our task manager views we have
+all of our notes views but still if I
+
+246
+00:04:07,910 --> 00:04:07,920
+all of our notes views but still if I
+ 
+
+247
+00:04:07,920 --> 00:04:09,649
+all of our notes views but still if I
+want to create something I have to go
+
+248
+00:04:09,649 --> 00:04:09,659
+want to create something I have to go
+ 
+
+249
+00:04:09,659 --> 00:04:11,690
+want to create something I have to go
+into a specific toggle or a specific
+
+250
+00:04:11,690 --> 00:04:11,700
+into a specific toggle or a specific
+ 
+
+251
+00:04:11,700 --> 00:04:13,550
+into a specific toggle or a specific
+page like the task manager page or the
+
+252
+00:04:13,550 --> 00:04:13,560
+page like the task manager page or the
+ 
+
+253
+00:04:13,560 --> 00:04:15,830
+page like the task manager page or the
+notes page or the projects page except
+
+254
+00:04:15,830 --> 00:04:15,840
+notes page or the projects page except
+ 
+
+255
+00:04:15,840 --> 00:04:17,449
+notes page or the projects page except
+now I don't have to because I have
+
+256
+00:04:17,449 --> 00:04:17,459
+now I don't have to because I have
+ 
+
+257
+00:04:17,459 --> 00:04:19,129
+now I don't have to because I have
+buttons so here I've created this little
+
+258
+00:04:19,129 --> 00:04:19,139
+buttons so here I've created this little
+ 
+
+259
+00:04:19,139 --> 00:04:21,650
+buttons so here I've created this little
+toggle called create and inside of it I
+
+260
+00:04:21,650 --> 00:04:21,660
+toggle called create and inside of it I
+ 
+
+261
+00:04:21,660 --> 00:04:22,909
+toggle called create and inside of it I
+have all these different buttons that
+
+262
+00:04:22,909 --> 00:04:22,919
+have all these different buttons that
+ 
+
+263
+00:04:22,919 --> 00:04:24,409
+have all these different buttons that
+are going to create new things for me
+
+264
+00:04:24,409 --> 00:04:24,419
+are going to create new things for me
+ 
+
+265
+00:04:24,419 --> 00:04:26,330
+are going to create new things for me
+these will create new tasks these will
+
+266
+00:04:26,330 --> 00:04:26,340
+these will create new tasks these will
+ 
+
+267
+00:04:26,340 --> 00:04:28,370
+these will create new tasks these will
+create new notes new projects new areas
+
+268
+00:04:28,370 --> 00:04:28,380
+create new notes new projects new areas
+ 
+
+269
+00:04:28,380 --> 00:04:30,830
+create new notes new projects new areas
+of resources and this gives me a
+
+270
+00:04:30,830 --> 00:04:30,840
+of resources and this gives me a
+ 
+
+271
+00:04:30,840 --> 00:04:32,930
+of resources and this gives me a
+centralized place that I could sync to
+
+272
+00:04:32,930 --> 00:04:32,940
+centralized place that I could sync to
+ 
+
+273
+00:04:32,940 --> 00:04:34,610
+centralized place that I could sync to
+any part of my workspace so I could see
+
+274
+00:04:34,610 --> 00:04:34,620
+any part of my workspace so I could see
+ 
+
+275
+00:04:34,620 --> 00:04:36,469
+any part of my workspace so I could see
+it basically anywhere I want where I can
+
+276
+00:04:36,469 --> 00:04:36,479
+it basically anywhere I want where I can
+ 
+
+277
+00:04:36,479 --> 00:04:38,030
+it basically anywhere I want where I can
+create something new so if I'm on the go
+
+278
+00:04:38,030 --> 00:04:38,040
+create something new so if I'm on the go
+ 
+
+279
+00:04:38,040 --> 00:04:39,890
+create something new so if I'm on the go
+I would want to have this in my quick
+
+280
+00:04:39,890 --> 00:04:39,900
+I would want to have this in my quick
+ 
+
+281
+00:04:39,900 --> 00:04:41,629
+I would want to have this in my quick
+capture page I can pull it up on my
+
+282
+00:04:41,629 --> 00:04:41,639
+capture page I can pull it up on my
+ 
+
+283
+00:04:41,639 --> 00:04:43,249
+capture page I can pull it up on my
+phone I can hit a button and I can say
+
+284
+00:04:43,249 --> 00:04:43,259
+phone I can hit a button and I can say
+ 
+
+285
+00:04:43,259 --> 00:04:45,170
+phone I can hit a button and I can say
+create a brand new task so let's create
+
+286
+00:04:45,170 --> 00:04:45,180
+create a brand new task so let's create
+ 
+
+287
+00:04:45,180 --> 00:04:47,810
+create a brand new task so let's create
+a task that is due today I click that it
+
+288
+00:04:47,810 --> 00:04:47,820
+a task that is due today I click that it
+ 
+
+289
+00:04:47,820 --> 00:04:50,150
+a task that is due today I click that it
+automatically opens the task I have a
+
+290
+00:04:50,150 --> 00:04:50,160
+automatically opens the task I have a
+ 
+
+291
+00:04:50,160 --> 00:04:51,409
+automatically opens the task I have a
+title here
+
+292
+00:04:51,409 --> 00:04:51,419
+title here
+ 
+
+293
+00:04:51,419 --> 00:04:52,969
+title here
+and I can already see that it's due
+
+294
+00:04:52,969 --> 00:04:52,979
+and I can already see that it's due
+ 
+
+295
+00:04:52,979 --> 00:04:55,670
+and I can already see that it's due
+today and the priority is set as well if
+
+296
+00:04:55,670 --> 00:04:55,680
+today and the priority is set as well if
+ 
+
+297
+00:04:55,680 --> 00:04:57,710
+today and the priority is set as well if
+I want to create a brand new project I
+
+298
+00:04:57,710 --> 00:04:57,720
+I want to create a brand new project I
+ 
+
+299
+00:04:57,720 --> 00:04:59,210
+I want to create a brand new project I
+can do that as well I've got a brand new
+
+300
+00:04:59,210 --> 00:04:59,220
+can do that as well I've got a brand new
+ 
+
+301
+00:04:59,220 --> 00:05:01,430
+can do that as well I've got a brand new
+project I've got a status set and we can
+
+302
+00:05:01,430 --> 00:05:01,440
+project I've got a status set and we can
+ 
+
+303
+00:05:01,440 --> 00:05:03,530
+project I've got a status set and we can
+do that for basically any database that
+
+304
+00:05:03,530 --> 00:05:03,540
+do that for basically any database that
+ 
+
+305
+00:05:03,540 --> 00:05:05,390
+do that for basically any database that
+we're working with inside of notion and
+
+306
+00:05:05,390 --> 00:05:05,400
+we're working with inside of notion and
+ 
+
+307
+00:05:05,400 --> 00:05:07,670
+we're working with inside of notion and
+again the configuration is really not
+
+308
+00:05:07,670 --> 00:05:07,680
+again the configuration is really not
+ 
+
+309
+00:05:07,680 --> 00:05:09,350
+again the configuration is really not
+that complicated it looks pretty similar
+
+310
+00:05:09,350 --> 00:05:09,360
+that complicated it looks pretty similar
+ 
+
+311
+00:05:09,360 --> 00:05:11,330
+that complicated it looks pretty similar
+to what I showed you already we have add
+
+312
+00:05:11,330 --> 00:05:11,340
+to what I showed you already we have add
+ 
+
+313
+00:05:11,340 --> 00:05:13,969
+to what I showed you already we have add
+a new page to a specific database all
+
+314
+00:05:13,969 --> 00:05:13,979
+a new page to a specific database all
+ 
+
+315
+00:05:13,979 --> 00:05:15,830
+a new page to a specific database all
+notes bub in this case and then I'm
+
+316
+00:05:15,830 --> 00:05:15,840
+notes bub in this case and then I'm
+ 
+
+317
+00:05:15,840 --> 00:05:17,749
+notes bub in this case and then I'm
+opening that newly created page in this
+
+318
+00:05:17,749 --> 00:05:17,759
+opening that newly created page in this
+ 
+
+319
+00:05:17,759 --> 00:05:20,330
+opening that newly created page in this
+case in the site Peak View so even at
+
+320
+00:05:20,330 --> 00:05:20,340
+case in the site Peak View so even at
+ 
+
+321
+00:05:20,340 --> 00:05:22,189
+case in the site Peak View so even at
+launch here buttons already have a ton
+
+322
+00:05:22,189 --> 00:05:22,199
+launch here buttons already have a ton
+ 
+
+323
+00:05:22,199 --> 00:05:24,230
+launch here buttons already have a ton
+of use cases a ton of flexibility and I
+
+324
+00:05:24,230 --> 00:05:24,240
+of use cases a ton of flexibility and I
+ 
+
+325
+00:05:24,240 --> 00:05:25,790
+of use cases a ton of flexibility and I
+want to now start teaching you how to
+
+326
+00:05:25,790 --> 00:05:25,800
+want to now start teaching you how to
+ 
+
+327
+00:05:25,800 --> 00:05:27,950
+want to now start teaching you how to
+actually create your own buttons we're
+
+328
+00:05:27,950 --> 00:05:27,960
+actually create your own buttons we're
+ 
+
+329
+00:05:27,960 --> 00:05:29,510
+actually create your own buttons we're
+going to start very very simple and then
+
+330
+00:05:29,510 --> 00:05:29,520
+going to start very very simple and then
+ 
+
+331
+00:05:29,520 --> 00:05:30,529
+going to start very very simple and then
+we're going to go into some more
+
+332
+00:05:30,529 --> 00:05:30,539
+we're going to go into some more
+ 
+
+333
+00:05:30,539 --> 00:05:31,909
+we're going to go into some more
+advanced use cases I'm actually going to
+
+334
+00:05:31,909 --> 00:05:31,919
+advanced use cases I'm actually going to
+ 
+
+335
+00:05:31,919 --> 00:05:33,529
+advanced use cases I'm actually going to
+show you how to build each of the
+
+336
+00:05:33,529 --> 00:05:33,539
+show you how to build each of the
+ 
+
+337
+00:05:33,539 --> 00:05:35,570
+show you how to build each of the
+examples I just showed you and demoed
+
+338
+00:05:35,570 --> 00:05:35,580
+examples I just showed you and demoed
+ 
+
+339
+00:05:35,580 --> 00:05:37,129
+examples I just showed you and demoed
+here but first we're going to start very
+
+340
+00:05:37,129 --> 00:05:37,139
+here but first we're going to start very
+ 
+
+341
+00:05:37,139 --> 00:05:39,110
+here but first we're going to start very
+very simple so I'm on a brand new page
+
+342
+00:05:39,110 --> 00:05:39,120
+very simple so I'm on a brand new page
+ 
+
+343
+00:05:39,120 --> 00:05:40,790
+very simple so I'm on a brand new page
+I'm calling this daily tasks and I want
+
+344
+00:05:40,790 --> 00:05:40,800
+I'm calling this daily tasks and I want
+ 
+
+345
+00:05:40,800 --> 00:05:42,529
+I'm calling this daily tasks and I want
+to create a button that just gives me a
+
+346
+00:05:42,529 --> 00:05:42,539
+to create a button that just gives me a
+ 
+
+347
+00:05:42,539 --> 00:05:44,210
+to create a button that just gives me a
+checklist of items that I want to do
+
+348
+00:05:44,210 --> 00:05:44,220
+checklist of items that I want to do
+ 
+
+349
+00:05:44,220 --> 00:05:46,010
+checklist of items that I want to do
+every single day maybe some habits or
+
+350
+00:05:46,010 --> 00:05:46,020
+every single day maybe some habits or
+ 
+
+351
+00:05:46,020 --> 00:05:48,110
+every single day maybe some habits or
+like my daily chores so to do that I'm
+
+352
+00:05:48,110 --> 00:05:48,120
+like my daily chores so to do that I'm
+ 
+
+353
+00:05:48,120 --> 00:05:49,430
+like my daily chores so to do that I'm
+going to hit the slash button here I'm
+
+354
+00:05:49,430 --> 00:05:49,440
+going to hit the slash button here I'm
+ 
+
+355
+00:05:49,440 --> 00:05:51,350
+going to hit the slash button here I'm
+going to type button and there it is run
+
+356
+00:05:51,350 --> 00:05:51,360
+going to type button and there it is run
+ 
+
+357
+00:05:51,360 --> 00:05:53,870
+going to type button and there it is run
+on custom automations with a click so
+
+358
+00:05:53,870 --> 00:05:53,880
+on custom automations with a click so
+ 
+
+359
+00:05:53,880 --> 00:05:55,070
+on custom automations with a click so
+once I click that I'm going to get this
+
+360
+00:05:55,070 --> 00:05:55,080
+once I click that I'm going to get this
+ 
+
+361
+00:05:55,080 --> 00:05:57,050
+once I click that I'm going to get this
+new interface where first I can name the
+
+362
+00:05:57,050 --> 00:05:57,060
+new interface where first I can name the
+ 
+
+363
+00:05:57,060 --> 00:05:58,790
+new interface where first I can name the
+button and I can give it an emoji or an
+
+364
+00:05:58,790 --> 00:05:58,800
+button and I can give it an emoji or an
+ 
+
+365
+00:05:58,800 --> 00:06:01,370
+button and I can give it an emoji or an
+icon and I can also choose one of five
+
+366
+00:06:01,370 --> 00:06:01,380
+icon and I can also choose one of five
+ 
+
+367
+00:06:01,380 --> 00:06:03,950
+icon and I can also choose one of five
+main actions so I can insert blocks into
+
+368
+00:06:03,950 --> 00:06:03,960
+main actions so I can insert blocks into
+ 
+
+369
+00:06:03,960 --> 00:06:06,350
+main actions so I can insert blocks into
+the current page which is very simple to
+
+370
+00:06:06,350 --> 00:06:06,360
+the current page which is very simple to
+ 
+
+371
+00:06:06,360 --> 00:06:08,150
+the current page which is very simple to
+the predecessor of this feature the
+
+372
+00:06:08,150 --> 00:06:08,160
+the predecessor of this feature the
+ 
+
+373
+00:06:08,160 --> 00:06:09,290
+the predecessor of this feature the
+template button if you've seen that
+
+374
+00:06:09,290 --> 00:06:09,300
+template button if you've seen that
+ 
+
+375
+00:06:09,300 --> 00:06:12,230
+template button if you've seen that
+before but I can also add new pages to
+
+376
+00:06:12,230 --> 00:06:12,240
+before but I can also add new pages to
+ 
+
+377
+00:06:12,240 --> 00:06:15,110
+before but I can also add new pages to
+databases I can edit existing pages and
+
+378
+00:06:15,110 --> 00:06:15,120
+databases I can edit existing pages and
+ 
+
+379
+00:06:15,120 --> 00:06:17,029
+databases I can edit existing pages and
+databases I can show a confirmation
+
+380
+00:06:17,029 --> 00:06:17,039
+databases I can show a confirmation
+ 
+
+381
+00:06:17,039 --> 00:06:19,430
+databases I can show a confirmation
+which will ensure that I actually want
+
+382
+00:06:19,430 --> 00:06:19,440
+which will ensure that I actually want
+ 
+
+383
+00:06:19,440 --> 00:06:20,749
+which will ensure that I actually want
+to click the button and do what it's
+
+384
+00:06:20,749 --> 00:06:20,759
+to click the button and do what it's
+ 
+
+385
+00:06:20,759 --> 00:06:22,490
+to click the button and do what it's
+going to do and then I can actually open
+
+386
+00:06:22,490 --> 00:06:22,500
+going to do and then I can actually open
+ 
+
+387
+00:06:22,500 --> 00:06:24,710
+going to do and then I can actually open
+a new page either the page I just
+
+388
+00:06:24,710 --> 00:06:24,720
+a new page either the page I just
+ 
+
+389
+00:06:24,720 --> 00:06:27,050
+a new page either the page I just
+created if I use this ad page action
+
+390
+00:06:27,050 --> 00:06:27,060
+created if I use this ad page action
+ 
+
+391
+00:06:27,060 --> 00:06:29,570
+created if I use this ad page action
+here or I can open any other page in my
+
+392
+00:06:29,570 --> 00:06:29,580
+here or I can open any other page in my
+ 
+
+393
+00:06:29,580 --> 00:06:31,249
+here or I can open any other page in my
+workspace so there's a lot you can do
+
+394
+00:06:31,249 --> 00:06:31,259
+workspace so there's a lot you can do
+ 
+
+395
+00:06:31,259 --> 00:06:33,110
+workspace so there's a lot you can do
+with these I'm going to choose insert
+
+396
+00:06:33,110 --> 00:06:33,120
+with these I'm going to choose insert
+ 
+
+397
+00:06:33,120 --> 00:06:35,990
+with these I'm going to choose insert
+blocks as my first action here and I'm
+
+398
+00:06:35,990 --> 00:06:36,000
+blocks as my first action here and I'm
+ 
+
+399
+00:06:36,000 --> 00:06:38,029
+blocks as my first action here and I'm
+just going to call this uh daily chores
+
+400
+00:06:38,029 --> 00:06:38,039
+just going to call this uh daily chores
+ 
+
+401
+00:06:38,039 --> 00:06:41,450
+just going to call this uh daily chores
+So within this area it's just another
+
+402
+00:06:41,450 --> 00:06:41,460
+So within this area it's just another
+ 
+
+403
+00:06:41,460 --> 00:06:43,490
+So within this area it's just another
+notion window remember with notion it is
+
+404
+00:06:43,490 --> 00:06:43,500
+notion window remember with notion it is
+ 
+
+405
+00:06:43,500 --> 00:06:45,350
+notion window remember with notion it is
+literally blocks all the way down that
+
+406
+00:06:45,350 --> 00:06:45,360
+literally blocks all the way down that
+ 
+
+407
+00:06:45,360 --> 00:06:47,029
+literally blocks all the way down that
+is what makes up the entire notion
+
+408
+00:06:47,029 --> 00:06:47,039
+is what makes up the entire notion
+ 
+
+409
+00:06:47,039 --> 00:06:49,909
+is what makes up the entire notion
+universe so in here I can do anything up
+
+410
+00:06:49,909 --> 00:06:49,919
+universe so in here I can do anything up
+ 
+
+411
+00:06:49,919 --> 00:06:52,070
+universe so in here I can do anything up
+to and including adding additional
+
+412
+00:06:52,070 --> 00:06:52,080
+to and including adding additional
+ 
+
+413
+00:06:52,080 --> 00:06:54,650
+to and including adding additional
+buttons and getting really crazy and
+
+414
+00:06:54,650 --> 00:06:54,660
+buttons and getting really crazy and
+ 
+
+415
+00:06:54,660 --> 00:06:55,730
+buttons and getting really crazy and
+we're not going to do that I just wanted
+
+416
+00:06:55,730 --> 00:06:55,740
+we're not going to do that I just wanted
+ 
+
+417
+00:06:55,740 --> 00:06:57,409
+we're not going to do that I just wanted
+to show you that you can actually do it
+
+418
+00:06:57,409 --> 00:06:57,419
+to show you that you can actually do it
+ 
+
+419
+00:06:57,419 --> 00:06:59,809
+to show you that you can actually do it
+so I'll go ahead and get rid of that
+
+420
+00:06:59,809 --> 00:06:59,819
+so I'll go ahead and get rid of that
+ 
+
+421
+00:06:59,819 --> 00:07:01,610
+so I'll go ahead and get rid of that
+button if I can here and instead I'm
+
+422
+00:07:01,610 --> 00:07:01,620
+button if I can here and instead I'm
+ 
+
+423
+00:07:01,620 --> 00:07:03,529
+button if I can here and instead I'm
+going to just create a simple list of to
+
+424
+00:07:03,529 --> 00:07:03,539
+going to just create a simple list of to
+ 
+
+425
+00:07:03,539 --> 00:07:05,930
+going to just create a simple list of to
+Do's so back bracket forward bracket
+
+426
+00:07:05,930 --> 00:07:05,940
+Do's so back bracket forward bracket
+ 
+
+427
+00:07:05,940 --> 00:07:07,730
+Do's so back bracket forward bracket
+space is going to give me a to do and
+
+428
+00:07:07,730 --> 00:07:07,740
+space is going to give me a to do and
+ 
+
+429
+00:07:07,740 --> 00:07:09,590
+space is going to give me a to do and
+I'm going to type out some chores here
+
+430
+00:07:09,590 --> 00:07:09,600
+I'm going to type out some chores here
+ 
+
+431
+00:07:09,600 --> 00:07:11,510
+I'm going to type out some chores here
+okay so now I have four chores that I
+
+432
+00:07:11,510 --> 00:07:11,520
+okay so now I have four chores that I
+ 
+
+433
+00:07:11,520 --> 00:07:12,770
+okay so now I have four chores that I
+want to do every single day I will go
+
+434
+00:07:12,770 --> 00:07:12,780
+want to do every single day I will go
+ 
+
+435
+00:07:12,780 --> 00:07:14,629
+want to do every single day I will go
+ahead and hit done here and now when I
+
+436
+00:07:14,629 --> 00:07:14,639
+ahead and hit done here and now when I
+ 
+
+437
+00:07:14,639 --> 00:07:17,090
+ahead and hit done here and now when I
+click this daily chores button boom so
+
+438
+00:07:17,090 --> 00:07:17,100
+click this daily chores button boom so
+ 
+
+439
+00:07:17,100 --> 00:07:18,770
+click this daily chores button boom so
+now we have four brand new to do blocks
+
+440
+00:07:18,770 --> 00:07:18,780
+now we have four brand new to do blocks
+ 
+
+441
+00:07:18,780 --> 00:07:20,809
+now we have four brand new to do blocks
+on our page I could check these off as
+
+442
+00:07:20,809 --> 00:07:20,819
+on our page I could check these off as
+ 
+
+443
+00:07:20,819 --> 00:07:22,370
+on our page I could check these off as
+needed I can delete them at the end of
+
+444
+00:07:22,370 --> 00:07:22,380
+needed I can delete them at the end of
+ 
+
+445
+00:07:22,380 --> 00:07:24,469
+needed I can delete them at the end of
+the day I can create new ones tomorrow
+
+446
+00:07:24,469 --> 00:07:24,479
+the day I can create new ones tomorrow
+ 
+
+447
+00:07:24,479 --> 00:07:27,170
+the day I can create new ones tomorrow
+but where buttons really get powerful is
+
+448
+00:07:27,170 --> 00:07:27,180
+but where buttons really get powerful is
+ 
+
+449
+00:07:27,180 --> 00:07:29,210
+but where buttons really get powerful is
+when we start messing with databases and
+
+450
+00:07:29,210 --> 00:07:29,220
+when we start messing with databases and
+ 
+
+451
+00:07:29,220 --> 00:07:30,950
+when we start messing with databases and
+also when we create multi-step
+
+452
+00:07:30,950 --> 00:07:30,960
+also when we create multi-step
+ 
+
+453
+00:07:30,960 --> 00:07:33,050
+also when we create multi-step
+automations so to show you how to do
+
+454
+00:07:33,050 --> 00:07:33,060
+automations so to show you how to do
+ 
+
+455
+00:07:33,060 --> 00:07:34,969
+automations so to show you how to do
+that I'm going to navigate over to my
+
+456
+00:07:34,969 --> 00:07:34,979
+that I'm going to navigate over to my
+ 
+
+457
+00:07:34,979 --> 00:07:36,890
+that I'm going to navigate over to my
+content planning Hub little demo here
+
+458
+00:07:36,890 --> 00:07:36,900
+content planning Hub little demo here
+ 
+
+459
+00:07:36,900 --> 00:07:40,490
+content planning Hub little demo here
+and we are going to build what I showed
+
+460
+00:07:40,490 --> 00:07:40,500
+and we are going to build what I showed
+ 
+
+461
+00:07:40,500 --> 00:07:43,129
+and we are going to build what I showed
+you here this little default video tasks
+
+462
+00:07:43,129 --> 00:07:43,139
+you here this little default video tasks
+ 
+
+463
+00:07:43,139 --> 00:07:44,749
+you here this little default video tasks
+button where when I create a new project
+
+464
+00:07:44,749 --> 00:07:44,759
+button where when I create a new project
+ 
+
+465
+00:07:44,759 --> 00:07:47,270
+button where when I create a new project
+I can actually spawn a whole list of
+
+466
+00:07:47,270 --> 00:07:47,280
+I can actually spawn a whole list of
+ 
+
+467
+00:07:47,280 --> 00:07:49,070
+I can actually spawn a whole list of
+default tasks that are going to be
+
+468
+00:07:49,070 --> 00:07:49,080
+default tasks that are going to be
+ 
+
+469
+00:07:49,080 --> 00:07:51,290
+default tasks that are going to be
+associated with that project and this is
+
+470
+00:07:51,290 --> 00:07:51,300
+associated with that project and this is
+ 
+
+471
+00:07:51,300 --> 00:07:53,450
+associated with that project and this is
+very useful because if you work in a
+
+472
+00:07:53,450 --> 00:07:53,460
+very useful because if you work in a
+ 
+
+473
+00:07:53,460 --> 00:07:54,770
+very useful because if you work in a
+company or if you go through lots of
+
+474
+00:07:54,770 --> 00:07:54,780
+company or if you go through lots of
+ 
+
+475
+00:07:54,780 --> 00:07:56,930
+company or if you go through lots of
+repeated processes you'll have projects
+
+476
+00:07:56,930 --> 00:07:56,940
+repeated processes you'll have projects
+ 
+
+477
+00:07:56,940 --> 00:07:59,330
+repeated processes you'll have projects
+in your work that often have the same
+
+478
+00:07:59,330 --> 00:07:59,340
+in your work that often have the same
+ 
+
+479
+00:07:59,340 --> 00:08:01,490
+in your work that often have the same
+exact tasks every single time great
+
+480
+00:08:01,490 --> 00:08:01,500
+exact tasks every single time great
+ 
+
+481
+00:08:01,500 --> 00:08:03,710
+exact tasks every single time great
+example here is a YouTube video every
+
+482
+00:08:03,710 --> 00:08:03,720
+example here is a YouTube video every
+ 
+
+483
+00:08:03,720 --> 00:08:05,629
+example here is a YouTube video every
+single time we make a video we need to
+
+484
+00:08:05,629 --> 00:08:05,639
+single time we make a video we need to
+ 
+
+485
+00:08:05,639 --> 00:08:07,430
+single time we make a video we need to
+research and write the video we need to
+
+486
+00:08:07,430 --> 00:08:07,440
+research and write the video we need to
+ 
+
+487
+00:08:07,440 --> 00:08:09,170
+research and write the video we need to
+set a video title we need to film it
+
+488
+00:08:09,170 --> 00:08:09,180
+set a video title we need to film it
+ 
+
+489
+00:08:09,180 --> 00:08:12,350
+set a video title we need to film it
+edit it all that good stuff and we want
+
+490
+00:08:12,350 --> 00:08:12,360
+edit it all that good stuff and we want
+ 
+
+491
+00:08:12,360 --> 00:08:14,390
+edit it all that good stuff and we want
+to have those in our task database and
+
+492
+00:08:14,390 --> 00:08:14,400
+to have those in our task database and
+ 
+
+493
+00:08:14,400 --> 00:08:15,650
+to have those in our task database and
+we want to have each of those tasks
+
+494
+00:08:15,650 --> 00:08:15,660
+we want to have each of those tasks
+ 
+
+495
+00:08:15,660 --> 00:08:18,230
+we want to have each of those tasks
+associated with the video that we are
+
+496
+00:08:18,230 --> 00:08:18,240
+associated with the video that we are
+ 
+
+497
+00:08:18,240 --> 00:08:20,629
+associated with the video that we are
+creating so let's go ahead and actually
+
+498
+00:08:20,629 --> 00:08:20,639
+creating so let's go ahead and actually
+ 
+
+499
+00:08:20,639 --> 00:08:23,029
+creating so let's go ahead and actually
+build that and the way that I'm going to
+
+500
+00:08:23,029 --> 00:08:23,039
+build that and the way that I'm going to
+ 
+
+501
+00:08:23,039 --> 00:08:24,710
+build that and the way that I'm going to
+do that is I'm just going to create a
+
+502
+00:08:24,710 --> 00:08:24,720
+do that is I'm just going to create a
+ 
+
+503
+00:08:24,720 --> 00:08:26,869
+do that is I'm just going to create a
+brand new YouTube video so let me give
+
+504
+00:08:26,869 --> 00:08:26,879
+brand new YouTube video so let me give
+ 
+
+505
+00:08:26,879 --> 00:08:28,969
+brand new YouTube video so let me give
+that a title here
+
+506
+00:08:28,969 --> 00:08:28,979
+that a title here
+ 
+
+507
+00:08:28,979 --> 00:08:31,189
+that a title here
+I'm going to spawn this from the YouTube
+
+508
+00:08:31,189 --> 00:08:31,199
+I'm going to spawn this from the YouTube
+ 
+
+509
+00:08:31,199 --> 00:08:33,769
+I'm going to spawn this from the YouTube
+video template that I've set up here and
+
+510
+00:08:33,769 --> 00:08:33,779
+video template that I've set up here and
+ 
+
+511
+00:08:33,779 --> 00:08:35,750
+video template that I've set up here and
+I've got a whole database tutorial that
+
+512
+00:08:35,750 --> 00:08:35,760
+I've got a whole database tutorial that
+ 
+
+513
+00:08:35,760 --> 00:08:36,829
+I've got a whole database tutorial that
+teaches you how to make database
+
+514
+00:08:36,829 --> 00:08:36,839
+teaches you how to make database
+ 
+
+515
+00:08:36,839 --> 00:08:38,089
+teaches you how to make database
+templates if you're curious about that
+
+516
+00:08:38,089 --> 00:08:38,099
+templates if you're curious about that
+ 
+
+517
+00:08:38,099 --> 00:08:39,889
+templates if you're curious about that
+link is in the description below but
+
+518
+00:08:39,889 --> 00:08:39,899
+link is in the description below but
+ 
+
+519
+00:08:39,899 --> 00:08:41,209
+link is in the description below but
+what I'm going to do here is actually
+
+520
+00:08:41,209 --> 00:08:41,219
+what I'm going to do here is actually
+ 
+
+521
+00:08:41,219 --> 00:08:43,550
+what I'm going to do here is actually
+get rid of this button or at least move
+
+522
+00:08:43,550 --> 00:08:43,560
+get rid of this button or at least move
+ 
+
+523
+00:08:43,560 --> 00:08:44,990
+get rid of this button or at least move
+it to the bottom because we're going to
+
+524
+00:08:44,990 --> 00:08:45,000
+it to the bottom because we're going to
+ 
+
+525
+00:08:45,000 --> 00:08:47,690
+it to the bottom because we're going to
+recreate it so just as a brief overview
+
+526
+00:08:47,690 --> 00:08:47,700
+recreate it so just as a brief overview
+ 
+
+527
+00:08:47,700 --> 00:08:50,150
+recreate it so just as a brief overview
+what we want to do we want to when we
+
+528
+00:08:50,150 --> 00:08:50,160
+what we want to do we want to when we
+ 
+
+529
+00:08:50,160 --> 00:08:52,370
+what we want to do we want to when we
+come in this project hit a button create
+
+530
+00:08:52,370 --> 00:08:52,380
+come in this project hit a button create
+ 
+
+531
+00:08:52,380 --> 00:08:54,889
+come in this project hit a button create
+brand new default tasks in this tasks
+
+532
+00:08:54,889 --> 00:08:54,899
+brand new default tasks in this tasks
+ 
+
+533
+00:08:54,899 --> 00:08:57,170
+brand new default tasks in this tasks
+window here and have them be associated
+
+534
+00:08:57,170 --> 00:08:57,180
+window here and have them be associated
+ 
+
+535
+00:08:57,180 --> 00:08:58,910
+window here and have them be associated
+with the video that we've just created
+
+536
+00:08:58,910 --> 00:08:58,920
+with the video that we've just created
+ 
+
+537
+00:08:58,920 --> 00:09:01,430
+with the video that we've just created
+now if we look at the filters on this
+
+538
+00:09:01,430 --> 00:09:01,440
+now if we look at the filters on this
+ 
+
+539
+00:09:01,440 --> 00:09:04,790
+now if we look at the filters on this
+tasks table here we can see that we are
+
+540
+00:09:04,790 --> 00:09:04,800
+tasks table here we can see that we are
+ 
+
+541
+00:09:04,800 --> 00:09:06,170
+tasks table here we can see that we are
+only going to see tasks where the
+
+542
+00:09:06,170 --> 00:09:06,180
+only going to see tasks where the
+ 
+
+543
+00:09:06,180 --> 00:09:08,810
+only going to see tasks where the
+content relation contains this video so
+
+544
+00:09:08,810 --> 00:09:08,820
+content relation contains this video so
+ 
+
+545
+00:09:08,820 --> 00:09:10,190
+content relation contains this video so
+we don't have to do anything with the
+
+546
+00:09:10,190 --> 00:09:10,200
+we don't have to do anything with the
+ 
+
+547
+00:09:10,200 --> 00:09:11,750
+we don't have to do anything with the
+filters or with this view in particular
+
+548
+00:09:11,750 --> 00:09:11,760
+filters or with this view in particular
+ 
+
+549
+00:09:11,760 --> 00:09:13,790
+filters or with this view in particular
+we just need to create brand new tasks
+
+550
+00:09:13,790 --> 00:09:13,800
+we just need to create brand new tasks
+ 
+
+551
+00:09:13,800 --> 00:09:15,769
+we just need to create brand new tasks
+in our tasks database that are
+
+552
+00:09:15,769 --> 00:09:15,779
+in our tasks database that are
+ 
+
+553
+00:09:15,779 --> 00:09:17,750
+in our tasks database that are
+associated with this video so here's how
+
+554
+00:09:17,750 --> 00:09:17,760
+associated with this video so here's how
+ 
+
+555
+00:09:17,760 --> 00:09:19,670
+associated with this video so here's how
+we can do that with a button first I
+
+556
+00:09:19,670 --> 00:09:19,680
+we can do that with a button first I
+ 
+
+557
+00:09:19,680 --> 00:09:22,250
+we can do that with a button first I
+will hit button one more time create
+
+558
+00:09:22,250 --> 00:09:22,260
+will hit button one more time create
+ 
+
+559
+00:09:22,260 --> 00:09:24,949
+will hit button one more time create
+that button window here let's name it
+
+560
+00:09:24,949 --> 00:09:24,959
+that button window here let's name it
+ 
+
+561
+00:09:24,959 --> 00:09:27,829
+that button window here let's name it
+add or create how about create default
+
+562
+00:09:27,829 --> 00:09:27,839
+add or create how about create default
+ 
+
+563
+00:09:27,839 --> 00:09:30,170
+add or create how about create default
+video tasks I'm going to give it a nice
+
+564
+00:09:30,170 --> 00:09:30,180
+video tasks I'm going to give it a nice
+ 
+
+565
+00:09:30,180 --> 00:09:32,810
+video tasks I'm going to give it a nice
+little icon I think there's a video one
+
+566
+00:09:32,810 --> 00:09:32,820
+little icon I think there's a video one
+ 
+
+567
+00:09:32,820 --> 00:09:35,449
+little icon I think there's a video one
+yeah there we go that seems YouTubey and
+
+568
+00:09:35,449 --> 00:09:35,459
+yeah there we go that seems YouTubey and
+ 
+
+569
+00:09:35,459 --> 00:09:37,430
+yeah there we go that seems YouTubey and
+I can also little bonus tip here I can
+
+570
+00:09:37,430 --> 00:09:37,440
+I can also little bonus tip here I can
+ 
+
+571
+00:09:37,440 --> 00:09:39,650
+I can also little bonus tip here I can
+change the color of the icon I think red
+
+572
+00:09:39,650 --> 00:09:39,660
+change the color of the icon I think red
+ 
+
+573
+00:09:39,660 --> 00:09:41,630
+change the color of the icon I think red
+is going to be more YouTubey so I'll go
+
+574
+00:09:41,630 --> 00:09:41,640
+is going to be more YouTubey so I'll go
+ 
+
+575
+00:09:41,640 --> 00:09:43,850
+is going to be more YouTubey so I'll go
+with that and now I can start adding
+
+576
+00:09:43,850 --> 00:09:43,860
+with that and now I can start adding
+ 
+
+577
+00:09:43,860 --> 00:09:46,430
+with that and now I can start adding
+steps so let's think through exactly
+
+578
+00:09:46,430 --> 00:09:46,440
+steps so let's think through exactly
+ 
+
+579
+00:09:46,440 --> 00:09:48,350
+steps so let's think through exactly
+what we want to do here we want to get a
+
+580
+00:09:48,350 --> 00:09:48,360
+what we want to do here we want to get a
+ 
+
+581
+00:09:48,360 --> 00:09:50,870
+what we want to do here we want to get a
+list of default tasks in this tasks
+
+582
+00:09:50,870 --> 00:09:50,880
+list of default tasks in this tasks
+ 
+
+583
+00:09:50,880 --> 00:09:52,730
+list of default tasks in this tasks
+table which is itself just a linked
+
+584
+00:09:52,730 --> 00:09:52,740
+table which is itself just a linked
+ 
+
+585
+00:09:52,740 --> 00:09:54,889
+table which is itself just a linked
+database that is pulling from our Master
+
+586
+00:09:54,889 --> 00:09:54,899
+database that is pulling from our Master
+ 
+
+587
+00:09:54,899 --> 00:09:57,590
+database that is pulling from our Master
+tasks database which means every task we
+
+588
+00:09:57,590 --> 00:09:57,600
+tasks database which means every task we
+ 
+
+589
+00:09:57,600 --> 00:09:59,870
+tasks database which means every task we
+create is going to be an individual Row
+
+590
+00:09:59,870 --> 00:09:59,880
+create is going to be an individual Row
+ 
+
+591
+00:09:59,880 --> 00:10:01,910
+create is going to be an individual Row
+in that database so we're going to have
+
+592
+00:10:01,910 --> 00:10:01,920
+in that database so we're going to have
+ 
+
+593
+00:10:01,920 --> 00:10:03,889
+in that database so we're going to have
+a step for every single task we want to
+
+594
+00:10:03,889 --> 00:10:03,899
+a step for every single task we want to
+ 
+
+595
+00:10:03,899 --> 00:10:05,810
+a step for every single task we want to
+create and to keep things short I'm just
+
+596
+00:10:05,810 --> 00:10:05,820
+create and to keep things short I'm just
+ 
+
+597
+00:10:05,820 --> 00:10:08,030
+create and to keep things short I'm just
+going to do three tasks in this one even
+
+598
+00:10:08,030 --> 00:10:08,040
+going to do three tasks in this one even
+ 
+
+599
+00:10:08,040 --> 00:10:09,110
+going to do three tasks in this one even
+though we had like seven or eight
+
+600
+00:10:09,110 --> 00:10:09,120
+though we had like seven or eight
+ 
+
+601
+00:10:09,120 --> 00:10:11,210
+though we had like seven or eight
+earlier so first I will add a step here
+
+602
+00:10:11,210 --> 00:10:11,220
+earlier so first I will add a step here
+ 
+
+603
+00:10:11,220 --> 00:10:13,670
+earlier so first I will add a step here
+and I think before we start adding new
+
+604
+00:10:13,670 --> 00:10:13,680
+and I think before we start adding new
+ 
+
+605
+00:10:13,680 --> 00:10:15,650
+and I think before we start adding new
+pages to our databases all willy-nilly I
+
+606
+00:10:15,650 --> 00:10:15,660
+pages to our databases all willy-nilly I
+ 
+
+607
+00:10:15,660 --> 00:10:17,690
+pages to our databases all willy-nilly I
+do want to add a show confirmation step
+
+608
+00:10:17,690 --> 00:10:17,700
+do want to add a show confirmation step
+ 
+
+609
+00:10:17,700 --> 00:10:20,210
+do want to add a show confirmation step
+just to make sure that we actually want
+
+610
+00:10:20,210 --> 00:10:20,220
+just to make sure that we actually want
+ 
+
+611
+00:10:20,220 --> 00:10:22,250
+just to make sure that we actually want
+to do what we're trying to do here
+
+612
+00:10:22,250 --> 00:10:22,260
+to do what we're trying to do here
+ 
+
+613
+00:10:22,260 --> 00:10:23,690
+to do what we're trying to do here
+because it's very easy to accidentally
+
+614
+00:10:23,690 --> 00:10:23,700
+because it's very easy to accidentally
+ 
+
+615
+00:10:23,700 --> 00:10:25,009
+because it's very easy to accidentally
+click one of these buttons If you're not
+
+616
+00:10:25,009 --> 00:10:25,019
+click one of these buttons If you're not
+ 
+
+617
+00:10:25,019 --> 00:10:26,930
+click one of these buttons If you're not
+paying attention so I'll just leave this
+
+618
+00:10:26,930 --> 00:10:26,940
+paying attention so I'll just leave this
+ 
+
+619
+00:10:26,940 --> 00:10:28,610
+paying attention so I'll just leave this
+as default and it's going to show that
+
+620
+00:10:28,610 --> 00:10:28,620
+as default and it's going to show that
+ 
+
+621
+00:10:28,620 --> 00:10:30,290
+as default and it's going to show that
+little total and I'm going to have to
+
+622
+00:10:30,290 --> 00:10:30,300
+little total and I'm going to have to
+ 
+
+623
+00:10:30,300 --> 00:10:31,850
+little total and I'm going to have to
+click continue before the rest of the
+
+624
+00:10:31,850 --> 00:10:31,860
+click continue before the rest of the
+ 
+
+625
+00:10:31,860 --> 00:10:33,889
+click continue before the rest of the
+automation is going to kick off second
+
+626
+00:10:33,889 --> 00:10:33,899
+automation is going to kick off second
+ 
+
+627
+00:10:33,899 --> 00:10:36,350
+automation is going to kick off second
+let's choose add page two and this is
+
+628
+00:10:36,350 --> 00:10:36,360
+let's choose add page two and this is
+ 
+
+629
+00:10:36,360 --> 00:10:38,030
+let's choose add page two and this is
+going to let us add a page to a specific
+
+630
+00:10:38,030 --> 00:10:38,040
+going to let us add a page to a specific
+ 
+
+631
+00:10:38,040 --> 00:10:39,889
+going to let us add a page to a specific
+database so I'm going to select my
+
+632
+00:10:39,889 --> 00:10:39,899
+database so I'm going to select my
+ 
+
+633
+00:10:39,899 --> 00:10:41,570
+database so I'm going to select my
+database here we are going to choose
+
+634
+00:10:41,570 --> 00:10:41,580
+database here we are going to choose
+ 
+
+635
+00:10:41,580 --> 00:10:44,150
+database here we are going to choose
+tasks 2 which is my database here and
+
+636
+00:10:44,150 --> 00:10:44,160
+tasks 2 which is my database here and
+ 
+
+637
+00:10:44,160 --> 00:10:46,130
+tasks 2 which is my database here and
+then we can set all of our properties as
+
+638
+00:10:46,130 --> 00:10:46,140
+then we can set all of our properties as
+ 
+
+639
+00:10:46,140 --> 00:10:47,569
+then we can set all of our properties as
+if we were creating a brand new page in
+
+640
+00:10:47,569 --> 00:10:47,579
+if we were creating a brand new page in
+ 
+
+641
+00:10:47,579 --> 00:10:50,569
+if we were creating a brand new page in
+that database normally so let's say film
+
+642
+00:10:50,569 --> 00:10:50,579
+that database normally so let's say film
+ 
+
+643
+00:10:50,579 --> 00:10:52,610
+that database normally so let's say film
+or script video will be the first one
+
+644
+00:10:52,610 --> 00:10:52,620
+or script video will be the first one
+ 
+
+645
+00:10:52,620 --> 00:10:54,710
+or script video will be the first one
+that we do I'm going to add another
+
+646
+00:10:54,710 --> 00:10:54,720
+that we do I'm going to add another
+ 
+
+647
+00:10:54,720 --> 00:10:56,269
+that we do I'm going to add another
+property here I'm going to choose the
+
+648
+00:10:56,269 --> 00:10:56,279
+property here I'm going to choose the
+ 
+
+649
+00:10:56,279 --> 00:10:58,970
+property here I'm going to choose the
+assignee and I'm going to set that as uh
+
+650
+00:10:58,970 --> 00:10:58,980
+assignee and I'm going to set that as uh
+ 
+
+651
+00:10:58,980 --> 00:11:00,350
+assignee and I'm going to set that as uh
+how about person who clicked the button
+
+652
+00:11:00,350 --> 00:11:00,360
+how about person who clicked the button
+ 
+
+653
+00:11:00,360 --> 00:11:02,210
+how about person who clicked the button
+this is an example of one of the dynamic
+
+654
+00:11:02,210 --> 00:11:02,220
+this is an example of one of the dynamic
+ 
+
+655
+00:11:02,220 --> 00:11:03,949
+this is an example of one of the dynamic
+variables that has come out with the
+
+656
+00:11:03,949 --> 00:11:03,959
+variables that has come out with the
+ 
+
+657
+00:11:03,959 --> 00:11:06,410
+variables that has come out with the
+buttons featured today whoever clicks
+
+658
+00:11:06,410 --> 00:11:06,420
+buttons featured today whoever clicks
+ 
+
+659
+00:11:06,420 --> 00:11:08,810
+buttons featured today whoever clicks
+this button if we choose the from this
+
+660
+00:11:08,810 --> 00:11:08,820
+this button if we choose the from this
+ 
+
+661
+00:11:08,820 --> 00:11:10,430
+this button if we choose the from this
+automation person who clicked this
+
+662
+00:11:10,430 --> 00:11:10,440
+automation person who clicked this
+ 
+
+663
+00:11:10,440 --> 00:11:12,110
+automation person who clicked this
+button feature they're going to be the
+
+664
+00:11:12,110 --> 00:11:12,120
+button feature they're going to be the
+ 
+
+665
+00:11:12,120 --> 00:11:14,569
+button feature they're going to be the
+assignee for that task on this row that
+
+666
+00:11:14,569 --> 00:11:14,579
+assignee for that task on this row that
+ 
+
+667
+00:11:14,579 --> 00:11:16,130
+assignee for that task on this row that
+gets created so I'll go ahead and click
+
+668
+00:11:16,130 --> 00:11:16,140
+gets created so I'll go ahead and click
+ 
+
+669
+00:11:16,140 --> 00:11:18,050
+gets created so I'll go ahead and click
+that here it's going to assign it to me
+
+670
+00:11:18,050 --> 00:11:18,060
+that here it's going to assign it to me
+ 
+
+671
+00:11:18,060 --> 00:11:19,009
+that here it's going to assign it to me
+because I'm going to be the person
+
+672
+00:11:19,009 --> 00:11:19,019
+because I'm going to be the person
+ 
+
+673
+00:11:19,019 --> 00:11:20,150
+because I'm going to be the person
+clicking the button here in the video
+
+674
+00:11:20,150 --> 00:11:20,160
+clicking the button here in the video
+ 
+
+675
+00:11:20,160 --> 00:11:21,889
+clicking the button here in the video
+and I'm going to add another property
+
+676
+00:11:21,889 --> 00:11:21,899
+and I'm going to add another property
+ 
+
+677
+00:11:21,899 --> 00:11:24,170
+and I'm going to add another property
+here let's go with status I want to make
+
+678
+00:11:24,170 --> 00:11:24,180
+here let's go with status I want to make
+ 
+
+679
+00:11:24,180 --> 00:11:26,210
+here let's go with status I want to make
+sure the status is not started and
+
+680
+00:11:26,210 --> 00:11:26,220
+sure the status is not started and
+ 
+
+681
+00:11:26,220 --> 00:11:27,350
+sure the status is not started and
+that's going to be a default for the
+
+682
+00:11:27,350 --> 00:11:27,360
+that's going to be a default for the
+ 
+
+683
+00:11:27,360 --> 00:11:28,550
+that's going to be a default for the
+status property but we're just going to
+
+684
+00:11:28,550 --> 00:11:28,560
+status property but we're just going to
+ 
+
+685
+00:11:28,560 --> 00:11:31,310
+status property but we're just going to
+add here for demonstration purposes and
+
+686
+00:11:31,310 --> 00:11:31,320
+add here for demonstration purposes and
+ 
+
+687
+00:11:31,320 --> 00:11:33,410
+add here for demonstration purposes and
+then the most important one the content
+
+688
+00:11:33,410 --> 00:11:33,420
+then the most important one the content
+ 
+
+689
+00:11:33,420 --> 00:11:36,230
+then the most important one the content
+relation so we're going to select this
+
+690
+00:11:36,230 --> 00:11:36,240
+relation so we're going to select this
+ 
+
+691
+00:11:36,240 --> 00:11:38,870
+relation so we're going to select this
+page and this is an example of another
+
+692
+00:11:38,870 --> 00:11:38,880
+page and this is an example of another
+ 
+
+693
+00:11:38,880 --> 00:11:40,790
+page and this is an example of another
+Dynamic variable and possibly one of the
+
+694
+00:11:40,790 --> 00:11:40,800
+Dynamic variable and possibly one of the
+ 
+
+695
+00:11:40,800 --> 00:11:42,290
+Dynamic variable and possibly one of the
+most useful ones that came out with this
+
+696
+00:11:42,290 --> 00:11:42,300
+most useful ones that came out with this
+ 
+
+697
+00:11:42,300 --> 00:11:44,449
+most useful ones that came out with this
+feature I can choose this page it's
+
+698
+00:11:44,449 --> 00:11:44,459
+feature I can choose this page it's
+ 
+
+699
+00:11:44,459 --> 00:11:47,030
+feature I can choose this page it's
+going to pull this context that we're on
+
+700
+00:11:47,030 --> 00:11:47,040
+going to pull this context that we're on
+ 
+
+701
+00:11:47,040 --> 00:11:49,850
+going to pull this context that we're on
+the page that we're on and use that as
+
+702
+00:11:49,850 --> 00:11:49,860
+the page that we're on and use that as
+ 
+
+703
+00:11:49,860 --> 00:11:52,730
+the page that we're on and use that as
+the actual relation value so I will set
+
+704
+00:11:52,730 --> 00:11:52,740
+the actual relation value so I will set
+ 
+
+705
+00:11:52,740 --> 00:11:55,430
+the actual relation value so I will set
+that there and we have other things here
+
+706
+00:11:55,430 --> 00:11:55,440
+that there and we have other things here
+ 
+
+707
+00:11:55,440 --> 00:11:57,650
+that there and we have other things here
+I'll show you offset near the end of the
+
+708
+00:11:57,650 --> 00:11:57,660
+I'll show you offset near the end of the
+ 
+
+709
+00:11:57,660 --> 00:11:59,210
+I'll show you offset near the end of the
+video that's actually going to help us
+
+710
+00:11:59,210 --> 00:11:59,220
+video that's actually going to help us
+ 
+
+711
+00:11:59,220 --> 00:12:01,850
+video that's actually going to help us
+create some Dynamic dates that are
+
+712
+00:12:01,850 --> 00:12:01,860
+create some Dynamic dates that are
+ 
+
+713
+00:12:01,860 --> 00:12:04,009
+create some Dynamic dates that are
+pulled from the actual publish date of
+
+714
+00:12:04,009 --> 00:12:04,019
+pulled from the actual publish date of
+ 
+
+715
+00:12:04,019 --> 00:12:05,509
+pulled from the actual publish date of
+the video but that's a bit more advanced
+
+716
+00:12:05,509 --> 00:12:05,519
+the video but that's a bit more advanced
+ 
+
+717
+00:12:05,519 --> 00:12:06,829
+the video but that's a bit more advanced
+so stick around to the end if you want
+
+718
+00:12:06,829 --> 00:12:06,839
+so stick around to the end if you want
+ 
+
+719
+00:12:06,839 --> 00:12:08,269
+so stick around to the end if you want
+to see that I'm going to skip it for now
+
+720
+00:12:08,269 --> 00:12:08,279
+to see that I'm going to skip it for now
+ 
+
+721
+00:12:08,279 --> 00:12:11,269
+to see that I'm going to skip it for now
+so we've created that there and because
+
+722
+00:12:11,269 --> 00:12:11,279
+so we've created that there and because
+ 
+
+723
+00:12:11,279 --> 00:12:13,130
+so we've created that there and because
+we're creating default tasks and all
+
+724
+00:12:13,130 --> 00:12:13,140
+we're creating default tasks and all
+ 
+
+725
+00:12:13,140 --> 00:12:14,269
+we're creating default tasks and all
+these settings are going to be pretty
+
+726
+00:12:14,269 --> 00:12:14,279
+these settings are going to be pretty
+ 
+
+727
+00:12:14,279 --> 00:12:16,310
+these settings are going to be pretty
+similar to one another I'm just going to
+
+728
+00:12:16,310 --> 00:12:16,320
+similar to one another I'm just going to
+ 
+
+729
+00:12:16,320 --> 00:12:17,750
+similar to one another I'm just going to
+go ahead and click this three dot here
+
+730
+00:12:17,750 --> 00:12:17,760
+go ahead and click this three dot here
+ 
+
+731
+00:12:17,760 --> 00:12:20,329
+go ahead and click this three dot here
+and duplicate below and then just make
+
+732
+00:12:20,329 --> 00:12:20,339
+and duplicate below and then just make
+ 
+
+733
+00:12:20,339 --> 00:12:23,269
+and duplicate below and then just make
+this film video now for film video I
+
+734
+00:12:23,269 --> 00:12:23,279
+this film video now for film video I
+ 
+
+735
+00:12:23,279 --> 00:12:24,769
+this film video now for film video I
+know that I am the person who has to
+
+736
+00:12:24,769 --> 00:12:24,779
+know that I am the person who has to
+ 
+
+737
+00:12:24,779 --> 00:12:27,050
+know that I am the person who has to
+film it I'm the guy on camera so instead
+
+738
+00:12:27,050 --> 00:12:27,060
+film it I'm the guy on camera so instead
+ 
+
+739
+00:12:27,060 --> 00:12:28,250
+film it I'm the guy on camera so instead
+of person who clicked the button I'm
+
+740
+00:12:28,250 --> 00:12:28,260
+of person who clicked the button I'm
+ 
+
+741
+00:12:28,260 --> 00:12:30,350
+of person who clicked the button I'm
+going to go ahead and change that to
+
+742
+00:12:30,350 --> 00:12:30,360
+going to go ahead and change that to
+ 
+
+743
+00:12:30,360 --> 00:12:32,750
+going to go ahead and change that to
+thomasfrank and the rest of these things
+
+744
+00:12:32,750 --> 00:12:32,760
+thomasfrank and the rest of these things
+ 
+
+745
+00:12:32,760 --> 00:12:34,250
+thomasfrank and the rest of these things
+can actually stay the same we want the
+
+746
+00:12:34,250 --> 00:12:34,260
+can actually stay the same we want the
+ 
+
+747
+00:12:34,260 --> 00:12:35,870
+can actually stay the same we want the
+content to still pull from this page
+
+748
+00:12:35,870 --> 00:12:35,880
+content to still pull from this page
+ 
+
+749
+00:12:35,880 --> 00:12:37,790
+content to still pull from this page
+status will be not started good to go
+
+750
+00:12:37,790 --> 00:12:37,800
+status will be not started good to go
+ 
+
+751
+00:12:37,800 --> 00:12:39,949
+status will be not started good to go
+one more duplication we're going to say
+
+752
+00:12:39,949 --> 00:12:39,959
+one more duplication we're going to say
+ 
+
+753
+00:12:39,959 --> 00:12:42,710
+one more duplication we're going to say
+edit video and that one I'm going to
+
+754
+00:12:42,710 --> 00:12:42,720
+edit video and that one I'm going to
+ 
+
+755
+00:12:42,720 --> 00:12:45,590
+edit video and that one I'm going to
+assign to my editor Tony so instead of
+
+756
+00:12:45,590 --> 00:12:45,600
+assign to my editor Tony so instead of
+ 
+
+757
+00:12:45,600 --> 00:12:48,410
+assign to my editor Tony so instead of
+me being the assignee let's go ahead and
+
+758
+00:12:48,410 --> 00:12:48,420
+me being the assignee let's go ahead and
+ 
+
+759
+00:12:48,420 --> 00:12:51,110
+me being the assignee let's go ahead and
+find Tony Santos there we go and we're
+
+760
+00:12:51,110 --> 00:12:51,120
+find Tony Santos there we go and we're
+ 
+
+761
+00:12:51,120 --> 00:12:53,030
+find Tony Santos there we go and we're
+all good there so we could add
+
+762
+00:12:53,030 --> 00:12:53,040
+all good there so we could add
+ 
+
+763
+00:12:53,040 --> 00:12:55,430
+all good there so we could add
+additional steps here we could say open
+
+764
+00:12:55,430 --> 00:12:55,440
+additional steps here we could say open
+ 
+
+765
+00:12:55,440 --> 00:12:57,290
+additional steps here we could say open
+the page or open a specific page but
+
+766
+00:12:57,290 --> 00:12:57,300
+the page or open a specific page but
+ 
+
+767
+00:12:57,300 --> 00:12:58,730
+the page or open a specific page but
+we're kind of on the page we want to be
+
+768
+00:12:58,730 --> 00:12:58,740
+we're kind of on the page we want to be
+ 
+
+769
+00:12:58,740 --> 00:13:01,069
+we're kind of on the page we want to be
+on so we're pretty much done creating
+
+770
+00:13:01,069 --> 00:13:01,079
+on so we're pretty much done creating
+ 
+
+771
+00:13:01,079 --> 00:13:02,750
+on so we're pretty much done creating
+this button I'm going to hit done now
+
+772
+00:13:02,750 --> 00:13:02,760
+this button I'm going to hit done now
+ 
+
+773
+00:13:02,760 --> 00:13:05,090
+this button I'm going to hit done now
+and then to demonstrate this once more I
+
+774
+00:13:05,090 --> 00:13:05,100
+and then to demonstrate this once more I
+ 
+
+775
+00:13:05,100 --> 00:13:07,490
+and then to demonstrate this once more I
+will click create default video tasks I
+
+776
+00:13:07,490 --> 00:13:07,500
+will click create default video tasks I
+ 
+
+777
+00:13:07,500 --> 00:13:08,990
+will click create default video tasks I
+will continue
+
+778
+00:13:08,990 --> 00:13:09,000
+will continue
+ 
+
+779
+00:13:09,000 --> 00:13:11,509
+will continue
+and there we have our three default
+
+780
+00:13:11,509 --> 00:13:11,519
+and there we have our three default
+ 
+
+781
+00:13:11,519 --> 00:13:14,329
+and there we have our three default
+tasks edit film and script with their
+
+782
+00:13:14,329 --> 00:13:14,339
+tasks edit film and script with their
+ 
+
+783
+00:13:14,339 --> 00:13:16,370
+tasks edit film and script with their
+assignees with their statuses and that
+
+784
+00:13:16,370 --> 00:13:16,380
+assignees with their statuses and that
+ 
+
+785
+00:13:16,380 --> 00:13:17,930
+assignees with their statuses and that
+takes a whole lot of work out of the
+
+786
+00:13:17,930 --> 00:13:17,940
+takes a whole lot of work out of the
+ 
+
+787
+00:13:17,940 --> 00:13:19,730
+takes a whole lot of work out of the
+process of creating default tasks inside
+
+788
+00:13:19,730 --> 00:13:19,740
+process of creating default tasks inside
+ 
+
+789
+00:13:19,740 --> 00:13:22,430
+process of creating default tasks inside
+of projects okay let's go to our third
+
+790
+00:13:22,430 --> 00:13:22,440
+of projects okay let's go to our third
+ 
+
+791
+00:13:22,440 --> 00:13:24,889
+of projects okay let's go to our third
+example here I'm going to go to my copy
+
+792
+00:13:24,889 --> 00:13:24,899
+example here I'm going to go to my copy
+ 
+
+793
+00:13:24,899 --> 00:13:26,569
+example here I'm going to go to my copy
+of ultimate brain and we are going to
+
+794
+00:13:26,569 --> 00:13:26,579
+of ultimate brain and we are going to
+ 
+
+795
+00:13:26,579 --> 00:13:29,329
+of ultimate brain and we are going to
+recreate just a couple of the buttons
+
+796
+00:13:29,329 --> 00:13:29,339
+recreate just a couple of the buttons
+ 
+
+797
+00:13:29,339 --> 00:13:31,250
+recreate just a couple of the buttons
+from this little create area and as a
+
+798
+00:13:31,250 --> 00:13:31,260
+from this little create area and as a
+ 
+
+799
+00:13:31,260 --> 00:13:32,990
+from this little create area and as a
+reminder these are buttons that give us
+
+800
+00:13:32,990 --> 00:13:33,000
+reminder these are buttons that give us
+ 
+
+801
+00:13:33,000 --> 00:13:34,970
+reminder these are buttons that give us
+a single centralized place where we can
+
+802
+00:13:34,970 --> 00:13:34,980
+a single centralized place where we can
+ 
+
+803
+00:13:34,980 --> 00:13:36,889
+a single centralized place where we can
+create brand new tasks new notes new
+
+804
+00:13:36,889 --> 00:13:36,899
+create brand new tasks new notes new
+ 
+
+805
+00:13:36,899 --> 00:13:38,930
+create brand new tasks new notes new
+projects and new areas or resources
+
+806
+00:13:38,930 --> 00:13:38,940
+projects and new areas or resources
+ 
+
+807
+00:13:38,940 --> 00:13:41,030
+projects and new areas or resources
+inside of the second brain if you're I'm
+
+808
+00:13:41,030 --> 00:13:41,040
+inside of the second brain if you're I'm
+ 
+
+809
+00:13:41,040 --> 00:13:42,230
+inside of the second brain if you're I'm
+not familiar with the areas and
+
+810
+00:13:42,230 --> 00:13:42,240
+not familiar with the areas and
+ 
+
+811
+00:13:42,240 --> 00:13:44,090
+not familiar with the areas and
+resources concept I will link to my
+
+812
+00:13:44,090 --> 00:13:44,100
+resources concept I will link to my
+ 
+
+813
+00:13:44,100 --> 00:13:46,670
+resources concept I will link to my
+whole second brain tutorial and overview
+
+814
+00:13:46,670 --> 00:13:46,680
+whole second brain tutorial and overview
+ 
+
+815
+00:13:46,680 --> 00:13:48,290
+whole second brain tutorial and overview
+video in the description check that out
+
+816
+00:13:48,290 --> 00:13:48,300
+video in the description check that out
+ 
+
+817
+00:13:48,300 --> 00:13:49,730
+video in the description check that out
+if you're curious but let's just go
+
+818
+00:13:49,730 --> 00:13:49,740
+if you're curious but let's just go
+ 
+
+819
+00:13:49,740 --> 00:13:51,650
+if you're curious but let's just go
+ahead and recreate a mini version of
+
+820
+00:13:51,650 --> 00:13:51,660
+ahead and recreate a mini version of
+ 
+
+821
+00:13:51,660 --> 00:13:53,210
+ahead and recreate a mini version of
+this again keeping things short and
+
+822
+00:13:53,210 --> 00:13:53,220
+this again keeping things short and
+ 
+
+823
+00:13:53,220 --> 00:13:54,889
+this again keeping things short and
+sweet I'm going to call this once again
+
+824
+00:13:54,889 --> 00:13:54,899
+sweet I'm going to call this once again
+ 
+
+825
+00:13:54,899 --> 00:13:57,590
+sweet I'm going to call this once again
+create so let's open up my little Emoji
+
+826
+00:13:57,590 --> 00:13:57,600
+create so let's open up my little Emoji
+ 
+
+827
+00:13:57,600 --> 00:13:59,569
+create so let's open up my little Emoji
+picker and I'm going to find that brush
+
+828
+00:13:59,569 --> 00:13:59,579
+picker and I'm going to find that brush
+ 
+
+829
+00:13:59,579 --> 00:14:01,490
+picker and I'm going to find that brush
+Emoji actually it isn't on brush maybe
+
+830
+00:14:01,490 --> 00:14:01,500
+Emoji actually it isn't on brush maybe
+ 
+
+831
+00:14:01,500 --> 00:14:04,190
+Emoji actually it isn't on brush maybe
+it's under paint it is indeed so I will
+
+832
+00:14:04,190 --> 00:14:04,200
+it's under paint it is indeed so I will
+ 
+
+833
+00:14:04,200 --> 00:14:06,110
+it's under paint it is indeed so I will
+find my little paint Emoji I guess it's
+
+834
+00:14:06,110 --> 00:14:06,120
+find my little paint Emoji I guess it's
+ 
+
+835
+00:14:06,120 --> 00:14:08,150
+find my little paint Emoji I guess it's
+even different uh than that oh there it
+
+836
+00:14:08,150 --> 00:14:08,160
+even different uh than that oh there it
+ 
+
+837
+00:14:08,160 --> 00:14:10,790
+even different uh than that oh there it
+is and we will bold and hit create and
+
+838
+00:14:10,790 --> 00:14:10,800
+is and we will bold and hit create and
+ 
+
+839
+00:14:10,800 --> 00:14:12,590
+is and we will bold and hit create and
+let's just say create two just so we can
+
+840
+00:14:12,590 --> 00:14:12,600
+let's just say create two just so we can
+ 
+
+841
+00:14:12,600 --> 00:14:14,090
+let's just say create two just so we can
+visually differentiate I'm going to open
+
+842
+00:14:14,090 --> 00:14:14,100
+visually differentiate I'm going to open
+ 
+
+843
+00:14:14,100 --> 00:14:16,610
+visually differentiate I'm going to open
+this up and I'm going to make myself uh
+
+844
+00:14:16,610 --> 00:14:16,620
+this up and I'm going to make myself uh
+ 
+
+845
+00:14:16,620 --> 00:14:19,370
+this up and I'm going to make myself uh
+two columns so slash 2C is going to give
+
+846
+00:14:19,370 --> 00:14:19,380
+two columns so slash 2C is going to give
+ 
+
+847
+00:14:19,380 --> 00:14:21,050
+two columns so slash 2C is going to give
+me two columns I'm going to do slash
+
+848
+00:14:21,050 --> 00:14:21,060
+me two columns I'm going to do slash
+ 
+
+849
+00:14:21,060 --> 00:14:23,090
+me two columns I'm going to do slash
+three for heading three and call that
+
+850
+00:14:23,090 --> 00:14:23,100
+three for heading three and call that
+ 
+
+851
+00:14:23,100 --> 00:14:24,769
+three for heading three and call that
+one tasks and then I'm going to call
+
+852
+00:14:24,769 --> 00:14:24,779
+one tasks and then I'm going to call
+ 
+
+853
+00:14:24,779 --> 00:14:27,190
+one tasks and then I'm going to call
+this one notes so once again slash three
+
+854
+00:14:27,190 --> 00:14:27,200
+this one notes so once again slash three
+ 
+
+855
+00:14:27,200 --> 00:14:30,949
+this one notes so once again slash three
+notes and then I can use three dashes to
+
+856
+00:14:30,949 --> 00:14:30,959
+notes and then I can use three dashes to
+ 
+
+857
+00:14:30,959 --> 00:14:32,569
+notes and then I can use three dashes to
+get that nice little horizontal rule
+
+858
+00:14:32,569 --> 00:14:32,579
+get that nice little horizontal rule
+ 
+
+859
+00:14:32,579 --> 00:14:34,610
+get that nice little horizontal rule
+which is just nice for Aesthetics and
+
+860
+00:14:34,610 --> 00:14:34,620
+which is just nice for Aesthetics and
+ 
+
+861
+00:14:34,620 --> 00:14:37,009
+which is just nice for Aesthetics and
+Visually dividing your workspace up so
+
+862
+00:14:37,009 --> 00:14:37,019
+Visually dividing your workspace up so
+ 
+
+863
+00:14:37,019 --> 00:14:38,210
+Visually dividing your workspace up so
+let's go ahead and create another button
+
+864
+00:14:38,210 --> 00:14:38,220
+let's go ahead and create another button
+ 
+
+865
+00:14:38,220 --> 00:14:40,550
+let's go ahead and create another button
+slash button
+
+866
+00:14:40,550 --> 00:14:40,560
+slash button
+ 
+
+867
+00:14:40,560 --> 00:14:43,009
+slash button
+and uh we're going to actually add a
+
+868
+00:14:43,009 --> 00:14:43,019
+and uh we're going to actually add a
+ 
+
+869
+00:14:43,019 --> 00:14:45,949
+and uh we're going to actually add a
+page to once again for this one let's
+
+870
+00:14:45,949 --> 00:14:45,959
+page to once again for this one let's
+ 
+
+871
+00:14:45,959 --> 00:14:49,370
+page to once again for this one let's
+call it new task due today so I'll show
+
+872
+00:14:49,370 --> 00:14:49,380
+call it new task due today so I'll show
+ 
+
+873
+00:14:49,380 --> 00:14:50,930
+call it new task due today so I'll show
+you how to actually set a dynamic due
+
+874
+00:14:50,930 --> 00:14:50,940
+you how to actually set a dynamic due
+ 
+
+875
+00:14:50,940 --> 00:14:52,189
+you how to actually set a dynamic due
+date
+
+876
+00:14:52,189 --> 00:14:52,199
+date
+ 
+
+877
+00:14:52,199 --> 00:14:56,569
+date
+and let's go with a hammer that seems
+
+878
+00:14:56,569 --> 00:14:56,579
+and let's go with a hammer that seems
+ 
+
+879
+00:14:56,579 --> 00:14:59,030
+and let's go with a hammer that seems
+tasky so we're going to add a page to a
+
+880
+00:14:59,030 --> 00:14:59,040
+tasky so we're going to add a page to a
+ 
+
+881
+00:14:59,040 --> 00:15:01,069
+tasky so we're going to add a page to a
+selected database and it's going to be a
+
+882
+00:15:01,069 --> 00:15:01,079
+selected database and it's going to be a
+ 
+
+883
+00:15:01,079 --> 00:15:03,650
+selected database and it's going to be a
+database called all tasks and I know I
+
+884
+00:15:03,650 --> 00:15:03,660
+database called all tasks and I know I
+ 
+
+885
+00:15:03,660 --> 00:15:07,790
+database called all tasks and I know I
+gave this one the bub prefix or suffix
+
+886
+00:15:07,790 --> 00:15:07,800
+gave this one the bub prefix or suffix
+ 
+
+887
+00:15:07,800 --> 00:15:09,829
+gave this one the bub prefix or suffix
+in particular there it is
+
+888
+00:15:09,829 --> 00:15:09,839
+in particular there it is
+ 
+
+889
+00:15:09,839 --> 00:15:11,990
+in particular there it is
+so I'll select that uh the task I'm
+
+890
+00:15:11,990 --> 00:15:12,000
+so I'll select that uh the task I'm
+ 
+
+891
+00:15:12,000 --> 00:15:13,370
+so I'll select that uh the task I'm
+going to leave Untitled and I will show
+
+892
+00:15:13,370 --> 00:15:13,380
+going to leave Untitled and I will show
+ 
+
+893
+00:15:13,380 --> 00:15:14,750
+going to leave Untitled and I will show
+you how to actually open this page
+
+894
+00:15:14,750 --> 00:15:14,760
+you how to actually open this page
+ 
+
+895
+00:15:14,760 --> 00:15:16,370
+you how to actually open this page
+automatically so you can then name it
+
+896
+00:15:16,370 --> 00:15:16,380
+automatically so you can then name it
+ 
+
+897
+00:15:16,380 --> 00:15:18,110
+automatically so you can then name it
+instead of giving it a name that's
+
+898
+00:15:18,110 --> 00:15:18,120
+instead of giving it a name that's
+ 
+
+899
+00:15:18,120 --> 00:15:19,370
+instead of giving it a name that's
+always going to be the same so we'll
+
+900
+00:15:19,370 --> 00:15:19,380
+always going to be the same so we'll
+ 
+
+901
+00:15:19,380 --> 00:15:20,990
+always going to be the same so we'll
+leave it Untitled here but we are going
+
+902
+00:15:20,990 --> 00:15:21,000
+leave it Untitled here but we are going
+ 
+
+903
+00:15:21,000 --> 00:15:23,090
+leave it Untitled here but we are going
+to add some additional properties that
+
+904
+00:15:23,090 --> 00:15:23,100
+to add some additional properties that
+ 
+
+905
+00:15:23,100 --> 00:15:25,129
+to add some additional properties that
+we want to actually set a default values
+
+906
+00:15:25,129 --> 00:15:25,139
+we want to actually set a default values
+ 
+
+907
+00:15:25,139 --> 00:15:27,470
+we want to actually set a default values
+for So within ultimate brain I know that
+
+908
+00:15:27,470 --> 00:15:27,480
+for So within ultimate brain I know that
+ 
+
+909
+00:15:27,480 --> 00:15:28,910
+for So within ultimate brain I know that
+priorities are always supposed to be
+
+910
+00:15:28,910 --> 00:15:28,920
+priorities are always supposed to be
+ 
+
+911
+00:15:28,920 --> 00:15:30,590
+priorities are always supposed to be
+medium by default I'm going to set that
+
+912
+00:15:30,590 --> 00:15:30,600
+medium by default I'm going to set that
+ 
+
+913
+00:15:30,600 --> 00:15:32,870
+medium by default I'm going to set that
+I know that kanban status is always
+
+914
+00:15:32,870 --> 00:15:32,880
+I know that kanban status is always
+ 
+
+915
+00:15:32,880 --> 00:15:34,490
+I know that kanban status is always
+supposed to be to do by default so I'll
+
+916
+00:15:34,490 --> 00:15:34,500
+supposed to be to do by default so I'll
+ 
+
+917
+00:15:34,500 --> 00:15:37,310
+supposed to be to do by default so I'll
+always set that and because this task is
+
+918
+00:15:37,310 --> 00:15:37,320
+always set that and because this task is
+ 
+
+919
+00:15:37,320 --> 00:15:39,470
+always set that and because this task is
+supposed to be due today we can actually
+
+920
+00:15:39,470 --> 00:15:39,480
+supposed to be due today we can actually
+ 
+
+921
+00:15:39,480 --> 00:15:41,870
+supposed to be due today we can actually
+use one of those Dynamic values so I'm
+
+922
+00:15:41,870 --> 00:15:41,880
+use one of those Dynamic values so I'm
+ 
+
+923
+00:15:41,880 --> 00:15:44,269
+use one of those Dynamic values so I'm
+going to choose my do property here I
+
+924
+00:15:44,269 --> 00:15:44,279
+going to choose my do property here I
+ 
+
+925
+00:15:44,279 --> 00:15:46,009
+going to choose my do property here I
+will go to select and you can see that
+
+926
+00:15:46,009 --> 00:15:46,019
+will go to select and you can see that
+ 
+
+927
+00:15:46,019 --> 00:15:47,750
+will go to select and you can see that
+from this automation inside this menu
+
+928
+00:15:47,750 --> 00:15:47,760
+from this automation inside this menu
+ 
+
+929
+00:15:47,760 --> 00:15:49,730
+from this automation inside this menu
+here I have two Dynamic values I have
+
+930
+00:15:49,730 --> 00:15:49,740
+here I have two Dynamic values I have
+ 
+
+931
+00:15:49,740 --> 00:15:52,189
+here I have two Dynamic values I have
+now and I have today so today is just
+
+932
+00:15:52,189 --> 00:15:52,199
+now and I have today so today is just
+ 
+
+933
+00:15:52,199 --> 00:15:54,110
+now and I have today so today is just
+going to be today's date now is going to
+
+934
+00:15:54,110 --> 00:15:54,120
+going to be today's date now is going to
+ 
+
+935
+00:15:54,120 --> 00:15:55,730
+going to be today's date now is going to
+be pretty much the same thing but also
+
+936
+00:15:55,730 --> 00:15:55,740
+be pretty much the same thing but also
+ 
+
+937
+00:15:55,740 --> 00:15:58,250
+be pretty much the same thing but also
+with the exact time as well and I'm
+
+938
+00:15:58,250 --> 00:15:58,260
+with the exact time as well and I'm
+ 
+
+939
+00:15:58,260 --> 00:15:59,509
+with the exact time as well and I'm
+hoping that in the future we get
+
+940
+00:15:59,509 --> 00:15:59,519
+hoping that in the future we get
+ 
+
+941
+00:15:59,519 --> 00:16:01,610
+hoping that in the future we get
+additional Dynamic options like one week
+
+942
+00:16:01,610 --> 00:16:01,620
+additional Dynamic options like one week
+ 
+
+943
+00:16:01,620 --> 00:16:03,949
+additional Dynamic options like one week
+from now or X days from now or something
+
+944
+00:16:03,949 --> 00:16:03,959
+from now or X days from now or something
+ 
+
+945
+00:16:03,959 --> 00:16:05,810
+from now or X days from now or something
+like that but at least for today here at
+
+946
+00:16:05,810 --> 00:16:05,820
+like that but at least for today here at
+ 
+
+947
+00:16:05,820 --> 00:16:07,310
+like that but at least for today here at
+launch we have these two so I'm going to
+
+948
+00:16:07,310 --> 00:16:07,320
+launch we have these two so I'm going to
+ 
+
+949
+00:16:07,320 --> 00:16:09,710
+launch we have these two so I'm going to
+pick today and that's going to be pre
+
+950
+00:16:09,710 --> 00:16:09,720
+pick today and that's going to be pre
+ 
+
+951
+00:16:09,720 --> 00:16:12,110
+pick today and that's going to be pre
+pretty much good for this button so I'll
+
+952
+00:16:12,110 --> 00:16:12,120
+pretty much good for this button so I'll
+ 
+
+953
+00:16:12,120 --> 00:16:14,389
+pretty much good for this button so I'll
+click done here and oh actually I want
+
+954
+00:16:14,389 --> 00:16:14,399
+click done here and oh actually I want
+ 
+
+955
+00:16:14,399 --> 00:16:15,949
+click done here and oh actually I want
+to open it back up and I want to add one
+
+956
+00:16:15,949 --> 00:16:15,959
+to open it back up and I want to add one
+ 
+
+957
+00:16:15,959 --> 00:16:18,050
+to open it back up and I want to add one
+more step which is going to be open page
+
+958
+00:16:18,050 --> 00:16:18,060
+more step which is going to be open page
+ 
+
+959
+00:16:18,060 --> 00:16:20,569
+more step which is going to be open page
+so I've got two options here I can
+
+960
+00:16:20,569 --> 00:16:20,579
+so I've got two options here I can
+ 
+
+961
+00:16:20,579 --> 00:16:22,129
+so I've got two options here I can
+select the page and I can also select
+
+962
+00:16:22,129 --> 00:16:22,139
+select the page and I can also select
+ 
+
+963
+00:16:22,139 --> 00:16:23,689
+select the page and I can also select
+the style in which I'm going to open it
+
+964
+00:16:23,689 --> 00:16:23,699
+the style in which I'm going to open it
+ 
+
+965
+00:16:23,699 --> 00:16:25,730
+the style in which I'm going to open it
+my favorite way to open pages is side
+
+966
+00:16:25,730 --> 00:16:25,740
+my favorite way to open pages is side
+ 
+
+967
+00:16:25,740 --> 00:16:27,470
+my favorite way to open pages is side
+Peak normally at least so I'm going to
+
+968
+00:16:27,470 --> 00:16:27,480
+Peak normally at least so I'm going to
+ 
+
+969
+00:16:27,480 --> 00:16:29,210
+Peak normally at least so I'm going to
+choose that and then for select page
+
+970
+00:16:29,210 --> 00:16:29,220
+choose that and then for select page
+ 
+
+971
+00:16:29,220 --> 00:16:31,310
+choose that and then for select page
+note that we can choose any existing
+
+972
+00:16:31,310 --> 00:16:31,320
+note that we can choose any existing
+ 
+
+973
+00:16:31,320 --> 00:16:33,170
+note that we can choose any existing
+page inside of our workspace we can
+
+974
+00:16:33,170 --> 00:16:33,180
+page inside of our workspace we can
+ 
+
+975
+00:16:33,180 --> 00:16:34,370
+page inside of our workspace we can
+search just like we would when we're
+
+976
+00:16:34,370 --> 00:16:34,380
+search just like we would when we're
+ 
+
+977
+00:16:34,380 --> 00:16:36,590
+search just like we would when we're
+linking to pages but I'm going to choose
+
+978
+00:16:36,590 --> 00:16:36,600
+linking to pages but I'm going to choose
+ 
+
+979
+00:16:36,600 --> 00:16:38,689
+linking to pages but I'm going to choose
+new page added because I want to open up
+
+980
+00:16:38,689 --> 00:16:38,699
+new page added because I want to open up
+ 
+
+981
+00:16:38,699 --> 00:16:40,610
+new page added because I want to open up
+the brand new task I've created so I can
+
+982
+00:16:40,610 --> 00:16:40,620
+the brand new task I've created so I can
+ 
+
+983
+00:16:40,620 --> 00:16:42,829
+the brand new task I've created so I can
+give it a name I'll hit done and then if
+
+984
+00:16:42,829 --> 00:16:42,839
+give it a name I'll hit done and then if
+ 
+
+985
+00:16:42,839 --> 00:16:45,230
+give it a name I'll hit done and then if
+I create my brand new task boom there it
+
+986
+00:16:45,230 --> 00:16:45,240
+I create my brand new task boom there it
+ 
+
+987
+00:16:45,240 --> 00:16:47,930
+I create my brand new task boom there it
+is we're walking the dog once again and
+
+988
+00:16:47,930 --> 00:16:47,940
+is we're walking the dog once again and
+ 
+
+989
+00:16:47,940 --> 00:16:50,329
+is we're walking the dog once again and
+we can see that it is due today so let's
+
+990
+00:16:50,329 --> 00:16:50,339
+we can see that it is due today so let's
+ 
+
+991
+00:16:50,339 --> 00:16:52,550
+we can see that it is due today so let's
+finish up this example by now creating a
+
+992
+00:16:52,550 --> 00:16:52,560
+finish up this example by now creating a
+ 
+
+993
+00:16:52,560 --> 00:16:55,670
+finish up this example by now creating a
+notes example and I will do slash button
+
+994
+00:16:55,670 --> 00:16:55,680
+notes example and I will do slash button
+ 
+
+995
+00:16:55,680 --> 00:16:58,370
+notes example and I will do slash button
+one more time I'm going to find oh maybe
+
+996
+00:16:58,370 --> 00:16:58,380
+one more time I'm going to find oh maybe
+ 
+
+997
+00:16:58,380 --> 00:17:01,790
+one more time I'm going to find oh maybe
+like a pencil icon that seems very note
+
+998
+00:17:01,790 --> 00:17:01,800
+like a pencil icon that seems very note
+ 
+
+999
+00:17:01,800 --> 00:17:03,949
+like a pencil icon that seems very note
+like and I'm going to say a new inbox
+
+1000
+00:17:03,949 --> 00:17:03,959
+like and I'm going to say a new inbox
+ 
+
+1001
+00:17:03,959 --> 00:17:04,909
+like and I'm going to say a new inbox
+note
+
+1002
+00:17:04,909 --> 00:17:04,919
+note
+ 
+
+1003
+00:17:04,919 --> 00:17:06,710
+note
+and actually instead of inbox note I'm
+
+1004
+00:17:06,710 --> 00:17:06,720
+and actually instead of inbox note I'm
+ 
+
+1005
+00:17:06,720 --> 00:17:08,990
+and actually instead of inbox note I'm
+going to choose new fleeting note
+
+1006
+00:17:08,990 --> 00:17:09,000
+going to choose new fleeting note
+ 
+
+1007
+00:17:09,000 --> 00:17:11,329
+going to choose new fleeting note
+I'll show you a cool little feature from
+
+1008
+00:17:11,329 --> 00:17:11,339
+I'll show you a cool little feature from
+ 
+
+1009
+00:17:11,339 --> 00:17:13,970
+I'll show you a cool little feature from
+Ultimate brain so I'm going to go add
+
+1010
+00:17:13,970 --> 00:17:13,980
+Ultimate brain so I'm going to go add
+ 
+
+1011
+00:17:13,980 --> 00:17:15,890
+Ultimate brain so I'm going to go add
+step just like before we're going to add
+
+1012
+00:17:15,890 --> 00:17:15,900
+step just like before we're going to add
+ 
+
+1013
+00:17:15,900 --> 00:17:18,590
+step just like before we're going to add
+page two we are going to select the
+
+1014
+00:17:18,590 --> 00:17:18,600
+page two we are going to select the
+ 
+
+1015
+00:17:18,600 --> 00:17:21,710
+page two we are going to select the
+database and that is going to be uh all
+
+1016
+00:17:21,710 --> 00:17:21,720
+database and that is going to be uh all
+ 
+
+1017
+00:17:21,720 --> 00:17:24,230
+database and that is going to be uh all
+notes bub
+
+1018
+00:17:24,230 --> 00:17:24,240
+notes bub
+ 
+
+1019
+00:17:24,240 --> 00:17:26,270
+notes bub
+Ley we actually find to the top my
+
+1020
+00:17:26,270 --> 00:17:26,280
+Ley we actually find to the top my
+ 
+
+1021
+00:17:26,280 --> 00:17:28,669
+Ley we actually find to the top my
+screen is not playing nice with me there
+
+1022
+00:17:28,669 --> 00:17:28,679
+screen is not playing nice with me there
+ 
+
+1023
+00:17:28,679 --> 00:17:30,230
+screen is not playing nice with me there
+it is cool once again we're gonna leave
+
+1024
+00:17:30,230 --> 00:17:30,240
+it is cool once again we're gonna leave
+ 
+
+1025
+00:17:30,240 --> 00:17:31,730
+it is cool once again we're gonna leave
+the title blank so we can set it when
+
+1026
+00:17:31,730 --> 00:17:31,740
+the title blank so we can set it when
+ 
+
+1027
+00:17:31,740 --> 00:17:33,350
+the title blank so we can set it when
+the new page is created but we do want
+
+1028
+00:17:33,350 --> 00:17:33,360
+the new page is created but we do want
+ 
+
+1029
+00:17:33,360 --> 00:17:35,150
+the new page is created but we do want
+to add one additional property and that
+
+1030
+00:17:35,150 --> 00:17:35,160
+to add one additional property and that
+ 
+
+1031
+00:17:35,160 --> 00:17:36,710
+to add one additional property and that
+is actually going to be the type
+
+1032
+00:17:36,710 --> 00:17:36,720
+is actually going to be the type
+ 
+
+1033
+00:17:36,720 --> 00:17:39,049
+is actually going to be the type
+property which we will set to this
+
+1034
+00:17:39,049 --> 00:17:39,059
+property which we will set to this
+ 
+
+1035
+00:17:39,059 --> 00:17:41,630
+property which we will set to this
+little fleeting tag here and this is
+
+1036
+00:17:41,630 --> 00:17:41,640
+little fleeting tag here and this is
+ 
+
+1037
+00:17:41,640 --> 00:17:43,310
+little fleeting tag here and this is
+going to ensure that when we create this
+
+1038
+00:17:43,310 --> 00:17:43,320
+going to ensure that when we create this
+ 
+
+1039
+00:17:43,320 --> 00:17:45,230
+going to ensure that when we create this
+brand new page it becomes a fleeting
+
+1040
+00:17:45,230 --> 00:17:45,240
+brand new page it becomes a fleeting
+ 
+
+1041
+00:17:45,240 --> 00:17:46,490
+brand new page it becomes a fleeting
+note which will make sure that it's
+
+1042
+00:17:46,490 --> 00:17:46,500
+note which will make sure that it's
+ 
+
+1043
+00:17:46,500 --> 00:17:48,289
+note which will make sure that it's
+archived later on when we don't need it
+
+1044
+00:17:48,289 --> 00:17:48,299
+archived later on when we don't need it
+ 
+
+1045
+00:17:48,299 --> 00:17:50,630
+archived later on when we don't need it
+anymore finally We'll add one more step
+
+1046
+00:17:50,630 --> 00:17:50,640
+anymore finally We'll add one more step
+ 
+
+1047
+00:17:50,640 --> 00:17:52,430
+anymore finally We'll add one more step
+we are going to open the page that we
+
+1048
+00:17:52,430 --> 00:17:52,440
+we are going to open the page that we
+ 
+
+1049
+00:17:52,440 --> 00:17:54,529
+we are going to open the page that we
+just created so again we'll do new page
+
+1050
+00:17:54,529 --> 00:17:54,539
+just created so again we'll do new page
+ 
+
+1051
+00:17:54,539 --> 00:17:56,570
+just created so again we'll do new page
+added from this automation I'm going to
+
+1052
+00:17:56,570 --> 00:17:56,580
+added from this automation I'm going to
+ 
+
+1053
+00:17:56,580 --> 00:17:58,190
+added from this automation I'm going to
+set this to side Peak because again that
+
+1054
+00:17:58,190 --> 00:17:58,200
+set this to side Peak because again that
+ 
+
+1055
+00:17:58,200 --> 00:18:00,409
+set this to side Peak because again that
+is my favorite and I will hit done and
+
+1056
+00:18:00,409 --> 00:18:00,419
+is my favorite and I will hit done and
+ 
+
+1057
+00:18:00,419 --> 00:18:02,390
+is my favorite and I will hit done and
+create myself a brand new fleeting note
+
+1058
+00:18:02,390 --> 00:18:02,400
+create myself a brand new fleeting note
+ 
+
+1059
+00:18:02,400 --> 00:18:04,490
+create myself a brand new fleeting note
+and let's just call this uh how about
+
+1060
+00:18:04,490 --> 00:18:04,500
+and let's just call this uh how about
+ 
+
+1061
+00:18:04,500 --> 00:18:06,830
+and let's just call this uh how about
+Christmas gifts this is a type of note
+
+1062
+00:18:06,830 --> 00:18:06,840
+Christmas gifts this is a type of note
+ 
+
+1063
+00:18:06,840 --> 00:18:08,270
+Christmas gifts this is a type of note
+that is only going to be relevant for a
+
+1064
+00:18:08,270 --> 00:18:08,280
+that is only going to be relevant for a
+ 
+
+1065
+00:18:08,280 --> 00:18:10,250
+that is only going to be relevant for a
+temporary period of time it's not going
+
+1066
+00:18:10,250 --> 00:18:10,260
+temporary period of time it's not going
+ 
+
+1067
+00:18:10,260 --> 00:18:12,770
+temporary period of time it's not going
+to be always nice to have in your inbox
+
+1068
+00:18:12,770 --> 00:18:12,780
+to be always nice to have in your inbox
+ 
+
+1069
+00:18:12,780 --> 00:18:14,630
+to be always nice to have in your inbox
+or in your areas things like that so I
+
+1070
+00:18:14,630 --> 00:18:14,640
+or in your areas things like that so I
+ 
+
+1071
+00:18:14,640 --> 00:18:16,610
+or in your areas things like that so I
+want it to be fleeting and because we
+
+1072
+00:18:16,610 --> 00:18:16,620
+want it to be fleeting and because we
+ 
+
+1073
+00:18:16,620 --> 00:18:18,289
+want it to be fleeting and because we
+set the type is fleeting in our button
+
+1074
+00:18:18,289 --> 00:18:18,299
+set the type is fleeting in our button
+ 
+
+1075
+00:18:18,299 --> 00:18:20,510
+set the type is fleeting in our button
+there it is it is fleeting and just to
+
+1076
+00:18:20,510 --> 00:18:20,520
+there it is it is fleeting and just to
+ 
+
+1077
+00:18:20,520 --> 00:18:21,830
+there it is it is fleeting and just to
+show you kind of how ultimate brain
+
+1078
+00:18:21,830 --> 00:18:21,840
+show you kind of how ultimate brain
+ 
+
+1079
+00:18:21,840 --> 00:18:23,570
+show you kind of how ultimate brain
+works I can come down to this fleeting
+
+1080
+00:18:23,570 --> 00:18:23,580
+works I can come down to this fleeting
+ 
+
+1081
+00:18:23,580 --> 00:18:25,730
+works I can come down to this fleeting
+notes toggle here and now I see
+
+1082
+00:18:25,730 --> 00:18:25,740
+notes toggle here and now I see
+ 
+
+1083
+00:18:25,740 --> 00:18:28,430
+notes toggle here and now I see
+Christmas gifts here but after 30 days
+
+1084
+00:18:28,430 --> 00:18:28,440
+Christmas gifts here but after 30 days
+ 
+
+1085
+00:18:28,440 --> 00:18:29,810
+Christmas gifts here but after 30 days
+it's going to automatically archive
+
+1086
+00:18:29,810 --> 00:18:29,820
+it's going to automatically archive
+ 
+
+1087
+00:18:29,820 --> 00:18:31,549
+it's going to automatically archive
+itself that's kind of the point of a
+
+1088
+00:18:31,549 --> 00:18:31,559
+itself that's kind of the point of a
+ 
+
+1089
+00:18:31,559 --> 00:18:33,529
+itself that's kind of the point of a
+fleeting note as opposed to what I'd
+
+1090
+00:18:33,529 --> 00:18:33,539
+fleeting note as opposed to what I'd
+ 
+
+1091
+00:18:33,539 --> 00:18:35,090
+fleeting note as opposed to what I'd
+call a permanent note that you'd want to
+
+1092
+00:18:35,090 --> 00:18:35,100
+call a permanent note that you'd want to
+ 
+
+1093
+00:18:35,100 --> 00:18:36,830
+call a permanent note that you'd want to
+actually put into a resource or an area
+
+1094
+00:18:36,830 --> 00:18:36,840
+actually put into a resource or an area
+ 
+
+1095
+00:18:36,840 --> 00:18:38,570
+actually put into a resource or an area
+or maybe in your favorites list like
+
+1096
+00:18:38,570 --> 00:18:38,580
+or maybe in your favorites list like
+ 
+
+1097
+00:18:38,580 --> 00:18:40,970
+or maybe in your favorites list like
+that okay so far we have added new pages
+
+1098
+00:18:40,970 --> 00:18:40,980
+that okay so far we have added new pages
+ 
+
+1099
+00:18:40,980 --> 00:18:42,770
+that okay so far we have added new pages
+to a database we have shown
+
+1100
+00:18:42,770 --> 00:18:42,780
+to a database we have shown
+ 
+
+1101
+00:18:42,780 --> 00:18:44,750
+to a database we have shown
+confirmations we have gone to new pages
+
+1102
+00:18:44,750 --> 00:18:44,760
+confirmations we have gone to new pages
+ 
+
+1103
+00:18:44,760 --> 00:18:46,250
+confirmations we have gone to new pages
+the one thing I haven't showed you yet
+
+1104
+00:18:46,250 --> 00:18:46,260
+the one thing I haven't showed you yet
+ 
+
+1105
+00:18:46,260 --> 00:18:48,770
+the one thing I haven't showed you yet
+is how to edit existing pages that are
+
+1106
+00:18:48,770 --> 00:18:48,780
+is how to edit existing pages that are
+ 
+
+1107
+00:18:48,780 --> 00:18:50,270
+is how to edit existing pages that are
+already in a database and that is
+
+1108
+00:18:50,270 --> 00:18:50,280
+already in a database and that is
+ 
+
+1109
+00:18:50,280 --> 00:18:52,070
+already in a database and that is
+exactly what we are doing with these
+
+1110
+00:18:52,070 --> 00:18:52,080
+exactly what we are doing with these
+ 
+
+1111
+00:18:52,080 --> 00:18:54,409
+exactly what we are doing with these
+buttons here in the habit tracker so I'm
+
+1112
+00:18:54,409 --> 00:18:54,419
+buttons here in the habit tracker so I'm
+ 
+
+1113
+00:18:54,419 --> 00:18:56,029
+buttons here in the habit tracker so I'm
+going to recreate one of these for you
+
+1114
+00:18:56,029 --> 00:18:56,039
+going to recreate one of these for you
+ 
+
+1115
+00:18:56,039 --> 00:18:57,409
+going to recreate one of these for you
+and I'll show you how it actually
+
+1116
+00:18:57,409 --> 00:18:57,419
+and I'll show you how it actually
+ 
+
+1117
+00:18:57,419 --> 00:18:59,810
+and I'll show you how it actually
+affects a new page inside of a database
+
+1118
+00:18:59,810 --> 00:18:59,820
+affects a new page inside of a database
+ 
+
+1119
+00:18:59,820 --> 00:19:01,730
+affects a new page inside of a database
+so the first thing I'm going to do is go
+
+1120
+00:19:01,730 --> 00:19:01,740
+so the first thing I'm going to do is go
+ 
+
+1121
+00:19:01,740 --> 00:19:03,710
+so the first thing I'm going to do is go
+ahead and delete this record because we
+
+1122
+00:19:03,710 --> 00:19:03,720
+ahead and delete this record because we
+ 
+
+1123
+00:19:03,720 --> 00:19:05,570
+ahead and delete this record because we
+already have all these values checked so
+
+1124
+00:19:05,570 --> 00:19:05,580
+already have all these values checked so
+ 
+
+1125
+00:19:05,580 --> 00:19:07,010
+already have all these values checked so
+I'm going to delete that and then we're
+
+1126
+00:19:07,010 --> 00:19:07,020
+I'm going to delete that and then we're
+ 
+
+1127
+00:19:07,020 --> 00:19:08,930
+I'm going to delete that and then we're
+going to walk through one more time all
+
+1128
+00:19:08,930 --> 00:19:08,940
+going to walk through one more time all
+ 
+
+1129
+00:19:08,940 --> 00:19:10,549
+going to walk through one more time all
+the configurations in this new day
+
+1130
+00:19:10,549 --> 00:19:10,559
+the configurations in this new day
+ 
+
+1131
+00:19:10,559 --> 00:19:12,590
+the configurations in this new day
+button which is actually just one step
+
+1132
+00:19:12,590 --> 00:19:12,600
+button which is actually just one step
+ 
+
+1133
+00:19:12,600 --> 00:19:15,049
+button which is actually just one step
+we have ADD page to our habits database
+
+1134
+00:19:15,049 --> 00:19:15,059
+we have ADD page to our habits database
+ 
+
+1135
+00:19:15,059 --> 00:19:17,270
+we have ADD page to our habits database
+we're calling it at today we are setting
+
+1136
+00:19:17,270 --> 00:19:17,280
+we're calling it at today we are setting
+ 
+
+1137
+00:19:17,280 --> 00:19:18,950
+we're calling it at today we are setting
+its date at today that's one of those
+
+1138
+00:19:18,950 --> 00:19:18,960
+its date at today that's one of those
+ 
+
+1139
+00:19:18,960 --> 00:19:20,690
+its date at today that's one of those
+two Dynamic date values we have
+
+1140
+00:19:20,690 --> 00:19:20,700
+two Dynamic date values we have
+ 
+
+1141
+00:19:20,700 --> 00:19:22,850
+two Dynamic date values we have
+available to us right now so when I
+
+1142
+00:19:22,850 --> 00:19:22,860
+available to us right now so when I
+ 
+
+1143
+00:19:22,860 --> 00:19:24,830
+available to us right now so when I
+click this I'm going to get a brand new
+
+1144
+00:19:24,830 --> 00:19:24,840
+click this I'm going to get a brand new
+ 
+
+1145
+00:19:24,840 --> 00:19:27,230
+click this I'm going to get a brand new
+record inside of my database which I
+
+1146
+00:19:27,230 --> 00:19:27,240
+record inside of my database which I
+ 
+
+1147
+00:19:27,240 --> 00:19:29,150
+record inside of my database which I
+will use these buttons to actually edit
+
+1148
+00:19:29,150 --> 00:19:29,160
+will use these buttons to actually edit
+ 
+
+1149
+00:19:29,160 --> 00:19:31,549
+will use these buttons to actually edit
+later on so let's go ahead and delete
+
+1150
+00:19:31,549 --> 00:19:31,559
+later on so let's go ahead and delete
+ 
+
+1151
+00:19:31,559 --> 00:19:34,070
+later on so let's go ahead and delete
+this in bed by 10 button right here and
+
+1152
+00:19:34,070 --> 00:19:34,080
+this in bed by 10 button right here and
+ 
+
+1153
+00:19:34,080 --> 00:19:35,810
+this in bed by 10 button right here and
+we are going to recreate it but before
+
+1154
+00:19:35,810 --> 00:19:35,820
+we are going to recreate it but before
+ 
+
+1155
+00:19:35,820 --> 00:19:37,490
+we are going to recreate it but before
+we do that let's open up another one
+
+1156
+00:19:37,490 --> 00:19:37,500
+we do that let's open up another one
+ 
+
+1157
+00:19:37,500 --> 00:19:39,590
+we do that let's open up another one
+walk 30 minutes and let's see exactly
+
+1158
+00:19:39,590 --> 00:19:39,600
+walk 30 minutes and let's see exactly
+ 
+
+1159
+00:19:39,600 --> 00:19:41,630
+walk 30 minutes and let's see exactly
+what's in here again it's just one step
+
+1160
+00:19:41,630 --> 00:19:41,640
+what's in here again it's just one step
+ 
+
+1161
+00:19:41,640 --> 00:19:43,909
+what's in here again it's just one step
+we are editing a page in the habits
+
+1162
+00:19:43,909 --> 00:19:43,919
+we are editing a page in the habits
+ 
+
+1163
+00:19:43,919 --> 00:19:45,590
+we are editing a page in the habits
+database and we can choose any database
+
+1164
+00:19:45,590 --> 00:19:45,600
+database and we can choose any database
+ 
+
+1165
+00:19:45,600 --> 00:19:48,470
+database and we can choose any database
+we want and how we're editing the pages
+
+1166
+00:19:48,470 --> 00:19:48,480
+we want and how we're editing the pages
+ 
+
+1167
+00:19:48,480 --> 00:19:51,169
+we want and how we're editing the pages
+is we're not selecting a page in the
+
+1168
+00:19:51,169 --> 00:19:51,179
+is we're not selecting a page in the
+ 
+
+1169
+00:19:51,179 --> 00:19:53,630
+is we're not selecting a page in the
+database specifically instead we're
+
+1170
+00:19:53,630 --> 00:19:53,640
+database specifically instead we're
+ 
+
+1171
+00:19:53,640 --> 00:19:56,150
+database specifically instead we're
+setting up filter criteria just like we
+
+1172
+00:19:56,150 --> 00:19:56,160
+setting up filter criteria just like we
+ 
+
+1173
+00:19:56,160 --> 00:19:58,070
+setting up filter criteria just like we
+would when creating a new database View
+
+1174
+00:19:58,070 --> 00:19:58,080
+would when creating a new database View
+ 
+
+1175
+00:19:58,080 --> 00:20:01,250
+would when creating a new database View
+and then we are going to make changes to
+
+1176
+00:20:01,250 --> 00:20:01,260
+and then we are going to make changes to
+ 
+
+1177
+00:20:01,260 --> 00:20:03,950
+and then we are going to make changes to
+properties in any page within this
+
+1178
+00:20:03,950 --> 00:20:03,960
+properties in any page within this
+ 
+
+1179
+00:20:03,960 --> 00:20:06,230
+properties in any page within this
+database that fits our filter criteria
+
+1180
+00:20:06,230 --> 00:20:06,240
+database that fits our filter criteria
+ 
+
+1181
+00:20:06,240 --> 00:20:08,930
+database that fits our filter criteria
+so the goal here would be to set up our
+
+1182
+00:20:08,930 --> 00:20:08,940
+so the goal here would be to set up our
+ 
+
+1183
+00:20:08,940 --> 00:20:11,029
+so the goal here would be to set up our
+filters in such a way that they only
+
+1184
+00:20:11,029 --> 00:20:11,039
+filters in such a way that they only
+ 
+
+1185
+00:20:11,039 --> 00:20:14,390
+filters in such a way that they only
+target one page namely today's page and
+
+1186
+00:20:14,390 --> 00:20:14,400
+target one page namely today's page and
+ 
+
+1187
+00:20:14,400 --> 00:20:15,470
+target one page namely today's page and
+we can easily do that with a date
+
+1188
+00:20:15,470 --> 00:20:15,480
+we can easily do that with a date
+ 
+
+1189
+00:20:15,480 --> 00:20:17,090
+we can easily do that with a date
+property so let's go ahead and do that
+
+1190
+00:20:17,090 --> 00:20:17,100
+property so let's go ahead and do that
+ 
+
+1191
+00:20:17,100 --> 00:20:19,370
+property so let's go ahead and do that
+and we'll start once again by typing but
+
+1192
+00:20:19,370 --> 00:20:19,380
+and we'll start once again by typing but
+ 
+
+1193
+00:20:19,380 --> 00:20:22,010
+and we'll start once again by typing but
+with an o n in the end and we'll get our
+
+1194
+00:20:22,010 --> 00:20:22,020
+with an o n in the end and we'll get our
+ 
+
+1195
+00:20:22,020 --> 00:20:23,330
+with an o n in the end and we'll get our
+little button block here I'm going to
+
+1196
+00:20:23,330 --> 00:20:23,340
+little button block here I'm going to
+ 
+
+1197
+00:20:23,340 --> 00:20:25,789
+little button block here I'm going to
+call this in by 10
+
+1198
+00:20:25,789 --> 00:20:25,799
+call this in by 10
+ 
+
+1199
+00:20:25,799 --> 00:20:27,350
+call this in by 10
+that's the Habit I'm tracking I'm going
+
+1200
+00:20:27,350 --> 00:20:27,360
+that's the Habit I'm tracking I'm going
+ 
+
+1201
+00:20:27,360 --> 00:20:29,690
+that's the Habit I'm tracking I'm going
+to give it a nice little blue bedtime
+
+1202
+00:20:29,690 --> 00:20:29,700
+to give it a nice little blue bedtime
+ 
+
+1203
+00:20:29,700 --> 00:20:32,750
+to give it a nice little blue bedtime
+Emoji so let's get a bed there good good
+
+1204
+00:20:32,750 --> 00:20:32,760
+Emoji so let's get a bed there good good
+ 
+
+1205
+00:20:32,760 --> 00:20:34,730
+Emoji so let's get a bed there good good
+and then when the button is clicked we
+
+1206
+00:20:34,730 --> 00:20:34,740
+and then when the button is clicked we
+ 
+
+1207
+00:20:34,740 --> 00:20:36,110
+and then when the button is clicked we
+are going to choose the final thing we
+
+1208
+00:20:36,110 --> 00:20:36,120
+are going to choose the final thing we
+ 
+
+1209
+00:20:36,120 --> 00:20:38,990
+are going to choose the final thing we
+have not chosen yet edit pages in so we
+
+1210
+00:20:38,990 --> 00:20:39,000
+have not chosen yet edit pages in so we
+ 
+
+1211
+00:20:39,000 --> 00:20:40,669
+have not chosen yet edit pages in so we
+will select our database and we're going
+
+1212
+00:20:40,669 --> 00:20:40,679
+will select our database and we're going
+ 
+
+1213
+00:20:40,679 --> 00:20:42,470
+will select our database and we're going
+to choose the habits database right here
+
+1214
+00:20:42,470 --> 00:20:42,480
+to choose the habits database right here
+ 
+
+1215
+00:20:42,480 --> 00:20:44,029
+to choose the habits database right here
+and here is where we would actually set
+
+1216
+00:20:44,029 --> 00:20:44,039
+and here is where we would actually set
+ 
+
+1217
+00:20:44,039 --> 00:20:45,890
+and here is where we would actually set
+up our filter rules but before we do
+
+1218
+00:20:45,890 --> 00:20:45,900
+up our filter rules but before we do
+ 
+
+1219
+00:20:45,900 --> 00:20:47,450
+up our filter rules but before we do
+that let's go ahead and actually choose
+
+1220
+00:20:47,450 --> 00:20:47,460
+that let's go ahead and actually choose
+ 
+
+1221
+00:20:47,460 --> 00:20:49,190
+that let's go ahead and actually choose
+the property that we're going to edit so
+
+1222
+00:20:49,190 --> 00:20:49,200
+the property that we're going to edit so
+ 
+
+1223
+00:20:49,200 --> 00:20:51,049
+the property that we're going to edit so
+here I have in bed by 10 which is a
+
+1224
+00:20:51,049 --> 00:20:51,059
+here I have in bed by 10 which is a
+ 
+
+1225
+00:20:51,059 --> 00:20:53,570
+here I have in bed by 10 which is a
+check box property and we can see when I
+
+1226
+00:20:53,570 --> 00:20:53,580
+check box property and we can see when I
+ 
+
+1227
+00:20:53,580 --> 00:20:55,789
+check box property and we can see when I
+select it I can choose how I want to
+
+1228
+00:20:55,789 --> 00:20:55,799
+select it I can choose how I want to
+ 
+
+1229
+00:20:55,799 --> 00:20:57,890
+select it I can choose how I want to
+modify this checkbox so when I click it
+
+1230
+00:20:57,890 --> 00:20:57,900
+modify this checkbox so when I click it
+ 
+
+1231
+00:20:57,900 --> 00:20:59,930
+modify this checkbox so when I click it
+I want that checkbox to be checked and
+
+1232
+00:20:59,930 --> 00:20:59,940
+I want that checkbox to be checked and
+ 
+
+1233
+00:20:59,940 --> 00:21:01,909
+I want that checkbox to be checked and
+checkbox is a notion are by default
+
+1234
+00:21:01,909 --> 00:21:01,919
+checkbox is a notion are by default
+ 
+
+1235
+00:21:01,919 --> 00:21:03,590
+checkbox is a notion are by default
+unchecked so you're going to be changing
+
+1236
+00:21:03,590 --> 00:21:03,600
+unchecked so you're going to be changing
+ 
+
+1237
+00:21:03,600 --> 00:21:05,630
+unchecked so you're going to be changing
+its state and then the last thing we
+
+1238
+00:21:05,630 --> 00:21:05,640
+its state and then the last thing we
+ 
+
+1239
+00:21:05,640 --> 00:21:08,029
+its state and then the last thing we
+have to do here is just edit the filters
+
+1240
+00:21:08,029 --> 00:21:08,039
+have to do here is just edit the filters
+ 
+
+1241
+00:21:08,039 --> 00:21:11,090
+have to do here is just edit the filters
+so that we only target the page for
+
+1242
+00:21:11,090 --> 00:21:11,100
+so that we only target the page for
+ 
+
+1243
+00:21:11,100 --> 00:21:13,789
+so that we only target the page for
+today which we are tracking so how would
+
+1244
+00:21:13,789 --> 00:21:13,799
+today which we are tracking so how would
+ 
+
+1245
+00:21:13,799 --> 00:21:16,909
+today which we are tracking so how would
+we do that well we can see here that our
+
+1246
+00:21:16,909 --> 00:21:16,919
+we do that well we can see here that our
+ 
+
+1247
+00:21:16,919 --> 00:21:19,430
+we do that well we can see here that our
+date property has a specific data in it
+
+1248
+00:21:19,430 --> 00:21:19,440
+date property has a specific data in it
+ 
+
+1249
+00:21:19,440 --> 00:21:22,490
+date property has a specific data in it
+which is March 22 2023 that is today so
+
+1250
+00:21:22,490 --> 00:21:22,500
+which is March 22 2023 that is today so
+ 
+
+1251
+00:21:22,500 --> 00:21:24,470
+which is March 22 2023 that is today so
+what we can do in our filters is
+
+1252
+00:21:24,470 --> 00:21:24,480
+what we can do in our filters is
+ 
+
+1253
+00:21:24,480 --> 00:21:26,690
+what we can do in our filters is
+actually choose that date property and
+
+1254
+00:21:26,690 --> 00:21:26,700
+actually choose that date property and
+ 
+
+1255
+00:21:26,700 --> 00:21:28,850
+actually choose that date property and
+instead of is relative to today or a
+
+1256
+00:21:28,850 --> 00:21:28,860
+instead of is relative to today or a
+ 
+
+1257
+00:21:28,860 --> 00:21:31,130
+instead of is relative to today or a
+specific hard-coded date we can do is
+
+1258
+00:21:31,130 --> 00:21:31,140
+specific hard-coded date we can do is
+ 
+
+1259
+00:21:31,140 --> 00:21:33,110
+specific hard-coded date we can do is
+and then today
+
+1260
+00:21:33,110 --> 00:21:33,120
+and then today
+ 
+
+1261
+00:21:33,120 --> 00:21:36,409
+and then today
+so ideally if you're only making one
+
+1262
+00:21:36,409 --> 00:21:36,419
+so ideally if you're only making one
+ 
+
+1263
+00:21:36,419 --> 00:21:38,510
+so ideally if you're only making one
+record in the habits database per day
+
+1264
+00:21:38,510 --> 00:21:38,520
+record in the habits database per day
+ 
+
+1265
+00:21:38,520 --> 00:21:39,890
+record in the habits database per day
+and I don't know why you would do
+
+1266
+00:21:39,890 --> 00:21:39,900
+and I don't know why you would do
+ 
+
+1267
+00:21:39,900 --> 00:21:42,230
+and I don't know why you would do
+anything different it's only going to
+
+1268
+00:21:42,230 --> 00:21:42,240
+anything different it's only going to
+ 
+
+1269
+00:21:42,240 --> 00:21:44,510
+anything different it's only going to
+hit one of those pages because the
+
+1270
+00:21:44,510 --> 00:21:44,520
+hit one of those pages because the
+ 
+
+1271
+00:21:44,520 --> 00:21:46,010
+hit one of those pages because the
+filter we just set up so I'll hit done
+
+1272
+00:21:46,010 --> 00:21:46,020
+filter we just set up so I'll hit done
+ 
+
+1273
+00:21:46,020 --> 00:21:47,690
+filter we just set up so I'll hit done
+right there I'll come up and hit embed
+
+1274
+00:21:47,690 --> 00:21:47,700
+right there I'll come up and hit embed
+ 
+
+1275
+00:21:47,700 --> 00:21:49,669
+right there I'll come up and hit embed
+by 10 and now we can see our little
+
+1276
+00:21:49,669 --> 00:21:49,679
+by 10 and now we can see our little
+ 
+
+1277
+00:21:49,679 --> 00:21:51,770
+by 10 and now we can see our little
+checkbox property for that habit has
+
+1278
+00:21:51,770 --> 00:21:51,780
+checkbox property for that habit has
+ 
+
+1279
+00:21:51,780 --> 00:21:53,390
+checkbox property for that habit has
+been checked and for a little bit of
+
+1280
+00:21:53,390 --> 00:21:53,400
+been checked and for a little bit of
+ 
+
+1281
+00:21:53,400 --> 00:21:55,310
+been checked and for a little bit of
+extra flare I've also added a day score
+
+1282
+00:21:55,310 --> 00:21:55,320
+extra flare I've also added a day score
+ 
+
+1283
+00:21:55,320 --> 00:21:56,750
+extra flare I've also added a day score
+formula and this is using those new
+
+1284
+00:21:56,750 --> 00:21:56,760
+formula and this is using those new
+ 
+
+1285
+00:21:56,760 --> 00:21:58,610
+formula and this is using those new
+progress bars if I go to edit property
+
+1286
+00:21:58,610 --> 00:21:58,620
+progress bars if I go to edit property
+ 
+
+1287
+00:21:58,620 --> 00:22:00,350
+progress bars if I go to edit property
+because this formula is outputting a
+
+1288
+00:22:00,350 --> 00:22:00,360
+because this formula is outputting a
+ 
+
+1289
+00:22:00,360 --> 00:22:02,149
+because this formula is outputting a
+numeric value I can actually choose to
+
+1290
+00:22:02,149 --> 00:22:02,159
+numeric value I can actually choose to
+ 
+
+1291
+00:22:02,159 --> 00:22:04,190
+numeric value I can actually choose to
+represent it as a bar and if I go into
+
+1292
+00:22:04,190 --> 00:22:04,200
+represent it as a bar and if I go into
+ 
+
+1293
+00:22:04,200 --> 00:22:05,570
+represent it as a bar and if I go into
+the formula this is a little bit more
+
+1294
+00:22:05,570 --> 00:22:05,580
+the formula this is a little bit more
+ 
+
+1295
+00:22:05,580 --> 00:22:07,310
+the formula this is a little bit more
+advanced but if you're curious I'm
+
+1296
+00:22:07,310 --> 00:22:07,320
+advanced but if you're curious I'm
+ 
+
+1297
+00:22:07,320 --> 00:22:08,630
+advanced but if you're curious I'm
+basically just turning each of these
+
+1298
+00:22:08,630 --> 00:22:08,640
+basically just turning each of these
+ 
+
+1299
+00:22:08,640 --> 00:22:10,909
+basically just turning each of these
+check boxes into a one or a zero using
+
+1300
+00:22:10,909 --> 00:22:10,919
+check boxes into a one or a zero using
+ 
+
+1301
+00:22:10,919 --> 00:22:12,649
+check boxes into a one or a zero using
+this little plus prefix right here it's
+
+1302
+00:22:12,649 --> 00:22:12,659
+this little plus prefix right here it's
+ 
+
+1303
+00:22:12,659 --> 00:22:14,810
+this little plus prefix right here it's
+called unary plus and then I'm dividing
+
+1304
+00:22:14,810 --> 00:22:14,820
+called unary plus and then I'm dividing
+ 
+
+1305
+00:22:14,820 --> 00:22:16,669
+called unary plus and then I'm dividing
+by four so I'm getting the percentage of
+
+1306
+00:22:16,669 --> 00:22:16,679
+by four so I'm getting the percentage of
+ 
+
+1307
+00:22:16,679 --> 00:22:19,610
+by four so I'm getting the percentage of
+completion and we're all good there so
+
+1308
+00:22:19,610 --> 00:22:19,620
+completion and we're all good there so
+ 
+
+1309
+00:22:19,620 --> 00:22:21,409
+completion and we're all good there so
+to wrap this video up I did promise that
+
+1310
+00:22:21,409 --> 00:22:21,419
+to wrap this video up I did promise that
+ 
+
+1311
+00:22:21,419 --> 00:22:22,730
+to wrap this video up I did promise that
+I would show you how to do that relative
+
+1312
+00:22:22,730 --> 00:22:22,740
+I would show you how to do that relative
+ 
+
+1313
+00:22:22,740 --> 00:22:24,529
+I would show you how to do that relative
+dates trick so this is going to be a bit
+
+1314
+00:22:24,529 --> 00:22:24,539
+dates trick so this is going to be a bit
+ 
+
+1315
+00:22:24,539 --> 00:22:26,510
+dates trick so this is going to be a bit
+more of an advanced use case but if you
+
+1316
+00:22:26,510 --> 00:22:26,520
+more of an advanced use case but if you
+ 
+
+1317
+00:22:26,520 --> 00:22:28,730
+more of an advanced use case but if you
+are curious about how to get some
+
+1318
+00:22:28,730 --> 00:22:28,740
+are curious about how to get some
+ 
+
+1319
+00:22:28,740 --> 00:22:30,649
+are curious about how to get some
+relative dates based on a Project's
+
+1320
+00:22:30,649 --> 00:22:30,659
+relative dates based on a Project's
+ 
+
+1321
+00:22:30,659 --> 00:22:32,810
+relative dates based on a Project's
+published date on your tasks we are
+
+1322
+00:22:32,810 --> 00:22:32,820
+published date on your tasks we are
+ 
+
+1323
+00:22:32,820 --> 00:22:34,250
+published date on your tasks we are
+going to do do that now so I'm going to
+
+1324
+00:22:34,250 --> 00:22:34,260
+going to do do that now so I'm going to
+ 
+
+1325
+00:22:34,260 --> 00:22:36,649
+going to do do that now so I'm going to
+go over to this seven ways to be more
+
+1326
+00:22:36,649 --> 00:22:36,659
+go over to this seven ways to be more
+ 
+
+1327
+00:22:36,659 --> 00:22:39,529
+go over to this seven ways to be more
+organized project here and uh because we
+
+1328
+00:22:39,529 --> 00:22:39,539
+organized project here and uh because we
+ 
+
+1329
+00:22:39,539 --> 00:22:41,330
+organized project here and uh because we
+set this up before we already have our
+
+1330
+00:22:41,330 --> 00:22:41,340
+set this up before we already have our
+ 
+
+1331
+00:22:41,340 --> 00:22:43,789
+set this up before we already have our
+default tasks here our due dates are
+
+1332
+00:22:43,789 --> 00:22:43,799
+default tasks here our due dates are
+ 
+
+1333
+00:22:43,799 --> 00:22:45,169
+default tasks here our due dates are
+empty and they're going to stay that way
+
+1334
+00:22:45,169 --> 00:22:45,179
+empty and they're going to stay that way
+ 
+
+1335
+00:22:45,179 --> 00:22:47,210
+empty and they're going to stay that way
+that's an ocean limitation but we also
+
+1336
+00:22:47,210 --> 00:22:47,220
+that's an ocean limitation but we also
+ 
+
+1337
+00:22:47,220 --> 00:22:49,789
+that's an ocean limitation but we also
+have this little do suggested formula
+
+1338
+00:22:49,789 --> 00:22:49,799
+have this little do suggested formula
+ 
+
+1339
+00:22:49,799 --> 00:22:52,430
+have this little do suggested formula
+property here and if I drag this over
+
+1340
+00:22:52,430 --> 00:22:52,440
+property here and if I drag this over
+ 
+
+1341
+00:22:52,440 --> 00:22:54,710
+property here and if I drag this over
+what we can actually do this is kind of
+
+1342
+00:22:54,710 --> 00:22:54,720
+what we can actually do this is kind of
+ 
+
+1343
+00:22:54,720 --> 00:22:56,029
+what we can actually do this is kind of
+a stop Gap until we get better
+
+1344
+00:22:56,029 --> 00:22:56,039
+a stop Gap until we get better
+ 
+
+1345
+00:22:56,039 --> 00:22:58,070
+a stop Gap until we get better
+automation tools for this particular
+
+1346
+00:22:58,070 --> 00:22:58,080
+automation tools for this particular
+ 
+
+1347
+00:22:58,080 --> 00:23:01,430
+automation tools for this particular
+workflow from notion is we can suggest a
+
+1348
+00:23:01,430 --> 00:23:01,440
+workflow from notion is we can suggest a
+ 
+
+1349
+00:23:01,440 --> 00:23:04,130
+workflow from notion is we can suggest a
+date for each of these tasks based on
+
+1350
+00:23:04,130 --> 00:23:04,140
+date for each of these tasks based on
+ 
+
+1351
+00:23:04,140 --> 00:23:05,750
+date for each of these tasks based on
+the published date of the video so for
+
+1352
+00:23:05,750 --> 00:23:05,760
+the published date of the video so for
+ 
+
+1353
+00:23:05,760 --> 00:23:07,370
+the published date of the video so for
+example if this video is going to go
+
+1354
+00:23:07,370 --> 00:23:07,380
+example if this video is going to go
+ 
+
+1355
+00:23:07,380 --> 00:23:09,289
+example if this video is going to go
+live a week from now I might want to
+
+1356
+00:23:09,289 --> 00:23:09,299
+live a week from now I might want to
+ 
+
+1357
+00:23:09,299 --> 00:23:11,570
+live a week from now I might want to
+have the script locked two days from now
+
+1358
+00:23:11,570 --> 00:23:11,580
+have the script locked two days from now
+ 
+
+1359
+00:23:11,580 --> 00:23:13,370
+have the script locked two days from now
+or maybe five days from the publish date
+
+1360
+00:23:13,370 --> 00:23:13,380
+or maybe five days from the publish date
+ 
+
+1361
+00:23:13,380 --> 00:23:14,810
+or maybe five days from the publish date
+I might want to make sure that we have
+
+1362
+00:23:14,810 --> 00:23:14,820
+I might want to make sure that we have
+ 
+
+1363
+00:23:14,820 --> 00:23:16,970
+I might want to make sure that we have
+the video filmed four days from the
+
+1364
+00:23:16,970 --> 00:23:16,980
+the video filmed four days from the
+ 
+
+1365
+00:23:16,980 --> 00:23:19,010
+the video filmed four days from the
+publish date and edited fully two days
+
+1366
+00:23:19,010 --> 00:23:19,020
+publish date and edited fully two days
+ 
+
+1367
+00:23:19,020 --> 00:23:20,390
+publish date and edited fully two days
+from the published date so we have time
+
+1368
+00:23:20,390 --> 00:23:20,400
+from the published date so we have time
+ 
+
+1369
+00:23:20,400 --> 00:23:22,490
+from the published date so we have time
+for review and all kinds of other
+
+1370
+00:23:22,490 --> 00:23:22,500
+for review and all kinds of other
+ 
+
+1371
+00:23:22,500 --> 00:23:24,770
+for review and all kinds of other
+projects could have this type of schema
+
+1372
+00:23:24,770 --> 00:23:24,780
+projects could have this type of schema
+ 
+
+1373
+00:23:24,780 --> 00:23:27,770
+projects could have this type of schema
+where you have a overall done date for
+
+1374
+00:23:27,770 --> 00:23:27,780
+where you have a overall done date for
+ 
+
+1375
+00:23:27,780 --> 00:23:30,049
+where you have a overall done date for
+the project and then you dynamically set
+
+1376
+00:23:30,049 --> 00:23:30,059
+the project and then you dynamically set
+ 
+
+1377
+00:23:30,059 --> 00:23:32,570
+the project and then you dynamically set
+the dates of all the tasks within it so
+
+1378
+00:23:32,570 --> 00:23:32,580
+the dates of all the tasks within it so
+ 
+
+1379
+00:23:32,580 --> 00:23:34,430
+the dates of all the tasks within it so
+that you have an nice little Cascade of
+
+1380
+00:23:34,430 --> 00:23:34,440
+that you have an nice little Cascade of
+ 
+
+1381
+00:23:34,440 --> 00:23:37,310
+that you have an nice little Cascade of
+due dates well how could we do that well
+
+1382
+00:23:37,310 --> 00:23:37,320
+due dates well how could we do that well
+ 
+
+1383
+00:23:37,320 --> 00:23:39,230
+due dates well how could we do that well
+if we look at our tasks here I have
+
+1384
+00:23:39,230 --> 00:23:39,240
+if we look at our tasks here I have
+ 
+
+1385
+00:23:39,240 --> 00:23:41,390
+if we look at our tasks here I have
+added a little numeric property called
+
+1386
+00:23:41,390 --> 00:23:41,400
+added a little numeric property called
+ 
+
+1387
+00:23:41,400 --> 00:23:43,549
+added a little numeric property called
+offset and this is just going to be a
+
+1388
+00:23:43,549 --> 00:23:43,559
+offset and this is just going to be a
+ 
+
+1389
+00:23:43,559 --> 00:23:45,529
+offset and this is just going to be a
+number I've also added this formula
+
+1390
+00:23:45,529 --> 00:23:45,539
+number I've also added this formula
+ 
+
+1391
+00:23:45,539 --> 00:23:47,690
+number I've also added this formula
+property called do suggested and I'll
+
+1392
+00:23:47,690 --> 00:23:47,700
+property called do suggested and I'll
+ 
+
+1393
+00:23:47,700 --> 00:23:48,770
+property called do suggested and I'll
+show you the formula real quick it's
+
+1394
+00:23:48,770 --> 00:23:48,780
+show you the formula real quick it's
+ 
+
+1395
+00:23:48,780 --> 00:23:50,029
+show you the formula real quick it's
+actually pretty simple it's just the
+
+1396
+00:23:50,029 --> 00:23:50,039
+actually pretty simple it's just the
+ 
+
+1397
+00:23:50,039 --> 00:23:51,950
+actually pretty simple it's just the
+date subtract function and we are taking
+
+1398
+00:23:51,950 --> 00:23:51,960
+date subtract function and we are taking
+ 
+
+1399
+00:23:51,960 --> 00:23:55,909
+date subtract function and we are taking
+the publish date of the project at large
+
+1400
+00:23:55,909 --> 00:23:55,919
+the publish date of the project at large
+ 
+
+1401
+00:23:55,919 --> 00:23:57,350
+the publish date of the project at large
+which we're pulling in from a roll up
+
+1402
+00:23:57,350 --> 00:23:57,360
+which we're pulling in from a roll up
+ 
+
+1403
+00:23:57,360 --> 00:23:59,450
+which we're pulling in from a roll up
+and then we're also taking the offset
+
+1404
+00:23:59,450 --> 00:23:59,460
+and then we're also taking the offset
+ 
+
+1405
+00:23:59,460 --> 00:24:01,730
+and then we're also taking the offset
+that numeric value and we're subtracting
+
+1406
+00:24:01,730 --> 00:24:01,740
+that numeric value and we're subtracting
+ 
+
+1407
+00:24:01,740 --> 00:24:04,970
+that numeric value and we're subtracting
+that many days from the overall publish
+
+1408
+00:24:04,970 --> 00:24:04,980
+that many days from the overall publish
+ 
+
+1409
+00:24:04,980 --> 00:24:07,549
+that many days from the overall publish
+date so for example if I set the offset
+
+1410
+00:24:07,549 --> 00:24:07,559
+date so for example if I set the offset
+ 
+
+1411
+00:24:07,559 --> 00:24:09,890
+date so for example if I set the offset
+here as 5 and I went back and actually
+
+1412
+00:24:09,890 --> 00:24:09,900
+here as 5 and I went back and actually
+ 
+
+1413
+00:24:09,900 --> 00:24:11,810
+here as 5 and I went back and actually
+set a publish date for this video Let's
+
+1414
+00:24:11,810 --> 00:24:11,820
+set a publish date for this video Let's
+ 
+
+1415
+00:24:11,820 --> 00:24:14,690
+set a publish date for this video Let's
+just say a week from now March 29th 2023
+
+1416
+00:24:14,690 --> 00:24:14,700
+just say a week from now March 29th 2023
+ 
+
+1417
+00:24:14,700 --> 00:24:17,750
+just say a week from now March 29th 2023
+now we have a due date that is suggested
+
+1418
+00:24:17,750 --> 00:24:17,760
+now we have a due date that is suggested
+ 
+
+1419
+00:24:17,760 --> 00:24:20,810
+now we have a due date that is suggested
+for us March 24th 2023 if we open this
+
+1420
+00:24:20,810 --> 00:24:20,820
+for us March 24th 2023 if we open this
+ 
+
+1421
+00:24:20,820 --> 00:24:23,330
+for us March 24th 2023 if we open this
+back up we can see that our offset is
+
+1422
+00:24:23,330 --> 00:24:23,340
+back up we can see that our offset is
+ 
+
+1423
+00:24:23,340 --> 00:24:26,390
+back up we can see that our offset is
+now modifying the content publish date
+
+1424
+00:24:26,390 --> 00:24:26,400
+now modifying the content publish date
+ 
+
+1425
+00:24:26,400 --> 00:24:29,570
+now modifying the content publish date
+and giving us a new date as a suggestion
+
+1426
+00:24:29,570 --> 00:24:29,580
+and giving us a new date as a suggestion
+ 
+
+1427
+00:24:29,580 --> 00:24:32,770
+and giving us a new date as a suggestion
+so what we could do is add offsets
+
+1428
+00:24:32,770 --> 00:24:32,780
+so what we could do is add offsets
+ 
+
+1429
+00:24:32,780 --> 00:24:35,570
+so what we could do is add offsets
+automatically for each one of our tasks
+
+1430
+00:24:35,570 --> 00:24:35,580
+automatically for each one of our tasks
+ 
+
+1431
+00:24:35,580 --> 00:24:38,029
+automatically for each one of our tasks
+here and then the project manager and a
+
+1432
+00:24:38,029 --> 00:24:38,039
+here and then the project manager and a
+ 
+
+1433
+00:24:38,039 --> 00:24:39,230
+here and then the project manager and a
+company could go through and be like yep
+
+1434
+00:24:39,230 --> 00:24:39,240
+company could go through and be like yep
+ 
+
+1435
+00:24:39,240 --> 00:24:40,909
+company could go through and be like yep
+I think March 24th is perfect for that
+
+1436
+00:24:40,909 --> 00:24:40,919
+I think March 24th is perfect for that
+ 
+
+1437
+00:24:40,919 --> 00:24:42,230
+I think March 24th is perfect for that
+let's go ahead and set it so it at least
+
+1438
+00:24:42,230 --> 00:24:42,240
+let's go ahead and set it so it at least
+ 
+
+1439
+00:24:42,240 --> 00:24:44,149
+let's go ahead and set it so it at least
+gives you guidance and a suggestion for
+
+1440
+00:24:44,149 --> 00:24:44,159
+gives you guidance and a suggestion for
+ 
+
+1441
+00:24:44,159 --> 00:24:45,529
+gives you guidance and a suggestion for
+your due dates even though it can't
+
+1442
+00:24:45,529 --> 00:24:45,539
+your due dates even though it can't
+ 
+
+1443
+00:24:45,539 --> 00:24:47,810
+your due dates even though it can't
+actually set these date properties here
+
+1444
+00:24:47,810 --> 00:24:47,820
+actually set these date properties here
+ 
+
+1445
+00:24:47,820 --> 00:24:49,430
+actually set these date properties here
+and hey if you're cool with a formula
+
+1446
+00:24:49,430 --> 00:24:49,440
+and hey if you're cool with a formula
+ 
+
+1447
+00:24:49,440 --> 00:24:50,750
+and hey if you're cool with a formula
+being your date property then you could
+
+1448
+00:24:50,750 --> 00:24:50,760
+being your date property then you could
+ 
+
+1449
+00:24:50,760 --> 00:24:52,250
+being your date property then you could
+just use that so let me show you how to
+
+1450
+00:24:52,250 --> 00:24:52,260
+just use that so let me show you how to
+ 
+
+1451
+00:24:52,260 --> 00:24:53,930
+just use that so let me show you how to
+actually do that it's one simple
+
+1452
+00:24:53,930 --> 00:24:53,940
+actually do that it's one simple
+ 
+
+1453
+00:24:53,940 --> 00:24:56,390
+actually do that it's one simple
+configuration change to this create
+
+1454
+00:24:56,390 --> 00:24:56,400
+configuration change to this create
+ 
+
+1455
+00:24:56,400 --> 00:24:58,909
+configuration change to this create
+default video tasks button here for each
+
+1456
+00:24:58,909 --> 00:24:58,919
+default video tasks button here for each
+ 
+
+1457
+00:24:58,919 --> 00:25:01,610
+default video tasks button here for each
+of these tasks all we need to do is set
+
+1458
+00:25:01,610 --> 00:25:01,620
+of these tasks all we need to do is set
+ 
+
+1459
+00:25:01,620 --> 00:25:04,430
+of these tasks all we need to do is set
+an offset property so the first task is
+
+1460
+00:25:04,430 --> 00:25:04,440
+an offset property so the first task is
+ 
+
+1461
+00:25:04,440 --> 00:25:06,710
+an offset property so the first task is
+script video I'm going to change the
+
+1462
+00:25:06,710 --> 00:25:06,720
+script video I'm going to change the
+ 
+
+1463
+00:25:06,720 --> 00:25:08,149
+script video I'm going to change the
+offset property and I'm going to set
+
+1464
+00:25:08,149 --> 00:25:08,159
+offset property and I'm going to set
+ 
+
+1465
+00:25:08,159 --> 00:25:10,610
+offset property and I'm going to set
+that to let's say five because I want to
+
+1466
+00:25:10,610 --> 00:25:10,620
+that to let's say five because I want to
+ 
+
+1467
+00:25:10,620 --> 00:25:12,649
+that to let's say five because I want to
+have it done five days before the video
+
+1468
+00:25:12,649 --> 00:25:12,659
+have it done five days before the video
+ 
+
+1469
+00:25:12,659 --> 00:25:15,529
+have it done five days before the video
+is publish date for film video let's set
+
+1470
+00:25:15,529 --> 00:25:15,539
+is publish date for film video let's set
+ 
+
+1471
+00:25:15,539 --> 00:25:17,690
+is publish date for film video let's set
+offset to say three I want to have
+
+1472
+00:25:17,690 --> 00:25:17,700
+offset to say three I want to have
+ 
+
+1473
+00:25:17,700 --> 00:25:19,669
+offset to say three I want to have
+filmed three days before publish date
+
+1474
+00:25:19,669 --> 00:25:19,679
+filmed three days before publish date
+ 
+
+1475
+00:25:19,679 --> 00:25:21,770
+filmed three days before publish date
+and then for edit video let's go ahead
+
+1476
+00:25:21,770 --> 00:25:21,780
+and then for edit video let's go ahead
+ 
+
+1477
+00:25:21,780 --> 00:25:24,289
+and then for edit video let's go ahead
+and set that to two so that way my video
+
+1478
+00:25:24,289 --> 00:25:24,299
+and set that to two so that way my video
+ 
+
+1479
+00:25:24,299 --> 00:25:26,269
+and set that to two so that way my video
+editor only has one day after I film
+
+1480
+00:25:26,269 --> 00:25:26,279
+editor only has one day after I film
+ 
+
+1481
+00:25:26,279 --> 00:25:28,490
+editor only has one day after I film
+because I'm a mean boss and we'll go
+
+1482
+00:25:28,490 --> 00:25:28,500
+because I'm a mean boss and we'll go
+ 
+
+1483
+00:25:28,500 --> 00:25:30,230
+because I'm a mean boss and we'll go
+ahead and hit done there so I'll delete
+
+1484
+00:25:30,230 --> 00:25:30,240
+ahead and hit done there so I'll delete
+ 
+
+1485
+00:25:30,240 --> 00:25:33,470
+ahead and hit done there so I'll delete
+these so we have a brand new empty tasks
+
+1486
+00:25:33,470 --> 00:25:33,480
+these so we have a brand new empty tasks
+ 
+
+1487
+00:25:33,480 --> 00:25:35,269
+these so we have a brand new empty tasks
+database here and I'll hit this one more
+
+1488
+00:25:35,269 --> 00:25:35,279
+database here and I'll hit this one more
+ 
+
+1489
+00:25:35,279 --> 00:25:36,110
+database here and I'll hit this one more
+time
+
+1490
+00:25:36,110 --> 00:25:36,120
+time
+ 
+
+1491
+00:25:36,120 --> 00:25:38,570
+time
+I'll hit continue and now you can see we
+
+1492
+00:25:38,570 --> 00:25:38,580
+I'll hit continue and now you can see we
+ 
+
+1493
+00:25:38,580 --> 00:25:41,210
+I'll hit continue and now you can see we
+have our suggested due dates and they
+
+1494
+00:25:41,210 --> 00:25:41,220
+have our suggested due dates and they
+ 
+
+1495
+00:25:41,220 --> 00:25:44,390
+have our suggested due dates and they
+are factored based off of our offset
+
+1496
+00:25:44,390 --> 00:25:44,400
+are factored based off of our offset
+ 
+
+1497
+00:25:44,400 --> 00:25:46,789
+are factored based off of our offset
+value and our content publish date which
+
+1498
+00:25:46,789 --> 00:25:46,799
+value and our content publish date which
+ 
+
+1499
+00:25:46,799 --> 00:25:49,370
+value and our content publish date which
+is pretty cool by the way if you want to
+
+1500
+00:25:49,370 --> 00:25:49,380
+is pretty cool by the way if you want to
+ 
+
+1501
+00:25:49,380 --> 00:25:50,750
+is pretty cool by the way if you want to
+learn about notion formulas we just
+
+1502
+00:25:50,750 --> 00:25:50,760
+learn about notion formulas we just
+ 
+
+1503
+00:25:50,760 --> 00:25:52,909
+learn about notion formulas we just
+released a brand new section on my main
+
+1504
+00:25:52,909 --> 00:25:52,919
+released a brand new section on my main
+ 
+
+1505
+00:25:52,919 --> 00:25:55,730
+released a brand new section on my main
+website thomasjfrank.com which is a full
+
+1506
+00:25:55,730 --> 00:25:55,740
+website thomasjfrank.com which is a full
+ 
+
+1507
+00:25:55,740 --> 00:25:57,590
+website thomasjfrank.com which is a full
+and complete formula reference for
+
+1508
+00:25:57,590 --> 00:25:57,600
+and complete formula reference for
+ 
+
+1509
+00:25:57,600 --> 00:25:59,149
+and complete formula reference for
+notion so you can check that out if you
+
+1510
+00:25:59,149 --> 00:25:59,159
+notion so you can check that out if you
+ 
+
+1511
+00:25:59,159 --> 00:26:00,649
+notion so you can check that out if you
+have any questions or you need to look
+
+1512
+00:26:00,649 --> 00:26:00,659
+have any questions or you need to look
+ 
+
+1513
+00:26:00,659 --> 00:26:03,649
+have any questions or you need to look
+at how to write any function or operator
+
+1514
+00:26:03,649 --> 00:26:03,659
+at how to write any function or operator
+ 
+
+1515
+00:26:03,659 --> 00:26:06,289
+at how to write any function or operator
+or constant within Notions formula
+
+1516
+00:26:06,289 --> 00:26:06,299
+or constant within Notions formula
+ 
+
+1517
+00:26:06,299 --> 00:26:08,269
+or constant within Notions formula
+feature literally the entire thing is
+
+1518
+00:26:08,269 --> 00:26:08,279
+feature literally the entire thing is
+ 
+
+1519
+00:26:08,279 --> 00:26:10,070
+feature literally the entire thing is
+documented I spent four months writing
+
+1520
+00:26:10,070 --> 00:26:10,080
+documented I spent four months writing
+ 
+
+1521
+00:26:10,080 --> 00:26:11,870
+documented I spent four months writing
+it my team spent a ton of time
+
+1522
+00:26:11,870 --> 00:26:11,880
+it my team spent a ton of time
+ 
+
+1523
+00:26:11,880 --> 00:26:13,370
+it my team spent a ton of time
+transferring it over to our main website
+
+1524
+00:26:13,370 --> 00:26:13,380
+transferring it over to our main website
+ 
+
+1525
+00:26:13,380 --> 00:26:15,049
+transferring it over to our main website
+and building this great new section
+
+1526
+00:26:15,049 --> 00:26:15,059
+and building this great new section
+ 
+
+1527
+00:26:15,059 --> 00:26:17,630
+and building this great new section
+where it's easy to to navigate through
+
+1528
+00:26:17,630 --> 00:26:17,640
+where it's easy to to navigate through
+ 
+
+1529
+00:26:17,640 --> 00:26:19,430
+where it's easy to to navigate through
+the pages so check that out if you're
+
+1530
+00:26:19,430 --> 00:26:19,440
+the pages so check that out if you're
+ 
+
+1531
+00:26:19,440 --> 00:26:20,990
+the pages so check that out if you're
+curious and that's about going to do it
+
+1532
+00:26:20,990 --> 00:26:21,000
+curious and that's about going to do it
+ 
+
+1533
+00:26:21,000 --> 00:26:22,909
+curious and that's about going to do it
+for this video hopefully you liked it
+
+1534
+00:26:22,909 --> 00:26:22,919
+for this video hopefully you liked it
+ 
+
+1535
+00:26:22,919 --> 00:26:24,649
+for this video hopefully you liked it
+hopefully you found something useful
+
+1536
+00:26:24,649 --> 00:26:24,659
+hopefully you found something useful
+ 
+
+1537
+00:26:24,659 --> 00:26:26,450
+hopefully you found something useful
+that you can take away and apply to your
+
+1538
+00:26:26,450 --> 00:26:26,460
+that you can take away and apply to your
+ 
+
+1539
+00:26:26,460 --> 00:26:28,549
+that you can take away and apply to your
+own notion workspace if you want to get
+
+1540
+00:26:28,549 --> 00:26:28,559
+own notion workspace if you want to get
+ 
+
+1541
+00:26:28,559 --> 00:26:30,769
+own notion workspace if you want to get
+new notion tips every single week when I
+
+1542
+00:26:30,769 --> 00:26:30,779
+new notion tips every single week when I
+ 
+
+1543
+00:26:30,779 --> 00:26:32,330
+new notion tips every single week when I
+publish them join my notion tips
+
+1544
+00:26:32,330 --> 00:26:32,340
+publish them join my notion tips
+ 
+
+1545
+00:26:32,340 --> 00:26:33,529
+publish them join my notion tips
+newsletter you can find that over at
+
+1546
+00:26:33,529 --> 00:26:33,539
+newsletter you can find that over at
+ 
+
+1547
+00:26:33,539 --> 00:26:36,470
+newsletter you can find that over at
+thomasjfrank.com fundamentals that is as
+
+1548
+00:26:36,470 --> 00:26:36,480
+thomasjfrank.com fundamentals that is as
+ 
+
+1549
+00:26:36,480 --> 00:26:38,269
+thomasjfrank.com fundamentals that is as
+the whole Hub page for all my notion
+
+1550
+00:26:38,269 --> 00:26:38,279
+the whole Hub page for all my notion
+ 
+
+1551
+00:26:38,279 --> 00:26:39,890
+the whole Hub page for all my notion
+Basics content that there is a very
+
+1552
+00:26:39,890 --> 00:26:39,900
+Basics content that there is a very
+ 
+
+1553
+00:26:39,900 --> 00:26:41,630
+Basics content that there is a very
+prevalent newsletter box on there where
+
+1554
+00:26:41,630 --> 00:26:41,640
+prevalent newsletter box on there where
+ 
+
+1555
+00:26:41,640 --> 00:26:43,250
+prevalent newsletter box on there where
+you can sign up and when you sign up you
+
+1556
+00:26:43,250 --> 00:26:43,260
+you can sign up and when you sign up you
+ 
+
+1557
+00:26:43,260 --> 00:26:44,870
+you can sign up and when you sign up you
+can also get all my free templates and
+
+1558
+00:26:44,870 --> 00:26:44,880
+can also get all my free templates and
+ 
+
+1559
+00:26:44,880 --> 00:26:46,730
+can also get all my free templates and
+all my resources reference guides there
+
+1560
+00:26:46,730 --> 00:26:46,740
+all my resources reference guides there
+ 
+
+1561
+00:26:46,740 --> 00:26:48,169
+all my resources reference guides there
+is a ton of stuff so if you want a
+
+1562
+00:26:48,169 --> 00:26:48,179
+is a ton of stuff so if you want a
+ 
+
+1563
+00:26:48,179 --> 00:26:49,909
+is a ton of stuff so if you want a
+master notion that is the way to do it
+
+1564
+00:26:49,909 --> 00:26:49,919
+master notion that is the way to do it
+ 
+
+1565
+00:26:49,919 --> 00:26:51,769
+master notion that is the way to do it
+and I did show my ultimate brain
+
+1566
+00:26:51,769 --> 00:26:51,779
+and I did show my ultimate brain
+ 
+
+1567
+00:26:51,779 --> 00:26:53,450
+and I did show my ultimate brain
+template in this video if you want to
+
+1568
+00:26:53,450 --> 00:26:53,460
+template in this video if you want to
+ 
+
+1569
+00:26:53,460 --> 00:26:54,890
+template in this video if you want to
+check out ultimatebrain and if you want
+
+1570
+00:26:54,890 --> 00:26:54,900
+check out ultimatebrain and if you want
+ 
+
+1571
+00:26:54,900 --> 00:26:57,049
+check out ultimatebrain and if you want
+a complete and done for you second brain
+
+1572
+00:26:57,049 --> 00:26:57,059
+a complete and done for you second brain
+ 
+
+1573
+00:26:57,059 --> 00:26:58,730
+a complete and done for you second brain
+like a complete productivity system
+
+1574
+00:26:58,730 --> 00:26:58,740
+like a complete productivity system
+ 
+
+1575
+00:26:58,740 --> 00:27:01,970
+like a complete productivity system
+inside a notion Thomas jfrank.com brain
+
+1576
+00:27:01,970 --> 00:27:01,980
+inside a notion Thomas jfrank.com brain
+ 
+
+1577
+00:27:01,980 --> 00:27:03,769
+inside a notion Thomas jfrank.com brain
+is the place to go and you can even use
+
+1578
+00:27:03,769 --> 00:27:03,779
+is the place to go and you can even use
+ 
+
+1579
+00:27:03,779 --> 00:27:06,769
+is the place to go and you can even use
+let's go 2023 at checkout to get 50 off
+
+1580
+00:27:06,769 --> 00:27:06,779
+let's go 2023 at checkout to get 50 off
+ 
+
+1581
+00:27:06,779 --> 00:27:08,510
+let's go 2023 at checkout to get 50 off
+of that template thanks as always for
+
+1582
+00:27:08,510 --> 00:27:08,520
+of that template thanks as always for
+ 
+
+1583
+00:27:08,520 --> 00:27:10,250
+of that template thanks as always for
+watching if you have any questions leave
+
+1584
+00:27:10,250 --> 00:27:10,260
+watching if you have any questions leave
+ 
+
+1585
+00:27:10,260 --> 00:27:11,990
+watching if you have any questions leave
+them down in the comments section below
+
+1586
+00:27:11,990 --> 00:27:12,000
+them down in the comments section below
+ 
+
+1587
+00:27:12,000 --> 00:27:13,789
+them down in the comments section below
+or you can hit me up on Twitter at
+
+1588
+00:27:13,789 --> 00:27:13,799
+or you can hit me up on Twitter at
+ 
+
+1589
+00:27:13,799 --> 00:27:15,649
+or you can hit me up on Twitter at
+tomfrankly I'm pretty darn responsive
+
+1590
+00:27:15,649 --> 00:27:15,659
+tomfrankly I'm pretty darn responsive
+ 
+
+1591
+00:27:15,659 --> 00:27:18,169
+tomfrankly I'm pretty darn responsive
+over there so follow me uh for also like
+
+1592
+00:27:18,169 --> 00:27:18,179
+over there so follow me uh for also like
+ 
+
+1593
+00:27:18,179 --> 00:27:19,850
+over there so follow me uh for also like
+all kinds of thread boy stuff I like to
+
+1594
+00:27:19,850 --> 00:27:19,860
+all kinds of thread boy stuff I like to
+ 
+
+1595
+00:27:19,860 --> 00:27:21,830
+all kinds of thread boy stuff I like to
+tweet about business and notion so if
+
+1596
+00:27:21,830 --> 00:27:21,840
+tweet about business and notion so if
+ 
+
+1597
+00:27:21,840 --> 00:27:23,330
+tweet about business and notion so if
+you want more tips follow me there
+
+1598
+00:27:23,330 --> 00:27:23,340
+you want more tips follow me there
+ 
+
+1599
+00:27:23,340 --> 00:27:24,769
+you want more tips follow me there
+there's a couple more videos on screen
+
+1600
+00:27:24,769 --> 00:27:24,779
+there's a couple more videos on screen
+ 
+
+1601
+00:27:24,779 --> 00:27:26,210
+there's a couple more videos on screen
+check those out if you want something
+
+1602
+00:27:26,210 --> 00:27:26,220
+check those out if you want something
+ 
+
+1603
+00:27:26,220 --> 00:27:28,070
+check those out if you want something
+else to watch hit that subscribe button
+
+1604
+00:27:28,070 --> 00:27:28,080
+else to watch hit that subscribe button
+ 
+
+1605
+00:27:28,080 --> 00:27:30,169
+else to watch hit that subscribe button
+if you haven't already do a bunch of
+
+1606
+00:27:30,169 --> 00:27:30,179
+if you haven't already do a bunch of
+ 
+
+1607
+00:27:30,179 --> 00:27:31,669
+if you haven't already do a bunch of
+other action items that you can just
+
+1608
+00:27:31,669 --> 00:27:31,679
+other action items that you can just
+ 
+
+1609
+00:27:31,679 --> 00:27:33,409
+other action items that you can just
+make up at this point and I'll see you
+
+1610
+00:27:33,409 --> 00:27:33,419
+make up at this point and I'll see you
+ 
+
+1611
+00:27:33,419 --> 00:27:37,070
+make up at this point and I'll see you
+in the next one
+
+1612
+00:27:37,070 --> 00:27:37,080
+
+ 
+
+1613
+00:27:37,080 --> 00:27:40,080
+
+foreign
+

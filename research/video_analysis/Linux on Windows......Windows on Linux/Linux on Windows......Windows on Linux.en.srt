@@ -1,0 +1,6865 @@
+1
+00:00:00,080 --> 00:00:04,030
+
+Linux on Windows wow and windows on
+
+2
+00:00:04,030 --> 00:00:04,040
+Linux on Windows wow and windows on
+ 
+
+3
+00:00:04,040 --> 00:00:06,909
+Linux on Windows wow and windows on
+Linux this is WSL or the windows
+
+4
+00:00:06,909 --> 00:00:06,919
+Linux this is WSL or the windows
+ 
+
+5
+00:00:06,919 --> 00:00:08,790
+Linux this is WSL or the windows
+subsystem for Linux in 2 minutes I'm
+
+6
+00:00:08,790 --> 00:00:08,800
+subsystem for Linux in 2 minutes I'm
+ 
+
+7
+00:00:08,800 --> 00:00:10,230
+subsystem for Linux in 2 minutes I'm
+going to have two flavors of Linux
+
+8
+00:00:10,230 --> 00:00:10,240
+going to have two flavors of Linux
+ 
+
+9
+00:00:10,240 --> 00:00:12,110
+going to have two flavors of Linux
+running on your Windows machine Ubuntu
+
+10
+00:00:12,110 --> 00:00:12,120
+running on your Windows machine Ubuntu
+ 
+
+11
+00:00:12,120 --> 00:00:14,589
+running on your Windows machine Ubuntu
+and C Linux for the hackers guey support
+
+12
+00:00:14,589 --> 00:00:14,599
+and C Linux for the hackers guey support
+ 
+
+13
+00:00:14,599 --> 00:00:17,269
+and C Linux for the hackers guey support
+GPU access shared files between Windows
+
+14
+00:00:17,269 --> 00:00:17,279
+GPU access shared files between Windows
+ 
+
+15
+00:00:17,279 --> 00:00:19,429
+GPU access shared files between Windows
+and Linux you can use Linux commands on
+
+16
+00:00:19,429 --> 00:00:19,439
+and Linux you can use Linux commands on
+ 
+
+17
+00:00:19,439 --> 00:00:21,390
+and Linux you can use Linux commands on
+Windows and windows commands on Linux
+
+18
+00:00:21,390 --> 00:00:21,400
+Windows and windows commands on Linux
+ 
+
+19
+00:00:21,400 --> 00:00:23,150
+Windows and windows commands on Linux
+it's crazy it's like Linux and windows
+
+20
+00:00:23,150 --> 00:00:23,160
+it's crazy it's like Linux and windows
+ 
+
+21
+00:00:23,160 --> 00:00:26,269
+it's crazy it's like Linux and windows
+became one person is it too powerful yes
+
+22
+00:00:26,269 --> 00:00:26,279
+became one person is it too powerful yes
+ 
+
+23
+00:00:26,279 --> 00:00:28,830
+became one person is it too powerful yes
+it is and even if you think you know WSL
+
+24
+00:00:28,830 --> 00:00:28,840
+it is and even if you think you know WSL
+ 
+
+25
+00:00:28,840 --> 00:00:30,349
+it is and even if you think you know WSL
+everything there is to know about it I
+
+26
+00:00:30,349 --> 00:00:30,359
+everything there is to know about it I
+ 
+
+27
+00:00:30,359 --> 00:00:31,950
+everything there is to know about it I
+bet you in this video you're going to
+
+28
+00:00:31,950 --> 00:00:31,960
+bet you in this video you're going to
+ 
+
+29
+00:00:31,960 --> 00:00:33,430
+bet you in this video you're going to
+learn something new in fact that's a
+
+30
+00:00:33,430 --> 00:00:33,440
+learn something new in fact that's a
+ 
+
+31
+00:00:33,440 --> 00:00:34,910
+learn something new in fact that's a
+challenge if you watch this video and
+
+32
+00:00:34,910 --> 00:00:34,920
+challenge if you watch this video and
+ 
+
+33
+00:00:34,920 --> 00:00:36,350
+challenge if you watch this video and
+you don't learn anything I give you
+
+34
+00:00:36,350 --> 00:00:36,360
+you don't learn anything I give you
+ 
+
+35
+00:00:36,360 --> 00:00:38,229
+you don't learn anything I give you
+permission to leave a mean comment about
+
+36
+00:00:38,229 --> 00:00:38,239
+permission to leave a mean comment about
+ 
+
+37
+00:00:38,239 --> 00:00:40,069
+permission to leave a mean comment about
+me like really make it personal attack
+
+38
+00:00:40,069 --> 00:00:40,079
+me like really make it personal attack
+ 
+
+39
+00:00:40,079 --> 00:00:41,790
+me like really make it personal attack
+me as a person I'm giving you permission
+
+40
+00:00:41,790 --> 00:00:41,800
+me as a person I'm giving you permission
+ 
+
+41
+00:00:41,800 --> 00:00:44,470
+me as a person I'm giving you permission
+get your coffee ready let's go okay
+
+42
+00:00:44,470 --> 00:00:44,480
+get your coffee ready let's go okay
+ 
+
+43
+00:00:44,480 --> 00:00:45,950
+get your coffee ready let's go okay
+before we go crazy let's talk about what
+
+44
+00:00:45,950 --> 00:00:45,960
+before we go crazy let's talk about what
+ 
+
+45
+00:00:45,960 --> 00:00:48,590
+before we go crazy let's talk about what
+you need who can run wsl2 and by the way
+
+46
+00:00:48,590 --> 00:00:48,600
+you need who can run wsl2 and by the way
+ 
+
+47
+00:00:48,600 --> 00:00:51,069
+you need who can run wsl2 and by the way
+this is wsl2 there was a one this one is
+
+48
+00:00:51,069 --> 00:00:51,079
+this is wsl2 there was a one this one is
+ 
+
+49
+00:00:51,079 --> 00:00:52,510
+this is wsl2 there was a one this one is
+obviously better for Hardware you'll
+
+50
+00:00:52,510 --> 00:00:52,520
+obviously better for Hardware you'll
+ 
+
+51
+00:00:52,520 --> 00:00:54,750
+obviously better for Hardware you'll
+want a 64-bit processor and arm is
+
+52
+00:00:54,750 --> 00:00:54,760
+want a 64-bit processor and arm is
+ 
+
+53
+00:00:54,760 --> 00:00:56,750
+want a 64-bit processor and arm is
+supported you want a minimum of 4 gigs
+
+54
+00:00:56,750 --> 00:00:56,760
+supported you want a minimum of 4 gigs
+ 
+
+55
+00:00:56,760 --> 00:00:59,150
+supported you want a minimum of 4 gigs
+of RAM and like anything in it any
+
+56
+00:00:59,150 --> 00:00:59,160
+of RAM and like anything in it any
+ 
+
+57
+00:00:59,160 --> 00:01:00,670
+of RAM and like anything in it any
+project I've covered the more Rim you
+
+58
+00:01:00,670 --> 00:01:00,680
+project I've covered the more Rim you
+ 
+
+59
+00:01:00,680 --> 00:01:02,110
+project I've covered the more Rim you
+have the better you'll probably have the
+
+60
+00:01:02,110 --> 00:01:02,120
+have the better you'll probably have the
+ 
+
+61
+00:01:02,120 --> 00:01:04,310
+have the better you'll probably have the
+best time with 16 or higher now before
+
+62
+00:01:04,310 --> 00:01:04,320
+best time with 16 or higher now before
+ 
+
+63
+00:01:04,320 --> 00:01:05,670
+best time with 16 or higher now before
+we move on if you don't already have it
+
+64
+00:01:05,670 --> 00:01:05,680
+we move on if you don't already have it
+ 
+
+65
+00:01:05,680 --> 00:01:06,990
+we move on if you don't already have it
+enabled you'll need to jump into your
+
+66
+00:01:06,990 --> 00:01:07,000
+enabled you'll need to jump into your
+ 
+
+67
+00:01:07,000 --> 00:01:09,070
+enabled you'll need to jump into your
+bios and enable virtualization because
+
+68
+00:01:09,070 --> 00:01:09,080
+bios and enable virtualization because
+ 
+
+69
+00:01:09,080 --> 00:01:11,469
+bios and enable virtualization because
+wsl2 uses lightweight virtual machines
+
+70
+00:01:11,469 --> 00:01:11,479
+wsl2 uses lightweight virtual machines
+ 
+
+71
+00:01:11,479 --> 00:01:13,270
+wsl2 uses lightweight virtual machines
+so reboot your computer jump into your
+
+72
+00:01:13,270 --> 00:01:13,280
+so reboot your computer jump into your
+ 
+
+73
+00:01:13,280 --> 00:01:15,510
+so reboot your computer jump into your
+bios you'll either hit Escape or F2 or
+
+74
+00:01:15,510 --> 00:01:15,520
+bios you'll either hit Escape or F2 or
+ 
+
+75
+00:01:15,520 --> 00:01:17,190
+bios you'll either hit Escape or F2 or
+F10 or something it'll tell you and if
+
+76
+00:01:17,190 --> 00:01:17,200
+F10 or something it'll tell you and if
+ 
+
+77
+00:01:17,200 --> 00:01:18,550
+F10 or something it'll tell you and if
+you have an Intel processor look for
+
+78
+00:01:18,550 --> 00:01:18,560
+you have an Intel processor look for
+ 
+
+79
+00:01:18,560 --> 00:01:21,069
+you have an Intel processor look for
+something called Intel VTX and enable
+
+80
+00:01:21,069 --> 00:01:21,079
+something called Intel VTX and enable
+ 
+
+81
+00:01:21,079 --> 00:01:23,749
+something called Intel VTX and enable
+that if you have AMD look for amdv that
+
+82
+00:01:23,749 --> 00:01:23,759
+that if you have AMD look for amdv that
+ 
+
+83
+00:01:23,759 --> 00:01:25,350
+that if you have AMD look for amdv that
+will enable virtualization and you'll be
+
+84
+00:01:25,350 --> 00:01:25,360
+will enable virtualization and you'll be
+ 
+
+85
+00:01:25,360 --> 00:01:27,469
+will enable virtualization and you'll be
+all set WSL doesn't need much so I hope
+
+86
+00:01:27,469 --> 00:01:27,479
+all set WSL doesn't need much so I hope
+ 
+
+87
+00:01:27,479 --> 00:01:28,830
+all set WSL doesn't need much so I hope
+this includes most people let's talk
+
+88
+00:01:28,830 --> 00:01:28,840
+this includes most people let's talk
+ 
+
+89
+00:01:28,840 --> 00:01:30,310
+this includes most people let's talk
+about software now of of course you want
+
+90
+00:01:30,310 --> 00:01:30,320
+about software now of of course you want
+ 
+
+91
+00:01:30,320 --> 00:01:32,670
+about software now of of course you want
+to be running Windows this is Linux on
+
+92
+00:01:32,670 --> 00:01:32,680
+to be running Windows this is Linux on
+ 
+
+93
+00:01:32,680 --> 00:01:35,190
+to be running Windows this is Linux on
+Windows but what flavor you will 100%
+
+94
+00:01:35,190 --> 00:01:35,200
+Windows but what flavor you will 100%
+ 
+
+95
+00:01:35,200 --> 00:01:36,429
+Windows but what flavor you will 100%
+have the best time if you're running
+
+96
+00:01:36,429 --> 00:01:36,439
+have the best time if you're running
+ 
+
+97
+00:01:36,439 --> 00:01:38,149
+have the best time if you're running
+Windows 11 if you're still holding the
+
+98
+00:01:38,149 --> 00:01:38,159
+Windows 11 if you're still holding the
+ 
+
+99
+00:01:38,159 --> 00:01:40,389
+Windows 11 if you're still holding the
+line at Windows 10 you are supported but
+
+100
+00:01:40,389 --> 00:01:40,399
+line at Windows 10 you are supported but
+ 
+
+101
+00:01:40,399 --> 00:01:42,270
+line at Windows 10 you are supported but
+you got to be at build
+
+102
+00:01:42,270 --> 00:01:42,280
+you got to be at build
+ 
+
+103
+00:01:42,280 --> 00:01:45,429
+you got to be at build
+19041 almost forgot it or higher you can
+
+104
+00:01:45,429 --> 00:01:45,439
+19041 almost forgot it or higher you can
+ 
+
+105
+00:01:45,439 --> 00:01:46,870
+19041 almost forgot it or higher you can
+very quickly check that by going to your
+
+106
+00:01:46,870 --> 00:01:46,880
+very quickly check that by going to your
+ 
+
+107
+00:01:46,880 --> 00:01:49,830
+very quickly check that by going to your
+search bar and typing in w i n v r for
+
+108
+00:01:49,830 --> 00:01:49,840
+search bar and typing in w i n v r for
+ 
+
+109
+00:01:49,840 --> 00:01:51,469
+search bar and typing in w i n v r for
+wind there and it should show you right
+
+110
+00:01:51,469 --> 00:01:51,479
+wind there and it should show you right
+ 
+
+111
+00:01:51,479 --> 00:01:53,469
+wind there and it should show you right
+there hopefully you see a big Windows 11
+
+112
+00:01:53,469 --> 00:01:53,479
+there hopefully you see a big Windows 11
+ 
+
+113
+00:01:53,479 --> 00:01:54,709
+there hopefully you see a big Windows 11
+there and of course there's one more
+
+114
+00:01:54,709 --> 00:01:54,719
+there and of course there's one more
+ 
+
+115
+00:01:54,719 --> 00:01:56,990
+there and of course there's one more
+thing you need coffee everything in it
+
+116
+00:01:56,990 --> 00:01:57,000
+thing you need coffee everything in it
+ 
+
+117
+00:01:57,000 --> 00:02:00,670
+thing you need coffee everything in it
+requires coffee Eric Chuck coffee
+
+118
+00:02:00,670 --> 00:02:00,680
+requires coffee Eric Chuck coffee
+ 
+
+119
+00:02:00,680 --> 00:02:02,749
+requires coffee Eric Chuck coffee
+now here comes the 2-minute WSL install
+
+120
+00:02:02,749 --> 00:02:02,759
+now here comes the 2-minute WSL install
+ 
+
+121
+00:02:02,759 --> 00:02:03,789
+now here comes the 2-minute WSL install
+first you'll launch your windows
+
+122
+00:02:03,789 --> 00:02:03,799
+first you'll launch your windows
+ 
+
+123
+00:02:03,799 --> 00:02:05,510
+first you'll launch your windows
+terminal we'll just go to our search bar
+
+124
+00:02:05,510 --> 00:02:05,520
+terminal we'll just go to our search bar
+ 
+
+125
+00:02:05,520 --> 00:02:07,630
+terminal we'll just go to our search bar
+type in terminal and it should be this
+
+126
+00:02:07,630 --> 00:02:07,640
+type in terminal and it should be this
+ 
+
+127
+00:02:07,640 --> 00:02:09,070
+type in terminal and it should be this
+guy right here now we're about to
+
+128
+00:02:09,070 --> 00:02:09,080
+guy right here now we're about to
+ 
+
+129
+00:02:09,080 --> 00:02:10,350
+guy right here now we're about to
+install it with one command but just
+
+130
+00:02:10,350 --> 00:02:10,360
+install it with one command but just
+ 
+
+131
+00:02:10,360 --> 00:02:12,589
+install it with one command but just
+know this user account you're using for
+
+132
+00:02:12,589 --> 00:02:12,599
+know this user account you're using for
+ 
+
+133
+00:02:12,599 --> 00:02:15,190
+know this user account you're using for
+me it's me Chuck it does need admin
+
+134
+00:02:15,190 --> 00:02:15,200
+me it's me Chuck it does need admin
+ 
+
+135
+00:02:15,200 --> 00:02:16,710
+me it's me Chuck it does need admin
+privileges you'll find out real quick if
+
+136
+00:02:16,710 --> 00:02:16,720
+privileges you'll find out real quick if
+ 
+
+137
+00:02:16,720 --> 00:02:17,949
+privileges you'll find out real quick if
+you don't have them because this command
+
+138
+00:02:17,949 --> 00:02:17,959
+you don't have them because this command
+ 
+
+139
+00:02:17,959 --> 00:02:20,509
+you don't have them because this command
+will not work type this in with me WSL
+
+140
+00:02:20,509 --> 00:02:20,519
+will not work type this in with me WSL
+ 
+
+141
+00:02:20,519 --> 00:02:23,150
+will not work type this in with me WSL
+D- install that's literally all we have
+
+142
+00:02:23,150 --> 00:02:23,160
+D- install that's literally all we have
+ 
+
+143
+00:02:23,160 --> 00:02:25,710
+D- install that's literally all we have
+to do now to install WSL it was much
+
+144
+00:02:25,710 --> 00:02:25,720
+to do now to install WSL it was much
+ 
+
+145
+00:02:25,720 --> 00:02:27,830
+to do now to install WSL it was much
+harder before check this out hit enter
+
+146
+00:02:27,830 --> 00:02:27,840
+harder before check this out hit enter
+ 
+
+147
+00:02:27,840 --> 00:02:30,390
+harder before check this out hit enter
+you'll get a UAC prompt just say yes
+
+148
+00:02:30,390 --> 00:02:30,400
+you'll get a UAC prompt just say yes
+ 
+
+149
+00:02:30,400 --> 00:02:31,990
+you'll get a UAC prompt just say yes
+and it's doing it it first enables the
+
+150
+00:02:31,990 --> 00:02:32,000
+and it's doing it it first enables the
+ 
+
+151
+00:02:32,000 --> 00:02:33,830
+and it's doing it it first enables the
+virtual machine platform service another
+
+152
+00:02:33,830 --> 00:02:33,840
+virtual machine platform service another
+ 
+
+153
+00:02:33,840 --> 00:02:35,589
+virtual machine platform service another
+UAC prompt will click yes now it's
+
+154
+00:02:35,589 --> 00:02:35,599
+UAC prompt will click yes now it's
+ 
+
+155
+00:02:35,599 --> 00:02:36,869
+UAC prompt will click yes now it's
+installing the windows subsystem for
+
+156
+00:02:36,869 --> 00:02:36,879
+installing the windows subsystem for
+ 
+
+157
+00:02:36,879 --> 00:02:38,710
+installing the windows subsystem for
+Linux it's going pretty quick actually
+
+158
+00:02:38,710 --> 00:02:38,720
+Linux it's going pretty quick actually
+ 
+
+159
+00:02:38,720 --> 00:02:40,670
+Linux it's going pretty quick actually
+and notice it is installing Ubuntu
+
+160
+00:02:40,670 --> 00:02:40,680
+and notice it is installing Ubuntu
+ 
+
+161
+00:02:40,680 --> 00:02:42,149
+and notice it is installing Ubuntu
+that's the default drro and now that
+
+162
+00:02:42,149 --> 00:02:42,159
+that's the default drro and now that
+ 
+
+163
+00:02:42,159 --> 00:02:43,830
+that's the default drro and now that
+it's done we're going to go ahead and um
+
+164
+00:02:43,830 --> 00:02:43,840
+it's done we're going to go ahead and um
+ 
+
+165
+00:02:43,840 --> 00:02:45,750
+it's done we're going to go ahead and um
+restart because it told us to just close
+
+166
+00:02:45,750 --> 00:02:45,760
+restart because it told us to just close
+ 
+
+167
+00:02:45,760 --> 00:02:49,550
+restart because it told us to just close
+this out and reboot your
+
+168
+00:02:49,550 --> 00:02:49,560
+this out and reboot your
+ 
+
+169
+00:02:49,560 --> 00:02:52,070
+this out and reboot your
+PC okay once your computer has rebooted
+
+170
+00:02:52,070 --> 00:02:52,080
+PC okay once your computer has rebooted
+ 
+
+171
+00:02:52,080 --> 00:02:53,869
+PC okay once your computer has rebooted
+you should arrive here it's going to ask
+
+172
+00:02:53,869 --> 00:02:53,879
+you should arrive here it's going to ask
+ 
+
+173
+00:02:53,879 --> 00:02:55,550
+you should arrive here it's going to ask
+you to set up a username I'll put in my
+
+174
+00:02:55,550 --> 00:02:55,560
+you to set up a username I'll put in my
+ 
+
+175
+00:02:55,560 --> 00:02:58,350
+you to set up a username I'll put in my
+network Chuck and then set up a password
+
+176
+00:02:58,350 --> 00:02:58,360
+network Chuck and then set up a password
+ 
+
+177
+00:02:58,360 --> 00:03:01,110
+network Chuck and then set up a password
+and just like that I'm in side Linux I'm
+
+178
+00:03:01,110 --> 00:03:01,120
+and just like that I'm in side Linux I'm
+ 
+
+179
+00:03:01,120 --> 00:03:03,710
+and just like that I'm in side Linux I'm
+Ubuntu now we can leave WSL by tying in
+
+180
+00:03:03,710 --> 00:03:03,720
+Ubuntu now we can leave WSL by tying in
+ 
+
+181
+00:03:03,720 --> 00:03:05,470
+Ubuntu now we can leave WSL by tying in
+exit or just by simply closing the
+
+182
+00:03:05,470 --> 00:03:05,480
+exit or just by simply closing the
+ 
+
+183
+00:03:05,480 --> 00:03:06,949
+exit or just by simply closing the
+window but it's always there we can
+
+184
+00:03:06,949 --> 00:03:06,959
+window but it's always there we can
+ 
+
+185
+00:03:06,959 --> 00:03:08,550
+window but it's always there we can
+launch our terminal once more and by
+
+186
+00:03:08,550 --> 00:03:08,560
+launch our terminal once more and by
+ 
+
+187
+00:03:08,560 --> 00:03:09,630
+launch our terminal once more and by
+default it's going to launch you right
+
+188
+00:03:09,630 --> 00:03:09,640
+default it's going to launch you right
+ 
+
+189
+00:03:09,640 --> 00:03:11,430
+default it's going to launch you right
+back into Powershell to launch Ubuntu
+
+190
+00:03:11,430 --> 00:03:11,440
+back into Powershell to launch Ubuntu
+ 
+
+191
+00:03:11,440 --> 00:03:15,390
+back into Powershell to launch Ubuntu
+again just type in WSL DD and Ubuntu
+
+192
+00:03:15,390 --> 00:03:15,400
+again just type in WSL DD and Ubuntu
+ 
+
+193
+00:03:15,400 --> 00:03:17,030
+again just type in WSL DD and Ubuntu
+we're back in let's type in exit to get
+
+194
+00:03:17,030 --> 00:03:17,040
+we're back in let's type in exit to get
+ 
+
+195
+00:03:17,040 --> 00:03:18,750
+we're back in let's type in exit to get
+out and we can install more than just
+
+196
+00:03:18,750 --> 00:03:18,760
+out and we can install more than just
+ 
+
+197
+00:03:18,760 --> 00:03:22,990
+out and we can install more than just
+Ubuntu watch this type in WSL d-list D-
+
+198
+00:03:22,990 --> 00:03:23,000
+Ubuntu watch this type in WSL d-list D-
+ 
+
+199
+00:03:23,000 --> 00:03:24,869
+Ubuntu watch this type in WSL d-list D-
+online this will show you all the
+
+200
+00:03:24,869 --> 00:03:24,879
+online this will show you all the
+ 
+
+201
+00:03:24,879 --> 00:03:26,589
+online this will show you all the
+available dros that you can download and
+
+202
+00:03:26,589 --> 00:03:26,599
+available dros that you can download and
+ 
+
+203
+00:03:26,599 --> 00:03:29,270
+available dros that you can download and
+install one I care about is C Linux the
+
+204
+00:03:29,270 --> 00:03:29,280
+install one I care about is C Linux the
+ 
+
+205
+00:03:29,280 --> 00:03:31,550
+install one I care about is C Linux the
+hacking Linux drro now we could install
+
+206
+00:03:31,550 --> 00:03:31,560
+hacking Linux drro now we could install
+ 
+
+207
+00:03:31,560 --> 00:03:32,630
+hacking Linux drro now we could install
+that right here from the command line
+
+208
+00:03:32,630 --> 00:03:32,640
+that right here from the command line
+ 
+
+209
+00:03:32,640 --> 00:03:34,429
+that right here from the command line
+similar to Ubuntu but it gave me some
+
+210
+00:03:34,429 --> 00:03:34,439
+similar to Ubuntu but it gave me some
+ 
+
+211
+00:03:34,439 --> 00:03:35,830
+similar to Ubuntu but it gave me some
+problems let me show you a better way to
+
+212
+00:03:35,830 --> 00:03:35,840
+problems let me show you a better way to
+ 
+
+213
+00:03:35,840 --> 00:03:37,229
+problems let me show you a better way to
+do it did you know you can install these
+
+214
+00:03:37,229 --> 00:03:37,239
+do it did you know you can install these
+ 
+
+215
+00:03:37,239 --> 00:03:39,350
+do it did you know you can install these
+things right from the Windows store
+
+216
+00:03:39,350 --> 00:03:39,360
+things right from the Windows store
+ 
+
+217
+00:03:39,360 --> 00:03:40,869
+things right from the Windows store
+watch this we'll go to our search bar
+
+218
+00:03:40,869 --> 00:03:40,879
+watch this we'll go to our search bar
+ 
+
+219
+00:03:40,879 --> 00:03:42,630
+watch this we'll go to our search bar
+and type in store and launch the
+
+220
+00:03:42,630 --> 00:03:42,640
+and type in store and launch the
+ 
+
+221
+00:03:42,640 --> 00:03:44,390
+and type in store and launch the
+Microsoft store here I'm simply going to
+
+222
+00:03:44,390 --> 00:03:44,400
+Microsoft store here I'm simply going to
+ 
+
+223
+00:03:44,400 --> 00:03:46,149
+Microsoft store here I'm simply going to
+search for C Linux in the search bar at
+
+224
+00:03:46,149 --> 00:03:46,159
+search for C Linux in the search bar at
+ 
+
+225
+00:03:46,159 --> 00:03:48,910
+search for C Linux in the search bar at
+the top hit enter and there it is now it
+
+226
+00:03:48,910 --> 00:03:48,920
+the top hit enter and there it is now it
+ 
+
+227
+00:03:48,920 --> 00:03:50,470
+the top hit enter and there it is now it
+says I already have it installed it's
+
+228
+00:03:50,470 --> 00:03:50,480
+says I already have it installed it's
+ 
+
+229
+00:03:50,480 --> 00:03:52,069
+says I already have it installed it's
+lying I don't know why we'll go and
+
+230
+00:03:52,069 --> 00:03:52,079
+lying I don't know why we'll go and
+ 
+
+231
+00:03:52,079 --> 00:03:53,470
+lying I don't know why we'll go and
+click on that you should see the option
+
+232
+00:03:53,470 --> 00:03:53,480
+click on that you should see the option
+ 
+
+233
+00:03:53,480 --> 00:03:56,270
+click on that you should see the option
+to install where mine says open liar go
+
+234
+00:03:56,270 --> 00:03:56,280
+to install where mine says open liar go
+ 
+
+235
+00:03:56,280 --> 00:03:57,750
+to install where mine says open liar go
+and click on whatever your option is and
+
+236
+00:03:57,750 --> 00:03:57,760
+and click on whatever your option is and
+ 
+
+237
+00:03:57,760 --> 00:03:59,149
+and click on whatever your option is and
+it should install and launch another
+
+238
+00:03:59,149 --> 00:03:59,159
+it should install and launch another
+ 
+
+239
+00:03:59,159 --> 00:04:00,550
+it should install and launch another
+terminal simp similar to how it did with
+
+240
+00:04:00,550 --> 00:04:00,560
+terminal simp similar to how it did with
+ 
+
+241
+00:04:00,560 --> 00:04:02,789
+terminal simp similar to how it did with
+Ubuntu proing you for a username and a
+
+242
+00:04:02,789 --> 00:04:02,799
+Ubuntu proing you for a username and a
+ 
+
+243
+00:04:02,799 --> 00:04:05,110
+Ubuntu proing you for a username and a
+password and now I'm in Cali Linux we
+
+244
+00:04:05,110 --> 00:04:05,120
+password and now I'm in Cali Linux we
+ 
+
+245
+00:04:05,120 --> 00:04:06,750
+password and now I'm in Cali Linux we
+can launch Ubuntu at the same time open
+
+246
+00:04:06,750 --> 00:04:06,760
+can launch Ubuntu at the same time open
+ 
+
+247
+00:04:06,760 --> 00:04:09,309
+can launch Ubuntu at the same time open
+up another tab type in WSL DD and the
+
+248
+00:04:09,309 --> 00:04:09,319
+up another tab type in WSL DD and the
+ 
+
+249
+00:04:09,319 --> 00:04:11,949
+up another tab type in WSL DD and the
+name of your Dro Ubuntu if you spell it
+
+250
+00:04:11,949 --> 00:04:11,959
+name of your Dro Ubuntu if you spell it
+ 
+
+251
+00:04:11,959 --> 00:04:13,190
+name of your Dro Ubuntu if you spell it
+right it'll open now we're running
+
+252
+00:04:13,190 --> 00:04:13,200
+right it'll open now we're running
+ 
+
+253
+00:04:13,200 --> 00:04:15,789
+right it'll open now we're running
+Ubuntu and Cali Linux and windows sign
+
+254
+00:04:15,789 --> 00:04:15,799
+Ubuntu and Cali Linux and windows sign
+ 
+
+255
+00:04:15,799 --> 00:04:17,789
+Ubuntu and Cali Linux and windows sign
+by side now right now C Linux has no
+
+256
+00:04:17,789 --> 00:04:17,799
+by side now right now C Linux has no
+ 
+
+257
+00:04:17,799 --> 00:04:19,870
+by side now right now C Linux has no
+tools installed it's a minimal install
+
+258
+00:04:19,870 --> 00:04:19,880
+tools installed it's a minimal install
+ 
+
+259
+00:04:19,880 --> 00:04:22,150
+tools installed it's a minimal install
+let's change that run the command C-
+
+260
+00:04:22,150 --> 00:04:22,160
+let's change that run the command C-
+ 
+
+261
+00:04:22,160 --> 00:04:24,749
+let's change that run the command C-
+tweaks let we get a nice menu let's
+
+262
+00:04:24,749 --> 00:04:24,759
+tweaks let we get a nice menu let's
+ 
+
+263
+00:04:24,759 --> 00:04:26,469
+tweaks let we get a nice menu let's
+click on Madea packages just use your
+
+264
+00:04:26,469 --> 00:04:26,479
+click on Madea packages just use your
+ 
+
+265
+00:04:26,479 --> 00:04:28,550
+click on Madea packages just use your
+directional arrows and go down hit enter
+
+266
+00:04:28,550 --> 00:04:28,560
+directional arrows and go down hit enter
+ 
+
+267
+00:04:28,560 --> 00:04:30,070
+directional arrows and go down hit enter
+put your pseudo password in which will
+
+268
+00:04:30,070 --> 00:04:30,080
+put your pseudo password in which will
+ 
+
+269
+00:04:30,080 --> 00:04:32,430
+put your pseudo password in which will
+be the password you set for the system
+
+270
+00:04:32,430 --> 00:04:32,440
+be the password you set for the system
+ 
+
+271
+00:04:32,440 --> 00:04:34,870
+be the password you set for the system
+and let's install C linux's top 10 tools
+
+272
+00:04:34,870 --> 00:04:34,880
+and let's install C linux's top 10 tools
+ 
+
+273
+00:04:34,880 --> 00:04:36,870
+and let's install C linux's top 10 tools
+scroll down hit the space bar to select
+
+274
+00:04:36,870 --> 00:04:36,880
+scroll down hit the space bar to select
+ 
+
+275
+00:04:36,880 --> 00:04:40,749
+scroll down hit the space bar to select
+it tab hit enter to apply and hit okay
+
+276
+00:04:40,749 --> 00:04:40,759
+it tab hit enter to apply and hit okay
+ 
+
+277
+00:04:40,759 --> 00:04:42,430
+it tab hit enter to apply and hit okay
+and hit enter again it's going to ask
+
+278
+00:04:42,430 --> 00:04:42,440
+and hit enter again it's going to ask
+ 
+
+279
+00:04:42,440 --> 00:04:43,950
+and hit enter again it's going to ask
+you a few times maybe perfect time for a
+
+280
+00:04:43,950 --> 00:04:43,960
+you a few times maybe perfect time for a
+ 
+
+281
+00:04:43,960 --> 00:04:46,070
+you a few times maybe perfect time for a
+coffee
+
+282
+00:04:46,070 --> 00:04:46,080
+coffee
+ 
+
+283
+00:04:46,080 --> 00:04:48,350
+coffee
+break now actually while it's doing that
+
+284
+00:04:48,350 --> 00:04:48,360
+break now actually while it's doing that
+ 
+
+285
+00:04:48,360 --> 00:04:49,950
+break now actually while it's doing that
+what do you say we play a newu I want to
+
+286
+00:04:49,950 --> 00:04:49,960
+what do you say we play a newu I want to
+ 
+
+287
+00:04:49,960 --> 00:04:51,909
+what do you say we play a newu I want to
+show you a few cool things like first
+
+288
+00:04:51,909 --> 00:04:51,919
+show you a few cool things like first
+ 
+
+289
+00:04:51,919 --> 00:04:54,029
+show you a few cool things like first
+how we can run a Windows command inside
+
+290
+00:04:54,029 --> 00:04:54,039
+how we can run a Windows command inside
+ 
+
+291
+00:04:54,039 --> 00:04:56,710
+how we can run a Windows command inside
+Linux watch this ip config is how you
+
+292
+00:04:56,710 --> 00:04:56,720
+Linux watch this ip config is how you
+ 
+
+293
+00:04:56,720 --> 00:04:58,230
+Linux watch this ip config is how you
+find out what your IP address is in the
+
+294
+00:04:58,230 --> 00:04:58,240
+find out what your IP address is in the
+ 
+
+295
+00:04:58,240 --> 00:05:00,270
+find out what your IP address is in the
+Windows command prompt I can run that
+
+296
+00:05:00,270 --> 00:05:00,280
+Windows command prompt I can run that
+ 
+
+297
+00:05:00,280 --> 00:05:03,670
+Windows command prompt I can run that
+right here inside Linux what I can use
+
+298
+00:05:03,670 --> 00:05:03,680
+right here inside Linux what I can use
+ 
+
+299
+00:05:03,680 --> 00:05:06,150
+right here inside Linux what I can use
+the windows ping ping.exe I can open
+
+300
+00:05:06,150 --> 00:05:06,160
+the windows ping ping.exe I can open
+ 
+
+301
+00:05:06,160 --> 00:05:08,629
+the windows ping ping.exe I can open
+files with notepad if I add exe at the
+
+302
+00:05:08,629 --> 00:05:08,639
+files with notepad if I add exe at the
+ 
+
+303
+00:05:08,639 --> 00:05:12,189
+files with notepad if I add exe at the
+end exe I can even open up my current
+
+304
+00:05:12,189 --> 00:05:12,199
+end exe I can even open up my current
+ 
+
+305
+00:05:12,199 --> 00:05:15,110
+end exe I can even open up my current
+location inside Windows Explorer type in
+
+306
+00:05:15,110 --> 00:05:15,120
+location inside Windows Explorer type in
+ 
+
+307
+00:05:15,120 --> 00:05:18,110
+location inside Windows Explorer type in
+explorer.exe type in dot right after
+
+308
+00:05:18,110 --> 00:05:18,120
+explorer.exe type in dot right after
+ 
+
+309
+00:05:18,120 --> 00:05:20,590
+explorer.exe type in dot right after
+that these are my Linux files right here
+
+310
+00:05:20,590 --> 00:05:20,600
+that these are my Linux files right here
+ 
+
+311
+00:05:20,600 --> 00:05:23,110
+that these are my Linux files right here
+inside Windows Explorer that's nuts
+
+312
+00:05:23,110 --> 00:05:23,120
+inside Windows Explorer that's nuts
+ 
+
+313
+00:05:23,120 --> 00:05:24,909
+inside Windows Explorer that's nuts
+let's reverse it let's go to Powershell
+
+314
+00:05:24,909 --> 00:05:24,919
+let's reverse it let's go to Powershell
+ 
+
+315
+00:05:24,919 --> 00:05:26,590
+let's reverse it let's go to Powershell
+open up a new Powershell window this is
+
+316
+00:05:26,590 --> 00:05:26,600
+open up a new Powershell window this is
+ 
+
+317
+00:05:26,600 --> 00:05:28,870
+open up a new Powershell window this is
+all windows I can type in ip config
+
+318
+00:05:28,870 --> 00:05:28,880
+all windows I can type in ip config
+ 
+
+319
+00:05:28,880 --> 00:05:30,550
+all windows I can type in ip config
+which will give me my IP addresses but I
+
+320
+00:05:30,550 --> 00:05:30,560
+which will give me my IP addresses but I
+ 
+
+321
+00:05:30,560 --> 00:05:32,390
+which will give me my IP addresses but I
+can filter using a Linux command I'll
+
+322
+00:05:32,390 --> 00:05:32,400
+can filter using a Linux command I'll
+ 
+
+323
+00:05:32,400 --> 00:05:35,029
+can filter using a Linux command I'll
+type in ip config I'll pipe out of pipe
+
+324
+00:05:35,029 --> 00:05:35,039
+type in ip config I'll pipe out of pipe
+ 
+
+325
+00:05:35,039 --> 00:05:37,390
+type in ip config I'll pipe out of pipe
+and then type in WSL to invoke a Linux
+
+326
+00:05:37,390 --> 00:05:37,400
+and then type in WSL to invoke a Linux
+ 
+
+327
+00:05:37,400 --> 00:05:41,350
+and then type in WSL to invoke a Linux
+command and I'll say grap 410 dot how
+
+328
+00:05:41,350 --> 00:05:41,360
+command and I'll say grap 410 dot how
+ 
+
+329
+00:05:41,360 --> 00:05:43,469
+command and I'll say grap 410 dot how
+cool is that by the way grap is a Linux
+
+330
+00:05:43,469 --> 00:05:43,479
+cool is that by the way grap is a Linux
+ 
+
+331
+00:05:43,479 --> 00:05:45,909
+cool is that by the way grap is a Linux
+based command to filter based on search
+
+332
+00:05:45,909 --> 00:05:45,919
+based command to filter based on search
+ 
+
+333
+00:05:45,919 --> 00:05:47,070
+based command to filter based on search
+it does more than that but that's just
+
+334
+00:05:47,070 --> 00:05:47,080
+it does more than that but that's just
+ 
+
+335
+00:05:47,080 --> 00:05:48,710
+it does more than that but that's just
+one thing I can use the Linux cat
+
+336
+00:05:48,710 --> 00:05:48,720
+one thing I can use the Linux cat
+ 
+
+337
+00:05:48,720 --> 00:05:51,430
+one thing I can use the Linux cat
+command WSL cat and then my file name
+
+338
+00:05:51,430 --> 00:05:51,440
+command WSL cat and then my file name
+ 
+
+339
+00:05:51,440 --> 00:05:53,150
+command WSL cat and then my file name
+it's like Linux and windows have become
+
+340
+00:05:53,150 --> 00:05:53,160
+it's like Linux and windows have become
+ 
+
+341
+00:05:53,160 --> 00:05:55,110
+it's like Linux and windows have become
+one person and I'm here for it now this
+
+342
+00:05:55,110 --> 00:05:55,120
+one person and I'm here for it now this
+ 
+
+343
+00:05:55,120 --> 00:05:57,309
+one person and I'm here for it now this
+might take a minute it did for me I just
+
+344
+00:05:57,309 --> 00:05:57,319
+might take a minute it did for me I just
+ 
+
+345
+00:05:57,319 --> 00:05:58,909
+might take a minute it did for me I just
+got some more coffee no big deal uh
+
+346
+00:05:58,909 --> 00:05:58,919
+got some more coffee no big deal uh
+ 
+
+347
+00:05:58,919 --> 00:06:00,629
+got some more coffee no big deal uh
+we'll just tab over over and quit that
+
+348
+00:06:00,629 --> 00:06:00,639
+we'll just tab over over and quit that
+ 
+
+349
+00:06:00,639 --> 00:06:02,029
+we'll just tab over over and quit that
+now you should have a few more C Linux
+
+350
+00:06:02,029 --> 00:06:02,039
+now you should have a few more C Linux
+ 
+
+351
+00:06:02,039 --> 00:06:03,950
+now you should have a few more C Linux
+tools now there is one let me see if I
+
+352
+00:06:03,950 --> 00:06:03,960
+tools now there is one let me see if I
+ 
+
+353
+00:06:03,960 --> 00:06:05,189
+tools now there is one let me see if I
+already have it installed here
+
+354
+00:06:05,189 --> 00:06:05,199
+already have it installed here
+ 
+
+355
+00:06:05,199 --> 00:06:07,309
+already have it installed here
+spiderfoot let me install it this tool
+
+356
+00:06:07,309 --> 00:06:07,319
+spiderfoot let me install it this tool
+ 
+
+357
+00:06:07,319 --> 00:06:09,070
+spiderfoot let me install it this tool
+is kind of crazy I just had to show you
+
+358
+00:06:09,070 --> 00:06:09,080
+is kind of crazy I just had to show you
+ 
+
+359
+00:06:09,080 --> 00:06:11,029
+is kind of crazy I just had to show you
+it's an ENT tool or open source
+
+360
+00:06:11,029 --> 00:06:11,039
+it's an ENT tool or open source
+ 
+
+361
+00:06:11,039 --> 00:06:12,790
+it's an ENT tool or open source
+intelligence tool for hackers I'm going
+
+362
+00:06:12,790 --> 00:06:12,800
+intelligence tool for hackers I'm going
+ 
+
+363
+00:06:12,800 --> 00:06:16,589
+intelligence tool for hackers I'm going
+to launch it spiderfoot DL specify my IP
+
+364
+00:06:16,589 --> 00:06:16,599
+to launch it spiderfoot DL specify my IP
+ 
+
+365
+00:06:16,599 --> 00:06:19,629
+to launch it spiderfoot DL specify my IP
+address which will be local here 1271
+
+366
+00:06:19,629 --> 00:06:19,639
+address which will be local here 1271
+ 
+
+367
+00:06:19,639 --> 00:06:23,070
+address which will be local here 1271
+Port 51 oh wait
+
+368
+00:06:23,070 --> 00:06:23,080
+Port 51 oh wait
+ 
+
+369
+00:06:23,080 --> 00:06:25,029
+Port 51 oh wait
+spiderfoot and now I got a web server
+
+370
+00:06:25,029 --> 00:06:25,039
+spiderfoot and now I got a web server
+ 
+
+371
+00:06:25,039 --> 00:06:27,710
+spiderfoot and now I got a web server
+running on my WSL so cool I'm going to
+
+372
+00:06:27,710 --> 00:06:27,720
+running on my WSL so cool I'm going to
+ 
+
+373
+00:06:27,720 --> 00:06:28,950
+running on my WSL so cool I'm going to
+launch my web browser real quick and go
+
+374
+00:06:28,950 --> 00:06:28,960
+launch my web browser real quick and go
+ 
+
+375
+00:06:28,960 --> 00:06:31,990
+launch my web browser real quick and go
+to local post 51 and they're spiderfoot
+
+376
+00:06:31,990 --> 00:06:32,000
+to local post 51 and they're spiderfoot
+ 
+
+377
+00:06:32,000 --> 00:06:34,390
+to local post 51 and they're spiderfoot
+this thing can find a ton of information
+
+378
+00:06:34,390 --> 00:06:34,400
+this thing can find a ton of information
+ 
+
+379
+00:06:34,400 --> 00:06:36,029
+this thing can find a ton of information
+about people I want to do a scan I'll
+
+380
+00:06:36,029 --> 00:06:36,039
+about people I want to do a scan I'll
+ 
+
+381
+00:06:36,039 --> 00:06:37,749
+about people I want to do a scan I'll
+name it my scan and then you scan your
+
+382
+00:06:37,749 --> 00:06:37,759
+name it my scan and then you scan your
+ 
+
+383
+00:06:37,759 --> 00:06:39,270
+name it my scan and then you scan your
+target you can scan anything I'm going
+
+384
+00:06:39,270 --> 00:06:39,280
+target you can scan anything I'm going
+ 
+
+385
+00:06:39,280 --> 00:06:42,710
+target you can scan anything I'm going
+to scan um a name Chuck Keith which is
+
+386
+00:06:42,710 --> 00:06:42,720
+to scan um a name Chuck Keith which is
+ 
+
+387
+00:06:42,720 --> 00:06:44,029
+to scan um a name Chuck Keith which is
+my name let's run the scan and see what
+
+388
+00:06:44,029 --> 00:06:44,039
+my name let's run the scan and see what
+ 
+
+389
+00:06:44,039 --> 00:06:45,710
+my name let's run the scan and see what
+it finds and watch the cool command
+
+390
+00:06:45,710 --> 00:06:45,720
+it finds and watch the cool command
+ 
+
+391
+00:06:45,720 --> 00:06:47,029
+it finds and watch the cool command
+light stuff happening in the background
+
+392
+00:06:47,029 --> 00:06:47,039
+light stuff happening in the background
+ 
+
+393
+00:06:47,039 --> 00:06:48,870
+light stuff happening in the background
+ooh we found stuff human
+
+394
+00:06:48,870 --> 00:06:48,880
+ooh we found stuff human
+ 
+
+395
+00:06:48,880 --> 00:06:51,990
+ooh we found stuff human
+name and hacked email address what is
+
+396
+00:06:51,990 --> 00:06:52,000
+name and hacked email address what is
+ 
+
+397
+00:06:52,000 --> 00:06:57,070
+name and hacked email address what is
+that no way okay this right here it's
+
+398
+00:06:57,070 --> 00:06:57,080
+that no way okay this right here it's
+ 
+
+399
+00:06:57,080 --> 00:07:00,070
+that no way okay this right here it's
+not me but what it is was my dad's old
+
+400
+00:07:00,070 --> 00:07:00,080
+not me but what it is was my dad's old
+ 
+
+401
+00:07:00,080 --> 00:07:02,110
+not me but what it is was my dad's old
+email address at a previous company yes
+
+402
+00:07:02,110 --> 00:07:02,120
+email address at a previous company yes
+ 
+
+403
+00:07:02,120 --> 00:07:03,950
+email address at a previous company yes
+we're both named Chuck Keith it's a
+
+404
+00:07:03,950 --> 00:07:03,960
+we're both named Chuck Keith it's a
+ 
+
+405
+00:07:03,960 --> 00:07:05,550
+we're both named Chuck Keith it's a
+thing that's kind of scary right hackers
+
+406
+00:07:05,550 --> 00:07:05,560
+thing that's kind of scary right hackers
+ 
+
+407
+00:07:05,560 --> 00:07:07,670
+thing that's kind of scary right hackers
+use these tools all the time actually do
+
+408
+00:07:07,670 --> 00:07:07,680
+use these tools all the time actually do
+ 
+
+409
+00:07:07,680 --> 00:07:09,270
+use these tools all the time actually do
+you want to see something
+
+410
+00:07:09,270 --> 00:07:09,280
+you want to see something
+ 
+
+411
+00:07:09,280 --> 00:07:11,550
+you want to see something
+scary and honestly this makes me kind of
+
+412
+00:07:11,550 --> 00:07:11,560
+scary and honestly this makes me kind of
+ 
+
+413
+00:07:11,560 --> 00:07:12,950
+scary and honestly this makes me kind of
+mad I'm going to launch my network Chuck
+
+414
+00:07:12,950 --> 00:07:12,960
+mad I'm going to launch my network Chuck
+ 
+
+415
+00:07:12,960 --> 00:07:14,909
+mad I'm going to launch my network Chuck
+Cloud browser and go to a website called
+
+416
+00:07:14,909 --> 00:07:14,919
+Cloud browser and go to a website called
+ 
+
+417
+00:07:14,919 --> 00:07:16,629
+Cloud browser and go to a website called
+truthfinder you don't have to be a
+
+418
+00:07:16,629 --> 00:07:16,639
+truthfinder you don't have to be a
+ 
+
+419
+00:07:16,639 --> 00:07:18,629
+truthfinder you don't have to be a
+hacker to use this anyone can do it I
+
+420
+00:07:18,629 --> 00:07:18,639
+hacker to use this anyone can do it I
+ 
+
+421
+00:07:18,639 --> 00:07:20,510
+hacker to use this anyone can do it I
+signed up for an account paid 30 bucks
+
+422
+00:07:20,510 --> 00:07:20,520
+signed up for an account paid 30 bucks
+ 
+
+423
+00:07:20,520 --> 00:07:22,510
+signed up for an account paid 30 bucks
+and I searched for information on me and
+
+424
+00:07:22,510 --> 00:07:22,520
+and I searched for information on me and
+ 
+
+425
+00:07:22,520 --> 00:07:25,350
+and I searched for information on me and
+not only did it find me it revealed so
+
+426
+00:07:25,350 --> 00:07:25,360
+not only did it find me it revealed so
+ 
+
+427
+00:07:25,360 --> 00:07:27,510
+not only did it find me it revealed so
+much about me like my home address my
+
+428
+00:07:27,510 --> 00:07:27,520
+much about me like my home address my
+ 
+
+429
+00:07:27,520 --> 00:07:29,909
+much about me like my home address my
+family members my age birth birthday
+
+430
+00:07:29,909 --> 00:07:29,919
+family members my age birth birthday
+ 
+
+431
+00:07:29,919 --> 00:07:32,029
+family members my age birth birthday
+criminal record don't tell anybody my
+
+432
+00:07:32,029 --> 00:07:32,039
+criminal record don't tell anybody my
+ 
+
+433
+00:07:32,039 --> 00:07:33,990
+criminal record don't tell anybody my
+assets social profiles and not just
+
+434
+00:07:33,990 --> 00:07:34,000
+assets social profiles and not just
+ 
+
+435
+00:07:34,000 --> 00:07:36,029
+assets social profiles and not just
+where I currently live every place I've
+
+436
+00:07:36,029 --> 00:07:36,039
+where I currently live every place I've
+ 
+
+437
+00:07:36,039 --> 00:07:37,909
+where I currently live every place I've
+lived this makes me mad because this is
+
+438
+00:07:37,909 --> 00:07:37,919
+lived this makes me mad because this is
+ 
+
+439
+00:07:37,919 --> 00:07:40,070
+lived this makes me mad because this is
+public information anyone can create an
+
+440
+00:07:40,070 --> 00:07:40,080
+public information anyone can create an
+ 
+
+441
+00:07:40,080 --> 00:07:41,869
+public information anyone can create an
+account here and find this information
+
+442
+00:07:41,869 --> 00:07:41,879
+account here and find this information
+ 
+
+443
+00:07:41,879 --> 00:07:43,749
+account here and find this information
+about me that's not okay I actually had
+
+444
+00:07:43,749 --> 00:07:43,759
+about me that's not okay I actually had
+ 
+
+445
+00:07:43,759 --> 00:07:46,230
+about me that's not okay I actually had
+someone go on Twitter and post my home
+
+446
+00:07:46,230 --> 00:07:46,240
+someone go on Twitter and post my home
+ 
+
+447
+00:07:46,240 --> 00:07:48,589
+someone go on Twitter and post my home
+address publicly for everyone to see my
+
+448
+00:07:48,589 --> 00:07:48,599
+address publicly for everyone to see my
+ 
+
+449
+00:07:48,599 --> 00:07:51,430
+address publicly for everyone to see my
+kids are legit afraid to walk outside by
+
+450
+00:07:51,430 --> 00:07:51,440
+kids are legit afraid to walk outside by
+ 
+
+451
+00:07:51,440 --> 00:07:53,029
+kids are legit afraid to walk outside by
+themselves so what do I do about this
+
+452
+00:07:53,029 --> 00:07:53,039
+themselves so what do I do about this
+ 
+
+453
+00:07:53,039 --> 00:07:54,469
+themselves so what do I do about this
+how do I get my information off these
+
+454
+00:07:54,469 --> 00:07:54,479
+how do I get my information off these
+ 
+
+455
+00:07:54,479 --> 00:07:56,589
+how do I get my information off these
+sites and cogne they are the sponsor of
+
+456
+00:07:56,589 --> 00:07:56,599
+sites and cogne they are the sponsor of
+ 
+
+457
+00:07:56,599 --> 00:07:58,110
+sites and cogne they are the sponsor of
+this video and they are a tool that can
+
+458
+00:07:58,110 --> 00:07:58,120
+this video and they are a tool that can
+ 
+
+459
+00:07:58,120 --> 00:08:00,189
+this video and they are a tool that can
+help you get your information off this
+
+460
+00:08:00,189 --> 00:08:00,199
+help you get your information off this
+ 
+
+461
+00:08:00,199 --> 00:08:02,430
+help you get your information off this
+stuff off all these lists and yeah these
+
+462
+00:08:02,430 --> 00:08:02,440
+stuff off all these lists and yeah these
+ 
+
+463
+00:08:02,440 --> 00:08:04,350
+stuff off all these lists and yeah these
+are all just a list a database of
+
+464
+00:08:04,350 --> 00:08:04,360
+are all just a list a database of
+ 
+
+465
+00:08:04,360 --> 00:08:06,070
+are all just a list a database of
+information about all of us I mean go
+
+466
+00:08:06,070 --> 00:08:06,080
+information about all of us I mean go
+ 
+
+467
+00:08:06,080 --> 00:08:07,629
+information about all of us I mean go
+ahead look yourself up you're probably
+
+468
+00:08:07,629 --> 00:08:07,639
+ahead look yourself up you're probably
+ 
+
+469
+00:08:07,639 --> 00:08:09,830
+ahead look yourself up you're probably
+there this information is bought sold
+
+470
+00:08:09,830 --> 00:08:09,840
+there this information is bought sold
+ 
+
+471
+00:08:09,840 --> 00:08:12,149
+there this information is bought sold
+and traded amongst data Brokers so like
+
+472
+00:08:12,149 --> 00:08:12,159
+and traded amongst data Brokers so like
+ 
+
+473
+00:08:12,159 --> 00:08:14,270
+and traded amongst data Brokers so like
+marketing companies research companies
+
+474
+00:08:14,270 --> 00:08:14,280
+marketing companies research companies
+ 
+
+475
+00:08:14,280 --> 00:08:16,309
+marketing companies research companies
+HR companies will buy this information
+
+476
+00:08:16,309 --> 00:08:16,319
+HR companies will buy this information
+ 
+
+477
+00:08:16,319 --> 00:08:18,189
+HR companies will buy this information
+so they can screen potential employees
+
+478
+00:08:18,189 --> 00:08:18,199
+so they can screen potential employees
+ 
+
+479
+00:08:18,199 --> 00:08:19,629
+so they can screen potential employees
+profile them and of course the sides
+
+480
+00:08:19,629 --> 00:08:19,639
+profile them and of course the sides
+ 
+
+481
+00:08:19,639 --> 00:08:21,110
+profile them and of course the sides
+like truthfinder who will buy up all
+
+482
+00:08:21,110 --> 00:08:21,120
+like truthfinder who will buy up all
+ 
+
+483
+00:08:21,120 --> 00:08:22,629
+like truthfinder who will buy up all
+this information and offer it as a
+
+484
+00:08:22,629 --> 00:08:22,639
+this information and offer it as a
+ 
+
+485
+00:08:22,639 --> 00:08:23,990
+this information and offer it as a
+service someone to try it out I'm going
+
+486
+00:08:23,990 --> 00:08:24,000
+service someone to try it out I'm going
+ 
+
+487
+00:08:24,000 --> 00:08:25,790
+service someone to try it out I'm going
+to set up in cogy right now okay so I
+
+488
+00:08:25,790 --> 00:08:25,800
+to set up in cogy right now okay so I
+ 
+
+489
+00:08:25,800 --> 00:08:26,869
+to set up in cogy right now okay so I
+just signed up I gave it some
+
+490
+00:08:26,869 --> 00:08:26,879
+just signed up I gave it some
+ 
+
+491
+00:08:26,879 --> 00:08:28,749
+just signed up I gave it some
+information about me and I authorized it
+
+492
+00:08:28,749 --> 00:08:28,759
+information about me and I authorized it
+ 
+
+493
+00:08:28,759 --> 00:08:31,029
+information about me and I authorized it
+to contact companies based on my behalf
+
+494
+00:08:31,029 --> 00:08:31,039
+to contact companies based on my behalf
+ 
+
+495
+00:08:31,039 --> 00:08:32,430
+to contact companies based on my behalf
+now what does that mean look right here
+
+496
+00:08:32,430 --> 00:08:32,440
+now what does that mean look right here
+ 
+
+497
+00:08:32,440 --> 00:08:35,509
+now what does that mean look right here
+I signed up and immediately it sent 83
+
+498
+00:08:35,509 --> 00:08:35,519
+I signed up and immediately it sent 83
+ 
+
+499
+00:08:35,519 --> 00:08:37,990
+I signed up and immediately it sent 83
+requests to have my information removed
+
+500
+00:08:37,990 --> 00:08:38,000
+requests to have my information removed
+ 
+
+501
+00:08:38,000 --> 00:08:40,269
+requests to have my information removed
+from some list or data broker so for
+
+502
+00:08:40,269 --> 00:08:40,279
+from some list or data broker so for
+ 
+
+503
+00:08:40,279 --> 00:08:41,709
+from some list or data broker so for
+example look at the activity log
+
+504
+00:08:41,709 --> 00:08:41,719
+example look at the activity log
+ 
+
+505
+00:08:41,719 --> 00:08:43,790
+example look at the activity log
+telephone list It's s request to remove
+
+506
+00:08:43,790 --> 00:08:43,800
+telephone list It's s request to remove
+ 
+
+507
+00:08:43,800 --> 00:08:45,269
+telephone list It's s request to remove
+my information this is the reason I
+
+508
+00:08:45,269 --> 00:08:45,279
+my information this is the reason I
+ 
+
+509
+00:08:45,279 --> 00:08:47,150
+my information this is the reason I
+never answer my phone a phone call comes
+
+510
+00:08:47,150 --> 00:08:47,160
+never answer my phone a phone call comes
+ 
+
+511
+00:08:47,160 --> 00:08:49,310
+never answer my phone a phone call comes
+in if it's not a contact I know I don't
+
+512
+00:08:49,310 --> 00:08:49,320
+in if it's not a contact I know I don't
+ 
+
+513
+00:08:49,320 --> 00:08:52,110
+in if it's not a contact I know I don't
+answer because every call is Spam I went
+
+514
+00:08:52,110 --> 00:08:52,120
+answer because every call is Spam I went
+ 
+
+515
+00:08:52,120 --> 00:08:53,670
+answer because every call is Spam I went
+whenever it's election season because I
+
+516
+00:08:53,670 --> 00:08:53,680
+whenever it's election season because I
+ 
+
+517
+00:08:53,680 --> 00:08:55,790
+whenever it's election season because I
+know I'm about to get a dozen calls a
+
+518
+00:08:55,790 --> 00:08:55,800
+know I'm about to get a dozen calls a
+ 
+
+519
+00:08:55,800 --> 00:08:59,110
+know I'm about to get a dozen calls a
+day text emails it's an onslaught of
+
+520
+00:08:59,110 --> 00:08:59,120
+day text emails it's an onslaught of
+ 
+
+521
+00:08:59,120 --> 00:09:01,069
+day text emails it's an onslaught of
+just spam and I feel helpless like what
+
+522
+00:09:01,069 --> 00:09:01,079
+just spam and I feel helpless like what
+ 
+
+523
+00:09:01,079 --> 00:09:03,269
+just spam and I feel helpless like what
+do I do about that I suppose I could go
+
+524
+00:09:03,269 --> 00:09:03,279
+do I do about that I suppose I could go
+ 
+
+525
+00:09:03,279 --> 00:09:05,030
+do I do about that I suppose I could go
+out to all these places that I didn't
+
+526
+00:09:05,030 --> 00:09:05,040
+out to all these places that I didn't
+ 
+
+527
+00:09:05,040 --> 00:09:07,190
+out to all these places that I didn't
+already know about I have to research
+
+528
+00:09:07,190 --> 00:09:07,200
+already know about I have to research
+ 
+
+529
+00:09:07,200 --> 00:09:09,350
+already know about I have to research
+and request my information to be removed
+
+530
+00:09:09,350 --> 00:09:09,360
+and request my information to be removed
+ 
+
+531
+00:09:09,360 --> 00:09:10,910
+and request my information to be removed
+but that would take forever in cogni
+
+532
+00:09:10,910 --> 00:09:10,920
+but that would take forever in cogni
+ 
+
+533
+00:09:10,920 --> 00:09:12,310
+but that would take forever in cogni
+estimates it takes the average person
+
+534
+00:09:12,310 --> 00:09:12,320
+estimates it takes the average person
+ 
+
+535
+00:09:12,320 --> 00:09:15,550
+estimates it takes the average person
+about 304 hours too all that research
+
+536
+00:09:15,550 --> 00:09:15,560
+about 304 hours too all that research
+ 
+
+537
+00:09:15,560 --> 00:09:17,509
+about 304 hours too all that research
+and submit the removal request but then
+
+538
+00:09:17,509 --> 00:09:17,519
+and submit the removal request but then
+ 
+
+539
+00:09:17,519 --> 00:09:19,230
+and submit the removal request but then
+you have to like follow up because they
+
+540
+00:09:19,230 --> 00:09:19,240
+you have to like follow up because they
+ 
+
+541
+00:09:19,240 --> 00:09:20,190
+you have to like follow up because they
+probably not going to do it the first
+
+542
+00:09:20,190 --> 00:09:20,200
+probably not going to do it the first
+ 
+
+543
+00:09:20,200 --> 00:09:21,590
+probably not going to do it the first
+time you know and then maybe in a year
+
+544
+00:09:21,590 --> 00:09:21,600
+time you know and then maybe in a year
+ 
+
+545
+00:09:21,600 --> 00:09:23,630
+time you know and then maybe in a year
+you get back on a few list I don't have
+
+546
+00:09:23,630 --> 00:09:23,640
+you get back on a few list I don't have
+ 
+
+547
+00:09:23,640 --> 00:09:25,190
+you get back on a few list I don't have
+time for that do you have time for that
+
+548
+00:09:25,190 --> 00:09:25,200
+time for that do you have time for that
+ 
+
+549
+00:09:25,200 --> 00:09:26,430
+time for that do you have time for that
+no you probably don't you're busy
+
+550
+00:09:26,430 --> 00:09:26,440
+no you probably don't you're busy
+ 
+
+551
+00:09:26,440 --> 00:09:28,269
+no you probably don't you're busy
+studying right and that's where incog
+
+552
+00:09:28,269 --> 00:09:28,279
+studying right and that's where incog
+ 
+
+553
+00:09:28,279 --> 00:09:29,550
+studying right and that's where incog
+comes in so they're doing this in
+
+554
+00:09:29,550 --> 00:09:29,560
+comes in so they're doing this in
+ 
+
+555
+00:09:29,560 --> 00:09:31,069
+comes in so they're doing this in
+removal process currently these are
+
+556
+00:09:31,069 --> 00:09:31,079
+removal process currently these are
+ 
+
+557
+00:09:31,079 --> 00:09:32,310
+removal process currently these are
+being sent out to all the private
+
+558
+00:09:32,310 --> 00:09:32,320
+being sent out to all the private
+ 
+
+559
+00:09:32,320 --> 00:09:33,990
+being sent out to all the private
+databases and they're scanning right now
+
+560
+00:09:33,990 --> 00:09:34,000
+databases and they're scanning right now
+ 
+
+561
+00:09:34,000 --> 00:09:35,829
+databases and they're scanning right now
+all the public databases and we'll
+
+562
+00:09:35,829 --> 00:09:35,839
+all the public databases and we'll
+ 
+
+563
+00:09:35,839 --> 00:09:38,069
+all the public databases and we'll
+submit it on my behalf automatically not
+
+564
+00:09:38,069 --> 00:09:38,079
+submit it on my behalf automatically not
+ 
+
+565
+00:09:38,079 --> 00:09:39,910
+submit it on my behalf automatically not
+only that it's going to be a regular
+
+566
+00:09:39,910 --> 00:09:39,920
+only that it's going to be a regular
+ 
+
+567
+00:09:39,920 --> 00:09:41,630
+only that it's going to be a regular
+process they will constantly reach out
+
+568
+00:09:41,630 --> 00:09:41,640
+process they will constantly reach out
+ 
+
+569
+00:09:41,640 --> 00:09:43,069
+process they will constantly reach out
+to the list of their data Brokers and
+
+570
+00:09:43,069 --> 00:09:43,079
+to the list of their data Brokers and
+ 
+
+571
+00:09:43,079 --> 00:09:44,949
+to the list of their data Brokers and
+request my information be removed
+
+572
+00:09:44,949 --> 00:09:44,959
+request my information be removed
+ 
+
+573
+00:09:44,959 --> 00:09:46,470
+request my information be removed
+they're on it like honestly I'm paying
+
+574
+00:09:46,470 --> 00:09:46,480
+they're on it like honestly I'm paying
+ 
+
+575
+00:09:46,480 --> 00:09:47,670
+they're on it like honestly I'm paying
+for this myself but I'm going to keep
+
+576
+00:09:47,670 --> 00:09:47,680
+for this myself but I'm going to keep
+ 
+
+577
+00:09:47,680 --> 00:09:49,350
+for this myself but I'm going to keep
+using it so I challenge you right now to
+
+578
+00:09:49,350 --> 00:09:49,360
+using it so I challenge you right now to
+ 
+
+579
+00:09:49,360 --> 00:09:50,949
+using it so I challenge you right now to
+go out there and try to find information
+
+580
+00:09:50,949 --> 00:09:50,959
+go out there and try to find information
+ 
+
+581
+00:09:50,959 --> 00:09:52,710
+go out there and try to find information
+on yourself go to truthfinder go to
+
+582
+00:09:52,710 --> 00:09:52,720
+on yourself go to truthfinder go to
+ 
+
+583
+00:09:52,720 --> 00:09:54,590
+on yourself go to truthfinder go to
+People Finder see if you're out there if
+
+584
+00:09:54,590 --> 00:09:54,600
+People Finder see if you're out there if
+ 
+
+585
+00:09:54,600 --> 00:09:57,069
+People Finder see if you're out there if
+you are do something about it incog will
+
+586
+00:09:57,069 --> 00:09:57,079
+you are do something about it incog will
+ 
+
+587
+00:09:57,079 --> 00:09:58,389
+you are do something about it incog will
+take care of it for you I've got a link
+
+588
+00:09:58,389 --> 00:09:58,399
+take care of it for you I've got a link
+ 
+
+589
+00:09:58,399 --> 00:09:59,990
+take care of it for you I've got a link
+below if you use the code Network Chuck
+
+590
+00:09:59,990 --> 00:10:00,000
+below if you use the code Network Chuck
+ 
+
+591
+00:10:00,000 --> 00:10:02,269
+below if you use the code Network Chuck
+you'll get 60% off an annual plan and
+
+592
+00:10:02,269 --> 00:10:02,279
+you'll get 60% off an annual plan and
+ 
+
+593
+00:10:02,279 --> 00:10:03,990
+you'll get 60% off an annual plan and
+honestly like this right here is a
+
+594
+00:10:03,990 --> 00:10:04,000
+honestly like this right here is a
+ 
+
+595
+00:10:04,000 --> 00:10:06,430
+honestly like this right here is a
+no-brainer for me I felt pretty helpless
+
+596
+00:10:06,430 --> 00:10:06,440
+no-brainer for me I felt pretty helpless
+ 
+
+597
+00:10:06,440 --> 00:10:08,190
+no-brainer for me I felt pretty helpless
+knowing that all my data was out there
+
+598
+00:10:08,190 --> 00:10:08,200
+knowing that all my data was out there
+ 
+
+599
+00:10:08,200 --> 00:10:09,590
+knowing that all my data was out there
+and not really knowing what to do about
+
+600
+00:10:09,590 --> 00:10:09,600
+and not really knowing what to do about
+ 
+
+601
+00:10:09,600 --> 00:10:11,150
+and not really knowing what to do about
+it anyways thanks to incog for
+
+602
+00:10:11,150 --> 00:10:11,160
+it anyways thanks to incog for
+ 
+
+603
+00:10:11,160 --> 00:10:13,030
+it anyways thanks to incog for
+sponsoring this video and for helping me
+
+604
+00:10:13,030 --> 00:10:13,040
+sponsoring this video and for helping me
+ 
+
+605
+00:10:13,040 --> 00:10:15,509
+sponsoring this video and for helping me
+deal with my really crazy problem okay
+
+606
+00:10:15,509 --> 00:10:15,519
+deal with my really crazy problem okay
+ 
+
+607
+00:10:15,519 --> 00:10:17,110
+deal with my really crazy problem okay
+I'm going to stop running spiderfoot
+
+608
+00:10:17,110 --> 00:10:17,120
+I'm going to stop running spiderfoot
+ 
+
+609
+00:10:17,120 --> 00:10:18,949
+I'm going to stop running spiderfoot
+it's kind of a creepy name for a tool I
+
+610
+00:10:18,949 --> 00:10:18,959
+it's kind of a creepy name for a tool I
+ 
+
+611
+00:10:18,959 --> 00:10:20,430
+it's kind of a creepy name for a tool I
+don't like it I don't like spiders
+
+612
+00:10:20,430 --> 00:10:20,440
+don't like it I don't like spiders
+ 
+
+613
+00:10:20,440 --> 00:10:21,829
+don't like it I don't like spiders
+comment below if you hate spiders like
+
+614
+00:10:21,829 --> 00:10:21,839
+comment below if you hate spiders like
+ 
+
+615
+00:10:21,839 --> 00:10:23,150
+comment below if you hate spiders like
+me now I'm going to pop out of my demo
+
+616
+00:10:23,150 --> 00:10:23,160
+me now I'm going to pop out of my demo
+ 
+
+617
+00:10:23,160 --> 00:10:24,990
+me now I'm going to pop out of my demo
+machine and get to my personal machine
+
+618
+00:10:24,990 --> 00:10:25,000
+machine and get to my personal machine
+ 
+
+619
+00:10:25,000 --> 00:10:26,590
+machine and get to my personal machine
+here and show you some cool stuff let's
+
+620
+00:10:26,590 --> 00:10:26,600
+here and show you some cool stuff let's
+ 
+
+621
+00:10:26,600 --> 00:10:28,670
+here and show you some cool stuff let's
+do some WSL command Basics now we
+
+622
+00:10:28,670 --> 00:10:28,680
+do some WSL command Basics now we
+ 
+
+623
+00:10:28,680 --> 00:10:30,389
+do some WSL command Basics now we
+already saw how we could list available
+
+624
+00:10:30,389 --> 00:10:30,399
+already saw how we could list available
+ 
+
+625
+00:10:30,399 --> 00:10:34,230
+already saw how we could list available
+dros online by typing in WSL d-list D-
+
+626
+00:10:34,230 --> 00:10:34,240
+dros online by typing in WSL d-list D-
+ 
+
+627
+00:10:34,240 --> 00:10:36,150
+dros online by typing in WSL d-list D-
+online these are dros we can download
+
+628
+00:10:36,150 --> 00:10:36,160
+online these are dros we can download
+ 
+
+629
+00:10:36,160 --> 00:10:39,110
+online these are dros we can download
+and install let's install um open sus
+
+630
+00:10:39,110 --> 00:10:39,120
+and install let's install um open sus
+ 
+
+631
+00:10:39,120 --> 00:10:40,750
+and install let's install um open sus
+tumble weed that just sounds fun to
+
+632
+00:10:40,750 --> 00:10:40,760
+tumble weed that just sounds fun to
+ 
+
+633
+00:10:40,760 --> 00:10:43,550
+tumble weed that just sounds fun to
+install that I'll type in WSL D- install
+
+634
+00:10:43,550 --> 00:10:43,560
+install that I'll type in WSL D- install
+ 
+
+635
+00:10:43,560 --> 00:10:45,629
+install that I'll type in WSL D- install
+and then the drro name it's that simple
+
+636
+00:10:45,629 --> 00:10:45,639
+and then the drro name it's that simple
+ 
+
+637
+00:10:45,639 --> 00:10:47,829
+and then the drro name it's that simple
+go oh look at this nice little screen I
+
+638
+00:10:47,829 --> 00:10:47,839
+go oh look at this nice little screen I
+ 
+
+639
+00:10:47,839 --> 00:10:50,310
+go oh look at this nice little screen I
+wasn't expecting this have a lot of fun
+
+640
+00:10:50,310 --> 00:10:50,320
+wasn't expecting this have a lot of fun
+ 
+
+641
+00:10:50,320 --> 00:10:52,710
+wasn't expecting this have a lot of fun
+I will okay cool I'm in open sus I'm
+
+642
+00:10:52,710 --> 00:10:52,720
+I will okay cool I'm in open sus I'm
+ 
+
+643
+00:10:52,720 --> 00:10:54,190
+I will okay cool I'm in open sus I'm
+going to exit though now to see what I
+
+644
+00:10:54,190 --> 00:10:54,200
+going to exit though now to see what I
+ 
+
+645
+00:10:54,200 --> 00:10:55,550
+going to exit though now to see what I
+have currently installed I can type in
+
+646
+00:10:55,550 --> 00:10:55,560
+have currently installed I can type in
+ 
+
+647
+00:10:55,560 --> 00:10:59,350
+have currently installed I can type in
+WSL d-list D- verbos to see some more
+
+648
+00:10:59,350 --> 00:10:59,360
+WSL d-list D- verbos to see some more
+ 
+
+649
+00:10:59,360 --> 00:11:00,829
+WSL d-list D- verbos to see some more
+stuff like which ones are running and
+
+650
+00:11:00,829 --> 00:11:00,839
+stuff like which ones are running and
+ 
+
+651
+00:11:00,839 --> 00:11:02,190
+stuff like which ones are running and
+which ones are stopped speaking of
+
+652
+00:11:02,190 --> 00:11:02,200
+which ones are stopped speaking of
+ 
+
+653
+00:11:02,200 --> 00:11:04,829
+which ones are stopped speaking of
+stopped how do I stop WSL or stop the
+
+654
+00:11:04,829 --> 00:11:04,839
+stopped how do I stop WSL or stop the
+ 
+
+655
+00:11:04,839 --> 00:11:07,470
+stopped how do I stop WSL or stop the
+machines I have running if I type in WSL
+
+656
+00:11:07,470 --> 00:11:07,480
+machines I have running if I type in WSL
+ 
+
+657
+00:11:07,480 --> 00:11:10,430
+machines I have running if I type in WSL
+D- shutdown that will shut down
+
+658
+00:11:10,430 --> 00:11:10,440
+D- shutdown that will shut down
+ 
+
+659
+00:11:10,440 --> 00:11:12,069
+D- shutdown that will shut down
+everything if I run that same list
+
+660
+00:11:12,069 --> 00:11:12,079
+everything if I run that same list
+ 
+
+661
+00:11:12,079 --> 00:11:14,430
+everything if I run that same list
+command as before with verbose all of
+
+662
+00:11:14,430 --> 00:11:14,440
+command as before with verbose all of
+ 
+
+663
+00:11:14,440 --> 00:11:16,670
+command as before with verbose all of
+them stopped so now I have C and ubun 2
+
+664
+00:11:16,670 --> 00:11:16,680
+them stopped so now I have C and ubun 2
+ 
+
+665
+00:11:16,680 --> 00:11:19,110
+them stopped so now I have C and ubun 2
+running how do I stop just one with this
+
+666
+00:11:19,110 --> 00:11:19,120
+running how do I stop just one with this
+ 
+
+667
+00:11:19,120 --> 00:11:21,870
+running how do I stop just one with this
+command WSL D-
+
+668
+00:11:21,870 --> 00:11:21,880
+command WSL D-
+ 
+
+669
+00:11:21,880 --> 00:11:24,670
+command WSL D-
+terminate and then specify the dro name
+
+670
+00:11:24,670 --> 00:11:24,680
+terminate and then specify the dro name
+ 
+
+671
+00:11:24,680 --> 00:11:26,949
+terminate and then specify the dro name
+so let's say Cali
+
+672
+00:11:26,949 --> 00:11:26,959
+so let's say Cali
+ 
+
+673
+00:11:26,959 --> 00:11:30,269
+so let's say Cali
+Linux and it's done it is is stopped now
+
+674
+00:11:30,269 --> 00:11:30,279
+Linux and it's done it is is stopped now
+ 
+
+675
+00:11:30,279 --> 00:11:32,110
+Linux and it's done it is is stopped now
+notice in my list here I've got Ubuntu
+
+676
+00:11:32,110 --> 00:11:32,120
+notice in my list here I've got Ubuntu
+ 
+
+677
+00:11:32,120 --> 00:11:34,190
+notice in my list here I've got Ubuntu
+with an asterisk next to it that means
+
+678
+00:11:34,190 --> 00:11:34,200
+with an asterisk next to it that means
+ 
+
+679
+00:11:34,200 --> 00:11:35,949
+with an asterisk next to it that means
+that's my default drro if I want to make
+
+680
+00:11:35,949 --> 00:11:35,959
+that's my default drro if I want to make
+ 
+
+681
+00:11:35,959 --> 00:11:37,670
+that's my default drro if I want to make
+C my default I can do it with this
+
+682
+00:11:37,670 --> 00:11:37,680
+C my default I can do it with this
+ 
+
+683
+00:11:37,680 --> 00:11:41,110
+C my default I can do it with this
+command WSL D- set- default and then the
+
+684
+00:11:41,110 --> 00:11:41,120
+command WSL D- set- default and then the
+ 
+
+685
+00:11:41,120 --> 00:11:42,750
+command WSL D- set- default and then the
+drro name but I don't want to do that I
+
+686
+00:11:42,750 --> 00:11:42,760
+drro name but I don't want to do that I
+ 
+
+687
+00:11:42,760 --> 00:11:44,910
+drro name but I don't want to do that I
+like Ubuntu to check the status of WSL
+
+688
+00:11:44,910 --> 00:11:44,920
+like Ubuntu to check the status of WSL
+ 
+
+689
+00:11:44,920 --> 00:11:47,590
+like Ubuntu to check the status of WSL
+we can type in WSL D- status which tells
+
+690
+00:11:47,590 --> 00:11:47,600
+we can type in WSL D- status which tells
+ 
+
+691
+00:11:47,600 --> 00:11:49,069
+we can type in WSL D- status which tells
+us stuff we already know like our
+
+692
+00:11:49,069 --> 00:11:49,079
+us stuff we already know like our
+ 
+
+693
+00:11:49,079 --> 00:11:52,150
+us stuff we already know like our
+default drro and we're running WSL to
+
+694
+00:11:52,150 --> 00:11:52,160
+default drro and we're running WSL to
+ 
+
+695
+00:11:52,160 --> 00:11:54,110
+default drro and we're running WSL to
+now what if we want to remove a drro
+
+696
+00:11:54,110 --> 00:11:54,120
+now what if we want to remove a drro
+ 
+
+697
+00:11:54,120 --> 00:11:56,150
+now what if we want to remove a drro
+uninstall it delete it this command so
+
+698
+00:11:56,150 --> 00:11:56,160
+uninstall it delete it this command so
+ 
+
+699
+00:11:56,160 --> 00:11:57,750
+uninstall it delete it this command so
+I'm going to list my stuff once more
+
+700
+00:11:57,750 --> 00:11:57,760
+I'm going to list my stuff once more
+ 
+
+701
+00:11:57,760 --> 00:11:59,470
+I'm going to list my stuff once more
+I'll remove open sus even even though he
+
+702
+00:11:59,470 --> 00:11:59,480
+I'll remove open sus even even though he
+ 
+
+703
+00:11:59,480 --> 00:12:01,389
+I'll remove open sus even even though he
+had a really cool way to set him up the
+
+704
+00:12:01,389 --> 00:12:01,399
+had a really cool way to set him up the
+ 
+
+705
+00:12:01,399 --> 00:12:04,550
+had a really cool way to set him up the
+command will be WSL D- unregister and
+
+706
+00:12:04,550 --> 00:12:04,560
+command will be WSL D- unregister and
+ 
+
+707
+00:12:04,560 --> 00:12:06,790
+command will be WSL D- unregister and
+then the name of the uh drro it's kind
+
+708
+00:12:06,790 --> 00:12:06,800
+then the name of the uh drro it's kind
+ 
+
+709
+00:12:06,800 --> 00:12:09,150
+then the name of the uh drro it's kind
+of wordy and with that it should be gone
+
+710
+00:12:09,150 --> 00:12:09,160
+of wordy and with that it should be gone
+ 
+
+711
+00:12:09,160 --> 00:12:11,030
+of wordy and with that it should be gone
+if I do the same command before list for
+
+712
+00:12:11,030 --> 00:12:11,040
+if I do the same command before list for
+ 
+
+713
+00:12:11,040 --> 00:12:12,790
+if I do the same command before list for
+Bose disappeared now one of the coolest
+
+714
+00:12:12,790 --> 00:12:12,800
+Bose disappeared now one of the coolest
+ 
+
+715
+00:12:12,800 --> 00:12:14,310
+Bose disappeared now one of the coolest
+things about WSL is the fact that you
+
+716
+00:12:14,310 --> 00:12:14,320
+things about WSL is the fact that you
+ 
+
+717
+00:12:14,320 --> 00:12:16,509
+things about WSL is the fact that you
+can use Windows files inside Linux so
+
+718
+00:12:16,509 --> 00:12:16,519
+can use Windows files inside Linux so
+ 
+
+719
+00:12:16,519 --> 00:12:18,189
+can use Windows files inside Linux so
+for example if I'm in Ubuntu let me jump
+
+720
+00:12:18,189 --> 00:12:18,199
+for example if I'm in Ubuntu let me jump
+ 
+
+721
+00:12:18,199 --> 00:12:20,550
+for example if I'm in Ubuntu let me jump
+over to my Ubuntu tab I can CD or change
+
+722
+00:12:20,550 --> 00:12:20,560
+over to my Ubuntu tab I can CD or change
+ 
+
+723
+00:12:20,560 --> 00:12:23,069
+over to my Ubuntu tab I can CD or change
+directory to my C drive by go into SL
+
+724
+00:12:23,069 --> 00:12:23,079
+directory to my C drive by go into SL
+ 
+
+725
+00:12:23,079 --> 00:12:26,790
+directory to my C drive by go into SL
+Mount SLC if I LS that's my windows hard
+
+726
+00:12:26,790 --> 00:12:26,800
+Mount SLC if I LS that's my windows hard
+ 
+
+727
+00:12:26,800 --> 00:12:28,509
+Mount SLC if I LS that's my windows hard
+drive and I can jump into my directories
+
+728
+00:12:28,509 --> 00:12:28,519
+drive and I can jump into my directories
+ 
+
+729
+00:12:28,519 --> 00:12:29,670
+drive and I can jump into my directories
+CD user
+
+730
+00:12:29,670 --> 00:12:29,680
+CD user
+ 
+
+731
+00:12:29,680 --> 00:12:31,949
+CD user
+Chuck go to my downloads folder and
+
+732
+00:12:31,949 --> 00:12:31,959
+Chuck go to my downloads folder and
+ 
+
+733
+00:12:31,959 --> 00:12:33,590
+Chuck go to my downloads folder and
+interact with anything here like let me
+
+734
+00:12:33,590 --> 00:12:33,600
+interact with anything here like let me
+ 
+
+735
+00:12:33,600 --> 00:12:37,470
+interact with anything here like let me
+GP for a text file oh here's one and I
+
+736
+00:12:37,470 --> 00:12:37,480
+GP for a text file oh here's one and I
+ 
+
+737
+00:12:37,480 --> 00:12:39,269
+GP for a text file oh here's one and I
+can mess with that that I use all the
+
+738
+00:12:39,269 --> 00:12:39,279
+can mess with that that I use all the
+ 
+
+739
+00:12:39,279 --> 00:12:40,750
+can mess with that that I use all the
+time but you can also access your Linux
+
+740
+00:12:40,750 --> 00:12:40,760
+time but you can also access your Linux
+ 
+
+741
+00:12:40,760 --> 00:12:41,949
+time but you can also access your Linux
+files so I've got a bunch of stuff in my
+
+742
+00:12:41,949 --> 00:12:41,959
+files so I've got a bunch of stuff in my
+ 
+
+743
+00:12:41,959 --> 00:12:43,430
+files so I've got a bunch of stuff in my
+Linux directory let me get to my home
+
+744
+00:12:43,430 --> 00:12:43,440
+Linux directory let me get to my home
+ 
+
+745
+00:12:43,440 --> 00:12:45,350
+Linux directory let me get to my home
+directory here I can access these and
+
+746
+00:12:45,350 --> 00:12:45,360
+directory here I can access these and
+ 
+
+747
+00:12:45,360 --> 00:12:46,870
+directory here I can access these and
+windows there's a couple of ways to get
+
+748
+00:12:46,870 --> 00:12:46,880
+windows there's a couple of ways to get
+ 
+
+749
+00:12:46,880 --> 00:12:48,389
+windows there's a couple of ways to get
+there but right now from the Linux
+
+750
+00:12:48,389 --> 00:12:48,399
+there but right now from the Linux
+ 
+
+751
+00:12:48,399 --> 00:12:50,509
+there but right now from the Linux
+terminal if I type in Explorer a Windows
+
+752
+00:12:50,509 --> 00:12:50,519
+terminal if I type in Explorer a Windows
+ 
+
+753
+00:12:50,519 --> 00:12:52,629
+terminal if I type in Explorer a Windows
+command. exe and just put the period
+
+754
+00:12:52,629 --> 00:12:52,639
+command. exe and just put the period
+ 
+
+755
+00:12:52,639 --> 00:12:55,230
+command. exe and just put the period
+it's going to open up where I am inside
+
+756
+00:12:55,230 --> 00:12:55,240
+it's going to open up where I am inside
+ 
+
+757
+00:12:55,240 --> 00:12:57,069
+it's going to open up where I am inside
+windows just opened up on my other
+
+758
+00:12:57,069 --> 00:12:57,079
+windows just opened up on my other
+ 
+
+759
+00:12:57,079 --> 00:12:59,230
+windows just opened up on my other
+screen but here it is how cool is that
+
+760
+00:12:59,230 --> 00:12:59,240
+screen but here it is how cool is that
+ 
+
+761
+00:12:59,240 --> 00:13:01,230
+screen but here it is how cool is that
+notice my location here this location is
+
+762
+00:13:01,230 --> 00:13:01,240
+notice my location here this location is
+ 
+
+763
+00:13:01,240 --> 00:13:03,829
+notice my location here this location is
+actually saved by default in uh Windows
+
+764
+00:13:03,829 --> 00:13:03,839
+actually saved by default in uh Windows
+ 
+
+765
+00:13:03,839 --> 00:13:05,870
+actually saved by default in uh Windows
+11 to your home bar on the side you've
+
+766
+00:13:05,870 --> 00:13:05,880
+11 to your home bar on the side you've
+ 
+
+767
+00:13:05,880 --> 00:13:08,430
+11 to your home bar on the side you've
+got a little location here called Linux
+
+768
+00:13:08,430 --> 00:13:08,440
+got a little location here called Linux
+ 
+
+769
+00:13:08,440 --> 00:13:10,230
+got a little location here called Linux
+your little penguin just hanging out and
+
+770
+00:13:10,230 --> 00:13:10,240
+your little penguin just hanging out and
+ 
+
+771
+00:13:10,240 --> 00:13:12,110
+your little penguin just hanging out and
+if I expand that or even just click on
+
+772
+00:13:12,110 --> 00:13:12,120
+if I expand that or even just click on
+ 
+
+773
+00:13:12,120 --> 00:13:14,030
+if I expand that or even just click on
+it I can see I have the locations and
+
+774
+00:13:14,030 --> 00:13:14,040
+it I can see I have the locations and
+ 
+
+775
+00:13:14,040 --> 00:13:16,150
+it I can see I have the locations and
+storage for all of my Linux dros and I
+
+776
+00:13:16,150 --> 00:13:16,160
+storage for all of my Linux dros and I
+ 
+
+777
+00:13:16,160 --> 00:13:17,590
+storage for all of my Linux dros and I
+can jump into those and I can copy and
+
+778
+00:13:17,590 --> 00:13:17,600
+can jump into those and I can copy and
+ 
+
+779
+00:13:17,600 --> 00:13:19,470
+can jump into those and I can copy and
+paste files manipulate them whatever
+
+780
+00:13:19,470 --> 00:13:19,480
+paste files manipulate them whatever
+ 
+
+781
+00:13:19,480 --> 00:13:20,870
+paste files manipulate them whatever
+again I'm telling you Linux and windows
+
+782
+00:13:20,870 --> 00:13:20,880
+again I'm telling you Linux and windows
+ 
+
+783
+00:13:20,880 --> 00:13:23,189
+again I'm telling you Linux and windows
+became one now let's talk about gooey
+
+784
+00:13:23,189 --> 00:13:23,199
+became one now let's talk about gooey
+ 
+
+785
+00:13:23,199 --> 00:13:26,310
+became one now let's talk about gooey
+apps wsl2 has a thing called WS LG which
+
+786
+00:13:26,310 --> 00:13:26,320
+apps wsl2 has a thing called WS LG which
+ 
+
+787
+00:13:26,320 --> 00:13:28,110
+apps wsl2 has a thing called WS LG which
+allows you to launch apps from your
+
+788
+00:13:28,110 --> 00:13:28,120
+allows you to launch apps from your
+ 
+
+789
+00:13:28,120 --> 00:13:30,150
+allows you to launch apps from your
+Linux command line and they open up as a
+
+790
+00:13:30,150 --> 00:13:30,160
+Linux command line and they open up as a
+ 
+
+791
+00:13:30,160 --> 00:13:32,750
+Linux command line and they open up as a
+goey in your windows environment it
+
+792
+00:13:32,750 --> 00:13:32,760
+goey in your windows environment it
+ 
+
+793
+00:13:32,760 --> 00:13:34,870
+goey in your windows environment it
+doesn't make any sense but it's awesome
+
+794
+00:13:34,870 --> 00:13:34,880
+doesn't make any sense but it's awesome
+ 
+
+795
+00:13:34,880 --> 00:13:36,389
+doesn't make any sense but it's awesome
+watch this so check this out here in
+
+796
+00:13:36,389 --> 00:13:36,399
+watch this so check this out here in
+ 
+
+797
+00:13:36,399 --> 00:13:38,629
+watch this so check this out here in
+auntu if I were to install wire shark a
+
+798
+00:13:38,629 --> 00:13:38,639
+auntu if I were to install wire shark a
+ 
+
+799
+00:13:38,639 --> 00:13:40,750
+auntu if I were to install wire shark a
+tool used for capturing packets with
+
+800
+00:13:40,750 --> 00:13:40,760
+tool used for capturing packets with
+ 
+
+801
+00:13:40,760 --> 00:13:42,550
+tool used for capturing packets with
+pseudo AP install wire shark I've
+
+802
+00:13:42,550 --> 00:13:42,560
+pseudo AP install wire shark I've
+ 
+
+803
+00:13:42,560 --> 00:13:43,710
+pseudo AP install wire shark I've
+already got it installed now if I want
+
+804
+00:13:43,710 --> 00:13:43,720
+already got it installed now if I want
+ 
+
+805
+00:13:43,720 --> 00:13:45,230
+already got it installed now if I want
+to launch it I'll just do pseudo wire
+
+806
+00:13:45,230 --> 00:13:45,240
+to launch it I'll just do pseudo wire
+ 
+
+807
+00:13:45,240 --> 00:13:47,150
+to launch it I'll just do pseudo wire
+shark this is so cool it launched a
+
+808
+00:13:47,150 --> 00:13:47,160
+shark this is so cool it launched a
+ 
+
+809
+00:13:47,160 --> 00:13:48,949
+shark this is so cool it launched a
+little gooey version of wire shark on
+
+810
+00:13:48,949 --> 00:13:48,959
+little gooey version of wire shark on
+ 
+
+811
+00:13:48,959 --> 00:13:50,470
+little gooey version of wire shark on
+it's trying to get loaded up that's why
+
+812
+00:13:50,470 --> 00:13:50,480
+it's trying to get loaded up that's why
+ 
+
+813
+00:13:50,480 --> 00:13:51,870
+it's trying to get loaded up that's why
+it's doing this weird thing don't judge
+
+814
+00:13:51,870 --> 00:13:51,880
+it's doing this weird thing don't judge
+ 
+
+815
+00:13:51,880 --> 00:13:53,870
+it's doing this weird thing don't judge
+it by bad and this is an app just
+
+816
+00:13:53,870 --> 00:13:53,880
+it by bad and this is an app just
+ 
+
+817
+00:13:53,880 --> 00:13:56,069
+it by bad and this is an app just
+running in Ubuntu I can launch Google
+
+818
+00:13:56,069 --> 00:13:56,079
+running in Ubuntu I can launch Google
+ 
+
+819
+00:13:56,079 --> 00:13:57,829
+running in Ubuntu I can launch Google
+Chrome Google Chrome running inside
+
+820
+00:13:57,829 --> 00:13:57,839
+Chrome Google Chrome running inside
+ 
+
+821
+00:13:57,839 --> 00:14:00,310
+Chrome Google Chrome running inside
+Ubuntu on Windows let me have wire
+
+822
+00:14:00,310 --> 00:14:00,320
+Ubuntu on Windows let me have wire
+ 
+
+823
+00:14:00,320 --> 00:14:01,949
+Ubuntu on Windows let me have wire
+sharkk up to capturing these packets
+
+824
+00:14:01,949 --> 00:14:01,959
+sharkk up to capturing these packets
+ 
+
+825
+00:14:01,959 --> 00:14:04,629
+sharkk up to capturing these packets
+here how cool is that that's just wild
+
+826
+00:14:04,629 --> 00:14:04,639
+here how cool is that that's just wild
+ 
+
+827
+00:14:04,639 --> 00:14:06,629
+here how cool is that that's just wild
+so you can install any app that has a
+
+828
+00:14:06,629 --> 00:14:06,639
+so you can install any app that has a
+ 
+
+829
+00:14:06,639 --> 00:14:09,509
+so you can install any app that has a
+guey and launch it from Ubuntu or CI
+
+830
+00:14:09,509 --> 00:14:09,519
+guey and launch it from Ubuntu or CI
+ 
+
+831
+00:14:09,519 --> 00:14:11,470
+guey and launch it from Ubuntu or CI
+Linux and that just works out the gate
+
+832
+00:14:11,470 --> 00:14:11,480
+Linux and that just works out the gate
+ 
+
+833
+00:14:11,480 --> 00:14:13,870
+Linux and that just works out the gate
+but cie C does something different kind
+
+834
+00:14:13,870 --> 00:14:13,880
+but cie C does something different kind
+ 
+
+835
+00:14:13,880 --> 00:14:16,069
+but cie C does something different kind
+of uh a little insane check this out C
+
+836
+00:14:16,069 --> 00:14:16,079
+of uh a little insane check this out C
+ 
+
+837
+00:14:16,079 --> 00:14:17,870
+of uh a little insane check this out C
+has a tool called winex and we're going
+
+838
+00:14:17,870 --> 00:14:17,880
+has a tool called winex and we're going
+ 
+
+839
+00:14:17,880 --> 00:14:19,870
+has a tool called winex and we're going
+to install that right now with pseudo AP
+
+840
+00:14:19,870 --> 00:14:19,880
+to install that right now with pseudo AP
+ 
+
+841
+00:14:19,880 --> 00:14:22,110
+to install that right now with pseudo AP
+install C-
+
+842
+00:14:22,110 --> 00:14:22,120
+install C-
+ 
+
+843
+00:14:22,120 --> 00:14:25,509
+install C-
+win- we'll do a-y and run the install
+
+844
+00:14:25,509 --> 00:14:25,519
+win- we'll do a-y and run the install
+ 
+
+845
+00:14:25,519 --> 00:14:27,790
+win- we'll do a-y and run the install
+after we put our pseudo password in with
+
+846
+00:14:27,790 --> 00:14:27,800
+after we put our pseudo password in with
+ 
+
+847
+00:14:27,800 --> 00:14:28,749
+after we put our pseudo password in with
+it installed I'm going to run one
+
+848
+00:14:28,749 --> 00:14:28,759
+it installed I'm going to run one
+ 
+
+849
+00:14:28,759 --> 00:14:31,430
+it installed I'm going to run one
+command kex just like this it's going to
+
+850
+00:14:31,430 --> 00:14:31,440
+command kex just like this it's going to
+ 
+
+851
+00:14:31,440 --> 00:14:33,230
+command kex just like this it's going to
+ask me to set a password I'll put no for
+
+852
+00:14:33,230 --> 00:14:33,240
+ask me to set a password I'll put no for
+ 
+
+853
+00:14:33,240 --> 00:14:35,389
+ask me to set a password I'll put no for
+view only and Watch What Happens at
+
+854
+00:14:35,389 --> 00:14:35,399
+view only and Watch What Happens at
+ 
+
+855
+00:14:35,399 --> 00:14:37,310
+view only and Watch What Happens at
+first it's like what's going on it's not
+
+856
+00:14:37,310 --> 00:14:37,320
+first it's like what's going on it's not
+ 
+
+857
+00:14:37,320 --> 00:14:38,790
+first it's like what's going on it's not
+doing anything but
+
+858
+00:14:38,790 --> 00:14:38,800
+doing anything but
+ 
+
+859
+00:14:38,800 --> 00:14:42,949
+doing anything but
+then boom how cool is that full-blown
+
+860
+00:14:42,949 --> 00:14:42,959
+then boom how cool is that full-blown
+ 
+
+861
+00:14:42,959 --> 00:14:45,749
+then boom how cool is that full-blown
+Cali works like a charm super quick I
+
+862
+00:14:45,749 --> 00:14:45,759
+Cali works like a charm super quick I
+ 
+
+863
+00:14:45,759 --> 00:14:49,670
+Cali works like a charm super quick I
+love this you hit f8 to get your options
+
+864
+00:14:49,670 --> 00:14:49,680
+love this you hit f8 to get your options
+ 
+
+865
+00:14:49,680 --> 00:14:51,030
+love this you hit f8 to get your options
+here you can get out of full screen just
+
+866
+00:14:51,030 --> 00:14:51,040
+here you can get out of full screen just
+ 
+
+867
+00:14:51,040 --> 00:14:52,110
+here you can get out of full screen just
+make it a little window you can move
+
+868
+00:14:52,110 --> 00:14:52,120
+make it a little window you can move
+ 
+
+869
+00:14:52,120 --> 00:14:54,069
+make it a little window you can move
+around to officially close it just go to
+
+870
+00:14:54,069 --> 00:14:54,079
+around to officially close it just go to
+ 
+
+871
+00:14:54,079 --> 00:14:56,189
+around to officially close it just go to
+your log out options and just just log
+
+872
+00:14:56,189 --> 00:14:56,199
+your log out options and just just log
+ 
+
+873
+00:14:56,199 --> 00:14:57,470
+your log out options and just just log
+out and if you want to stop it just type
+
+874
+00:14:57,470 --> 00:14:57,480
+out and if you want to stop it just type
+ 
+
+875
+00:14:57,480 --> 00:15:00,870
+out and if you want to stop it just type
+in kex D dwin Das D stop now getting
+
+876
+00:15:00,870 --> 00:15:00,880
+in kex D dwin Das D stop now getting
+ 
+
+877
+00:15:00,880 --> 00:15:02,949
+in kex D dwin Das D stop now getting
+back to Ubuntu over here I want to talk
+
+878
+00:15:02,949 --> 00:15:02,959
+back to Ubuntu over here I want to talk
+ 
+
+879
+00:15:02,959 --> 00:15:04,509
+back to Ubuntu over here I want to talk
+about Nano if you've been watching me
+
+880
+00:15:04,509 --> 00:15:04,519
+about Nano if you've been watching me
+ 
+
+881
+00:15:04,519 --> 00:15:05,710
+about Nano if you've been watching me
+for a while you know that Nano is my
+
+882
+00:15:05,710 --> 00:15:05,720
+for a while you know that Nano is my
+ 
+
+883
+00:15:05,720 --> 00:15:08,150
+for a while you know that Nano is my
+favorite text editor in Linux open up me
+
+884
+00:15:08,150 --> 00:15:08,160
+favorite text editor in Linux open up me
+ 
+
+885
+00:15:08,160 --> 00:15:10,430
+favorite text editor in Linux open up me
+a file super easy but that's been
+
+886
+00:15:10,430 --> 00:15:10,440
+a file super easy but that's been
+ 
+
+887
+00:15:10,440 --> 00:15:12,990
+a file super easy but that's been
+replaced because Linux and windows
+
+888
+00:15:12,990 --> 00:15:13,000
+replaced because Linux and windows
+ 
+
+889
+00:15:13,000 --> 00:15:14,550
+replaced because Linux and windows
+they're like this now and know I'm not
+
+890
+00:15:14,550 --> 00:15:14,560
+they're like this now and know I'm not
+ 
+
+891
+00:15:14,560 --> 00:15:17,030
+they're like this now and know I'm not
+talking about notepad watch this if you
+
+892
+00:15:17,030 --> 00:15:17,040
+talking about notepad watch this if you
+ 
+
+893
+00:15:17,040 --> 00:15:18,749
+talking about notepad watch this if you
+got VSS code installed now if you don't
+
+894
+00:15:18,749 --> 00:15:18,759
+got VSS code installed now if you don't
+ 
+
+895
+00:15:18,759 --> 00:15:20,430
+got VSS code installed now if you don't
+know what VSS code is I got a video on
+
+896
+00:15:20,430 --> 00:15:20,440
+know what VSS code is I got a video on
+ 
+
+897
+00:15:20,440 --> 00:15:22,150
+know what VSS code is I got a video on
+it VSS code's amazing right here in my
+
+898
+00:15:22,150 --> 00:15:22,160
+it VSS code's amazing right here in my
+ 
+
+899
+00:15:22,160 --> 00:15:24,629
+it VSS code's amazing right here in my
+Linux terminal simply type in code and
+
+900
+00:15:24,629 --> 00:15:24,639
+Linux terminal simply type in code and
+ 
+
+901
+00:15:24,639 --> 00:15:26,590
+Linux terminal simply type in code and
+the name of my file and it opens that
+
+902
+00:15:26,590 --> 00:15:26,600
+the name of my file and it opens that
+ 
+
+903
+00:15:26,600 --> 00:15:29,990
+the name of my file and it opens that
+bad boy and vs code like and this isn't
+
+904
+00:15:29,990 --> 00:15:30,000
+bad boy and vs code like and this isn't
+ 
+
+905
+00:15:30,000 --> 00:15:32,710
+bad boy and vs code like and this isn't
+like a a gooey app for Linux this is my
+
+906
+00:15:32,710 --> 00:15:32,720
+like a a gooey app for Linux this is my
+ 
+
+907
+00:15:32,720 --> 00:15:35,110
+like a a gooey app for Linux this is my
+vs code installed in Windows doesn't
+
+908
+00:15:35,110 --> 00:15:35,120
+vs code installed in Windows doesn't
+ 
+
+909
+00:15:35,120 --> 00:15:37,110
+vs code installed in Windows doesn't
+stop there though VSS code if I go to my
+
+910
+00:15:37,110 --> 00:15:37,120
+stop there though VSS code if I go to my
+ 
+
+911
+00:15:37,120 --> 00:15:39,189
+stop there though VSS code if I go to my
+extensions I can search for WSL they
+
+912
+00:15:39,189 --> 00:15:39,199
+extensions I can search for WSL they
+ 
+
+913
+00:15:39,199 --> 00:15:41,910
+extensions I can search for WSL they
+have a WSL extension I'll close vs code
+
+914
+00:15:41,910 --> 00:15:41,920
+have a WSL extension I'll close vs code
+ 
+
+915
+00:15:41,920 --> 00:15:43,509
+have a WSL extension I'll close vs code
+and just open it again with the code
+
+916
+00:15:43,509 --> 00:15:43,519
+and just open it again with the code
+ 
+
+917
+00:15:43,519 --> 00:15:45,910
+and just open it again with the code
+text.txt now notice when I'm opening vs
+
+918
+00:15:45,910 --> 00:15:45,920
+text.txt now notice when I'm opening vs
+ 
+
+919
+00:15:45,920 --> 00:15:47,590
+text.txt now notice when I'm opening vs
+code the bottom left it connect me to
+
+920
+00:15:47,590 --> 00:15:47,600
+code the bottom left it connect me to
+ 
+
+921
+00:15:47,600 --> 00:15:50,670
+code the bottom left it connect me to
+wuntu by default I can open up terminals
+
+922
+00:15:50,670 --> 00:15:50,680
+wuntu by default I can open up terminals
+ 
+
+923
+00:15:50,680 --> 00:15:52,790
+wuntu by default I can open up terminals
+right here I'm auntu right now I can
+
+924
+00:15:52,790 --> 00:15:52,800
+right here I'm auntu right now I can
+ 
+
+925
+00:15:52,800 --> 00:15:54,749
+right here I'm auntu right now I can
+access all the files easily keeping all
+
+926
+00:15:54,749 --> 00:15:54,759
+access all the files easily keeping all
+ 
+
+927
+00:15:54,759 --> 00:15:56,230
+access all the files easily keeping all
+the auto complete goodness and all the
+
+928
+00:15:56,230 --> 00:15:56,240
+the auto complete goodness and all the
+ 
+
+929
+00:15:56,240 --> 00:15:58,110
+the auto complete goodness and all the
+code things I like to have and then WSL
+
+930
+00:15:58,110 --> 00:15:58,120
+code things I like to have and then WSL
+ 
+
+931
+00:15:58,120 --> 00:16:00,269
+code things I like to have and then WSL
+gets even crazier with Docker yes you
+
+932
+00:16:00,269 --> 00:16:00,279
+gets even crazier with Docker yes you
+ 
+
+933
+00:16:00,279 --> 00:16:02,629
+gets even crazier with Docker yes you
+can run Docker containers inside WSL
+
+934
+00:16:02,629 --> 00:16:02,639
+can run Docker containers inside WSL
+ 
+
+935
+00:16:02,639 --> 00:16:04,670
+can run Docker containers inside WSL
+opening up an entire world for you so
+
+936
+00:16:04,670 --> 00:16:04,680
+opening up an entire world for you so
+ 
+
+937
+00:16:04,680 --> 00:16:06,069
+opening up an entire world for you so
+check this out you can install it in a
+
+938
+00:16:06,069 --> 00:16:06,079
+check this out you can install it in a
+ 
+
+939
+00:16:06,079 --> 00:16:08,430
+check this out you can install it in a
+number of ways one way is to install
+
+940
+00:16:08,430 --> 00:16:08,440
+number of ways one way is to install
+ 
+
+941
+00:16:08,440 --> 00:16:09,910
+number of ways one way is to install
+Docker from your terminal pseudo AP
+
+942
+00:16:09,910 --> 00:16:09,920
+Docker from your terminal pseudo AP
+ 
+
+943
+00:16:09,920 --> 00:16:13,110
+Docker from your terminal pseudo AP
+install docker.io that's one way or if
+
+944
+00:16:13,110 --> 00:16:13,120
+install docker.io that's one way or if
+ 
+
+945
+00:16:13,120 --> 00:16:15,030
+install docker.io that's one way or if
+you're wanting something special you can
+
+946
+00:16:15,030 --> 00:16:15,040
+you're wanting something special you can
+ 
+
+947
+00:16:15,040 --> 00:16:16,550
+you're wanting something special you can
+install Docker desktop and what this
+
+948
+00:16:16,550 --> 00:16:16,560
+install Docker desktop and what this
+ 
+
+949
+00:16:16,560 --> 00:16:19,470
+install Docker desktop and what this
+will do is use wsl2 as its source for
+
+950
+00:16:19,470 --> 00:16:19,480
+will do is use wsl2 as its source for
+ 
+
+951
+00:16:19,480 --> 00:16:21,350
+will do is use wsl2 as its source for
+creating and managing Docker containers
+
+952
+00:16:21,350 --> 00:16:21,360
+creating and managing Docker containers
+ 
+
+953
+00:16:21,360 --> 00:16:22,670
+creating and managing Docker containers
+and Docker desktop is really neat it
+
+954
+00:16:22,670 --> 00:16:22,680
+and Docker desktop is really neat it
+ 
+
+955
+00:16:22,680 --> 00:16:24,910
+and Docker desktop is really neat it
+allows you to manage those uh containers
+
+956
+00:16:24,910 --> 00:16:24,920
+allows you to manage those uh containers
+ 
+
+957
+00:16:24,920 --> 00:16:26,550
+allows you to manage those uh containers
+and look at them and look at the
+
+958
+00:16:26,550 --> 00:16:26,560
+and look at them and look at the
+ 
+
+959
+00:16:26,560 --> 00:16:28,030
+and look at them and look at the
+networks and everything you create it's
+
+960
+00:16:28,030 --> 00:16:28,040
+networks and everything you create it's
+ 
+
+961
+00:16:28,040 --> 00:16:29,110
+networks and everything you create it's
+very fun but I'll start start the
+
+962
+00:16:29,110 --> 00:16:29,120
+very fun but I'll start start the
+ 
+
+963
+00:16:29,120 --> 00:16:30,590
+very fun but I'll start start the
+install here and notice in the config it
+
+964
+00:16:30,590 --> 00:16:30,600
+install here and notice in the config it
+ 
+
+965
+00:16:30,600 --> 00:16:33,189
+install here and notice in the config it
+does say use WSL 2 instead of hyperv
+
+966
+00:16:33,189 --> 00:16:33,199
+does say use WSL 2 instead of hyperv
+ 
+
+967
+00:16:33,199 --> 00:16:35,350
+does say use WSL 2 instead of hyperv
+okay now speaking of many people don't
+
+968
+00:16:35,350 --> 00:16:35,360
+okay now speaking of many people don't
+ 
+
+969
+00:16:35,360 --> 00:16:37,629
+okay now speaking of many people don't
+like WSL or like to use it because it
+
+970
+00:16:37,629 --> 00:16:37,639
+like WSL or like to use it because it
+ 
+
+971
+00:16:37,639 --> 00:16:39,470
+like WSL or like to use it because it
+interferes with using virtualization
+
+972
+00:16:39,470 --> 00:16:39,480
+interferes with using virtualization
+ 
+
+973
+00:16:39,480 --> 00:16:41,269
+interferes with using virtualization
+software like virtual box which is
+
+974
+00:16:41,269 --> 00:16:41,279
+software like virtual box which is
+ 
+
+975
+00:16:41,279 --> 00:16:42,590
+software like virtual box which is
+amazing and allows you to create virtual
+
+976
+00:16:42,590 --> 00:16:42,600
+amazing and allows you to create virtual
+ 
+
+977
+00:16:42,600 --> 00:16:45,189
+amazing and allows you to create virtual
+machines that is not the case anymore
+
+978
+00:16:45,189 --> 00:16:45,199
+machines that is not the case anymore
+ 
+
+979
+00:16:45,199 --> 00:16:46,670
+machines that is not the case anymore
+because virtual box has made an update
+
+980
+00:16:46,670 --> 00:16:46,680
+because virtual box has made an update
+ 
+
+981
+00:16:46,680 --> 00:16:48,910
+because virtual box has made an update
+to where it'll default use hyperv which
+
+982
+00:16:48,910 --> 00:16:48,920
+to where it'll default use hyperv which
+ 
+
+983
+00:16:48,920 --> 00:16:51,350
+to where it'll default use hyperv which
+will be enabled so you can use wsl2 with
+
+984
+00:16:51,350 --> 00:16:51,360
+will be enabled so you can use wsl2 with
+ 
+
+985
+00:16:51,360 --> 00:16:53,269
+will be enabled so you can use wsl2 with
+virtual box side by side okay it wants
+
+986
+00:16:53,269 --> 00:16:53,279
+virtual box side by side okay it wants
+ 
+
+987
+00:16:53,279 --> 00:16:55,629
+virtual box side by side okay it wants
+me to restart Windows okay fine I hate
+
+988
+00:16:55,629 --> 00:16:55,639
+me to restart Windows okay fine I hate
+ 
+
+989
+00:16:55,639 --> 00:16:56,949
+me to restart Windows okay fine I hate
+it when it does that all right it
+
+990
+00:16:56,949 --> 00:16:56,959
+it when it does that all right it
+ 
+
+991
+00:16:56,959 --> 00:16:58,509
+it when it does that all right it
+rebooted I'm going to accept a bunch of
+
+992
+00:16:58,509 --> 00:16:58,519
+rebooted I'm going to accept a bunch of
+ 
+
+993
+00:16:58,519 --> 00:17:01,189
+rebooted I'm going to accept a bunch of
+stuff blindly I don't want to sign in I
+
+994
+00:17:01,189 --> 00:17:01,199
+stuff blindly I don't want to sign in I
+ 
+
+995
+00:17:01,199 --> 00:17:02,269
+stuff blindly I don't want to sign in I
+want to continue without signing in I'm
+
+996
+00:17:02,269 --> 00:17:02,279
+want to continue without signing in I'm
+ 
+
+997
+00:17:02,279 --> 00:17:03,470
+want to continue without signing in I'm
+going to skip the survey I'm not doing
+
+998
+00:17:03,470 --> 00:17:03,480
+going to skip the survey I'm not doing
+ 
+
+999
+00:17:03,480 --> 00:17:05,350
+going to skip the survey I'm not doing
+anything and that's it Docker install
+
+1000
+00:17:05,350 --> 00:17:05,360
+anything and that's it Docker install
+ 
+
+1001
+00:17:05,360 --> 00:17:07,549
+anything and that's it Docker install
+and jump back into auntu notice that it
+
+1002
+00:17:07,549 --> 00:17:07,559
+and jump back into auntu notice that it
+ 
+
+1003
+00:17:07,559 --> 00:17:09,949
+and jump back into auntu notice that it
+did auto start because Docker desktop
+
+1004
+00:17:09,949 --> 00:17:09,959
+did auto start because Docker desktop
+ 
+
+1005
+00:17:09,959 --> 00:17:11,230
+did auto start because Docker desktop
+started it I'm going to run a quick
+
+1006
+00:17:11,230 --> 00:17:11,240
+started it I'm going to run a quick
+ 
+
+1007
+00:17:11,240 --> 00:17:13,029
+started it I'm going to run a quick
+Docker container I could do this from
+
+1008
+00:17:13,029 --> 00:17:13,039
+Docker container I could do this from
+ 
+
+1009
+00:17:13,039 --> 00:17:14,870
+Docker container I could do this from
+Docker desktop I just prefer and and
+
+1010
+00:17:14,870 --> 00:17:14,880
+Docker desktop I just prefer and and
+ 
+
+1011
+00:17:14,880 --> 00:17:16,429
+Docker desktop I just prefer and and
+we're comfortable with the command line
+
+1012
+00:17:16,429 --> 00:17:16,439
+we're comfortable with the command line
+ 
+
+1013
+00:17:16,439 --> 00:17:18,990
+we're comfortable with the command line
+if I go to Docker desktop bam there's my
+
+1014
+00:17:18,990 --> 00:17:19,000
+if I go to Docker desktop bam there's my
+ 
+
+1015
+00:17:19,000 --> 00:17:21,909
+if I go to Docker desktop bam there's my
+guy right there I can see images volumes
+
+1016
+00:17:21,909 --> 00:17:21,919
+guy right there I can see images volumes
+ 
+
+1017
+00:17:21,919 --> 00:17:23,990
+guy right there I can see images volumes
+that's super slick it's not just that
+
+1018
+00:17:23,990 --> 00:17:24,000
+that's super slick it's not just that
+ 
+
+1019
+00:17:24,000 --> 00:17:26,669
+that's super slick it's not just that
+though because back to VSS code you can
+
+1020
+00:17:26,669 --> 00:17:26,679
+though because back to VSS code you can
+ 
+
+1021
+00:17:26,679 --> 00:17:28,390
+though because back to VSS code you can
+look at your Docker containers in WSL
+
+1022
+00:17:28,390 --> 00:17:28,400
+look at your Docker containers in WSL
+ 
+
+1023
+00:17:28,400 --> 00:17:30,510
+look at your Docker containers in WSL
+via V code as well there's a Docker
+
+1024
+00:17:30,510 --> 00:17:30,520
+via V code as well there's a Docker
+ 
+
+1025
+00:17:30,520 --> 00:17:32,070
+via V code as well there's a Docker
+extension which I'll install right now I
+
+1026
+00:17:32,070 --> 00:17:32,080
+extension which I'll install right now I
+ 
+
+1027
+00:17:32,080 --> 00:17:33,590
+extension which I'll install right now I
+think I actually prefer it in VSS code
+
+1028
+00:17:33,590 --> 00:17:33,600
+think I actually prefer it in VSS code
+ 
+
+1029
+00:17:33,600 --> 00:17:34,950
+think I actually prefer it in VSS code
+because it's just it's weird that you
+
+1030
+00:17:34,950 --> 00:17:34,960
+because it's just it's weird that you
+ 
+
+1031
+00:17:34,960 --> 00:17:37,230
+because it's just it's weird that you
+can do that but I click on the little
+
+1032
+00:17:37,230 --> 00:17:37,240
+can do that but I click on the little
+ 
+
+1033
+00:17:37,240 --> 00:17:38,630
+can do that but I click on the little
+Docker guy here with my extension
+
+1034
+00:17:38,630 --> 00:17:38,640
+Docker guy here with my extension
+ 
+
+1035
+00:17:38,640 --> 00:17:41,029
+Docker guy here with my extension
+installed I can see my guy right here
+
+1036
+00:17:41,029 --> 00:17:41,039
+installed I can see my guy right here
+ 
+
+1037
+00:17:41,039 --> 00:17:43,430
+installed I can see my guy right here
+files and everything that's so Nifty I
+
+1038
+00:17:43,430 --> 00:17:43,440
+files and everything that's so Nifty I
+ 
+
+1039
+00:17:43,440 --> 00:17:45,070
+files and everything that's so Nifty I
+love it so much attached to the Shell
+
+1040
+00:17:45,070 --> 00:17:45,080
+love it so much attached to the Shell
+ 
+
+1041
+00:17:45,080 --> 00:17:47,029
+love it so much attached to the Shell
+I'm inside my busy box guy isn't that
+
+1042
+00:17:47,029 --> 00:17:47,039
+I'm inside my busy box guy isn't that
+ 
+
+1043
+00:17:47,039 --> 00:17:48,990
+I'm inside my busy box guy isn't that
+just cool I mean I just I love how
+
+1044
+00:17:48,990 --> 00:17:49,000
+just cool I mean I just I love how
+ 
+
+1045
+00:17:49,000 --> 00:17:51,390
+just cool I mean I just I love how
+everything's just right here it's so
+
+1046
+00:17:51,390 --> 00:17:51,400
+everything's just right here it's so
+ 
+
+1047
+00:17:51,400 --> 00:17:53,510
+everything's just right here it's so
+easy and powerful and speaking of
+
+1048
+00:17:53,510 --> 00:17:53,520
+easy and powerful and speaking of
+ 
+
+1049
+00:17:53,520 --> 00:17:56,549
+easy and powerful and speaking of
+powerful my Linux stuff has access to my
+
+1050
+00:17:56,549 --> 00:17:56,559
+powerful my Linux stuff has access to my
+ 
+
+1051
+00:17:56,559 --> 00:17:59,510
+powerful my Linux stuff has access to my
+GPU just as Windows does if I type in
+
+1052
+00:17:59,510 --> 00:17:59,520
+GPU just as Windows does if I type in
+ 
+
+1053
+00:17:59,520 --> 00:18:03,710
+GPU just as Windows does if I type in
+nvidia-smi Linux can see my 3080 on my
+
+1054
+00:18:03,710 --> 00:18:03,720
+nvidia-smi Linux can see my 3080 on my
+ 
+
+1055
+00:18:03,720 --> 00:18:07,149
+nvidia-smi Linux can see my 3080 on my
+demo machine here try doing that with a
+
+1056
+00:18:07,149 --> 00:18:07,159
+demo machine here try doing that with a
+ 
+
+1057
+00:18:07,159 --> 00:18:08,510
+demo machine here try doing that with a
+virtual machine that's a pain in the
+
+1058
+00:18:08,510 --> 00:18:08,520
+virtual machine that's a pain in the
+ 
+
+1059
+00:18:08,520 --> 00:18:10,470
+virtual machine that's a pain in the
+butt if even possible can virtual box or
+
+1060
+00:18:10,470 --> 00:18:10,480
+butt if even possible can virtual box or
+ 
+
+1061
+00:18:10,480 --> 00:18:12,470
+butt if even possible can virtual box or
+VMware do that right now I'm not sure
+
+1062
+00:18:12,470 --> 00:18:12,480
+VMware do that right now I'm not sure
+ 
+
+1063
+00:18:12,480 --> 00:18:13,909
+VMware do that right now I'm not sure
+now last thing I want to show you as we
+
+1064
+00:18:13,909 --> 00:18:13,919
+now last thing I want to show you as we
+ 
+
+1065
+00:18:13,919 --> 00:18:15,430
+now last thing I want to show you as we
+go deeper and deeper down the rabbit
+
+1066
+00:18:15,430 --> 00:18:15,440
+go deeper and deeper down the rabbit
+ 
+
+1067
+00:18:15,440 --> 00:18:18,230
+go deeper and deeper down the rabbit
+hole of WSL is the custom config you can
+
+1068
+00:18:18,230 --> 00:18:18,240
+hole of WSL is the custom config you can
+ 
+
+1069
+00:18:18,240 --> 00:18:20,950
+hole of WSL is the custom config you can
+do WSL has two config files that you can
+
+1070
+00:18:20,950 --> 00:18:20,960
+do WSL has two config files that you can
+ 
+
+1071
+00:18:20,960 --> 00:18:23,350
+do WSL has two config files that you can
+mess with first is our local one each
+
+1072
+00:18:23,350 --> 00:18:23,360
+mess with first is our local one each
+ 
+
+1073
+00:18:23,360 --> 00:18:26,549
+mess with first is our local one each
+individual machine or drro you deploy
+
+1074
+00:18:26,549 --> 00:18:26,559
+individual machine or drro you deploy
+ 
+
+1075
+00:18:26,559 --> 00:18:29,270
+individual machine or drro you deploy
+has its own little config file it's
+
+1076
+00:18:29,270 --> 00:18:29,280
+has its own little config file it's
+ 
+
+1077
+00:18:29,280 --> 00:18:32,510
+has its own little config file it's
+called wsl.com we can find it here let
+
+1078
+00:18:32,510 --> 00:18:32,520
+called wsl.com we can find it here let
+ 
+
+1079
+00:18:32,520 --> 00:18:34,549
+called wsl.com we can find it here let
+me show you real quick here in auntu I'm
+
+1080
+00:18:34,549 --> 00:18:34,559
+me show you real quick here in auntu I'm
+ 
+
+1081
+00:18:34,559 --> 00:18:36,870
+me show you real quick here in auntu I'm
+going to go to I'll just open it up
+
+1082
+00:18:36,870 --> 00:18:36,880
+going to go to I'll just open it up
+ 
+
+1083
+00:18:36,880 --> 00:18:40,789
+going to go to I'll just open it up
+Nano Etsy wsl.com
+
+1084
+00:18:40,789 --> 00:18:40,799
+Nano Etsy wsl.com
+ 
+
+1085
+00:18:40,799 --> 00:18:43,549
+Nano Etsy wsl.com
+there it is now one thing I want to
+
+1086
+00:18:43,549 --> 00:18:43,559
+there it is now one thing I want to
+ 
+
+1087
+00:18:43,559 --> 00:18:45,990
+there it is now one thing I want to
+point out that's just fun is that WSL
+
+1088
+00:18:45,990 --> 00:18:46,000
+point out that's just fun is that WSL
+ 
+
+1089
+00:18:46,000 --> 00:18:48,350
+point out that's just fun is that WSL
+does fully support systemd but it is a
+
+1090
+00:18:48,350 --> 00:18:48,360
+does fully support systemd but it is a
+ 
+
+1091
+00:18:48,360 --> 00:18:50,430
+does fully support systemd but it is a
+configurable option notice it is by
+
+1092
+00:18:50,430 --> 00:18:50,440
+configurable option notice it is by
+ 
+
+1093
+00:18:50,440 --> 00:18:52,549
+configurable option notice it is by
+default set to true it's using systemd
+
+1094
+00:18:52,549 --> 00:18:52,559
+default set to true it's using systemd
+ 
+
+1095
+00:18:52,559 --> 00:18:54,230
+default set to true it's using systemd
+and you can add other config here I'm
+
+1096
+00:18:54,230 --> 00:18:54,240
+and you can add other config here I'm
+ 
+
+1097
+00:18:54,240 --> 00:18:55,710
+and you can add other config here I'm
+not going to demo everything or really
+
+1098
+00:18:55,710 --> 00:18:55,720
+not going to demo everything or really
+ 
+
+1099
+00:18:55,720 --> 00:18:56,909
+not going to demo everything or really
+anything on that because I don't care
+
+1100
+00:18:56,909 --> 00:18:56,919
+anything on that because I don't care
+ 
+
+1101
+00:18:56,919 --> 00:18:58,950
+anything on that because I don't care
+about it but you can do things like Auto
+
+1102
+00:18:58,950 --> 00:18:58,960
+about it but you can do things like Auto
+ 
+
+1103
+00:18:58,960 --> 00:19:00,990
+about it but you can do things like Auto
+settings Auto mounting drives and yes
+
+1104
+00:19:00,990 --> 00:19:01,000
+settings Auto mounting drives and yes
+ 
+
+1105
+00:19:01,000 --> 00:19:02,669
+settings Auto mounting drives and yes
+you can mount remote drives I mount my
+
+1106
+00:19:02,669 --> 00:19:02,679
+you can mount remote drives I mount my
+ 
+
+1107
+00:19:02,679 --> 00:19:04,950
+you can mount remote drives I mount my
+Nas inside my WSL instance all the time
+
+1108
+00:19:04,950 --> 00:19:04,960
+Nas inside my WSL instance all the time
+ 
+
+1109
+00:19:04,960 --> 00:19:06,909
+Nas inside my WSL instance all the time
+you can do some host name config with
+
+1110
+00:19:06,909 --> 00:19:06,919
+you can do some host name config with
+ 
+
+1111
+00:19:06,919 --> 00:19:08,669
+you can do some host name config with
+network settings interoperability
+
+1112
+00:19:08,669 --> 00:19:08,679
+network settings interoperability
+ 
+
+1113
+00:19:08,679 --> 00:19:10,430
+network settings interoperability
+settings user settings you can add a
+
+1114
+00:19:10,430 --> 00:19:10,440
+settings user settings you can add a
+ 
+
+1115
+00:19:10,440 --> 00:19:12,270
+settings user settings you can add a
+default user you can have stuff run when
+
+1116
+00:19:12,270 --> 00:19:12,280
+default user you can have stuff run when
+ 
+
+1117
+00:19:12,280 --> 00:19:14,070
+default user you can have stuff run when
+the instance boots and here's an example
+
+1118
+00:19:14,070 --> 00:19:14,080
+the instance boots and here's an example
+ 
+
+1119
+00:19:14,080 --> 00:19:15,549
+the instance boots and here's an example
+file right here now the other file you
+
+1120
+00:19:15,549 --> 00:19:15,559
+file right here now the other file you
+ 
+
+1121
+00:19:15,559 --> 00:19:17,630
+file right here now the other file you
+can have is a global file and I like
+
+1122
+00:19:17,630 --> 00:19:17,640
+can have is a global file and I like
+ 
+
+1123
+00:19:17,640 --> 00:19:18,789
+can have is a global file and I like
+this one better because it has cooler
+
+1124
+00:19:18,789 --> 00:19:18,799
+this one better because it has cooler
+ 
+
+1125
+00:19:18,799 --> 00:19:21,190
+this one better because it has cooler
+options this will apply to every single
+
+1126
+00:19:21,190 --> 00:19:21,200
+options this will apply to every single
+ 
+
+1127
+00:19:21,200 --> 00:19:23,190
+options this will apply to every single
+WSL and sense you're running and this is
+
+1128
+00:19:23,190 --> 00:19:23,200
+WSL and sense you're running and this is
+ 
+
+1129
+00:19:23,200 --> 00:19:24,310
+WSL and sense you're running and this is
+going to be stored in your Windows
+
+1130
+00:19:24,310 --> 00:19:24,320
+going to be stored in your Windows
+ 
+
+1131
+00:19:24,320 --> 00:19:26,070
+going to be stored in your Windows
+operating system by default it's not
+
+1132
+00:19:26,070 --> 00:19:26,080
+operating system by default it's not
+ 
+
+1133
+00:19:26,080 --> 00:19:29,029
+operating system by default it's not
+created it's going to be awsl conf fake
+
+1134
+00:19:29,029 --> 00:19:29,039
+created it's going to be awsl conf fake
+ 
+
+1135
+00:19:29,039 --> 00:19:31,350
+created it's going to be awsl conf fake
+file and WSL is going to look for it
+
+1136
+00:19:31,350 --> 00:19:31,360
+file and WSL is going to look for it
+ 
+
+1137
+00:19:31,360 --> 00:19:33,590
+file and WSL is going to look for it
+inside your user directory let's create
+
+1138
+00:19:33,590 --> 00:19:33,600
+inside your user directory let's create
+ 
+
+1139
+00:19:33,600 --> 00:19:35,669
+inside your user directory let's create
+it real quick I got this one little
+
+1140
+00:19:35,669 --> 00:19:35,679
+it real quick I got this one little
+ 
+
+1141
+00:19:35,679 --> 00:19:36,990
+it real quick I got this one little
+quick Snappy command that we're going to
+
+1142
+00:19:36,990 --> 00:19:37,000
+quick Snappy command that we're going to
+ 
+
+1143
+00:19:37,000 --> 00:19:39,430
+quick Snappy command that we're going to
+run inside Powershell so here Powershell
+
+1144
+00:19:39,430 --> 00:19:39,440
+run inside Powershell so here Powershell
+ 
+
+1145
+00:19:39,440 --> 00:19:42,070
+run inside Powershell so here Powershell
+window all windows baby run this command
+
+1146
+00:19:42,070 --> 00:19:42,080
+window all windows baby run this command
+ 
+
+1147
+00:19:42,080 --> 00:19:43,830
+window all windows baby run this command
+notepad and it's going to open up a new
+
+1148
+00:19:43,830 --> 00:19:43,840
+notepad and it's going to open up a new
+ 
+
+1149
+00:19:43,840 --> 00:19:47,070
+notepad and it's going to open up a new
+file within our user profile WSL config
+
+1150
+00:19:47,070 --> 00:19:47,080
+file within our user profile WSL config
+ 
+
+1151
+00:19:47,080 --> 00:19:49,190
+file within our user profile WSL config
+and notepad it's going to go hey that
+
+1152
+00:19:49,190 --> 00:19:49,200
+and notepad it's going to go hey that
+ 
+
+1153
+00:19:49,200 --> 00:19:50,230
+and notepad it's going to go hey that
+file is not created we're going to
+
+1154
+00:19:50,230 --> 00:19:50,240
+file is not created we're going to
+ 
+
+1155
+00:19:50,240 --> 00:19:52,390
+file is not created we're going to
+create it right now cool no big deal now
+
+1156
+00:19:52,390 --> 00:19:52,400
+create it right now cool no big deal now
+ 
+
+1157
+00:19:52,400 --> 00:19:53,909
+create it right now cool no big deal now
+one thing just one thing I want to demo
+
+1158
+00:19:53,909 --> 00:19:53,919
+one thing just one thing I want to demo
+ 
+
+1159
+00:19:53,919 --> 00:19:55,990
+one thing just one thing I want to demo
+and show you how to do is changing the
+
+1160
+00:19:55,990 --> 00:19:56,000
+and show you how to do is changing the
+ 
+
+1161
+00:19:56,000 --> 00:19:57,710
+and show you how to do is changing the
+networking mode so check this out we're
+
+1162
+00:19:57,710 --> 00:19:57,720
+networking mode so check this out we're
+ 
+
+1163
+00:19:57,720 --> 00:19:59,430
+networking mode so check this out we're
+going to uh set up the file right now
+
+1164
+00:19:59,430 --> 00:19:59,440
+going to uh set up the file right now
+ 
+
+1165
+00:19:59,440 --> 00:20:00,950
+going to uh set up the file right now
+first we'll do opening bracket and say
+
+1166
+00:20:00,950 --> 00:20:00,960
+first we'll do opening bracket and say
+ 
+
+1167
+00:20:00,960 --> 00:20:03,070
+first we'll do opening bracket and say
+wsl2 closing bracket it's just telling
+
+1168
+00:20:03,070 --> 00:20:03,080
+wsl2 closing bracket it's just telling
+ 
+
+1169
+00:20:03,080 --> 00:20:04,909
+wsl2 closing bracket it's just telling
+it hey we're doing wsl2 file it's going
+
+1170
+00:20:04,909 --> 00:20:04,919
+it hey we're doing wsl2 file it's going
+ 
+
+1171
+00:20:04,919 --> 00:20:07,230
+it hey we're doing wsl2 file it's going
+to look for that and actually uh need it
+
+1172
+00:20:07,230 --> 00:20:07,240
+to look for that and actually uh need it
+ 
+
+1173
+00:20:07,240 --> 00:20:08,909
+to look for that and actually uh need it
+there and then we're going to change
+
+1174
+00:20:08,909 --> 00:20:08,919
+there and then we're going to change
+ 
+
+1175
+00:20:08,919 --> 00:20:11,549
+there and then we're going to change
+networking mode and the M will need to
+
+1176
+00:20:11,549 --> 00:20:11,559
+networking mode and the M will need to
+ 
+
+1177
+00:20:11,559 --> 00:20:14,950
+networking mode and the M will need to
+be capitalized and I'll say equals
+
+1178
+00:20:14,950 --> 00:20:14,960
+be capitalized and I'll say equals
+ 
+
+1179
+00:20:14,960 --> 00:20:17,430
+be capitalized and I'll say equals
+mirrored Now by default the networking
+
+1180
+00:20:17,430 --> 00:20:17,440
+mirrored Now by default the networking
+ 
+
+1181
+00:20:17,440 --> 00:20:19,430
+mirrored Now by default the networking
+mode for WSL is natat I'm not going to
+
+1182
+00:20:19,430 --> 00:20:19,440
+mode for WSL is natat I'm not going to
+ 
+
+1183
+00:20:19,440 --> 00:20:21,270
+mode for WSL is natat I'm not going to
+cover natat in too much detail just know
+
+1184
+00:20:21,270 --> 00:20:21,280
+cover natat in too much detail just know
+ 
+
+1185
+00:20:21,280 --> 00:20:23,909
+cover natat in too much detail just know
+that this is my windows IP address I
+
+1186
+00:20:23,909 --> 00:20:23,919
+that this is my windows IP address I
+ 
+
+1187
+00:20:23,919 --> 00:20:26,110
+that this is my windows IP address I
+think I actually don't know my WSL
+
+1188
+00:20:26,110 --> 00:20:26,120
+think I actually don't know my WSL
+ 
+
+1189
+00:20:26,120 --> 00:20:28,070
+think I actually don't know my WSL
+instances are connected to this with a
+
+1190
+00:20:28,070 --> 00:20:28,080
+instances are connected to this with a
+ 
+
+1191
+00:20:28,080 --> 00:20:29,710
+instances are connected to this with a
+separate Network work through net and
+
+1192
+00:20:29,710 --> 00:20:29,720
+separate Network work through net and
+ 
+
+1193
+00:20:29,720 --> 00:20:31,870
+separate Network work through net and
+they'll look something like this
+
+1194
+00:20:31,870 --> 00:20:31,880
+they'll look something like this
+ 
+
+1195
+00:20:31,880 --> 00:20:34,750
+they'll look something like this
+17216 3.4 I'm just assuming let me go
+
+1196
+00:20:34,750 --> 00:20:34,760
+17216 3.4 I'm just assuming let me go
+ 
+
+1197
+00:20:34,760 --> 00:20:36,870
+17216 3.4 I'm just assuming let me go
+see what it actually is do an IP address
+
+1198
+00:20:36,870 --> 00:20:36,880
+see what it actually is do an IP address
+ 
+
+1199
+00:20:36,880 --> 00:20:40,789
+see what it actually is do an IP address
+command yeah it's 17227 25390 this is
+
+1200
+00:20:40,789 --> 00:20:40,799
+command yeah it's 17227 25390 this is
+ 
+
+1201
+00:20:40,799 --> 00:20:42,470
+command yeah it's 17227 25390 this is
+not on my local network it's a knat
+
+1202
+00:20:42,470 --> 00:20:42,480
+not on my local network it's a knat
+ 
+
+1203
+00:20:42,480 --> 00:20:44,669
+not on my local network it's a knat
+connection its own separate Network and
+
+1204
+00:20:44,669 --> 00:20:44,679
+connection its own separate Network and
+ 
+
+1205
+00:20:44,679 --> 00:20:46,510
+connection its own separate Network and
+by the way there's an 8sec rule they
+
+1206
+00:20:46,510 --> 00:20:46,520
+by the way there's an 8sec rule they
+ 
+
+1207
+00:20:46,520 --> 00:20:48,909
+by the way there's an 8sec rule they
+have I'm Legit this is what they call it
+
+1208
+00:20:48,909 --> 00:20:48,919
+have I'm Legit this is what they call it
+ 
+
+1209
+00:20:48,919 --> 00:20:50,950
+have I'm Legit this is what they call it
+like I'm not making this up uh if you go
+
+1210
+00:20:50,950 --> 00:20:50,960
+like I'm not making this up uh if you go
+ 
+
+1211
+00:20:50,960 --> 00:20:52,950
+like I'm not making this up uh if you go
+to their documentation they call it the
+
+1212
+00:20:52,950 --> 00:20:52,960
+to their documentation they call it the
+ 
+
+1213
+00:20:52,960 --> 00:20:55,510
+to their documentation they call it the
+8sec rule for configuration changes you
+
+1214
+00:20:55,510 --> 00:20:55,520
+8sec rule for configuration changes you
+ 
+
+1215
+00:20:55,520 --> 00:20:57,190
+8sec rule for configuration changes you
+want to wait 8 seconds after you shut
+
+1216
+00:20:57,190 --> 00:20:57,200
+want to wait 8 seconds after you shut
+ 
+
+1217
+00:20:57,200 --> 00:20:59,870
+want to wait 8 seconds after you shut
+the WSL instances down for the changes
+
+1218
+00:20:59,870 --> 00:20:59,880
+the WSL instances down for the changes
+ 
+
+1219
+00:20:59,880 --> 00:21:01,789
+the WSL instances down for the changes
+to take effect cool think we are in that
+
+1220
+00:21:01,789 --> 00:21:01,799
+to take effect cool think we are in that
+ 
+
+1221
+00:21:01,799 --> 00:21:03,630
+to take effect cool think we are in that
+limit so I'm in C Linux if I type in if
+
+1222
+00:21:03,630 --> 00:21:03,640
+limit so I'm in C Linux if I type in if
+ 
+
+1223
+00:21:03,640 --> 00:21:06,669
+limit so I'm in C Linux if I type in if
+config once more didn't change what I do
+
+1224
+00:21:06,669 --> 00:21:06,679
+config once more didn't change what I do
+ 
+
+1225
+00:21:06,679 --> 00:21:09,070
+config once more didn't change what I do
+wrong let me do it longer you know what
+
+1226
+00:21:09,070 --> 00:21:09,080
+wrong let me do it longer you know what
+ 
+
+1227
+00:21:09,080 --> 00:21:12,909
+wrong let me do it longer you know what
+it did it added a txt to this bad boy
+
+1228
+00:21:12,909 --> 00:21:12,919
+it did it added a txt to this bad boy
+ 
+
+1229
+00:21:12,919 --> 00:21:14,590
+it did it added a txt to this bad boy
+why did it do
+
+1230
+00:21:14,590 --> 00:21:14,600
+why did it do
+ 
+
+1231
+00:21:14,600 --> 00:21:17,870
+why did it do
+that let's just remove that txt and now
+
+1232
+00:21:17,870 --> 00:21:17,880
+that let's just remove that txt and now
+ 
+
+1233
+00:21:17,880 --> 00:21:19,590
+that let's just remove that txt and now
+WSL will use it that was a pain let's
+
+1234
+00:21:19,590 --> 00:21:19,600
+WSL will use it that was a pain let's
+ 
+
+1235
+00:21:19,600 --> 00:21:27,230
+WSL will use it that was a pain let's
+shut them all down count to
+
+1236
+00:21:27,230 --> 00:21:27,240
+
+ 
+
+1237
+00:21:27,240 --> 00:21:30,430
+
+eight and launch Cali once more fingers
+
+1238
+00:21:30,430 --> 00:21:30,440
+eight and launch Cali once more fingers
+ 
+
+1239
+00:21:30,440 --> 00:21:34,149
+eight and launch Cali once more fingers
+crossed if config it matches Windows
+
+1240
+00:21:34,149 --> 00:21:34,159
+crossed if config it matches Windows
+ 
+
+1241
+00:21:34,159 --> 00:21:36,310
+crossed if config it matches Windows
+right there mirrored mode versus not
+
+1242
+00:21:36,310 --> 00:21:36,320
+right there mirrored mode versus not
+ 
+
+1243
+00:21:36,320 --> 00:21:38,510
+right there mirrored mode versus not
+mode removes a lot of issues you might
+
+1244
+00:21:38,510 --> 00:21:38,520
+mode removes a lot of issues you might
+ 
+
+1245
+00:21:38,520 --> 00:21:40,630
+mode removes a lot of issues you might
+have and you can connect a WSL directly
+
+1246
+00:21:40,630 --> 00:21:40,640
+have and you can connect a WSL directly
+ 
+
+1247
+00:21:40,640 --> 00:21:42,310
+have and you can connect a WSL directly
+from your local area network which is
+
+1248
+00:21:42,310 --> 00:21:42,320
+from your local area network which is
+ 
+
+1249
+00:21:42,320 --> 00:21:43,669
+from your local area network which is
+pretty cool now one last thing I want to
+
+1250
+00:21:43,669 --> 00:21:43,679
+pretty cool now one last thing I want to
+ 
+
+1251
+00:21:43,679 --> 00:21:45,510
+pretty cool now one last thing I want to
+show you one last Deep dive that's how
+
+1252
+00:21:45,510 --> 00:21:45,520
+show you one last Deep dive that's how
+ 
+
+1253
+00:21:45,520 --> 00:21:47,870
+show you one last Deep dive that's how
+to back up your WSL instances your
+
+1254
+00:21:47,870 --> 00:21:47,880
+to back up your WSL instances your
+ 
+
+1255
+00:21:47,880 --> 00:21:49,149
+to back up your WSL instances your
+little virtual machines that you might
+
+1256
+00:21:49,149 --> 00:21:49,159
+little virtual machines that you might
+ 
+
+1257
+00:21:49,159 --> 00:21:51,029
+little virtual machines that you might
+pour a lot of love into to configure and
+
+1258
+00:21:51,029 --> 00:21:51,039
+pour a lot of love into to configure and
+ 
+
+1259
+00:21:51,039 --> 00:21:52,630
+pour a lot of love into to configure and
+add tools you want to make sure you can
+
+1260
+00:21:52,630 --> 00:21:52,640
+add tools you want to make sure you can
+ 
+
+1261
+00:21:52,640 --> 00:21:54,190
+add tools you want to make sure you can
+protect those so let's try it out with
+
+1262
+00:21:54,190 --> 00:21:54,200
+protect those so let's try it out with
+ 
+
+1263
+00:21:54,200 --> 00:21:56,110
+protect those so let's try it out with
+this command I can back up a WSL machine
+
+1264
+00:21:56,110 --> 00:21:56,120
+this command I can back up a WSL machine
+ 
+
+1265
+00:21:56,120 --> 00:21:57,510
+this command I can back up a WSL machine
+so uh with this command I'll list my
+
+1266
+00:21:57,510 --> 00:21:57,520
+so uh with this command I'll list my
+ 
+
+1267
+00:21:57,520 --> 00:22:00,510
+so uh with this command I'll list my
+stuff WSL d-list D- veros to see what
+
+1268
+00:22:00,510 --> 00:22:00,520
+stuff WSL d-list D- veros to see what
+ 
+
+1269
+00:22:00,520 --> 00:22:02,909
+stuff WSL d-list D- veros to see what
+they're doing I've got Ubuntu I'm going
+
+1270
+00:22:02,909 --> 00:22:02,919
+they're doing I've got Ubuntu I'm going
+ 
+
+1271
+00:22:02,919 --> 00:22:04,750
+they're doing I've got Ubuntu I'm going
+to back him up to what's called a tower
+
+1272
+00:22:04,750 --> 00:22:04,760
+to back him up to what's called a tower
+ 
+
+1273
+00:22:04,760 --> 00:22:08,149
+to back him up to what's called a tower
+file so I'll do WSL -- exort and I'll
+
+1274
+00:22:08,149 --> 00:22:08,159
+file so I'll do WSL -- exort and I'll
+ 
+
+1275
+00:22:08,159 --> 00:22:10,149
+file so I'll do WSL -- exort and I'll
+specify Ubuntu and then the name of the
+
+1276
+00:22:10,149 --> 00:22:10,159
+specify Ubuntu and then the name of the
+ 
+
+1277
+00:22:10,159 --> 00:22:11,350
+specify Ubuntu and then the name of the
+file I want to store it in so I'll just
+
+1278
+00:22:11,350 --> 00:22:11,360
+file I want to store it in so I'll just
+ 
+
+1279
+00:22:11,360 --> 00:22:12,149
+file I want to store it in so I'll just
+call it
+
+1280
+00:22:12,149 --> 00:22:12,159
+call it
+ 
+
+1281
+00:22:12,159 --> 00:22:14,710
+call it
+Ubuntu dotar and right now it's
+
+1282
+00:22:14,710 --> 00:22:14,720
+Ubuntu dotar and right now it's
+ 
+
+1283
+00:22:14,720 --> 00:22:16,870
+Ubuntu dotar and right now it's
+exporting my Ubuntu machine and that's
+
+1284
+00:22:16,870 --> 00:22:16,880
+exporting my Ubuntu machine and that's
+ 
+
+1285
+00:22:16,880 --> 00:22:19,390
+exporting my Ubuntu machine and that's
+it if I were to LS that and then grep
+
+1286
+00:22:19,390 --> 00:22:19,400
+it if I were to LS that and then grep
+ 
+
+1287
+00:22:19,400 --> 00:22:21,510
+it if I were to LS that and then grep
+I'll use WSL to grep for it there it is
+
+1288
+00:22:21,510 --> 00:22:21,520
+I'll use WSL to grep for it there it is
+ 
+
+1289
+00:22:21,520 --> 00:22:22,750
+I'll use WSL to grep for it there it is
+right there now what I want to try and
+
+1290
+00:22:22,750 --> 00:22:22,760
+right there now what I want to try and
+ 
+
+1291
+00:22:22,760 --> 00:22:24,430
+right there now what I want to try and
+do is import this on another machine so
+
+1292
+00:22:24,430 --> 00:22:24,440
+do is import this on another machine so
+ 
+
+1293
+00:22:24,440 --> 00:22:25,789
+do is import this on another machine so
+I'm going to open this up see where did
+
+1294
+00:22:25,789 --> 00:22:25,799
+I'm going to open this up see where did
+ 
+
+1295
+00:22:25,799 --> 00:22:28,750
+I'm going to open this up see where did
+he go there it is ubun to.ar it's only
+
+1296
+00:22:28,750 --> 00:22:28,760
+he go there it is ubun to.ar it's only
+ 
+
+1297
+00:22:28,760 --> 00:22:31,190
+he go there it is ubun to.ar it's only
+1.9 gigs I'm going to copy that onto my
+
+1298
+00:22:31,190 --> 00:22:31,200
+1.9 gigs I'm going to copy that onto my
+ 
+
+1299
+00:22:31,200 --> 00:22:32,909
+1.9 gigs I'm going to copy that onto my
+main machine all right with it copied
+
+1300
+00:22:32,909 --> 00:22:32,919
+main machine all right with it copied
+ 
+
+1301
+00:22:32,919 --> 00:22:34,350
+main machine all right with it copied
+over and by the way this is the first
+
+1302
+00:22:34,350 --> 00:22:34,360
+over and by the way this is the first
+ 
+
+1303
+00:22:34,360 --> 00:22:35,990
+over and by the way this is the first
+time I've tried this hope it works I'm
+
+1304
+00:22:35,990 --> 00:22:36,000
+time I've tried this hope it works I'm
+ 
+
+1305
+00:22:36,000 --> 00:22:38,549
+time I've tried this hope it works I'm
+going to do WSL D- import I'm going to
+
+1306
+00:22:38,549 --> 00:22:38,559
+going to do WSL D- import I'm going to
+ 
+
+1307
+00:22:38,559 --> 00:22:40,070
+going to do WSL D- import I'm going to
+name it I can name this anything I'll
+
+1308
+00:22:40,070 --> 00:22:40,080
+name it I can name this anything I'll
+ 
+
+1309
+00:22:40,080 --> 00:22:42,110
+name it I can name this anything I'll
+name it Tokyo specify where I want to
+
+1310
+00:22:42,110 --> 00:22:42,120
+name it Tokyo specify where I want to
+ 
+
+1311
+00:22:42,120 --> 00:22:44,870
+name it Tokyo specify where I want to
+store it I'll put it here dwsl and then
+
+1312
+00:22:44,870 --> 00:22:44,880
+store it I'll put it here dwsl and then
+ 
+
+1313
+00:22:44,880 --> 00:22:46,510
+store it I'll put it here dwsl and then
+the name of the tar file the location of
+
+1314
+00:22:46,510 --> 00:22:46,520
+the name of the tar file the location of
+ 
+
+1315
+00:22:46,520 --> 00:22:49,029
+the name of the tar file the location of
+it it's right here Ready set go okay
+
+1316
+00:22:49,029 --> 00:22:49,039
+it it's right here Ready set go okay
+ 
+
+1317
+00:22:49,039 --> 00:22:50,990
+it it's right here Ready set go okay
+it's importing that's it so now if I
+
+1318
+00:22:50,990 --> 00:22:51,000
+it's importing that's it so now if I
+ 
+
+1319
+00:22:51,000 --> 00:22:55,630
+it's importing that's it so now if I
+list my stuff try it out WSL d-list
+
+1320
+00:22:55,630 --> 00:22:55,640
+list my stuff try it out WSL d-list
+ 
+
+1321
+00:22:55,640 --> 00:22:58,590
+list my stuff try it out WSL d-list
+there's Tokyo let me connect to Tokyo SI
+
+1322
+00:22:58,590 --> 00:22:58,600
+there's Tokyo let me connect to Tokyo SI
+ 
+
+1323
+00:22:58,600 --> 00:23:01,230
+there's Tokyo let me connect to Tokyo SI
+sick okay cool that worked oh I forgot
+
+1324
+00:23:01,230 --> 00:23:01,240
+sick okay cool that worked oh I forgot
+ 
+
+1325
+00:23:01,240 --> 00:23:02,470
+sick okay cool that worked oh I forgot
+one thing I had to turn my cameras back
+
+1326
+00:23:02,470 --> 00:23:02,480
+one thing I had to turn my cameras back
+ 
+
+1327
+00:23:02,480 --> 00:23:04,190
+one thing I had to turn my cameras back
+on just to tell you this when connecting
+
+1328
+00:23:04,190 --> 00:23:04,200
+on just to tell you this when connecting
+ 
+
+1329
+00:23:04,200 --> 00:23:06,549
+on just to tell you this when connecting
+to an imported instance notice it kind
+
+1330
+00:23:06,549 --> 00:23:06,559
+to an imported instance notice it kind
+ 
+
+1331
+00:23:06,559 --> 00:23:09,230
+to an imported instance notice it kind
+of defaulted to the root user and that
+
+1332
+00:23:09,230 --> 00:23:09,240
+of defaulted to the root user and that
+ 
+
+1333
+00:23:09,240 --> 00:23:10,789
+of defaulted to the root user and that
+kind of freaked me out because I had
+
+1334
+00:23:10,789 --> 00:23:10,799
+kind of freaked me out because I had
+ 
+
+1335
+00:23:10,799 --> 00:23:12,750
+kind of freaked me out because I had
+some files here and they're not here but
+
+1336
+00:23:12,750 --> 00:23:12,760
+some files here and they're not here but
+ 
+
+1337
+00:23:12,760 --> 00:23:14,470
+some files here and they're not here but
+they were here in my other auntu I
+
+1338
+00:23:14,470 --> 00:23:14,480
+they were here in my other auntu I
+ 
+
+1339
+00:23:14,480 --> 00:23:16,470
+they were here in my other auntu I
+created like two little test text files
+
+1340
+00:23:16,470 --> 00:23:16,480
+created like two little test text files
+ 
+
+1341
+00:23:16,480 --> 00:23:18,669
+created like two little test text files
+well you can specify the user account
+
+1342
+00:23:18,669 --> 00:23:18,679
+well you can specify the user account
+ 
+
+1343
+00:23:18,679 --> 00:23:22,149
+well you can specify the user account
+you connect as so I do WSL DD and Tokyo
+
+1344
+00:23:22,149 --> 00:23:22,159
+you connect as so I do WSL DD and Tokyo
+ 
+
+1345
+00:23:22,159 --> 00:23:24,990
+you connect as so I do WSL DD and Tokyo
+then I'll do dasu for user and specify
+
+1346
+00:23:24,990 --> 00:23:25,000
+then I'll do dasu for user and specify
+ 
+
+1347
+00:23:25,000 --> 00:23:26,510
+then I'll do dasu for user and specify
+Network Chuck to connect as Network
+
+1348
+00:23:26,510 --> 00:23:26,520
+Network Chuck to connect as Network
+ 
+
+1349
+00:23:26,520 --> 00:23:29,149
+Network Chuck to connect as Network
+Chuck and there we go type in Ln
+
+1350
+00:23:29,149 --> 00:23:29,159
+Chuck and there we go type in Ln
+ 
+
+1351
+00:23:29,159 --> 00:23:31,430
+Chuck and there we go type in Ln
+there's my files sorry I almost forgot
+
+1352
+00:23:31,430 --> 00:23:31,440
+there's my files sorry I almost forgot
+ 
+
+1353
+00:23:31,440 --> 00:23:34,190
+there's my files sorry I almost forgot
+that also if you like the way my stuff
+
+1354
+00:23:34,190 --> 00:23:34,200
+that also if you like the way my stuff
+ 
+
+1355
+00:23:34,200 --> 00:23:36,110
+that also if you like the way my stuff
+looks let me know if you want me to make
+
+1356
+00:23:36,110 --> 00:23:36,120
+looks let me know if you want me to make
+ 
+
+1357
+00:23:36,120 --> 00:23:37,870
+looks let me know if you want me to make
+a video on how to do that I kind of love
+
+1358
+00:23:37,870 --> 00:23:37,880
+a video on how to do that I kind of love
+ 
+
+1359
+00:23:37,880 --> 00:23:40,230
+a video on how to do that I kind of love
+it especially when I can do this and
+
+1360
+00:23:40,230 --> 00:23:40,240
+it especially when I can do this and
+ 
+
+1361
+00:23:40,240 --> 00:23:42,110
+it especially when I can do this and
+have it look like a boont and be nice
+
+1362
+00:23:42,110 --> 00:23:42,120
+have it look like a boont and be nice
+ 
+
+1363
+00:23:42,120 --> 00:23:45,070
+have it look like a boont and be nice
+and clean okay that's everything WSL
+
+1364
+00:23:45,070 --> 00:23:45,080
+and clean okay that's everything WSL
+ 
+
+1365
+00:23:45,080 --> 00:23:47,110
+and clean okay that's everything WSL
+from the flashy cool stuff to the nerdy
+
+1366
+00:23:47,110 --> 00:23:47,120
+from the flashy cool stuff to the nerdy
+ 
+
+1367
+00:23:47,120 --> 00:23:48,990
+from the flashy cool stuff to the nerdy
+things that you may want to do to back
+
+1368
+00:23:48,990 --> 00:23:49,000
+things that you may want to do to back
+ 
+
+1369
+00:23:49,000 --> 00:23:51,110
+things that you may want to do to back
+things up or make your networking work I
+
+1370
+00:23:51,110 --> 00:23:51,120
+things up or make your networking work I
+ 
+
+1371
+00:23:51,120 --> 00:23:52,549
+things up or make your networking work I
+hope you enjoyed it I'll catch you guys
+
+1372
+00:23:52,549 --> 00:23:52,559
+hope you enjoyed it I'll catch you guys
+ 
+
+1373
+00:23:52,559 --> 00:23:55,080
+hope you enjoyed it I'll catch you guys
+next time
+

@@ -1,13 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { PrismaClient } from '@prisma/client';
+import { prisma } from '@/lib/prisma';
 import * as payloadEngine from '@/lib/payload-engine';
 import * as generationService from '@/lib/generation-service';
 import * as r2Service from '@/lib/r2-service';
 import { checkManualRateLimit } from '@/lib/rate-limit';
 import { getApiAuth } from '@/lib/api-auth';
 import { EMERGENCY_CHANNELS, EMERGENCY_ARCHETYPES } from '@/lib/emergency-data';
-
-const prisma = new PrismaClient();
 
 export async function POST(request: NextRequest) {
   const authResult = await getApiAuth(request);
@@ -66,23 +64,32 @@ export async function POST(request: NextRequest) {
       channel = await prisma.channel.findUnique({ where: { id: channelId } });
       archetype = await prisma.archetype.findUnique({ where: { id: archetypeId } });
     } catch (dbError) {
-      console.error('DB lookup failed in generate, using emergency fallback:', dbError);
+      console.error('DB lookup failed in generate:', dbError);
+      return NextResponse.json(
+        { error: 'Database error. Please try again or contact support if the issue persists.' },
+        { status: 500 }
+      );
     }
 
-    // Fallback to emergency data if DB lookup failed or returned nothing
-    if (!channel) channel = EMERGENCY_CHANNELS.find(c => c.id === channelId) || EMERGENCY_CHANNELS[0];
+    // Validate that channel and archetype exist (no silent fallbacks)
+    if (!channel) {
+      return NextResponse.json(
+        { error: 'Channel not found. Please select a valid channel.' },
+        { status: 404 }
+      );
+    }
 
     if (!archetype) {
-      const emergencyArchetype = EMERGENCY_ARCHETYPES.find(a => a.id === archetypeId);
-      if (emergencyArchetype) {
-        // Enforce Admin-Only archetypes at the generation layer too
-        if (emergencyArchetype.isAdminOnly && userRole !== 'ADMIN') {
-          return NextResponse.json({ error: 'Unauthorized archetype usage' }, { status: 403 });
-        }
-        archetype = emergencyArchetype as any;
-      } else {
-        archetype = EMERGENCY_ARCHETYPES[0] as any;
-      }
+      return NextResponse.json(
+        { error: 'Archetype not found. Please select a valid archetype.' },
+        { status: 404 }
+      );
+    }
+
+    // FINAL GUARD: Enforce Admin-Only archetypes at the generation layer
+    // This prevents direct API manipulation by non-admins or the test account
+    if (archetype.isAdminOnly && (userRole !== 'ADMIN' || isTestUser)) {
+      return NextResponse.json({ error: 'Unauthorized archetype usage. This style is restricted to administrators.' }, { status: 403 });
     }
 
     // Build base payload using the engine's data-driven approach
@@ -129,19 +136,40 @@ export async function POST(request: NextRequest) {
         const filename = `gen_${job.id}.png`;
         const outputUrl = await r2Service.uploadToR2(imageBuffer, filename, 'image/png', userEmail);
 
-        try {
-          const updatedJob = await prisma.generationJob.update({
-            where: { id: job.id },
-            data: {
-              status: 'completed',
-              outputUrl,
-              promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}${fallbackUsed ? `\n\n[FALLBACK TRIGGERED: ${fallbackMessage}]` : ''}`,
-              completedAt: new Date()
-            },
-          } as any);
+        // Retry logic for job status update
+        let updatedJob = null;
+        let retryCount = 0;
+        const maxRetries = 2;
+
+        while (retryCount <= maxRetries && !updatedJob) {
+          try {
+            updatedJob = await prisma.generationJob.update({
+              where: { id: job.id },
+              data: {
+                status: 'completed',
+                outputUrl,
+                promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}${fallbackUsed ? `\n\n[FALLBACK TRIGGERED: ${fallbackMessage}]` : ''}`,
+                completedAt: new Date()
+              },
+            } as any);
+          } catch (dbError) {
+            retryCount++;
+            console.error(`DB job update (complete) failed (attempt ${retryCount}/${maxRetries + 1}):`, dbError);
+
+            if (retryCount <= maxRetries) {
+              // Wait 1 second before retry
+              await new Promise(resolve => setTimeout(resolve, 1000));
+            } else {
+              // All retries exhausted - log for manual recovery
+              console.error(`CRITICAL: Job ${job.id} completed but failed to update DB after ${maxRetries + 1} attempts. Image exists at ${outputUrl}`);
+            }
+          }
+        }
+
+        if (updatedJob) {
           results.push({ ...updatedJob, fallbackUsed, fallbackMessage });
-        } catch (dbError) {
-          console.error('DB job update (complete) failed:', dbError);
+        } else {
+          // Fallback: return job data even though DB update failed
           results.push({ ...job, status: 'completed', outputUrl, fallbackUsed, fallbackMessage });
         }
       } catch (error: any) {

@@ -34,9 +34,15 @@ export async function GET(request: NextRequest) {
     });
 
     const role = (session.user as any)?.role;
+    const userEmail = session.user?.email || '';
+    const isTestAccount = userEmail === 'test@test.ai';
+
     const allArchetypes = archetypes.length > 0 ? archetypes : EMERGENCY_ARCHETYPES;
     const filteredArchetypes = allArchetypes.filter((arch: any) => {
-      if (arch.isAdminOnly && role !== 'ADMIN') return false;
+      // Explicitly block admin archetypes for non-admins and the test account
+      if (arch.isAdminOnly && (role !== 'ADMIN' || isTestAccount)) {
+        return false;
+      }
       return true;
     });
 
@@ -59,7 +65,11 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { name, channelId, imageUrl, layoutInstructions, category } = body;
+    const { name, channelId, imageUrl, layoutInstructions, category, basePrompt, isAdminOnly } = body;
+
+    const userRole = (session.user as any)?.role;
+    const userEmail = session.user?.email || '';
+    const isTestAccount = userEmail === 'test@test.ai';
 
     if (!name || !imageUrl) {
       return NextResponse.json(
@@ -74,7 +84,9 @@ export async function POST(request: NextRequest) {
         channelId: channelId || null,
         imageUrl,
         layoutInstructions: layoutInstructions || '',
+        basePrompt: basePrompt || null,
         category: category || 'General',
+        isAdminOnly: (userRole === 'ADMIN' && !isTestAccount) ? (isAdminOnly || false) : false,
       } as any,
     });
 

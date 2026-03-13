@@ -1,0 +1,3475 @@
+1
+00:00:00,000 --> 00:00:01,829
+
+hi everyone welcome back to my channel
+
+2
+00:00:01,829 --> 00:00:01,839
+hi everyone welcome back to my channel
+ 
+
+3
+00:00:01,839 --> 00:00:03,030
+hi everyone welcome back to my channel
+today i wanted to make
+
+4
+00:00:03,030 --> 00:00:03,040
+today i wanted to make
+ 
+
+5
+00:00:03,040 --> 00:00:05,829
+today i wanted to make
+a gmail tutorial for beginners i feel
+
+6
+00:00:05,829 --> 00:00:05,839
+a gmail tutorial for beginners i feel
+ 
+
+7
+00:00:05,839 --> 00:00:07,110
+a gmail tutorial for beginners i feel
+like a lot of people
+
+8
+00:00:07,110 --> 00:00:07,120
+like a lot of people
+ 
+
+9
+00:00:07,120 --> 00:00:09,430
+like a lot of people
+nowadays are maybe switching to gmail
+
+10
+00:00:09,430 --> 00:00:09,440
+nowadays are maybe switching to gmail
+ 
+
+11
+00:00:09,440 --> 00:00:10,790
+nowadays are maybe switching to gmail
+getting gmail accounts
+
+12
+00:00:10,790 --> 00:00:10,800
+getting gmail accounts
+ 
+
+13
+00:00:10,800 --> 00:00:13,669
+getting gmail accounts
+using google me things like that and i
+
+14
+00:00:13,669 --> 00:00:13,679
+using google me things like that and i
+ 
+
+15
+00:00:13,679 --> 00:00:14,470
+using google me things like that and i
+personally
+
+16
+00:00:14,470 --> 00:00:14,480
+personally
+ 
+
+17
+00:00:14,480 --> 00:00:16,150
+personally
+love gmail i think it has a lot of
+
+18
+00:00:16,150 --> 00:00:16,160
+love gmail i think it has a lot of
+ 
+
+19
+00:00:16,160 --> 00:00:17,510
+love gmail i think it has a lot of
+really great features
+
+20
+00:00:17,510 --> 00:00:17,520
+really great features
+ 
+
+21
+00:00:17,520 --> 00:00:19,269
+really great features
+but if you're not familiar with them or
+
+22
+00:00:19,269 --> 00:00:19,279
+but if you're not familiar with them or
+ 
+
+23
+00:00:19,279 --> 00:00:21,109
+but if you're not familiar with them or
+aren't used to them i can understand how
+
+24
+00:00:21,109 --> 00:00:21,119
+aren't used to them i can understand how
+ 
+
+25
+00:00:21,119 --> 00:00:22,790
+aren't used to them i can understand how
+they could be confusing so
+
+26
+00:00:22,790 --> 00:00:22,800
+they could be confusing so
+ 
+
+27
+00:00:22,800 --> 00:00:25,269
+they could be confusing so
+i wanted to go over some of them today i
+
+28
+00:00:25,269 --> 00:00:25,279
+i wanted to go over some of them today i
+ 
+
+29
+00:00:25,279 --> 00:00:26,790
+i wanted to go over some of them today i
+will leave a list in the description box
+
+30
+00:00:26,790 --> 00:00:26,800
+will leave a list in the description box
+ 
+
+31
+00:00:26,800 --> 00:00:28,150
+will leave a list in the description box
+of the topics that i'll be covering
+
+32
+00:00:28,150 --> 00:00:28,160
+of the topics that i'll be covering
+ 
+
+33
+00:00:28,160 --> 00:00:30,310
+of the topics that i'll be covering
+today along with their time stamps so
+
+34
+00:00:30,310 --> 00:00:30,320
+today along with their time stamps so
+ 
+
+35
+00:00:30,320 --> 00:00:31,269
+today along with their time stamps so
+let's get started
+
+36
+00:00:31,269 --> 00:00:31,279
+let's get started
+ 
+
+37
+00:00:31,279 --> 00:00:32,870
+let's get started
+i obviously want to start with the
+
+38
+00:00:32,870 --> 00:00:32,880
+i obviously want to start with the
+ 
+
+39
+00:00:32,880 --> 00:00:35,030
+i obviously want to start with the
+basics and talk about composing an
+
+40
+00:00:35,030 --> 00:00:35,040
+basics and talk about composing an
+ 
+
+41
+00:00:35,040 --> 00:00:37,510
+basics and talk about composing an
+email and everything that you can do
+
+42
+00:00:37,510 --> 00:00:37,520
+email and everything that you can do
+ 
+
+43
+00:00:37,520 --> 00:00:38,869
+email and everything that you can do
+with composing an email
+
+44
+00:00:38,869 --> 00:00:38,879
+with composing an email
+ 
+
+45
+00:00:38,879 --> 00:00:40,790
+with composing an email
+so to start drafting an email you're
+
+46
+00:00:40,790 --> 00:00:40,800
+so to start drafting an email you're
+ 
+
+47
+00:00:40,800 --> 00:00:42,069
+so to start drafting an email you're
+just going to go up here
+
+48
+00:00:42,069 --> 00:00:42,079
+just going to go up here
+ 
+
+49
+00:00:42,079 --> 00:00:43,990
+just going to go up here
+to the plus sign or where it says
+
+50
+00:00:43,990 --> 00:00:44,000
+to the plus sign or where it says
+ 
+
+51
+00:00:44,000 --> 00:00:45,750
+to the plus sign or where it says
+compose
+
+52
+00:00:45,750 --> 00:00:45,760
+compose
+ 
+
+53
+00:00:45,760 --> 00:00:48,310
+compose
+click on that and this box will pop up
+
+54
+00:00:48,310 --> 00:00:48,320
+click on that and this box will pop up
+ 
+
+55
+00:00:48,320 --> 00:00:49,110
+click on that and this box will pop up
+right here
+
+56
+00:00:49,110 --> 00:00:49,120
+right here
+ 
+
+57
+00:00:49,120 --> 00:00:51,189
+right here
+and you can easily just start typing
+
+58
+00:00:51,189 --> 00:00:51,199
+and you can easily just start typing
+ 
+
+59
+00:00:51,199 --> 00:00:53,189
+and you can easily just start typing
+your email but if you want to make this
+
+60
+00:00:53,189 --> 00:00:53,199
+your email but if you want to make this
+ 
+
+61
+00:00:53,199 --> 00:00:55,430
+your email but if you want to make this
+little pop-up larger you can do that by
+
+62
+00:00:55,430 --> 00:00:55,440
+little pop-up larger you can do that by
+ 
+
+63
+00:00:55,440 --> 00:00:57,430
+little pop-up larger you can do that by
+clicking this button right here
+
+64
+00:00:57,430 --> 00:00:57,440
+clicking this button right here
+ 
+
+65
+00:00:57,440 --> 00:01:00,630
+clicking this button right here
+which is full screen it doesn't make it
+
+66
+00:01:00,630 --> 00:01:00,640
+which is full screen it doesn't make it
+ 
+
+67
+00:01:00,640 --> 00:01:02,630
+which is full screen it doesn't make it
+totally full screen but it does expand
+
+68
+00:01:02,630 --> 00:01:02,640
+totally full screen but it does expand
+ 
+
+69
+00:01:02,640 --> 00:01:03,990
+totally full screen but it does expand
+it if you are going to be typing a
+
+70
+00:01:03,990 --> 00:01:04,000
+it if you are going to be typing a
+ 
+
+71
+00:01:04,000 --> 00:01:05,590
+it if you are going to be typing a
+longer email and want to see it in a
+
+72
+00:01:05,590 --> 00:01:05,600
+longer email and want to see it in a
+ 
+
+73
+00:01:05,600 --> 00:01:06,870
+longer email and want to see it in a
+larger format
+
+74
+00:01:06,870 --> 00:01:06,880
+larger format
+ 
+
+75
+00:01:06,880 --> 00:01:09,990
+larger format
+you can also set this as your default
+
+76
+00:01:09,990 --> 00:01:10,000
+you can also set this as your default
+ 
+
+77
+00:01:10,000 --> 00:01:12,230
+you can also set this as your default
+email draft method so instead of the
+
+78
+00:01:12,230 --> 00:01:12,240
+email draft method so instead of the
+ 
+
+79
+00:01:12,240 --> 00:01:14,310
+email draft method so instead of the
+small pop-up window you can set this as
+
+80
+00:01:14,310 --> 00:01:14,320
+small pop-up window you can set this as
+ 
+
+81
+00:01:14,320 --> 00:01:15,350
+small pop-up window you can set this as
+your default
+
+82
+00:01:15,350 --> 00:01:15,360
+your default
+ 
+
+83
+00:01:15,360 --> 00:01:18,390
+your default
+by going to more options and default to
+
+84
+00:01:18,390 --> 00:01:18,400
+by going to more options and default to
+ 
+
+85
+00:01:18,400 --> 00:01:19,670
+by going to more options and default to
+full screen
+
+86
+00:01:19,670 --> 00:01:19,680
+full screen
+ 
+
+87
+00:01:19,680 --> 00:01:22,310
+full screen
+so now if you compose an email it's
+
+88
+00:01:22,310 --> 00:01:22,320
+so now if you compose an email it's
+ 
+
+89
+00:01:22,320 --> 00:01:23,910
+so now if you compose an email it's
+going to default to the larger box
+
+90
+00:01:23,910 --> 00:01:23,920
+going to default to the larger box
+ 
+
+91
+00:01:23,920 --> 00:01:26,310
+going to default to the larger box
+instead of the smaller pop-up but if you
+
+92
+00:01:26,310 --> 00:01:26,320
+instead of the smaller pop-up but if you
+ 
+
+93
+00:01:26,320 --> 00:01:26,789
+instead of the smaller pop-up but if you
+do
+
+94
+00:01:26,789 --> 00:01:26,799
+do
+ 
+
+95
+00:01:26,799 --> 00:01:28,390
+do
+want to go back to the smaller pop-up
+
+96
+00:01:28,390 --> 00:01:28,400
+want to go back to the smaller pop-up
+ 
+
+97
+00:01:28,400 --> 00:01:30,230
+want to go back to the smaller pop-up
+you just click this button again
+
+98
+00:01:30,230 --> 00:01:30,240
+you just click this button again
+ 
+
+99
+00:01:30,240 --> 00:01:31,910
+you just click this button again
+and it will go to the smaller pop-up
+
+100
+00:01:31,910 --> 00:01:31,920
+and it will go to the smaller pop-up
+ 
+
+101
+00:01:31,920 --> 00:01:33,590
+and it will go to the smaller pop-up
+window now i want to talk about
+
+102
+00:01:33,590 --> 00:01:33,600
+window now i want to talk about
+ 
+
+103
+00:01:33,600 --> 00:01:34,469
+window now i want to talk about
+something called
+
+104
+00:01:34,469 --> 00:01:34,479
+something called
+ 
+
+105
+00:01:34,479 --> 00:01:36,950
+something called
+smart compose which you may or may not
+
+106
+00:01:36,950 --> 00:01:36,960
+smart compose which you may or may not
+ 
+
+107
+00:01:36,960 --> 00:01:38,069
+smart compose which you may or may not
+have noticed
+
+108
+00:01:38,069 --> 00:01:38,079
+have noticed
+ 
+
+109
+00:01:38,079 --> 00:01:40,789
+have noticed
+happens while you're typing out emails
+
+110
+00:01:40,789 --> 00:01:40,799
+happens while you're typing out emails
+ 
+
+111
+00:01:40,799 --> 00:01:41,749
+happens while you're typing out emails
+in gmail
+
+112
+00:01:41,749 --> 00:01:41,759
+in gmail
+ 
+
+113
+00:01:41,759 --> 00:01:43,510
+in gmail
+so when you start typing a sentence
+
+114
+00:01:43,510 --> 00:01:43,520
+so when you start typing a sentence
+ 
+
+115
+00:01:43,520 --> 00:01:45,190
+so when you start typing a sentence
+google has this feature
+
+116
+00:01:45,190 --> 00:01:45,200
+google has this feature
+ 
+
+117
+00:01:45,200 --> 00:01:46,870
+google has this feature
+where it will kind of guess what you're
+
+118
+00:01:46,870 --> 00:01:46,880
+where it will kind of guess what you're
+ 
+
+119
+00:01:46,880 --> 00:01:48,230
+where it will kind of guess what you're
+trying to say
+
+120
+00:01:48,230 --> 00:01:48,240
+trying to say
+ 
+
+121
+00:01:48,240 --> 00:01:51,350
+trying to say
+so let's say good morning i hope
+
+122
+00:01:51,350 --> 00:01:51,360
+so let's say good morning i hope
+ 
+
+123
+00:01:51,360 --> 00:01:54,310
+so let's say good morning i hope
+and then it fills in the rest this email
+
+124
+00:01:54,310 --> 00:01:54,320
+and then it fills in the rest this email
+ 
+
+125
+00:01:54,320 --> 00:01:55,910
+and then it fills in the rest this email
+finds you well
+
+126
+00:01:55,910 --> 00:01:55,920
+finds you well
+ 
+
+127
+00:01:55,920 --> 00:01:57,990
+finds you well
+and if i do if that's exactly what i
+
+128
+00:01:57,990 --> 00:01:58,000
+and if i do if that's exactly what i
+ 
+
+129
+00:01:58,000 --> 00:01:59,510
+and if i do if that's exactly what i
+wanted to say i can just click
+
+130
+00:01:59,510 --> 00:01:59,520
+wanted to say i can just click
+ 
+
+131
+00:01:59,520 --> 00:02:02,550
+wanted to say i can just click
+tab and it will finish filling it in for
+
+132
+00:02:02,550 --> 00:02:02,560
+tab and it will finish filling it in for
+ 
+
+133
+00:02:02,560 --> 00:02:03,109
+tab and it will finish filling it in for
+me
+
+134
+00:02:03,109 --> 00:02:03,119
+me
+ 
+
+135
+00:02:03,119 --> 00:02:04,789
+me
+if you like that feature you can keep it
+
+136
+00:02:04,789 --> 00:02:04,799
+if you like that feature you can keep it
+ 
+
+137
+00:02:04,799 --> 00:02:06,469
+if you like that feature you can keep it
+but there's also a way to turn it off if
+
+138
+00:02:06,469 --> 00:02:06,479
+but there's also a way to turn it off if
+ 
+
+139
+00:02:06,479 --> 00:02:07,749
+but there's also a way to turn it off if
+you do not like it
+
+140
+00:02:07,749 --> 00:02:07,759
+you do not like it
+ 
+
+141
+00:02:07,759 --> 00:02:09,190
+you do not like it
+which i will show you how to do so if
+
+142
+00:02:09,190 --> 00:02:09,200
+which i will show you how to do so if
+ 
+
+143
+00:02:09,200 --> 00:02:12,790
+which i will show you how to do so if
+you go up here to settings
+
+144
+00:02:12,790 --> 00:02:12,800
+you go up here to settings
+ 
+
+145
+00:02:12,800 --> 00:02:15,270
+you go up here to settings
+you might have to minimize your window
+
+146
+00:02:15,270 --> 00:02:15,280
+you might have to minimize your window
+ 
+
+147
+00:02:15,280 --> 00:02:16,390
+you might have to minimize your window
+to see the settings
+
+148
+00:02:16,390 --> 00:02:16,400
+to see the settings
+ 
+
+149
+00:02:16,400 --> 00:02:19,270
+to see the settings
+you want to click see all settings so
+
+150
+00:02:19,270 --> 00:02:19,280
+you want to click see all settings so
+ 
+
+151
+00:02:19,280 --> 00:02:20,869
+you want to click see all settings so
+here are all the settings and if you
+
+152
+00:02:20,869 --> 00:02:20,879
+here are all the settings and if you
+ 
+
+153
+00:02:20,879 --> 00:02:23,910
+here are all the settings and if you
+scroll down
+
+154
+00:02:23,910 --> 00:02:23,920
+
+ 
+
+155
+00:02:23,920 --> 00:02:26,790
+
+you'll see smart compose and it tells
+
+156
+00:02:26,790 --> 00:02:26,800
+you'll see smart compose and it tells
+ 
+
+157
+00:02:26,800 --> 00:02:28,150
+you'll see smart compose and it tells
+you a little bit about what smart
+
+158
+00:02:28,150 --> 00:02:28,160
+you a little bit about what smart
+ 
+
+159
+00:02:28,160 --> 00:02:28,790
+you a little bit about what smart
+compose
+
+160
+00:02:28,790 --> 00:02:28,800
+compose
+ 
+
+161
+00:02:28,800 --> 00:02:31,110
+compose
+is and so you can turn the writing
+
+162
+00:02:31,110 --> 00:02:31,120
+is and so you can turn the writing
+ 
+
+163
+00:02:31,120 --> 00:02:32,070
+is and so you can turn the writing
+suggestions
+
+164
+00:02:32,070 --> 00:02:32,080
+suggestions
+ 
+
+165
+00:02:32,080 --> 00:02:34,710
+suggestions
+on or off in this general settings
+
+166
+00:02:34,710 --> 00:02:34,720
+on or off in this general settings
+ 
+
+167
+00:02:34,720 --> 00:02:36,150
+on or off in this general settings
+section you can also change
+
+168
+00:02:36,150 --> 00:02:36,160
+section you can also change
+ 
+
+169
+00:02:36,160 --> 00:02:38,630
+section you can also change
+the undo send settings which can be
+
+170
+00:02:38,630 --> 00:02:38,640
+the undo send settings which can be
+ 
+
+171
+00:02:38,640 --> 00:02:39,990
+the undo send settings which can be
+really helpful
+
+172
+00:02:39,990 --> 00:02:40,000
+really helpful
+ 
+
+173
+00:02:40,000 --> 00:02:42,229
+really helpful
+if you didn't know once you send an
+
+174
+00:02:42,229 --> 00:02:42,239
+if you didn't know once you send an
+ 
+
+175
+00:02:42,239 --> 00:02:44,150
+if you didn't know once you send an
+email there is a little bit of a delay
+
+176
+00:02:44,150 --> 00:02:44,160
+email there is a little bit of a delay
+ 
+
+177
+00:02:44,160 --> 00:02:45,430
+email there is a little bit of a delay
+where you can actually click
+
+178
+00:02:45,430 --> 00:02:45,440
+where you can actually click
+ 
+
+179
+00:02:45,440 --> 00:02:47,589
+where you can actually click
+undo send if you made a mistake or
+
+180
+00:02:47,589 --> 00:02:47,599
+undo send if you made a mistake or
+ 
+
+181
+00:02:47,599 --> 00:02:49,270
+undo send if you made a mistake or
+attached to the wrong document
+
+182
+00:02:49,270 --> 00:02:49,280
+attached to the wrong document
+ 
+
+183
+00:02:49,280 --> 00:02:51,910
+attached to the wrong document
+so in this undo send section right here
+
+184
+00:02:51,910 --> 00:02:51,920
+so in this undo send section right here
+ 
+
+185
+00:02:51,920 --> 00:02:54,150
+so in this undo send section right here
+you can see that you can change the send
+
+186
+00:02:54,150 --> 00:02:54,160
+you can see that you can change the send
+ 
+
+187
+00:02:54,160 --> 00:02:55,830
+you can see that you can change the send
+cancellation period
+
+188
+00:02:55,830 --> 00:02:55,840
+cancellation period
+ 
+
+189
+00:02:55,840 --> 00:02:59,030
+cancellation period
+to all the way up to 30 seconds
+
+190
+00:02:59,030 --> 00:02:59,040
+to all the way up to 30 seconds
+ 
+
+191
+00:02:59,040 --> 00:03:00,630
+to all the way up to 30 seconds
+if you do make any changes make sure you
+
+192
+00:03:00,630 --> 00:03:00,640
+if you do make any changes make sure you
+ 
+
+193
+00:03:00,640 --> 00:03:02,229
+if you do make any changes make sure you
+scroll all the way to the bottom to
+
+194
+00:03:02,229 --> 00:03:02,239
+scroll all the way to the bottom to
+ 
+
+195
+00:03:02,239 --> 00:03:02,710
+scroll all the way to the bottom to
+click
+
+196
+00:03:02,710 --> 00:03:02,720
+click
+ 
+
+197
+00:03:02,720 --> 00:03:05,990
+click
+save changes and
+
+198
+00:03:05,990 --> 00:03:06,000
+save changes and
+ 
+
+199
+00:03:06,000 --> 00:03:07,270
+save changes and
+now i'll show you what it looks like if
+
+200
+00:03:07,270 --> 00:03:07,280
+now i'll show you what it looks like if
+ 
+
+201
+00:03:07,280 --> 00:03:09,589
+now i'll show you what it looks like if
+you actually do accidentally send an
+
+202
+00:03:09,589 --> 00:03:09,599
+you actually do accidentally send an
+ 
+
+203
+00:03:09,599 --> 00:03:10,869
+you actually do accidentally send an
+email that you want
+
+204
+00:03:10,869 --> 00:03:10,879
+email that you want
+ 
+
+205
+00:03:10,879 --> 00:03:15,270
+email that you want
+to undo so i'm just going to add
+
+206
+00:03:15,270 --> 00:03:15,280
+to undo so i'm just going to add
+ 
+
+207
+00:03:15,280 --> 00:03:18,869
+to undo so i'm just going to add
+random recipient say good morning
+
+208
+00:03:18,869 --> 00:03:18,879
+random recipient say good morning
+ 
+
+209
+00:03:18,879 --> 00:03:21,030
+random recipient say good morning
+i hope and let's just say you
+
+210
+00:03:21,030 --> 00:03:21,040
+i hope and let's just say you
+ 
+
+211
+00:03:21,040 --> 00:03:23,110
+i hope and let's just say you
+accidentally sent it without saying i
+
+212
+00:03:23,110 --> 00:03:23,120
+accidentally sent it without saying i
+ 
+
+213
+00:03:23,120 --> 00:03:25,030
+accidentally sent it without saying i
+hope this email finds you well
+
+214
+00:03:25,030 --> 00:03:25,040
+hope this email finds you well
+ 
+
+215
+00:03:25,040 --> 00:03:28,309
+hope this email finds you well
+this box will pop up down here for 30
+
+216
+00:03:28,309 --> 00:03:28,319
+this box will pop up down here for 30
+ 
+
+217
+00:03:28,319 --> 00:03:30,149
+this box will pop up down here for 30
+seconds if that's what you send it to
+
+218
+00:03:30,149 --> 00:03:30,159
+seconds if that's what you send it to
+ 
+
+219
+00:03:30,159 --> 00:03:32,630
+seconds if that's what you send it to
+so for 30 seconds you have the option to
+
+220
+00:03:32,630 --> 00:03:32,640
+so for 30 seconds you have the option to
+ 
+
+221
+00:03:32,640 --> 00:03:33,589
+so for 30 seconds you have the option to
+click undo
+
+222
+00:03:33,589 --> 00:03:33,599
+click undo
+ 
+
+223
+00:03:33,599 --> 00:03:35,430
+click undo
+if you realize right as you sent it that
+
+224
+00:03:35,430 --> 00:03:35,440
+if you realize right as you sent it that
+ 
+
+225
+00:03:35,440 --> 00:03:37,030
+if you realize right as you sent it that
+you had a typo or sent the wrong
+
+226
+00:03:37,030 --> 00:03:37,040
+you had a typo or sent the wrong
+ 
+
+227
+00:03:37,040 --> 00:03:37,830
+you had a typo or sent the wrong
+attachment
+
+228
+00:03:37,830 --> 00:03:37,840
+attachment
+ 
+
+229
+00:03:37,840 --> 00:03:40,149
+attachment
+or something like that if you click undo
+
+230
+00:03:40,149 --> 00:03:40,159
+or something like that if you click undo
+ 
+
+231
+00:03:40,159 --> 00:03:42,390
+or something like that if you click undo
+it will just take you back to the email
+
+232
+00:03:42,390 --> 00:03:42,400
+it will just take you back to the email
+ 
+
+233
+00:03:42,400 --> 00:03:44,070
+it will just take you back to the email
+as a draft
+
+234
+00:03:44,070 --> 00:03:44,080
+as a draft
+ 
+
+235
+00:03:44,080 --> 00:03:47,270
+as a draft
+and you can fix whatever your typo was
+
+236
+00:03:47,270 --> 00:03:47,280
+and you can fix whatever your typo was
+ 
+
+237
+00:03:47,280 --> 00:03:50,149
+and you can fix whatever your typo was
+and send it again you can also choose to
+
+238
+00:03:50,149 --> 00:03:50,159
+and send it again you can also choose to
+ 
+
+239
+00:03:50,159 --> 00:03:51,670
+and send it again you can also choose to
+schedule an email instead of
+
+240
+00:03:51,670 --> 00:03:51,680
+schedule an email instead of
+ 
+
+241
+00:03:51,680 --> 00:03:53,750
+schedule an email instead of
+sending it right at the time you draft
+
+242
+00:03:53,750 --> 00:03:53,760
+sending it right at the time you draft
+ 
+
+243
+00:03:53,760 --> 00:03:55,350
+sending it right at the time you draft
+it and the way you do that is
+
+244
+00:03:55,350 --> 00:03:55,360
+it and the way you do that is
+ 
+
+245
+00:03:55,360 --> 00:03:57,030
+it and the way you do that is
+right next to send there's this drop
+
+246
+00:03:57,030 --> 00:03:57,040
+right next to send there's this drop
+ 
+
+247
+00:03:57,040 --> 00:03:59,030
+right next to send there's this drop
+down and you can click schedule send
+
+248
+00:03:59,030 --> 00:03:59,040
+down and you can click schedule send
+ 
+
+249
+00:03:59,040 --> 00:04:01,110
+down and you can click schedule send
+these are just kind of standard times
+
+250
+00:04:01,110 --> 00:04:01,120
+these are just kind of standard times
+ 
+
+251
+00:04:01,120 --> 00:04:03,190
+these are just kind of standard times
+that they pick for you but if you want
+
+252
+00:04:03,190 --> 00:04:03,200
+that they pick for you but if you want
+ 
+
+253
+00:04:03,200 --> 00:04:04,309
+that they pick for you but if you want
+to pick your own
+
+254
+00:04:04,309 --> 00:04:04,319
+to pick your own
+ 
+
+255
+00:04:04,319 --> 00:04:07,030
+to pick your own
+you just click pick date and time and
+
+256
+00:04:07,030 --> 00:04:07,040
+you just click pick date and time and
+ 
+
+257
+00:04:07,040 --> 00:04:07,990
+you just click pick date and time and
+you can change
+
+258
+00:04:07,990 --> 00:04:08,000
+you can change
+ 
+
+259
+00:04:08,000 --> 00:04:12,309
+you can change
+the exact time that you
+
+260
+00:04:12,309 --> 00:04:12,319
+the exact time that you
+ 
+
+261
+00:04:12,319 --> 00:04:15,670
+the exact time that you
+want to send it and then schedule send
+
+262
+00:04:15,670 --> 00:04:15,680
+want to send it and then schedule send
+ 
+
+263
+00:04:15,680 --> 00:04:17,430
+want to send it and then schedule send
+and then to see the messages that you've
+
+264
+00:04:17,430 --> 00:04:17,440
+and then to see the messages that you've
+ 
+
+265
+00:04:17,440 --> 00:04:19,830
+and then to see the messages that you've
+scheduled on the left-hand side here you
+
+266
+00:04:19,830 --> 00:04:19,840
+scheduled on the left-hand side here you
+ 
+
+267
+00:04:19,840 --> 00:04:22,150
+scheduled on the left-hand side here you
+can see scheduled
+
+268
+00:04:22,150 --> 00:04:22,160
+can see scheduled
+ 
+
+269
+00:04:22,160 --> 00:04:25,030
+can see scheduled
+and then if something changes before
+
+270
+00:04:25,030 --> 00:04:25,040
+and then if something changes before
+ 
+
+271
+00:04:25,040 --> 00:04:25,350
+and then if something changes before
+it's
+
+272
+00:04:25,350 --> 00:04:25,360
+it's
+ 
+
+273
+00:04:25,360 --> 00:04:27,030
+it's
+scheduled to go out you can of course
+
+274
+00:04:27,030 --> 00:04:27,040
+scheduled to go out you can of course
+ 
+
+275
+00:04:27,040 --> 00:04:29,270
+scheduled to go out you can of course
+click cancel send
+
+276
+00:04:29,270 --> 00:04:29,280
+click cancel send
+ 
+
+277
+00:04:29,280 --> 00:04:30,550
+click cancel send
+and then it'll just bring you back to
+
+278
+00:04:30,550 --> 00:04:30,560
+and then it'll just bring you back to
+ 
+
+279
+00:04:30,560 --> 00:04:32,230
+and then it'll just bring you back to
+the draft you can make any changes that
+
+280
+00:04:32,230 --> 00:04:32,240
+the draft you can make any changes that
+ 
+
+281
+00:04:32,240 --> 00:04:33,510
+the draft you can make any changes that
+you need to
+
+282
+00:04:33,510 --> 00:04:33,520
+you need to
+ 
+
+283
+00:04:33,520 --> 00:04:35,909
+you need to
+before it gets sent out next up i want
+
+284
+00:04:35,909 --> 00:04:35,919
+before it gets sent out next up i want
+ 
+
+285
+00:04:35,919 --> 00:04:37,749
+before it gets sent out next up i want
+to talk about changing your default
+
+286
+00:04:37,749 --> 00:04:37,759
+to talk about changing your default
+ 
+
+287
+00:04:37,759 --> 00:04:40,469
+to talk about changing your default
+text style so within your email if you
+
+288
+00:04:40,469 --> 00:04:40,479
+text style so within your email if you
+ 
+
+289
+00:04:40,479 --> 00:04:42,469
+text style so within your email if you
+highlight you can go down here
+
+290
+00:04:42,469 --> 00:04:42,479
+highlight you can go down here
+ 
+
+291
+00:04:42,479 --> 00:04:45,830
+highlight you can go down here
+to change font size all of that to
+
+292
+00:04:45,830 --> 00:04:45,840
+to change font size all of that to
+ 
+
+293
+00:04:45,840 --> 00:04:48,469
+to change font size all of that to
+maybe make typing or reading your emails
+
+294
+00:04:48,469 --> 00:04:48,479
+maybe make typing or reading your emails
+ 
+
+295
+00:04:48,479 --> 00:04:49,670
+maybe make typing or reading your emails
+easier
+
+296
+00:04:49,670 --> 00:04:49,680
+easier
+ 
+
+297
+00:04:49,680 --> 00:04:51,670
+easier
+but you can also change that as a
+
+298
+00:04:51,670 --> 00:04:51,680
+but you can also change that as a
+ 
+
+299
+00:04:51,680 --> 00:04:53,110
+but you can also change that as a
+default setting so we're just going to
+
+300
+00:04:53,110 --> 00:04:53,120
+default setting so we're just going to
+ 
+
+301
+00:04:53,120 --> 00:04:55,110
+default setting so we're just going to
+discard this draft for a second
+
+302
+00:04:55,110 --> 00:04:55,120
+discard this draft for a second
+ 
+
+303
+00:04:55,120 --> 00:05:00,390
+discard this draft for a second
+go to settings see all settings again
+
+304
+00:05:00,390 --> 00:05:00,400
+
+ 
+
+305
+00:05:00,400 --> 00:05:03,110
+
+and here is the default text style so if
+
+306
+00:05:03,110 --> 00:05:03,120
+and here is the default text style so if
+ 
+
+307
+00:05:03,120 --> 00:05:04,390
+and here is the default text style so if
+you want to change it to be
+
+308
+00:05:04,390 --> 00:05:04,400
+you want to change it to be
+ 
+
+309
+00:05:04,400 --> 00:05:07,029
+you want to change it to be
+large or huge you can do that and it
+
+310
+00:05:07,029 --> 00:05:07,039
+large or huge you can do that and it
+ 
+
+311
+00:05:07,039 --> 00:05:08,230
+large or huge you can do that and it
+will show you what it's going to look
+
+312
+00:05:08,230 --> 00:05:08,240
+will show you what it's going to look
+ 
+
+313
+00:05:08,240 --> 00:05:10,390
+will show you what it's going to look
+like if you wanted to change
+
+314
+00:05:10,390 --> 00:05:10,400
+like if you wanted to change
+ 
+
+315
+00:05:10,400 --> 00:05:13,749
+like if you wanted to change
+your default text to be read
+
+316
+00:05:13,749 --> 00:05:13,759
+your default text to be read
+ 
+
+317
+00:05:13,759 --> 00:05:16,150
+your default text to be read
+you can also change the font and then
+
+318
+00:05:16,150 --> 00:05:16,160
+you can also change the font and then
+ 
+
+319
+00:05:16,160 --> 00:05:17,830
+you can also change the font and then
+again if that's what you wanted you can
+
+320
+00:05:17,830 --> 00:05:17,840
+again if that's what you wanted you can
+ 
+
+321
+00:05:17,840 --> 00:05:20,230
+again if that's what you wanted you can
+just scroll down and click save changes
+
+322
+00:05:20,230 --> 00:05:20,240
+just scroll down and click save changes
+ 
+
+323
+00:05:20,240 --> 00:05:21,749
+just scroll down and click save changes
+another thing you may have noticed if
+
+324
+00:05:21,749 --> 00:05:21,759
+another thing you may have noticed if
+ 
+
+325
+00:05:21,759 --> 00:05:23,990
+another thing you may have noticed if
+you use gmail for work or something
+
+326
+00:05:23,990 --> 00:05:24,000
+you use gmail for work or something
+ 
+
+327
+00:05:24,000 --> 00:05:26,150
+you use gmail for work or something
+like that sometimes if somebody sends
+
+328
+00:05:26,150 --> 00:05:26,160
+like that sometimes if somebody sends
+ 
+
+329
+00:05:26,160 --> 00:05:29,350
+like that sometimes if somebody sends
+you an email with the same subject line
+
+330
+00:05:29,350 --> 00:05:29,360
+you an email with the same subject line
+ 
+
+331
+00:05:29,360 --> 00:05:31,990
+you an email with the same subject line
+as an email somebody else sent you it
+
+332
+00:05:31,990 --> 00:05:32,000
+as an email somebody else sent you it
+ 
+
+333
+00:05:32,000 --> 00:05:32,710
+as an email somebody else sent you it
+will actually
+
+334
+00:05:32,710 --> 00:05:32,720
+will actually
+ 
+
+335
+00:05:32,720 --> 00:05:35,029
+will actually
+group those emails together and
+
+336
+00:05:35,029 --> 00:05:35,039
+group those emails together and
+ 
+
+337
+00:05:35,039 --> 00:05:36,150
+group those emails together and
+sometimes that can be
+
+338
+00:05:36,150 --> 00:05:36,160
+sometimes that can be
+ 
+
+339
+00:05:36,160 --> 00:05:37,670
+sometimes that can be
+very unhelpful when you're trying to
+
+340
+00:05:37,670 --> 00:05:37,680
+very unhelpful when you're trying to
+ 
+
+341
+00:05:37,680 --> 00:05:39,990
+very unhelpful when you're trying to
+search for emails so you can turn that
+
+342
+00:05:39,990 --> 00:05:40,000
+search for emails so you can turn that
+ 
+
+343
+00:05:40,000 --> 00:05:41,029
+search for emails so you can turn that
+setting off
+
+344
+00:05:41,029 --> 00:05:41,039
+setting off
+ 
+
+345
+00:05:41,039 --> 00:05:42,790
+setting off
+which is something that i like to do on
+
+346
+00:05:42,790 --> 00:05:42,800
+which is something that i like to do on
+ 
+
+347
+00:05:42,800 --> 00:05:44,390
+which is something that i like to do on
+my gmail personally so
+
+348
+00:05:44,390 --> 00:05:44,400
+my gmail personally so
+ 
+
+349
+00:05:44,400 --> 00:05:46,310
+my gmail personally so
+if you go to general settings of course
+
+350
+00:05:46,310 --> 00:05:46,320
+if you go to general settings of course
+ 
+
+351
+00:05:46,320 --> 00:05:47,830
+if you go to general settings of course
+and scroll down
+
+352
+00:05:47,830 --> 00:05:47,840
+and scroll down
+ 
+
+353
+00:05:47,840 --> 00:05:51,029
+and scroll down
+to conversation view you can turn
+
+354
+00:05:51,029 --> 00:05:51,039
+to conversation view you can turn
+ 
+
+355
+00:05:51,039 --> 00:05:52,070
+to conversation view you can turn
+conversation view
+
+356
+00:05:52,070 --> 00:05:52,080
+conversation view
+ 
+
+357
+00:05:52,080 --> 00:05:54,310
+conversation view
+off and that way emails with the same
+
+358
+00:05:54,310 --> 00:05:54,320
+off and that way emails with the same
+ 
+
+359
+00:05:54,320 --> 00:05:55,110
+off and that way emails with the same
+subject line
+
+360
+00:05:55,110 --> 00:05:55,120
+subject line
+ 
+
+361
+00:05:55,120 --> 00:05:56,629
+subject line
+won't be grouped together which will
+
+362
+00:05:56,629 --> 00:05:56,639
+won't be grouped together which will
+ 
+
+363
+00:05:56,639 --> 00:05:58,469
+won't be grouped together which will
+make it easier for you to find
+
+364
+00:05:58,469 --> 00:05:58,479
+make it easier for you to find
+ 
+
+365
+00:05:58,479 --> 00:06:00,710
+make it easier for you to find
+and sort through your emails if you want
+
+366
+00:06:00,710 --> 00:06:00,720
+and sort through your emails if you want
+ 
+
+367
+00:06:00,720 --> 00:06:02,629
+and sort through your emails if you want
+to add a signature you can just
+
+368
+00:06:02,629 --> 00:06:02,639
+to add a signature you can just
+ 
+
+369
+00:06:02,639 --> 00:06:05,430
+to add a signature you can just
+go to general settings again scroll down
+
+370
+00:06:05,430 --> 00:06:05,440
+go to general settings again scroll down
+ 
+
+371
+00:06:05,440 --> 00:06:07,430
+go to general settings again scroll down
+and there is a signature section right
+
+372
+00:06:07,430 --> 00:06:07,440
+and there is a signature section right
+ 
+
+373
+00:06:07,440 --> 00:06:08,790
+and there is a signature section right
+here so
+
+374
+00:06:08,790 --> 00:06:08,800
+here so
+ 
+
+375
+00:06:08,800 --> 00:06:11,270
+here so
+you can click create new you'll just
+
+376
+00:06:11,270 --> 00:06:11,280
+you can click create new you'll just
+ 
+
+377
+00:06:11,280 --> 00:06:12,710
+you can click create new you'll just
+have to name it something like
+
+378
+00:06:12,710 --> 00:06:12,720
+have to name it something like
+ 
+
+379
+00:06:12,720 --> 00:06:17,110
+have to name it something like
+default signature maybe phone and email
+
+380
+00:06:17,110 --> 00:06:17,120
+default signature maybe phone and email
+ 
+
+381
+00:06:17,120 --> 00:06:19,029
+default signature maybe phone and email
+whatever you want to name it and then to
+
+382
+00:06:19,029 --> 00:06:19,039
+whatever you want to name it and then to
+ 
+
+383
+00:06:19,039 --> 00:06:21,830
+whatever you want to name it and then to
+the right right here
+
+384
+00:06:21,830 --> 00:06:21,840
+the right right here
+ 
+
+385
+00:06:21,840 --> 00:06:24,309
+the right right here
+you can start with your email signature
+
+386
+00:06:24,309 --> 00:06:24,319
+you can start with your email signature
+ 
+
+387
+00:06:24,319 --> 00:06:28,230
+you can start with your email signature
+so
+
+388
+00:06:28,230 --> 00:06:28,240
+
+ 
+
+389
+00:06:28,240 --> 00:06:31,749
+
+you can make it bold
+
+390
+00:06:31,749 --> 00:06:31,759
+you can make it bold
+ 
+
+391
+00:06:31,759 --> 00:06:34,790
+you can make it bold
+you can make your name larger you can
+
+392
+00:06:34,790 --> 00:06:34,800
+you can make your name larger you can
+ 
+
+393
+00:06:34,800 --> 00:06:37,029
+you can make your name larger you can
+underline italics
+
+394
+00:06:37,029 --> 00:06:37,039
+underline italics
+ 
+
+395
+00:06:37,039 --> 00:06:40,230
+underline italics
+you can also insert a link maybe to your
+
+396
+00:06:40,230 --> 00:06:40,240
+you can also insert a link maybe to your
+ 
+
+397
+00:06:40,240 --> 00:06:42,469
+you can also insert a link maybe to your
+website if you want to do that
+
+398
+00:06:42,469 --> 00:06:42,479
+website if you want to do that
+ 
+
+399
+00:06:42,479 --> 00:06:44,309
+website if you want to do that
+you can also add an image if you want to
+
+400
+00:06:44,309 --> 00:06:44,319
+you can also add an image if you want to
+ 
+
+401
+00:06:44,319 --> 00:06:45,909
+you can also add an image if you want to
+add a logo for your business
+
+402
+00:06:45,909 --> 00:06:45,919
+add a logo for your business
+ 
+
+403
+00:06:45,919 --> 00:06:48,230
+add a logo for your business
+you can insert an image and this is
+
+404
+00:06:48,230 --> 00:06:48,240
+you can insert an image and this is
+ 
+
+405
+00:06:48,240 --> 00:06:49,589
+you can insert an image and this is
+another important feature
+
+406
+00:06:49,589 --> 00:06:49,599
+another important feature
+ 
+
+407
+00:06:49,599 --> 00:06:53,189
+another important feature
+so for signature defaults for new emails
+
+408
+00:06:53,189 --> 00:06:53,199
+so for signature defaults for new emails
+ 
+
+409
+00:06:53,199 --> 00:06:53,990
+so for signature defaults for new emails
+use
+
+410
+00:06:53,990 --> 00:06:54,000
+use
+ 
+
+411
+00:06:54,000 --> 00:06:57,749
+use
+no signature or the default signature
+
+412
+00:06:57,749 --> 00:06:57,759
+no signature or the default signature
+ 
+
+413
+00:06:57,759 --> 00:07:00,230
+no signature or the default signature
+and on reply and forward you can also
+
+414
+00:07:00,230 --> 00:07:00,240
+and on reply and forward you can also
+ 
+
+415
+00:07:00,240 --> 00:07:02,070
+and on reply and forward you can also
+change if you want no signature or the
+
+416
+00:07:02,070 --> 00:07:02,080
+change if you want no signature or the
+ 
+
+417
+00:07:02,080 --> 00:07:03,350
+change if you want no signature or the
+default
+
+418
+00:07:03,350 --> 00:07:03,360
+default
+ 
+
+419
+00:07:03,360 --> 00:07:06,230
+default
+so we're gonna click for new emails use
+
+420
+00:07:06,230 --> 00:07:06,240
+so we're gonna click for new emails use
+ 
+
+421
+00:07:06,240 --> 00:07:07,830
+so we're gonna click for new emails use
+default signature slash
+
+422
+00:07:07,830 --> 00:07:07,840
+default signature slash
+ 
+
+423
+00:07:07,840 --> 00:07:10,950
+default signature slash
+phone we're gonna do it for replies and
+
+424
+00:07:10,950 --> 00:07:10,960
+phone we're gonna do it for replies and
+ 
+
+425
+00:07:10,960 --> 00:07:12,150
+phone we're gonna do it for replies and
+forwards as well
+
+426
+00:07:12,150 --> 00:07:12,160
+forwards as well
+ 
+
+427
+00:07:12,160 --> 00:07:15,350
+forwards as well
+so then we're gonna click save changes
+
+428
+00:07:15,350 --> 00:07:15,360
+so then we're gonna click save changes
+ 
+
+429
+00:07:15,360 --> 00:07:17,029
+so then we're gonna click save changes
+so that way when i go to compose a new
+
+430
+00:07:17,029 --> 00:07:17,039
+so that way when i go to compose a new
+ 
+
+431
+00:07:17,039 --> 00:07:19,909
+so that way when i go to compose a new
+email my signature is just already in
+
+432
+00:07:19,909 --> 00:07:19,919
+email my signature is just already in
+ 
+
+433
+00:07:19,919 --> 00:07:22,550
+email my signature is just already in
+there and i can start typing
+
+434
+00:07:22,550 --> 00:07:22,560
+there and i can start typing
+ 
+
+435
+00:07:22,560 --> 00:07:24,790
+there and i can start typing
+above it if you're going to be out of
+
+436
+00:07:24,790 --> 00:07:24,800
+above it if you're going to be out of
+ 
+
+437
+00:07:24,800 --> 00:07:26,870
+above it if you're going to be out of
+the office and not responding to emails
+
+438
+00:07:26,870 --> 00:07:26,880
+the office and not responding to emails
+ 
+
+439
+00:07:26,880 --> 00:07:27,670
+the office and not responding to emails
+you can of course
+
+440
+00:07:27,670 --> 00:07:27,680
+you can of course
+ 
+
+441
+00:07:27,680 --> 00:07:29,990
+you can of course
+set an out of office or vacation
+
+442
+00:07:29,990 --> 00:07:30,000
+set an out of office or vacation
+ 
+
+443
+00:07:30,000 --> 00:07:31,189
+set an out of office or vacation
+reminder which is in
+
+444
+00:07:31,189 --> 00:07:31,199
+reminder which is in
+ 
+
+445
+00:07:31,199 --> 00:07:33,029
+reminder which is in
+general settings so if you scroll all
+
+446
+00:07:33,029 --> 00:07:33,039
+general settings so if you scroll all
+ 
+
+447
+00:07:33,039 --> 00:07:34,309
+general settings so if you scroll all
+the way to the bottom
+
+448
+00:07:34,309 --> 00:07:34,319
+the way to the bottom
+ 
+
+449
+00:07:34,319 --> 00:07:36,550
+the way to the bottom
+that's where the vacation responder is
+
+450
+00:07:36,550 --> 00:07:36,560
+that's where the vacation responder is
+ 
+
+451
+00:07:36,560 --> 00:07:37,350
+that's where the vacation responder is
+so
+
+452
+00:07:37,350 --> 00:07:37,360
+so
+ 
+
+453
+00:07:37,360 --> 00:07:38,950
+so
+if you're gonna turn it on obviously
+
+454
+00:07:38,950 --> 00:07:38,960
+if you're gonna turn it on obviously
+ 
+
+455
+00:07:38,960 --> 00:07:41,670
+if you're gonna turn it on obviously
+click on and then you can do the first
+
+456
+00:07:41,670 --> 00:07:41,680
+click on and then you can do the first
+ 
+
+457
+00:07:41,680 --> 00:07:42,150
+click on and then you can do the first
+day
+
+458
+00:07:42,150 --> 00:07:42,160
+day
+ 
+
+459
+00:07:42,160 --> 00:07:45,270
+day
+you can also select the last day or you
+
+460
+00:07:45,270 --> 00:07:45,280
+you can also select the last day or you
+ 
+
+461
+00:07:45,280 --> 00:07:46,950
+you can also select the last day or you
+can manually cancel it which i'll show
+
+462
+00:07:46,950 --> 00:07:46,960
+can manually cancel it which i'll show
+ 
+
+463
+00:07:46,960 --> 00:07:48,309
+can manually cancel it which i'll show
+you how to do
+
+464
+00:07:48,309 --> 00:07:48,319
+you how to do
+ 
+
+465
+00:07:48,319 --> 00:07:51,670
+you how to do
+you just need to add a subject
+
+466
+00:07:51,670 --> 00:07:51,680
+you just need to add a subject
+ 
+
+467
+00:07:51,680 --> 00:07:54,550
+you just need to add a subject
+i will be unavailable till monday save
+
+468
+00:07:54,550 --> 00:07:54,560
+i will be unavailable till monday save
+ 
+
+469
+00:07:54,560 --> 00:07:55,589
+i will be unavailable till monday save
+changes
+
+470
+00:07:55,589 --> 00:07:55,599
+changes
+ 
+
+471
+00:07:55,599 --> 00:07:58,390
+changes
+and now as you can see this yellow bar
+
+472
+00:07:58,390 --> 00:07:58,400
+and now as you can see this yellow bar
+ 
+
+473
+00:07:58,400 --> 00:07:59,749
+and now as you can see this yellow bar
+is telling me that i have an out of
+
+474
+00:07:59,749 --> 00:07:59,759
+is telling me that i have an out of
+ 
+
+475
+00:07:59,759 --> 00:08:00,550
+is telling me that i have an out of
+office message
+
+476
+00:08:00,550 --> 00:08:00,560
+office message
+ 
+
+477
+00:08:00,560 --> 00:08:03,990
+office message
+on so if i wanted to manually end it
+
+478
+00:08:03,990 --> 00:08:04,000
+on so if i wanted to manually end it
+ 
+
+479
+00:08:04,000 --> 00:08:05,670
+on so if i wanted to manually end it
+maybe i was just out of office for the
+
+480
+00:08:05,670 --> 00:08:05,680
+maybe i was just out of office for the
+ 
+
+481
+00:08:05,680 --> 00:08:06,710
+maybe i was just out of office for the
+afternoon
+
+482
+00:08:06,710 --> 00:08:06,720
+afternoon
+ 
+
+483
+00:08:06,720 --> 00:08:09,510
+afternoon
+i can click end now and once that yellow
+
+484
+00:08:09,510 --> 00:08:09,520
+i can click end now and once that yellow
+ 
+
+485
+00:08:09,520 --> 00:08:10,469
+i can click end now and once that yellow
+bar goes away
+
+486
+00:08:10,469 --> 00:08:10,479
+bar goes away
+ 
+
+487
+00:08:10,479 --> 00:08:11,909
+bar goes away
+that means that you're out of office
+
+488
+00:08:11,909 --> 00:08:11,919
+that means that you're out of office
+ 
+
+489
+00:08:11,919 --> 00:08:13,749
+that means that you're out of office
+message is turned off so the next thing
+
+490
+00:08:13,749 --> 00:08:13,759
+message is turned off so the next thing
+ 
+
+491
+00:08:13,759 --> 00:08:15,270
+message is turned off so the next thing
+i want to talk about is email
+
+492
+00:08:15,270 --> 00:08:15,280
+i want to talk about is email
+ 
+
+493
+00:08:15,280 --> 00:08:17,270
+i want to talk about is email
+forwarding so i pulled up an email here
+
+494
+00:08:17,270 --> 00:08:17,280
+forwarding so i pulled up an email here
+ 
+
+495
+00:08:17,280 --> 00:08:19,029
+forwarding so i pulled up an email here
+that i would like to forward along to
+
+496
+00:08:19,029 --> 00:08:19,039
+that i would like to forward along to
+ 
+
+497
+00:08:19,039 --> 00:08:20,550
+that i would like to forward along to
+somebody else
+
+498
+00:08:20,550 --> 00:08:20,560
+somebody else
+ 
+
+499
+00:08:20,560 --> 00:08:23,189
+somebody else
+so the way i can do that is by scrolling
+
+500
+00:08:23,189 --> 00:08:23,199
+so the way i can do that is by scrolling
+ 
+
+501
+00:08:23,199 --> 00:08:24,230
+so the way i can do that is by scrolling
+down and clicking
+
+502
+00:08:24,230 --> 00:08:24,240
+down and clicking
+ 
+
+503
+00:08:24,240 --> 00:08:26,550
+down and clicking
+forward or you can go to these three
+
+504
+00:08:26,550 --> 00:08:26,560
+forward or you can go to these three
+ 
+
+505
+00:08:26,560 --> 00:08:27,670
+forward or you can go to these three
+dots up here
+
+506
+00:08:27,670 --> 00:08:27,680
+dots up here
+ 
+
+507
+00:08:27,680 --> 00:08:30,150
+dots up here
+and click forward as well so as you can
+
+508
+00:08:30,150 --> 00:08:30,160
+and click forward as well so as you can
+ 
+
+509
+00:08:30,160 --> 00:08:32,469
+and click forward as well so as you can
+see it's forwarding the entire chain
+
+510
+00:08:32,469 --> 00:08:32,479
+see it's forwarding the entire chain
+ 
+
+511
+00:08:32,479 --> 00:08:35,350
+see it's forwarding the entire chain
+and i have sent two emails in this chain
+
+512
+00:08:35,350 --> 00:08:35,360
+and i have sent two emails in this chain
+ 
+
+513
+00:08:35,360 --> 00:08:36,550
+and i have sent two emails in this chain
+email number one
+
+514
+00:08:36,550 --> 00:08:36,560
+email number one
+ 
+
+515
+00:08:36,560 --> 00:08:39,110
+email number one
+and email number two but i only want to
+
+516
+00:08:39,110 --> 00:08:39,120
+and email number two but i only want to
+ 
+
+517
+00:08:39,120 --> 00:08:39,990
+and email number two but i only want to
+forward email
+
+518
+00:08:39,990 --> 00:08:40,000
+forward email
+ 
+
+519
+00:08:40,000 --> 00:08:42,709
+forward email
+number two i don't want email number one
+
+520
+00:08:42,709 --> 00:08:42,719
+number two i don't want email number one
+ 
+
+521
+00:08:42,719 --> 00:08:43,990
+number two i don't want email number one
+to be in this thread
+
+522
+00:08:43,990 --> 00:08:44,000
+to be in this thread
+ 
+
+523
+00:08:44,000 --> 00:08:47,350
+to be in this thread
+so what i can do is just highlight that
+
+524
+00:08:47,350 --> 00:08:47,360
+so what i can do is just highlight that
+ 
+
+525
+00:08:47,360 --> 00:08:50,230
+so what i can do is just highlight that
+and delete it and now only email number
+
+526
+00:08:50,230 --> 00:08:50,240
+and delete it and now only email number
+ 
+
+527
+00:08:50,240 --> 00:08:51,990
+and delete it and now only email number
+two is coming up
+
+528
+00:08:51,990 --> 00:08:52,000
+two is coming up
+ 
+
+529
+00:08:52,000 --> 00:08:54,470
+two is coming up
+you can also erase all of this right
+
+530
+00:08:54,470 --> 00:08:54,480
+you can also erase all of this right
+ 
+
+531
+00:08:54,480 --> 00:08:55,509
+you can also erase all of this right
+here at the top
+
+532
+00:08:55,509 --> 00:08:55,519
+here at the top
+ 
+
+533
+00:08:55,519 --> 00:08:57,910
+here at the top
+you know with the emails and everything
+
+534
+00:08:57,910 --> 00:08:57,920
+you know with the emails and everything
+ 
+
+535
+00:08:57,920 --> 00:08:59,750
+you know with the emails and everything
+just delete that so it just says
+
+536
+00:08:59,750 --> 00:08:59,760
+just delete that so it just says
+ 
+
+537
+00:08:59,760 --> 00:09:02,949
+just delete that so it just says
+forwarded message at the top and then
+
+538
+00:09:02,949 --> 00:09:02,959
+forwarded message at the top and then
+ 
+
+539
+00:09:02,959 --> 00:09:04,790
+forwarded message at the top and then
+right underneath it is the forwarded
+
+540
+00:09:04,790 --> 00:09:04,800
+right underneath it is the forwarded
+ 
+
+541
+00:09:04,800 --> 00:09:06,389
+right underneath it is the forwarded
+message you can also just delete the
+
+542
+00:09:06,389 --> 00:09:06,399
+message you can also just delete the
+ 
+
+543
+00:09:06,399 --> 00:09:07,590
+message you can also just delete the
+forwarded message
+
+544
+00:09:07,590 --> 00:09:07,600
+forwarded message
+ 
+
+545
+00:09:07,600 --> 00:09:10,230
+forwarded message
+and now the only thing that the person's
+
+546
+00:09:10,230 --> 00:09:10,240
+and now the only thing that the person's
+ 
+
+547
+00:09:10,240 --> 00:09:11,829
+and now the only thing that the person's
+gonna see that you're forwarding is
+
+548
+00:09:11,829 --> 00:09:11,839
+gonna see that you're forwarding is
+ 
+
+549
+00:09:11,839 --> 00:09:13,190
+gonna see that you're forwarding is
+email number two
+
+550
+00:09:13,190 --> 00:09:13,200
+email number two
+ 
+
+551
+00:09:13,200 --> 00:09:14,710
+email number two
+also let's say that there was an
+
+552
+00:09:14,710 --> 00:09:14,720
+also let's say that there was an
+ 
+
+553
+00:09:14,720 --> 00:09:16,389
+also let's say that there was an
+attachment in the email that you don't
+
+554
+00:09:16,389 --> 00:09:16,399
+attachment in the email that you don't
+ 
+
+555
+00:09:16,399 --> 00:09:17,910
+attachment in the email that you don't
+need to send you just need to send the
+
+556
+00:09:17,910 --> 00:09:17,920
+need to send you just need to send the
+ 
+
+557
+00:09:17,920 --> 00:09:19,430
+need to send you just need to send the
+body of the email
+
+558
+00:09:19,430 --> 00:09:19,440
+body of the email
+ 
+
+559
+00:09:19,440 --> 00:09:21,350
+body of the email
+at the bottom here any attachments will
+
+560
+00:09:21,350 --> 00:09:21,360
+at the bottom here any attachments will
+ 
+
+561
+00:09:21,360 --> 00:09:22,870
+at the bottom here any attachments will
+show up so if you scroll all the way
+
+562
+00:09:22,870 --> 00:09:22,880
+show up so if you scroll all the way
+ 
+
+563
+00:09:22,880 --> 00:09:24,150
+show up so if you scroll all the way
+down to the bottom
+
+564
+00:09:24,150 --> 00:09:24,160
+down to the bottom
+ 
+
+565
+00:09:24,160 --> 00:09:26,630
+down to the bottom
+you can just click this x button and it
+
+566
+00:09:26,630 --> 00:09:26,640
+you can just click this x button and it
+ 
+
+567
+00:09:26,640 --> 00:09:28,550
+you can just click this x button and it
+will remove any attachments and then you
+
+568
+00:09:28,550 --> 00:09:28,560
+will remove any attachments and then you
+ 
+
+569
+00:09:28,560 --> 00:09:30,790
+will remove any attachments and then you
+can send along this email with just the
+
+570
+00:09:30,790 --> 00:09:30,800
+can send along this email with just the
+ 
+
+571
+00:09:30,800 --> 00:09:32,630
+can send along this email with just the
+text in the body of the email
+
+572
+00:09:32,630 --> 00:09:32,640
+text in the body of the email
+ 
+
+573
+00:09:32,640 --> 00:09:34,070
+text in the body of the email
+finally i want to talk about some
+
+574
+00:09:34,070 --> 00:09:34,080
+finally i want to talk about some
+ 
+
+575
+00:09:34,080 --> 00:09:35,750
+finally i want to talk about some
+settings that can make it easier for you
+
+576
+00:09:35,750 --> 00:09:35,760
+settings that can make it easier for you
+ 
+
+577
+00:09:35,760 --> 00:09:38,150
+settings that can make it easier for you
+to find your old mail in your inbox
+
+578
+00:09:38,150 --> 00:09:38,160
+to find your old mail in your inbox
+ 
+
+579
+00:09:38,160 --> 00:09:40,310
+to find your old mail in your inbox
+which is a complaint that my dad has he
+
+580
+00:09:40,310 --> 00:09:40,320
+which is a complaint that my dad has he
+ 
+
+581
+00:09:40,320 --> 00:09:41,990
+which is a complaint that my dad has he
+thinks it's hard to find
+
+582
+00:09:41,990 --> 00:09:42,000
+thinks it's hard to find
+ 
+
+583
+00:09:42,000 --> 00:09:44,790
+thinks it's hard to find
+old messages in gmail so if you go to
+
+584
+00:09:44,790 --> 00:09:44,800
+old messages in gmail so if you go to
+ 
+
+585
+00:09:44,800 --> 00:09:45,990
+old messages in gmail so if you go to
+your settings again
+
+586
+00:09:45,990 --> 00:09:46,000
+your settings again
+ 
+
+587
+00:09:46,000 --> 00:09:49,670
+your settings again
+and scroll down there's a couple inbox
+
+588
+00:09:49,670 --> 00:09:49,680
+and scroll down there's a couple inbox
+ 
+
+589
+00:09:49,680 --> 00:09:51,190
+and scroll down there's a couple inbox
+types that you can choose from
+
+590
+00:09:51,190 --> 00:09:51,200
+types that you can choose from
+ 
+
+591
+00:09:51,200 --> 00:09:53,670
+types that you can choose from
+you can choose default which is it just
+
+592
+00:09:53,670 --> 00:09:53,680
+you can choose default which is it just
+ 
+
+593
+00:09:53,680 --> 00:09:55,110
+you can choose default which is it just
+puts all of your emails
+
+594
+00:09:55,110 --> 00:09:55,120
+puts all of your emails
+ 
+
+595
+00:09:55,120 --> 00:09:57,750
+puts all of your emails
+in chronological order from when you
+
+596
+00:09:57,750 --> 00:09:57,760
+in chronological order from when you
+ 
+
+597
+00:09:57,760 --> 00:09:58,790
+in chronological order from when you
+received them
+
+598
+00:09:58,790 --> 00:09:58,800
+received them
+ 
+
+599
+00:09:58,800 --> 00:10:01,590
+received them
+regardless if you've opened them or not
+
+600
+00:10:01,590 --> 00:10:01,600
+regardless if you've opened them or not
+ 
+
+601
+00:10:01,600 --> 00:10:03,430
+regardless if you've opened them or not
+but another option is to do
+
+602
+00:10:03,430 --> 00:10:03,440
+but another option is to do
+ 
+
+603
+00:10:03,440 --> 00:10:06,389
+but another option is to do
+unread first which i find to be very
+
+604
+00:10:06,389 --> 00:10:06,399
+unread first which i find to be very
+ 
+
+605
+00:10:06,399 --> 00:10:07,509
+unread first which i find to be very
+helpful
+
+606
+00:10:07,509 --> 00:10:07,519
+helpful
+ 
+
+607
+00:10:07,519 --> 00:10:10,230
+helpful
+because now all the messages that i have
+
+608
+00:10:10,230 --> 00:10:10,240
+because now all the messages that i have
+ 
+
+609
+00:10:10,240 --> 00:10:11,990
+because now all the messages that i have
+not read that i know i need to go
+
+610
+00:10:11,990 --> 00:10:12,000
+not read that i know i need to go
+ 
+
+611
+00:10:12,000 --> 00:10:12,389
+not read that i know i need to go
+through
+
+612
+00:10:12,389 --> 00:10:12,399
+through
+ 
+
+613
+00:10:12,399 --> 00:10:14,710
+through
+are at the top of my inbox and all the
+
+614
+00:10:14,710 --> 00:10:14,720
+are at the top of my inbox and all the
+ 
+
+615
+00:10:14,720 --> 00:10:15,910
+are at the top of my inbox and all the
+ones i have read
+
+616
+00:10:15,910 --> 00:10:15,920
+ones i have read
+ 
+
+617
+00:10:15,920 --> 00:10:18,150
+ones i have read
+are down here at the bottom if you're
+
+618
+00:10:18,150 --> 00:10:18,160
+are down here at the bottom if you're
+ 
+
+619
+00:10:18,160 --> 00:10:19,670
+are down here at the bottom if you're
+looking for something specific
+
+620
+00:10:19,670 --> 00:10:19,680
+looking for something specific
+ 
+
+621
+00:10:19,680 --> 00:10:22,550
+looking for something specific
+you can obviously just search your mail
+
+622
+00:10:22,550 --> 00:10:22,560
+you can obviously just search your mail
+ 
+
+623
+00:10:22,560 --> 00:10:23,030
+you can obviously just search your mail
+for
+
+624
+00:10:23,030 --> 00:10:23,040
+for
+ 
+
+625
+00:10:23,040 --> 00:10:26,470
+for
+either a person or a subject line or
+
+626
+00:10:26,470 --> 00:10:26,480
+either a person or a subject line or
+ 
+
+627
+00:10:26,480 --> 00:10:28,550
+either a person or a subject line or
+the content in an email and hopefully it
+
+628
+00:10:28,550 --> 00:10:28,560
+the content in an email and hopefully it
+ 
+
+629
+00:10:28,560 --> 00:10:29,750
+the content in an email and hopefully it
+will pop up
+
+630
+00:10:29,750 --> 00:10:29,760
+will pop up
+ 
+
+631
+00:10:29,760 --> 00:10:32,630
+will pop up
+you can also check your trash and the
+
+632
+00:10:32,630 --> 00:10:32,640
+you can also check your trash and the
+ 
+
+633
+00:10:32,640 --> 00:10:33,509
+you can also check your trash and the
+way you do that
+
+634
+00:10:33,509 --> 00:10:33,519
+way you do that
+ 
+
+635
+00:10:33,519 --> 00:10:35,670
+way you do that
+is on the left hand side if you click
+
+636
+00:10:35,670 --> 00:10:35,680
+is on the left hand side if you click
+ 
+
+637
+00:10:35,680 --> 00:10:36,710
+is on the left hand side if you click
+more
+
+638
+00:10:36,710 --> 00:10:36,720
+more
+ 
+
+639
+00:10:36,720 --> 00:10:39,829
+more
+and scroll down you can click trash and
+
+640
+00:10:39,829 --> 00:10:39,839
+and scroll down you can click trash and
+ 
+
+641
+00:10:39,839 --> 00:10:40,790
+and scroll down you can click trash and
+anything that you
+
+642
+00:10:40,790 --> 00:10:40,800
+anything that you
+ 
+
+643
+00:10:40,800 --> 00:10:43,590
+anything that you
+maybe accidentally deleted might be in
+
+644
+00:10:43,590 --> 00:10:43,600
+maybe accidentally deleted might be in
+ 
+
+645
+00:10:43,600 --> 00:10:44,790
+maybe accidentally deleted might be in
+the trash
+
+646
+00:10:44,790 --> 00:10:44,800
+the trash
+ 
+
+647
+00:10:44,800 --> 00:10:47,110
+the trash
+after 30 days as you can see here
+
+648
+00:10:47,110 --> 00:10:47,120
+after 30 days as you can see here
+ 
+
+649
+00:10:47,120 --> 00:10:48,870
+after 30 days as you can see here
+messages in the trash are automatically
+
+650
+00:10:48,870 --> 00:10:48,880
+messages in the trash are automatically
+ 
+
+651
+00:10:48,880 --> 00:10:50,790
+messages in the trash are automatically
+deleted so this is really only like
+
+652
+00:10:50,790 --> 00:10:50,800
+deleted so this is really only like
+ 
+
+653
+00:10:50,800 --> 00:10:52,389
+deleted so this is really only like
+recently deleted emails
+
+654
+00:10:52,389 --> 00:10:52,399
+recently deleted emails
+ 
+
+655
+00:10:52,399 --> 00:10:53,990
+recently deleted emails
+but this is also where you can check
+
+656
+00:10:53,990 --> 00:10:54,000
+but this is also where you can check
+ 
+
+657
+00:10:54,000 --> 00:10:56,630
+but this is also where you can check
+your spam sometimes you get messages
+
+658
+00:10:56,630 --> 00:10:56,640
+your spam sometimes you get messages
+ 
+
+659
+00:10:56,640 --> 00:10:57,430
+your spam sometimes you get messages
+from like
+
+660
+00:10:57,430 --> 00:10:57,440
+from like
+ 
+
+661
+00:10:57,440 --> 00:10:59,190
+from like
+health charts or things like that that
+
+662
+00:10:59,190 --> 00:10:59,200
+health charts or things like that that
+ 
+
+663
+00:10:59,200 --> 00:11:00,790
+health charts or things like that that
+might go to your spam folder
+
+664
+00:11:00,790 --> 00:11:00,800
+might go to your spam folder
+ 
+
+665
+00:11:00,800 --> 00:11:02,710
+might go to your spam folder
+this is where you would look for your
+
+666
+00:11:02,710 --> 00:11:02,720
+this is where you would look for your
+ 
+
+667
+00:11:02,720 --> 00:11:04,069
+this is where you would look for your
+spam emails
+
+668
+00:11:04,069 --> 00:11:04,079
+spam emails
+ 
+
+669
+00:11:04,079 --> 00:11:05,590
+spam emails
+that is it for today i really hope you
+
+670
+00:11:05,590 --> 00:11:05,600
+that is it for today i really hope you
+ 
+
+671
+00:11:05,600 --> 00:11:07,509
+that is it for today i really hope you
+enjoyed this video if you did
+
+672
+00:11:07,509 --> 00:11:07,519
+enjoyed this video if you did
+ 
+
+673
+00:11:07,519 --> 00:11:09,110
+enjoyed this video if you did
+please give it a thumbs up and also
+
+674
+00:11:09,110 --> 00:11:09,120
+please give it a thumbs up and also
+ 
+
+675
+00:11:09,120 --> 00:11:10,790
+please give it a thumbs up and also
+subscribe to my channel i really
+
+676
+00:11:10,790 --> 00:11:10,800
+subscribe to my channel i really
+ 
+
+677
+00:11:10,800 --> 00:11:12,630
+subscribe to my channel i really
+appreciate the support
+
+678
+00:11:12,630 --> 00:11:12,640
+appreciate the support
+ 
+
+679
+00:11:12,640 --> 00:11:14,150
+appreciate the support
+if you want me to make another video
+
+680
+00:11:14,150 --> 00:11:14,160
+if you want me to make another video
+ 
+
+681
+00:11:14,160 --> 00:11:16,630
+if you want me to make another video
+with some more advanced gmail tips or
+
+682
+00:11:16,630 --> 00:11:16,640
+with some more advanced gmail tips or
+ 
+
+683
+00:11:16,640 --> 00:11:18,389
+with some more advanced gmail tips or
+just additional gmail tips
+
+684
+00:11:18,389 --> 00:11:18,399
+just additional gmail tips
+ 
+
+685
+00:11:18,399 --> 00:11:19,750
+just additional gmail tips
+let me know in the comments and i would
+
+686
+00:11:19,750 --> 00:11:19,760
+let me know in the comments and i would
+ 
+
+687
+00:11:19,760 --> 00:11:21,910
+let me know in the comments and i would
+be happy to do that thank you so much
+
+688
+00:11:21,910 --> 00:11:21,920
+be happy to do that thank you so much
+ 
+
+689
+00:11:21,920 --> 00:11:23,670
+be happy to do that thank you so much
+for watching today and i will see you in
+
+690
+00:11:23,670 --> 00:11:23,680
+for watching today and i will see you in
+ 
+
+691
+00:11:23,680 --> 00:11:26,829
+for watching today and i will see you in
+my next video
+
+692
+00:11:26,829 --> 00:11:26,839
+
+ 
+
+693
+00:11:26,839 --> 00:11:35,269
+
+bye
+
+694
+00:11:35,269 --> 00:11:35,279
+
+ 
+
+695
+00:11:35,279 --> 00:11:37,360
+
+you
+

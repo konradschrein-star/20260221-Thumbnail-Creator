@@ -1,0 +1,695 @@
+1
+00:00:00,160 --> 00:00:01,910
+
+We'll guide you through how to cut and
+
+2
+00:00:01,910 --> 00:00:01,920
+We'll guide you through how to cut and
+ 
+
+3
+00:00:01,920 --> 00:00:04,150
+We'll guide you through how to cut and
+trim a video in Clip Champ. If you find
+
+4
+00:00:04,150 --> 00:00:04,160
+trim a video in Clip Champ. If you find
+ 
+
+5
+00:00:04,160 --> 00:00:06,070
+trim a video in Clip Champ. If you find
+this useful, then consider subscribing
+
+6
+00:00:06,070 --> 00:00:06,080
+this useful, then consider subscribing
+ 
+
+7
+00:00:06,080 --> 00:00:08,070
+this useful, then consider subscribing
+and liking the video. Here we have a
+
+8
+00:00:08,070 --> 00:00:08,080
+and liking the video. Here we have a
+ 
+
+9
+00:00:08,080 --> 00:00:09,910
+and liking the video. Here we have a
+video that I wish to go and cut and
+
+10
+00:00:09,910 --> 00:00:09,920
+video that I wish to go and cut and
+ 
+
+11
+00:00:09,920 --> 00:00:11,749
+video that I wish to go and cut and
+trim. So perhaps it's part of a video
+
+12
+00:00:11,749 --> 00:00:11,759
+trim. So perhaps it's part of a video
+ 
+
+13
+00:00:11,759 --> 00:00:13,350
+trim. So perhaps it's part of a video
+you don't want and so you want to go and
+
+14
+00:00:13,350 --> 00:00:13,360
+you don't want and so you want to go and
+ 
+
+15
+00:00:13,360 --> 00:00:15,509
+you don't want and so you want to go and
+remove it. With this video, you're going
+
+16
+00:00:15,509 --> 00:00:15,519
+remove it. With this video, you're going
+ 
+
+17
+00:00:15,519 --> 00:00:17,430
+remove it. With this video, you're going
+to go and be able to and so we can go
+
+18
+00:00:17,430 --> 00:00:17,440
+to go and be able to and so we can go
+ 
+
+19
+00:00:17,440 --> 00:00:19,830
+to go and be able to and so we can go
+and use ClipChamp in order to go and do
+
+20
+00:00:19,830 --> 00:00:19,840
+and use ClipChamp in order to go and do
+ 
+
+21
+00:00:19,840 --> 00:00:22,790
+and use ClipChamp in order to go and do
+this. So this video editor comes in
+
+22
+00:00:22,790 --> 00:00:22,800
+this. So this video editor comes in
+ 
+
+23
+00:00:22,800 --> 00:00:24,310
+this. So this video editor comes in
+Windows 11. So you can go and press
+
+24
+00:00:24,310 --> 00:00:24,320
+Windows 11. So you can go and press
+ 
+
+25
+00:00:24,320 --> 00:00:26,790
+Windows 11. So you can go and press
+search at the bottom, go and type in
+
+26
+00:00:26,790 --> 00:00:26,800
+search at the bottom, go and type in
+ 
+
+27
+00:00:26,800 --> 00:00:28,710
+search at the bottom, go and type in
+ClipChamp. And as you can see, there it
+
+28
+00:00:28,710 --> 00:00:28,720
+ClipChamp. And as you can see, there it
+ 
+
+29
+00:00:28,720 --> 00:00:30,950
+ClipChamp. And as you can see, there it
+is. We can then go and click on it. It's
+
+30
+00:00:30,950 --> 00:00:30,960
+is. We can then go and click on it. It's
+ 
+
+31
+00:00:30,960 --> 00:00:33,110
+is. We can then go and click on it. It's
+now going to go and open up. Go and be
+
+32
+00:00:33,110 --> 00:00:33,120
+now going to go and open up. Go and be
+ 
+
+33
+00:00:33,120 --> 00:00:34,549
+now going to go and open up. Go and be
+patient. It shouldn't go and take too
+
+34
+00:00:34,549 --> 00:00:34,559
+patient. It shouldn't go and take too
+ 
+
+35
+00:00:34,559 --> 00:00:36,950
+patient. It shouldn't go and take too
+long. At the top, you can go and press
+
+36
+00:00:36,950 --> 00:00:36,960
+long. At the top, you can go and press
+ 
+
+37
+00:00:36,960 --> 00:00:38,950
+long. At the top, you can go and press
+create a new video like so. And we're
+
+38
+00:00:38,950 --> 00:00:38,960
+create a new video like so. And we're
+ 
+
+39
+00:00:38,960 --> 00:00:40,630
+create a new video like so. And we're
+now going to get a new project here.
+
+40
+00:00:40,630 --> 00:00:40,640
+now going to get a new project here.
+ 
+
+41
+00:00:40,640 --> 00:00:41,990
+now going to get a new project here.
+I'll just double click on it to go and
+
+42
+00:00:41,990 --> 00:00:42,000
+I'll just double click on it to go and
+ 
+
+43
+00:00:42,000 --> 00:00:44,630
+I'll just double click on it to go and
+make it full screen. Press import media
+
+44
+00:00:44,630 --> 00:00:44,640
+make it full screen. Press import media
+ 
+
+45
+00:00:44,640 --> 00:00:46,709
+make it full screen. Press import media
+in the top left and go and find the
+
+46
+00:00:46,709 --> 00:00:46,719
+in the top left and go and find the
+ 
+
+47
+00:00:46,719 --> 00:00:48,310
+in the top left and go and find the
+video you want to do it with. For me,
+
+48
+00:00:48,310 --> 00:00:48,320
+video you want to do it with. For me,
+ 
+
+49
+00:00:48,320 --> 00:00:50,069
+video you want to do it with. For me,
+it's on my desktop. So, I'll scroll down
+
+50
+00:00:50,069 --> 00:00:50,079
+it's on my desktop. So, I'll scroll down
+ 
+
+51
+00:00:50,079 --> 00:00:52,630
+it's on my desktop. So, I'll scroll down
+and I can then select it and press open.
+
+52
+00:00:52,630 --> 00:00:52,640
+and I can then select it and press open.
+ 
+
+53
+00:00:52,640 --> 00:00:54,549
+and I can then select it and press open.
+Now, it's going to go and import. Just
+
+54
+00:00:54,549 --> 00:00:54,559
+Now, it's going to go and import. Just
+ 
+
+55
+00:00:54,559 --> 00:00:55,830
+Now, it's going to go and import. Just
+be patient while this loads. It
+
+56
+00:00:55,830 --> 00:00:55,840
+be patient while this loads. It
+ 
+
+57
+00:00:55,840 --> 00:00:57,590
+be patient while this loads. It
+shouldn't go and take too long. Now,
+
+58
+00:00:57,590 --> 00:00:57,600
+shouldn't go and take too long. Now,
+ 
+
+59
+00:00:57,600 --> 00:00:59,110
+shouldn't go and take too long. Now,
+click, hold, and we can go and drag it
+
+60
+00:00:59,110 --> 00:00:59,120
+click, hold, and we can go and drag it
+ 
+
+61
+00:00:59,120 --> 00:01:01,029
+click, hold, and we can go and drag it
+into the timeline like so. And there it
+
+62
+00:01:01,029 --> 00:01:01,039
+into the timeline like so. And there it
+ 
+
+63
+00:01:01,039 --> 00:01:03,990
+into the timeline like so. And there it
+is. So, to go and get started, we can go
+
+64
+00:01:03,990 --> 00:01:04,000
+is. So, to go and get started, we can go
+ 
+
+65
+00:01:04,000 --> 00:01:06,390
+is. So, to go and get started, we can go
+and trim the start and end point. So, to
+
+66
+00:01:06,390 --> 00:01:06,400
+and trim the start and end point. So, to
+ 
+
+67
+00:01:06,400 --> 00:01:07,990
+and trim the start and end point. So, to
+go and do that, you go and see these
+
+68
+00:01:07,990 --> 00:01:08,000
+go and do that, you go and see these
+ 
+
+69
+00:01:08,000 --> 00:01:10,149
+go and do that, you go and see these
+purple lines at the start and end. Place
+
+70
+00:01:10,149 --> 00:01:10,159
+purple lines at the start and end. Place
+ 
+
+71
+00:01:10,159 --> 00:01:11,590
+purple lines at the start and end. Place
+your cursor there. It will go and change
+
+72
+00:01:11,590 --> 00:01:11,600
+your cursor there. It will go and change
+ 
+
+73
+00:01:11,600 --> 00:01:13,270
+your cursor there. It will go and change
+to the arrow, and you can then click,
+
+74
+00:01:13,270 --> 00:01:13,280
+to the arrow, and you can then click,
+ 
+
+75
+00:01:13,280 --> 00:01:15,350
+to the arrow, and you can then click,
+hold, and go, and drag like so to go and
+
+76
+00:01:15,350 --> 00:01:15,360
+hold, and go, and drag like so to go and
+ 
+
+77
+00:01:15,360 --> 00:01:16,710
+hold, and go, and drag like so to go and
+find the point where you want to go and
+
+78
+00:01:16,710 --> 00:01:16,720
+find the point where you want to go and
+ 
+
+79
+00:01:16,720 --> 00:01:18,630
+find the point where you want to go and
+start it. Then, you can click, hold, and
+
+80
+00:01:18,630 --> 00:01:18,640
+start it. Then, you can click, hold, and
+ 
+
+81
+00:01:18,640 --> 00:01:20,149
+start it. Then, you can click, hold, and
+drag it to put it to the start of the
+
+82
+00:01:20,149 --> 00:01:20,159
+drag it to put it to the start of the
+ 
+
+83
+00:01:20,159 --> 00:01:21,749
+drag it to put it to the start of the
+project again, just so there's no empty
+
+84
+00:01:21,749 --> 00:01:21,759
+project again, just so there's no empty
+ 
+
+85
+00:01:21,759 --> 00:01:23,109
+project again, just so there's no empty
+space. And you can do the same thing at
+
+86
+00:01:23,109 --> 00:01:23,119
+space. And you can do the same thing at
+ 
+
+87
+00:01:23,119 --> 00:01:25,270
+space. And you can do the same thing at
+the end as well. If there's a part
+
+88
+00:01:25,270 --> 00:01:25,280
+the end as well. If there's a part
+ 
+
+89
+00:01:25,280 --> 00:01:26,789
+the end as well. If there's a part
+within it you want to go and remove when
+
+90
+00:01:26,789 --> 00:01:26,799
+within it you want to go and remove when
+ 
+
+91
+00:01:26,799 --> 00:01:28,630
+within it you want to go and remove when
+you play it back. What you can do is
+
+92
+00:01:28,630 --> 00:01:28,640
+you play it back. What you can do is
+ 
+
+93
+00:01:28,640 --> 00:01:31,749
+you play it back. What you can do is
+make a split by pressing on the split
+
+94
+00:01:31,749 --> 00:01:31,759
+make a split by pressing on the split
+ 
+
+95
+00:01:31,759 --> 00:01:33,590
+make a split by pressing on the split
+which you can also go and press S to do.
+
+96
+00:01:33,590 --> 00:01:33,600
+which you can also go and press S to do.
+ 
+
+97
+00:01:33,600 --> 00:01:35,350
+which you can also go and press S to do.
+You see it makes a split. Then you can
+
+98
+00:01:35,350 --> 00:01:35,360
+You see it makes a split. Then you can
+ 
+
+99
+00:01:35,360 --> 00:01:36,630
+You see it makes a split. Then you can
+go and decide you want to go and make
+
+100
+00:01:36,630 --> 00:01:36,640
+go and decide you want to go and make
+ 
+
+101
+00:01:36,640 --> 00:01:39,350
+go and decide you want to go and make
+another split. And you can then go and
+
+102
+00:01:39,350 --> 00:01:39,360
+another split. And you can then go and
+ 
+
+103
+00:01:39,360 --> 00:01:41,510
+another split. And you can then go and
+press on the scissors or press S. And
+
+104
+00:01:41,510 --> 00:01:41,520
+press on the scissors or press S. And
+ 
+
+105
+00:01:41,520 --> 00:01:42,950
+press on the scissors or press S. And
+then you have this clip here we went
+
+106
+00:01:42,950 --> 00:01:42,960
+then you have this clip here we went
+ 
+
+107
+00:01:42,960 --> 00:01:45,910
+then you have this clip here we went
+split out. With it then selected. What
+
+108
+00:01:45,910 --> 00:01:45,920
+split out. With it then selected. What
+ 
+
+109
+00:01:45,920 --> 00:01:47,910
+split out. With it then selected. What
+you can do is press delete or backspace
+
+110
+00:01:47,910 --> 00:01:47,920
+you can do is press delete or backspace
+ 
+
+111
+00:01:47,920 --> 00:01:50,149
+you can do is press delete or backspace
+on your keyboard to go and remove it.
+
+112
+00:01:50,149 --> 00:01:50,159
+on your keyboard to go and remove it.
+ 
+
+113
+00:01:50,159 --> 00:01:51,590
+on your keyboard to go and remove it.
+Then we can click, hold and drag the
+
+114
+00:01:51,590 --> 00:01:51,600
+Then we can click, hold and drag the
+ 
+
+115
+00:01:51,600 --> 00:01:53,510
+Then we can click, hold and drag the
+clips together again like so. So there's
+
+116
+00:01:53,510 --> 00:01:53,520
+clips together again like so. So there's
+ 
+
+117
+00:01:53,520 --> 00:01:55,910
+clips together again like so. So there's
+no space between them. That's it. So
+
+118
+00:01:55,910 --> 00:01:55,920
+no space between them. That's it. So
+ 
+
+119
+00:01:55,920 --> 00:01:57,270
+no space between them. That's it. So
+you've now gone and successfully gone
+
+120
+00:01:57,270 --> 00:01:57,280
+you've now gone and successfully gone
+ 
+
+121
+00:01:57,280 --> 00:01:58,870
+you've now gone and successfully gone
+and removed that part. When you're
+
+122
+00:01:58,870 --> 00:01:58,880
+and removed that part. When you're
+ 
+
+123
+00:01:58,880 --> 00:02:00,389
+and removed that part. When you're
+finished, we can go and export it by
+
+124
+00:02:00,389 --> 00:02:00,399
+finished, we can go and export it by
+ 
+
+125
+00:02:00,399 --> 00:02:02,469
+finished, we can go and export it by
+pressing export in the top right. You
+
+126
+00:02:02,469 --> 00:02:02,479
+pressing export in the top right. You
+ 
+
+127
+00:02:02,479 --> 00:02:04,230
+pressing export in the top right. You
+can choose the quality to the left. I'll
+
+128
+00:02:04,230 --> 00:02:04,240
+can choose the quality to the left. I'll
+ 
+
+129
+00:02:04,240 --> 00:02:05,830
+can choose the quality to the left. I'll
+turn off store in the cloud. And we can
+
+130
+00:02:05,830 --> 00:02:05,840
+turn off store in the cloud. And we can
+ 
+
+131
+00:02:05,840 --> 00:02:07,990
+turn off store in the cloud. And we can
+then press export like so. And you can
+
+132
+00:02:07,990 --> 00:02:08,000
+then press export like so. And you can
+ 
+
+133
+00:02:08,000 --> 00:02:09,910
+then press export like so. And you can
+press save to your computer. And we can
+
+134
+00:02:09,910 --> 00:02:09,920
+press save to your computer. And we can
+ 
+
+135
+00:02:09,920 --> 00:02:12,309
+press save to your computer. And we can
+then go and save it where we want to. If
+
+136
+00:02:12,309 --> 00:02:12,319
+then go and save it where we want to. If
+ 
+
+137
+00:02:12,319 --> 00:02:13,910
+then go and save it where we want to. If
+you found this useful, then consider
+
+138
+00:02:13,910 --> 00:02:13,920
+you found this useful, then consider
+ 
+
+139
+00:02:13,920 --> 00:02:17,280
+you found this useful, then consider
+subscribing and liking the
+

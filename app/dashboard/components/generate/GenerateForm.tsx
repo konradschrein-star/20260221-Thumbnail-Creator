@@ -108,13 +108,20 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
             includePersona
           })
         });
-        
+
         if (response.ok) {
           const data = await response.json();
           if (data.prompt) setDraftPrompt(data.prompt);
+        } else {
+          const errorData = await response.json();
+          console.error('Preview prompt API error:', errorData.error || response.statusText);
+          // Optionally clear draft prompt on error
+          setDraftPrompt('');
         }
       } catch (err) {
-        console.error('Failed to preview prompt', err);
+        console.error('Failed to preview prompt:', err);
+        // Clear draft prompt on network error
+        setDraftPrompt('');
       }
     };
     
@@ -188,17 +195,22 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
   };
 
   const handleDownload = async (url: string, index: number) => {
-    const channel = channels.find((c: any) => c.id === selectedChannelId);
-    const archetype = archetypes.find((a: any) => a.id === archetypeId);
+    try {
+      const channel = channels.find((c: any) => c.id === selectedChannelId);
+      const archetype = archetypes.find((a: any) => a.id === archetypeId);
 
-    const filename = generateProfessionalFilename(
-      channel?.name || 'Channel',
-      archetype?.category || 'General',
-      videoTopic || 'Thumbnail',
-      index + 1
-    );
+      const filename = generateProfessionalFilename(
+        channel?.name || 'Channel',
+        archetype?.category || 'General',
+        videoTopic || 'Thumbnail',
+        index + 1
+      );
 
-    await downloadRemoteImage(url, filename);
+      await downloadRemoteImage(url, filename);
+    } catch (error) {
+      console.error('Download failed:', error);
+      alert('Failed to download image. Please try again or right-click to save manually.');
+    }
   };
 
   const handleSubmit = async (e?: React.FormEvent) => {
@@ -258,13 +270,13 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
               </div>
 
               {(result.jobs || [result.job]).some(job => job.fallbackUsed) && (
-                <div className="fallback-warning-banner glass-dark" style={{ border: '1px solid #eab308', backgroundColor: 'rgba(234, 179, 8, 0.1)', padding: '1rem', borderRadius: '8px', marginBottom: '1.5rem', display: 'flex', alignItems: 'flex-start', gap: '1rem', textAlign: 'left' }}>
-                  <div style={{ color: '#eab308', marginTop: '0.1rem' }}>
+                <div className="fallback-warning-banner glass-dark">
+                  <div className="warning-icon">
                     <Zap size={20} />
                   </div>
                   <div>
-                    <strong style={{ color: '#eab308', display: 'block', marginBottom: '0.2rem', fontSize: '15px' }}>High Demand Fallback Triggered</strong>
-                    <p style={{ margin: 0, color: 'rgba(255,255,255,0.8)', fontSize: '13px', lineHeight: '1.4' }}>
+                    <strong className="warning-title">High Demand Fallback Triggered</strong>
+                    <p className="warning-message">
                       {(result.jobs || [result.job]).find(job => job.fallbackUsed)?.fallbackMessage || "Nano Banana Pro was busy. We successfully fell back to Nano Banana 2 (Flash Image)."}
                     </p>
                   </div>
@@ -1179,6 +1191,37 @@ export default function GenerateForm({ initialData }: GenerateFormProps) {
         @keyframes scale-up {
           from { opacity: 0; transform: scale(0.95); }
           to { opacity: 1; transform: scale(1); }
+        }
+
+        .fallback-warning-banner {
+          border: 1px solid #eab308;
+          background-color: rgba(234, 179, 8, 0.1);
+          padding: 1rem;
+          border-radius: 8px;
+          margin-bottom: 1.5rem;
+          display: flex;
+          align-items: flex-start;
+          gap: 1rem;
+          text-align: left;
+        }
+
+        .warning-icon {
+          color: #eab308;
+          margin-top: 0.1rem;
+        }
+
+        .warning-title {
+          color: #eab308;
+          display: block;
+          margin-bottom: 0.2rem;
+          font-size: 15px;
+        }
+
+        .warning-message {
+          margin: 0;
+          color: rgba(255,255,255,0.8);
+          font-size: 13px;
+          line-height: 1.4;
         }
       `}</style>
     </div>
