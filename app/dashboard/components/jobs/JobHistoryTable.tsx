@@ -3,13 +3,13 @@
 import { useState } from 'react';
 import ErrorMessage from '@/app/dashboard/components/shared/ErrorMessage';
 import JobRow from './JobRow';
-import useJobs, { Job } from '@/app/dashboard/hooks/useJobs';
+import useHistory, { HistoryJob } from '@/app/dashboard/hooks/useHistory';
 import useChannels from '@/app/dashboard/hooks/useChannels';
 import { BlurFade } from '@/app/dashboard/components/ui/blur-fade';
 import { ClipboardList } from 'lucide-react';
 
 // Helper to group jobs by date
-function groupJobsByDate(jobs: Job[]) {
+function groupJobsByDate(jobs: HistoryJob[]) {
   const groups: { [key: string]: Job[] } = {
     'Today': [],
     'Yesterday': [],
@@ -41,7 +41,7 @@ function groupJobsByDate(jobs: Job[]) {
 }
 
 interface JobHistoryTableProps {
-  onRedo?: (job: Job) => void;
+  onRedo?: (job: HistoryJob) => void;
 }
 
 export default function JobHistoryTable({ onRedo }: JobHistoryTableProps) {
@@ -49,19 +49,18 @@ export default function JobHistoryTable({ onRedo }: JobHistoryTableProps) {
   const [channelFilter, setChannelFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
   const [searchQuery, setSearchQuery] = useState('');
-  const { jobs, loading, error } = useJobs({
-    channelId: channelFilter || undefined,
-    status: statusFilter || undefined,
-    limit: 30,
-  });
+  const { jobs, loading, error } = useHistory();
 
   if (loading && jobs.length === 0) {
     return <div className="loading">Loading generation history...</div>;
   }
 
-  const filteredJobs = jobs.filter(job =>
-    job.videoTopic.toLowerCase().includes(searchQuery.toLowerCase())
-  );
+  const filteredJobs = jobs.filter(job => {
+    const matchesSearch = job.videoTopic.toLowerCase().includes(searchQuery.toLowerCase());
+    const matchesChannel = !channelFilter || job.channelId === channelFilter;
+    const matchesStatus = !statusFilter || job.status === statusFilter;
+    return matchesSearch && matchesChannel && matchesStatus;
+  });
   const groupedJobs = groupJobsByDate(filteredJobs);
 
   return (

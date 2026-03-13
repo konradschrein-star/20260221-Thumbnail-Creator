@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import Button from '../shared/Button';
 import Modal from '../shared/Modal';
-import type { Job } from '../../hooks/useJobs';
 import {
   CheckCircle2,
   XCircle,
@@ -17,9 +16,33 @@ import {
 } from 'lucide-react';
 import { generateProfessionalFilename, downloadRemoteImage } from '@/lib/download-utils';
 
+interface JobData {
+  id: string;
+  channelId: string;
+  archetypeId: string;
+  videoTopic: string;
+  thumbnailText: string;
+  customPrompt: string | null;
+  status: 'pending' | 'processing' | 'completed' | 'failed';
+  outputUrl: string | null;
+  errorMessage: string | null;
+  createdAt: string;
+  completedAt: string | null;
+  channel: {
+    id: string;
+    name: string;
+  };
+  archetype: {
+    id: string;
+    name: string;
+    category?: string | null;
+    imageUrl: string;
+  };
+}
+
 interface JobRowProps {
-  job: Job;
-  onRedo?: (job: Job) => void;
+  job: JobData;
+  onRedo?: (job: JobData) => void;
 }
 
 export default function JobRow({ job, onRedo }: JobRowProps) {
@@ -37,8 +60,8 @@ export default function JobRow({ job, onRedo }: JobRowProps) {
     });
   };
 
-  const getStatusBadge = (status: Job['status']) => {
-    const config: Record<Job['status'], { label: string; icon: React.ReactNode }> = {
+  const getStatusBadge = (status: JobData['status']) => {
+    const config: Record<JobData['status'], { label: string; icon: React.ReactNode }> = {
       pending: { label: 'Pending', icon: <Clock size={12} /> },
       processing: { label: 'Processing', icon: <Loader2 size={12} className="animate-spin" /> },
       completed: { label: 'Completed', icon: <CheckCircle2 size={12} /> },

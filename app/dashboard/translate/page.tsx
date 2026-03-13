@@ -5,7 +5,7 @@ import { BlurFade } from '@/app/dashboard/components/ui/blur-fade';
 import { Languages, Upload, CheckCircle2, Loader2, Play, Image as ImageIcon } from 'lucide-react';
 import { ShimmerButton } from '@/app/dashboard/components/ui/shimmer-button';
 import ErrorMessage from '@/app/dashboard/components/shared/ErrorMessage';
-import useJobs from '@/app/dashboard/hooks/useJobs';
+import useHistory from '@/app/dashboard/hooks/useHistory';
 import CustomLanguageManager from '@/app/dashboard/components/translate/CustomLanguageManager';
 import MultiImageUpload from '@/app/dashboard/components/translate/MultiImageUpload';
 
@@ -22,7 +22,7 @@ const DEFAULT_LANGUAGES = [
 type TranslateMode = 'JOB' | 'UPLOAD';
 
 export default function TranslatePage() {
-  const { jobs, loading: jobsLoading } = useJobs();
+  const { jobs, loading: jobsLoading } = useHistory();
   const [mode, setMode] = useState<TranslateMode>('JOB');
 
   // Job mode state
