@@ -45,10 +45,18 @@ export default function APIDocsPage() {
                         <div className="endpoint-item">
                             <span className="method post">POST</span>
                             <span className="url">/api/generate/translate</span>
-                            <p className="desc">Create localized versions of an existing job.</p>
-                            <pre><code>{`{
+                            <p className="desc">Create localized versions from an existing job <b>or</b> uploaded images.</p>
+                            <pre><code>{`// Option 1: From Master Job
+{
   "masterJobId": "string",
-  "targetLanguages": ["German", "Spanish", "French"]
+  "targetLanguages": ["German", "Spanish"]
+}
+
+// Option 2: From Local Assets
+{
+  "uploadedImages": ["/api/assets/..."],
+  "originalText": "CLICK NOW",
+  "targetLanguages": ["German"]
 }`}</code></pre>
                         </div>
 
