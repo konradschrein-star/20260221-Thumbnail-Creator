@@ -48,8 +48,8 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
 
     if (!personaDescription.trim()) {
       newErrors.personaDescription = 'Persona description is required';
-    } else if (personaDescription.trim().length < 50) {
-      newErrors.personaDescription = 'Persona description must be at least 50 characters';
+    } else if (personaDescription.trim().length < 1000) {
+      newErrors.personaDescription = 'Persona description must be at least 200 words (~1000 characters) with 15+ specific physical attributes for consistent character generation';
     }
 
     setErrors(newErrors);

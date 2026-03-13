@@ -3,43 +3,72 @@ import { prisma } from '@/lib/prisma';
 import { auth } from '@/lib/auth';
 import { EMERGENCY_ARCHETYPES } from '@/lib/emergency-data';
 
-// GET /api/archetypes?channelId=xxx - List archetypes
+// GET /api/archetypes?channelId=xxx - List archetypes (filtered by user ownership)
 export async function GET(request: NextRequest) {
   try {
     const session = await auth();
-    if (!session) {
+    if (!session || !session.user?.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const { searchParams } = new URL(request.url);
     const channelId = searchParams.get('channelId');
 
-    // Fetch both target channel archetypes AND global ones (where channelId is null)
-    const where: any = channelId
-      ? { OR: [{ channelId }, { channelId: null }] }
-      : {};
+    const role = (session.user as any)?.role;
+    const isAdmin = role === 'ADMIN';
+    const userEmail = session.user?.email || '';
+    const isTestAccount = userEmail === 'test@test.ai';
+
+    // Build where clause with user isolation
+    let where: any = {};
+
+    if (isAdmin && !isTestAccount) {
+      // Admin sees all archetypes
+      if (channelId) {
+        where = {
+          channels: {
+            some: {
+              channelId,
+            },
+          },
+        };
+      }
+    } else {
+      // Regular users only see their own archetypes
+      if (channelId) {
+        where = {
+          userId: session.user.id,
+          channels: {
+            some: {
+              channelId,
+            },
+          },
+        };
+      } else {
+        where = {
+          userId: session.user.id,
+        };
+      }
+    }
 
     const archetypes = await prisma.archetype.findMany({
       where,
       include: {
-        channel: {
-          select: { id: true, name: true },
+        channels: {
+          include: {
+            channel: {
+              select: { id: true, name: true },
+            },
+          },
         },
       },
-      // Note: Category sorting is temporarily disabled because the Prisma client 
-      // is locked on Windows, preventing regeneration of the new schema.
       orderBy: [
         { createdAt: 'desc' }
       ],
     });
 
-    const role = (session.user as any)?.role;
-    const userEmail = session.user?.email || '';
-    const isTestAccount = userEmail === 'test@test.ai';
-
-    const allArchetypes = archetypes.length > 0 ? archetypes : EMERGENCY_ARCHETYPES;
-    const filteredArchetypes = allArchetypes.filter((arch: any) => {
-      // Explicitly block admin archetypes for non-admins and the test account
+    // Filter out admin-only archetypes for non-admins
+    const filteredArchetypes = archetypes.filter((arch: any) => {
       if (arch.isAdminOnly && (role !== 'ADMIN' || isTestAccount)) {
         return false;
       }
@@ -50,8 +79,8 @@ export async function GET(request: NextRequest) {
   } catch (error: any) {
     console.error('Database error in GET /api/archetypes:', error);
     return NextResponse.json(
-      { archetypes: EMERGENCY_ARCHETYPES, isOffline: true },
-      { status: 500 } // Send 500 so SWR doesn't permanently cache this
+      { error: 'Failed to fetch archetypes. Please try again.' },
+      { status: 500 }
     );
   }
 }
@@ -60,16 +89,17 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const session = await auth();
-    if (!session) {
+    if (!session || !session.user?.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const body = await request.json();
-    const { name, channelId, imageUrl, layoutInstructions, category, basePrompt, isAdminOnly } = body;
+    const { name, channelIds, imageUrl, layoutInstructions, category, basePrompt, isAdminOnly } = body;
 
     const userRole = (session.user as any)?.role;
     const userEmail = session.user?.email || '';
     const isTestAccount = userEmail === 'test@test.ai';
+    const isAdmin = userRole === 'ADMIN' && !isTestAccount;
 
     if (!name || !imageUrl) {
       return NextResponse.json(
@@ -78,16 +108,51 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate channel ownership if channels are provided
+    const channelIdsArray = Array.isArray(channelIds) ? channelIds : (channelIds ? [channelIds] : []);
+
+    if (channelIdsArray.length > 0 && !isAdmin) {
+      const channels = await prisma.channel.findMany({
+        where: {
+          id: { in: channelIdsArray },
+        },
+        select: { id: true, userId: true },
+      });
+
+      const invalidChannels = channels.filter(ch => ch.userId !== session.user!.id);
+      if (invalidChannels.length > 0) {
+        return NextResponse.json(
+          { error: 'You do not own all the selected channels' },
+          { status: 403 }
+        );
+      }
+    }
+
+    // Create archetype with channel assignments
     const archetype = await prisma.archetype.create({
       data: {
         name,
-        channelId: channelId || null,
         imageUrl,
         layoutInstructions: layoutInstructions || '',
         basePrompt: basePrompt || null,
         category: category || 'General',
-        isAdminOnly: (userRole === 'ADMIN' && !isTestAccount) ? (isAdminOnly || false) : false,
-      } as any,
+        isAdminOnly: isAdmin ? (isAdminOnly || false) : false,
+        userId: session.user.id,
+        channels: {
+          create: channelIdsArray.map(channelId => ({
+            channelId,
+          })),
+        },
+      },
+      include: {
+        channels: {
+          include: {
+            channel: {
+              select: { id: true, name: true },
+            },
+          },
+        },
+      },
     });
 
     return NextResponse.json({ archetype }, { status: 201 });

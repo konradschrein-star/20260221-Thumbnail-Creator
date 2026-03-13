@@ -1,6 +1,6 @@
 'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Button from '../shared/Button';
 import type { Archetype } from '../../hooks/useArchetypes';
 import { Image as ImageIcon } from 'lucide-react';
@@ -12,6 +12,8 @@ interface ArchetypeCardProps {
 }
 
 export default function ArchetypeCard({ archetype, onEdit, onDelete }: ArchetypeCardProps) {
+  const [imageError, setImageError] = useState(false);
+
   const truncateText = (text: string, maxLength: number = 80): string => {
     if (text.length <= maxLength) return text;
     return text.substring(0, maxLength) + '...';
@@ -23,18 +25,20 @@ export default function ArchetypeCard({ archetype, onEdit, onDelete }: Archetype
 
 
         <div className="image-preview">
-          <img
-            src={archetype.imageUrl}
-            alt={archetype.name}
-            className="preview-img"
-            onError={(e) => {
-              e.currentTarget.style.display = 'none';
-              const fallback = document.createElement('div');
-              fallback.className = 'fallback-icon';
-              fallback.innerHTML = '<div class="fallback-icon-lucide"><svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>';
-              e.currentTarget.parentElement?.appendChild(fallback);
-            }}
-          />
+          {imageError ? (
+            <div className="fallback-icon">
+              <div className="fallback-icon-lucide">
+                <ImageIcon size={40} />
+              </div>
+            </div>
+          ) : (
+            <img
+              src={archetype.imageUrl}
+              alt={archetype.name}
+              className="preview-img"
+              onError={() => setImageError(true)}
+            />
+          )}
           <div className="image-overlay">
             <Button size="small" variant="secondary" onClick={onEdit} className="overlay-btn">
               Edit Pattern

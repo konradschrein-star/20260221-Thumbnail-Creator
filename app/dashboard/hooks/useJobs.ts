@@ -60,7 +60,7 @@ export default function useJobs(filters?: JobFilters) {
     } finally {
       setLoading(false);
     }
-  }, [filters?.channelId, filters?.status]);
+  }, [filters?.channelId, filters?.status, filters?.limit]);
 
   useEffect(() => {
     fetchJobs();

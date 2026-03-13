@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth';
 import * as r2Service from '@/lib/r2-service';
+import { fileTypeFromBuffer } from 'file-type';
 
 // POST /api/upload - Handle file uploads directly to R2
 export async function POST(request: NextRequest) {
@@ -47,8 +48,19 @@ export async function POST(request: NextRequest) {
 
     const buffer = Buffer.from(await file.arrayBuffer());
 
-    // Upload to R2 (Mandatory)
-    const url = await r2Service.uploadToR2(buffer, r2Key, file.type);
+    // Server-side MIME type validation using magic numbers
+    const detectedType = await fileTypeFromBuffer(buffer);
+    const allowedMimes = ['image/jpeg', 'image/png', 'image/webp'];
+
+    if (!detectedType || !allowedMimes.includes(detectedType.mime)) {
+      return NextResponse.json(
+        { error: 'Invalid file type. File content must be a valid JPG, PNG, or WEBP image.' },
+        { status: 400 }
+      );
+    }
+
+    // Upload to R2 (Mandatory) - use detected MIME type, not client-provided
+    const url = await r2Service.uploadToR2(buffer, r2Key, detectedType.mime);
 
     return NextResponse.json({
       success: true,

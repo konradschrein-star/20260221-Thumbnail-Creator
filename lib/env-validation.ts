@@ -11,7 +11,7 @@ export interface EnvValidationResult {
 
 export function validateEnv(): EnvValidationResult {
     const required = [
-        'GOOGLE_GENERATIVE_AI_API_KEY',
+        'GOOGLE_API_KEY',
         'DATABASE_URL',
         'NEXTAUTH_SECRET',
         'NEXTAUTH_URL',

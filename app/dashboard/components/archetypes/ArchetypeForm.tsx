@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Lightbulb } from 'lucide-react';
+import { Lightbulb, X } from 'lucide-react';
 import Input from '../shared/Input';
 import Button from '../shared/Button';
 import FileUpload from '../shared/FileUpload';
@@ -25,28 +25,53 @@ export default function ArchetypeForm({
 }: ArchetypeFormProps) {
   const { channels } = useChannels();
   const [name, setName] = useState(initialData?.name || '');
-  const [channelId, setChannelId] = useState(
-    initialData?.channelId || preselectedChannelId || ''
-  );
+  const [channelIds, setChannelIds] = useState<string[]>(() => {
+    // Extract channel IDs from initial data
+    if (initialData?.channels && Array.isArray(initialData.channels)) {
+      return initialData.channels.map((c: any) => c.channel?.id || c.channelId).filter(Boolean);
+    }
+    return preselectedChannelId ? [preselectedChannelId] : [];
+  });
+  const [selectedChannelToAdd, setSelectedChannelToAdd] = useState('');
   const [imageUrl, setImageUrl] = useState(initialData?.imageUrl || '');
   const [layoutInstructions, setLayoutInstructions] = useState(
     initialData?.layoutInstructions || ''
   );
+  const [basePrompt, setBasePrompt] = useState(
+    initialData?.basePrompt || ''
+  );
   const [errors, setErrors] = useState<{
     name?: string;
-    channelId?: string;
+    channels?: string;
     imageUrl?: string;
     layoutInstructions?: string;
+    basePrompt?: string;
   }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState('');
 
+  const addChannel = (channelId: string) => {
+    if (channelId && !channelIds.includes(channelId)) {
+      setChannelIds([...channelIds, channelId]);
+      setSelectedChannelToAdd('');
+    }
+  };
+
+  const removeChannel = (channelId: string) => {
+    setChannelIds(channelIds.filter(id => id !== channelId));
+  };
+
   useEffect(() => {
     if (initialData) {
       setName(initialData.name ?? '');
-      setChannelId(initialData.channelId ?? '');
       setImageUrl(initialData.imageUrl ?? '');
       setLayoutInstructions(initialData.layoutInstructions ?? '');
+      setBasePrompt(initialData.basePrompt ?? '');
+      // Extract channel IDs from initial data
+      if (initialData.channels && Array.isArray(initialData.channels)) {
+        const ids = initialData.channels.map((c: any) => c.channel?.id || c.channelId).filter(Boolean);
+        setChannelIds(ids);
+      }
     }
   }, [initialData]);
 
@@ -57,9 +82,7 @@ export default function ArchetypeForm({
       newErrors.name = 'Archetype name is required';
     }
 
-    if (!channelId) {
-      newErrors.channelId = 'Channel is required';
-    }
+    // Channels are optional - archetypes can exist without being assigned to channels
 
     if (!imageUrl.trim()) {
       newErrors.imageUrl = 'Image is required';
@@ -86,11 +109,9 @@ export default function ArchetypeForm({
         name: name.trim(),
         imageUrl: imageUrl.trim(),
         layoutInstructions: layoutInstructions.trim(),
+        basePrompt: basePrompt.trim(),
+        channelIds: channelIds, // Always send channelIds array
       };
-
-      if (mode === 'create') {
-        data.channelId = channelId;
-      }
 
       await onSubmit(data);
     } catch (err: any) {
@@ -106,28 +127,55 @@ export default function ArchetypeForm({
         <div className="form-column">
           <div className="input-field-group">
             <label className="field-label">
-              Channel <span className="required">*</span>
+              Channels
             </label>
+
+            {/* Selected channels as chips */}
+            {channelIds.length > 0 && (
+              <div className="channel-chips">
+                {channelIds.map(id => {
+                  const channel = channels.find(c => c.id === id);
+                  return channel ? (
+                    <div key={id} className="channel-chip">
+                      <span>{channel.name}</span>
+                      <button
+                        type="button"
+                        onClick={() => removeChannel(id)}
+                        className="chip-remove"
+                        disabled={isSubmitting}
+                        title="Remove channel"
+                      >
+                        <X size={14} />
+                      </button>
+                    </div>
+                  ) : null;
+                })}
+              </div>
+            )}
+
+            {/* Dropdown to add channels */}
             <select
-              value={channelId}
-              onChange={(e) => setChannelId(e.target.value)}
-              disabled={mode === 'edit' || isSubmitting}
-              className={`form-select ${errors.channelId ? 'has-error' : ''}`}
-              title="Select Channel"
+              value={selectedChannelToAdd}
+              onChange={(e) => {
+                addChannel(e.target.value);
+              }}
+              disabled={isSubmitting}
+              className="form-select"
+              title="Add Channel"
             >
-              <option value="">Select a channel</option>
-              {channels.map((channel) => (
-                <option key={channel.id} value={channel.id}>
-                  {channel.name}
-                </option>
-              ))}
+              <option value="">+ Add channel...</option>
+              {channels
+                .filter(ch => !channelIds.includes(ch.id))
+                .map((channel) => (
+                  <option key={channel.id} value={channel.id}>
+                    {channel.name}
+                  </option>
+                ))}
             </select>
-            {errors.channelId && (
-              <div className="error-text">{errors.channelId}</div>
+            {errors.channels && (
+              <div className="error-text">{errors.channels}</div>
             )}
-            {mode === 'edit' && (
-              <p className="help-text">Channel cannot be changed after creation.</p>
-            )}
+            <p className="help-text">Assign this archetype to one or more channels</p>
           </div>
 
           <Input
@@ -141,14 +189,24 @@ export default function ArchetypeForm({
           />
 
           <Input
-            label="Layout Instructions"
+            label="Layout Instructions (Visual reference mapping)"
             value={layoutInstructions}
             onChange={setLayoutInstructions}
             placeholder="Describe the layout, text placement, style, etc."
             multiline
-            rows={6}
+            rows={4}
             required
             error={errors.layoutInstructions}
+            disabled={isSubmitting}
+          />
+
+          <Input
+            label="Base Prompt (Vibe / Global AI Style)"
+            value={basePrompt}
+            onChange={setBasePrompt}
+            placeholder="e.g. 'Give the image a striking, attention-grabbing vibe with bold, intense lighting.' (Optional)"
+            multiline
+            rows={4}
             disabled={isSubmitting}
           />
         </div>
@@ -220,6 +278,51 @@ export default function ArchetypeForm({
           font-size: 0.875rem;
           font-weight: 500;
           color: var(--muted-foreground);
+        }
+
+        .channel-chips {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .channel-chip {
+          display: inline-flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.375rem 0.75rem;
+          background: rgba(255, 255, 255, 0.08);
+          border: 1px solid var(--border);
+          border-radius: var(--radius);
+          font-size: 0.875rem;
+          color: var(--foreground);
+          transition: all 0.2s ease;
+        }
+
+        .channel-chip:hover {
+          background: rgba(255, 255, 255, 0.12);
+        }
+
+        .chip-remove {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+          background: none;
+          border: none;
+          color: var(--muted-foreground);
+          cursor: pointer;
+          transition: color 0.2s ease;
+        }
+
+        .chip-remove:hover {
+          color: #ef4444;
+        }
+
+        .chip-remove:disabled {
+          cursor: not-allowed;
+          opacity: 0.5;
         }
 
         .required {

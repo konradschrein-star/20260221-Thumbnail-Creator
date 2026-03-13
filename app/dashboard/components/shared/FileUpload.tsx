@@ -51,31 +51,51 @@ export default function FileUpload({
     setIsUploading(true);
     setError('');
 
-    try {
-      const formData = new FormData();
-      formData.append('file', file);
-      formData.append('folder', folder);
+    const maxRetries = 3;
+    let lastError: Error | null = null;
 
-      const response = await fetch('/api/upload', {
-        method: 'POST',
-        body: formData,
-      });
+    for (let attempt = 0; attempt < maxRetries; attempt++) {
+      try {
+        const formData = new FormData();
+        formData.append('file', file);
+        formData.append('folder', folder);
 
-      const data = await response.json();
+        const response = await fetch('/api/upload', {
+          method: 'POST',
+          body: formData,
+        });
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Upload failed');
+        const data = await response.json();
+
+        if (!response.ok) {
+          throw new Error(data.error || 'Upload failed');
+        }
+
+        setPreview(data.url);
+        onChange(data.url);
+        return; // Success - exit retry loop
+      } catch (err: any) {
+        lastError = err;
+        console.error(`Upload attempt ${attempt + 1}/${maxRetries} failed:`, err.message);
+
+        // Don't retry on client-side validation errors (400 errors)
+        if (err.message && (err.message.includes('Invalid file type') || err.message.includes('File too large'))) {
+          break;
+        }
+
+        // Wait before retry with exponential backoff: 1s, 2s, 4s
+        if (attempt < maxRetries - 1) {
+          const delay = Math.pow(2, attempt) * 1000;
+          await new Promise(resolve => setTimeout(resolve, delay));
+        }
       }
-
-      setPreview(data.url);
-      onChange(data.url);
-    } catch (err: any) {
-      const errorMessage = err.message || 'Upload failed';
-      setError(errorMessage);
-      if (onError) onError(errorMessage);
-    } finally {
-      setIsUploading(false);
     }
+
+    // All retries exhausted
+    const errorMessage = lastError?.message || 'Upload failed after multiple attempts';
+    setError(errorMessage);
+    if (onError) onError(errorMessage);
+    setIsUploading(false);
   };
 
   const handleFileSelect = async (file: File) => {

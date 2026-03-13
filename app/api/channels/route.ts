@@ -3,7 +3,7 @@ import { prisma } from '@/lib/prisma';
 import { auth } from '@/lib/auth';
 import { EMERGENCY_CHANNELS } from '@/lib/emergency-data';
 
-// GET /api/channels - List all channels
+// GET /api/channels - List all channels (filtered by user, admin sees all)
 export async function GET() {
   try {
     const session = await auth();
@@ -11,7 +11,12 @@ export async function GET() {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
+    // Check if user is admin
+    const userRole = (session.user as any)?.role || 'USER';
+    const isAdmin = userRole === 'ADMIN';
+
     const channels = await prisma.channel.findMany({
+      where: isAdmin ? {} : { userId: session.user.id }, // Admin sees all, users see only their own
       include: {
         _count: {
           select: { archetypes: true, generationJobs: true },
@@ -20,10 +25,13 @@ export async function GET() {
       orderBy: { createdAt: 'desc' },
     });
 
-    return NextResponse.json({ channels: channels.length > 0 ? channels : EMERGENCY_CHANNELS });
+    return NextResponse.json({ channels });
   } catch (error: any) {
     console.error('Database error in GET /api/channels:', error);
-    return NextResponse.json({ channels: EMERGENCY_CHANNELS, isOffline: true });
+    return NextResponse.json(
+      { error: 'Failed to fetch channels. Please try again.' },
+      { status: 500 }
+    );
   }
 }
 

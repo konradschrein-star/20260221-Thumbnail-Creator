@@ -5,12 +5,23 @@ import { useState, useEffect, useCallback } from 'react';
 export interface Archetype {
   id: string;
   name: string;
-  channelId?: string | null;
   imageUrl: string;
   layoutInstructions: string;
+  basePrompt?: string | null;
   category?: string | null;
   createdAt: string;
   updatedAt: string;
+  userId?: string;
+  channels?: Array<{
+    id: string;
+    channelId: string;
+    channel: {
+      id: string;
+      name: string;
+    };
+  }>;
+  // Legacy fields for backward compatibility
+  channelId?: string | null;
   channel?: {
     id: string;
     name: string;
@@ -19,15 +30,18 @@ export interface Archetype {
 
 export interface CreateArchetypeData {
   name: string;
-  channelId: string;
+  channelIds?: string[];
   imageUrl: string;
   layoutInstructions: string;
+  basePrompt?: string;
 }
 
 export interface UpdateArchetypeData {
   name?: string;
   imageUrl?: string;
   layoutInstructions?: string;
+  basePrompt?: string | null;
+  channelIds?: string[];
 }
 
 export default function useArchetypes(channelId?: string) {

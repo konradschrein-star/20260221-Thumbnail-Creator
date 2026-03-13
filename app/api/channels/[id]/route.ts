@@ -9,7 +9,7 @@ export async function GET(
 ) {
   try {
     const session = await auth();
-    if (!session) {
+    if (!session || !session.user?.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
@@ -30,6 +30,14 @@ export async function GET(
       );
     }
 
+    // Check ownership
+    if (channel.userId !== session.user.id) {
+      return NextResponse.json(
+        { error: 'Forbidden: You do not own this channel' },
+        { status: 403 }
+      );
+    }
+
     return NextResponse.json({ channel });
   } catch (error: any) {
     return NextResponse.json(
@@ -46,23 +54,46 @@ export async function PATCH(
 ) {
   try {
     const session = await auth();
-    if (!session) {
+    if (!session || !session.user?.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const { id } = await params;
     const body = await request.json();
-    const { name, personaDescription } = body;
+    const { name, personaDescription, primaryColor, secondaryColor, tags } = body;
 
     // Build update data object with only provided fields
     const updateData: any = {};
     if (name !== undefined) updateData.name = name;
     if (personaDescription !== undefined) updateData.personaDescription = personaDescription;
+    if (primaryColor !== undefined) updateData.primaryColor = primaryColor;
+    if (secondaryColor !== undefined) updateData.secondaryColor = secondaryColor;
+    if (tags !== undefined) updateData.tags = typeof tags === 'string' ? (tags.trim() || null) : (Array.isArray(tags) && tags.length > 0 ? tags.join(',') : null);
 
     if (Object.keys(updateData).length === 0) {
       return NextResponse.json(
         { error: 'No fields to update' },
         { status: 400 }
+      );
+    }
+
+    // Verify ownership before updating
+    const existingChannel = await prisma.channel.findUnique({
+      where: { id },
+      select: { userId: true },
+    });
+
+    if (!existingChannel) {
+      return NextResponse.json(
+        { error: 'Channel not found' },
+        { status: 404 }
+      );
+    }
+
+    if (existingChannel.userId !== session.user.id) {
+      return NextResponse.json(
+        { error: 'Forbidden: You do not own this channel' },
+        { status: 403 }
       );
     }
 
@@ -93,11 +124,32 @@ export async function DELETE(
 ) {
   try {
     const session = await auth();
-    if (!session) {
+    if (!session || !session.user?.id) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
     const { id } = await params;
+
+    // Verify ownership before deleting
+    const existingChannel = await prisma.channel.findUnique({
+      where: { id },
+      select: { userId: true },
+    });
+
+    if (!existingChannel) {
+      return NextResponse.json(
+        { error: 'Channel not found' },
+        { status: 404 }
+      );
+    }
+
+    if (existingChannel.userId !== session.user.id) {
+      return NextResponse.json(
+        { error: 'Forbidden: You do not own this channel' },
+        { status: 403 }
+      );
+    }
+
     await prisma.channel.delete({
       where: { id },
     });

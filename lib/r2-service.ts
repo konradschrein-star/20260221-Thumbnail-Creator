@@ -1,11 +1,31 @@
 import { S3Client, PutObjectCommand, DeleteObjectCommand, GetObjectCommand } from '@aws-sdk/client-s3';
 
+/**
+ * Validates that all required R2 configuration environment variables are present
+ * @throws Error if any required R2 configuration is missing
+ */
+export function validateR2Config(): void {
+    const missing: string[] = [];
+
+    if (!process.env.R2_BUCKET_NAME) missing.push('R2_BUCKET_NAME');
+    if (!process.env.R2_ACCESS_KEY_ID) missing.push('R2_ACCESS_KEY_ID');
+    if (!process.env.R2_SECRET_ACCESS_KEY) missing.push('R2_SECRET_ACCESS_KEY');
+    if (!process.env.R2_ENDPOINT) missing.push('R2_ENDPOINT');
+
+    if (missing.length > 0) {
+        throw new Error(
+            `R2 configuration incomplete. Missing environment variables: ${missing.join(', ')}. ` +
+            `Please configure these in your .env file.`
+        );
+    }
+}
+
 const r2Client = new S3Client({
     region: 'auto',
     endpoint: process.env.R2_ENDPOINT,
     credentials: {
-        accessKeyId: process.env.R2_ACCESS_KEY_ID || '',
-        secretAccessKey: process.env.R2_SECRET_ACCESS_KEY || '',
+        accessKeyId: process.env.R2_ACCESS_KEY_ID!,
+        secretAccessKey: process.env.R2_SECRET_ACCESS_KEY!,
     },
 });
 
@@ -23,9 +43,8 @@ export async function uploadToR2(
     contentType: string = 'image/png',
     userEmail: string = 'test@titan.ai'
 ): Promise<string> {
-    if (!process.env.R2_BUCKET_NAME) {
-        throw new Error('R2_BUCKET_NAME is not configured');
-    }
+    // Validate R2 configuration before attempting upload
+    validateR2Config();
 
     try {
         // Construct user-scoped key: users/{email}/{date}/{filename}

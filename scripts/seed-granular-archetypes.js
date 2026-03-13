@@ -7,9 +7,19 @@ const prisma = new PrismaClient();
 const researchDir = 'research/video_analysis';
 
 async function main() {
-  console.log('🌱 Seeding 17 Granular Research Archetypes (JS)...\n');
+  console.log('🌱 Seeding 17 Granular Research Archetypes (Many-to-Many)...\n');
 
-  // Find or create a default channel
+  // 1. Find a valid user to assign ownership
+  let user = await prisma.user.findFirst({ where: { role: 'ADMIN' } });
+  if (!user) user = await prisma.user.findFirst();
+  
+  if (!user) {
+    console.error('❌ Error: No user found in database. Please register a user first.');
+    process.exit(1);
+  }
+  console.log(`Assigning archetypes to user: ${user.email} (${user.id})`);
+
+  // 2. Find or create a default channel
   let channel = await prisma.channel.findFirst();
   if (!channel) {
     console.log('No channel found, creating default "Titan Research" channel...');
@@ -17,6 +27,7 @@ async function main() {
       data: {
         name: 'Titan Research',
         personaDescription: 'A professional and clean research persona.',
+        userId: user.id
       },
     });
   }
@@ -35,33 +46,21 @@ async function main() {
     if (fs.existsSync(mdPath)) {
       const content = fs.readFileSync(mdPath, 'utf8');
       
-      // Extract Category (Software Spotlight, etc.)
       const archMatch = content.match(/## Archetype: (.*)/);
       if (archMatch) category = archMatch[1].trim();
 
-      // Extract specific instructions from the Pros section
       const prosMatch = content.match(/### Pros for UI Generation\n([\s\S]*?)\n###/);
       if (prosMatch) {
         instructions = prosMatch[1]
           .replace(/- /g, '')
-          .replace(/\*\*(.*?)\*\*/g, '$1') // remove bold
+          .replace(/\*\*(.*?)\*\*/g, '$1')
           .trim()
           .split('\n')
           .join(' ');
       }
     }
 
-    // Image path relative to public/
     const imageUrl = `/research/video_analysis/${folder}.jpg`;
-
-    const archetypeData = {
-      name: folder,
-      category: category,
-      layoutInstructions: instructions || 'Follow the visual cues and layout from the reference image.',
-      imageUrl: imageUrl,
-      isAdminOnly: true,
-      channelId: channel.id,
-    };
 
     const existing = await prisma.archetype.findFirst({
       where: { name: folder }
@@ -71,17 +70,55 @@ async function main() {
       console.log(`- Updating archetype: ${folder}`);
       await prisma.archetype.update({
         where: { id: existing.id },
-        data: archetypeData,
+        data: {
+          name: folder,
+          category: category,
+          layoutInstructions: instructions || 'Follow the visual cues and layout from the reference image.',
+          imageUrl: imageUrl,
+          isAdminOnly: true,
+          userId: user.id,
+        },
       });
+
+      // Ensure channel assignment exists
+      const assignment = await prisma.channelArchetype.findUnique({
+        where: {
+          channelId_archetypeId: {
+            channelId: channel.id,
+            archetypeId: existing.id
+          }
+        }
+      });
+
+      if (!assignment) {
+        await prisma.channelArchetype.create({
+          data: {
+            channelId: channel.id,
+            archetypeId: existing.id
+          }
+        });
+      }
     } else {
       console.log(`- Creating archetype: ${folder}`);
       await prisma.archetype.create({
-        data: archetypeData,
+        data: {
+          name: folder,
+          category: category,
+          layoutInstructions: instructions || 'Follow the visual cues and layout from the reference image.',
+          imageUrl: imageUrl,
+          isAdminOnly: true,
+          userId: user.id,
+          channels: {
+            create: {
+              channelId: channel.id
+            }
+          }
+        },
       });
     }
   }
 
-  // Optional: Clean up the 4 generic archetypes I added earlier if they exist
+  // Cleanup old generic archetypes
   const genericNames = ['Software Spotlight', 'Persona Authority', 'High-Contrast Split', 'Narrative Minimalist'];
   for (const name of genericNames) {
     const genericArch = await prisma.archetype.findFirst({ where: { name } });

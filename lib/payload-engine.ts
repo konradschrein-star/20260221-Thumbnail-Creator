@@ -219,8 +219,8 @@ export function buildFullPrompt(
 
 ## Text Instructions
 **Step 1**: Analyze the reference image for the presence of text or typography.
-- **IF YES**: Render this text clearly: ${text || 'DO NOT RENDER ANY TEXT'}. Ensure it is highly legible, matches modern YouTube aesthetics, and uses ALL CAPS or Title Case consistently. Apply thick outer strokes or heavy drop shadows to create 3D depth and maximum contrast.
-- **IF NO**: Do not render any text, characters, or letters. Maintain the text-free composition of the reference.
+- **IF YES**: Render this text clearly: ${text || 'DO NOT RENDER ANY TEXT'}. Ensure it is highly legible, matches modern YouTube aesthetics, and uses ALL CAPS or Title Case consistently. Apply thick outer strokes or heavy drop shadows like in the reference image to create depth and maximum contrast.
+- **IF NO**: Do not render any additional text, characters, or letters. Maintain the text-free composition of the reference.
 
 ## Technical Instructions
 - **REFERENCE USAGE**: Use the provided reference image as the core style and layout inspiration. Maintain the general composition, object placement, and background style of the reference. Maintain vibrant high-contrast lighting and dramatic rim lighting on the subject.
@@ -230,7 +230,7 @@ export function buildFullPrompt(
 
 ## Persona Instructions
 **Step 2**: Analyze the reference image for the presence of a person or character.
-- **IF YES**: ${includePersona && channel.personaDescription ? `Entirely replace that person with this Persona: [${sanitizePrompt(channel.personaDescription, 1000)}]` : 'Render a high-quality human subject matching the reference pose.'}
+- **IF YES**: ${includePersona && channel.personaDescription ? `RETAIN the lighting, pose, and exact facial expression (e.g., wide eyes, open mouth, intense focus, thinking face) from the reference image, but COMPLETELY IGNORE the original person's facial features, bone structure, and identity. Entirely replace their identity with this Persona: [${sanitizePrompt(channel.personaDescription, 1000)}]` : 'Render a high-quality human subject matching the reference pose and expression.'}
 - **IF NO**: Maintain the person-free composition of the reference image. Do not add any people, faces, or silhouettes.`;
 }
 

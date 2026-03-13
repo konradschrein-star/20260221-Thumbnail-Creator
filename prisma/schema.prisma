@@ -17,25 +17,26 @@ model User {
   updatedAt      DateTime        @updatedAt
   role           String          @default("USER")
   channels       Channel[]       @relation("UserChannels")
+  archetypes     Archetype[]
   generationJobs GenerationJob[]
 
   @@map("users")
 }
 
 model Channel {
-  id                 String          @id @default(cuid())
+  id                 String             @id @default(cuid())
   name               String
   personaDescription String
   personaAssetPath   String?
   logoAssetPath      String?
-  primaryColor       String?         @default("#ffffff")
-  secondaryColor     String?         @default("#000000")
+  primaryColor       String?            @default("#ffffff")
+  secondaryColor     String?            @default("#000000")
   tags               String?
-  createdAt          DateTime        @default(now())
-  updatedAt          DateTime        @updatedAt
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
   userId             String?
-  archetypes         Archetype[]
-  user               User?           @relation("UserChannels", fields: [userId], references: [id])
+  archetypes         ChannelArchetype[]
+  user               User?              @relation("UserChannels", fields: [userId], references: [id])
   generationJobs     GenerationJob[]
 
   @@index([userId])
@@ -43,20 +44,36 @@ model Channel {
 }
 
 model Archetype {
-  id                 String          @id @default(cuid())
+  id                 String             @id @default(cuid())
   name               String
-  channelId          String?
   imageUrl           String
   layoutInstructions String
-  isAdminOnly        Boolean         @default(false)
-  category           String?         @default("General")
-  createdAt          DateTime        @default(now())
-  updatedAt          DateTime        @updatedAt
+  isAdminOnly        Boolean            @default(false)
+  category           String?            @default("General")
+  createdAt          DateTime           @default(now())
+  updatedAt          DateTime           @updatedAt
   basePrompt         String?
-  channel            Channel?        @relation(fields: [channelId], references: [id])
+  userId             String?
+  channels           ChannelArchetype[]
+  user               User?              @relation(fields: [userId], references: [id])
   generationJobs     GenerationJob[]
 
+  @@index([userId])
   @@map("archetypes")
+}
+
+model ChannelArchetype {
+  id          String    @id @default(cuid())
+  channelId   String
+  archetypeId String
+  channel     Channel   @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  archetype   Archetype @relation(fields: [archetypeId], references: [id], onDelete: Cascade)
+  createdAt   DateTime  @default(now())
+
+  @@unique([channelId, archetypeId])
+  @@index([channelId])
+  @@index([archetypeId])
+  @@map("channel_archetypes")
 }
 
 model GenerationJob {
