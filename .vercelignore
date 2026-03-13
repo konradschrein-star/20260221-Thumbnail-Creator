@@ -1,0 +1,24 @@
+# Exclude build artifacts and caches
+.next/
+.cache/
+node_modules/.cache/
+
+# Exclude Git history
+.git/
+
+# Exclude large research and output folders
+research/
+output/
+tmp/
+
+# Exclude project state and plans
+.claude/
+.gemini/
+.project_state.md
+PHASE*
+walkthrough*
+implementation_plan*
+
+# Exclude dev assets
+assets/test/
+public/generated/
