@@ -17,12 +17,14 @@ export interface HardcodedProfile {
   systemPrompt: string;
   personaPath: string;
   logoPath?: string;
+  personaDescription: string;
 }
 
 export interface HardcodedArchetype {
   name: string;
   referencePath: string;
   layoutInstructions: string;
+  imageUrl?: string;
 }
 
 /**
@@ -60,19 +62,15 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
   if (!pathOrUrl) return { data: '', mimeType: 'image/jpeg' };
 
   try {
-    // 0. Handle Internal Proxy Paths (Zero-Latency Internal Fetch)
     if (pathOrUrl.startsWith('/api/assets/')) {
       const key = pathOrUrl.replace('/api/assets/', '');
-      console.log(`[STORAGE] Internal Fetch: ${key}`);
       const { buffer, contentType } = await getObjectFromR2(key);
       return { data: buffer.toString('base64'), mimeType: contentType };
     }
 
-    // 0.1 Handle Legacy Public R2 URLs (Migration Safety)
     const publicR2Domain = process.env.R2_PUBLIC_URL || '';
     if (publicR2Domain && pathOrUrl.startsWith(publicR2Domain)) {
       const key = pathOrUrl.replace(publicR2Domain, '').replace(/^\//, '');
-      console.log(`[STORAGE] Legacy R2 Migration Fetch: ${key}`);
       const { buffer, contentType } = await getObjectFromR2(key);
       return { data: buffer.toString('base64'), mimeType: contentType };
     }
@@ -81,23 +79,15 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
     let localBuffer: Buffer | null = null;
     let internalPath: string | null = null;
 
-    // 0. Emergency Asset Map Check (Zero-Latency Fallback)
     const filename = pathOrUrl.split('/').pop()?.split('?')[0];
     if (filename && EMERGENCY_ASSET_MAP[filename]) {
-      console.log(`[STORAGE] Using embedded asset for ${filename}`);
       let data = EMERGENCY_ASSET_MAP[filename];
-
-      // Strip data URL prefix if it exists
       if (data.includes(';base64,')) {
         data = data.split(';base64,').pop()!;
       }
-
-      const mimeType = detectMimeTypeFromBase64(data);
-      console.log(`[ENCODER] Embedded ${filename}: ${mimeType} (${(data.length * 0.75 / 1024).toFixed(1)}KB)`);
-      return { data, mimeType };
+      return { data, mimeType: detectMimeTypeFromBase64(data) };
     }
 
-    // 1. Candidate Extraction
     if (pathOrUrl.startsWith('http')) {
       try {
         const url = new URL(pathOrUrl);
@@ -114,7 +104,6 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
       internalPath = pathOrUrl;
     }
 
-    // 2. Try Local Filesystem Resolve (Aggressive)
     if (internalPath) {
       const cleanPath = internalPath.split('?')[0].startsWith('/')
         ? internalPath.split('?')[0].slice(1)
@@ -134,7 +123,6 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
             const stats = await fs.stat(normalized);
             if (stats.isFile()) {
               localBuffer = await fs.readFile(normalized);
-              console.log(`[STORAGE] Resolved ${pathOrUrl} locally at ${normalized}`);
               break;
             }
           }
@@ -146,67 +134,30 @@ export async function encodeImageToBase64(pathOrUrl: string): Promise<{ data: st
     if (localBuffer) {
       buffer = localBuffer;
     } else if (pathOrUrl.startsWith('http')) {
-      // 3. Validate URL for SSRF Protection
-      if (!isSafeUrl(pathOrUrl)) {
-        throw new Error(`SSRF Blocked: Invalid or unsafe URL: ${pathOrUrl}`);
-      }
-
-      const response = await fetch(pathOrUrl, {
-        headers: { 'User-Agent': 'ThumbnailCreator/2.0' },
-        signal: AbortSignal.timeout(10000)
-      });
+      if (!isSafeUrl(pathOrUrl)) throw new Error(`SSRF Blocked: ${pathOrUrl}`);
+      const response = await fetch(pathOrUrl, { signal: AbortSignal.timeout(10000) });
       if (!response.ok) throw new Error(`Fetch failed: ${response.status}`);
       buffer = Buffer.from(await response.arrayBuffer());
     } else {
       throw new Error(`Could not resolve: ${pathOrUrl}`);
     }
 
-    const mimeType = detectMimeType(buffer);
-    const base64Data = buffer.toString('base64');
-
-    const sizeKB = buffer.length / 1024;
-    console.log(`[ENCODER] Success: ${pathOrUrl} -> ${mimeType} (${sizeKB.toFixed(1)}KB)`);
-
-    if (sizeKB > 4096) {
-      console.warn(`[ENCODER WARNING] Image ${pathOrUrl} is very large (${sizeKB.toFixed(1)}KB). AI might reject it.`);
-    }
-
-    return { data: base64Data, mimeType };
-
-  } catch (error: any) {
-    console.error(`[ENCODER ERROR] ${pathOrUrl}:`, error.message);
-    // Instead of throwing and blowing up the entire generation process,
-    // we return a safe empty image structure if we can't find an optional asset.
+    return { data: buffer.toString('base64'), mimeType: detectMimeType(buffer) };
+  } catch (error) {
     return { data: '', mimeType: 'image/jpeg' };
   }
 }
 
 function detectMimeType(buffer: Buffer): string {
   if (buffer.length < 4) return 'image/jpeg';
-
-  // PNG: 89 50 4E 47
-  if (buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4E && buffer[3] === 0x47) {
-    return 'image/png';
-  }
-  // JPEG: FF D8 FF
-  if (buffer[0] === 0xFF && buffer[1] === 0xD8 && buffer[2] === 0xFF) {
-    return 'image/jpeg';
-  }
-  // WEBP: RIFF .... WEBP
-  if (buffer[0] === 0x52 && buffer[1] === 0x49 && buffer[2] === 0x46 && buffer[3] === 0x46) {
-    return 'image/webp';
-  }
-  // GIF: GIF8
-  if (buffer[0] === 0x47 && buffer[1] === 0x49 && buffer[2] === 0x46) {
-    return 'image/gif';
-  }
-
+  if (buffer[0] === 0x89 && buffer[1] === 0x50 && buffer[2] === 0x4E && buffer[3] === 0x47) return 'image/png';
+  if (buffer[0] === 0xFF && buffer[1] === 0xD8 && buffer[2] === 0xFF) return 'image/jpeg';
+  if (buffer[0] === 0x52 && buffer[1] === 0x49 && buffer[2] === 0x46 && buffer[3] === 0x46) return 'image/webp';
   return 'image/jpeg';
 }
 
 function detectMimeTypeFromBase64(base64: string): string {
   try {
-    // Strip prefix if it exists
     const cleanBase64 = base64.includes(';base64,') ? base64.split(';base64,').pop()! : base64;
     const binary = Buffer.from(cleanBase64.substring(0, 32), 'base64');
     return detectMimeType(binary);
@@ -218,10 +169,10 @@ function detectMimeTypeFromBase64(base64: string): string {
 /**
  * Detects branding colors and context based on video topic keywords
  */
-export function getBrandingContext(topic: string, channel: { primaryColor?: string | null, secondaryColor?: string | null, tags?: string | null }): BrandContext {
+export function getBrandingContext(topic: string, channel: any): BrandContext {
   const p = topic.toLowerCase();
+  const channelTags = channel.tags?.toLowerCase().split(',').map((t: string) => t.trim()) || [];
 
-  // We heavily favor topic-based color theory now
   let primary = channel.primaryColor || "#ffffff";
   let secondary = channel.secondaryColor || "#000000";
 
@@ -235,24 +186,22 @@ export function getBrandingContext(topic: string, channel: { primaryColor?: stri
     'twitter': { p: "#1DA1F2", s: "#FFFFFF" },
     'x.com': { p: "#000000", s: "#FFFFFF" },
     'linkedin': { p: "#0077B5", s: "#FFFFFF" },
-    'github': { p: "#24292e", s: "#ffffff" },
-    'notion': { p: "#000000", s: "#ffffff" }
+    'powerpoint': { p: "#B7472A", s: "#FFFFFF" }
   };
 
   for (const [platform, colors] of Object.entries(platforms)) {
-    if (p.includes(platform)) {
+    if (p.includes(platform) || channelTags.includes(platform)) {
       primary = colors.p;
       secondary = colors.s;
       break;
     }
   }
 
-  return { primaryColor: primary, secondaryColor: secondary, tags: [] };
+  return { primaryColor: primary, secondaryColor: secondary, tags: channelTags };
 }
 
 /**
  * Builds the comprehensive text prompt that will be sent to the generation engine.
- * Fully visible and editable by the user.
  */
 export function buildFullPrompt(
   channel: any,
@@ -263,63 +212,50 @@ export function buildFullPrompt(
 ): string {
   const topic = sanitizePrompt(job.videoTopic, 150);
   const text = sanitizePrompt(job.thumbnailText, 80);
-  
-  // Use the archetype's dedicated basePrompt if it exists, otherwise use its layoutInstructions
+  const brand = getBrandingContext(job.videoTopic, channel);
   const archetypeStyle = sanitizePrompt(archetype.basePrompt || archetype.layoutInstructions || '', 2000);
-  
-  let prompt = `You are an expert YouTube thumbnail designer with 6 years of experience. Your task is to adapt the thumbnail style, typography, and stylistic devices to perfectly match the target audience of the video topic provided.\n\n`;
-  
-  prompt += `TOPIC: [${topic}]\n`;
-  if (text) {
-    prompt += `TEXT TO RENDER: "[${text}]"\n`;
-  } else {
-    prompt += `TEXT TO RENDER: DO NOT RENDER ANY TEXT ON THE THUMBNAIL. (Text on logos is allowed.)\n`;
-  }
-  prompt += `\nTECHNICAL INSTRUCTIONS:\n`;
-  prompt += `- REFERENCE USAGE: The reference image dictates the core layout, composition, and general style. Any text on the reference image is merely a placeholder to define the text area/layout and should be ignored or replaced. Any person on the reference image must be entirely erased and replaced with the Persona described below.\n`;
-  
-  if (archetypeStyle) {
-    prompt += `- ARCHETYPE STYLE: [${archetypeStyle}]\n`;
-  }
-  
-  if (includeBrandColors) {
-    const brand = getBrandingContext(topic, channel);
-    prompt += `- COLOR THEORY: Maximally utilize the topic's identity colors (e.g., Snapchat = Yellow, WhatsApp = Green) to dominate the scene. Delicately and harmonically integrate the brand colors ([${brand.primaryColor}], [${brand.secondaryColor}]) as subtle accents only, ensuring they do not clash with or overpower the topic's main colors.\n`;
-  } else {
-    prompt += `- COLOR THEORY: Maximally utilize the topic's identity colors (e.g., Snapchat = Yellow, WhatsApp = Green) to dominate the scene.\n`;
-  }
-  
-  prompt += `- LOGOS: Integrate official topic-related logos where appropriate. Do not hallucinate random watermarks.\n`;
-  
-  if (includePersona && channel.personaDescription) {
-    const personaDesc = sanitizePrompt(channel.personaDescription, 1000);
-    prompt += `- PERSONA: You must strictly follow this character description to generate the new person: [${personaDesc}]\n`;
-  }
 
-  return prompt;
+  return `You are an expert YouTube thumbnail designer with 10 years of experience. Your task is to adapt the thumbnail style, typography, and stylistic devices to perfectly match the target audience.
+
+## Topic & Text
+- **TOPIC**: ${topic}
+- **TEXT TO RENDER**: ${text || 'DO NOT RENDER ANY TEXT'}
+
+## Technical Instructions
+- **TEXT STYLING**: Ensure text is highly legible and matches modern YouTube aesthetics. Use ALL CAPS or Title Case consistently. **Apply thick outer strokes or heavy drop shadows to create 3D depth and maximum contrast against the background.** Render in 2D or match the reference image style.
+- **REFERENCE USAGE**: Use the provided reference image as the core style and layout inspiration. Maintain the general composition, object placement, and background style of the reference. Maintain vibrant high-contrast lighting and dramatic rim lighting on the subject.
+- **ARCHETYPE STYLE**: ${archetypeStyle}
+- **COLOR THEORY**: Utilize the topic's identity colors (e.g., PowerPoint = Orange/Red) to dominate the scene. **Ensure extreme visual contrast between the subject, text, and background.** ${includeBrandColors ? `Harmonically integrate ${brand.primaryColor} and ${brand.secondaryColor} as high-contrast accents.` : ''}
+- **LOGOS**: Integrate official topic-related logos where appropriate. Ensure they are vibrant and clearly visible.
+
+## Persona Instructions
+**Step 1**: Analyze the reference image for the presence of a person or character.
+- **IF YES**: ${includePersona && channel.personaDescription ? `Entirely replace that person with this Persona: [${sanitizePrompt(channel.personaDescription, 1000)}]` : 'Render a high-quality human subject matching the reference pose.'}
+- **IF NO**: Maintain the person-free composition of the reference image. Do not add any people, faces, or silhouettes.`;
 }
 
 /**
  * Assembles complete AI request payload by encoding images and building prompts
  */
 export async function assemblePayload(
-  channel: any | HardcodedProfile,
-  archetype: any | HardcodedArchetype,
+  channel: any,
+  archetype: any,
   job: JobConfig,
   baseUrl: string = ''
 ): Promise<AIRequestPayload> {
-  // If the prompt hasn't been manually overridden in the DB job yet, generate it
   const userPrompt = job.customPrompt || buildFullPrompt(channel, archetype, job, true, !!channel.personaAssetPath);
 
   const personaPath = channel.personaAssetPath || channel.personaPath;
+  const logoPath = channel.logoAssetPath || channel.logoPath;
   const archetypeUrl = archetype.imageUrl || archetype.referencePath;
 
   const encodingTasks: Promise<{ data: string; mimeType: string } | undefined>[] = [
     encodeImageToBase64(archetypeUrl.startsWith('http') ? archetypeUrl : `${baseUrl}${archetypeUrl}`),
     personaPath ? encodeImageToBase64(personaPath.startsWith('http') ? personaPath : `${baseUrl}${personaPath}`) : Promise.resolve(undefined),
+    logoPath ? encodeImageToBase64(logoPath.startsWith('http') ? logoPath : `${baseUrl}${logoPath}`) : Promise.resolve(undefined),
   ];
 
-  const [archetypeResult, personaResult] = await Promise.all(encodingTasks);
+  const [archetypeResult, personaResult, logoResult] = await Promise.all(encodingTasks);
 
   if (!archetypeResult || !archetypeResult.data) throw new Error("Archetype image is required");
 
@@ -329,36 +265,21 @@ export async function assemblePayload(
     base64Images: {
       archetype: archetypeResult,
       ...(personaResult && personaResult.data ? { persona: personaResult } : {}),
+      ...(logoResult && logoResult.data ? { logo: logoResult } : {}),
     },
   };
 }
 
-/**
- * Validates a URL to prevent SSRF (Server-Side Request Forgery).
- * Blocks private IP ranges and loopback addresses.
- */
 function isSafeUrl(urlStr: string): boolean {
   try {
     const url = new URL(urlStr);
-
-    // Only allow http and https
-    if (url.protocol !== 'http:' && url.protocol !== 'https:') {
-      return false;
-    }
-
+    if (url.protocol !== 'http:' && url.protocol !== 'https:') return false;
     const host = url.hostname.toLowerCase();
-
-    // Block common local/private hostnames and IPs
     const blockedHosts = ['localhost', '127.0.0.1', '0.0.0.0', '::1'];
     if (blockedHosts.includes(host)) return false;
-
-    // Block private IP ranges (Regex check for simplicity)
     const privateIpRegex = /^(10\.|127\.|172\.(1[6-9]|2[0-9]|3[0-1])\.|192\.168\.|169\.254\.)/;
     if (privateIpRegex.test(host)) return false;
-
-    // Additional check for AWS/Cloud provider metadata services
     if (host === '169.254.169.254') return false;
-
     return true;
   } catch (e) {
     return false;
