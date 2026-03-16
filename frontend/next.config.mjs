@@ -2,7 +2,12 @@
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
-  
+
+  // Fix dev server compilation hangs caused by lucide-react massive barrel file
+  experimental: {
+    optimizePackageImports: ["lucide-react"],
+  },
+
   // Image optimization
   images: {
     unoptimized: true,
@@ -17,13 +22,17 @@ const nextConfig = {
       },
     ],
   },
-  
-  // Rewrites for local development
+
+  // Rewrites for local development and path unification
   async rewrites() {
     return [
       {
         source: "/api/:path*",
-        destination: `${process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8000"}/api/:path*`,
+        destination: `${process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:8068"}/api/:path*`,
+      },
+      {
+        source: "/research/video_analysis/:path*",
+        destination: "/archetypes/:path*",
       },
     ];
   },
