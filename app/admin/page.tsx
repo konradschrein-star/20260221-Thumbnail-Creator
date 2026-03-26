@@ -34,6 +34,7 @@ import {
   CheckCircle2,
   XCircle,
   Clock,
+  Wrench,
 } from 'lucide-react';
 
 type TabType = 'users' | 'channels' | 'jobs' | 'stats';
@@ -153,6 +154,12 @@ export default function EnhancedAdminPage() {
   const [transferLoading, setTransferLoading] = useState(false);
   const [transferSuccess, setTransferSuccess] = useState<string | null>(null);
   const [transferError, setTransferError] = useState<string | null>(null);
+
+  // Fix ownership state
+  const [fixOwnershipLoading, setFixOwnershipLoading] = useState(false);
+  const [fixOwnershipSuccess, setFixOwnershipSuccess] = useState<string | null>(null);
+  const [fixOwnershipError, setFixOwnershipError] = useState<string | null>(null);
+  const [fixOwnershipResults, setFixOwnershipResults] = useState<any>(null);
 
   // Expanded rows
   const [expandedUsers, setExpandedUsers] = useState<Set<string>>(new Set());
@@ -281,6 +288,37 @@ export default function EnhancedAdminPage() {
       setTransferError(err instanceof Error ? err.message : 'Unknown error');
     } finally {
       setTransferLoading(false);
+    }
+  };
+
+  const handleFixOwnership = async () => {
+    setFixOwnershipLoading(true);
+    setFixOwnershipError(null);
+    setFixOwnershipSuccess(null);
+    setFixOwnershipResults(null);
+
+    try {
+      const res = await fetch('/api/admin/fix-ownership', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          targetAdminEmail: 'konrad.schrein@gmail.com',
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to fix ownership');
+      }
+
+      setFixOwnershipSuccess(data.message);
+      setFixOwnershipResults(data.results);
+      loadData();
+    } catch (err) {
+      setFixOwnershipError(err instanceof Error ? err.message : 'Unknown error');
+    } finally {
+      setFixOwnershipLoading(false);
     }
   };
 
@@ -481,7 +519,7 @@ export default function EnhancedAdminPage() {
             </div>
 
             {/* Jobs Statistics */}
-            <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
+            <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6 mb-8">
               <h2 className="text-xl font-bold mb-4">Jobs Overview</h2>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 {Object.entries(stats.jobs.byStatus).map(([status, count]) => (
@@ -493,6 +531,84 @@ export default function EnhancedAdminPage() {
                     <p className="text-2xl font-bold">{count}</p>
                   </div>
                 ))}
+              </div>
+            </div>
+
+            {/* System Maintenance */}
+            <div className="bg-gradient-to-br from-orange-500/10 to-red-500/10 border border-orange-500/30 rounded-lg p-6">
+              <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center gap-3">
+                  <Wrench className="w-6 h-6 text-orange-400" />
+                  <h2 className="text-xl font-bold">System Maintenance</h2>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="bg-gray-900/50 rounded-lg p-4">
+                  <h3 className="font-semibold text-white mb-2">Fix Channel Ownership</h3>
+                  <p className="text-sm text-gray-400 mb-4">
+                    Automatically transfers admin channels (Peter's Help, Harry, Gary's Guides) to the admin account
+                    and ensures test channels (test, test2) are owned by the test account.
+                  </p>
+                  <button
+                    onClick={handleFixOwnership}
+                    disabled={fixOwnershipLoading}
+                    className="px-6 py-2 bg-orange-600 hover:bg-orange-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg font-medium transition-colors flex items-center gap-2"
+                  >
+                    {fixOwnershipLoading ? (
+                      <>
+                        <RefreshCw className="w-4 h-4 animate-spin" />
+                        Fixing...
+                      </>
+                    ) : (
+                      <>
+                        <Wrench className="w-4 h-4" />
+                        Fix Ownership Now
+                      </>
+                    )}
+                  </button>
+                </div>
+
+                {fixOwnershipSuccess && (
+                  <div className="p-4 bg-green-500/20 border border-green-500/30 rounded-lg">
+                    <div className="flex items-center gap-2 text-green-400 mb-2">
+                      <CheckCircle2 className="w-5 h-5" />
+                      <span className="font-semibold">{fixOwnershipSuccess}</span>
+                    </div>
+                    {fixOwnershipResults && (
+                      <div className="mt-3 space-y-2 text-sm">
+                        {fixOwnershipResults.transferred && fixOwnershipResults.transferred.length > 0 && (
+                          <div className="bg-gray-900/50 rounded p-3">
+                            <p className="font-semibold text-white mb-2">Transferred:</p>
+                            {fixOwnershipResults.transferred.map((t: any, i: number) => (
+                              <div key={i} className="text-gray-300 ml-2">
+                                • "{t.name}" from {t.from} → {t.to}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                        {fixOwnershipResults.skipped && fixOwnershipResults.skipped.length > 0 && (
+                          <div className="bg-gray-900/50 rounded p-3">
+                            <p className="font-semibold text-white mb-2">Skipped (already correct):</p>
+                            {fixOwnershipResults.skipped.map((s: any, i: number) => (
+                              <div key={i} className="text-gray-400 ml-2">
+                                • "{s.name}" - {s.reason}
+                              </div>
+                            ))}
+                          </div>
+                        )}
+                      </div>
+                    )}
+                  </div>
+                )}
+                {fixOwnershipError && (
+                  <div className="p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-400">
+                    <div className="flex items-center gap-2">
+                      <AlertCircle className="w-5 h-5" />
+                      <span>{fixOwnershipError}</span>
+                    </div>
+                  </div>
+                )}
               </div>
             </div>
           </div>
