@@ -31,7 +31,7 @@ export async function GET(
     }
 
     // Check ownership
-    if (channel.userId !== session.user.id) {
+    if (channel.userId !== session.user?.id) {
       return NextResponse.json(
         { error: 'Forbidden: You do not own this channel' },
         { status: 403 }
@@ -109,7 +109,7 @@ export async function PATCH(
         throw new Error('CHANNEL_NOT_FOUND');
       }
 
-      if (existingChannel.userId !== session.user.id) {
+      if (existingChannel.userId !== session.user?.id) {
         throw new Error('FORBIDDEN');
       }
 
@@ -171,7 +171,7 @@ export async function DELETE(
         throw new Error('CHANNEL_NOT_FOUND');
       }
 
-      if (existingChannel.userId !== session.user.id) {
+      if (existingChannel.userId !== session.user?.id) {
         throw new Error('FORBIDDEN');
       }
 

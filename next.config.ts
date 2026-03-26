@@ -11,6 +11,8 @@ const nextConfig: NextConfig = {
       '**/.git/**',
     ],
   },
+  // Externalize native modules for serverless deployment (Next.js 15.5+)
+  serverExternalPackages: ['argon2', 'sharp'],
 };
 
 export default nextConfig;

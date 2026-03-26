@@ -93,9 +93,10 @@ export async function POST(request: NextRequest) {
     });
 
     const results = {
-      before: allChannels.map(c => ({ name: c.name, owner: c.user.email })),
+      before: allChannels.map(c => ({ name: c.name, owner: c.user?.email || 'no owner' })),
       transferred: [] as Array<{ name: string; from: string; to: string }>,
       skipped: [] as Array<{ name: string; reason: string }>,
+      after: [] as Array<{ name: string; owner: string }>,
     };
 
     // Admin channel names (case-insensitive)
@@ -128,7 +129,7 @@ export async function POST(request: NextRequest) {
 
           results.transferred.push({
             name: channel.name,
-            from: channel.user.email,
+            from: channel.user?.email || 'no owner',
             to: adminUser.email,
           });
         }
@@ -146,7 +147,7 @@ export async function POST(request: NextRequest) {
 
           results.transferred.push({
             name: channel.name,
-            from: channel.user.email,
+            from: channel.user?.email || 'no owner',
             to: testUser.email,
           });
         }
@@ -163,7 +164,7 @@ export async function POST(request: NextRequest) {
       orderBy: { name: 'asc' },
     });
 
-    results.after = updatedChannels.map(c => ({ name: c.name, owner: c.user.email }));
+    results.after = updatedChannels.map(c => ({ name: c.name, owner: c.user?.email || 'no owner' }));
 
     return NextResponse.json({
       success: true,

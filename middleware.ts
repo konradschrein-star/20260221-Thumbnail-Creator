@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { auth } from '@/lib/auth';
+import { auth as authMiddleware } from '@/lib/auth';
 
-export default async function middleware(request: NextRequest) {
+export default authMiddleware((request) => {
     // HTTPS Enforcement: Force HTTPS in production
     if (
         process.env.NODE_ENV === 'production' &&
@@ -12,11 +12,8 @@ export default async function middleware(request: NextRequest) {
         return NextResponse.redirect(httpsUrl, 301);
     }
 
-    // Run authentication middleware
-    const authResult = await auth(request as any, {} as any);
-
-    // Create response (either from auth or continue)
-    const response = authResult || NextResponse.next();
+    // Create response
+    const response = NextResponse.next();
 
     // Add security headers
     response.headers.set('X-Frame-Options', 'DENY');
@@ -29,12 +26,13 @@ export default async function middleware(request: NextRequest) {
     }
 
     return response;
-}
+}) as any;
 
 export const config = {
     matcher: [
         "/dashboard/:path*",
         "/api/:path*",
         "/((?!api/auth|api/cron|_next/static|_next/image|favicon.ico).*)"
-    ]
+    ],
+    runtime: 'nodejs',
 }

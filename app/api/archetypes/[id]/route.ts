@@ -40,7 +40,7 @@ export async function GET(
     }
 
     // Check ownership (admin can view all)
-    if (!isAdmin && archetype.userId !== session.user.id) {
+    if (!isAdmin && archetype.userId !== session.user?.id) {
       return NextResponse.json(
         { error: 'Forbidden: You do not have permission to view this archetype' },
         { status: 403 }
@@ -103,7 +103,7 @@ export async function PATCH(
       }
 
       // Check ownership (admin can edit all)
-      if (!isAdmin && existingArchetype.userId !== session.user.id) {
+      if (!isAdmin && existingArchetype.userId !== session.user?.id) {
         throw new Error('FORBIDDEN');
       }
 
@@ -216,7 +216,7 @@ export async function DELETE(
       }
 
       // Check ownership (admin can delete all)
-      if (!isAdmin && existingArchetype.userId !== session.user.id) {
+      if (!isAdmin && existingArchetype.userId !== session.user?.id) {
         throw new Error('FORBIDDEN');
       }
 

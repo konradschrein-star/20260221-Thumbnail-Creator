@@ -1,23 +1,14 @@
 /**
  * Password Service
  *
- * Handles password hashing with support for transparent migration from bcrypt to Argon2id.
- * Uses OWASP-recommended Argon2id for new passwords and existing bcrypt passwords.
+ * Handles password hashing with bcrypt.
+ * Note: argon2 temporarily disabled due to serverless bundling issues.
  */
 
-import argon2 from 'argon2';
 import bcrypt from 'bcryptjs';
 import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
-
-// Argon2id configuration (OWASP recommended)
-const ARGON2_CONFIG = {
-  type: argon2.argon2id,
-  memoryCost: 19456, // 19 MiB
-  timeCost: 2, // 2 iterations
-  parallelism: 1,
-};
 
 export type HashAlgorithm = 'bcrypt' | 'argon2id';
 
@@ -27,15 +18,15 @@ export interface VerificationResult {
 }
 
 /**
- * Hashes a password using Argon2id (for new users and upgrades).
+ * Hashes a password using bcrypt.
  *
  * @param plainPassword - The plain text password
  * @returns Hashed password string
  */
 export async function hashPassword(plainPassword: string): Promise<string> {
   try {
-    const hash = await argon2.hash(plainPassword, ARGON2_CONFIG);
-    return hash;
+    const saltRounds = 12;
+    return bcrypt.hash(plainPassword, saltRounds);
   } catch (error) {
     throw new Error(
       `Failed to hash password: ${error instanceof Error ? error.message : 'Unknown error'}`
@@ -44,8 +35,8 @@ export async function hashPassword(plainPassword: string): Promise<string> {
 }
 
 /**
- * Verifies a password against a hash, supporting both bcrypt and Argon2id.
- * Returns whether the password is valid and if the hash needs upgrading.
+ * Verifies a password against a hash.
+ * Supports both bcrypt and argon2id hashes for backward compatibility.
  *
  * @param plainPassword - The plain text password to verify
  * @param hashedPassword - The stored hash
@@ -66,19 +57,24 @@ export async function verifyPassword(
 
       return {
         valid,
-        needsUpgrade: valid, // If valid, recommend upgrade to Argon2id
+        needsUpgrade: false,
       };
     } else if (algorithm === 'argon2id') {
-      // Verify with Argon2id
-      valid = await argon2.verify(hashedPassword, plainPassword);
-
-      // Check if the hash needs rehashing (e.g., if cost parameters changed)
-      const needsRehash = valid && argon2.needsRehash(hashedPassword, ARGON2_CONFIG);
-
-      return {
-        valid,
-        needsUpgrade: needsRehash,
-      };
+      // Try to load argon2 dynamically only when needed
+      try {
+        const argon2 = await import('argon2');
+        valid = await argon2.default.verify(hashedPassword, plainPassword);
+        return {
+          valid,
+          needsUpgrade: false,
+        };
+      } catch (argon2Error) {
+        console.error('argon2 verification failed:', argon2Error);
+        return {
+          valid: false,
+          needsUpgrade: false,
+        };
+      }
     } else {
       throw new Error(`Unsupported hash algorithm: ${algorithm}`);
     }
@@ -93,8 +89,7 @@ export async function verifyPassword(
 }
 
 /**
- * Upgrades a user's password hash from bcrypt to Argon2id.
- * This should be called in the background after successful login.
+ * Upgrades a user's password hash (currently no-op since we use bcrypt only).
  *
  * @param userId - The user ID
  * @param plainPassword - The plain text password (from login attempt)
@@ -105,7 +100,7 @@ export async function upgradePasswordHash(
   plainPassword: string
 ): Promise<boolean> {
   try {
-    // Hash with Argon2id
+    // Re-hash with bcrypt
     const newHash = await hashPassword(plainPassword);
 
     // Update database
@@ -113,11 +108,11 @@ export async function upgradePasswordHash(
       where: { id: userId },
       data: {
         password: newHash,
-        passwordHashAlgorithm: 'argon2id',
+        passwordHashAlgorithm: 'bcrypt',
       },
     });
 
-    console.log(`Password hash upgraded to Argon2id for user: ${userId}`);
+    console.log(`Password hash updated for user: ${userId}`);
     return true;
   } catch (error) {
     console.error('Failed to upgrade password hash:', error);
@@ -126,10 +121,8 @@ export async function upgradePasswordHash(
 }
 
 /**
- * Hashes a password using bcrypt (for backward compatibility testing only).
- * NOT recommended for production use - use hashPassword() instead.
+ * Hashes a password using bcrypt (for backward compatibility).
  *
- * @deprecated Use hashPassword() for Argon2id
  * @param plainPassword - The plain text password
  * @returns Hashed password string
  */
