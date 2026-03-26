@@ -107,6 +107,38 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate ownership for non-admins
+    if (userRole !== 'ADMIN') {
+      // Check channel ownership
+      if (channel.userId !== userId) {
+        return NextResponse.json(
+          {
+            error: 'Forbidden: You do not own this channel',
+            channelId,
+            channelName: channel.name
+          },
+          { status: 403 }
+        );
+      }
+
+      // Check archetype ownership (allow test account archetypes)
+      const testUser = await prisma.user.findUnique({
+        where: { email: 'test@test.ai' },
+        select: { id: true }
+      });
+
+      if (archetype.userId !== userId && archetype.userId !== testUser?.id) {
+        return NextResponse.json(
+          {
+            error: 'Forbidden: You do not own this archetype',
+            archetypeId,
+            archetypeName: archetype.name
+          },
+          { status: 403 }
+        );
+      }
+    }
+
     // FINAL GUARD: Enforce Admin-Only archetypes at the generation layer
     // This prevents direct API manipulation by non-admins or the test account
     if (archetype.isAdminOnly && (userRole !== 'ADMIN' || isTestUser)) {

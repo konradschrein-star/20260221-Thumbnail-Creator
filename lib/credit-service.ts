@@ -136,6 +136,98 @@ export async function deductCreditsAndCreateJob(
 // Cost per generation is low enough that failed attempts are acceptable losses
 
 /**
+ * Deducts credits for an operation without creating a job (e.g., translations, variants).
+ * Used when a job/variant is already created and we just need to deduct credits.
+ *
+ * @param userId - User ID to deduct credits from
+ * @param count - Number of credits to deduct
+ * @param reason - Reason for deduction
+ * @param relatedJobId - Optional job/variant ID to link the transaction to
+ * @returns Remaining credit balance
+ * @throws InsufficientCreditsError if user doesn't have enough credits
+ */
+export async function deductCreditsForJob(
+  userId: string,
+  count: number,
+  reason: string,
+  relatedJobId?: string | null
+) {
+  if (count <= 0) {
+    throw new CreditServiceError('Deduction amount must be positive');
+  }
+
+  try {
+    const result = await prisma.$transaction(
+      async (tx) => {
+        // Lock the user row and get current balance
+        const user = await tx.user.findUnique({
+          where: { id: userId },
+          select: {
+            id: true,
+            credits: true,
+            totalCreditsConsumed: true
+          },
+        });
+
+        if (!user) {
+          throw new CreditServiceError('User not found');
+        }
+
+        // Check if user has sufficient credits
+        if (user.credits < count) {
+          throw new InsufficientCreditsError(count, user.credits);
+        }
+
+        const balanceBefore = user.credits;
+        const balanceAfter = balanceBefore - count;
+
+        // Update user credits and consumption counter atomically
+        await tx.user.update({
+          where: { id: userId },
+          data: {
+            credits: balanceAfter,
+            totalCreditsConsumed: {
+              increment: count,
+            },
+          },
+        });
+
+        // Log the transaction
+        await tx.creditTransaction.create({
+          data: {
+            userId,
+            transactionType: 'deduct',
+            amount: -count,
+            balanceBefore,
+            balanceAfter,
+            reason,
+            relatedJobId: relatedJobId || null,
+          },
+        });
+
+        return balanceAfter;
+      },
+      {
+        isolationLevel: Prisma.TransactionIsolationLevel.Serializable,
+        timeout: 10000, // 10 second timeout
+      }
+    );
+
+    return result;
+  } catch (error) {
+    if (error instanceof InsufficientCreditsError) {
+      throw error;
+    }
+    if (error instanceof Prisma.PrismaClientKnownRequestError) {
+      throw new CreditServiceError(`Database error: ${error.message}`);
+    }
+    throw new CreditServiceError(
+      error instanceof Error ? error.message : 'Unknown error'
+    );
+  }
+}
+
+/**
  * Grants credits to a user (admin function).
  *
  * @param userId - User ID to grant credits to

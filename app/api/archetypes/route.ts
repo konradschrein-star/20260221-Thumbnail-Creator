@@ -17,7 +17,12 @@ export async function GET(request: NextRequest) {
     const role = (session.user as any)?.role;
     const isAdmin = role === 'ADMIN';
     const userEmail = session.user?.email || '';
-    // const isTestAccount = userEmail === 'test@test.ai'; // Temporarily disabled
+
+    // Find test user ID for public archetype access
+    const testUser = await prisma.user.findUnique({
+      where: { email: 'test@test.ai' },
+      select: { id: true }
+    });
 
     // Build where clause with user isolation
     let where: any = {};
@@ -34,10 +39,15 @@ export async function GET(request: NextRequest) {
         };
       }
     } else {
-      // Regular users only see their own archetypes
+      // Regular users see their own archetypes + test account's public archetypes
+      const userIdConditions = [
+        { userId: session.user.id },
+        { userId: testUser?.id || 'none' }
+      ];
+
       if (channelId) {
         where = {
-          userId: session.user.id,
+          OR: userIdConditions,
           channels: {
             some: {
               channelId,
@@ -46,7 +56,7 @@ export async function GET(request: NextRequest) {
         };
       } else {
         where = {
-          userId: session.user.id,
+          OR: userIdConditions
         };
       }
     }

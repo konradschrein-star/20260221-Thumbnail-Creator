@@ -5,6 +5,7 @@ import * as translationService from '@/lib/translation-service';
 import * as payloadEngine from '@/lib/payload-engine';
 import * as generationService from '@/lib/generation-service';
 import * as r2Service from '@/lib/r2-service';
+import * as CreditService from '@/lib/credit-service';
 
 /**
  * POST /api/generate/translate
@@ -42,6 +43,11 @@ export async function POST(request: NextRequest) {
     const body = await request.json();
     const { masterJobId, uploadedImages, targetLanguages, originalText } = body;
 
+    // Extract userId and role
+    const userId = authResult.user.id;
+    const userRole = authResult.user.role || 'USER';
+    const isAdmin = userRole === 'ADMIN';
+
     // Validation: targetLanguages is required
     if (!targetLanguages || !Array.isArray(targetLanguages) || targetLanguages.length === 0) {
       return NextResponse.json(
@@ -70,7 +76,9 @@ export async function POST(request: NextRequest) {
       return await handleMasterJobTranslation(
         masterJobId,
         targetLanguages,
-        authResult
+        authResult,
+        !isAdmin,  // shouldDeductCredits
+        userId
       );
     }
 
@@ -80,7 +88,9 @@ export async function POST(request: NextRequest) {
         uploadedImages,
         targetLanguages,
         originalText,
-        authResult
+        authResult,
+        !isAdmin,  // shouldDeductCredits
+        userId
       );
     }
   } catch (error: any) {
@@ -100,6 +110,7 @@ export async function POST(request: NextRequest) {
  * 2. Translate thumbnailText to all target languages
  * 3. For each language:
  *    - Create VariantJob record
+ *    - Deduct credits (if applicable)
  *    - Build payload with translated text
  *    - Generate image via Nano Banana
  *    - Upload to R2
@@ -109,7 +120,9 @@ export async function POST(request: NextRequest) {
 async function handleMasterJobTranslation(
   masterJobId: string,
   targetLanguages: string[],
-  authResult: any
+  authResult: any,
+  shouldDeductCredits: boolean,
+  userId: string
 ) {
   console.log(`\n📝 Master Job Translation: ${masterJobId} → ${targetLanguages.length} languages`);
 
@@ -157,6 +170,32 @@ async function handleMasterJobTranslation(
       if (translationError) {
         console.log(`   ✗ Translation failed: ${translationError}`);
         return { variant, status: 'failed', error: translationError };
+      }
+
+      // CRITICAL: Deduct credits BEFORE generation attempt
+      if (shouldDeductCredits) {
+        try {
+          await CreditService.deductCreditsForJob(
+            userId,
+            1,
+            `Translation to ${language}`,
+            variant.id
+          );
+          console.log(`   💳 Deducted 1 credit`);
+        } catch (creditError: any) {
+          console.log(`   ✗ Insufficient credits`);
+
+          // Mark variant as failed due to insufficient credits
+          await (prisma as any).variantJob.update({
+            where: { id: variant.id },
+            data: {
+              status: 'failed',
+              errorMessage: 'Insufficient credits'
+            }
+          });
+
+          return { variant, status: 'failed', error: 'Insufficient credits' };
+        }
       }
 
       // Build payload with TRANSLATED text
@@ -279,6 +318,7 @@ async function handleMasterJobTranslation(
  * 2. Translate originalText to all target languages
  * 3. For each image × language combination:
  *    - Create VariantJob record
+ *    - Deduct credits (if applicable)
  *    - Build payload: "Recreate image with translated text"
  *    - Generate image via Nano Banana
  *    - Upload to R2
@@ -289,7 +329,9 @@ async function handleUploadedImagesTranslation(
   uploadedImages: string[],
   targetLanguages: string[],
   originalText: string,
-  authResult: any
+  authResult: any,
+  shouldDeductCredits: boolean,
+  userId: string
 ) {
   console.log(`\n📤 Uploaded Images Translation: ${uploadedImages.length} images → ${targetLanguages.length} languages`);
 
@@ -357,6 +399,32 @@ async function handleUploadedImagesTranslation(
           if (translationError) {
             console.log(`     ✗ Translation failed: ${translationError}`);
             return { variant, status: 'failed', error: translationError };
+          }
+
+          // CRITICAL: Deduct credits BEFORE generation attempt
+          if (shouldDeductCredits) {
+            try {
+              await CreditService.deductCreditsForJob(
+                userId,
+                1,
+                `Translation to ${language} for uploaded image`,
+                variant.id
+              );
+              console.log(`     💳 Deducted 1 credit`);
+            } catch (creditError: any) {
+              console.log(`     ✗ Insufficient credits`);
+
+              // Mark variant as failed due to insufficient credits
+              await (prisma as any).variantJob.update({
+                where: { id: variant.id },
+                data: {
+                  status: 'failed',
+                  errorMessage: 'Insufficient credits'
+                }
+              });
+
+              return { variant, status: 'failed', error: 'Insufficient credits' };
+            }
           }
 
           // Build payload: recreate image with translated text

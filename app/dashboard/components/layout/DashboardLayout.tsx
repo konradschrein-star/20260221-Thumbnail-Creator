@@ -14,11 +14,33 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>('channels');
+  const [credits, setCredits] = useState<number | null>(null);
 
   useEffect(() => {
     const tab = (searchParams.get('tab') as TabType) || 'channels';
     setActiveTab(tab);
   }, [searchParams]);
+
+  // Fetch credits on mount and refresh every 30 seconds
+  useEffect(() => {
+    async function fetchCredits() {
+      try {
+        const response = await fetch('/api/user/credits');
+        if (response.ok) {
+          const data = await response.json();
+          setCredits(data.credits);
+        }
+      } catch (err) {
+        console.error('Failed to fetch credits:', err);
+      }
+    }
+
+    fetchCredits();
+
+    // Refresh credits every 30 seconds
+    const interval = setInterval(fetchCredits, 30000);
+    return () => clearInterval(interval);
+  }, []);
 
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab);
@@ -34,9 +56,11 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
     return parts[0].slice(0, 2).toUpperCase();
   };
 
+  const userRole = (session?.user as any)?.role;
+
   return (
     <div className="dashboard-container">
-      <Sidebar activeTab={activeTab} onTabChange={handleTabChange} />
+      <Sidebar activeTab={activeTab} onTabChange={handleTabChange} userRole={userRole} />
 
       <div className="main-wrapper">
         <header className="dashboard-header">
@@ -51,6 +75,30 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
                 {new Date().toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}
               </div>
               <div className="divider"></div>
+              {credits !== null && (
+                <>
+                  <div className="credits-badge">
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="credit-icon"
+                    >
+                      <circle cx="8" cy="8" r="6" />
+                      <path d="M18.09 10.37A6 6 0 1 1 10.34 18" />
+                      <path d="M7 6h1v4" />
+                      <path d="m16.71 13.88.7.71-2.82 2.82" />
+                    </svg>
+                    <span className="credit-count">{credits}</span>
+                  </div>
+                  <div className="divider"></div>
+                </>
+              )}
               <div className="user-profile">
                 <div className="user-details">
                   <span className="user-name">{session?.user?.name || 'User'}</span>
@@ -148,6 +196,26 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
           width: 1px;
           height: 24px;
           background: rgba(255, 255, 255, 0.08);
+        }
+
+        .credits-badge {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.5rem 0.875rem;
+          border-radius: 10px;
+          background: rgba(250, 204, 21, 0.1);
+          border: 1px solid rgba(250, 204, 21, 0.2);
+        }
+
+        .credit-icon {
+          color: #facc15;
+        }
+
+        .credit-count {
+          font-size: 0.875rem;
+          font-weight: 700;
+          color: #fef3c7;
         }
 
         .user-profile {

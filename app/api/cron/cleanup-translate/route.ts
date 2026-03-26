@@ -21,9 +21,9 @@ export async function GET(request: NextRequest) {
   try {
     // Verify cron secret for security
     const authHeader = request.headers.get('authorization');
-    const expectedAuth = `Bearer ${process.env.CRON_SECRET}`;
+    const cronSecret = process.env.CRON_SECRET;
 
-    if (authHeader !== expectedAuth) {
+    if (!cronSecret || authHeader !== `Bearer ${cronSecret}`) {
       console.warn('[CRON] Unauthorized cleanup attempt');
       return NextResponse.json(
         { error: 'Unauthorized' },

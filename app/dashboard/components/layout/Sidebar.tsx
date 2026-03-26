@@ -11,7 +11,8 @@ import {
   ChevronLeft,
   LayoutDashboard,
   Languages,
-  BookOpen
+  BookOpen,
+  Shield
 } from 'lucide-react';
 
 export type TabType = 'channels' | 'archetypes' | 'generate' | 'history' | 'translate' | 'api-docs';
@@ -19,6 +20,7 @@ export type TabType = 'channels' | 'archetypes' | 'generate' | 'history' | 'tran
 interface SidebarProps {
   activeTab: TabType;
   onTabChange: (tab: TabType) => void;
+  userRole?: string;
 }
 
 const navItems: { id: TabType; label: string; icon: React.ReactNode }[] = [
@@ -30,8 +32,9 @@ const navItems: { id: TabType; label: string; icon: React.ReactNode }[] = [
   { id: 'api-docs', label: 'API Docs', icon: <BookOpen size={18} /> },
 ];
 
-export default function Sidebar({ activeTab, onTabChange }: SidebarProps) {
+export default function Sidebar({ activeTab, onTabChange, userRole }: SidebarProps) {
   const router = useRouter();
+  const isAdmin = userRole === 'ADMIN';
 
   return (
     <aside className="sidebar">
@@ -73,6 +76,16 @@ export default function Sidebar({ activeTab, onTabChange }: SidebarProps) {
               )}
             </button>
           ))}
+
+          {isAdmin && (
+            <button
+              onClick={() => router.push('/admin')}
+              className="nav-item"
+            >
+              <span className="nav-icon"><Shield size={18} /></span>
+              <span className="nav-label">Admin</span>
+            </button>
+          )}
         </div>
       </nav>
 
