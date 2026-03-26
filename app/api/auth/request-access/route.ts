@@ -50,10 +50,15 @@ export async function POST(request: NextRequest) {
         let emailSent = false;
         if (resend) {
             try {
-                await resend.emails.send({
-                    from: 'Titan Studio <onboarding@resend.dev>',
-                    to: 'konrad.schrein@gmail.com',
-                    subject: `New Access Request: ${name || email}`,
+                const adminEmail = process.env.ADMIN_EMAIL;
+                if (!adminEmail) {
+                    console.error('[Error] ADMIN_EMAIL not configured for access request notifications');
+                    // Continue without email notification
+                } else {
+                    await resend.emails.send({
+                        from: 'Titan Studio <onboarding@resend.dev>',
+                        to: adminEmail,
+                        subject: `New Access Request: ${name || email}`,
                     html: `
                         <h2>New Access Request</h2>
                         <p><strong>Name:</strong> ${name || 'Not provided'}</p>
@@ -62,9 +67,10 @@ export async function POST(request: NextRequest) {
                         <hr />
                         <p>You can manage this request in the database or the <code>ACCOUNT_REQUESTS.md</code> file.</p>
                     `
-                });
-                emailSent = true;
-                console.log('Email notification sent successfully to konrad.schrein@gmail.com');
+                    });
+                    emailSent = true;
+                    console.log(`Email notification sent successfully to ${adminEmail}`);
+                }
             } catch (emailError) {
                 console.error('Failed to send email via Resend:', emailError);
             }

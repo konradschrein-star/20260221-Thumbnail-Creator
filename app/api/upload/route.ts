@@ -1,4 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { randomUUID } from 'crypto';
+import sharp from 'sharp';
 import { auth } from '@/lib/auth';
 import * as r2Service from '@/lib/r2-service';
 import { fileTypeFromBuffer } from 'file-type';
@@ -40,10 +42,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Generate unique filename
-    const timestamp = Date.now();
+    // Generate unique filename using UUID to prevent enumeration attacks
+    const uuid = randomUUID();
     const originalName = file.name.replace(/[^a-zA-Z0-9.-]/g, '_');
-    const filename = `${timestamp}-${originalName}`;
+    const filename = `${uuid}-${originalName}`;
     const r2Key = `${folder}/${filename}`;
 
     const buffer = Buffer.from(await file.arrayBuffer());
@@ -55,6 +57,50 @@ export async function POST(request: NextRequest) {
     if (!detectedType || !allowedMimes.includes(detectedType.mime)) {
       return NextResponse.json(
         { error: 'Invalid file type. File content must be a valid JPG, PNG, or WEBP image.' },
+        { status: 400 }
+      );
+    }
+
+    // Polyglot file detection: Verify image structural integrity with sharp
+    // This prevents malicious files with valid image headers but embedded payloads
+    try {
+      const metadata = await sharp(buffer).metadata();
+
+      // Validate image has valid dimensions
+      if (!metadata.width || !metadata.height || metadata.width <= 0 || metadata.height <= 0) {
+        return NextResponse.json(
+          { error: 'Invalid image structure. Image must have valid dimensions.' },
+          { status: 400 }
+        );
+      }
+
+      // Validate reasonable dimensions (prevent zip bombs / excessive memory usage)
+      const maxDimension = 10000; // 10k pixels max
+      if (metadata.width > maxDimension || metadata.height > maxDimension) {
+        return NextResponse.json(
+          { error: `Image too large. Maximum dimension is ${maxDimension}px.` },
+          { status: 400 }
+        );
+      }
+
+      // Validate format matches detected MIME type
+      const formatMap: Record<string, string[]> = {
+        'image/jpeg': ['jpeg', 'jpg'],
+        'image/png': ['png'],
+        'image/webp': ['webp'],
+      };
+
+      const expectedFormats = formatMap[detectedType.mime] || [];
+      if (metadata.format && !expectedFormats.includes(metadata.format)) {
+        return NextResponse.json(
+          { error: 'Image format mismatch. File may be corrupted or malicious.' },
+          { status: 400 }
+        );
+      }
+    } catch (sharpError: any) {
+      console.error('Sharp validation error:', sharpError.message);
+      return NextResponse.json(
+        { error: 'Corrupted or invalid image file. Unable to process image structure.' },
         { status: 400 }
       );
     }

@@ -49,8 +49,9 @@ export async function GET(
 
     return NextResponse.json({ archetype });
   } catch (error: any) {
+    console.error('[Error] Failed to fetch archetype:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to fetch archetype' },
+      { error: 'Failed to fetch archetype' },
       { status: 500 }
     );
   }
@@ -89,85 +90,97 @@ export async function PATCH(
       );
     }
 
-    // Verify ownership before updating
-    const existingArchetype = await prisma.archetype.findUnique({
-      where: { id },
-      select: { userId: true },
+    // Use transaction to prevent race conditions
+    const archetype = await prisma.$transaction(async (tx) => {
+      // Verify ownership atomically
+      const existingArchetype = await tx.archetype.findUnique({
+        where: { id },
+        select: { userId: true },
+      });
+
+      if (!existingArchetype) {
+        throw new Error('ARCHETYPE_NOT_FOUND');
+      }
+
+      // Check ownership (admin can edit all)
+      if (!isAdmin && existingArchetype.userId !== session.user.id) {
+        throw new Error('FORBIDDEN');
+      }
+
+      // If updating channels, validate ownership and update junction table
+      if (channelIds !== undefined) {
+        const channelIdsArray = Array.isArray(channelIds) ? channelIds : [];
+
+        if (channelIdsArray.length > 0 && !isAdmin) {
+          const channels = await tx.channel.findMany({
+            where: { id: { in: channelIdsArray } },
+            select: { id: true, userId: true },
+          });
+
+          const invalidChannels = channels.filter(ch => ch.userId !== session.user!.id);
+          if (invalidChannels.length > 0) {
+            throw new Error('CHANNEL_OWNERSHIP_INVALID');
+          }
+        }
+
+        // Delete existing channel assignments and create new ones
+        await tx.channelArchetype.deleteMany({
+          where: { archetypeId: id },
+        });
+
+        if (channelIdsArray.length > 0) {
+          await tx.channelArchetype.createMany({
+            data: channelIdsArray.map(channelId => ({
+              archetypeId: id,
+              channelId,
+            })),
+          });
+        }
+      }
+
+      // Perform update within same transaction
+      return await tx.archetype.update({
+        where: { id },
+        data: updateData,
+        include: {
+          channels: {
+            include: {
+              channel: {
+                select: { id: true, name: true },
+              },
+            },
+          },
+        },
+      });
     });
 
-    if (!existingArchetype) {
+    return NextResponse.json({ archetype });
+  } catch (error: any) {
+    // Handle custom transaction errors
+    if (error.message === 'ARCHETYPE_NOT_FOUND' || error.code === 'P2025') {
       return NextResponse.json(
         { error: 'Archetype not found' },
         { status: 404 }
       );
     }
 
-    // Check ownership (admin can edit all)
-    if (!isAdmin && existingArchetype.userId !== session.user.id) {
+    if (error.message === 'FORBIDDEN') {
       return NextResponse.json(
         { error: 'Forbidden: You do not have permission to edit this archetype' },
         { status: 403 }
       );
     }
 
-    // If updating channels, validate ownership and update junction table
-    if (channelIds !== undefined) {
-      const channelIdsArray = Array.isArray(channelIds) ? channelIds : [];
-
-      if (channelIdsArray.length > 0 && !isAdmin) {
-        const channels = await prisma.channel.findMany({
-          where: { id: { in: channelIdsArray } },
-          select: { id: true, userId: true },
-        });
-
-        const invalidChannels = channels.filter(ch => ch.userId !== session.user!.id);
-        if (invalidChannels.length > 0) {
-          return NextResponse.json(
-            { error: 'You do not own all the selected channels' },
-            { status: 403 }
-          );
-        }
-      }
-
-      // Delete existing channel assignments and create new ones
-      await prisma.channelArchetype.deleteMany({
-        where: { archetypeId: id },
-      });
-
-      if (channelIdsArray.length > 0) {
-        await prisma.channelArchetype.createMany({
-          data: channelIdsArray.map(channelId => ({
-            archetypeId: id,
-            channelId,
-          })),
-        });
-      }
-    }
-
-    const archetype = await prisma.archetype.update({
-      where: { id },
-      data: updateData,
-      include: {
-        channels: {
-          include: {
-            channel: {
-              select: { id: true, name: true },
-            },
-          },
-        },
-      },
-    });
-
-    return NextResponse.json({ archetype });
-  } catch (error: any) {
-    if (error.code === 'P2025') {
+    if (error.message === 'CHANNEL_OWNERSHIP_INVALID') {
       return NextResponse.json(
-        { error: 'Archetype not found' },
-        { status: 404 }
+        { error: 'You do not own all the selected channels' },
+        { status: 403 }
       );
     }
+
+    console.error('[Error] Failed to update archetype:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to update archetype' },
+      { error: 'Failed to update archetype' },
       { status: 500 }
     );
   }
@@ -190,41 +203,49 @@ export async function DELETE(
     const userRole = (session.user as any)?.role || 'USER';
     const isAdmin = userRole === 'ADMIN';
 
-    // Verify ownership before deleting
-    const existingArchetype = await prisma.archetype.findUnique({
-      where: { id },
-      select: { userId: true },
+    // Use transaction to prevent race conditions
+    await prisma.$transaction(async (tx) => {
+      // Verify ownership atomically
+      const existingArchetype = await tx.archetype.findUnique({
+        where: { id },
+        select: { userId: true },
+      });
+
+      if (!existingArchetype) {
+        throw new Error('ARCHETYPE_NOT_FOUND');
+      }
+
+      // Check ownership (admin can delete all)
+      if (!isAdmin && existingArchetype.userId !== session.user.id) {
+        throw new Error('FORBIDDEN');
+      }
+
+      // Perform delete within same transaction
+      await tx.archetype.delete({
+        where: { id },
+      });
     });
 
-    if (!existingArchetype) {
+    return NextResponse.json({ success: true });
+  } catch (error: any) {
+    // Handle custom transaction errors
+    if (error.message === 'ARCHETYPE_NOT_FOUND' || error.code === 'P2025') {
       return NextResponse.json(
         { error: 'Archetype not found' },
         { status: 404 }
       );
     }
 
-    // Check ownership (admin can delete all)
-    if (!isAdmin && existingArchetype.userId !== session.user.id) {
+    if (error.message === 'FORBIDDEN') {
       return NextResponse.json(
         { error: 'Forbidden: You do not have permission to delete this archetype' },
         { status: 403 }
       );
     }
 
-    await prisma.archetype.delete({
-      where: { id },
-    });
-
-    return NextResponse.json({ success: true });
-  } catch (error: any) {
-    if (error.code === 'P2025') {
-      return NextResponse.json(
-        { error: 'Archetype not found' },
-        { status: 404 }
-      );
-    }
+    console.error('[Error] Failed to delete archetype:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to delete archetype' },
+      { error: 'Failed to delete archetype' },
       { status: 500 }
     );
   }

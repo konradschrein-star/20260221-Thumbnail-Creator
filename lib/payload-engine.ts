@@ -55,6 +55,19 @@ export function sanitizePrompt(text: string, maxLength: number): string {
 }
 
 /**
+ * Escapes XML special characters to prevent prompt injection attacks
+ */
+export function escapeXml(unsafe: string): string {
+  if (!unsafe) return '';
+  return unsafe
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
+/**
  * Encodes an image to base64 and detects its MIME type.
  * Aggressively attempts local resolution for any internal paths/URLs.
  */
@@ -202,6 +215,7 @@ export function getBrandingContext(topic: string, channel: any): BrandContext {
 
 /**
  * Builds the comprehensive text prompt that will be sent to the generation engine.
+ * Uses XML structure to prevent prompt injection attacks.
  */
 export function buildFullPrompt(
   channel: any,
@@ -210,28 +224,38 @@ export function buildFullPrompt(
   includeBrandColors: boolean,
   includePersona: boolean
 ): string {
-  const topic = sanitizePrompt(job.videoTopic, 150);
-  const text = sanitizePrompt(job.thumbnailText, 80);
+  // Sanitize and escape user inputs to prevent prompt injection
+  const topic = escapeXml(sanitizePrompt(job.videoTopic, 150));
+  const text = escapeXml(sanitizePrompt(job.thumbnailText, 80));
   const brand = getBrandingContext(job.videoTopic, channel);
-  const archetypeStyle = sanitizePrompt(archetype.basePrompt || archetype.layoutInstructions || '', 2000);
+  const archetypeStyle = escapeXml(sanitizePrompt(archetype.basePrompt || archetype.layoutInstructions || '', 2000));
+  const personaDesc = escapeXml(sanitizePrompt(channel.personaDescription || '', 1000));
 
-  return `You are an expert YouTube thumbnail designer with 10 years of experience. Your task is to adapt the thumbnail style, typography, and stylistic devices to perfectly match the target audience.
+  return `<system_instructions>
+You are an expert YouTube thumbnail designer with 10 years of experience. Your task is to adapt the thumbnail style, typography, and stylistic devices to perfectly match the target audience.
 
 ## Text Instructions
 **Step 1**: Analyze the reference image for the presence of text or typography.
-- **IF YES**: Render this text clearly: ${text || 'DO NOT RENDER ANY TEXT'}. Ensure it is highly legible, matches modern YouTube aesthetics, and uses ALL CAPS or Title Case consistently. Apply thick outer strokes or heavy drop shadows like in the reference image to create depth and maximum contrast.
+- **IF YES**: Render the text from the user_content section clearly. Ensure it is highly legible, matches modern YouTube aesthetics, and uses ALL CAPS or Title Case consistently. Apply thick outer strokes or heavy drop shadows like in the reference image to create depth and maximum contrast.
 - **IF NO**: Do not render any additional text, characters, or letters. Maintain the text-free composition of the reference.
 
 ## Technical Instructions
 - **REFERENCE USAGE**: Use the provided reference image as the core style and layout inspiration. Maintain the general composition, object placement, and background style of the reference. Maintain vibrant high-contrast lighting and dramatic rim lighting on the subject.
-- **ARCHETYPE STYLE**: ${archetypeStyle}
-- **COLOR THEORY**: Utilize the topic's identity colors (e.g., PowerPoint = Orange/Red) to dominate the scene. **Ensure there is strong visual contrast and depth to keep elements separated and professional. Do not allow similar colors to blend together into a flat mess.** ${includeBrandColors ? `Harmonically integrate ${brand.primaryColor} and ${brand.secondaryColor} as high-contrast accents.` : ''}
+- **COLOR THEORY**: Utilize the topic's identity colors to dominate the scene. **Ensure there is strong visual contrast and depth to keep elements separated and professional. Do not allow similar colors to blend together into a flat mess.** ${includeBrandColors ? `Harmonically integrate ${brand.primaryColor} and ${brand.secondaryColor} as high-contrast accents.` : ''}
 - **LOGOS**: Integrate official topic-related logos where appropriate. Ensure they are vibrant and clearly visible.
 
 ## Persona Instructions
 **Step 2**: Analyze the reference image for the presence of a person or character.
-- **IF YES**: ${includePersona && channel.personaDescription ? `RETAIN the lighting, pose, and exact facial expression (e.g., wide eyes, open mouth, intense focus, thinking face) from the reference image, but COMPLETELY IGNORE the original person's facial features, bone structure, and identity. Entirely replace their identity with this Persona: [${sanitizePrompt(channel.personaDescription, 1000)}]` : 'Render a high-quality human subject matching the reference pose and expression.'}
-- **IF NO**: Maintain the person-free composition of the reference image. Do not add any people, faces, or silhouettes.`;
+- **IF YES**: ${includePersona && personaDesc ? 'RETAIN the lighting, pose, and exact facial expression (e.g., wide eyes, open mouth, intense focus, thinking face) from the reference image, but COMPLETELY IGNORE the original person\'s facial features, bone structure, and identity. Entirely replace their identity with the Persona described in the user_content section.' : 'Render a high-quality human subject matching the reference pose and expression.'}
+- **IF NO**: Maintain the person-free composition of the reference image. Do not add any people, faces, or silhouettes.
+</system_instructions>
+
+<user_content>
+  <archetype_style>${archetypeStyle}</archetype_style>
+  <video_topic>${topic}</video_topic>
+  <thumbnail_text>${text || 'DO NOT RENDER ANY TEXT'}</thumbnail_text>
+  ${includePersona && personaDesc ? `<persona_description>${personaDesc}</persona_description>` : ''}
+</user_content>`;
 }
 
 /**

@@ -1,4 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
+import path from 'path';
 import { getObjectFromR2 } from '@/lib/r2-service';
 import { auth } from '@/lib/auth';
 
@@ -18,10 +19,32 @@ export async function GET(
 
         const key = pathSegments.join('/');
 
+        // SECURITY: Path traversal protection
+        // Normalize path and reject attempts to escape allowed directories
+        const normalizedKey = path.normalize(key).replace(/^(\.\.[/\\])+/, '');
+
+        // Reject paths containing '..' or starting with '/'
+        if (normalizedKey.includes('..') || normalizedKey.startsWith('/') || normalizedKey.startsWith('\\')) {
+            console.error(`[Security] Path traversal attempt blocked: ${key}`);
+            return new NextResponse('Invalid path', { status: 400 });
+        }
+
+        // Whitelist allowed path prefixes
+        const allowedPrefixes = ['users/', 'archetypes/', 'logos/', 'generated/', 'gen_'];
+        const hasAllowedPrefix = allowedPrefixes.some(prefix => normalizedKey.startsWith(prefix));
+
+        if (!hasAllowedPrefix) {
+            console.error(`[Security] Unauthorized path prefix attempted: ${normalizedKey}`);
+            return new NextResponse('Forbidden path', { status: 403 });
+        }
+
+        // Use normalized key for R2 access
+        const safeKey = normalizedKey;
+
         // SECURITY CHECK: Scoped Access
         // assets like logos or archetypes (not in /users/ folder) are public to all logged-in users.
         // user-generated thumbnails (in /users/ folder) are only visible to the owner or admins.
-        if (key.startsWith('users/')) {
+        if (safeKey.startsWith('users/')) {
             if (!session?.user?.email) {
                 return new NextResponse('Unauthorized: Please log in', { status: 401 });
             }
@@ -48,7 +71,7 @@ export async function GET(
             }
         }
 
-        const { buffer, contentType } = await getObjectFromR2(key);
+        const { buffer, contentType } = await getObjectFromR2(safeKey);
 
         const { searchParams } = new URL(request.url);
         const download = searchParams.get('download');

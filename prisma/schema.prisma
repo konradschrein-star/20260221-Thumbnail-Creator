@@ -51,6 +51,7 @@ model Channel {
   generationJobs     GenerationJob[]
 
   @@index([userId])
+  @@unique([userId, name]) // Prevent duplicate channel names per user
   @@map("channels")
 }
 
@@ -70,6 +71,7 @@ model Archetype {
   generationJobs     GenerationJob[]
 
   @@index([userId])
+  @@unique([userId, name]) // Prevent duplicate archetype names per user
   @@map("archetypes")
 }
 
@@ -114,6 +116,8 @@ model GenerationJob {
   @@index([userId])
   @@index([status])
   @@index([channelId, status])
+  @@index([userId, isManual]) // Composite index for history queries
+  @@index([createdAt]) // Index for sorting by creation time
   @@map("generation_jobs")
 }
 
@@ -158,6 +162,7 @@ model CreditTransaction {
   @@index([userId])
   @@index([createdAt])
   @@index([transactionType])
+  @@index([userId, createdAt]) // Composite index for user transaction history
   @@map("credit_transactions")
 }
 

@@ -40,8 +40,9 @@ export async function GET(
 
     return NextResponse.json({ channel });
   } catch (error: any) {
+    console.error('[Error] Failed to fetch channel:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to fetch channel' },
+      { error: 'Failed to fetch channel' },
       { status: 500 }
     );
   }
@@ -62,6 +63,25 @@ export async function PATCH(
     const body = await request.json();
     const { name, personaDescription, primaryColor, secondaryColor, tags } = body;
 
+    // Validate hex color format if provided
+    function isValidHexColor(color: string): boolean {
+      return /^#[0-9A-Fa-f]{6}$/.test(color);
+    }
+
+    if (primaryColor !== undefined && primaryColor !== null && !isValidHexColor(primaryColor)) {
+      return NextResponse.json(
+        { error: 'Invalid primary color format. Use #RRGGBB (e.g., #FF5733).' },
+        { status: 400 }
+      );
+    }
+
+    if (secondaryColor !== undefined && secondaryColor !== null && !isValidHexColor(secondaryColor)) {
+      return NextResponse.json(
+        { error: 'Invalid secondary color format. Use #RRGGBB (e.g., #00FF00).' },
+        { status: 400 }
+      );
+    }
+
     // Build update data object with only provided fields
     const updateData: any = {};
     if (name !== undefined) updateData.name = name;
@@ -77,41 +97,50 @@ export async function PATCH(
       );
     }
 
-    // Verify ownership before updating
-    const existingChannel = await prisma.channel.findUnique({
-      where: { id },
-      select: { userId: true },
+    // Use transaction to prevent race conditions
+    const channel = await prisma.$transaction(async (tx) => {
+      // Verify ownership atomically
+      const existingChannel = await tx.channel.findUnique({
+        where: { id },
+        select: { userId: true },
+      });
+
+      if (!existingChannel) {
+        throw new Error('CHANNEL_NOT_FOUND');
+      }
+
+      if (existingChannel.userId !== session.user.id) {
+        throw new Error('FORBIDDEN');
+      }
+
+      // Perform update within same transaction
+      return await tx.channel.update({
+        where: { id },
+        data: updateData,
+      });
     });
 
-    if (!existingChannel) {
+    return NextResponse.json({ channel });
+  } catch (error: any) {
+    // Handle custom transaction errors
+    if (error.message === 'CHANNEL_NOT_FOUND' || error.code === 'P2025') {
       return NextResponse.json(
         { error: 'Channel not found' },
         { status: 404 }
       );
     }
 
-    if (existingChannel.userId !== session.user.id) {
+    if (error.message === 'FORBIDDEN') {
       return NextResponse.json(
         { error: 'Forbidden: You do not own this channel' },
         { status: 403 }
       );
     }
 
-    const channel = await prisma.channel.update({
-      where: { id },
-      data: updateData,
-    });
-
-    return NextResponse.json({ channel });
-  } catch (error: any) {
-    if (error.code === 'P2025') {
-      return NextResponse.json(
-        { error: 'Channel not found' },
-        { status: 404 }
-      );
-    }
+    // Log detailed error server-side, return generic message to client
+    console.error('[Error] Failed to update channel:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to update channel' },
+      { error: 'Failed to update channel' },
       { status: 500 }
     );
   }
@@ -130,40 +159,48 @@ export async function DELETE(
 
     const { id } = await params;
 
-    // Verify ownership before deleting
-    const existingChannel = await prisma.channel.findUnique({
-      where: { id },
-      select: { userId: true },
+    // Use transaction to prevent race conditions
+    await prisma.$transaction(async (tx) => {
+      // Verify ownership atomically
+      const existingChannel = await tx.channel.findUnique({
+        where: { id },
+        select: { userId: true },
+      });
+
+      if (!existingChannel) {
+        throw new Error('CHANNEL_NOT_FOUND');
+      }
+
+      if (existingChannel.userId !== session.user.id) {
+        throw new Error('FORBIDDEN');
+      }
+
+      // Perform delete within same transaction
+      await tx.channel.delete({
+        where: { id },
+      });
     });
 
-    if (!existingChannel) {
+    return NextResponse.json({ success: true });
+  } catch (error: any) {
+    // Handle custom transaction errors
+    if (error.message === 'CHANNEL_NOT_FOUND' || error.code === 'P2025') {
       return NextResponse.json(
         { error: 'Channel not found' },
         { status: 404 }
       );
     }
 
-    if (existingChannel.userId !== session.user.id) {
+    if (error.message === 'FORBIDDEN') {
       return NextResponse.json(
         { error: 'Forbidden: You do not own this channel' },
         { status: 403 }
       );
     }
 
-    await prisma.channel.delete({
-      where: { id },
-    });
-
-    return NextResponse.json({ success: true });
-  } catch (error: any) {
-    if (error.code === 'P2025') {
-      return NextResponse.json(
-        { error: 'Channel not found' },
-        { status: 404 }
-      );
-    }
+    console.error('[Error] Failed to delete channel:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to delete channel' },
+      { error: 'Failed to delete channel' },
       { status: 500 }
     );
   }

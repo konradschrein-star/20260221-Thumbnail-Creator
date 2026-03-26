@@ -1,6 +1,19 @@
 import { PrismaClient } from '@prisma/client';
+import { hashPassword } from '../lib/password-service';
+import { randomBytes } from 'crypto';
 
 const prisma = new PrismaClient();
+
+// Generate a secure random password
+function generateSecureRandomPassword(length: number = 16): string {
+  const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+  const randomBytesBuffer = randomBytes(length);
+  let password = '';
+  for (let i = 0; i < length; i++) {
+    password += chars[randomBytesBuffer[i] % chars.length];
+  }
+  return password;
+}
 
 // The consistent persona from Phase 1 testing
 const PROVEN_PERSONA = `The host is a 28-year-old charismatic male with medium-length, slightly wavy brown hair styled casually with natural volume. He has warm hazel eyes, a strong defined jawline, and a friendly smile showing genuine enthusiasm. His face is oval-shaped with high cheekbones and a straight nose. He has a fit athletic build, stands confidently, and wears a simple black crew-neck t-shirt. His skin tone is lightly tanned (Mediterranean complexion). He has subtle stubble (5 o'clock shadow) giving him a mature, approachable look. His eyebrows are well-defined and expressive. This exact person appears in sharp focus with professional studio lighting, looking directly at the camera with an engaging, confident expression.`;
@@ -29,21 +42,29 @@ async function main() {
     console.log(`✓ Found existing admin user: ${adminUser.email}`);
   }
 
-  // Find or create test user
+  // Find or create test user with secure password
   let testUser = await prisma.user.findUnique({
     where: { email: 'test@test.ai' }
   });
 
   if (!testUser) {
+    // Use environment variable or generate secure random password
+    const testPassword = process.env.TEST_ACCOUNT_PASSWORD || generateSecureRandomPassword();
+    const hashedPassword = await hashPassword(testPassword);
+
     testUser = await prisma.user.create({
       data: {
         email: 'test@test.ai',
-        name: 'Test User',
-        password: '$2a$10$hashed_password_placeholder',
-        role: 'USER'
+        name: 'Demo Architect',
+        password: hashedPassword,
+        passwordHashAlgorithm: 'argon2id',
+        role: 'USER',
+        credits: 100 // Give test account some credits for demos
       }
     });
     console.log(`✓ Created test user: ${testUser.email}`);
+    console.log(`  Password: ${testPassword}`);
+    console.log(`  ⚠️  IMPORTANT: Save this password - it won't be shown again!`);
   } else {
     console.log(`✓ Found existing test user: ${testUser.email}`);
   }

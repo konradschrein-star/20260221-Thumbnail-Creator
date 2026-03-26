@@ -61,6 +61,25 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Validate hex color format
+    function isValidHexColor(color: string): boolean {
+      return /^#[0-9A-Fa-f]{6}$/.test(color);
+    }
+
+    if (primaryColor && !isValidHexColor(primaryColor)) {
+      return NextResponse.json(
+        { error: 'Invalid primary color format. Use #RRGGBB (e.g., #FF5733).' },
+        { status: 400 }
+      );
+    }
+
+    if (secondaryColor && !isValidHexColor(secondaryColor)) {
+      return NextResponse.json(
+        { error: 'Invalid secondary color format. Use #RRGGBB (e.g., #00FF00).' },
+        { status: 400 }
+      );
+    }
+
     // Note: To prevent runtime crashes on Windows due to the Prisma client lock,
     // we are currently only persisting core fields. Branding tokens and assets
     // will be fully functional once the server is restarted and the client 
@@ -90,8 +109,9 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    console.error('[Error] Failed to create channel:', error);
     return NextResponse.json(
-      { error: error.message || 'Failed to create channel' },
+      { error: 'Failed to create channel' },
       { status: 500 }
     );
   }
