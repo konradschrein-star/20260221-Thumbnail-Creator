@@ -11,6 +11,7 @@ import GenerateForm from './components/generate/GenerateForm';
 import JobHistoryTable from './components/jobs/JobHistoryTable';
 import TranslatePage from './translate/page';
 import APIDocsPage from './api-docs/page';
+import HelpPage from './components/help/HelpPage';
 
 function DashboardContent() {
   const searchParams = useSearchParams();
@@ -96,6 +97,9 @@ function DashboardContent() {
           </div>
           <div className={`tab-pane ${activeTab === 'api-docs' ? 'active' : ''}`}>
             <APIDocsPage />
+          </div>
+          <div className={`tab-pane ${activeTab === 'help' ? 'active' : ''}`}>
+            <HelpPage />
           </div>
         </div>
       </div>
