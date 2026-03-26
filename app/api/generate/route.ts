@@ -3,9 +3,9 @@ import { prisma } from '@/lib/prisma';
 import * as payloadEngine from '@/lib/payload-engine';
 import * as generationService from '@/lib/generation-service';
 import * as r2Service from '@/lib/r2-service';
-import { checkManualRateLimit } from '@/lib/rate-limit';
 import { getApiAuth } from '@/lib/api-auth';
 import { EMERGENCY_CHANNELS, EMERGENCY_ARCHETYPES } from '@/lib/emergency-data';
+import * as CreditService from '@/lib/credit-service';
 
 export async function POST(request: NextRequest) {
   const authResult = await getApiAuth(request);
@@ -19,12 +19,6 @@ export async function POST(request: NextRequest) {
   const userRole = authResult.user.role || 'USER';
   const isSuperuser = authResult.user.isSuperuser || false;
   const isTestUser = authResult.user.isTestUser || false;
-
-  // Enforce manual generation limit (10/day for USER role, shared for Test User)
-  const rateLimitResponse = await checkManualRateLimit(userId, userRole, isSuperuser);
-  if (rateLimitResponse) {
-    return rateLimitResponse;
-  }
 
   try {
     const body = await request.json();
@@ -57,6 +51,33 @@ export async function POST(request: NextRequest) {
     const rawCount = parseInt(String(versionCount), 10);
     const count = Math.min(Math.max(isNaN(rawCount) ? 1 : rawCount, 1), 4);
     const results = [];
+
+    // Credit system: Non-admins must have sufficient credits
+    let creditsRemaining: number | null = null;
+    let shouldDeductCredits = userRole !== 'ADMIN';
+
+    if (shouldDeductCredits) {
+      try {
+        const userCredits = await CreditService.getUserCredits(userId);
+        if (userCredits < count) {
+          return NextResponse.json(
+            {
+              error: 'Insufficient credits',
+              creditsRequired: count,
+              creditsAvailable: userCredits,
+              message: 'You need more credits to generate thumbnails. Please contact an admin to purchase credits.'
+            },
+            { status: 402 }
+          );
+        }
+      } catch (error) {
+        console.error('Credit check failed:', error);
+        return NextResponse.json(
+          { error: 'Failed to check credit balance' },
+          { status: 500 }
+        );
+      }
+    }
 
     // Fetch channel and archetype
     let channel, archetype;
@@ -92,6 +113,47 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized archetype usage. This style is restricted to administrators.' }, { status: 403 });
     }
 
+    // Deduct credits upfront for non-admins (atomic operation)
+    let creditsDeducted = 0;
+    const jobIds: string[] = [];
+
+    if (shouldDeductCredits) {
+      try {
+        // Deduct credits BEFORE generating
+        const balanceBefore = await CreditService.getUserCredits(userId);
+        await prisma.$transaction(async (tx) => {
+          await tx.user.update({
+            where: { id: userId },
+            data: {
+              credits: { decrement: count },
+              totalCreditsConsumed: { increment: count }
+            }
+          });
+
+          // Log transaction
+          await tx.creditTransaction.create({
+            data: {
+              userId,
+              transactionType: 'deduct',
+              amount: -count,
+              balanceBefore,
+              balanceAfter: balanceBefore - count,
+              reason: `Deducted ${count} credits for ${count} thumbnail generation(s): ${videoTopic}`
+            }
+          });
+        });
+
+        creditsDeducted = count;
+        creditsRemaining = balanceBefore - count;
+      } catch (error) {
+        console.error('Credit deduction failed:', error);
+        return NextResponse.json(
+          { error: 'Failed to deduct credits' },
+          { status: 500 }
+        );
+      }
+    }
+
     // Build base payload using the engine's data-driven approach
     // If the user modified the draft in the UI, we just use that directly!
     const fullUserPrompt = customPrompt || payloadEngine.buildFullPrompt(channel as any, archetype as any, { videoTopic, thumbnailText }, includeBrandColors, includePersona);
@@ -107,6 +169,10 @@ export async function POST(request: NextRequest) {
       },
     };
 
+    // Track successful and failed generations for refund calculation
+    let successfulGenerations = 0;
+    let failedGenerations = 0;
+
     for (let i = 0; i < count; i++) {
       // Create initial job record
       let job;
@@ -120,10 +186,12 @@ export async function POST(request: NextRequest) {
             videoTopic,
             thumbnailText,
             customPrompt,
-            isManual: true, // Manual UI route
-            status: 'processing'
+            isManual: true,
+            status: 'processing',
+            creditsDeducted: shouldDeductCredits ? 1 : null // Track credit usage per job
           },
         } as any);
+        jobIds.push(job.id);
       } catch (dbError) {
         console.error('DB job creation failed, using mock ID:', dbError);
         job = { id: mockId, status: 'processing' };
@@ -168,12 +236,16 @@ export async function POST(request: NextRequest) {
 
         if (updatedJob) {
           results.push({ ...updatedJob, fallbackUsed, fallbackMessage });
+          successfulGenerations++;
         } else {
           // Fallback: return job data even though DB update failed
           results.push({ ...job, status: 'completed', outputUrl, fallbackUsed, fallbackMessage });
+          successfulGenerations++;
         }
       } catch (error: any) {
         console.error(`Version ${i} failed:`, error);
+        failedGenerations++;
+
         try {
           await prisma.generationJob.update({
             where: { id: job.id },
@@ -188,13 +260,41 @@ export async function POST(request: NextRequest) {
       }
     }
 
-    return NextResponse.json({
+    // NO REFUNDS - Credits deducted regardless of success/failure
+    // This prevents exploitation and keeps the system simple
+    // Failed generations are logged but credits are not refunded
+
+    const response: any = {
       success: true,
       jobs: results,
       job: results[0],
-    });
+    };
+
+    // Include credit info for non-admins
+    if (shouldDeductCredits) {
+      response.creditsRemaining = creditsRemaining;
+      response.creditsDeducted = creditsDeducted; // Full amount deducted, no refunds
+    }
+
+    return NextResponse.json(response);
   } catch (error: any) {
     console.error('Generation Error (Top Level):', error);
+
+    // NO REFUNDS - Credits are deducted regardless of outcome
+    // Log the error but don't refund to prevent exploitation
+
+    // Handle insufficient credits error with custom response
+    if (error instanceof CreditService.InsufficientCreditsError) {
+      return NextResponse.json(
+        {
+          error: 'Insufficient credits',
+          creditsRequired: error.required,
+          creditsAvailable: error.available,
+          message: 'You need more credits to generate thumbnails. Please contact an admin to purchase credits.'
+        },
+        { status: 402 }
+      );
+    }
 
     // Ensure we do not leak full stack traces in the 500 response
     const errorMessage = error instanceof Error

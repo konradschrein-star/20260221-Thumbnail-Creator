@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
-import bcrypt from 'bcryptjs';
+import { hashPassword, validatePasswordStrength } from '@/lib/password-service';
 
 const prisma = new PrismaClient();
 
@@ -27,9 +27,11 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (password.length < 8) {
+    // Validate password strength
+    const passwordValidation = validatePasswordStrength(password);
+    if (!passwordValidation.valid) {
       return NextResponse.json(
-        { error: 'Password must be at least 8 characters long' },
+        { error: passwordValidation.message },
         { status: 400 }
       );
     }
@@ -46,20 +48,27 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Hash password
-    const hashedPassword = await bcrypt.hash(password, 10);
+    // Hash password with Argon2id
+    const hashedPassword = await hashPassword(password);
 
-    // Create user
+    // Get default credits from environment
+    const defaultCredits = parseInt(process.env.DEFAULT_USER_CREDITS || '0', 10);
+
+    // Create user with Argon2id hash and default credits
     const user = await prisma.user.create({
       data: {
         email,
         password: hashedPassword,
         name: name || null,
+        passwordHashAlgorithm: 'argon2id',
+        credits: defaultCredits,
+        totalCreditsGranted: defaultCredits,
       },
       select: {
         id: true,
         email: true,
         name: true,
+        credits: true,
         createdAt: true,
       },
     });

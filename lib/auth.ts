@@ -1,7 +1,7 @@
 import NextAuth, { User, Session } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
-import bcrypt from 'bcryptjs';
 import { prisma } from '@/lib/prisma';
+import { verifyPassword, upgradePasswordHash, hashPassword } from '@/lib/password-service';
 
 export const { handlers, signIn, signOut, auth } = NextAuth({
   providers: [
@@ -27,13 +27,14 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
           try {
             const demoUser = await prisma.user.findUnique({ where: { email: 'test@test.ai' } });
             if (!demoUser) {
-              const hashedPassword = await bcrypt.hash('test', 10);
+              const hashedPassword = await hashPassword('test');
               await prisma.user.create({
                 data: {
                   email: 'test@test.ai',
                   password: hashedPassword,
                   name: 'Demo Architect',
-                  role: 'USER', // Kept as standard USER so the 10/day rate limit applies
+                  role: 'USER',
+                  passwordHashAlgorithm: 'argon2id', // Use Argon2id for new demo account
                 }
               });
               console.log('Demo user test@test.ai auto-created for the database.');
@@ -48,20 +49,45 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         try {
           const user = await prisma.user.findUnique({
             where: { email: normalizedEmail },
+            select: {
+              id: true,
+              email: true,
+              password: true,
+              name: true,
+              role: true,
+              passwordHashAlgorithm: true,
+              credits: true,
+            },
           });
 
           if (!user || !user.password) {
             return null;
           }
 
-          const isValid = await bcrypt.compare(inputPassword, user.password);
-          if (!isValid) return null;
+          // Verify password with algorithm-aware verification
+          const algorithm = (user.passwordHashAlgorithm || 'bcrypt') as 'bcrypt' | 'argon2id';
+          const { valid, needsUpgrade } = await verifyPassword(
+            inputPassword,
+            user.password,
+            algorithm
+          );
+
+          if (!valid) return null;
+
+          // Transparent password upgrade (non-blocking)
+          if (needsUpgrade) {
+            upgradePasswordHash(user.id, inputPassword).catch((error) => {
+              console.error('Failed to upgrade password hash:', error);
+              // Don't block login if upgrade fails
+            });
+          }
 
           return {
             id: user.id,
             email: user.email,
             name: user.name,
-            role: (user as any).role,
+            role: user.role,
+            credits: user.credits,
           } as any;
         } catch (dbError) {
           console.error("Database connection failure during authorization:", dbError);
@@ -77,6 +103,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         token.role = (user as any).role;
         token.isSuperuser = (user as any).isSuperuser;
         token.isTestUser = (user as any).isTestUser;
+        token.credits = (user as any).credits;
       }
       return token;
     },
@@ -86,6 +113,7 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
         (session.user as any).role = token.role as string;
         (session.user as any).isSuperuser = !!token.isSuperuser;
         (session.user as any).isTestUser = !!token.isTestUser;
+        (session.user as any).credits = token.credits as number;
       }
       return session;
     },

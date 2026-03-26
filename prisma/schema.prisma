@@ -9,17 +9,27 @@ datasource db {
 }
 
 model User {
-  id             String          @id @default(cuid())
-  email          String          @unique
-  password       String
-  name           String?
-  createdAt      DateTime        @default(now())
-  updatedAt      DateTime        @updatedAt
-  role           String          @default("USER")
-  preferences    Json?           // Store custom languages and other user settings
-  channels       Channel[]       @relation("UserChannels")
-  archetypes     Archetype[]
-  generationJobs GenerationJob[]
+  id                    String               @id @default(cuid())
+  email                 String               @unique
+  password              String
+  name                  String?
+  createdAt             DateTime             @default(now())
+  updatedAt             DateTime             @updatedAt
+  role                  String               @default("USER")
+  preferences           Json?                // Store custom languages and other user settings
+
+  // Credit system
+  credits               Int                  @default(0)
+  totalCreditsGranted   Int                  @default(0) @map("total_credits_granted")
+  totalCreditsConsumed  Int                  @default(0) @map("total_credits_consumed")
+
+  // Password security
+  passwordHashAlgorithm String               @default("bcrypt") @map("password_hash_algorithm")
+
+  channels              Channel[]            @relation("UserChannels")
+  archetypes            Archetype[]
+  generationJobs        GenerationJob[]
+  creditTransactions    CreditTransaction[]
 
   @@map("users")
 }
@@ -78,25 +88,26 @@ model ChannelArchetype {
 }
 
 model GenerationJob {
-  id            String       @id @default(cuid())
-  channelId     String
-  archetypeId   String
-  userId        String?
-  videoTopic    String
-  thumbnailText String
-  customPrompt  String?
-  promptUsed    String?
-  outputUrl     String?
-  status        String       @default("pending")
-  errorMessage  String?
-  isManual      Boolean      @default(true)
-  metadata      Json?
-  createdAt     DateTime     @default(now())
-  completedAt   DateTime?
-  archetype     Archetype    @relation(fields: [archetypeId], references: [id], onDelete: Cascade)
-  channel       Channel      @relation(fields: [channelId], references: [id], onDelete: Cascade)
-  user          User?        @relation(fields: [userId], references: [id])
-  variants      VariantJob[]
+  id              String       @id @default(cuid())
+  channelId       String
+  archetypeId     String
+  userId          String?
+  videoTopic      String
+  thumbnailText   String
+  customPrompt    String?
+  promptUsed      String?
+  outputUrl       String?
+  status          String       @default("pending")
+  errorMessage    String?
+  isManual        Boolean      @default(true)
+  metadata        Json?
+  creditsDeducted Int?         @map("credits_deducted") // Credit tracking
+  createdAt       DateTime     @default(now())
+  completedAt     DateTime?
+  archetype       Archetype    @relation(fields: [archetypeId], references: [id], onDelete: Cascade)
+  channel         Channel      @relation(fields: [channelId], references: [id], onDelete: Cascade)
+  user            User?        @relation(fields: [userId], references: [id])
+  variants        VariantJob[]
 
   @@index([channelId])
   @@index([archetypeId])
@@ -123,6 +134,31 @@ model VariantJob {
 
   @@index([masterJobId])
   @@map("variant_jobs")
+}
+
+model CreditTransaction {
+  id              String   @id @default(cuid())
+  userId          String   @map("user_id")
+  transactionType String   @map("transaction_type") // "grant", "deduct", "refund"
+  amount          Int      // Negative for deductions
+  balanceBefore   Int      @map("balance_before")
+  balanceAfter    Int      @map("balance_after")
+  reason          String
+
+  // Optional references
+  relatedJobId    String?  @map("related_job_id")
+  relatedBatchId  String?  @map("related_batch_id")
+  adminUserId     String?  @map("admin_user_id")
+
+  metadata        Json?
+  createdAt       DateTime @default(now()) @map("created_at")
+
+  user            User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([createdAt])
+  @@index([transactionType])
+  @@map("credit_transactions")
 }
 
 model AccessRequest {
