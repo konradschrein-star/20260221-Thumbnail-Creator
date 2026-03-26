@@ -14,7 +14,8 @@
     "db:seed": "tsx prisma/seed.ts",
     "db:studio": "npx prisma studio",
     "db:backup": "tsx scripts/backup-database.ts",
-    "setup": "tsx scripts/setup-admin.ts"
+    "setup": "tsx scripts/setup-admin.ts",
+    "fix:channels": "tsx scripts/fix-channel-ownership.ts"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.999.0",
