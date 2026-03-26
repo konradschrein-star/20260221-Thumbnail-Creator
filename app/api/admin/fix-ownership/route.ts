@@ -11,6 +11,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { getApiAuth } from '@/lib/api-auth';
+import { getUserLimiter } from '@/lib/rate-limiter';
 
 export async function POST(request: NextRequest) {
   // Check authentication and admin role
@@ -20,6 +21,17 @@ export async function POST(request: NextRequest) {
     return NextResponse.json(
       { error: authResult.error || 'Unauthorized' },
       { status: authResult.status || 401 }
+    );
+  }
+
+  // Rate limiting: 10 admin requests per minute per admin user
+  const limiter = getUserLimiter(`admin:${authResult.user.id}`, 10, 'minute');
+  const remainingTokens = await limiter.removeTokens(1);
+
+  if (remainingTokens < 0) {
+    return NextResponse.json(
+      { error: 'Rate limit exceeded. Maximum 10 admin requests per minute.' },
+      { status: 429, headers: { 'Retry-After': '60' } }
     );
   }
 
@@ -35,7 +47,15 @@ export async function POST(request: NextRequest) {
 
   try {
     const { targetAdminEmail } = await request.json();
-    const adminEmail = targetAdminEmail || 'konrad.schrein@gmail.com';
+    const adminEmail = targetAdminEmail || process.env.ADMIN_EMAIL;
+
+    // Validate admin email is configured
+    if (!adminEmail) {
+      return NextResponse.json(
+        { error: 'Admin email not configured in environment variables' },
+        { status: 500 }
+      );
+    }
 
     // Get admin user
     const adminUser = await prisma.user.findUnique({

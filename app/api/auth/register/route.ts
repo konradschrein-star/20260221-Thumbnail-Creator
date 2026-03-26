@@ -1,18 +1,51 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { PrismaClient } from '@prisma/client';
 import { hashPassword, validatePasswordStrength } from '@/lib/password-service';
+import { getUserLimiter } from '@/lib/rate-limiter';
 
 const prisma = new PrismaClient();
 
 // POST /api/auth/register - Register a new user
 export async function POST(request: NextRequest) {
   try {
+    // Rate limiting: 3 registrations per minute per IP
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+    const limiter = getUserLimiter(`register:${ip}`, 3, 'minute');
+    const remainingTokens = await limiter.removeTokens(1);
+
+    if (remainingTokens < 0) {
+      return NextResponse.json(
+        {
+          error: 'Too many registration attempts. Please try again in 1 minute.',
+          retryAfter: 60
+        },
+        {
+          status: 429,
+          headers: {
+            'Retry-After': '60',
+            'X-RateLimit-Limit': '3',
+            'X-RateLimit-Remaining': '0'
+          }
+        }
+      );
+    }
+
     const body = await request.json();
     const { email, password, name, secret } = body;
 
-    // Optional Registration Secret check for security
+    // MANDATORY Registration Secret check for security
     const requiredSecret = process.env.REGISTRATION_SECRET;
-    if (requiredSecret && secret !== requiredSecret) {
+
+    // Fail if no secret is configured (registration disabled)
+    if (!requiredSecret) {
+      return NextResponse.json(
+        { error: 'Registration is currently disabled. Please contact the administrator.' },
+        { status: 503 }
+      );
+    }
+
+    // Validate provided secret matches
+    if (secret !== requiredSecret) {
       return NextResponse.json(
         { error: 'Invalid registration secret. Direct registration is disabled.' },
         { status: 403 }

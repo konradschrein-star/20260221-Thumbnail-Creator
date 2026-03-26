@@ -12,6 +12,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
 import { getApiAuth } from '@/lib/api-auth';
+import { getUserLimiter } from '@/lib/rate-limiter';
 
 export async function GET(request: NextRequest) {
   // Check authentication and admin role
@@ -21,6 +22,25 @@ export async function GET(request: NextRequest) {
     return NextResponse.json(
       { error: authResult.error || 'Unauthorized' },
       { status: authResult.status || 401 }
+    );
+  }
+
+  // Rate limiting: 10 admin requests per minute per admin user
+  const limiter = getUserLimiter(`admin:${authResult.user.id}`, 10, 'minute');
+  const remainingTokens = await limiter.removeTokens(1);
+
+  if (remainingTokens < 0) {
+    return NextResponse.json(
+      {
+        error: 'Rate limit exceeded. Maximum 10 admin requests per minute.',
+        retryAfter: 60
+      },
+      {
+        status: 429,
+        headers: {
+          'Retry-After': '60'
+        }
+      }
     );
   }
 

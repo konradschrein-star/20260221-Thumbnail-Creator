@@ -6,6 +6,8 @@ import * as r2Service from '@/lib/r2-service';
 import { getApiAuth } from '@/lib/api-auth';
 import { EMERGENCY_CHANNELS, EMERGENCY_ARCHETYPES } from '@/lib/emergency-data';
 import * as CreditService from '@/lib/credit-service';
+import { getRotatedApiKey } from '@/lib/api-keys';
+import { getUserLimiter } from '@/lib/rate-limiter';
 
 export async function POST(request: NextRequest) {
   const authResult = await getApiAuth(request);
@@ -15,6 +17,28 @@ export async function POST(request: NextRequest) {
   }
 
   const userId = authResult.user.id;
+
+  // Rate limiting: 5 generations per minute per user
+  const limiter = getUserLimiter(userId, 5, 'minute');
+  const remainingTokens = await limiter.removeTokens(1);
+
+  if (remainingTokens < 0) {
+    return NextResponse.json(
+      {
+        error: 'Rate limit exceeded. Maximum 5 generations per minute.',
+        retryAfter: 60
+      },
+      {
+        status: 429,
+        headers: {
+          'Retry-After': '60',
+          'X-RateLimit-Limit': '5',
+          'X-RateLimit-Remaining': '0',
+          'X-RateLimit-Reset': String(Math.floor(Date.now() / 1000) + 60)
+        }
+      }
+    );
+  }
   const userEmail = authResult.user.email || 'test@titan.ai';
   const userRole = authResult.user.role || 'USER';
   const isSuperuser = authResult.user.isSuperuser || false;
@@ -44,6 +68,14 @@ export async function POST(request: NextRequest) {
     if (videoTopic.length > 200 || thumbnailText.length > 100) {
       return NextResponse.json(
         { error: 'Input text too long. Max 200 for topic, 100 for thumbnail text.' },
+        { status: 400 }
+      );
+    }
+
+    // Validate customPrompt length to prevent DoS attacks
+    if (customPrompt && customPrompt.length > 5000) {
+      return NextResponse.json(
+        { error: 'Custom prompt too long. Maximum 5000 characters allowed.' },
         { status: 400 }
       );
     }
@@ -111,12 +143,10 @@ export async function POST(request: NextRequest) {
     if (userRole !== 'ADMIN') {
       // Check channel ownership
       if (channel.userId !== userId) {
+        // Log security event server-side (don't expose details to client)
+        console.error(`[Security] Unauthorized channel access attempt - User: ${userId}, Channel: ${channelId} (${channel.name}), Owner: ${channel.userId}`);
         return NextResponse.json(
-          {
-            error: 'Forbidden: You do not own this channel',
-            channelId,
-            channelName: channel.name
-          },
+          { error: 'Forbidden: Access denied' },
           { status: 403 }
         );
       }
@@ -128,12 +158,10 @@ export async function POST(request: NextRequest) {
       });
 
       if (archetype.userId !== userId && archetype.userId !== testUser?.id) {
+        // Log security event server-side (don't expose details to client)
+        console.error(`[Security] Unauthorized archetype access attempt - User: ${userId}, Archetype: ${archetypeId} (${archetype.name}), Owner: ${archetype.userId}`);
         return NextResponse.json(
-          {
-            error: 'Forbidden: You do not own this archetype',
-            archetypeId,
-            archetypeName: archetype.name
-          },
+          { error: 'Forbidden: Access denied' },
           { status: 403 }
         );
       }
@@ -145,40 +173,37 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized archetype usage. This style is restricted to administrators.' }, { status: 403 });
     }
 
-    // Deduct credits upfront for non-admins (atomic operation)
+    // Deduct credits upfront for non-admins using atomic service
     let creditsDeducted = 0;
     const jobIds: string[] = [];
 
     if (shouldDeductCredits) {
       try {
-        // Deduct credits BEFORE generating
-        const balanceBefore = await CreditService.getUserCredits(userId);
-        await prisma.$transaction(async (tx) => {
-          await tx.user.update({
-            where: { id: userId },
-            data: {
-              credits: { decrement: count },
-              totalCreditsConsumed: { increment: count }
-            }
-          });
-
-          // Log transaction
-          await tx.creditTransaction.create({
-            data: {
-              userId,
-              transactionType: 'deduct',
-              amount: -count,
-              balanceBefore,
-              balanceAfter: balanceBefore - count,
-              reason: `Deducted ${count} credits for ${count} thumbnail generation(s): ${videoTopic}`
-            }
-          });
-        });
+        // Use atomic credit deduction to prevent race conditions
+        creditsRemaining = await CreditService.deductCreditsForJob(
+          userId,
+          count,
+          `Deducted ${count} credits for ${count} thumbnail generation(s): ${videoTopic}`,
+          null // relatedJobId will be set when jobs are created
+        );
 
         creditsDeducted = count;
-        creditsRemaining = balanceBefore - count;
       } catch (error) {
         console.error('Credit deduction failed:', error);
+
+        // Handle insufficient credits error specifically
+        if (error instanceof CreditService.InsufficientCreditsError) {
+          return NextResponse.json(
+            {
+              error: 'Insufficient credits',
+              creditsRequired: count,
+              creditsAvailable: error.available,
+              message: 'You need more credits to generate thumbnails. Please contact an admin to purchase credits.'
+            },
+            { status: 402 }
+          );
+        }
+
         return NextResponse.json(
           { error: 'Failed to deduct credits' },
           { status: 500 }
@@ -206,9 +231,8 @@ export async function POST(request: NextRequest) {
     let failedGenerations = 0;
 
     for (let i = 0; i < count; i++) {
-      // Create initial job record
+      // Create initial job record - fail fast if database is unavailable
       let job;
-      const mockId = `mock_${Date.now()}_${i}`;
       try {
         job = await prisma.generationJob.create({
           data: {
@@ -225,12 +249,23 @@ export async function POST(request: NextRequest) {
         } as any);
         jobIds.push(job.id);
       } catch (dbError) {
-        console.error('DB job creation failed, using mock ID:', dbError);
-        job = { id: mockId, status: 'processing' };
+        console.error('Database error: Failed to create job record:', dbError);
+
+        // Fail fast - do not proceed with generation if we can't track it
+        // This prevents orphaned images and ensures data consistency
+        return NextResponse.json(
+          {
+            error: 'Database unavailable. Please try again in a moment.',
+            technicalDetails: 'Failed to create job record'
+          },
+          { status: 503 }
+        );
       }
 
       try {
-        const { buffer: imageBuffer, fallbackUsed, fallbackMessage } = await generationService.callNanoBanana(payload, process.env.GOOGLE_API_KEY!);
+        // Use rotated API key for load distribution
+        const apiKey = getRotatedApiKey();
+        const { buffer: imageBuffer, fallbackUsed, fallbackMessage } = await generationService.callNanoBanana(payload, apiKey);
 
         // Upload to R2 (Mandatory for Vercel)
         const filename = `gen_${job.id}.png`;

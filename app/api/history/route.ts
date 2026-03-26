@@ -9,43 +9,45 @@ export async function GET(request: NextRequest) {
             return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
         }
 
-        // 1. Fetch last 30 manual jobs
-        const masterJobs = await prisma.generationJob.findMany({
-            where: {
-                userId: session.user.id,
-                isManual: true,
-            },
-            orderBy: {
-                createdAt: 'desc',
-            },
-            take: 30,
-            include: {
-                channel: true,
-                archetype: true,
-            },
-        });
-
-        // 2. Fetch last 30 variant jobs for this user
-        // We filter by user indirectly or by masterJob relation
-        const variantJobs = await prisma.variantJob.findMany({
-            where: {
-                masterJob: {
-                    userId: session.user.id
-                }
-            },
-            orderBy: {
-                createdAt: 'desc',
-            },
-            take: 30,
-            include: {
-                masterJob: {
-                    include: {
-                        channel: true,
-                        archetype: true
+        // Fetch both master jobs and variant jobs in parallel for better performance
+        // Take 50 of each to ensure we have enough records after combining and sorting
+        const [masterJobs, variantJobs] = await Promise.all([
+            // 1. Fetch manual generation jobs
+            prisma.generationJob.findMany({
+                where: {
+                    userId: session.user.id,
+                    isManual: true,
+                },
+                orderBy: {
+                    createdAt: 'desc',
+                },
+                take: 50,
+                include: {
+                    channel: true,
+                    archetype: true,
+                },
+            }),
+            // 2. Fetch variant jobs for this user's master jobs
+            prisma.variantJob.findMany({
+                where: {
+                    masterJob: {
+                        userId: session.user.id
+                    }
+                },
+                orderBy: {
+                    createdAt: 'desc',
+                },
+                take: 50,
+                include: {
+                    masterJob: {
+                        include: {
+                            channel: true,
+                            archetype: true
+                        }
                     }
                 }
-            }
-        });
+            })
+        ]);
 
         // 3. Map variants to a standardized format that matches HistoryJob
         const currentUserId = session.user.id;
