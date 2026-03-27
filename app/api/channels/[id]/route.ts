@@ -82,6 +82,45 @@ export async function PATCH(
       );
     }
 
+    // Input validation and sanitization
+    if (name !== undefined) {
+      if (typeof name !== 'string') {
+        return NextResponse.json(
+          { error: 'Invalid name type' },
+          { status: 400 }
+        );
+      }
+      if (name.trim().length > 200) {
+        return NextResponse.json(
+          { error: 'Channel name too long (max 200 characters)' },
+          { status: 400 }
+        );
+      }
+    }
+
+    if (personaDescription !== undefined) {
+      if (typeof personaDescription !== 'string') {
+        return NextResponse.json(
+          { error: 'Invalid persona description type' },
+          { status: 400 }
+        );
+      }
+      if (personaDescription.trim().length > 10000) {
+        return NextResponse.json(
+          { error: 'Persona description too long (max 10,000 characters)' },
+          { status: 400 }
+        );
+      }
+      // Minimum 20 words validation
+      const wordCount = personaDescription.trim().split(/\s+/).filter(Boolean).length;
+      if (wordCount < 20) {
+        return NextResponse.json(
+          { error: `Persona description must be at least 20 words (currently ${wordCount} words)` },
+          { status: 400 }
+        );
+      }
+    }
+
     // Build update data object with only provided fields
     const updateData: any = {};
     if (name !== undefined) updateData.name = name;

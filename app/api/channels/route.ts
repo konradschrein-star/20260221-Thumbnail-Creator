@@ -61,6 +61,38 @@ export async function POST(request: NextRequest) {
       );
     }
 
+    // Input validation and sanitization
+    if (typeof name !== 'string' || typeof personaDescription !== 'string') {
+      return NextResponse.json(
+        { error: 'Invalid input types' },
+        { status: 400 }
+      );
+    }
+
+    // Length limits to prevent abuse
+    if (name.trim().length > 200) {
+      return NextResponse.json(
+        { error: 'Channel name too long (max 200 characters)' },
+        { status: 400 }
+      );
+    }
+
+    if (personaDescription.trim().length > 10000) {
+      return NextResponse.json(
+        { error: 'Persona description too long (max 10,000 characters)' },
+        { status: 400 }
+      );
+    }
+
+    // Basic word count validation (minimum 20 words)
+    const wordCount = personaDescription.trim().split(/\s+/).filter(Boolean).length;
+    if (wordCount < 20) {
+      return NextResponse.json(
+        { error: `Persona description must be at least 20 words (currently ${wordCount} words)` },
+        { status: 400 }
+      );
+    }
+
     // Validate hex color format
     function isValidHexColor(color: string): boolean {
       return /^#[0-9A-Fa-f]{6}$/.test(color);

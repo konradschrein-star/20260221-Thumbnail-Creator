@@ -48,8 +48,12 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
 
     if (!personaDescription.trim()) {
       newErrors.personaDescription = 'Persona description is required';
-    } else if (personaDescription.trim().length < 1000) {
-      newErrors.personaDescription = 'Persona description must be at least 200 words (~1000 characters) with 15+ specific physical attributes for consistent character generation';
+    } else {
+      // Count words (split by whitespace and filter empty strings)
+      const wordCount = personaDescription.trim().split(/\s+/).filter(Boolean).length;
+      if (wordCount < 20) {
+        newErrors.personaDescription = `Persona description must be at least 20 words (currently ${wordCount} words)`;
+      }
     }
 
     setErrors(newErrors);
@@ -95,13 +99,12 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
         label="Persona Description"
         value={personaDescription}
         onChange={setPersonaDescription}
-        placeholder="Detailed character description (minimum 50 characters, recommended 200+ words)"
+        placeholder="Describe your character (minimum 20 words). For best results, include detailed physical attributes like age, hair style/color, facial features, build, clothing, and expression."
         multiline
         rows={8}
         required
         error={errors.personaDescription}
         disabled={isSubmitting}
-        minLength={50}
       />
 
       <div className="branding-section">
@@ -137,8 +140,16 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
 
       <div className="tip-box">
         <div className="tip-icon"><Lightbulb size={16} /></div>
-        <p><strong>Pro Tip:</strong> For consistent character generation, include 15+ specific attributes:
-          age, hair (style & color), eyes, facial structure, build, clothing, complexion, and lighting.</p>
+        <div>
+          <p><strong>💡 Character Consistency Tip:</strong></p>
+          <p>The more detailed your persona description, the more consistent your character will appear across thumbnails.
+          Aim for 100-200+ words with specific details like: age, hair (length, color, style), eye color, facial structure
+          (jawline, cheekbones, nose shape), build, typical clothing, skin tone, facial hair, expression, and preferred lighting.</p>
+          <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.8;">
+            <strong>Note:</strong> While only 20 words are required, detailed descriptions (50+ words) produce significantly
+            better and more consistent character generation results.
+          </p>
+        </div>
       </div>
 
       {submitError && (
