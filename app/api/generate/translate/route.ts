@@ -301,7 +301,20 @@ async function handleMasterJobTranslation(
   ).length;
   const failedCount = results.length - successCount;
 
+  // Check if ALL jobs failed due to insufficient credits
+  const allFailedDueToCredits = results.every(
+    r => r.status === 'fulfilled' && r.value.error === 'Insufficient credits'
+  );
+
   console.log(`\n✅ Translation complete: ${successCount} succeeded, ${failedCount} failed`);
+
+  // If all failed due to credits, return 402 Payment Required
+  if (successCount === 0 && allFailedDueToCredits) {
+    return NextResponse.json(
+      { error: 'Insufficient credits to generate translations' },
+      { status: 402 }
+    );
+  }
 
   return NextResponse.json({
     success: true,
@@ -515,7 +528,20 @@ If there is NO text in the original image, recreate it exactly without adding an
   ).length;
   const failedCount = allResults.length - successCount;
 
+  // Check if ALL jobs failed due to insufficient credits
+  const allFailedDueToCredits = allResults.every(
+    r => r.status === 'fulfilled' && r.value.error === 'Insufficient credits'
+  );
+
   console.log(`\n✅ Upload translation complete: ${successCount} succeeded, ${failedCount} failed`);
+
+  // If all failed due to credits, return 402 Payment Required
+  if (successCount === 0 && allFailedDueToCredits) {
+    return NextResponse.json(
+      { error: 'Insufficient credits to generate translations' },
+      { status: 402 }
+    );
+  }
 
   return NextResponse.json({
     success: true,

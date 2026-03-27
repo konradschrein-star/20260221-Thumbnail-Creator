@@ -85,7 +85,15 @@ export default function TranslatePage() {
         throw new Error(data.error || 'Translation failed');
       }
 
+      // Check for partial failures
+      const hasFailures = data.message?.includes('failed') || data.totalFailed > 0;
       setResultMessage(data.message || 'Translation completed successfully');
+
+      // Show warning if some failed
+      if (hasFailures) {
+        setError(`Warning: ${data.message}`);
+      }
+
       setSuccess(true);
     } catch (err: any) {
       setError(err.message || 'Translation request failed');
