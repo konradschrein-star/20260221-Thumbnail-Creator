@@ -13,8 +13,10 @@ import {
   Languages,
   BookOpen,
   Shield,
-  HelpCircle
+  HelpCircle,
+  Coins
 } from 'lucide-react';
+import { useCredits } from '../../context/CreditsContext';
 
 export type TabType = 'channels' | 'archetypes' | 'generate' | 'history' | 'translate' | 'api-docs' | 'help';
 
@@ -37,6 +39,7 @@ const navItems: { id: TabType; label: string; icon: React.ReactNode }[] = [
 export default function Sidebar({ activeTab, onTabChange, userRole }: SidebarProps) {
   const router = useRouter();
   const isAdmin = userRole === 'ADMIN';
+  const { credits, loading } = useCredits();
 
   return (
     <aside className="sidebar">
@@ -50,6 +53,15 @@ export default function Sidebar({ activeTab, onTabChange, userRole }: SidebarPro
             <span className="logo-subtext">Thumbnail Studio</span>
           </div>
         </div>
+
+        {/* Credits Badge in Sidebar */}
+        {!loading && credits !== null && (
+          <div className="sidebar-credits-badge">
+            <Coins size={14} className="credit-icon-sidebar" />
+            <span className="credit-amount">{credits.toLocaleString()}</span>
+            <span className="credit-label">Credits</span>
+          </div>
+        )}
       </div>
 
       <nav className="sidebar-nav">
@@ -116,6 +128,41 @@ export default function Sidebar({ activeTab, onTabChange, userRole }: SidebarPro
 
         .sidebar-header {
           padding: 2.5rem 1.5rem;
+          display: flex;
+          flex-direction: column;
+          gap: 1rem;
+        }
+
+        .sidebar-credits-badge {
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+          padding: 0.75rem 1rem;
+          background: linear-gradient(135deg, rgba(250, 204, 21, 0.15) 0%, rgba(250, 204, 21, 0.05) 100%);
+          border: 1px solid rgba(250, 204, 21, 0.2);
+          border-radius: 12px;
+          margin-top: 0.5rem;
+        }
+
+        .credit-icon-sidebar {
+          color: #facc15;
+          flex-shrink: 0;
+        }
+
+        .credit-amount {
+          font-size: 1.125rem;
+          font-weight: 800;
+          color: #fef3c7;
+          letter-spacing: -0.02em;
+        }
+
+        .credit-label {
+          font-size: 0.625rem;
+          color: #a16207;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-left: auto;
         }
 
         .logo-container {

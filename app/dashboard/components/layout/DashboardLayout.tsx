@@ -4,43 +4,23 @@ import React, { useState, useEffect } from 'react';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { useSession } from 'next-auth/react';
 import Sidebar, { type TabType } from './Sidebar';
+import { CreditsProvider, useCredits } from '../../context/CreditsContext';
 
 interface DashboardLayoutProps {
   children: React.ReactNode;
 }
 
-export default function DashboardLayout({ children }: DashboardLayoutProps) {
+function DashboardLayoutInner({ children }: DashboardLayoutProps) {
   const { data: session } = useSession();
   const searchParams = useSearchParams();
   const router = useRouter();
   const [activeTab, setActiveTab] = useState<TabType>('channels');
-  const [credits, setCredits] = useState<number | null>(null);
+  const { credits } = useCredits();
 
   useEffect(() => {
     const tab = (searchParams.get('tab') as TabType) || 'channels';
     setActiveTab(tab);
   }, [searchParams]);
-
-  // Fetch credits on mount and refresh every 30 seconds
-  useEffect(() => {
-    async function fetchCredits() {
-      try {
-        const response = await fetch('/api/user/credits');
-        if (response.ok) {
-          const data = await response.json();
-          setCredits(data.credits);
-        }
-      } catch (err) {
-        console.error('Failed to fetch credits:', err);
-      }
-    }
-
-    fetchCredits();
-
-    // Refresh credits every 30 seconds
-    const interval = setInterval(fetchCredits, 30000);
-    return () => clearInterval(interval);
-  }, []);
 
   const handleTabChange = (tab: TabType) => {
     setActiveTab(tab);
@@ -287,5 +267,13 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
         }
       `}</style>
     </div>
+  );
+}
+
+export default function DashboardLayout({ children }: DashboardLayoutProps) {
+  return (
+    <CreditsProvider>
+      <DashboardLayoutInner>{children}</DashboardLayoutInner>
+    </CreditsProvider>
   );
 }
