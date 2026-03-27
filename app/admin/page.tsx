@@ -35,6 +35,14 @@ import {
   XCircle,
   Clock,
   Wrench,
+  UserPlus,
+  Edit3,
+  Trash2,
+  Key,
+  Save,
+  X as XIcon,
+  Minus,
+  Plus,
 } from 'lucide-react';
 
 type TabType = 'users' | 'channels' | 'jobs' | 'stats';
@@ -140,13 +148,30 @@ export default function EnhancedAdminPage() {
   const [jobStatusFilter, setJobStatusFilter] = useState<string>('all');
   const [jobUserFilter, setJobUserFilter] = useState<string>('all');
 
-  // Grant credits form state
+  // Grant/Deduct credits form state
   const [grantEmail, setGrantEmail] = useState('');
   const [grantAmount, setGrantAmount] = useState('');
   const [grantReason, setGrantReason] = useState('');
   const [grantLoading, setGrantLoading] = useState(false);
   const [grantSuccess, setGrantSuccess] = useState<string | null>(null);
   const [grantError, setGrantError] = useState<string | null>(null);
+
+  // Create user form state
+  const [createEmail, setCreateEmail] = useState('');
+  const [createName, setCreateName] = useState('');
+  const [createPassword, setCreatePassword] = useState('');
+  const [createRole, setCreateRole] = useState<'USER' | 'ADMIN'>('USER');
+  const [createCredits, setCreateCredits] = useState('0');
+  const [createLoading, setCreateLoading] = useState(false);
+  const [createSuccess, setCreateSuccess] = useState<string | null>(null);
+  const [createError, setCreateError] = useState<string | null>(null);
+
+  // Edit user state
+  const [editingUserId, setEditingUserId] = useState<string | null>(null);
+  const [editEmail, setEditEmail] = useState('');
+  const [editName, setEditName] = useState('');
+  const [editRole, setEditRole] = useState<'USER' | 'ADMIN'>('USER');
+  const [resetPassword, setResetPassword] = useState('');
 
   // Channel transfer state
   const [transferChannelId, setTransferChannelId] = useState('');
@@ -226,8 +251,8 @@ export default function EnhancedAdminPage() {
     try {
       const amount = parseInt(grantAmount, 10);
 
-      if (isNaN(amount) || amount <= 0) {
-        throw new Error('Amount must be a positive number');
+      if (isNaN(amount) || amount === 0) {
+        throw new Error('Amount must be a non-zero number');
       }
 
       const res = await fetch('/api/admin/credits/grant', {
@@ -243,10 +268,11 @@ export default function EnhancedAdminPage() {
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.error || 'Failed to grant credits');
+        throw new Error(data.error || 'Failed to modify credits');
       }
 
-      setGrantSuccess(`Successfully granted ${amount} credits to ${grantEmail}`);
+      const action = amount > 0 ? 'granted' : 'deducted';
+      setGrantSuccess(`Successfully ${action} ${Math.abs(amount)} credits ${amount > 0 ? 'to' : 'from'} ${grantEmail}`);
       setGrantEmail('');
       setGrantAmount('');
       setGrantReason('');
@@ -255,6 +281,129 @@ export default function EnhancedAdminPage() {
       setGrantError(err instanceof Error ? err.message : 'Unknown error');
     } finally {
       setGrantLoading(false);
+    }
+  };
+
+  const handleCreateUser = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setCreateLoading(true);
+    setCreateError(null);
+    setCreateSuccess(null);
+
+    try {
+      const credits = parseInt(createCredits, 10) || 0;
+
+      const res = await fetch('/api/admin/users', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email: createEmail,
+          name: createName || null,
+          password: createPassword || undefined,
+          role: createRole,
+          credits,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to create user');
+      }
+
+      setCreateSuccess(`User created! ${data.message}`);
+      setCreateEmail('');
+      setCreateName('');
+      setCreatePassword('');
+      setCreateRole('USER');
+      setCreateCredits('0');
+      loadData();
+    } catch (err) {
+      setCreateError(err instanceof Error ? err.message : 'Unknown error');
+    } finally {
+      setCreateLoading(false);
+    }
+  };
+
+  const handleEditUser = async (userId: string) => {
+    try {
+      const res = await fetch('/api/admin/users', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          email: editEmail,
+          name: editName,
+          role: editRole,
+          newPassword: resetPassword || undefined,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to update user');
+      }
+
+      if (data.newPassword) {
+        alert(`User updated! New password: ${data.newPassword}\n\nPlease save this password and share it with the user.`);
+      }
+
+      setEditingUserId(null);
+      setResetPassword('');
+      loadData();
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Failed to update user');
+    }
+  };
+
+  const handleDeleteUser = async (userId: string, userEmail: string) => {
+    if (!confirm(`Are you sure you want to delete user ${userEmail}? This action cannot be undone.`)) {
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/admin/users?userId=${userId}`, {
+        method: 'DELETE',
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to delete user');
+      }
+
+      loadData();
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Failed to delete user');
+    }
+  };
+
+  const handleResetPassword = async (userId: string, userEmail: string) => {
+    const newPassword = prompt(`Enter new password for ${userEmail} (leave empty to auto-generate):`);
+    if (newPassword === null) return; // User cancelled
+
+    const password = newPassword.trim() || Math.random().toString(36).slice(-12);
+
+    try {
+      const res = await fetch('/api/admin/users', {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          userId,
+          newPassword: password,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to reset password');
+      }
+
+      alert(`Password reset successfully!\n\nNew password: ${password}\n\nPlease save this and share it with the user.`);
+    } catch (err) {
+      alert(err instanceof Error ? err.message : 'Failed to reset password');
     }
   };
 
@@ -616,11 +765,101 @@ export default function EnhancedAdminPage() {
 
         {activeTab === 'users' && (
           <div className="space-y-6">
-            {/* Grant Credits Form */}
+            {/* Create User Form */}
+            <div className="bg-gradient-to-br from-blue-500/10 to-purple-500/10 border border-blue-500/30 rounded-lg p-6">
+              <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
+                <UserPlus className="w-6 h-6 text-blue-400" />
+                Create New User
+              </h2>
+
+              <form onSubmit={handleCreateUser} className="space-y-4">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+                  <div>
+                    <label className="block text-sm text-gray-400 mb-1">Email *</label>
+                    <input
+                      type="email"
+                      value={createEmail}
+                      onChange={(e) => setCreateEmail(e.target.value)}
+                      required
+                      className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="user@example.com"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm text-gray-400 mb-1">Name</label>
+                    <input
+                      type="text"
+                      value={createName}
+                      onChange={(e) => setCreateName(e.target.value)}
+                      className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="John Doe"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm text-gray-400 mb-1">Password (auto-gen if empty)</label>
+                    <input
+                      type="text"
+                      value={createPassword}
+                      onChange={(e) => setCreatePassword(e.target.value)}
+                      className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="Auto-generate"
+                    />
+                  </div>
+
+                  <div>
+                    <label className="block text-sm text-gray-400 mb-1">Role</label>
+                    <select
+                      value={createRole}
+                      onChange={(e) => setCreateRole(e.target.value as 'USER' | 'ADMIN')}
+                      className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                    >
+                      <option value="USER">USER</option>
+                      <option value="ADMIN">ADMIN</option>
+                    </select>
+                  </div>
+
+                  <div>
+                    <label className="block text-sm text-gray-400 mb-1">Initial Credits</label>
+                    <input
+                      type="number"
+                      value={createCredits}
+                      onChange={(e) => setCreateCredits(e.target.value)}
+                      min="0"
+                      className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors"
+                      placeholder="0"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={createLoading}
+                  className="px-6 py-2 bg-blue-600 hover:bg-blue-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg font-medium transition-colors flex items-center gap-2"
+                >
+                  <UserPlus className="w-4 h-4" />
+                  {createLoading ? 'Creating...' : 'Create User'}
+                </button>
+              </form>
+
+              {createSuccess && (
+                <div className="mt-4 p-4 bg-green-500/20 border border-green-500/30 rounded-lg text-green-400 whitespace-pre-wrap">
+                  {createSuccess}
+                </div>
+              )}
+              {createError && (
+                <div className="mt-4 p-4 bg-red-500/20 border border-red-500/30 rounded-lg text-red-400">
+                  {createError}
+                </div>
+              )}
+            </div>
+
+            {/* Grant/Deduct Credits Form */}
             <div className="bg-gray-800/50 border border-gray-700 rounded-lg p-6">
               <h2 className="text-xl font-bold mb-4 flex items-center gap-2">
                 <Gift className="w-6 h-6 text-purple-400" />
-                Grant Credits
+                Grant or Deduct Credits
               </h2>
 
               <form onSubmit={handleGrantCredits} className="space-y-4">
@@ -638,16 +877,18 @@ export default function EnhancedAdminPage() {
                   </div>
 
                   <div>
-                    <label className="block text-sm text-gray-400 mb-1">Amount</label>
+                    <label className="block text-sm text-gray-400 mb-1">
+                      Amount (positive to grant, negative to deduct)
+                    </label>
                     <input
                       type="number"
                       value={grantAmount}
                       onChange={(e) => setGrantAmount(e.target.value)}
                       required
-                      min="1"
+                      min="-10000"
                       max="10000"
                       className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
-                      placeholder="50"
+                      placeholder="50 or -20"
                     />
                   </div>
 
@@ -659,18 +900,37 @@ export default function EnhancedAdminPage() {
                       onChange={(e) => setGrantReason(e.target.value)}
                       required
                       className="w-full px-4 py-2 bg-gray-900/50 border border-gray-700 rounded-lg focus:outline-none focus:border-purple-500 transition-colors"
-                      placeholder="Welcome credits"
+                      placeholder="Welcome credits / Refund / etc."
                     />
                   </div>
                 </div>
 
-                <button
-                  type="submit"
-                  disabled={grantLoading}
-                  className="px-6 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg font-medium transition-colors"
-                >
-                  {grantLoading ? 'Granting...' : 'Grant Credits'}
-                </button>
+                <div className="flex gap-2">
+                  <button
+                    type="submit"
+                    disabled={grantLoading}
+                    className="px-6 py-2 bg-purple-600 hover:bg-purple-700 disabled:bg-gray-600 disabled:cursor-not-allowed rounded-lg font-medium transition-colors flex items-center gap-2"
+                  >
+                    <Coins className="w-4 h-4" />
+                    {grantLoading ? 'Processing...' : 'Modify Credits'}
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGrantAmount('100')}
+                    className="px-4 py-2 bg-green-600/20 hover:bg-green-600/30 border border-green-500/30 rounded-lg text-sm transition-colors flex items-center gap-1"
+                  >
+                    <Plus className="w-3 h-3" />
+                    +100
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setGrantAmount('-50')}
+                    className="px-4 py-2 bg-red-600/20 hover:bg-red-600/30 border border-red-500/30 rounded-lg text-sm transition-colors flex items-center gap-1"
+                  >
+                    <Minus className="w-3 h-3" />
+                    -50
+                  </button>
+                </div>
               </form>
 
               {grantSuccess && (
@@ -735,24 +995,61 @@ export default function EnhancedAdminPage() {
                     {users.map((user) => (
                       <React.Fragment key={user.id}>
                         <tr className="hover:bg-gray-900/30">
-                          <td className="px-6 py-4 whitespace-nowrap">
-                            <div>
-                              <div className="text-sm font-medium text-white">{user.email}</div>
-                              {user.name && (
-                                <div className="text-sm text-gray-400">{user.name}</div>
-                              )}
-                            </div>
+                          <td className="px-6 py-4">
+                            {editingUserId === user.id ? (
+                              <div className="space-y-2">
+                                <input
+                                  type="email"
+                                  value={editEmail}
+                                  onChange={(e) => setEditEmail(e.target.value)}
+                                  className="w-full px-3 py-1 bg-gray-900 border border-gray-700 rounded text-sm"
+                                  placeholder="Email"
+                                />
+                                <input
+                                  type="text"
+                                  value={editName}
+                                  onChange={(e) => setEditName(e.target.value)}
+                                  className="w-full px-3 py-1 bg-gray-900 border border-gray-700 rounded text-sm"
+                                  placeholder="Name"
+                                />
+                                <input
+                                  type="text"
+                                  value={resetPassword}
+                                  onChange={(e) => setResetPassword(e.target.value)}
+                                  className="w-full px-3 py-1 bg-gray-900 border border-yellow-700 rounded text-sm"
+                                  placeholder="New password (optional)"
+                                />
+                              </div>
+                            ) : (
+                              <div>
+                                <div className="text-sm font-medium text-white">{user.email}</div>
+                                {user.name && (
+                                  <div className="text-sm text-gray-400">{user.name}</div>
+                                )}
+                              </div>
+                            )}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap">
-                            <span
-                              className={`px-2 py-1 text-xs font-medium rounded ${
-                                user.role === 'ADMIN'
-                                  ? 'bg-purple-500/20 text-purple-400'
-                                  : 'bg-gray-500/20 text-gray-400'
-                              }`}
-                            >
-                              {user.role}
-                            </span>
+                            {editingUserId === user.id ? (
+                              <select
+                                value={editRole}
+                                onChange={(e) => setEditRole(e.target.value as 'USER' | 'ADMIN')}
+                                className="px-2 py-1 bg-gray-900 border border-gray-700 rounded text-sm"
+                              >
+                                <option value="USER">USER</option>
+                                <option value="ADMIN">ADMIN</option>
+                              </select>
+                            ) : (
+                              <span
+                                className={`px-2 py-1 text-xs font-medium rounded ${
+                                  user.role === 'ADMIN'
+                                    ? 'bg-purple-500/20 text-purple-400'
+                                    : 'bg-gray-500/20 text-gray-400'
+                                }`}
+                              >
+                                {user.role}
+                              </span>
+                            )}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm text-white font-medium">
                             {user.credits}
@@ -764,22 +1061,68 @@ export default function EnhancedAdminPage() {
                             {user.totalCreditsConsumed}
                           </td>
                           <td className="px-6 py-4 whitespace-nowrap text-sm">
-                            <button
-                              onClick={() => toggleUserExpand(user.id)}
-                              className="text-blue-400 hover:text-blue-300 flex items-center gap-1"
-                            >
-                              {expandedUsers.has(user.id) ? (
-                                <>
-                                  <ChevronUp className="w-4 h-4" />
-                                  Hide Transactions
-                                </>
-                              ) : (
-                                <>
-                                  <ChevronDown className="w-4 h-4" />
-                                  View Transactions
-                                </>
-                              )}
-                            </button>
+                            {editingUserId === user.id ? (
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={() => handleEditUser(user.id)}
+                                  className="text-green-400 hover:text-green-300 flex items-center gap-1"
+                                  title="Save changes"
+                                >
+                                  <Save className="w-4 h-4" />
+                                </button>
+                                <button
+                                  onClick={() => {
+                                    setEditingUserId(null);
+                                    setResetPassword('');
+                                  }}
+                                  className="text-gray-400 hover:text-gray-300 flex items-center gap-1"
+                                  title="Cancel"
+                                >
+                                  <XIcon className="w-4 h-4" />
+                                </button>
+                              </div>
+                            ) : (
+                              <div className="flex items-center gap-2">
+                                <button
+                                  onClick={() => {
+                                    setEditingUserId(user.id);
+                                    setEditEmail(user.email);
+                                    setEditName(user.name || '');
+                                    setEditRole(user.role as 'USER' | 'ADMIN');
+                                    setResetPassword('');
+                                  }}
+                                  className="text-blue-400 hover:text-blue-300"
+                                  title="Edit user"
+                                >
+                                  <Edit3 className="w-4 h-4" />
+                                </button>
+                                <button
+                                  onClick={() => handleResetPassword(user.id, user.email)}
+                                  className="text-yellow-400 hover:text-yellow-300"
+                                  title="Reset password"
+                                >
+                                  <Key className="w-4 h-4" />
+                                </button>
+                                <button
+                                  onClick={() => toggleUserExpand(user.id)}
+                                  className="text-purple-400 hover:text-purple-300"
+                                  title="View transactions"
+                                >
+                                  {expandedUsers.has(user.id) ? (
+                                    <ChevronUp className="w-4 h-4" />
+                                  ) : (
+                                    <ChevronDown className="w-4 h-4" />
+                                  )}
+                                </button>
+                                <button
+                                  onClick={() => handleDeleteUser(user.id, user.email)}
+                                  className="text-red-400 hover:text-red-300"
+                                  title="Delete user"
+                                >
+                                  <Trash2 className="w-4 h-4" />
+                                </button>
+                              </div>
+                            )}
                           </td>
                         </tr>
                         {expandedUsers.has(user.id) && (
