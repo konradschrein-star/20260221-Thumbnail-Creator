@@ -29,6 +29,31 @@ curl -X POST https://your-domain.com/api/generate \\
                     <p className="note"><b>Note:</b> Test accounts do not have API access. Only verified user and admin accounts can use the API.</p>
                 </section>
 
+                {/* Credit System */}
+                <section className="docs-section glass" style={{ background: 'rgba(250, 204, 21, 0.05)', border: '1px solid rgba(250, 204, 21, 0.2)' }}>
+                    <div className="section-header">
+                        <Code size={18} />
+                        <h3>Credit System & Pricing</h3>
+                    </div>
+                    <div className="pricing-info">
+                        <p><strong>Standard Pricing:</strong> 1 credit per thumbnail generation</p>
+                        <p><strong>Fallback Model Pricing:</strong> 3 credits per thumbnail when stable fallback is used</p>
+
+                        <div className="pricing-details" style={{ marginTop: '1rem', padding: '1rem', background: 'rgba(0,0,0,0.2)', borderRadius: '8px' }}>
+                            <h4 style={{ marginTop: 0 }}>How Fallback Pricing Works:</h4>
+                            <p>The system uses a fallback chain of AI models for reliability:</p>
+                            <ol style={{ marginLeft: '1.5rem', lineHeight: '1.8' }}>
+                                <li><strong>Nano Banana 2 (Primary):</strong> 1 credit - Fast and cost-effective</li>
+                                <li><strong>Nano Banana Pro (Fallback #1):</strong> 1 credit - Used if primary is unavailable</li>
+                                <li><strong>Nano Banana OG (Fallback #2):</strong> <span style={{ color: '#facc15', fontWeight: 'bold' }}>3 credits</span> - Stable but 3x more expensive due to API pricing</li>
+                            </ol>
+                            <p style={{ marginTop: '1rem' }}><strong>⚠️ Important:</strong> When high demand or maintenance causes the primary models to be unavailable, the system automatically uses the stable OG model. This triggers the 3x credit charge to cover the increased API costs. The job response will include a <code>fallbackUsed</code> flag and <code>fallbackMessage</code> explaining which model was used.</p>
+                        </div>
+
+                        <p className="note" style={{ marginTop: '1rem' }}><b>Legal Notice:</b> By using this API, you acknowledge that credit charges may vary (1-3 credits) depending on which AI model is available at the time of generation. All credit deductions are final and non-refundable.</p>
+                    </div>
+                </section>
+
                 {/* Generation Endpoints */}
                 <section className="docs-section glass">
                     <div className="section-header">

@@ -265,7 +265,27 @@ export async function POST(request: NextRequest) {
       try {
         // Use rotated API key for load distribution
         const apiKey = getRotatedApiKey();
-        const { buffer: imageBuffer, fallbackUsed, fallbackMessage } = await generationService.callNanoBanana(payload, apiKey);
+        const { buffer: imageBuffer, fallbackUsed, fallbackMessage, modelUsed, creditMultiplier } = await generationService.callNanoBanana(payload, apiKey);
+
+        // If OG model was used (3x more expensive), deduct additional 2 credits
+        let additionalCreditsDeducted = 0;
+        if (shouldDeductCredits && creditMultiplier > 1) {
+          const additionalCredits = creditMultiplier - 1; // e.g., 3 - 1 = 2 additional credits
+          try {
+            creditsRemaining = await CreditService.deductCreditsForJob(
+              userId,
+              additionalCredits,
+              `Additional ${additionalCredits} credit(s) for expensive fallback model (${modelUsed})`,
+              job.id
+            );
+            additionalCreditsDeducted = additionalCredits;
+            creditsDeducted += additionalCredits;
+            console.log(`   💳 Deducted ${additionalCredits} additional credit(s) for ${modelUsed} (total: ${creditMultiplier} credits)`);
+          } catch (creditError) {
+            console.error('Failed to deduct additional credits for expensive model:', creditError);
+            // Continue anyway - primary credit was already deducted
+          }
+        }
 
         // Upload to R2 (Mandatory for Vercel)
         const filename = `gen_${job.id}.png`;
@@ -284,7 +304,8 @@ export async function POST(request: NextRequest) {
                 status: 'completed',
                 outputUrl,
                 promptUsed: `${payload.systemPrompt}\n\n${payload.userPrompt}${fallbackUsed ? `\n\n[FALLBACK TRIGGERED: ${fallbackMessage}]` : ''}`,
-                completedAt: new Date()
+                completedAt: new Date(),
+                creditsDeducted: shouldDeductCredits ? creditMultiplier : null // Track actual credits used
               },
             } as any);
           } catch (dbError) {

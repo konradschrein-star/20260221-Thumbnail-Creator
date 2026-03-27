@@ -236,10 +236,26 @@ async function handleMasterJobTranslation(
       console.log(`   🎨 Generating image with NB2...`);
 
       // Generate image
-      const { buffer: imageBuffer } = await generationService.callNanoBanana(
+      const { buffer: imageBuffer, creditMultiplier, modelUsed } = await generationService.callNanoBanana(
         payload,
         process.env.GOOGLE_API_KEY!
       );
+
+      // If OG model was used (3x more expensive), deduct additional credits
+      if (shouldDeductCredits && creditMultiplier > 1) {
+        const additionalCredits = creditMultiplier - 1;
+        try {
+          await CreditService.deductCreditsForJob(
+            userId,
+            additionalCredits,
+            `Additional ${additionalCredits} credit(s) for expensive fallback model in master job translation (${modelUsed})`,
+            variant.id
+          );
+          console.log(`   💳 Deducted ${additionalCredits} additional credit(s) for ${modelUsed}`);
+        } catch (creditError) {
+          console.error('Failed to deduct additional credits:', creditError);
+        }
+      }
 
       // Upload to R2
       const filename = `variant_${variant.id}.png`;
@@ -462,10 +478,26 @@ If there is NO text in the original image, recreate it exactly without adding an
           console.log(`     🎨 Generating with NB2...`);
 
           // Generate image
-          const { buffer: imageBuffer } = await generationService.callNanoBanana(
+          const { buffer: imageBuffer, creditMultiplier, modelUsed } = await generationService.callNanoBanana(
             payload,
             process.env.GOOGLE_API_KEY!
           );
+
+          // If OG model was used (3x more expensive), deduct additional credits
+          if (shouldDeductCredits && creditMultiplier > 1) {
+            const additionalCredits = creditMultiplier - 1;
+            try {
+              await CreditService.deductCreditsForJob(
+                userId,
+                additionalCredits,
+                `Additional ${additionalCredits} credit(s) for expensive fallback model in upload translation (${modelUsed})`,
+                variant.id
+              );
+              console.log(`     💳 Deducted ${additionalCredits} additional credit(s) for ${modelUsed}`);
+            } catch (creditError) {
+              console.error('Failed to deduct additional credits:', creditError);
+            }
+          }
 
           // Upload to R2
           const filename = `translated_${variant.id}.png`;

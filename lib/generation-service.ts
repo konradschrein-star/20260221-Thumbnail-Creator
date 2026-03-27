@@ -38,7 +38,7 @@ export function initializeClient(apiKey: string): GoogleGenAI {
 export async function callNanoBanana(
   payload: AIRequestPayload,
   apiKey: string
-): Promise<{ buffer: Buffer; fallbackUsed: boolean; fallbackMessage?: string }> {
+): Promise<{ buffer: Buffer; fallbackUsed: boolean; fallbackMessage?: string; modelUsed?: string; creditMultiplier: number }> {
   try {
     const ai = new GoogleGenAI({ apiKey });
 
@@ -81,13 +81,16 @@ export async function callNanoBanana(
     let response;
     let fallbackUsed = false;
     let fallbackMessage = "";
+    let modelUsed = "";
+    let creditMultiplier = 1; // Default: 1 credit for primary models
 
     // Fallback chain: Nano Banana 2 → Nano Banana Pro → Nano Banana OG (GA)
     // NB2 is PRIMARY for 50% cost savings ($0.0672 vs $0.134 per image)
+    // OG costs 3x more due to higher API pricing
     const models = [
-      { id: 'gemini-3.1-flash-image-preview', name: 'Nano Banana 2 (Flash)' },
-      { id: 'gemini-3-pro-image-preview', name: 'Nano Banana Pro' },
-      { id: 'gemini-2.5-flash-image', name: 'Nano Banana OG (Stable)' },
+      { id: 'gemini-3.1-flash-image-preview', name: 'Nano Banana 2 (Flash)', credits: 1 },
+      { id: 'gemini-3-pro-image-preview', name: 'Nano Banana Pro', credits: 1 },
+      { id: 'gemini-2.5-flash-image', name: 'Nano Banana OG (Stable)', credits: 3 }, // 3x more expensive
     ];
 
     const isServerError = (error: any): boolean => {
@@ -103,9 +106,11 @@ export async function callNanoBanana(
       try {
         console.log(`   Calling ${model.name} (${model.id})...`);
         response = await callWithPayload(primaryContent, model.id);
+        modelUsed = model.name;
+        creditMultiplier = model.credits;
         if (i > 0) {
           fallbackUsed = true;
-          fallbackMessage = `${models[0].name} was unavailable. Generated successfully with ${model.name}.`;
+          fallbackMessage = `${models[0].name} was unavailable. Generated successfully with ${model.name}${model.credits > 1 ? ` (${model.credits}x credits due to higher API costs)` : ''}.`;
         }
         break; // Success — exit the loop
       } catch (error: any) {
@@ -185,7 +190,7 @@ export async function callNanoBanana(
 
     console.log(`   ✓ Received image data: ${base64Data.length} chars (${(buffer.length / 1024).toFixed(1)}KB)`);
 
-    return { buffer, fallbackUsed, fallbackMessage };
+    return { buffer, fallbackUsed, fallbackMessage, modelUsed, creditMultiplier };
   } catch (error) {
     const apiError = handleAPIError(error);
 

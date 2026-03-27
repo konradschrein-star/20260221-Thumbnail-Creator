@@ -75,12 +75,17 @@ export default function HelpPage() {
             <div className="info-card">
               <h3>How Credits Work</h3>
               <ul className="feature-list">
-                <li><strong>1 Credit = 1 Thumbnail:</strong> Each generation costs exactly 1 credit</li>
-                <li><strong>Pay Upfront:</strong> Credits are deducted before generation starts</li>
+                <li><strong>1 Credit = 1 Thumbnail:</strong> Each generation typically costs 1 credit</li>
+                <li><strong>Fallback Pricing:</strong> If the primary AI model is unavailable and the stable fallback model is used, it costs 3 credits (3x more expensive due to higher API costs)</li>
+                <li><strong>Pay Upfront:</strong> Credits are deducted before generation starts, with additional credits charged if the expensive fallback is triggered</li>
                 <li><strong>No Refunds:</strong> Credits are not refunded if generation fails (to prevent exploitation)</li>
                 <li><strong>View Balance:</strong> Your credit balance is shown in the top-right corner of the dashboard</li>
-                <li><strong>Check History:</strong> Go to "History" tab to see all your credit transactions</li>
+                <li><strong>Check History:</strong> Go to "History" tab to see all your credit transactions and which model was used</li>
               </ul>
+
+              <div className="warning-box" style={{ marginTop: '1rem', padding: '0.75rem', background: 'rgba(250, 204, 21, 0.1)', border: '1px solid rgba(250, 204, 21, 0.3)', borderRadius: '8px' }}>
+                <strong>⚠️ Fallback Model Notice:</strong> When the primary AI models are experiencing high demand or maintenance, the system automatically falls back to a more expensive stable model (Nano Banana OG). This fallback charges <strong>3 credits instead of 1</strong> to cover the increased API costs. You'll be notified when this happens.
+              </div>
 
               <div className="tip-box">
                 <strong>💡 Tip:</strong> Admin accounts have unlimited credits and don't get charged for generations!
