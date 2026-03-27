@@ -145,7 +145,7 @@ export default function ChannelForm({ mode, initialData, onSubmit, onCancel }: C
           <p>The more detailed your persona description, the more consistent your character will appear across thumbnails.
           Aim for 100-200+ words with specific details like: age, hair (length, color, style), eye color, facial structure
           (jawline, cheekbones, nose shape), build, typical clothing, skin tone, facial hair, expression, and preferred lighting.</p>
-          <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.8;">
+          <p style={{ marginTop: '0.5rem', fontSize: '0.75rem', opacity: 0.8 }}>
             <strong>Note:</strong> While only 20 words are required, detailed descriptions (50+ words) produce significantly
             better and more consistent character generation results.
           </p>
