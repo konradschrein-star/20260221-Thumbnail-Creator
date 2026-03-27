@@ -38,8 +38,8 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
             return null;
           }
 
-          // Verify password with algorithm-aware verification
-          const algorithm = (user.passwordHashAlgorithm || 'bcrypt') as 'bcrypt' | 'argon2id';
+          // Verify password with bcrypt
+          const algorithm = 'bcrypt' as const;
           const { valid, needsUpgrade } = await verifyPassword(
             inputPassword,
             user.password,

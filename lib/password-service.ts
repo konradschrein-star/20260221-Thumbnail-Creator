@@ -10,7 +10,7 @@ import { PrismaClient } from '@prisma/client';
 
 const prisma = new PrismaClient();
 
-export type HashAlgorithm = 'bcrypt' | 'argon2id';
+export type HashAlgorithm = 'bcrypt';
 
 export interface VerificationResult {
   valid: boolean;
@@ -35,12 +35,11 @@ export async function hashPassword(plainPassword: string): Promise<string> {
 }
 
 /**
- * Verifies a password against a hash.
- * Supports both bcrypt and argon2id hashes for backward compatibility.
+ * Verifies a password against a hash using bcrypt.
  *
  * @param plainPassword - The plain text password to verify
  * @param hashedPassword - The stored hash
- * @param algorithm - The hashing algorithm used ('bcrypt' or 'argon2id')
+ * @param algorithm - The hashing algorithm used (must be 'bcrypt')
  * @returns Object with validation result and upgrade recommendation
  */
 export async function verifyPassword(
@@ -49,35 +48,17 @@ export async function verifyPassword(
   algorithm: HashAlgorithm
 ): Promise<VerificationResult> {
   try {
-    let valid = false;
-
-    if (algorithm === 'bcrypt') {
-      // Verify with bcrypt
-      valid = await bcrypt.compare(plainPassword, hashedPassword);
-
-      return {
-        valid,
-        needsUpgrade: false,
-      };
-    } else if (algorithm === 'argon2id') {
-      // Try to load argon2 dynamically only when needed
-      try {
-        const argon2 = await import('argon2');
-        valid = await argon2.default.verify(hashedPassword, plainPassword);
-        return {
-          valid,
-          needsUpgrade: false,
-        };
-      } catch (argon2Error) {
-        console.error('argon2 verification failed:', argon2Error);
-        return {
-          valid: false,
-          needsUpgrade: false,
-        };
-      }
-    } else {
+    if (algorithm !== 'bcrypt') {
       throw new Error(`Unsupported hash algorithm: ${algorithm}`);
     }
+
+    // Verify with bcrypt
+    const valid = await bcrypt.compare(plainPassword, hashedPassword);
+
+    return {
+      valid,
+      needsUpgrade: false,
+    };
   } catch (error) {
     // If verification fails (e.g., invalid hash format), return invalid
     console.error('Password verification error:', error);
