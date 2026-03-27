@@ -56,8 +56,15 @@ export async function GET(request: NextRequest) {
               },
             },
             // Test account's archetypes (available globally for all channels)
+            ...(testUser?.id ? [{
+              userId: testUser.id,
+            }] : []),
+            // Archetypes with no channel assignments (global/shared archetypes)
             {
-              userId: testUser?.id || 'none',
+              userId: session.user.id,
+              channels: {
+                none: {},
+              },
             },
           ],
         };
