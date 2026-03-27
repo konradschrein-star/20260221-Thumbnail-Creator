@@ -39,24 +39,35 @@ export async function GET(request: NextRequest) {
         };
       }
     } else {
-      // Regular users see their own archetypes + test account's public archetypes
-      const userIdConditions = [
-        { userId: session.user.id },
-        { userId: testUser?.id || 'none' }
-      ];
+      // Regular users see:
+      // 1. Their own archetypes (for any channel they own)
+      // 2. Test account's archetypes (global access - available for ALL channels)
 
       if (channelId) {
         where = {
-          OR: userIdConditions,
-          channels: {
-            some: {
-              channelId,
+          OR: [
+            // User's own archetypes linked to this channel
+            {
+              userId: session.user.id,
+              channels: {
+                some: {
+                  channelId,
+                },
+              },
             },
-          },
+            // Test account's archetypes (available globally for all channels)
+            {
+              userId: testUser?.id || 'none',
+            },
+          ],
         };
       } else {
+        // No channel filter - show user's archetypes + test archetypes
         where = {
-          OR: userIdConditions
+          OR: [
+            { userId: session.user.id },
+            { userId: testUser?.id || 'none' }
+          ]
         };
       }
     }
