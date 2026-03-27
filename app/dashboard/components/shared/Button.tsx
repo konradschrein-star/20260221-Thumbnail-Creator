@@ -68,6 +68,7 @@ export default function Button({
 
         .btn-primary:hover:not(:disabled) {
           background: #e4e4e7;
+          color: #000000;
           transform: translateY(-1px);
         }
 

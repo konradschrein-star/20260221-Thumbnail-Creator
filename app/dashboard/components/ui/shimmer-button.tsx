@@ -29,6 +29,15 @@ export const ShimmerButton = React.forwardRef<
         },
         ref
     ) => {
+        // Determine text color based on background brightness
+        const isLightBackground = background.includes("#fff") ||
+                                  background.includes("#FFF") ||
+                                  background.includes("255, 255, 255") ||
+                                  background.includes("rgb(255") ||
+                                  background.includes("rgba(255, 255, 255");
+
+        const textColor = isLightBackground ? "text-black" : "text-white";
+
         return (
             <button
                 {...({
@@ -42,7 +51,8 @@ export const ShimmerButton = React.forwardRef<
                     } as any
                 })}
                 className={cn(
-                    "magic-ui-shimmer-button group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--shimmer-radius)] border border-white/10 px-6 py-3 whitespace-nowrap text-white [background:var(--shimmer-bg)]",
+                    "magic-ui-shimmer-button group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden [border-radius:var(--shimmer-radius)] border border-white/10 px-6 py-3 whitespace-nowrap [background:var(--shimmer-bg)]",
+                    textColor,
                     "transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px",
                     className
                 )}
