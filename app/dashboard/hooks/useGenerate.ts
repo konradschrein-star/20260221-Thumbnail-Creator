@@ -47,12 +47,32 @@ export default function useGenerate() {
         body: JSON.stringify(payload),
       });
 
-      const data = await response.json();
+      // Check content-type to determine if we can parse JSON
+      const contentType = response.headers.get('content-type');
+      const isJson = contentType?.includes('application/json');
 
       if (!response.ok) {
-        throw new Error(data.error || 'Generation failed');
+        // For non-ok responses, safely handle JSON or text errors
+        let errorMessage = 'Generation failed';
+
+        if (isJson) {
+          try {
+            const errorData = await response.json();
+            errorMessage = errorData.error || errorMessage;
+          } catch {
+            // If JSON parsing fails, fall back to status text
+            errorMessage = `${response.status} ${response.statusText}`;
+          }
+        } else {
+          // For non-JSON responses (like 504 HTML pages), use status text
+          errorMessage = `${response.status} ${response.statusText}`;
+        }
+
+        throw new Error(errorMessage);
       }
 
+      // Only parse JSON for successful responses
+      const data = await response.json();
       setSuccess(true);
       setResult(data);
       return data;
