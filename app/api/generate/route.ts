@@ -9,6 +9,9 @@ import * as CreditService from '@/lib/credit-service';
 import { getRotatedApiKey } from '@/lib/api-keys';
 import { getUserLimiter } from '@/lib/rate-limiter';
 
+// Increase timeout for image generation (fallback chain can take 2-3 minutes)
+export const maxDuration = 300; // 5 minutes
+
 export async function POST(request: NextRequest) {
   const authResult = await getApiAuth(request);
 
